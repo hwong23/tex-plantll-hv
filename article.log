@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  25 JUN 2024 15:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  25 JUN 2024 15:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -532,25 +532,25 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
  (/usr/local/texlive/2024basic/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex)) (./article.aux)
 \openout1 = `article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 44.
-LaTeX Font Info:    ... okay on input line 44.
-Package hyperref Info: Link coloring OFF on input line 44.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+Package hyperref Info: Link coloring OFF on input line 45.
  (./article.out) (./article.out)
 \@outlinefile=\write4
 \openout4 = `article.out'.
@@ -610,34 +610,34 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2024basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 46.
+LaTeX Font Info:    Trying to load font information for OT1+pplx on input line 47.
  (/usr/local/texlive/2024basic/texmf-dist/tex/latex/psnfss/ot1pplx.fd
 File: ot1pplx.fd 2004/09/06 font definitions for OT1/pplx.
 )
-LaTeX Font Info:    Trying to load font information for OML+zplm on input line 46.
+LaTeX Font Info:    Trying to load font information for OML+zplm on input line 47.
  (/usr/local/texlive/2024basic/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 46.
+LaTeX Font Info:    Trying to load font information for OMS+zplm on input line 47.
  (/usr/local/texlive/2024basic/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 46.
+LaTeX Font Info:    Trying to load font information for OMX+zplm on input line 47.
  (/usr/local/texlive/2024basic/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 46.
+LaTeX Font Info:    Trying to load font information for OT1+zplm on input line 47.
  (/usr/local/texlive/2024basic/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 
 LaTeX Warning: Marginpar on page 1 moved.
 
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 69.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 70.
 (/usr/local/texlive/2024basic/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Overfull \hbox (10.18553pt too wide) in paragraph at lines 69--70
+Overfull \hbox (10.18553pt too wide) in paragraph at lines 70--71
 \T1/pplj/m/n/10 This style pro-vides \T1/pplj/m/sc/10/50ls a\T1/pplj/m/n/10 - and \T1/pplj/m/sc/10/50ls b\T1/pplj/m/n/10 -heads (that is, [] and []), 
  []
 
@@ -653,21 +653,21 @@ LaTeX Warning: Marginpar on page 1 moved.
 
 LaTeX Warning: Marginpar on page 2 moved.
 
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 156.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 157.
 (/usr/local/texlive/2024basic/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 156.
+(Font)              scaled to size 8.99994pt on input line 157.
 
 
-Package hyperref Warning: Suppressing empty link on input line 163.
+Package hyperref Warning: Suppressing empty link on input line 164.
 
 [2]
 <foto.png, id=53, 481.8pt x 642.4pt>
 File: foto.png Graphic file (type png)
 <use foto.png>
-Package pdftex.def Info: foto.png  used on input line 166.
+Package pdftex.def Info: foto.png  used on input line 167.
 (pdftex.def)             Requested size: 143.99709pt x 191.99612pt.
 
 
@@ -676,19 +676,19 @@ LaTeX Warning: Marginpar on page 3 moved.
 <sine.pdf, id=57, 505.89pt x 51.04068pt>
 File: sine.pdf Graphic file (type pdf)
 <use sine.pdf>
-Package pdftex.def Info: sine.pdf  used on input line 202.
+Package pdftex.def Info: sine.pdf  used on input line 203.
 (pdftex.def)             Requested size: 480.0061pt x 48.42917pt.
 <hilbertcurves.pdf, id=58, 308.47346pt x 76.72565pt>
 File: hilbertcurves.pdf Graphic file (type pdf)
 <use hilbertcurves.pdf>
-Package pdftex.def Info: hilbertcurves.pdf  used on input line 209.
+Package pdftex.def Info: hilbertcurves.pdf  used on input line 210.
 (pdftex.def)             Requested size: 312.0029pt x 77.6035pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 209--216
+Underfull \hbox (badness 10000) in paragraph at lines 210--217
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 224.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 225.
 (/usr/local/texlive/2024basic/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 ) [3 <./foto.png> <./sine.pdf> <./hilbertcurves.pdf>]
@@ -707,15 +707,15 @@ Package rerunfilecheck Info: File `article.out' has not changed.
 (rerunfilecheck)             Checksum: EDC503F03E86D6D2A8C4F515B85326AF;819.
  ) 
 Here is how much of TeX's memory you used:
- 14535 strings out of 475567
- 233133 string characters out of 5777889
+ 14538 strings out of 475567
+ 233154 string characters out of 5777889
  1943187 words of memory out of 5000000
  36344 multiletter control sequences out of 15000+600000
- 628540 words of font info for 134 fonts, out of 8000000 for 9000
+ 630130 words of font info for 137 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  97i,14n,96p,265b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/hwo/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </Users/hwo/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </Users/hwo/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on article.pdf (5 pages, 234646 bytes).
+Output written on article.pdf (5 pages, 235757 bytes).
 PDF statistics:
  220 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
