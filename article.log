@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  24 JUN 2024 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  25 JUN 2024 15:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -633,28 +633,19 @@ File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 
 LaTeX Warning: Marginpar on page 1 moved.
 
-./article.tex:66: Undefined control sequence.
-<recently read> \tightlist 
-                           
-l.66 \tightlist
-               
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-LaTeX Font Info:    Trying to load font information for TS1+pplj on input line 68.
-(/usr/local/texlive/2024basic/texmf-dist/tex/latex/psnfss/ts1pplj.fd
-File: ts1pplj.fd 2004/09/06 font definitions for TS1/pplj.
-)
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 105.
- (/usr/local/texlive/2024basic/texmf-dist/tex/latex/base/t1cmtt.fd
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 58.
+(/usr/local/texlive/2024basic/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
-Overfull \hbox (10.18553pt too wide) in paragraph at lines 105--106
+Overfull \hbox (10.18553pt too wide) in paragraph at lines 58--59
 \T1/pplj/m/n/10 This style pro-vides \T1/pplj/m/sc/10/50ls a\T1/pplj/m/n/10 - and \T1/pplj/m/sc/10/50ls b\T1/pplj/m/n/10 -heads (that is, [] and []), 
  []
+
+
+LaTeX Warning: Marginpar on page 1 moved.
+
+
+LaTeX Warning: Marginpar on page 1 moved.
 
 [1
 
@@ -662,41 +653,47 @@ Overfull \hbox (10.18553pt too wide) in paragraph at lines 105--106
 
 LaTeX Warning: Marginpar on page 2 moved.
 
-
-LaTeX Warning: Marginpar on page 2 moved.
-
-[2]
-
-LaTeX Warning: Marginpar on page 3 moved.
-
-LaTeX Font Info:    Trying to load font information for T1+phv on input line 192.
+LaTeX Font Info:    Trying to load font information for T1+phv on input line 145.
 (/usr/local/texlive/2024basic/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 192.
-<helix.pdf, id=52, 221.8689pt x 201.71361pt>
-File: helix.pdf Graphic file (type pdf)
-<use helix.pdf>
-Package pdftex.def Info: helix.pdf  used on input line 202.
-(pdftex.def)             Requested size: 144.00317pt x 130.92145pt.
- [3 <./helix.pdf>]
-<sine.pdf, id=76, 505.89pt x 51.04068pt>
+(Font)              scaled to size 8.99994pt on input line 145.
+
+
+Package hyperref Warning: Suppressing empty link on input line 152.
+
+
+./article.tex:155: LaTeX Error: File `foto' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155   \includegraphics[width=\linewidth]{foto}
+                                                
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[2]
+<sine.pdf, id=56, 505.89pt x 51.04068pt>
 File: sine.pdf Graphic file (type pdf)
 <use sine.pdf>
-Package pdftex.def Info: sine.pdf  used on input line 231.
+Package pdftex.def Info: sine.pdf  used on input line 191.
 (pdftex.def)             Requested size: 480.0061pt x 48.42917pt.
-<hilbertcurves.pdf, id=77, 308.47346pt x 76.72565pt>
+<hilbertcurves.pdf, id=57, 308.47346pt x 76.72565pt>
 File: hilbertcurves.pdf Graphic file (type pdf)
 <use hilbertcurves.pdf>
-Package pdftex.def Info: hilbertcurves.pdf  used on input line 238.
+Package pdftex.def Info: hilbertcurves.pdf  used on input line 198.
 (pdftex.def)             Requested size: 312.0029pt x 77.6035pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 238--245
+Underfull \hbox (badness 10000) in paragraph at lines 198--205
 
  []
 
-LaTeX Font Info:    Trying to load font information for T1+ppl on input line 253.
+LaTeX Font Info:    Trying to load font information for T1+ppl on input line 213.
 (/usr/local/texlive/2024basic/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
@@ -704,7 +701,7 @@ File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 Package lipsum Warning: Unknown language 'latin'. Hyphenation patterns for
 (lipsum)                'english' will be used instead.
 
-[4 <./sine.pdf> <./hilbertcurves.pdf>]
+[3 <./sine.pdf> <./hilbertcurves.pdf>] [4]
 No file article.bbl.
 [5] (./article.aux)
  ***********
@@ -715,18 +712,18 @@ Package rerunfilecheck Info: File `article.out' has not changed.
 (rerunfilecheck)             Checksum: EDC503F03E86D6D2A8C4F515B85326AF;819.
  ) 
 Here is how much of TeX's memory you used:
- 14560 strings out of 475567
- 233612 string characters out of 5777889
- 1940187 words of memory out of 5000000
- 36365 multiletter control sequences out of 15000+600000
- 628853 words of font info for 135 fonts, out of 8000000 for 9000
+ 14554 strings out of 475567
+ 233405 string characters out of 5777889
+ 1943187 words of memory out of 5000000
+ 36363 multiletter control sequences out of 15000+600000
+ 628540 words of font info for 134 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 97i,14n,96p,297b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 97i,14n,96p,265b,653s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/hwo/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </Users/hwo/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </Users/hwo/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on article.pdf (5 pages, 148707 bytes).
+Output written on article.pdf (5 pages, 137883 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 125 compressed objects within 2 object streams
+ 219 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
  18 named destinations out of 1000 (max. 500000)
- 1608 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1603 words of extra memory for PDF output out of 10000 (max. 10000000)
 

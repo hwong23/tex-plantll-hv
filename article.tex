@@ -46,59 +46,12 @@
 \maketitle % this prints the handout title, author, and date
 
 \begin{abstract}
-\noindent Ing. Magister TI. Esp. Arquitectura.
-
-Ing. de Sistemas. Arquitecto TI. Magister en Tecnologías de Información
-para Negocio (MBIT, Uniandes). Especializado en Arquitectura de Software
-Empresarial (AES, Javeriana). Certificado Arquitectura de Software IASA
-CITAF. Certificado TOGAF 9.1 Nivel 1 y 2. Consultor Tecnologías de
-Información y Transformación Negocio con Tecnología. Consultor en
-mejoría de procesos de ingeniería. Consultor en industrialización y
-construcción de software y sistemas de información. Miembro de la
-Asociación de Arquitectos Empresariales, AEA. Miembro Global IASA,
-Chapter Colombia. Miembro de ACIS (Asoc. Ing. de Sistemas). Columnista
-independiente de Tecnología en LatinamericanPost.
+\noindent 
 \end{abstract}
 
 %\printclassoptions
 
-\begin{itemize}
-\tightlist
-\item
-  Organización Designación Duración Período
-\item
-  Estefanini, Colombia Consultor de Arquitectura de Software y
-  Tecnología 1 año actual
-\item
-  Ministerio del Trabajo Consultor de Tecnología. Proyecto BID MT.
-  Mercado Laboral 2 años Oct 2019 - Dic 2022
-\item
-  LatinamericanPost Columnista independiente de tecnología actual actual
-\item
-  Asesoftware Arquitecto Fábrica Seguros Bolívar 1 año Sep 2019 - Sep
-  2020
-\item
-  BlazDesigns Propietario y Fundador (CEO) 2 años Dic 2019 - Dic 2021
-\item
-  Sistran, Insurtech core Arquitecto SISE 3G 1 año Jul 2018 - Sep 2019
-\item
-  Colombia Digital Arquitecto Empresarial 1 año Feb 2017 - Feb 2018
-\item
-  Process and Business Management (PBM) Lead Architect 1.3 años Jul 2016
-  - Dic 2018
-\item
-  Persépolis Chief Technology Officer (CTO) 1.5 años Jul 2016 - Abr 2018
-\item
-  Heinsohn Business Technology (HBT) Solution Architect 3 años Jul 2013
-  - Jun 2016
-\item
-  Cobiscorp Virtual Bank Specialist 4 años Dic 2011 - May 2013
-\item
-  Banco de Finanzas (BDF) Líder de Producto Banca en Línea 6 años Ago
-  2005 - Jul 2011
-\item
-  Macosa Senior Especialist 6 años Ene 2000 - Jul 2006
-\end{itemize}
+
 
 \section{Page Layout}\label{sec:page-layout}
 \subsection{Headings}\label{sec:headings}
@@ -107,7 +60,7 @@ This style provides \textsc{a}- and \textsc{b}-heads (that is, \Verb|\section| a
 The Tufte-\LaTeX\ classes will emit an error if you try to use \linebreak\Verb|\subsubsection| and smaller headings.
 
 % let's start a new thought -- a new section
-\newthought{In his later books}, cite Tufte2006 Tufte
+\newthought{In his later books}, cite Cabezon2024 Tufte
 starts each section with a bit of vertical space, a non-indented paragraph,
 and sets the first few words of the sentence in \textsc{small caps}.  To
 accomplish this using this style, use the \Verb|\newthought| command:  
@@ -199,12 +152,17 @@ use the \docenv{marginfigure} or \docenv{margintable} environments as follows
 (see figure~\ref{fig:marginfig}):
 
 \begin{marginfigure}%
-  \includegraphics[width=\linewidth]{helix}
-  \caption{This is a margin figure.  The helix is defined by 
-    x = cos(2pi z), y = sin(2pi z).  The figure was
-    drawn using Asymptote (\url{http://asymptote.sf.net/}).}
+  \includegraphics[width=\linewidth]{foto}
+  % \÷caption{
+    \noindent{K 6 \# 48A 27
+
+T: 300 2818189
+
+hwong23@yahoo.com}
+  % }
   \label{fig:marginfig}
 \end{marginfigure}
+
 \begin{Verbatim}
 \begin{marginfigure}
   \includegraphics{helix}
@@ -212,7 +170,9 @@ use the \docenv{marginfigure} or \docenv{margintable} environments as follows
 \end{marginfigure}
 \end{Verbatim}
 
-The \docenv{marginfigure} and \docenv{margintable} environments accept an optional parameter \docopt{offset} that adjusts the vertical position of the figure or table.  See the ``\nameref{sec:sidenotes}'' section above for examples.  The specifications are:
+The \docenv{marginfigure} and \docenv{margintable} environments accept an optional 
+parameter \docopt{offset} that adjusts the vertical position of the figure or table.  
+See the ``\nameref{sec:sidenotes}'' section above for examples.  The specifications are:
 \begin{docspec}
   \doccmd{begin\{marginfigure\}[\docopt{offset}]}\\
   \qquad\ldots\\

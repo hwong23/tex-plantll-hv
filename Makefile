@@ -17,7 +17,7 @@ article-pdf:
 	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
 
 article-tex:
-	pandoc ./contd/*.md --defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/tex.yaml
+	pandoc $$HOME/Downloads/tmpr/hvmd/*.md --defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/tex.yaml
 
 article:
 	make article-docx article-pdf article-tex
