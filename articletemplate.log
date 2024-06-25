@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  25 JUN 2024 15:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  25 JUN 2024 15:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -680,12 +680,12 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 Package hyperref Warning: Suppressing empty link on input line 152.
 
-<helix.png, id=47, 481.8pt x 642.4pt>
-File: helix.png Graphic file (type png)
-<use helix.png>
-Package pdftex.def Info: helix.png  used on input line 155.
+<foto.png, id=47, 481.8pt x 642.4pt>
+File: foto.png Graphic file (type png)
+<use foto.png>
+Package pdftex.def Info: foto.png  used on input line 155.
 (pdftex.def)             Requested size: 143.99709pt x 191.99612pt.
-[2 <./helix.png>]
+[2 <./foto.png>]
 <sine.pdf, id=57, 505.89pt x 51.04068pt>
 File: sine.pdf Graphic file (type pdf)
 <use sine.pdf>
@@ -721,7 +721,7 @@ Package rerunfilecheck Info: File `articletemplate.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  14595 strings out of 475567
- 234233 string characters out of 5777889
+ 234222 string characters out of 5777889
  1943187 words of memory out of 5000000
  36379 multiletter control sequences out of 15000+600000
  640651 words of font info for 163 fonts, out of 8000000 for 9000
