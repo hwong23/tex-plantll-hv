@@ -152,12 +152,13 @@ use the \docenv{marginfigure} or \docenv{margintable} environments as follows
 (see figure~\ref{fig:marginfig}):
 
 \begin{marginfigure}%
-  \includegraphics[width=\linewidth]{helix}
-  \caption{This is a margin figure.  The helix is defined by 
-    x = cos(2pi z), y = sin(2pi z).  The figure was
-    drawn using Asymptote (\url{http://asymptote.sf.net/}).}
+  % \includegraphics[width=\linewidth]{helix}
+  % \÷caption{
+     $direccion$
+  % }
   \label{fig:marginfig}
 \end{marginfigure}
+
 \begin{Verbatim}
 \begin{marginfigure}
   \includegraphics{helix}
@@ -165,7 +166,9 @@ use the \docenv{marginfigure} or \docenv{margintable} environments as follows
 \end{marginfigure}
 \end{Verbatim}
 
-The \docenv{marginfigure} and \docenv{margintable} environments accept an optional parameter \docopt{offset} that adjusts the vertical position of the figure or table.  See the ``\nameref{sec:sidenotes}'' section above for examples.  The specifications are:
+The \docenv{marginfigure} and \docenv{margintable} environments accept an optional 
+parameter \docopt{offset} that adjusts the vertical position of the figure or table.  
+See the ``\nameref{sec:sidenotes}'' section above for examples.  The specifications are:
 \begin{docspec}
   \doccmd{begin\{marginfigure\}[\docopt{offset}]}\\
   \qquad\ldots\\
