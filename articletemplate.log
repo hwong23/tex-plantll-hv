@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  25 JUN 2024 15:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.6.21)  25 JUN 2024 15:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -680,13 +680,18 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 
 Package hyperref Warning: Suppressing empty link on input line 152.
 
-[2]
-<sine.pdf, id=56, 505.89pt x 51.04068pt>
+<helix.png, id=47, 481.8pt x 642.4pt>
+File: helix.png Graphic file (type png)
+<use helix.png>
+Package pdftex.def Info: helix.png  used on input line 155.
+(pdftex.def)             Requested size: 143.99709pt x 191.99612pt.
+[2 <./helix.png>]
+<sine.pdf, id=57, 505.89pt x 51.04068pt>
 File: sine.pdf Graphic file (type pdf)
 <use sine.pdf>
 Package pdftex.def Info: sine.pdf  used on input line 187.
 (pdftex.def)             Requested size: 480.0061pt x 48.42917pt.
-<hilbertcurves.pdf, id=57, 308.47346pt x 76.72565pt>
+<hilbertcurves.pdf, id=58, 308.47346pt x 76.72565pt>
 File: hilbertcurves.pdf Graphic file (type pdf)
 <use hilbertcurves.pdf>
 Package pdftex.def Info: hilbertcurves.pdf  used on input line 194.
@@ -715,18 +720,18 @@ Package rerunfilecheck Info: File `articletemplate.out' has not changed.
 (rerunfilecheck)             Checksum: EDC503F03E86D6D2A8C4F515B85326AF;819.
  ) 
 Here is how much of TeX's memory you used:
- 14584 strings out of 475567
- 234070 string characters out of 5777889
+ 14595 strings out of 475567
+ 234233 string characters out of 5777889
  1943187 words of memory out of 5000000
- 36368 multiletter control sequences out of 15000+600000
+ 36379 multiletter control sequences out of 15000+600000
  640651 words of font info for 163 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  97i,14n,96p,273b,640s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/hwo/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.600pk> </Users/hwo/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.600pk> </Users/hwo/Library/texlive/2024basic/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1000.600pk></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2024basic/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on articletemplate.pdf (5 pages, 136703 bytes).
+Output written on articletemplate.pdf (5 pages, 232267 bytes).
 PDF statistics:
- 219 PDF objects out of 1000 (max. 8388607)
+ 220 PDF objects out of 1000 (max. 8388607)
  113 compressed objects within 2 object streams
  18 named destinations out of 1000 (max. 500000)
- 9283 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 9288 words of extra memory for PDF output out of 10000 (max. 10000000)
 
