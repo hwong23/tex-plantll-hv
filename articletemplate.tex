@@ -9,11 +9,11 @@
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \graphicspath{{graphics/}}
 
-% Correccion del error: undefined sequence
+% Correccion error: tightlist undefined sequence
 \def\tightlist{}
 
-\title{$titulo$\thanks{Inspired by Edward~R. Tufte!}}
-\author[$autores$]{$autores$}
+\title{$titulo$\thanks{Versión HV corta profesional}}
+\author[$tituloprofesinal$]{$tituloprofesinal$}
 \date{24 Enero 2009}  % if the \date{} command is left out, the current date will be used
 
 % The following package makes prettier tables.  We're all about the bling!
@@ -48,20 +48,32 @@
 
 \maketitle % this prints the handout title, author, and date
 
-\begin{abstract}
 
-\section{Vinculaciones}\label{sec:vinculaciones}
+
+\begin{abstract}
 \marginnote{
   \includegraphics[width=\linewidth]{foto}
   $personal$
 }
-
+    
 \noindent $resumen$
 \end{abstract}
-
+  
 %\printclassoptions
+  
+\section{Perfil}\label{sec:perfil}
+$perfil$
 
+\section{Vinculaciones}\label{sec:vinculaciones}
 $vinculaciones$
+
+\section{Experiencias}\label{sec:experiencias}
+\marginnote{
+  $perfil$
+}
+
+$experiencias$
+
 
 \section{Page Layout}\label{sec:page-layout}
 \subsection{Headings}\label{sec:headings}
@@ -83,7 +95,7 @@ accomplish this using this style, use the \Verb|\newthought| command:
 \subsection{Sidenotes}\label{sec:sidenotes}
 One of the most prominent and distinctive features of this style is the
 extensive use of sidenotes.  There is a wide margin to provide ample room
-for sidenotes and small figures.  Any \Verb|\footnote|s will automatically
+for sidenotes and small figures. Any \Verb|\footnote|s will automatically
 be converted to sidenotes.
 \footnote{
   $nota$ This is a sidenote that was entered
