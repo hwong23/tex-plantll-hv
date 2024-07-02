@@ -1,62 +1,52 @@
+Github, https://github.com/maehr/academic-pandoc-template
 PDF, https://www.overleaf.com/latex/templates/example-of-the-tufte-handout-style/ysjghcrgdrnz.pdf
+CTAN, https://ctan.org/pkg/tufte-latex 
+    Location: CTAN Packages tufte-latex
+    tufte-latex – Document classes inspired by the work of Edward Tufte
+    Provided are two classes inspired, respectively, by handouts and books created by Edward Tufte.
+    Sources	/macros/latex/contrib/tufte-latex
+    Documentation	
+    README
+    README.txt
+    Sample book
+    Sample handout
+    Repository	https://tufte-latex.github.io/tufte-latex/
+    Version	3.5.2
+    Licenses	Apache License, version 2.0
+    Copyright	2007–2015 Bil Kleb, Bill Wood and Kevin Godby
+    Maintainer	Kevin Godby
+    TDS archive	tufte-latex.tds.zip
+    Contained in	TEX Live as tufte-latex
+    MiKTEX as tufte-latex
+    Topics	Book publication
+    Class
+    Download the contents of this package in one zip archive (627.9k).
+    Community Comments
+    Jukka Nikulainen 2023-03-21
+    Excellent class file, definitely has the look and feel of Tufte's books. Have used the handout class on numerous occasions. Thank you!
+    paradoxsurprisedoze 2020-10-05
+    Does not actually use the fonts that Tufte uses, instead defaulting to an obsolete version of Palatino and a free Helvetica replacement. Note that, as of February 2020, there is a version of ET Book available in CTAN, which I have successfully used by editing tufte-common.def.
+    This class does not compile under modern versions of LuaTEX (after 0.85).
+    The latex-mimosis class and caesar-book class are better alternatives for long documents.
+    jamesjames 2018-09-23
 
-https://ctan.org/pkg/tufte-latex
+    Announcements
+    2015-06-23 CTAN update: tufte-latex
+    2009-12-11 CTAN update: tufte-latex
+    2009-05-17 CTAN update: Tufte-LaTeX
+    more
+    Suggestions
+    Maybe you are interested in the following packages as well.
+    bookest: Extended book class
+    basque-book: Class for book-type documents written in Basque
+    qyxf-book: Book Template for Qian Yuan Xue Fu
+    bgteubner: Class for producing books for the publisher “Teubner Verlag”
+    more
 
- 
-Location: CTAN Packages tufte-latex
-tufte-latex – Document classes inspired by the work of Edward Tufte
-Provided are two classes inspired, respectively, by handouts and books created by Edward Tufte.
-Sources	/macros/latex/contrib/tufte-latex
-Documentation	
-README
-README.txt
-Sample book
-Sample handout
-Repository	https://tufte-latex.github.io/tufte-latex/
-Version	3.5.2
-Licenses	Apache License, version 2.0
-Copyright	2007–2015 Bil Kleb, Bill Wood and Kevin Godby
-Maintainer	Kevin Godby
-TDS archive	tufte-latex.tds.zip
-Contained in	TEX Live as tufte-latex
-MiKTEX as tufte-latex
-Topics	Book publication
-Class
-Download the contents of this package in one zip archive (627.9k).
-Community Comments
- Jukka Nikulainen 2023-03-21
-Excellent class file, definitely has the look and feel of Tufte's books. Have used the handout class on numerous occasions. Thank you!
- paradoxsurprisedoze 2020-10-05
-Does not actually use the fonts that Tufte uses, instead defaulting to an obsolete version of Palatino and a free Helvetica replacement. Note that, as of February 2020, there is a version of ET Book available in CTAN, which I have successfully used by editing tufte-common.def.
-This class does not compile under modern versions of LuaTEX (after 0.85).
-The latex-mimosis class and caesar-book class are better alternatives for long documents.
- jamesjames 2018-09-23
+    Repository
+    Guest Book Sitemap Contact Contact Author Feedback
 
-Announcements
-2015-06-23 CTAN update: tufte-latex
-2009-12-11 CTAN update: tufte-latex
-2009-05-17 CTAN update: Tufte-LaTeX
-more
-Suggestions
-Maybe you are interested in the following packages as well.
-bookest: Extended book class
-basque-book: Class for book-type documents written in Basque
-qyxf-book: Book Template for Qian Yuan Xue Fu
-bgteubner: Class for producing books for the publisher “Teubner Verlag”
-more
-Rating Summary
-∅ 4 [3 votes]
-*****		2
-****		0
-***		0
-**		1
-*		0
-My Rating
-Only registered and authenticated members may vote. Please Login to vote.
-Package Links
-Repository
-Guest Book Sitemap Contact Contact Author Feedback
- 
+    
 
 2024-06-21 23:31 CEST
 /macros/latex/contrib/tufte-latex/README
