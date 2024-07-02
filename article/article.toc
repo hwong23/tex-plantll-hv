@@ -1,0 +1,23 @@
+\babel@toc {american}{}\relax 
+\contentsline {section}{\nonumberline Heading 1}{2}{section*.5}%
+\contentsline {subsection}{\nonumberline Heading 2}{2}{subsection*.7}%
+\contentsline {subsubsection}{\nonumberline Heading 3}{2}{subsubsection*.9}%
+\contentsline {paragraph}{\nonumberline Heading 4}{2}{paragraph*.11}%
+\contentsline {subsection}{\nonumberline Bold}{3}{subsection*.13}%
+\contentsline {subsection}{\nonumberline Italic}{3}{subsection*.15}%
+\contentsline {subsection}{\nonumberline Bold and italic}{3}{subsection*.17}%
+\contentsline {subsection}{\nonumberline Struck through}{3}{subsection*.19}%
+\contentsline {subsection}{\nonumberline Numbered lists}{3}{subsection*.21}%
+\contentsline {subsection}{\nonumberline Unnumbered lists}{4}{subsection*.23}%
+\contentsline {subsection}{\nonumberline Mixed lists}{4}{subsection*.25}%
+\contentsline {subsection}{\nonumberline Figures and captions}{5}{subsection*.27}%
+\contentsline {subsection}{\nonumberline Code}{5}{subsection*.29}%
+\contentsline {subsection}{\nonumberline URLs and email addresses}{6}{subsection*.31}%
+\contentsline {subsection}{\nonumberline Tables}{6}{subsection*.33}%
+\contentsline {subsection}{\nonumberline Footnotes}{6}{subsection*.35}%
+\contentsline {subsection}{\nonumberline Quotes}{7}{subsection*.37}%
+\babel@toc {ngerman}{}\relax 
+\babel@toc {american}{}\relax 
+\contentsline {subsection}{\nonumberline Scientific citations}{7}{subsection*.39}%
+\contentsline {section}{\nonumberline Bibliography}{7}{section*.41}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
