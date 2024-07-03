@@ -1,3 +1,4 @@
+pptfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvppt.md
 
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
@@ -32,8 +33,9 @@ presentation-pdf:
 	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
 
 presentation-pptx:
-	(pandoc $$HOME/Downloads/tmpr/hvmd/02n.a1.hvppt.md \
-	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pptx.yaml)
+	(pandoc $(pptfile) \
+	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pptx.yaml\
+	&& open presentation.pptx)
 
 presentation-tex:
 	(cd presentation && \
@@ -60,3 +62,9 @@ thesis-tex:
 
 thesis:
 	make thesis-docx thesis-epub thesis-pdf thesis-tex
+
+clean:
+	rm *.aux *.log *.gz *.out
+
+printpdf: $(wildcard *.pdf)
+	ls -a $?
