@@ -1,4 +1,4 @@
-input-files: [presentation.md]
+# input-files: [presentation.md]
 log-file: presentation.log
 output-file: presentation.pptx
 slide-level: 2

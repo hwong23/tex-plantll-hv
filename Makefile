@@ -17,7 +17,7 @@ article-pdf:
 	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
 
 article-tex:
-	pandoc $$HOME/Downloads/tmpr/hvmd/*.md --defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/tex.yaml
+	(pandoc $$HOME/Downloads/tmpr/hvmd/02n.a1.hvdoc.md --defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/tex.yaml)
 
 article:
 	make article-docx article-pdf article-tex
@@ -31,8 +31,8 @@ presentation-pdf:
 	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
 
 presentation-pptx:
-	(cd presentation && \
-	pandoc --defaults=./../defaults.yaml --defaults=pptx.yaml)
+	(pandoc $$HOME/Downloads/tmpr/hvmd/02n.a1.hvppt.md --defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pptx.yaml)
+
 
 presentation-tex:
 	(cd presentation && \
