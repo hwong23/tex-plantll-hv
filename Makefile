@@ -1,4 +1,7 @@
-pptfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvppt.md
+mdtexfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvtex.md
+mddocfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvdoc.md
+mdpptfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvppt.md
+
 
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
