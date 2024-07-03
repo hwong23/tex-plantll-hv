@@ -34,8 +34,8 @@ presentation-pdf:
 
 presentation-pptx:
 	(pandoc $(pptfile) \
-	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pptx.yaml\
-	&& open presentation.pptx)
+	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pptx.yaml)
+	# pptx presentation.pptx creado
 
 presentation-tex:
 	(cd presentation && \
