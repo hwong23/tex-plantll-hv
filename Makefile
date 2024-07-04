@@ -67,7 +67,8 @@ thesis:
 	make thesis-docx thesis-epub thesis-pdf thesis-tex
 
 clean:
-	rm *.aux *.log *.gz *.out
+	rm -f output/*.aux output/*.log output/*.gz output/*.out
+	rm -f *.aux *.log *.gz *.out
 
 printpdf: $(wildcard *.pdf)
 	ls -a $?

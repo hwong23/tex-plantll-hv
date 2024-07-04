@@ -1,5 +1,5 @@
 #input-files: [./contd/1.0.contenido.md, ./contd/1a.resumen.md]
 template: articletemplate.tex
-log-file: article.log
+log-file: output/article.log
 output-file: output/article.tex
 to: latex
