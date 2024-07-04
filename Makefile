@@ -1,6 +1,6 @@
-mdtexfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvtex.md
-mddocfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvdoc.md
-mdpptfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvppt.md
+# mdtexfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvtex.md
+# mddocfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvdoc.md
+# mdpptfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvppt.md
 
 
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
@@ -12,35 +12,35 @@ help:
 all:
 	make article presentation thesis
 
-article-docx:
+docx:
 	(cd article && \
 	pandoc --defaults=./../defaults.yaml --defaults=docx.yaml)
 
-article-pdf:
+pdf:
 	(cd article && \
 	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
 
-article-tex:
-	(pandoc $$HOME/Downloads/tmpr/hvmd/02n.a1.hvdoc.md \
+tex:
+	(pandoc $(mdtexfile) \
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/tex.yaml)
 
 article:
 	make article-docx article-pdf article-tex
 
-presentation-html:
+ppt-html:
 	(cd presentation && \
 	pandoc --defaults=./../defaults.yaml --defaults=html.yaml)
 
-presentation-pdf:
+ppt-pdf:
 	(cd presentation && \
 	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
 
-presentation-pptx:
+ppt-pptx:
 	(pandoc $(pptfile) \
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pptx.yaml)
 	# pptx presentation.pptx creado
 
-presentation-tex:
+ppt-tex:
 	(cd presentation && \
 	pandoc --defaults=./../defaults.yaml --defaults=tex.yaml)
 
