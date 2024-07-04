@@ -1,5 +1,5 @@
 # input-files: [presentation.md]
-log-file: presentation.log
+log-file: output/presentation.log
 output-file: output/presentation.pptx
 slide-level: 2
 to: pptx

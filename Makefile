@@ -13,8 +13,8 @@ all:
 	make article presentation thesis
 
 docx:
-	(cd article && \
-	pandoc --defaults=./../defaults.yaml --defaults=docx.yaml)
+	(pandoc $(mdtexfile) \
+	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/docx.yaml)
 
 pdf:
 	(cd article && \
@@ -36,7 +36,7 @@ ppt-pdf:
 	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
 
 ppt-pptx:
-	(pandoc $(pptfile) \
+	(pandoc $(mdtexfile) \
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pptx.yaml)
 	# pptx presentation.pptx creado
 
