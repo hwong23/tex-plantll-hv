@@ -17,8 +17,8 @@ docx:
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/docx.yaml)
 
 pdf:
-	(cd article && \
-	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
+	(pandoc $(mdtexfile) \
+	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pdf.yaml)
 
 tex:
 	(pandoc $(mdtexfile) \
