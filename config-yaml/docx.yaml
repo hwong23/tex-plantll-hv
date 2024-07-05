@@ -1,4 +1,4 @@
 # input-files: [article.md]
-log-file: output/article.log
-output-file: output/article.docx
+log-file: output/docxarticle.log
+output-file: output/docxarticle.docx
 to: docx

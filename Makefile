@@ -1,7 +1,4 @@
-# mdtexfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvtex.md
-# mddocfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvdoc.md
-# mdpptfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvppt.md
-
+# mdfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvtex.md
 
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
@@ -13,15 +10,15 @@ all:
 	make article presentation thesis
 
 docx:
-	(pandoc $(mdtexfile) \
+	(pandoc $(mdfile) \
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/docx.yaml)
 
 pdf:
-	(pandoc $(mdtexfile) \
+	(pandoc $(mdfile) \
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pdf.yaml)
 
 tex:
-	(pandoc $(mdtexfile) \
+	(pandoc $(mdfile) \
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/tex.yaml)
 
 article:
@@ -36,7 +33,7 @@ ppt-pdf:
 	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
 
 ppt-pptx:
-	(pandoc $(mdtexfile) \
+	(pandoc $(mdfile) \
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pptx.yaml)
 	# pptx presentation.pptx creado
 
@@ -69,6 +66,7 @@ thesis:
 clean:
 	rm -f output/*.aux output/*.log output/*.gz output/*.out
 	rm -f *.aux *.log *.gz *.out
+	rm -f output/*.docx output/*.pdf output/*.tex output/*.pptx output/*.html
 
 printpdf: $(wildcard *.pdf)
 	ls -a $?
