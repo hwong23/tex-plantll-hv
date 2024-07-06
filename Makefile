@@ -63,9 +63,11 @@ thesis-tex:
 thesis:
 	make thesis-docx thesis-epub thesis-pdf thesis-tex
 
-clean:
+clean: cleanout
 	rm -f output/*.aux output/*.log output/*.gz output/*.out
 	rm -f *.aux *.log *.gz *.out
+
+cleanout: 
 	rm -f output/*.docx output/*.pdf output/*.tex output/*.pptx output/*.html
 
 printpdf: $(wildcard *.pdf)
