@@ -3,11 +3,6 @@
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
 
-help:
-	head -2 Makefile
-
-all:
-	make article presentation thesis
 
 docx:
 	(pandoc $(mdfile) \
@@ -72,3 +67,9 @@ cleanout:
 
 printpdf: $(wildcard *.pdf)
 	ls -a $?
+
+help:
+	head -2 Makefile
+
+all:
+	make docx ppt-pptx
