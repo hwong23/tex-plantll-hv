@@ -5,7 +5,7 @@
 
 
 docx:
-	(pandoc $(mdfile) \
+	(pandoc $(mdfile) ./contd/docx/*.md \
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/docx.yaml)
 
 pdf:
