@@ -5,7 +5,7 @@
 
 
 docx:
-	(pandoc $(mdfile) ./contd/docx/*.md \
+	(pandoc $(mdfile) contd/docx/*.md \
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/docx.yaml)
 
 pdf:
@@ -28,9 +28,8 @@ ppt-pdf:
 	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
 
 ppt-pptx:
-	(pandoc $(mdfile) \
+	(pandoc $(mdfile) contd/docx/*.md \
 	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pptx.yaml)
-	# pptx presentation.pptx creado
 
 ppt-tex:
 	(cd presentation && \
