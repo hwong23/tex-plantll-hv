@@ -2,4 +2,4 @@
 template: contd/tex/articletemplate.tex
 log-file: output/texarticle.log
 output-file: output/texarticle.tex
-to: docx
+to: latex
