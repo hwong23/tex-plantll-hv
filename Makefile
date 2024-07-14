@@ -6,15 +6,18 @@
 
 docx:
 	(pandoc $(mdfile) contd/docx/*.md \
-	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/docx.yaml)
+	--defaults=./config-yaml/defaults.yaml \
+	--defaults=./config-yaml/docx.yaml)
 
 pdf:
 	(pandoc $(mdfile) \
-	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pdf.yaml)
+	--defaults=./config-yaml/defaults.yaml \
+	--defaults=./config-yaml/pdf.yaml)
 
 tex:
 	(pandoc $(mdfile) \
-	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/tex.yaml)
+	--defaults=./config-yaml/defaults.yaml \
+	--defaults=./config-yaml/tex.yaml)
 
 article:
 	make article-docx article-pdf article-tex
@@ -29,7 +32,8 @@ ppt-pdf:
 
 ppt-pptx:
 	(pandoc $(mdfile) contd/docx/*.md \
-	--defaults=./config-yaml/defaults.yaml --defaults=./config-yaml/pptx.yaml)
+	--defaults=./config-yaml/defaults.yaml \
+	--defaults=./config-yaml/pptx.yaml)
 
 ppt-tex:
 	(cd presentation && \
@@ -62,7 +66,8 @@ clean: cleanout
 	rm -f *.aux *.log *.gz *.out
 
 cleanout: 
-	rm -f output/*.docx output/*.pdf output/*.tex output/*.pptx output/*.html
+	rm -f output/*.docx output/*.pdf output/*.tex \
+	output/*.pptx output/*.html
 
 printpdf: $(wildcard *.pdf)
 	ls -a $?
