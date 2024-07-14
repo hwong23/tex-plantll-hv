@@ -10,12 +10,12 @@ docx:
 	--defaults=./config-yaml/docx.yaml)
 
 pdf:
-	(pandoc $(mdfile) \
+	(pandoc $(mdfile) contd/pdf/*.md \
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/pdf.yaml)
 
 tex:
-	(pandoc $(mdfile) \
+	(pandoc $(mdfile) contd/tex/*.md \
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/tex.yaml)
 
@@ -75,5 +75,5 @@ printpdf: $(wildcard *.pdf)
 help:
 	head -2 Makefile
 
-all:
-	make docx ppt-pptx
+all: clean
+	make docx ppt-pptx tex
