@@ -14,9 +14,10 @@
 
 % Correccion error: Argument of \MakeTextLowercase has an extra }
 % Set up the spacing using fontspec features
-\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
-\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
-
+\ifxetex
+  \renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+  \renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+\fi
 
 \title{$titulo$\thanks{Versión HV corta profesional}}
 \author[$tituloprofesional$]{$tituloprofesional$}
