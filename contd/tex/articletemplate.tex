@@ -12,6 +12,12 @@
 % Correccion error: tightlist undefined sequence
 \def\tightlist{}
 
+% Correccion error: Argument of \MakeTextLowercase has an extra }
+% Set up the spacing using fontspec features
+\renewcommand\allcapsspacing[1]{{\addfontfeature{LetterSpace=15}#1}}
+\renewcommand\smallcapsspacing[1]{{\addfontfeature{LetterSpace=10}#1}}
+
+
 \title{$titulo$\thanks{Versión HV corta profesional}}
 \author[$tituloprofesional$]{$tituloprofesional$}
 \date{24 Enero 2009}  % if the \date{} command is left out, the current date will be used
