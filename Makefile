@@ -10,7 +10,7 @@ docx:
 	--defaults=./config-yaml/docx.yaml)
 
 pdf:
-	(pandoc $(mdfile) contd/pdf/*.md \
+	(pandoc $(mdfile) contd/docx/*.md \
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/pdf.yaml)
 
