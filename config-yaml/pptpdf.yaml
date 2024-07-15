@@ -2,6 +2,6 @@
 log-file: presentation.log
 output-file: output/presentation.pdf
 slide-level: 2
-pdf-engine: pdflatex # tectonic wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context, tectonic
+pdf-engine: xelatex # tectonic wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context
 to: beamer
 shift-heading-level-by: 0
