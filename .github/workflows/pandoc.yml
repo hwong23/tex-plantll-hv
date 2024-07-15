@@ -33,8 +33,10 @@ jobs:
       - name: Upload pdf/artifact
         uses: actions/upload-artifact@v4
         with:
-          name: texarticle.pdf
-          path: output/texarticle.pdf
+          name: output artifacts
+          path: |
+            output/texarticle.pdf
+            output/pdfarticle.pdf
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
           message: 'GitHub action artefacts added'
