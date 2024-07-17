@@ -1,4 +1,4 @@
-name: MakePandoc
+name: propuestaMkPandoc
 
 on: workflow_dispatch
 
