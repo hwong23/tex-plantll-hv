@@ -4,34 +4,20 @@
 .DEFAULT_GOAL := help
 
 
-## Pandoc options to use
-OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
-
-
 docx:
 	(pandoc $(mdfile) contd/docx/*.md \
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/docx.yaml)
-
 
 pdf:
 	(pandoc $(mdfile) contd/docx/*.md \
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/pdf.yaml)
 
-
 tex:
 	(pandoc $(mdfile) contd/tex/*.md \
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/tex.yaml)
-
-
-html:
-	# --csl=$(PREFIX)/csl/$(CSL).csl --bibliography=$(BIB) -o $@ $<
-	pandoc -r $(OPTIONS) -w html  \
-	--template=templates/$(plantilla) \
-	--css=marked/$(estilo)
-	
 
 article:
 	make article-docx article-pdf article-tex
