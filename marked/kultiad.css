@@ -1,0 +1,70 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #eee;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body *+* {
+  margin-top: 1.5em;
+}
+
+header {
+  padding: 1em 1.5em;
+  color: #fff;
+  background-color: #0072b0;
+  border-radius: .5em;
+  margin-bottom: 1.5em;
+}
+
+main {
+  padding: 0 1.5em;
+  background-color: #fff;
+  border-radius: .5em;
+}
+
+/* 
+(...) placing your content inside two nested containers and then set margins on the inner container to position it within the outer one (figure 4.5). Web developer Brad Westfall calls this the double container pattern.
+
+<body> serves as the outer container. By default, this is already 100% of the page width, so you won’t have to apply any new styles to it. Inside that, you’ve wrapped the entire contents of the page in a <div class="container">, which serves as the inner container. To that you’ll apply a max-width and auto margins to center the contents. Add this listing to your stylesheet */
+
+.container {
+  max-width: 1080px;
+  /* Sets a maximum width of 1,080 px */
+  margin: 0 auto;
+  /* Auto left and right margins will grow to fill the available space, centering the element within the outer container */
+}
+
+.media {
+  float: left;
+  margin: 0 1.5em 1.5em 0;  /* Adds a right and bottom margin to each media element */
+  width: calc(50% - 1.5em); /* Subtracts the margin from the width to avoid unwanted line wrapping */
+  padding: 1.5em;
+  background-color: #eee;
+  border-radius: 0.5em;
+}
+
+/* Arreglar dos columnas por fila. The third float needs to clear the floats above it. Or, more generally, the first element of each row needs to clear the float above it. Because you know you have two boxes per row, you’ll need the odd numbered elements to each clear the row above. You can target these with the :nth-child() pseudo-class selector. Add this ruleset to your stylesheet. */
+.media:nth-child(odd) {
+  clear: left; /* Each new row clears the row above */
+}
+
+.clearfix::before, 
+.clearfix::after {
+  display: table; /* Causes both ::before and ::after pseudo elements to appear */
+  content: " ";   /* Prevents margins from collapsing through the pseudo elements */
+}
+
+.clearfix::after {
+  clear: both; /* Only the ::after pseudo element needs to clear floats */
+}
+
+
