@@ -12,19 +12,19 @@ OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 
 docx:
-	(pandoc -r $(OPTIONS) contd/html/*.md \
+	(pandoc -r $(OPTIONS) contd/docx/*.md \
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/docx.yaml)
 
 
 pdf:
-	(pandoc -r $(OPTIONS) contd/html/*.md \
+	(pandoc -r $(OPTIONS) contd/pdf/*.md \
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/pdf.yaml)
 
 
 tex:
-	(pandoc -r $(OPTIONS) contd/html/*.md \
+	(pandoc -r $(OPTIONS) contd/tex/*.md \
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/tex.yaml)
 
