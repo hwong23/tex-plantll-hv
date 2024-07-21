@@ -96,4 +96,4 @@ help:
 	head -2 Makefile
 
 all: clean
-	make docx ppt-pptx pdf tex
+	make docx ppt-pptx pdf tex html
