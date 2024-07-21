@@ -1,5 +1,6 @@
 # input-files: [presentation.md]
 log-file: output/htmlpage.log
 output-file: output/htmlarticle.html
+template: templates/html-github.template
 to: html
 

@@ -26,6 +26,7 @@ $endif$
 $for(css)$
   <link id="hwo" rel="stylesheet" href="../$css$">
 $endfor$
+  <link id="hwo" rel="stylesheet" href="marked/github.css">
 $if(math)$
   $math$
 $endif$

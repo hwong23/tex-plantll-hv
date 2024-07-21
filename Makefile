@@ -30,12 +30,9 @@ tex:
 
 
 html:
-	# --csl=$(PREFIX)/csl/$(CSL).csl --bibliography=$(BIB) -o $@ $<
-	pandoc -r $(OPTIONS) contd/html/*.md \
-	--template=templates/$(plantilla) \
-	--css=marked/$(estilo) \
+	(pandoc -r $(OPTIONS) contd/html/*.md \
 	--defaults=./config-yaml/defaults.yaml \
-	--defaults=./config-yaml/html.yaml
+	--defaults=./config-yaml/html.yaml)
 	
 
 article:
