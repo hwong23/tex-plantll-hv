@@ -1,4 +1,7 @@
 # mdfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvtex.md
+# plantilla := github.template
+# estilo := github.css
+
 
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
