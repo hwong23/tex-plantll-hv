@@ -11,6 +11,6 @@
 		"github-actions.workflows.pinned.workflows": [
 			".github/workflows/pandoc.yml"
 		],
-		"liveServer.settings.multiRootWorkspaceName": "pandoc-templates"
+		"liveServer.settings.multiRootWorkspaceName": "tex-plantll-hv"
 	}
 }
