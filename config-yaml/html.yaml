@@ -1,0 +1,5 @@
+# input-files: [presentation.md]
+log-file: output/htmlpage.log
+output-file: output/htmlarticle.html
+to: html
+

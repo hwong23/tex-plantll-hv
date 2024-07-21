@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="generator" content="pandoc">
+  <meta name="template" content="github">
 $for(author-meta)$
   <meta name="author" content="$author-meta$">
 $endfor$
@@ -23,7 +24,7 @@ $highlighting-css$
   </style>
 $endif$
 $for(css)$
-  <link rel="stylesheet" href="$css$">
+  <link id="hwo" rel="stylesheet" href="../../$css$">
 $endfor$
 $if(math)$
   $math$

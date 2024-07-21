@@ -31,9 +31,11 @@ tex:
 
 html:
 	# --csl=$(PREFIX)/csl/$(CSL).csl --bibliography=$(BIB) -o $@ $<
-	pandoc -r $(OPTIONS) -w html  \
+	pandoc -r $(OPTIONS) -w html contd/html/*.md \
 	--template=templates/$(plantilla) \
-	--css=marked/$(estilo)
+	--css=marked/$(estilo) \
+	--defaults=./config-yaml/defaults.yaml \
+	--defaults=./config-yaml/html.yaml
 	
 
 article:
