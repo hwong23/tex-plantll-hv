@@ -1,8 +1,8 @@
-# Propuesta (git:main)
+# Contenidos (git:main)
 (...)
 
 ## Plantillas
-* plantilla rmd-myriad-minion-reference.docx
+* plantilla docx
 * plantilla html?
 * plantilla tex?
 * plantilla ...
