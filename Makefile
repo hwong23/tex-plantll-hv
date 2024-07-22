@@ -61,7 +61,7 @@ presentacion:
 
 
 
-clean: cleanout
+clean: cleanout cleancontd
 	rm -f output/*.aux output/*.log output/*.gz output/*.out
 	rm -f contd/tex/*.aux contd/tex/*.log contd/tex/*.gz contd/tex/*.out
 	rm -f *.aux *.log *.gz *.out
@@ -70,6 +70,13 @@ cleanout:
 	rm -f output/*.docx output/*.pdf output/*.tex \
 	output/*.pptx output/*.html
 
+cleancontd: 
+	rm -f contd/docx/*.md contd/docx/*.png
+	rm -f contd/html/*.md contd/html/*.png
+	rm -f contd/pdf/*.md contd/pdf/*.png
+	rm -f contd/ppt/*.md contd/ppt/*.png
+	rm -f contd/tex/*.md contd/tex/*.png
+	
 printpdf: $(wildcard *.pdf)
 	ls -a $?
 
