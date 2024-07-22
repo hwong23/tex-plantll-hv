@@ -12,32 +12,32 @@ CONFIG = config
 OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 
-docx:
+propuesta-docx:
 	(pandoc -r $(OPTIONS) contd/docx/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/docx.yaml)
 
 
-pdf:
+propuesta-pdf:
 	(pandoc -r $(OPTIONS) contd/pdf/*.md \
-	--defaults=./config-yaml/defaults.yaml \
-	--defaults=./config-yaml/pdf.yaml)
+	--defaults=./$(CONFIG)/defaults.yaml \
+	--defaults=./$(CONFIG)/pdf.yaml)
 
 
-tex:
+propuesta-tex:
 	(pandoc -r $(OPTIONS) contd/tex/*.md \
-	--defaults=./config-yaml/defaults.yaml \
-	--defaults=./config-yaml/tex.yaml)
+	--defaults=./$(CONFIG)/defaults.yaml \
+	--defaults=./$(CONFIG)/tex.yaml)
 
 
-html:
+propuesta-html:
 	(pandoc -r $(OPTIONS) contd/html/*.md \
-	--defaults=./config-yaml/defaults.yaml \
-	--defaults=./config-yaml/html.yaml)
+	--defaults=./$(CONFIG)/defaults.yaml \
+	--defaults=./$(CONFIG)/html.yaml)
 	
 
-article:
-	make article-docx article-pdf article-tex
+propuesta:
+	make propuesta-docx propuesta-pdf propuesta-tex
 
 ppt-html:
 	(cd presentation && \
@@ -56,27 +56,10 @@ ppt-tex:
 	(cd presentation && \
 	pandoc --defaults=./../defaults.yaml --defaults=tex.yaml)
 
-presentation:
+presentacion:
 	make presentation-html presentation-pdf presentation-pptx presentation-tex
 
-thesis-docx:
-	(cd thesis && \
-	pandoc --defaults=./../defaults.yaml --defaults=docx.yaml)
 
-thesis-epub:
-	(cd thesis && \
-	pandoc --defaults=./../defaults.yaml --defaults=epub.yaml)
-
-thesis-pdf:
-	(cd thesis && \
-	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
-
-thesis-tex:
-	(cd thesis && \
-	pandoc --defaults=./../defaults.yaml --defaults=tex.yaml)
-
-thesis:
-	make thesis-docx thesis-epub thesis-pdf thesis-tex
 
 clean: cleanout
 	rm -f output/*.aux output/*.log output/*.gz output/*.out
