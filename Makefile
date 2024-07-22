@@ -2,6 +2,7 @@
 # plantilla := github.template
 # estilo := github.css
 
+CONFIG = config
 
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
@@ -13,8 +14,8 @@ OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 docx:
 	(pandoc -r $(OPTIONS) contd/docx/*.md \
-	--defaults=./config-yaml/defaults.yaml \
-	--defaults=./config-yaml/docx.yaml)
+	--defaults=./$(CONFIG)/defaults.yaml \
+	--defaults=./$(CONFIG)/docx.yaml)
 
 
 pdf:

@@ -1,5 +1,11 @@
-# Contenidos (git:main)
-...
+# Propuesta (git:main)
+(...)
+
+## Plantillas
+* plantilla rmd-myriad-minion-reference.docx
+* plantilla html?
+* plantilla tex?
+* plantilla ...
 
 ## Referencias
 Github, https://github.com/maehr/academic-pandoc-template

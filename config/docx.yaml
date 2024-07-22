@@ -1,0 +1,6 @@
+# input-files: [article.md]
+# input-file: ./contd/doc/*.md
+reference-doc: templates/rmd-myriad-minion-reference.docx
+log-file: output/docpropuesta.log
+output-file: output/docpropuesta.docx
+to: docx

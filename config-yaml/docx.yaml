@@ -1,5 +1,0 @@
-# input-files: [article.md]
-# input-file: ./contd/doc/*.md
-log-file: output/docxarticle.log
-output-file: output/docxarticle.docx
-to: docx
