@@ -1,7 +1,7 @@
 #input-files: [./contd/1.0.contenido.md, ./contd/1a.resumen.md]
-template: templates/hvtemplate.tex
-log-file: output/texarticle.log
-output-file: output/texarticle.tex
+template: templates/propuestatemplate.tex
+log-file: output/texpropuesta.log
+output-file: output/texpropuesta.tex
 pdf-engine: tectonic # wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context, tectonic
 to: latex
 toc-depth: 2
