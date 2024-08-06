@@ -8,8 +8,8 @@ CONFIG = config
 .DEFAULT_GOAL := help
 
 
-## Pandoc options to use
-OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
+# Pandoc options to use
+# OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 
 propuesta:
@@ -21,7 +21,7 @@ presentacion:
 
 
 propuesta-docx:
-	(pandoc $(OPTIONS) ./contd/docx/*.md \
+	(pandoc -r $(OPTIONS) ./contd/docx/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/docx.yaml)
 
