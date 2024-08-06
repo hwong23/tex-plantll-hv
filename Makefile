@@ -12,6 +12,14 @@ CONFIG = config
 OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 
+propuesta:
+	make propuesta-docx propuesta-pdf propuesta-tex
+
+presentacion:
+	make presentation-html presentation-pdf presentation-pptx presentation-tex
+
+
+
 propuesta-docx:
 	(pandoc -r $(OPTIONS) contd/docx/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
@@ -36,9 +44,6 @@ propuesta-html:
 	--defaults=./$(CONFIG)/html.yaml)
 	
 
-propuesta:
-	make propuesta-docx propuesta-pdf propuesta-tex
-
 ppt-html:
 	(cd presentation && \
 	pandoc --defaults=./../defaults.yaml --defaults=html.yaml)
@@ -55,10 +60,6 @@ ppt-pptx:
 ppt-tex:
 	(cd presentation && \
 	pandoc --defaults=./../defaults.yaml --defaults=tex.yaml)
-
-presentacion:
-	make presentation-html presentation-pdf presentation-pptx presentation-tex
-
 
 
 clean: cleanout cleancontd
@@ -84,4 +85,4 @@ help:
 	head -2 Makefile
 
 all: clean
-	make docx ppt-pptx pdf tex html
+	make propuesta
