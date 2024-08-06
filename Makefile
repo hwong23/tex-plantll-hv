@@ -21,7 +21,7 @@ presentacion:
 
 
 propuesta-docx:
-	(pandoc -r $(OPTIONS) ./contd/docx/*.md \
+	(pandoc $(OPTIONS) ./contd/docx/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/docx.yaml)
 
