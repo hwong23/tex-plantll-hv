@@ -30,7 +30,7 @@ jobs:
           ls output/
           make all
       - name: Run Tectonic
-        run: tectonic output/*.tex
+        run: tectonic output/texpropuesta.tex
       - name: Upload pdf/artifact
         uses: actions/upload-artifact@v4
         with:
