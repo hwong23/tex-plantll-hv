@@ -9,11 +9,12 @@ CONFIG = config
 
 
 # Pandoc options to use
-# OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
+OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 
 propuesta:
-	make propuesta-docx propuesta-pdf propuesta-tex
+	# propuesta-pdf 
+	make propuesta-docx propuesta-tex
 
 presentacion:
 	make presentation-html presentation-pdf presentation-pptx presentation-tex
@@ -85,4 +86,4 @@ help:
 	head -2 Makefile
 
 all: 
-	make propuesta-docx
+	make propuesta
