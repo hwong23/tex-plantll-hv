@@ -27,7 +27,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: |
           export APPIMAGE_EXTRACT_AND_RUN=1
-          ls contd/docx/
+          ls contd/tex/
       - name: Run Tectonic
         run: tectonic output/texarticle.tex
       - name: Upload pdf/artifact
