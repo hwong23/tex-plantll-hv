@@ -85,4 +85,4 @@ help:
 	head -2 Makefile
 
 all: 
-	make propuesta
+	make propuesta-docx
