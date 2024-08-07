@@ -27,6 +27,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
       - run: |
           export APPIMAGE_EXTRACT_AND_RUN=1
+          ls output/
           make all
       - name: Run Tectonic
         run: tectonic output/*.tex
