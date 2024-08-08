@@ -231,7 +231,7 @@
   \setcounter{subsection}{0}
   \gdef\thesection{Appendix \@arabic\c@section}
 }
-\newmdenv[backgroundcolor=structure@color!15,hidealllines=true,leftmargin=3mm,rightmargin=3mm,innertopmargin=2mm,innerbottommargin=3mm,frametitle={\abstractfont\sffamily Abstract},frametitleaboveskip=3mm,frametitlebelowskip=0mm]{cup@abstract@box}
+\newmdenv[backgroundcolor=structure@color!15,hidealllines=true,leftmargin=3mm,rightmargin=3mm,innertopmargin=2mm,innerbottommargin=3mm,frametitle={\abstractfont\sffamily Resumen},frametitleaboveskip=3mm,frametitlebelowskip=0mm]{cup@abstract@box}
 \let\abstract@org\abstract
 \def\abstract{\cup@abstract@box\small}
 \def\endabstract{\endcup@abstract@box}
@@ -1458,7 +1458,7 @@
       {\emailfont\textbf{Author for correspondence:}\\##1,\\E-mail: ##2}%
     }%
   }
-  \renewmdenv[hidealllines=true,leftmargin=\z@,rightmargin=\z@,innerleftmargin=\z@,innerrightmargin=\z@,innertopmargin=\z@,innerbottommargin=\z@,frametitle={\abstractfont\sffamily Abstract},frametitleaboveskip=2mm,frametitlebelowskip=2mm]{cup@abstract@box}
+  \renewmdenv[hidealllines=true,leftmargin=\z@,rightmargin=\z@,innerleftmargin=\z@,innerrightmargin=\z@,innertopmargin=\z@,innerbottommargin=\z@,frametitle={\abstractfont\sffamily Resumen},frametitleaboveskip=2mm,frametitlebelowskip=2mm]{cup@abstract@box}
   \setcounter{secnumdepth}{3}
   \renewcommand*\cup@etal{et al.}
   \providecommand{\cup@reference@code}{%
@@ -1496,7 +1496,7 @@
       {\emailfont\textbf{Author for correspondence:}\\##1,\\E-mail: ##2}%
     }%
   }
-  \renewmdenv[hidealllines=true,leftmargin=\z@,rightmargin=\z@,innerleftmargin=\z@,innerrightmargin=\z@,innertopmargin=\z@,innerbottommargin=\z@,frametitle={\abstractfont\sffamily Abstract},frametitleaboveskip=2mm,frametitlebelowskip=2mm]{cup@abstract@box}
+  \renewmdenv[hidealllines=true,leftmargin=\z@,rightmargin=\z@,innerleftmargin=\z@,innerrightmargin=\z@,innertopmargin=\z@,innerbottommargin=\z@,frametitle={\abstractfont\sffamily Resumen},frametitleaboveskip=2mm,frametitlebelowskip=2mm]{cup@abstract@box}
   \setcounter{secnumdepth}{3}
   \renewcommand*\cup@etal{et al.}
   \providecommand{\cup@reference@code}{%
@@ -1624,7 +1624,7 @@
   \renewcommand{\thefootnote}{\alphalph{\value{footnote}}}
   \renewcommand\footnoterule{}
   \advance\skip\footins 4\p@\@plus2\p@\relax
-  \renewmdenv[rightline=false,leftline=false,linecolor=black,linewidth=1pt,leftmargin=\z@,rightmargin=\z@,innerleftmargin=\z@,innerrightmargin=\z@,innertopmargin=\z@,innerbottommargin=2mm,frametitle={\abstractfont\sffamily Abstract},frametitleaboveskip=2mm,frametitlebelowskip=2mm]{cup@abstract@box}
+  \renewmdenv[rightline=false,leftline=false,linecolor=black,linewidth=1pt,leftmargin=\z@,rightmargin=\z@,innerleftmargin=\z@,innerrightmargin=\z@,innertopmargin=\z@,innerbottommargin=2mm,frametitle={\abstractfont\sffamily Resumen},frametitleaboveskip=2mm,frametitlebelowskip=2mm]{cup@abstract@box}
   \def\endoldabstract{\par\vspace*{\cup@space@inter@extra}\cup@abstract@extras\endcup@abstract@box}
   \providecommand{\cup@reference@code}{%
      \RequirePackage{natbib}
