@@ -62,7 +62,7 @@ ppt-tex:
 	pandoc --defaults=./../defaults.yaml --defaults=tex.yaml)
 
 
-clean: cleanout cleancontd
+clean: cleanout
 	rm -f output/*.aux output/*.log output/*.gz output/*.out
 	rm -f contd/tex/*.aux contd/tex/*.log contd/tex/*.gz contd/tex/*.out
 	rm -f *.aux *.log *.gz *.out
