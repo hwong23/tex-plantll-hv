@@ -65,10 +65,11 @@ ppt-tex:
 clean: cleanout
 	rm -f output/*.aux output/*.log output/*.gz output/*.out
 	rm -f contd/tex/*.aux contd/tex/*.log contd/tex/*.gz contd/tex/*.out
+	rm -f templates/*.aux templates/*.log templates/*.gz templates/*.out
 	rm -f *.aux *.log *.gz *.out
 
 cleanout: 
-	rm -f output/*.docx output/*.pdf output/*.tex \
+	rm -f output/*.docx output/tex*.pdf output/*.tex \
 	output/*.pptx output/*.html
 
 cleancontd: 
