@@ -19,7 +19,6 @@ presentacion:
 	make presentation-html presentation-pdf presentation-pptx presentation-tex
 
 
-
 propuesta-docx:
 	(pandoc -r $(OPTIONS) contd/docx/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \

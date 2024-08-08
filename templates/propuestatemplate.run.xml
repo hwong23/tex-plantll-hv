@@ -82,5 +82,8 @@
     <requires type="dynamic">
       <file>propuestatemplate.bcf</file>
     </requires>
+    <requires type="editable">
+      <file>example.bib</file>
+    </requires>
   </external>
 </requests>
