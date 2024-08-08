@@ -23,6 +23,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-tectonic-
       - uses: wtfjoke/setup-tectonic@v3
+        name: run & setup-tectonic@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           biber-version: 2.17
