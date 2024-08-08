@@ -13,8 +13,7 @@ OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 
 propuesta:
-	# make propuesta-docx propuesta-tex propuesta-pdf 
-	make propuesta-html
+	make propuesta-docx propuesta-tex propuesta-pdf propuesta-html
 
 presentacion:
 	make presentation-html presentation-pdf presentation-pptx presentation-tex
