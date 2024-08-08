@@ -84,5 +84,5 @@ printpdf: $(wildcard *.pdf)
 help:
 	head -2 Makefile
 
-all: 
+all: clean
 	make propuesta
