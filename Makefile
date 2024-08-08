@@ -13,7 +13,8 @@ OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 
 propuesta:
-	make propuesta-docx propuesta-tex propuesta-pdf
+	# make propuesta-docx propuesta-tex propuesta-pdf 
+	make propuesta-html
 
 presentacion:
 	make presentation-html presentation-pdf presentation-pptx presentation-tex
@@ -41,7 +42,8 @@ propuesta-tex:
 propuesta-html:
 	(pandoc -r $(OPTIONS) contd/html/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
-	--defaults=./$(CONFIG)/html.yaml)
+	--defaults=./$(CONFIG)/html.yaml \
+	--toc)
 	
 
 ppt-html:
