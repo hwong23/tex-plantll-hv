@@ -1,11 +1,11 @@
-# Propuesta (git:main)
+# Propuesta (git:4-propuesta)
 (...)
 
 ## Plantillas
-* plantilla rmd-myriad-minion-reference.docx
-* plantilla html?
-* plantilla tex?
-* plantilla ...
+* plantilla docx: rmd-myriad-minion-reference.docx
+* plantilla html: html-github.template
+* plantilla tex: propuestatemplate.tex
+* plantilla ppt:
 
 ## Referencias
 Github, https://github.com/maehr/academic-pandoc-template

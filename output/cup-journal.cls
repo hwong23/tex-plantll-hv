@@ -1269,7 +1269,7 @@
           \par
         }%
         \vspace*{\cup@space@inter@extra}%
-        \textbf{www.cambridge.org}\par%
+        \textbf{$URL$}\par%
         \vspace*{3\cup@space@inter@extra}%
         {\large\bfseries\color{structure@color}\xmakefirstuc{\cup@manuscript}\par}%
         \vspace*{\cup@space@inter@extra}%
@@ -1290,7 +1290,7 @@
           \emailsize
           \emailfont
           \ifcup@email
-            \patchcmd{\cup@contact@details}{Corresponding author}{Author for correspondence}{}{}
+            \patchcmd{\cup@contact@details}{Corresponding author}{Envío de correspondencia}{}{}
             \expandafter\cup@contact@details
             \par
             \vspace*{\cup@space@post@email}%
@@ -1415,7 +1415,7 @@
   \cup@layout@medium
 }%
 \def\cup@jnl@large{%
-  \def\cup@journal@name{Cambridge Large One}
+  \def\cup@journal@name{Propuesta Cambridge}
   \cup@layout@large
   \patch@numeric@authors
 }
