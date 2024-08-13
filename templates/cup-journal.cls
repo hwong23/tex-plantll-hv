@@ -504,7 +504,7 @@
 }
 \newcommand*\cup@keywords@print{%
   \ifx\@keywords\@empty\else
-    {\noindent\bfseries Keywords: }
+    {\noindent\bfseries Palabras clave: }
     \@keywords
     \par
   \fi
