@@ -12,39 +12,95 @@
 % Correccion error: tightlist undefined sequence
 \def\tightlist{}
 
-\title{$titulo$}
+\title{Unidad de Solidaridad y Seguros de la Cooperativa}
 
-\author{$autor1$}
-\affiliation{$filial1$}
-\email[$autor1$]{first.author@address.edu}
+\author{Wong H.}
+\affiliation{Ing., Organization, City, Pincode, State, Country}
+\email[Wong H.]{first.author@address.edu}
 
-\author{$autor2$}
-\affiliation{$filial2$}
+\author{Joseph W.}
+\affiliation{Arq., Organization, City, Pincode, State, Country}
 % \alsoaffiliation{Joint first authors}
 
-\author{$autor3$}
-\affiliation{$filial3$}
+\author{}
+\affiliation{}
 
-\author{$autor4$}
-\affiliation{$filial4$}
+\author{}
+\affiliation{}
 
 \addbibresource{example.bib}
 
-\keywords{$palabrasclave$} %% First letter not capped
+\keywords{MiMutual, Gestión de usuarios, Gestión
+reclamaciones} %% First letter not capped
 
 \begin{document}
 
 \begin{abstract}
-$resumen$
+El sistema principal de fondo Mi Mutual Central es la composición de las
+funciones de negocio de la Unidad de Solidaridad de Coomeva. Las
+funciones de negocio referidas, como Gestión Beneficiarios,
+Certificados, Gestión Beneficiarios, aparecen dentro del componente
+principal en la imagen.
+
+Este entregable documenta los diferentes módulos y componentes que hacen
+parte de la estructura de una aplicación en Angular 12 y como es su
+interacción para conformar una arquitectura robusta y escalable para
+aplicaciones de gran tamaño.
+
+Las librerías Spring Boot Security y Spring Boot Oauth2 proveen
+características de seguridad entre Vista (Angular 2) y Controlador.
+Estas son responsables de que únicamente permita el acceso si se está
+autenticado. Además, para realizar el proceso de autenticación se delega
+a la aplicación SISPRO (Coomeva) que funciona como un servidor de
+autenticación.
 \end{abstract}
 
-\noindent $introduccion$
+\noindent Antes SIPAS, Mi Mutual es una aplicación web compuesta por
+distintos módulos de software con arreglo a todas las actividades
+necesarias que soportan la operación de los productos y servicios que
+ofrece la Unidad de Solidaridad y Seguros de la Cooperativa.
+
+El despliegue es el evento que permite el inicio de las QA funcionales.
 
 \section*{Impact Statement}
-$impacto$
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Gestión de productos del fondo mutual y auxilio funerario que
+  involucran a sus coberturas
+\item
+  Administración de la facturación y recaudo diario de los productos
+\item
+  Gestión de Reclamaciones (Indemnización): Permite realizar la gestión,
+  seguimiento y pago o negación de las diferentes reclamaciones de
+  acuerdo a las coberturas y los productos que se encuentren dentro del
+  portafolio del Asociado.
+\item
+  Gestión de Beneficiarios: Permite administrar la información
+  relacionada con los beneficiarios del Asociado, permitiendo ejecutar
+  operaciones de consulta, inserción y modificación.
+\item
+  Gestión de Usuarios: Administración de la información relacionada con
+  los usuarios del sistema. Este componente se comunica con el servicio
+  unificado de autenticación y autorización que devuelve los permisos
+  que un usuario posee sobre las opciones que proporciona el sistema.
+\item
+  Integración con otros sistemas para facilitar los procesos de
+  vinculación, retiro, reactivación o fallecimiento de asociados.
+\item
+  Configuración o parametrización de factores para realizar los cálculos
+  de las contribuciones de los asociados a la Cooperativa para cada uno
+  de los productos adquiridos.
+\end{enumerate}
 
 \section{Insert A head here}
-$cuerpo$
+Antes SIPAS, Mi Mutual es una aplicación web compuesta por distintos
+módulos de software con arreglo a todas las actividades necesarias que
+soportan la operación de los productos y servicios que ofrece la Unidad
+de Solidaridad y Seguros de la Cooperativa.
+
+El despliegue es el evento que permite el inicio de las QA funcionales.
 
 \CUPTWOCOL 
 %%% END OF FIRST PAGE IN LARGE-LAYOUT NEEDS TO BE MARKED. This commands does nothing in medium and small layouts. %%%
@@ -142,11 +198,55 @@ Three & Four&three three\tnote{b} &four\\
 
 
 \section{Conclusion}
-$conclusion$
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Disponibilidad. Se requiere que el sistema esté disponible 7 X 24, el
+  servicio prestado al cliente no se limita a horarios de oficina pues
+  las compras pueden darse en cualquier momento
+\item
+  Escalabilidad. Se requiere que el sistema pueda llegar a atender hasta
+  1.000 clientes, para esto se requiere que el sistema se pueda extender
+  horizontalmente de tal manera que pueda tener instalado en varios
+  servidores para atender esta cantidad de usuarios. Todas las
+  aplicaciones desarrolladas podrán ser escaladas horizontalmente para
+  atender la demanda relacionada con el crecimiento de la empresa.
+\item
+  Reutilización. Se requiere que el sistema permita reutilizar sus
+  componentes para prestar el mismo servicio a otras aplicaciones de la
+  compañía. Para esto se va a desarrollar la aplicación utilizando
+  servicios, separados y con asignación de responsabilidades, propias,
+  de tal manera de que, si se requiere exponer servicios web sobre estas
+  funcionalidades, no requiere cambios en la aplicación.
+\item
+  Autenticación. Autenticación es el proceso para determinar que alguien
+  o un sistema es quien dice ser. Uso de estándar Oauth2 y JSON Web
+  Token -- JWT, para gestión de autenticación de servicios de la
+  aplicación.
+\item
+  Autorización. Autorización se refiere a la validación que realiza un
+  sistema para determinar si un usuario puede usar cierta funcionalidad.
+  Uso de API de seguridad de Spring (spring-security) + Oauth2
+\item
+  Interoperabilidad -- Movilidad. Interoperabilidad se refiere a la
+  habilidad de un sistema de interactuar y comunicarse con sistemas
+  heterogéneos a través de interfaces completamente definidas. Uso de
+  estándar de web services REST + JSON.
+\item
+  Facilidad de Uso. Se refiere a la facilidad con que las personas
+  pueden utilizar el sistema porque facilitan la lectura de los textos,
+  descargan rápidamente la información y presentan funciones y menús
+  sencillos, por lo que el usuario encuentra satisfechas sus consultas y
+  cómodo su uso.
+\item
+  Verificación (QA). Es la capacidad del producto software que hace
+  posible que el software modificado sea probado.
+\end{enumerate}
 
 
 \begin{acknowledgement}
-$agradecimiento$
+Agradecimientos.
 \end{acknowledgement}
 
 \paragraph{Funding Statement}
@@ -172,6 +272,8 @@ A statement about how to access data, code and other materials allowing users to
 
 \section{Example Appendix Section}
 
-$apendice$
+Simuladores: Funcionalidades que permiten generar las simulaciones de
+los diferentes planes o modificaciones (incrementos y disminuciones) a
+los productos del Asociado.
 
 \end{document}
