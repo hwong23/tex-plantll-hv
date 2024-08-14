@@ -1,5 +1,5 @@
 #input-files: [./contd/1.0.contenido.md, ./contd/1a.resumen.md]
-template: contd/tex/texhvtemplate.tex
+template: templates/hvtemplate.tex
 log-file: output/texhv.log
 output-file: output/texhv.tex
 pdf-engine: tectonic # wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context, tectonic
