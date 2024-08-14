@@ -2,6 +2,7 @@
 
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
+cleanfiles := tex*.pdf
 
 
 docx:
@@ -64,11 +65,19 @@ thesis:
 clean: cleanout
 	rm -f output/*.aux output/*.log output/*.gz output/*.out
 	rm -f contd/tex/*.aux contd/tex/*.log contd/tex/*.gz contd/tex/*.out
+	rm -f templates/*.aux templates/*.log templates/*.gz templates/*.out
 	rm -f *.aux *.log *.gz *.out
 
 cleanout: 
-	rm -f output/*.docx output/*.pdf output/*.tex \
+	rm -f output/*.docx output/$(cleanfiles) output/*.tex \
 	output/*.pptx output/*.html
+
+cleancontd: 
+	rm -f contd/docx/*.md contd/docx/*.png
+	rm -f contd/html/*.md contd/html/*.png
+	rm -f contd/pdf/*.md contd/pdf/*.png
+	rm -f contd/ppt/*.md contd/ppt/*.png
+	rm -f contd/tex/*.md contd/tex/*.png
 
 printpdf: $(wildcard *.pdf)
 	ls -a $?
