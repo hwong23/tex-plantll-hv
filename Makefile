@@ -3,25 +3,26 @@
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
 cleanfiles := tex*.pdf
+configdir := config
 
 
-docx:
+hvdocx:
 	(pandoc $(mdfile) contd/docx/*.md \
-	--defaults=./config-yaml/defaults.yaml \
-	--defaults=./config-yaml/docx.yaml)
+	--defaults=$(configdir)/defaults.yaml \
+	--defaults=$(configdir)/docx.yaml)
 
-pdf:
+hvpdf:
 	(pandoc $(mdfile) contd/docx/*.md \
-	--defaults=./config-yaml/defaults.yaml \
-	--defaults=./config-yaml/pdf.yaml)
+	--defaults=$(configdir)/defaults.yaml \
+	--defaults=$(configdir)/pdf.yaml)
 
-tex:
+hvtex:
 	(pandoc $(mdfile) contd/tex/*.md \
-	--defaults=./config-yaml/defaults.yaml \
-	--defaults=./config-yaml/tex.yaml)
+	--defaults=$(configdir)/defaults.yaml \
+	--defaults=$(configdir)/tex.yaml)
 
-article:
-	make article-docx article-pdf article-tex
+hv:
+	make hvdocx hvpdf hvtex
 
 ppt-html:
 	(cd presentation && \
