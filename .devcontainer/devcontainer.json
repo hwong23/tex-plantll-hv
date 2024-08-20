@@ -19,7 +19,8 @@
 			"esbenp.prettier-vscode",
 			"alefragnani.Bookmarks",
 			"ritwickdey.LiveServer",
-			"mechatroner.rainbow-csv"
+			"mechatroner.rainbow-csv",
+			"ms-azuretools.vscode-docker"
 		]
 	  }
 	},
