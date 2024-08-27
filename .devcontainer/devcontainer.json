@@ -12,11 +12,35 @@
 	"customizations": {
 	  "vscode": {
 		"extensions": [
-		  "James-Yu.latex-workshop",
-		  "valentjn.vscode-ltex",
-		  "be5invis.toml",
-		  "yzhang.markdown-all-in-one"
+			"James-Yu.latex-workshop",
+			"valentjn.vscode-ltex",
+			"be5invis.toml",
+			"yzhang.markdown-all-in-one",
+			"esbenp.prettier-vscode",
+			"alefragnani.Bookmarks",
+			"ritwickdey.LiveServer",
+			"mechatroner.rainbow-csv",
+			"ms-azuretools.vscode-docker",
+			"ms-vscode.makefile-tools"
 		]
+	  },
+	  "codespaces": {
+		"repositories": {
+			"hwong23/devocs-contd": {
+				"permissions": {
+					"issues": "write",
+					"actions": "write",
+					"contents": "write"
+			    }
+			},
+			"hwong23/hwo-academicTempl": {
+				"permissions": {
+					"issues": "write",
+					"actions": "write",
+					"contents": "write"
+			    }
+			}
+		}
 	  }
 	},
 	"features": {
