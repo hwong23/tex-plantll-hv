@@ -23,6 +23,22 @@
 			"ms-azuretools.vscode-docker",
 			"ms-vscode.makefile-tools"
 		]
+	  },
+	  "codespaces": {
+		"repositories": {
+			"hwong23/devocs-contd": {
+				"permissions": {
+					"issues": "write",
+					"actions": "read / write"
+			    }
+			},
+			"hwong23/hwo-academicTempl": {
+				"permissions": {
+					"issues": "write",
+					"actions": "read / write"
+			    }
+			}
+		}
 	  }
 	},
 	"features": {
