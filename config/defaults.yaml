@@ -8,4 +8,4 @@ reference-location: block # block, section, or document
 resource-path: []
 standalone: true
 top-level-division: default # part, chapter, section, or default
-verbosity: INFO # ERROR, WARNING, or INFO
+verbosity: INFO # ERROR, WARNING, or INFO.
