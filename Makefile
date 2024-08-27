@@ -2,7 +2,8 @@
 # plantilla := github.template
 # estilo := github.css
 
-CONFIG = config
+CONFIG := config
+CONTD := /workspaces/devdocs-$(CONTD)
 
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
@@ -20,25 +21,25 @@ presentacion:
 
 
 propuesta-docx:
-	(pandoc -r $(OPTIONS) contd/docx/*.md \
+	(pandoc -r $(OPTIONS) $(CONTD)/docx/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/docx.yaml)
 
 
 propuesta-pdf:
-	(pandoc -r $(OPTIONS) contd/pdf/*.md \
+	(pandoc -r $(OPTIONS) $(CONTD)/pdf/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/pdf.yaml)
 
 
 propuesta-tex:
-	(pandoc -r $(OPTIONS) contd/tex/*.md \
+	(pandoc -r $(OPTIONS) $(CONTD)/tex/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/tex.yaml)
 
 
 propuesta-html:
-	(pandoc -r $(OPTIONS) contd/html/*.md \
+	(pandoc -r $(OPTIONS) $(CONTD)/html/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/html.yaml \
 	--toc)
@@ -53,7 +54,7 @@ ppt-pdf:
 	pandoc --defaults=./../defaults.yaml --defaults=pdf.yaml)
 
 ppt-pptx:
-	(pandoc $(mdfile) contd/docx/*.md \
+	(pandoc $(mdfile) $(CONTD)/docx/*.md \
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/pptx.yaml)
 
@@ -64,7 +65,7 @@ ppt-tex:
 
 clean: cleanout
 	rm -f output/*.aux output/*.log output/*.gz output/*.out
-	rm -f contd/tex/*.aux contd/tex/*.log contd/tex/*.gz contd/tex/*.out
+	rm -f $(CONTD)/tex/*.aux $(CONTD)/tex/*.log $(CONTD)/tex/*.gz $(CONTD)/tex/*.out
 	rm -f templates/*.aux templates/*.log templates/*.gz templates/*.out
 	rm -f *.aux *.log *.gz *.out
 
@@ -73,11 +74,11 @@ cleanout:
 	output/*.pptx output/*.html
 
 cleancontd: 
-	rm -f contd/docx/*.md contd/docx/*.png
-	rm -f contd/html/*.md contd/html/*.png
-	rm -f contd/pdf/*.md contd/pdf/*.png
-	rm -f contd/ppt/*.md contd/ppt/*.png
-	rm -f contd/tex/*.md contd/tex/*.png
+	rm -f $(CONTD)/docx/*.md $(CONTD)/docx/*.png
+	rm -f $(CONTD)/html/*.md $(CONTD)/html/*.png
+	rm -f $(CONTD)/pdf/*.md $(CONTD)/pdf/*.png
+	rm -f $(CONTD)/ppt/*.md $(CONTD)/ppt/*.png
+	rm -f $(CONTD)/tex/*.md $(CONTD)/tex/*.png
 	
 printpdf: $(wildcard *.pdf)
 	ls -a $?
