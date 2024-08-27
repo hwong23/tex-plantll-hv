@@ -3,7 +3,7 @@
 # estilo := github.css
 
 CONFIG := config
-CONTD := /workspaces/devdocs-contd
+CONTD := /workspaces/devdocs-contd/contd
 
 .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
