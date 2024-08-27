@@ -29,13 +29,15 @@
 			"hwong23/devocs-contd": {
 				"permissions": {
 					"issues": "write",
-					"actions": "write"
+					"actions": "write",
+					"contents": "write"
 			    }
 			},
 			"hwong23/hwo-academicTempl": {
 				"permissions": {
 					"issues": "write",
-					"actions": "write"
+					"actions": "write",
+					"contents": "write"
 			    }
 			}
 		}
