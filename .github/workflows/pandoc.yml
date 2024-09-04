@@ -26,7 +26,7 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           biber-version: 2.17
-      - name: Make all
+      - name: Make propuesta
         run: |
           export APPIMAGE_EXTRACT_AND_RUN=1
           make all
