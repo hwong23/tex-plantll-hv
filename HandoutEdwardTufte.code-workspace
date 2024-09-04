@@ -4,13 +4,15 @@
 			"path": "."
 		},
 		{
-			"path": "../jarchi-hwo/scr"
+			"name": "devocs-contd",
+			"path": "../../home/vscode/devocs-contd"
+		},
+		{
+			"name": "hwo-academicTempl",
+			"path": "../../home/vscode/hwo-academicTempl"
 		}
 	],
 	"settings": {
-		"github-actions.workflows.pinned.workflows": [
-			".github/workflows/pandoc.yml"
-		],
-		"liveServer.settings.multiRootWorkspaceName": "tex-plantll-hv"
+		"makefile.configureOnOpen": false
 	}
 }
