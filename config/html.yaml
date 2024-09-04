@@ -1,6 +1,6 @@
 # input-files: [presentation.md]
 log-file: output/htmlpage.log
 output-file: output/htmpropuessta.html
-template: /workspaces/hwo-academicTempl/templates/html-uikit.template  # html-uikit.template | html-uikit.template
+template: /home/vscode/hwo-academicTempl/templates/html-uikit.template  # html-uikit.template | html-uikit.template
 to: html
 
