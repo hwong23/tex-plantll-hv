@@ -6,6 +6,10 @@ jobs:
   tx_pandoc:
     runs-on: ubuntu-latest
     steps:
+      # - name: checkout devocscontd
+      - uses: actions/checkout@v4
+        with: 
+          repository: hwong23/devocs-contd
       - uses: actions/checkout@v4
       - name: Install pandoc and pandoc-crossref
         run: |
@@ -29,7 +33,7 @@ jobs:
       - name: Make propuesta
         run: |
           export APPIMAGE_EXTRACT_AND_RUN=1
-          make all
+          make propuesta
       - name: Run Tectonic
         run: tectonic output/*.tex
       - name: Upload pdf/artifact
