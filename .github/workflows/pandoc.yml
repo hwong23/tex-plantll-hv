@@ -12,6 +12,7 @@ jobs:
             repository: hwong23/devocs-contd
             ref: 4-propuesta
             path: devocs-contd
+      - name: mv devocscontd
         run: |
           ls $ {{github.WORKSPACE}}/devocs-contd
           mv {{github.WORKSPACE}}/devocs-contd ~/devocs-contd
