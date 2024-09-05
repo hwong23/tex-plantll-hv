@@ -14,7 +14,7 @@ jobs:
             path: devocs-contd
       - name: mv devocscontd
         run: |
-          ls $ {{github.WORKSPACE}}/devocs-contd
+          ls ${{github.WORKSPACE}}/devocs-contd
           mv {{github.WORKSPACE}}/devocs-contd ~/devocs-contd
       - uses: actions/checkout@v4
       - name: Install pandoc and pandoc-crossref
