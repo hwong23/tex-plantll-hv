@@ -10,7 +10,11 @@ jobs:
         name: checkout devocscontd
         with:
             repository: hwong23/devocs-contd
-            path: ~/devocs-contd
+            ref: 4-propuesta
+            path: devocs-contd
+        run: |
+          ls $ {{github.WORKSPACE}}/devocs-contd
+          mv {{github.WORKSPACE}}/devocs-contd ~/devocs-contd
       - uses: actions/checkout@v4
       - name: Install pandoc and pandoc-crossref
         run: |
