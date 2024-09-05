@@ -10,7 +10,7 @@ jobs:
         name: checkout devocscontd
         with:
             repository: hwong23/devocs-contd
-            ref: 4-propuesta
+            ref: ${{github.ref}}
             path: devocs-contd
       - name: mv devocscontd
         run: |
