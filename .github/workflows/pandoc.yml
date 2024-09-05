@@ -6,10 +6,11 @@ jobs:
   tx_pandoc:
     runs-on: ubuntu-latest
     steps:
-      # - name: checkout devocscontd
       - uses: actions/checkout@v4
-        with: 
-          repository: hwong23/devocs-contd
+        name: checkout devocscontd
+        with:
+            repository: hwong23/devocs-contd
+            path: devocs-contd
       - uses: actions/checkout@v4
       - name: Install pandoc and pandoc-crossref
         run: |
