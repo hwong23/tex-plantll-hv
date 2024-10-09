@@ -1,6 +1,6 @@
 # input-files: [article.md]
 # input-file: ./contd/doc/*.md
 reference-doc: /home/vscode/hwo-academicTempl/templates/rmd-myriad-minion-reference.docx
-log-file: output/docpropuesta.log
-output-file: output/docpropuesta.docx
+log-file: output/docdoctec.log
+output-file: output/docdoctec.docx
 to: docx

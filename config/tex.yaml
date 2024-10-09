@@ -1,7 +1,7 @@
 #input-files: [./contd/1.0.contenido.md, ./contd/1a.resumen.md]
-template: /home/vscode/hwo-academicTempl/templates/propuestatemplate.tex
-log-file: output/texpropuesta.log
-output-file: output/texpropuesta.tex
+template: /home/vscode/hwo-academicTempl/templates/doctectemplate.tex
+log-file: output/texdoctec.log
+output-file: output/texdoctec.tex
 pdf-engine: tectonic # wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context, tectonic
 to: latex
 toc-depth: 2

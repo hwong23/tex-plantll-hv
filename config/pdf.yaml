@@ -1,6 +1,6 @@
-# input-files: [article.md]
-log-file: output/pdfarticle.log
-output-file: output/pdfarticle.pdf
+# input-files: [doctec.md]
+log-file: output/pdfdoctec.log
+output-file: output/pdfdoctec.pdf
 pdf-engine: tectonic #tectonic wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context
 to: pdf
 toc-depth: 2
