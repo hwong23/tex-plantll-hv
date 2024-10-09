@@ -28,11 +28,13 @@ doctec-docx:
 
 doctec-pdf:
 	(pandoc -r $(OPTIONS) $(CONTD)/pdf/*.md \
+	--resource-path=$(CONTD)/pdf \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/pdf.yaml)
 
 doctec-tex:
 	(pandoc -r $(OPTIONS) $(CONTD)/tex/*.md \
+	--resource-path=$(CONTD)/tex \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/tex.yaml)
 
