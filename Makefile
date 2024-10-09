@@ -14,32 +14,29 @@ CONTD := /home/vscode/devocs-contd/contd
 OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 
-propuesta:
-	make propuesta-docx propuesta-tex propuesta-pdf propuesta-html
+doctec:
+	make doctec-docx doctec-tex doctec-pdf doctec-html
 
 presentacion:
 	make presentation-html presentation-pdf presentation-pptx presentation-tex
 
-
-propuesta-docx:
+doctec-docx:
 	(pandoc -r $(OPTIONS) $(CONTD)/docx/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/docx.yaml)
 
-
-propuesta-pdf:
+doctec-pdf:
 	(pandoc -r $(OPTIONS) $(CONTD)/pdf/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/pdf.yaml)
 
-
-propuesta-tex:
+doctec-tex:
 	(pandoc -r $(OPTIONS) $(CONTD)/tex/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/tex.yaml)
 
 
-propuesta-html:
+doctec-html:
 	(pandoc -r $(OPTIONS) $(CONTD)/html/*.md \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/html.yaml \
@@ -88,4 +85,4 @@ help:
 	head -2 Makefile
 
 all: clean
-	make propuesta
+	make doctec
