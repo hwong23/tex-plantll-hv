@@ -37,10 +37,10 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           biber-version: 2.17
-      - name: Make propuesta
+      - name: Make doctec   #configurar-flujo
         run: |
           export APPIMAGE_EXTRACT_AND_RUN=1
-          make propuesta
+          make doctec   #configurar-flujo
       - name: Run Tectonic
         run: tectonic output/*.tex
       - name: Upload pdf/artifact
