@@ -10,4 +10,4 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
 
 RUN wget https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.17.0/pandoc-crossref-Linux.tar.xz \
   && tar -xvf pandoc-crossref-Linux.tar.xz \
-  && mv pandoc-crossref usr/bin/
+  && mv pandoc-crossref /usr/bin
