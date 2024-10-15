@@ -1,14 +1,12 @@
 # mdfile := $$HOME/Downloads/tmpr/hvmd/02n.a1.hvtex.md
 # plantilla := github.template
 # estilo := github.css
+# param CONTD := ruta de contenidos
+
 
 CONFIG := config
-CONTD := ~/devocs-contd/contd
-         
-
-.PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
+         .PHONY: help all article article-docx article-pdf article-tex presentation presentation-html presentation-pdf presentation-pptx presentation-tex thesis thesis-docx thesis-epub thesis-pdf thesis-tex
 .DEFAULT_GOAL := help
-
 
 # Pandoc options to use
 OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
@@ -23,8 +21,6 @@ presentacion:
 
 doctec-docx:
 	(pandoc -r $(OPTIONS) $(CONTD)/docx/*.md \
-	--filter pandoc-crossref \
-	--resource-path=$(CONTD)/pdf \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/docx.yaml)
 
