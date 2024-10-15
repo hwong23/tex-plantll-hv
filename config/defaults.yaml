@@ -22,4 +22,4 @@ lolTitle: |
   ## List of Listas
 tableTemplate: |
   *$$tableTitle$$ $$i$$*$$titleDelim$$ $$t$$
-autoSectionLabels: True
+
