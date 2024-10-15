@@ -25,7 +25,6 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install pandoc and pandoc-crossref
         run: |
-          ls ~/devocs-contd
           wget https://github.com/jgm/pandoc/releases/download/3.1.8/pandoc-3.1.8-1-amd64.deb
           sudo dpkg -i pandoc-3.1.8-1-amd64.deb
           rm pandoc-3.1.8-1-amd64.deb
