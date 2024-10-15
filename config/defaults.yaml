@@ -10,4 +10,3 @@ standalone: true
 top-level-division: default # part, chapter, section, or default
 verbosity: INFO # ERROR, WARNING, or INFO.
 filters: [pandoc-crossref]
-
