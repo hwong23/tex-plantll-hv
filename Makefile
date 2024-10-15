@@ -24,6 +24,7 @@ presentacion:
 doctec-docx:
 	(pandoc -r $(OPTIONS) $(CONTD)/docx/*.md \
 	--filter pandoc-crossref \
+	--resource-path=$(CONTD)/pdf \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/docx.yaml)
 
@@ -36,6 +37,7 @@ doctec-pdf:
 
 doctec-tex:
 	(pandoc -r $(OPTIONS) $(CONTD)/tex/*.md \
+	--filter pandoc-crossref \
 	--resource-path=$(CONTD)/tex \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/tex.yaml)
@@ -43,6 +45,8 @@ doctec-tex:
 
 doctec-html:
 	(pandoc -r $(OPTIONS) $(CONTD)/html/*.md \
+	--filter pandoc-crossref \
+	--resource-path=$(CONTD)/tex \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/html.yaml \
 	--toc)
