@@ -10,3 +10,16 @@ standalone: true
 top-level-division: default # part, chapter, section, or default
 verbosity: INFO # ERROR, WARNING, or INFO.
 filters: [pandoc-crossref]
+
+codeBlockCaptions: True
+figureTitle: |
+  Figura #
+lofTitle: |
+  ## List of Figuras
+lotTitle: |
+  ## List of Tablas
+lolTitle: |
+  ## List of Listas
+tableTemplate: |
+  *$$tableTitle$$ $$i$$*$$titleDelim$$ $$t$$
+autoSectionLabels: True
