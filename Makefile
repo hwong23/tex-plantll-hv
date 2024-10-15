@@ -30,7 +30,8 @@ doctec-pdf:
 	(pandoc -r $(OPTIONS) $(CONTD)/pdf/*.md \
 	--resource-path=$(CONTD)/pdf \
 	--defaults=./$(CONFIG)/defaults.yaml \
-	--defaults=./$(CONFIG)/pdf.yaml)
+	--defaults=./$(CONFIG)/pdf.yaml \
+	./$(CONFIG)/metadata.yaml)
 
 doctec-tex:
 	(pandoc -r $(OPTIONS) $(CONTD)/tex/*.md \
