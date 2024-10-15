@@ -13,7 +13,7 @@ jobs:
             ref: ${{github.ref}}
             path: devocs-contd
       - uses: actions/checkout@v4
-        name: checkout devocscontd
+        name: checkout hwo-academicTempl
         with:
             repository: hwong23/hwo-academicTempl
             ref: ${{github.ref}}
