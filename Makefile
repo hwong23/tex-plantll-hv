@@ -23,12 +23,14 @@ presentacion:
 
 doctec-docx:
 	(pandoc -r $(OPTIONS) $(CONTD)/docx/*.md \
+	--filter pandoc-crossref \
 	--resource-path=$(CONTD)/docx \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/docx.yaml)
 
 doctec-pdf:
 	(pandoc -r $(OPTIONS) $(CONTD)/pdf/*.md \
+	--filter pandoc-crossref \
 	--resource-path=$(CONTD)/pdf \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/pdf.yaml)
