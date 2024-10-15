@@ -3,5 +3,4 @@
 reference-doc: /home/runner/hwo-academicTempl/templates/rmd-myriad-minion-reference.docx
 log-file: output/docdoctec.log
 output-file: output/docdoctec.docx
-resource-path: [.:~/gh/devdocs/devocs-contd/contd/docx]
 to: docx
