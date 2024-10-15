@@ -1,4 +1,14 @@
 ---
+codeBlockCaptions: True
 figureTitle: |
-  Figuras #
+  Figura #
+lofTitle: |
+  ## Lista de Figuras
+lotTitle: |
+  ## Lista de Tablas
+lolTitle: |
+  ## Listas del Documento
+tableTemplate: |
+  *$$tableTitle$$ $$i$$*$$titleDelim$$ $$t$$
+autoSectionLabels: True
 ---
