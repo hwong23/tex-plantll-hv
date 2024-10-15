@@ -20,8 +20,8 @@ jobs:
             path: hwo-academicTempl
       - name: mv devocscontd hwo-academicTempl
         run: |
+          mv ${{github.WORKSPACE}}/devocs-contd ~/devocs-contd
           mv ${{github.WORKSPACE}}/hwo-academicTempl ~/hwo-academicTempl
-          ls ~/hwo-academicTempl
       - uses: actions/checkout@v4
       - name: Install pandoc and pandoc-crossref
         run: |
