@@ -23,6 +23,7 @@ presentacion:
 
 doctec-docx:
 	(pandoc -r $(OPTIONS) $(CONTD)/docx/*.md \
+	--filter pandoc-crossref \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/docx.yaml)
 
