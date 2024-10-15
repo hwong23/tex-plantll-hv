@@ -19,7 +19,7 @@ doctec:
 	make doctec-docx doctec-pdf
 
 presentacion:
-	make presentation-html presentation-pdf presentation-pptx presentation-tex
+	make ppt-html ppt-pdf ppt-pptx ppt-tex
 
 doctec-docx:
 	(pandoc -r $(OPTIONS) $(CONTD)/docx/*.md \
