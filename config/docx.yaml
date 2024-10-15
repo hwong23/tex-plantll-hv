@@ -4,6 +4,3 @@ reference-doc: /home/runner/hwo-academicTempl/templates/rmd-myriad-minion-refere
 log-file: output/docdoctec.log
 output-file: output/docdoctec.docx
 to: docx
-figureTitle: |
-  Figure #
-  
