@@ -23,7 +23,6 @@ presentacion:
 
 doctec-docx:
 	(pandoc -r $(OPTIONS) $(CONTD)/docx/*.md \
-	
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/docx.yaml)
 
