@@ -44,7 +44,6 @@ jobs:
           biber-version: 2.17
       - name: Make doctec #configurar-flujo
         run: |
-          ls ~/hwo-academicTempl/templates/rmd-myriad*
           export APPIMAGE_EXTRACT_AND_RUN=1
           CONTD=~/devocs-contd/contd
           make doctec CONTD=$CONTD  #configurar-flujo
