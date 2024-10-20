@@ -36,7 +36,7 @@ fignos-caption-name: Imagen
 tablenos-caption-name: Tabla
 ...
 
-Versión 1.89a4f3c
+Versión 1.399f8b5
 
 
 
