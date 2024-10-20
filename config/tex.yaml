@@ -1,5 +1,5 @@
 #input-files: [./contd/1.0.contenido.md, ./contd/1a.resumen.md]
-template: /home/vscode/hwo-academicTempl/templates/doctectemplate.tex
+template: /home/runner/hwo-academicTempl/templates/doctectemplate.tex
 log-file: output/texdoctec.log
 output-file: output/texdoctec.tex
 pdf-engine: tectonic # wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context, tectonic
