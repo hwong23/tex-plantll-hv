@@ -5,7 +5,7 @@
 * [Modelo de Producción e Implementación](#modelo-de-producción-e-implementación)
 * [Modelo de Solución de Interoperabilidad](#modelo-de-solución-de-interoperabilidad)
 
-TRIGGERING_SHA_7
+87d4461
 
 <div style="page-break-before: always;"></div>
 \newpage
