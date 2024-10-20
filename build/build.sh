@@ -8,7 +8,7 @@ COMMIT=$(git log --max-count=1 --format='%h - %s - %cD')
 VERSIONES=$(git log --max-count=5 --format='%h - %s - %cD' | tail -4)
 # Pandoc's configuration is specified via files of option defaults
 # located in the $PANDOC_DATA_DIR/defaults directory.
-export FECHA_COMPILACION COMMIT
+export FECHA_COMPILACION COMMIT VERSIONES
 
 
 # Add commit hash to the manuscript
