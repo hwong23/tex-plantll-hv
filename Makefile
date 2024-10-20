@@ -29,7 +29,7 @@ doctec-docx:
 
 doctec-pdf:
 	(sh build/build.sh $(CONTD)/pdf/*.md)
-	(pandoc -r $(OPTIONS) $(CONTD)/pdf/*.md \
+	(pandoc -r $(OPTIONS) \
 	--resource-path=$(CONTD)/pdf \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/pdf.yaml \
