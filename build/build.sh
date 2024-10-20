@@ -7,16 +7,15 @@ set -o errexit \
 
 
 # Set option defaults
-FECHA_COMPILACION="${COMPILATION_DATE}"
-COMMIT="${TRIGGERING_SHA_7}"
+FECHA_COMPILACION=COMPILATION_DATE
+COMMIT=TRIGGERING_SHA_7
 # Pandoc's configuration is specified via files of option defaults
 # located in the $PANDOC_DATA_DIR/defaults directory.
 export FECHA_COMPILACION COMMIT
 
 
 # Add commit hash to the manuscript
-envsubst < output/manuscript.md > output/manuscript.hash
-mv output/manuscript.hash output/manuscript.md
+envsubst < $1 > output/manuscript.md
 
 
 echo >&2 "Build complete"

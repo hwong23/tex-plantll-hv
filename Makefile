@@ -20,6 +20,7 @@ presentacion:
 	make ppt-html ppt-pdf ppt-pptx ppt-tex
 
 doctec-docx:
+	(sh build/build.sh $(CONTD)/docx/*.md)
 	(pandoc -r $(OPTIONS) $(CONTD)/docx/*.md \
 	--resource-path=$(CONTD)/docx \
 	--defaults=./$(CONFIG)/defaults.yaml \
