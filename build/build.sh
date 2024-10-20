@@ -2,9 +2,7 @@
 ## build.sh: compile manuscript outputs from content
 
 set -o errexit \
-    -o nounset \
-    -o pipefail
-
+    -o nounset
 
 # Set option defaults
 FECHA_COMPILACION=COMPILATION_DATE
