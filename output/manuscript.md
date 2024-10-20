@@ -5,7 +5,6 @@
 * [Modelo de Producción e Implementación](#modelo-de-producción-e-implementación)
 * [Modelo de Solución de Interoperabilidad](#modelo-de-solución-de-interoperabilidad)
 
-87d4461
 
 <div style="page-break-before: always;"></div>
 \newpage
@@ -37,7 +36,7 @@ fignos-caption-name: Imagen
 tablenos-caption-name: Tabla
 ...
 
-Versión 1.(SHA)
+Versión 1.89a4f3c
 
 
 
@@ -130,8 +129,7 @@ Copyright (c) 2020 Phillip Beauvoir & Jean-Baptiste Sarrodie - MIT License
 -->
 ## Modelo de Gestión de Requerimientos de Integración
 
-> Modelo de Implementación Proyecto JEP, 2024. Softgic.  Propuesta modelo de gestión y atención requerimientos de integración del proyecto de servicios de integración JEP. 
- Ver 0.1.3   
+> Modelo de Implementación Proyecto JEP, 2024. Softgic.  Propuesta modelo de gestión y atención requerimientos de integración del proyecto de servicios de integración JEP.  Ver 0.1.3   
 
 <br>
 
@@ -148,37 +146,14 @@ Los ingenieros convierten a su vez las historias en tareas entregables, individu
 ### Catálogo de Elementos
 - **ACC01. Planeación de Producción, Oct-Dic 2024**. Objetivos y entregas en el tiempo, versiones de entrega del proyecto de integración. 
 - **AN**. 
-- **ANLS.Analisis integración**. ### 2. ANSS (análisis). * Scrum, Funcional, Dueño producto cliente (requiere conocimiento del negocio). * Resultado: Refinamiento HU, modelo de negocio, es decir, diagrama de HU relacionadas unas con otras y con los conceptos de negocio en el repositorio de ARQ. Actualmente: no hay resultados de este proceso. Ejemplo del modelo de negocio  ### Salidas * Modelo de negocio en el repo * Estimación --puede en devops * Análisis de dependencia en el repo  ### KPI
- - Tasa de aprobación de HU por cliente
- Fuente: (Cantidad de HU refinadas y aprobadas por cliente [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps])
- Dato 26/10/2023: (30/44) = 0,68
- 
- - Tasa de error en Bug por PR entregados
- Fuente: (Cantidad de solicitude de cambio en rama (Pull Reqst) de Correcciones (fix) o Regresión (reverts) [Bitbucket] / Cantidad total de PR desplegados [Bitbucket])
- Dato 26/10/2023: (8/111)*100 = 7,2%
- 
+- **ANLS.Analisis integración**. ### 2. ANSS (análisis). * Scrum, Funcional, Dueño producto cliente (requiere conocimiento del negocio). * Resultado: Refinamiento HU, modelo de negocio, es decir, diagrama de HU relacionadas unas con otras y con los conceptos de negocio en el repositorio de ARQ. Actualmente: no hay resultados de este proceso. Ejemplo del modelo de negocio  ### Salidas * Modelo de negocio en el repo * Estimación --puede en devops * Análisis de dependencia en el repo  ### KPI - Tasa de aprobación de HU por cliente Fuente: (Cantidad de HU refinadas y aprobadas por cliente [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps]) Dato 26/10/2023: (30/44) = 0,68  - Tasa de error en Bug por PR entregados Fuente: (Cantidad de solicitude de cambio en rama (Pull Reqst) de Correcciones (fix) o Regresión (reverts) [Bitbucket] / Cantidad total de PR desplegados [Bitbucket]) Dato 26/10/2023: (8/111)*100 = 7,2% 
 - **CI/CD**. Actividades DevOps del ciclo o iteración de implementación.
 - **Característica 1**. 
 - **Característica 2**. 
 - **DEV**. Alcance de QA unitaria 
-- **DEV.Implementación**. ### KPI
- - Velocidad de construcción
- Fuente: (Cantidad de puntos de HU ejecutadas [Azure DevOps] / Horas habiles del mes de trabajo [Calculo manual])
- Dato 26/10/2023: 83 / 153 = 0,54 HU/horas 
- 
- - Tasa de cierre de defectos
- Fuente: (Cantidad de Bug solucionados [Azure DevOps] / Total de Bugs a corte sin nuevos [Azure DevOps])
- Dato 26/10/2023: 81 / 920 = 0,088
- 
- - Indice de dependecia de Lider Técnico
- Fuente: (Cantidad de actividades retrazadas semanales segun las HU planeadas / Total de HU planeadas para ejecución)
- Dato 26/10/2023: Pendiente proxima semana
- 
+- **DEV.Implementación**. ### KPI - Velocidad de construcción Fuente: (Cantidad de puntos de HU ejecutadas [Azure DevOps] / Horas habiles del mes de trabajo [Calculo manual]) Dato 26/10/2023: 83 / 153 = 0,54 HU/horas   - Tasa de cierre de defectos Fuente: (Cantidad de Bug solucionados [Azure DevOps] / Total de Bugs a corte sin nuevos [Azure DevOps]) Dato 26/10/2023: 81 / 920 = 0,088  - Indice de dependecia de Lider Técnico Fuente: (Cantidad de actividades retrazadas semanales segun las HU planeadas / Total de HU planeadas para ejecución) Dato 26/10/2023: Pendiente proxima semana 
 - **DIS**. 
-- **DIS.Arquitectura / diseño**. ### KPI
- - Nivel de HU sin detalle técnico
- Fuente: (Cantidad de HU refinadas y aprobadas sin diseño de implementacion [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps])
- Dato 26/10/2023: 0/44=0 
+- **DIS.Arquitectura / diseño**. ### KPI - Nivel de HU sin detalle técnico Fuente: (Cantidad de HU refinadas y aprobadas sin diseño de implementacion [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps]) Dato 26/10/2023: 0/44=0 
 - **Epica**. 
 - **HU**. 
 - **HU... n**. 
@@ -210,8 +185,7 @@ Copyright (c) 2020 Phillip Beauvoir & Jean-Baptiste Sarrodie - MIT License
 -->
 ## Modelo de Producción e Implementación de Integración JEP
 
-> Modelo de Producción e Implementación Proyecto JEP, 2024. Softgic.  Propuesta modelo de gestión y atención requerimientos de integración del proyecto de servicios de integración JEP. 
- Ver 0.1.5   
+> Modelo de Producción e Implementación Proyecto JEP, 2024. Softgic.  Propuesta modelo de gestión y atención requerimientos de integración del proyecto de servicios de integración JEP.  Ver 0.1.5   
 
 <br>
 
@@ -237,15 +211,7 @@ Durante la ejecución de la iteraciones determinadas, inicia nuevamente el ciclo
 | ACC01. Planeación de Producción, Oct-Dic 2024 | Course Of-Action | Objetivos y entregas en el tiempo, versiones de entrega del proyecto de integración.  |
 | AN | Work Package |  |
 | AN | Work Package |  |
-| ANLS.Analisis integración | Business Process | ### 2. ANSS (análisis). * Scrum, Funcional, Dueño producto cliente (requiere conocimiento del negocio). * Resultado: Refinamiento HU, modelo de negocio, es decir, diagrama de HU relacionadas unas con otras y con los conceptos de negocio en el repositorio de ARQ. Actualmente: no hay resultados de este proceso. Ejemplo del modelo de negocio  ### Salidas * Modelo de negocio en el repo * Estimación --puede en devops * Análisis de dependencia en el repo  ### KPI
- - Tasa de aprobación de HU por cliente
- Fuente: (Cantidad de HU refinadas y aprobadas por cliente [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps])
- Dato 26/10/2023: (30/44) = 0,68
- 
- - Tasa de error en Bug por PR entregados
- Fuente: (Cantidad de solicitude de cambio en rama (Pull Reqst) de Correcciones (fix) o Regresión (reverts) [Bitbucket] / Cantidad total de PR desplegados [Bitbucket])
- Dato 26/10/2023: (8/111)*100 = 7,2%
-  |
+| ANLS.Analisis integración | Business Process | ### 2. ANSS (análisis). * Scrum, Funcional, Dueño producto cliente (requiere conocimiento del negocio). * Resultado: Refinamiento HU, modelo de negocio, es decir, diagrama de HU relacionadas unas con otras y con los conceptos de negocio en el repositorio de ARQ. Actualmente: no hay resultados de este proceso. Ejemplo del modelo de negocio  ### Salidas * Modelo de negocio en el repo * Estimación --puede en devops * Análisis de dependencia en el repo  ### KPI - Tasa de aprobación de HU por cliente Fuente: (Cantidad de HU refinadas y aprobadas por cliente [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps]) Dato 26/10/2023: (30/44) = 0,68  - Tasa de error en Bug por PR entregados Fuente: (Cantidad de solicitude de cambio en rama (Pull Reqst) de Correcciones (fix) o Regresión (reverts) [Bitbucket] / Cantidad total de PR desplegados [Bitbucket]) Dato 26/10/2023: (8/111)*100 = 7,2%  |
 | CI/CD | Work Package | Actividades DevOps del ciclo o iteración de implementación. |
 | Característica 1 | Deliverable |  |
 | Característica 2 | Deliverable |  |
@@ -253,25 +219,10 @@ Durante la ejecución de la iteraciones determinadas, inicia nuevamente el ciclo
 | Condición: depender de otros servicios | Constraint |  |
 | DEV | Work Package | Alcance de QA unitaria  |
 | DEV | Work Package | Alcance de QA unitaria  |
-| DEV.Implementación | Business Process | ### KPI
- - Velocidad de construcción
- Fuente: (Cantidad de puntos de HU ejecutadas [Azure DevOps] / Horas habiles del mes de trabajo [Calculo manual])
- Dato 26/10/2023: 83 / 153 = 0,54 HU/horas 
- 
- - Tasa de cierre de defectos
- Fuente: (Cantidad de Bug solucionados [Azure DevOps] / Total de Bugs a corte sin nuevos [Azure DevOps])
- Dato 26/10/2023: 81 / 920 = 0,088
- 
- - Indice de dependecia de Lider Técnico
- Fuente: (Cantidad de actividades retrazadas semanales segun las HU planeadas / Total de HU planeadas para ejecución)
- Dato 26/10/2023: Pendiente proxima semana
-  |
+| DEV.Implementación | Business Process | ### KPI - Velocidad de construcción Fuente: (Cantidad de puntos de HU ejecutadas [Azure DevOps] / Horas habiles del mes de trabajo [Calculo manual]) Dato 26/10/2023: 83 / 153 = 0,54 HU/horas   - Tasa de cierre de defectos Fuente: (Cantidad de Bug solucionados [Azure DevOps] / Total de Bugs a corte sin nuevos [Azure DevOps]) Dato 26/10/2023: 81 / 920 = 0,088  - Indice de dependecia de Lider Técnico Fuente: (Cantidad de actividades retrazadas semanales segun las HU planeadas / Total de HU planeadas para ejecución) Dato 26/10/2023: Pendiente proxima semana  |
 | DIS | Work Package |  |
 | DIS | Work Package |  |
-| DIS.Arquitectura / diseño | Business Process | ### KPI
- - Nivel de HU sin detalle técnico
- Fuente: (Cantidad de HU refinadas y aprobadas sin diseño de implementacion [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps])
- Dato 26/10/2023: 0/44=0  |
+| DIS.Arquitectura / diseño | Business Process | ### KPI - Nivel de HU sin detalle técnico Fuente: (Cantidad de HU refinadas y aprobadas sin diseño de implementacion [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps]) Dato 26/10/2023: 0/44=0  |
 | Epica | Deliverable |  |
 | HU | Deliverable |  |
 | HU... n | Deliverable |  |
@@ -311,8 +262,7 @@ Copyright (c) 2020 Phillip Beauvoir & Jean-Baptiste Sarrodie - MIT License
 -->
 ## Modelo de Interoperabilidad JEP
 
-> Modelo de Integración.  Proyecto JEP, 2024. Softgic.  Capacidades del modelo de integración para la impleentación de requerimientos de interoperabilidad del proyecto Integración JEP, 2024. 
- 04.ing.3n.Ver 0.2.31  
+> Modelo de Integración.  Proyecto JEP, 2024. Softgic.  Capacidades del modelo de integración para la impleentación de requerimientos de interoperabilidad del proyecto Integración JEP, 2024.  04.ing.3n.Ver 0.2.31  
 
 <br>
 
