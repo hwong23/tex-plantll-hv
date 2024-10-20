@@ -36,7 +36,7 @@ fignos-caption-name: Imagen
 tablenos-caption-name: Tabla
 ...
 
-Versión 1.4acac1d - action - Sun, 20 Oct 2024 12:59:48 -0500
+Versión 1.8583be1 - Compilación para entrega - Sun, 20 Oct 2024 18:03:29 +0000
 
 
 
