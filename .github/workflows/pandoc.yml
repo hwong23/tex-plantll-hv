@@ -69,4 +69,4 @@ jobs:
             output/*.tex
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
-          message: 'GitHub action artefacts added'
+          message: 'Compilación para entrega'
