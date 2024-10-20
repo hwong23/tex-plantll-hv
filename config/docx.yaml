@@ -1,6 +1,7 @@
 # input-files: [*.md]
 # input-file: /Users/hwo/gh/devdocs/devocs-contd/contd/docx/01.1n.JEP.tecdoc.md
-reference-doc: /home/runner/hwo-academicTempl/templates/rmd-myriad-minion-reference.docx
+# resource-path: [.,/Users/hwong23/git/devdocs/devocs-contd/contd/docx]
+reference-doc: /Users/hwong23/git/devdocs/hwo-academicTempl/templates/rmd-myriad-minion-reference.docx
 log-file: output/docdoctec.log
 output-file: output/docdoctec.docx
 to: docx
