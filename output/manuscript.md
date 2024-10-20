@@ -36,7 +36,7 @@ fignos-caption-name: Imagen
 tablenos-caption-name: Tabla
 ...
 
-Versión 1.8bd1889 - vers - Sun, 20 Oct 2024 12:49:59 -0500
+Versión 1.4acac1d - action - Sun, 20 Oct 2024 12:59:48 -0500
 
 
 
