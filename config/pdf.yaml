@@ -1,4 +1,4 @@
-# input-files: [doctec.md]
+input-file: output/manuscript.md
 log-file: output/pdfdoctec.log
 output-file: output/pdfdoctec.pdf
 pdf-engine: tectonic #wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context

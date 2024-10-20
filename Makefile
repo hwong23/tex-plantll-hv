@@ -28,6 +28,7 @@ doctec-docx:
 	./$(CONFIG)/metadata.yaml)
 
 doctec-pdf:
+	(sh build/build.sh $(CONTD)/pdf/*.md)
 	(pandoc -r $(OPTIONS) $(CONTD)/pdf/*.md \
 	--resource-path=$(CONTD)/pdf \
 	--defaults=./$(CONFIG)/defaults.yaml \
