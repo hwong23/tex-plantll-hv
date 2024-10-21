@@ -1,4 +1,4 @@
-#input-files: [./contd/1.0.contenido.md, ./contd/1a.resumen.md]
+input-file: output/manuscript.md
 template: /home/runner/hwo-academicTempl/templates/doctectemplate.tex
 log-file: output/texdoctec.log
 output-file: output/texdoctec.tex
