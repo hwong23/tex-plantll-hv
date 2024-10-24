@@ -1,6 +1,6 @@
 # input-files: [*.md]
 input-file: output/manuscript.md
-reference-doc: /Users/hwong23/git/devdocs/hwo-academicTempl/templates/rmd-myriad-minion-reference.docx
+reference-doc: /home/runner/hwo-academicTempl/templates/rmd-myriad-minion-reference.docx
 log-file: output/docdoctec.log
 output-file: output/docdoctec.docx
 to: docx
