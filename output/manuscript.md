@@ -1,150 +1,149 @@
-# 05.REQR.1n. Requerimientos
+---
+title: "Vinaque sanguine metuenti cuiquam Alcyone fixus"
+author: [Author Name]
+date: "2017-02-20"
+subject: "Markdown"
+keywords: [Markdown, Example]
+subtitle: "Aesculeae domus vincemur et Veneris adsuetus lapsum"
+lang: "en"
+titlepage: true,
+titlepage-rule-color: "360049"
+titlepage-background: "background1.pdf"
+cuerpo: |
+   Antes SIPAS, Mi Mutual es una aplicación web compuesta por distintos módulos de software con arreglo a todas las actividades necesarias que soportan la operación de los productos y servicios que ofrece la Unidad de Solidaridad y Seguros de la Cooperativa.
+   
+   El despliegue es el evento que permite el inicio de las QA funcionales.
+   
+Gestión-Usuarios: |
+   Gestión de Usuarios: Administración de la información relacionada con los usuarios del sistema. Este componente se comunica con el servicio unificado de autenticación y autorización que devuelve los permisos que un usuario posee sobre las opciones que proporciona el sistema.
+   
+Gestión-fondo-mutual-y-auxilio-funerario: |
+   Gestión de productos del fondo mutual y auxilio funerario que involucran a sus coberturas
+   
+Configuración-factores-cálculos--contribuciones: |
+   1. Configuración o parametrización de factores para realizar los cálculos de las contribuciones de los asociados a la Cooperativa para cada uno de los productos adquiridos.
+   
+Interoperabilidad-entre-sistemas-Coomeva: |
+   Integración con otros sistemas para facilitar los procesos de vinculación, retiro, reactivación o fallecimiento de asociados.
+   
+Gestión-Reclamaciones: |
+   Gestión de Reclamaciones (Indemnización): Permite realizar la gestión, seguimiento y pago o negación de las diferentes reclamaciones de acuerdo a las coberturas y los productos que se encuentren dentro del portafolio del Asociado.
+   
+Gestión-Beneficiarios: |
+   Gestión de Beneficiarios: Permite administrar la información relacionada con los beneficiarios del Asociado, permitiendo ejecutar operaciones de consulta, inserción y modificación.
+   
+Administración-facturación-y-recaudo: |
+   Administración de la facturación y recaudo diario de los productos
+   
+Certificados: |
+   Certificados: Permite la generación de los certificados de valores de protección y contribuciones pagadas, de retención en la fuente, de pagos de perseverancia y de cobertura de auxilio funerario.
+   
+Autorizaciones: |
+   Autorizaciones: Administración de peticiones de autorización y sus correspondientes aprobaciones mediante el servicio del flujo de procesos
+Simuladores: |
+   Simuladores: Funcionalidades que permiten generar las simulaciones de los diferentes planes o modificaciones (incrementos y disminuciones) a los productos del Asociado.
+   
+Seguridad: |
+   
+Características-Funcionales: |
+   1. Gestión de productos del fondo mutual y auxilio funerario que involucran a sus coberturas
+   1. Administración de la facturación y recaudo diario de los productos
+   1. Gestión de Reclamaciones (Indemnización): Permite realizar la gestión, seguimiento y pago o negación de las diferentes reclamaciones de acuerdo a las coberturas y los productos que se encuentren dentro del portafolio del Asociado.
+   1. Gestión de Beneficiarios: Permite administrar la información relacionada con los beneficiarios del Asociado, permitiendo ejecutar operaciones de consulta, inserción y modificación.
+   1. Gestión de Usuarios: Administración de la información relacionada con los usuarios del sistema. Este componente se comunica con el servicio unificado de autenticación y autorización que devuelve los permisos que un usuario posee sobre las opciones que proporciona el sistema.
+   1. Integración con otros sistemas para facilitar los procesos de vinculación, retiro, reactivación o fallecimiento de asociados.
+   1. Configuración o parametrización de factores para realizar los cálculos de las contribuciones de los asociados a la Cooperativa para cada uno de los productos adquiridos.
+   
+Restricciones-de-Arquitectura: |
+   1. Disponibilidad. Se requiere que el sistema esté disponible 7 X 24, el servicio prestado al cliente no se limita a horarios de oficina pues las compras pueden darse en cualquier momento
+   1. Escalabilidad. Se requiere que el sistema pueda llegar a atender hasta 1.000 clientes, para esto se requiere que el sistema se pueda extender horizontalmente de tal manera que pueda tener instalado en varios servidores para atender esta cantidad de usuarios. Todas las aplicaciones desarrolladas podrán ser escaladas horizontalmente para atender la demanda relacionada con el crecimiento de la empresa.
+   1. Reutilización. Se requiere que el sistema permita reutilizar sus componentes para prestar el mismo servicio a otras aplicaciones de la compañía. Para esto se va a desarrollar la aplicación utilizando servicios, separados y con asignación de responsabilidades, propias, de tal manera de que, si se requiere exponer servicios web sobre estas funcionalidades, no requiere cambios en la aplicación.
+   1. Autenticación. Autenticación es el proceso para determinar que alguien o un sistema es quien dice ser. Uso de estándar Oauth2 y JSON Web Token – JWT, para gestión de autenticación de servicios de la aplicación.
+   1. Autorización. Autorización se refiere a la validación que realiza un sistema para determinar si un usuario puede usar cierta funcionalidad. Uso de API de seguridad de Spring (spring-security) + Oauth2
+   1. Interoperabilidad – Movilidad. Interoperabilidad se refiere a la habilidad de un sistema de interactuar y comunicarse con sistemas heterogéneos a través de interfaces completamente definidas. Uso de estándar de web services REST + JSON.
+   1. Facilidad de Uso. Se refiere a la facilidad con que las personas pueden utilizar el sistema porque facilitan la lectura de los textos, descargan rápidamente la información y presentan funciones y menús sencillos, por lo que el usuario encuentra satisfechas sus consultas y cómodo su uso.
+   1. Verificación (QA). Es la capacidad del producto software que hace posible que el software modificado sea probado.
+   
+Autorizaciones: |
+   Autorizaciones: Administración de peticiones de autorización y sus correspondientes aprobaciones usando el servicio del flujo de procesos.
+   
+Certificados: |
+   Certificados: Permite la generación de los certificados de valores de protección y contribuciones pagadas, de retención en la fuente, de pagos de perseverancia y de cobertura de auxilio funerario.
+   
+Configuración: |
+   Configuración o parametrización de factores para realizar los cálculos de las contribuciones de los asociados a la Cooperativa para cada uno de los productos adquiridos.
+   
+Facturación-y-Recaudo: |
+   Administración de la facturación y recaudo diario de los productos.
+   
+Gestión-de-Beneficiarios: |
+   Gestión de Beneficiarios: Permite administrar la información relacionada con los beneficiarios del Asociado, permitiendo ejecutar operaciones de consulta, inserción y modificación.
+   
+Gestión-de-Productos: |
+   Gestión de productos del fondo mutual y auxilio funerario que involucran lo relacionado a las siguientes coberturas: * Fondo de Solidaridad: Incapacidades temporales, Incapacidades Permanentes (total, parcial), Perseverancia 60, 62, 65, 70 años, Perseverancias Anticipadas, Fallecimiento Asociado (Auxilio por muerte), Desempleo, Disminución de ingresos y enfermedades graves; Rentas por hospitalización, Enfermedades de Alto Costo, Pólizas de seguros personales y patrimoniales, Planes educativos, Segunda opinión médica, Asistencias. * Auxilio Funerario: Fallecimiento de familiares directos (inscritos) del Asociado.
+   
+Gestión-de-Reclamos: |
+   Gestión de Reclamaciones (Indemnización): Permite realizar la gestión, seguimiento y pago o negación de las diferentes reclamaciones de acuerdo a las coberturas y los productos que se encuentren dentro del portafolio del Asociado
+Gestión-de-Usuarios: |
+   Gestión de Usuarios: Administración de la información relacionada con los usuarios del sistema. Este componente se comunica con el servicio unificado de autenticación y autorización que devuelve los permisos que un usuario posee sobre las opciones que proporciona el sistema.
+   
+Simuladores: |
+   Simuladores: Funcionalidades que permiten generar las simulaciones de los diferentes planes o modificaciones (incrementos y disminuciones) a los productos del Asociado.
+   
+Unidad-de-Solidaridad-y-Seguros: |
+   Unidad de Solidaridad y Seguros de la Cooperativa
+
+...
+
+Integraciones JEP, 2024
+
+Organización de referencia. Integración JEP. Softgic. Servivcios, Componentes, Roles de servicios.
+
+versión 0.1.2
+
+
+# 1.contexto
 
 * [Introducción](#Introducción)
-* [Problema 2 (Grouping)](#problema-2-grouping)
-  * [Aceptación (Value)](#aceptación-value)
-  * [Complejidad (Constraint)](#complejidad-constraint)
-  * [No Funcional (Goal)](#no-funcional-goal)
-* [Solución 2 (Grouping)](#solución-2-grouping)
-  * [Technology Service (Technology Service)](#technology-service-technology-service)
-* [Solución 1 (Grouping)](#solución-1-grouping)
-  * [SINT1. Integración. Ingreso a Conti (Application Service)](#sint1.-integración.-ingreso-a-conti-application-service)
-  * [SINT2. Integración. Consulta ítem de Conti (Application Service)](#sint2.-integración.-consulta-ítem-de-conti-application-service)
-  * [SINT3. Integración. Radicar ítem (Application Service)](#sint3.-integración.-radicar-ítem-application-service)
-  * [SINT4. Integración. Generación de documentos (Application Service)](#sint4.-integración.-generación-de-documentos-application-service)
-* [Problema 1 (Grouping)](#problema-1-grouping)
-  * [Levantamiento (Constraint)](#levantamiento-constraint)
-  * [Contractual (Goal)](#contractual-goal)
-  * [Entrega (Value)](#entrega-value)
-* [REQR3. Integración con Sistema Conti (Requirement)](#reqr3.-integración-con-sistema-conti-requirement)
-* [REQR2. Condiciones tecnológicas JEP (Requirement)](#reqr2.-condiciones-tecnológicas-jep-requirement)
+* [app: Mi Mutual Central (Application Component)](#app:-mi-mutual-central-application-component)
+  * [Gestión Usuarios (Application Function)](#gestión-usuarios-application-function)
+  * [Gestión fondo mutual y auxilio funerario (Application Function)](#gestión-fondo-mutual-y-auxilio-funerario-application-function)
+  * [Configuración factores cálculos- contribuciones (Application Function)](#configuración-factores-cálculos--contribuciones-application-function)
+  * [Interoperabilidad entre sistemas Coomeva (Application Function)](#interoperabilidad-entre-sistemas-coomeva-application-function)
+  * [Gestión Reclamaciones (Application Function)](#gestión-reclamaciones-application-function)
+  * [Gestión Beneficiarios (Application Function)](#gestión-beneficiarios-application-function)
+  * [Administración facturación y recaudo (Application Function)](#administración-facturación-y-recaudo-application-function)
+  * [Certificados (Application Function)](#certificados-application-function)
+  * [Autorizaciones (Application Function)](#autorizaciones-application-function)
+  * [Simuladores (Application Function)](#simuladores-application-function)
+  * [Seguridad (Application Function)](#seguridad-application-function)
+* [Características Funcionales (Requirement)](#características-funcionales-requirement)
+* [Restricciones de Arquitectura (Constraint)](#restricciones-de-arquitectura-constraint)
+* [Autorizaciones (Application Service)](#autorizaciones-application-service)
+* [Certificados (Application Service)](#certificados-application-service)
+* [Configuración (Application Service)](#configuración-application-service)
+* [Facturación y Recaudo (Application Service)](#facturación-y-recaudo-application-service)
+* [Gestión de Beneficiarios (Application Service)](#gestión-de-beneficiarios-application-service)
+* [Gestión de Productos (Application Service)](#gestión-de-productos-application-service)
+* [Gestión de Reclamos (Application Service)](#gestión-de-reclamos-application-service)
+* [Gestión de Usuarios (Application Service)](#gestión-de-usuarios-application-service)
+* [Simuladores (Application Service)](#simuladores-application-service)
+* [Unidad de Solidaridad y Seguros (Business Function)](#unidad-de-solidaridad-y-seguros-business-function)
 
 ## Introducción
 
-![05.REQR.1n. Requerimientos][03.contd.vista]
+![1.contexto][01.prop.contexto]
 
-Para la implementación de los ítems relacionados en el Anexo Nro. 1.1 – Anexo técnico evolución plataforma de interoperabilidad – Ficha Técnica la hoja “Categorías de Cotización” contiene las necesidades a contratar en el ámbito de la evolución tecnológica del modelo de interoperabilidad y los desarrollos de interoperabilidad tanto con sistemas internos, como con entidades externas. En la hoja “Estándares Desarrollo y Producto” del archivo mencionado se indican los estándares recomendados por el fabricante, para tener en cuenta en la entrega de los servicios que se cotizan.
+El sistema principal de fondo Mi Mutual Central es la composición de las funciones de negocio de la Unidad de Solidaridad de Coomeva. Las funciones de negocio referidas, como Gestión Beneficiarios, Certificados, Gestión Beneficiarios, aparecen dentro del componente principal en la imagen.
 
-El Anexo Nro. 1.2 – Acuerdos de Niveles de Servicio, explica el procedimiento con el que se dará atención a consultas o solución de incidencias, tanto en los sistemas operativos, como en los servicios de interoperabilidad existentes en la actualidad y aquellos que se contratarán en este proceso, en el sistema Bus de Interoperabilidad implementado en la Jurisdicción Especial para la Paz.
+Este entregable documenta los diferentes módulos y componentes que hacen parte de la estructura de una aplicación en Angular 12 y como es su interacción para conformar una arquitectura robusta y escalable para aplicaciones de gran tamaño.
 
--- Documento: JUSTIFICATIVO DE LA CONTRATACIÓN INVITACIÓN PÚBLICA
-
-
-
-## Problema 2
-
-### Aceptación
-
-### Complejidad
-
-### No Funcional
-
-1. La solución debe implementar el habilitar la traducción de múltiples protocolos del consumidor a un protocolo específico del microservicio ofrecido a través de un API Gateway
-1. La solución debe implementar la publicación de microservicios que generen múltiples API para plataformas y clientes específicos con las funciones específicas y protocolos requeridos por cada plataforma
-1. La solución debe implementar un mecanismo de hacer la trazabilidad, uso y registro de actividades de los microservicios. 
-1. Debe permitir la integración con un servicio de directorio corporativo que puede servir como administrador de identidad corporativa. Por lo tanto, la solución debe poder actuar como Administrador de acceso (Identity Access Manager - IaM) mientras que el Servicio de directorio sirve como Administrador e Identidades (Identity Manager - IdM).
-1. Debe admitir la transformación y el enrutamiento hacia / desde SOAP / HTTP a los servicios REST.
-1. Debe poder convertir mensajes a / desde: XML, objetos Java, JSON, REST, CSV.
-1. Debe proporcionar componentes para la transformación utilizando modelos predefinidos (plantillas).
-1. La infraestructura debe distribuirse de modo que las integraciones, construidas a partir de EIP (patrones de integración empresarial) y conectores predefinidos, se implementen en la infraestructura nativa del contenedor para adaptarse y escalar rápidamente
-1. La solución debería exponer métricas con integración nativa al software Prometheus
-1. Debe ser posible gestionar la creación de  un token de acceso, eligiendo su alcance, permiso y otras cualidades a nivel de autenticación
-1. La solución de administración de API debe admitir la instalación de API Gateways  en contenedores tanto dentro de una plataforma Kubernetes o utilizando en motor de contenedor aprobado por la especificación OCI
-1. Debe permitir ver las llamadas a la API y separar los códigos de retorno HTTP;
-1. La herramienta API Gateway debe controlar la ejecución de llamadas, recopilar métricas, aplicar políticas y límites de ejecución;
-1. Para permitir interoperabilidad debe habilitar transporte de mensajes y conectarse entre ellos. Los mecanismos de transporte deben incluir Java Messaging Service (JMS), Active MQ y asi mismo protocolos de comunicación tal como HTTP/HTTPS,SMTP, entre otros
-1. Se debe contar con la característica de Single Sign On (SSO)
-1. Los servicios se deberán implementar bajo la plataforma Openshift de RedHat
-1. Se debe contemplar dentro de estos desarrollos la Transferencia de archivos utilizando el esquema de almacenamiento de Openshift ODF asociado a un esquema NFS, Administración de Personas, Consulta y transferencia de expedientes o partes de expedientes y anexos, etc 
-
-## Solución 2
-
-### Technology Service
-
-## Solución 1
-
-### SINT1. Integración. Ingreso a Conti
-
-Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio 	
-Modelo de datos (XML, RBDMS, …)
-Esquema de datos (XSD, DTD, JSON-E…)
-Contratos de interoperabilidad (WSDL, API…)
-Mensajes petición IN (API, XML…)
-Mensajes respuesta OUT (API, XML…)
-Mensajes excepción (API, XML…)
-Transporte (REST, SOAP)
-Función lógica (JEE, …)
-Registro y envío de actividad
-	
+Las librerías Spring Boot Security y Spring Boot Oauth2 proveen características de seguridad entre Vista (Angular 2) y Controlador. Estas son responsables de que únicamente permita el acceso si se está autenticado. Además, para realizar el proceso de autenticación se delega a la aplicación SISPRO (Coomeva) que funciona como un servidor de autenticación.
 
 
-### SINT2. Integración. Consulta ítem de Conti
-
-Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio 	
-Modelo de datos (XML, RBDMS, …)
-Esquema de datos (XSD, DTD, JSON-E…)
-Contratos de interoperabilidad (WSDL, API…)
-Mensajes petición IN (API, XML…)
-Mensajes respuesta OUT (API, XML…)
-Mensajes excepción (API, XML…)
-Transporte (REST, SOAP)
-Función lógica (JEE, …)
-Registro y envío de actividad
-	
 
 
-### SINT3. Integración. Radicar ítem
-
-Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio 	
-Modelo de datos (XML, RBDMS, …)
-Esquema de datos (XSD, DTD, JSON-E…)
-Contratos de interoperabilidad (WSDL, API…)
-Mensajes petición IN (API, XML…)
-Mensajes respuesta OUT (API, XML…)
-Mensajes excepción (API, XML…)
-Transporte (REST, SOAP)
-Función lógica (JEE, …)
-Registro y envío de actividad
-	
 
 
-### SINT4. Integración. Generación de documentos
-
-Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio 	
-Modelo de datos (XML, RBDMS, …)
-Esquema de datos (XSD, DTD, JSON-E…)
-Contratos de interoperabilidad (WSDL, API…)
-Mensajes petición IN (API, XML…)
-Mensajes respuesta OUT (API, XML…)
-Mensajes excepción (API, XML…)
-Transporte (REST, SOAP)
-Función lógica (JEE, …)
-Registro y envío de actividad
-	
-
-
-## Problema 1
-
-### Levantamiento
-
-### Contractual
-
-1. Implementación de al menos 20 servicios de Interoperabilidad bajo un esquema de Bolsa de Horas con una cantidad de 1.960. Las horas remanentes serán utilizadas en el desarrollo de servicios adicionales
-1. Los al menos 20 servicios desarrollados serán entregados documentados y contarán con una garantía de seis meses.
-1. Para la implementación de los servicios de interoperabilidad con entidades externas se utilizará el modelo XROAD definido por el Ministerio de Tecnologías de la Información y Comunicaciones para intercambio de información entre entidades del estado.
-
-
-### Entrega
-
-## REQR3. Integración con Sistema Conti
-
-...
-
-
-## REQR2. Condiciones tecnológicas JEP
-
-...
-
-
-[03.contd.vista]: 03.contd.vista.png
-[^1]: Generated: Tue Oct 22 2024 16:31:14 GMT-0500 (COT)
+[01.prop.contexto]: 01.prop.contexto.png
+[^1]: Generated: Thu Oct 24 2024 08:30:51 GMT-0500 (COT)

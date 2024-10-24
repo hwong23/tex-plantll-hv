@@ -127,16 +127,23 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Example PDF},
-  pdfauthor={Author},
+  pdftitle={Vinaque sanguine metuenti cuiquam Alcyone fixus},
+  pdfauthor={Author Name},
   pdflang={en},
   pdfsubject={Markdown},
   pdfkeywords={Markdown, Example},
   hidelinks,
   breaklinks=true,
   pdfcreator={LaTeX via pandoc with the Eisvogel template}}
-\title{Example PDF}
-\author{Author}
+\title{Vinaque sanguine metuenti cuiquam Alcyone fixus}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Aesculeae domus vincemur et Veneris adsuetus lapsum}
+\author{Author Name}
 \date{2017-02-20}
 
 
@@ -149,6 +156,10 @@
 %
 % for the background color of the title page
 %
+\usepackage{pagecolor}
+\usepackage{afterpage}
+\usepackage{tikz}
+\usepackage[margin=2.5cm,includehead=true,includefoot=true,centering]{geometry}
 
 %
 % break urls
@@ -225,8 +236,8 @@
 % variables for title, author and date
 %
 \usepackage{titling}
-\title{Example PDF}
-\author{Author}
+\title{Vinaque sanguine metuenti cuiquam Alcyone fixus}
+\author{Author Name}
 \date{2017-02-20}
 
 %
@@ -254,10 +265,10 @@
 
 \newpairofpagestyles{eisvogel-header-footer}{
   \clearpairofpagestyles
-  \ihead*{Example PDF}
+  \ihead*{Vinaque sanguine metuenti cuiquam Alcyone fixus}
   \chead*{}
   \ohead*{2017-02-20}
-  \ifoot*{Author}
+  \ifoot*{Author Name}
   \cfoot*{}
   \ofoot*{\thepage}
   \addtokomafont{pageheadfoot}{\upshape}
@@ -275,6 +286,38 @@
 %%
 %% begin titlepage
 %%
+\begin{titlepage}
+\newgeometry{top=2cm, right=4cm, bottom=3cm, left=4cm}
+\tikz[remember picture,overlay] \node[inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{background1.pdf}};
+\newcommand{\colorRule}[3][black]{\textcolor[HTML]{#1}{\rule{#2}{#3}}}
+\begin{flushleft}
+\noindent
+\\[-1em]
+\color[HTML]{5F5F5F}
+\makebox[0pt][l]{\colorRule[360049]{1.3\textwidth}{4pt}}
+\par
+\noindent
+
+% The titlepage with a background image has other text spacing and text size
+{
+  \setstretch{2}
+  \vfill
+  \vskip -8em
+  \noindent {\huge \textbf{\textsf{Vinaque sanguine metuenti cuiquam
+Alcyone fixus}}}
+    \vskip 1em
+  {\Large \textsf{Aesculeae domus vincemur et Veneris adsuetus lapsum}}
+    \vskip 2em
+  \noindent {\Large \textsf{Author
+Name} \vskip 0.6em \textsf{2017-02-20}}
+  \vfill
+}
+
+
+\end{flushleft}
+\end{titlepage}
+\restoregeometry
+\pagenumbering{arabic}
 
 %%
 %% end titlepage
@@ -282,274 +325,6 @@
 
 % \maketitle
 
-
-\hypertarget{reqr.1n.-requerimientos}{%
-\section{05.REQR.1n. Requerimientos}\label{reqr.1n.-requerimientos}}
-
-\begin{itemize}
-\tightlist
-\item
-  \protect\hyperlink{Introducciuxf3n}{Introducción}
-\item
-  \protect\hyperlink{problema-2-grouping}{Problema 2 (Grouping)}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \protect\hyperlink{aceptaciuxf3n-value}{Aceptación (Value)}
-  \item
-    \protect\hyperlink{complejidad-constraint}{Complejidad (Constraint)}
-  \item
-    \protect\hyperlink{no-funcional-goal}{No Funcional (Goal)}
-  \end{itemize}
-\item
-  \protect\hyperlink{soluciuxf3n-2-grouping}{Solución 2 (Grouping)}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \protect\hyperlink{technology-service-technology-service}{Technology
-    Service (Technology Service)}
-  \end{itemize}
-\item
-  \protect\hyperlink{soluciuxf3n-1-grouping}{Solución 1 (Grouping)}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \protect\hyperlink{sint1.-integraciuxf3n.-ingreso-a-conti-application-service}{SINT1.
-    Integración. Ingreso a Conti (Application Service)}
-  \item
-    \protect\hyperlink{sint2.-integraciuxf3n.-consulta-uxedtem-de-conti-application-service}{SINT2.
-    Integración. Consulta ítem de Conti (Application Service)}
-  \item
-    \protect\hyperlink{sint3.-integraciuxf3n.-radicar-uxedtem-application-service}{SINT3.
-    Integración. Radicar ítem (Application Service)}
-  \item
-    \protect\hyperlink{sint4.-integraciuxf3n.-generaciuxf3n-de-documentos-application-service}{SINT4.
-    Integración. Generación de documentos (Application Service)}
-  \end{itemize}
-\item
-  \protect\hyperlink{problema-1-grouping}{Problema 1 (Grouping)}
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \protect\hyperlink{levantamiento-constraint}{Levantamiento
-    (Constraint)}
-  \item
-    \protect\hyperlink{contractual-goal}{Contractual (Goal)}
-  \item
-    \protect\hyperlink{entrega-value}{Entrega (Value)}
-  \end{itemize}
-\item
-  \protect\hyperlink{reqr3.-integraciuxf3n-con-sistema-conti-requirement}{REQR3.
-  Integración con Sistema Conti (Requirement)}
-\item
-  \protect\hyperlink{reqr2.-condiciones-tecnoluxf3gicas-jep-requirement}{REQR2.
-  Condiciones tecnológicas JEP (Requirement)}
-\end{itemize}
-
-\hypertarget{introducciuxf3n}{%
-\subsection{Introducción}\label{introducciuxf3n}}
-
-\begin{figure}
-\centering
-\caption{05.REQR.1n. Requerimientos}
-\end{figure}
-
-Para la implementación de los ítems relacionados en el Anexo Nro. 1.1 --
-Anexo técnico evolución plataforma de interoperabilidad -- Ficha Técnica
-la hoja ``Categorías de Cotización'' contiene las necesidades a
-contratar en el ámbito de la evolución tecnológica del modelo de
-interoperabilidad y los desarrollos de interoperabilidad tanto con
-sistemas internos, como con entidades externas. En la hoja ``Estándares
-Desarrollo y Producto'' del archivo mencionado se indican los estándares
-recomendados por el fabricante, para tener en cuenta en la entrega de
-los servicios que se cotizan.
-
-El Anexo Nro. 1.2 -- Acuerdos de Niveles de Servicio, explica el
-procedimiento con el que se dará atención a consultas o solución de
-incidencias, tanto en los sistemas operativos, como en los servicios de
-interoperabilidad existentes en la actualidad y aquellos que se
-contratarán en este proceso, en el sistema Bus de Interoperabilidad
-implementado en la Jurisdicción Especial para la Paz.
-
--- Documento: JUSTIFICATIVO DE LA CONTRATACIÓN INVITACIÓN PÚBLICA
-
-\hypertarget{problema-2}{%
-\subsection{Problema 2}\label{problema-2}}
-
-\hypertarget{aceptaciuxf3n}{%
-\subsubsection{Aceptación}\label{aceptaciuxf3n}}
-
-\hypertarget{complejidad}{%
-\subsubsection{Complejidad}\label{complejidad}}
-
-\hypertarget{no-funcional}{%
-\subsubsection{No Funcional}\label{no-funcional}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  La solución debe implementar el habilitar la traducción de múltiples
-  protocolos del consumidor a un protocolo específico del microservicio
-  ofrecido a través de un API Gateway
-\item
-  La solución debe implementar la publicación de microservicios que
-  generen múltiples API para plataformas y clientes específicos con las
-  funciones específicas y protocolos requeridos por cada plataforma
-\item
-  La solución debe implementar un mecanismo de hacer la trazabilidad,
-  uso y registro de actividades de los microservicios.
-\item
-  Debe permitir la integración con un servicio de directorio corporativo
-  que puede servir como administrador de identidad corporativa. Por lo
-  tanto, la solución debe poder actuar como Administrador de acceso
-  (Identity Access Manager - IaM) mientras que el Servicio de directorio
-  sirve como Administrador e Identidades (Identity Manager - IdM).
-\item
-  Debe admitir la transformación y el enrutamiento hacia / desde SOAP /
-  HTTP a los servicios REST.
-\item
-  Debe poder convertir mensajes a / desde: XML, objetos Java, JSON,
-  REST, CSV.
-\item
-  Debe proporcionar componentes para la transformación utilizando
-  modelos predefinidos (plantillas).
-\item
-  La infraestructura debe distribuirse de modo que las integraciones,
-  construidas a partir de EIP (patrones de integración empresarial) y
-  conectores predefinidos, se implementen en la infraestructura nativa
-  del contenedor para adaptarse y escalar rápidamente
-\item
-  La solución debería exponer métricas con integración nativa al
-  software Prometheus
-\item
-  Debe ser posible gestionar la creación de un token de acceso,
-  eligiendo su alcance, permiso y otras cualidades a nivel de
-  autenticación
-\item
-  La solución de administración de API debe admitir la instalación de
-  API Gateways en contenedores tanto dentro de una plataforma Kubernetes
-  o utilizando en motor de contenedor aprobado por la especificación OCI
-\item
-  Debe permitir ver las llamadas a la API y separar los códigos de
-  retorno HTTP;
-\item
-  La herramienta API Gateway debe controlar la ejecución de llamadas,
-  recopilar métricas, aplicar políticas y límites de ejecución;
-\item
-  Para permitir interoperabilidad debe habilitar transporte de mensajes
-  y conectarse entre ellos. Los mecanismos de transporte deben incluir
-  Java Messaging Service (JMS), Active MQ y asi mismo protocolos de
-  comunicación tal como HTTP/HTTPS,SMTP, entre otros
-\item
-  Se debe contar con la característica de Single Sign On (SSO)
-\item
-  Los servicios se deberán implementar bajo la plataforma Openshift de
-  RedHat
-\item
-  Se debe contemplar dentro de estos desarrollos la Transferencia de
-  archivos utilizando el esquema de almacenamiento de Openshift ODF
-  asociado a un esquema NFS, Administración de Personas, Consulta y
-  transferencia de expedientes o partes de expedientes y anexos, etc
-\end{enumerate}
-
-\hypertarget{soluciuxf3n-2}{%
-\subsection{Solución 2}\label{soluciuxf3n-2}}
-
-\hypertarget{technology-service}{%
-\subsubsection{Technology Service}\label{technology-service}}
-
-\hypertarget{soluciuxf3n-1}{%
-\subsection{Solución 1}\label{soluciuxf3n-1}}
-
-\hypertarget{sint1.-integraciuxf3n.-ingreso-a-conti}{%
-\subsubsection{SINT1. Integración. Ingreso a
-Conti}\label{sint1.-integraciuxf3n.-ingreso-a-conti}}
-
-Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio\\
-Modelo de datos (XML, RBDMS, \ldots) Esquema de datos (XSD, DTD,
-JSON-E\ldots) Contratos de interoperabilidad (WSDL, API\ldots) Mensajes
-petición IN (API, XML\ldots) Mensajes respuesta OUT (API, XML\ldots)
-Mensajes excepción (API, XML\ldots) Transporte (REST, SOAP) Función
-lógica (JEE, \ldots) Registro y envío de actividad
-
-\hypertarget{sint2.-integraciuxf3n.-consulta-uxedtem-de-conti}{%
-\subsubsection{SINT2. Integración. Consulta ítem de
-Conti}\label{sint2.-integraciuxf3n.-consulta-uxedtem-de-conti}}
-
-Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio\\
-Modelo de datos (XML, RBDMS, \ldots) Esquema de datos (XSD, DTD,
-JSON-E\ldots) Contratos de interoperabilidad (WSDL, API\ldots) Mensajes
-petición IN (API, XML\ldots) Mensajes respuesta OUT (API, XML\ldots)
-Mensajes excepción (API, XML\ldots) Transporte (REST, SOAP) Función
-lógica (JEE, \ldots) Registro y envío de actividad
-
-\hypertarget{sint3.-integraciuxf3n.-radicar-uxedtem}{%
-\subsubsection{SINT3. Integración. Radicar
-ítem}\label{sint3.-integraciuxf3n.-radicar-uxedtem}}
-
-Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio\\
-Modelo de datos (XML, RBDMS, \ldots) Esquema de datos (XSD, DTD,
-JSON-E\ldots) Contratos de interoperabilidad (WSDL, API\ldots) Mensajes
-petición IN (API, XML\ldots) Mensajes respuesta OUT (API, XML\ldots)
-Mensajes excepción (API, XML\ldots) Transporte (REST, SOAP) Función
-lógica (JEE, \ldots) Registro y envío de actividad
-
-\hypertarget{sint4.-integraciuxf3n.-generaciuxf3n-de-documentos}{%
-\subsubsection{SINT4. Integración. Generación de
-documentos}\label{sint4.-integraciuxf3n.-generaciuxf3n-de-documentos}}
-
-Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio\\
-Modelo de datos (XML, RBDMS, \ldots) Esquema de datos (XSD, DTD,
-JSON-E\ldots) Contratos de interoperabilidad (WSDL, API\ldots) Mensajes
-petición IN (API, XML\ldots) Mensajes respuesta OUT (API, XML\ldots)
-Mensajes excepción (API, XML\ldots) Transporte (REST, SOAP) Función
-lógica (JEE, \ldots) Registro y envío de actividad
-
-\hypertarget{problema-1}{%
-\subsection{Problema 1}\label{problema-1}}
-
-\hypertarget{levantamiento}{%
-\subsubsection{Levantamiento}\label{levantamiento}}
-
-\hypertarget{contractual}{%
-\subsubsection{Contractual}\label{contractual}}
-
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\tightlist
-\item
-  Implementación de al menos 20 servicios de Interoperabilidad bajo un
-  esquema de Bolsa de Horas con una cantidad de 1.960. Las horas
-  remanentes serán utilizadas en el desarrollo de servicios adicionales
-\item
-  Los al menos 20 servicios desarrollados serán entregados documentados
-  y contarán con una garantía de seis meses.
-\item
-  Para la implementación de los servicios de interoperabilidad con
-  entidades externas se utilizará el modelo XROAD definido por el
-  Ministerio de Tecnologías de la Información y Comunicaciones para
-  intercambio de información entre entidades del estado.
-\end{enumerate}
-
-\hypertarget{entrega}{%
-\subsubsection{Entrega}\label{entrega}}
-
-\hypertarget{reqr3.-integraciuxf3n-con-sistema-conti}{%
-\subsection{REQR3. Integración con Sistema
-Conti}\label{reqr3.-integraciuxf3n-con-sistema-conti}}
-
-\ldots{}
-
-\hypertarget{reqr2.-condiciones-tecnoluxf3gicas-jep}{%
-\subsection{REQR2. Condiciones tecnológicas
-JEP}\label{reqr2.-condiciones-tecnoluxf3gicas-jep}}
-
-\ldots{}
 
 Integraciones JEP, 2024
 
@@ -643,11 +418,131 @@ versión 0.1.2
   de Solidaridad y Seguros (Business Function)}
 \end{itemize}
 
+\hypertarget{introducciuxf3n}{%
+\subsection{Introducción}\label{introducciuxf3n}}
+
+\begin{figure}
+\centering
+\includegraphics{01.prop.contexto.png}
+\caption{1.contexto}
+\end{figure}
+
+El sistema principal de fondo Mi Mutual Central es la composición de las
+funciones de negocio de la Unidad de Solidaridad de Coomeva. Las
+funciones de negocio referidas, como Gestión Beneficiarios,
+Certificados, Gestión Beneficiarios, aparecen dentro del componente
+principal en la imagen.
+
+Este entregable documenta los diferentes módulos y componentes que hacen
+parte de la estructura de una aplicación en Angular 12 y como es su
+interacción para conformar una arquitectura robusta y escalable para
+aplicaciones de gran tamaño.
+
+Las librerías Spring Boot Security y Spring Boot Oauth2 proveen
+características de seguridad entre Vista (Angular 2) y Controlador.
+Estas son responsables de que únicamente permita el acceso si se está
+autenticado. Además, para realizar el proceso de autenticación se delega
+a la aplicación SISPRO (Coomeva) que funciona como un servidor de
+autenticación.
+
+Integraciones JEP, 2024
+
+Organización de referencia. Integración JEP. Softgic. Servivcios,
+Componentes, Roles de servicios.
+
+versión 0.1.2
+
+\hypertarget{contexto-1}{%
+\section{1.contexto}\label{contexto-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  \protect\hyperlink{Introducciuxf3n}{Introducción}
+\item
+  \protect\hyperlink{app:-mi-mutual-central-application-component}{app:
+  Mi Mutual Central (Application Component)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \protect\hyperlink{gestiuxf3n-usuarios-application-function}{Gestión
+    Usuarios (Application Function)}
+  \item
+    \protect\hyperlink{gestiuxf3n-fondo-mutual-y-auxilio-funerario-application-function}{Gestión
+    fondo mutual y auxilio funerario (Application Function)}
+  \item
+    \protect\hyperlink{configuraciuxf3n-factores-cuxe1lculos--contribuciones-application-function}{Configuración
+    factores cálculos- contribuciones (Application Function)}
+  \item
+    \protect\hyperlink{interoperabilidad-entre-sistemas-coomeva-application-function}{Interoperabilidad
+    entre sistemas Coomeva (Application Function)}
+  \item
+    \protect\hyperlink{gestiuxf3n-reclamaciones-application-function}{Gestión
+    Reclamaciones (Application Function)}
+  \item
+    \protect\hyperlink{gestiuxf3n-beneficiarios-application-function}{Gestión
+    Beneficiarios (Application Function)}
+  \item
+    \protect\hyperlink{administraciuxf3n-facturaciuxf3n-y-recaudo-application-function}{Administración
+    facturación y recaudo (Application Function)}
+  \item
+    \protect\hyperlink{certificados-application-function}{Certificados
+    (Application Function)}
+  \item
+    \protect\hyperlink{autorizaciones-application-function}{Autorizaciones
+    (Application Function)}
+  \item
+    \protect\hyperlink{simuladores-application-function}{Simuladores
+    (Application Function)}
+  \item
+    \protect\hyperlink{seguridad-application-function}{Seguridad
+    (Application Function)}
+  \end{itemize}
+\item
+  \protect\hyperlink{caracteruxedsticas-funcionales-requirement}{Características
+  Funcionales (Requirement)}
+\item
+  \protect\hyperlink{restricciones-de-arquitectura-constraint}{Restricciones
+  de Arquitectura (Constraint)}
+\item
+  \protect\hyperlink{autorizaciones-application-service}{Autorizaciones
+  (Application Service)}
+\item
+  \protect\hyperlink{certificados-application-service}{Certificados
+  (Application Service)}
+\item
+  \protect\hyperlink{configuraciuxf3n-application-service}{Configuración
+  (Application Service)}
+\item
+  \protect\hyperlink{facturaciuxf3n-y-recaudo-application-service}{Facturación
+  y Recaudo (Application Service)}
+\item
+  \protect\hyperlink{gestiuxf3n-de-beneficiarios-application-service}{Gestión
+  de Beneficiarios (Application Service)}
+\item
+  \protect\hyperlink{gestiuxf3n-de-productos-application-service}{Gestión
+  de Productos (Application Service)}
+\item
+  \protect\hyperlink{gestiuxf3n-de-reclamos-application-service}{Gestión
+  de Reclamos (Application Service)}
+\item
+  \protect\hyperlink{gestiuxf3n-de-usuarios-application-service}{Gestión
+  de Usuarios (Application Service)}
+\item
+  \protect\hyperlink{simuladores-application-service}{Simuladores
+  (Application Service)}
+\item
+  \protect\hyperlink{unidad-de-solidaridad-y-seguros-business-function}{Unidad
+  de Solidaridad y Seguros (Business Function)}
+\end{itemize}
+
 \hypertarget{introducciuxf3n-1}{%
 \subsection{Introducción}\label{introducciuxf3n-1}}
 
 \begin{figure}
 \centering
+\includegraphics{01.prop.contexto.png}
 \caption{1.contexto}
 \end{figure}
 
