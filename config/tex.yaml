@@ -1,5 +1,5 @@
 input-file: output/manuscript.md
-template: /home/runner/hwo-academicTempl/templates/doctectemplate.tex
+template: /home/runner/hwo-academicTempl/templates/eisvogel.tex
 log-file: output/texdoctec.log
 output-file: output/texdoctec.tex
 pdf-engine: tectonic # wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context, tectonic
