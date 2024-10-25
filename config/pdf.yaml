@@ -1,6 +1,6 @@
 input-file: output/manuscript.md
 log-file: output/pdfdoctec.log
 output-file: output/pdfdoctec.pdf
-pdf-engine: tectonic #wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context
+pdf-engine: pdflatex #wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context
 to: pdf
 toc-depth: 2
