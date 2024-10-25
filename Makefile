@@ -14,7 +14,7 @@ OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 doctec:
 	# doctec-docx doctec-tex doctec-pdf doctec-html
-	make doctec-docx doctec-pdf doctec-tex
+	make doctec-docx doctec-pdf
 
 presentacion:
 	make ppt-html ppt-pdf ppt-pptx ppt-tex
