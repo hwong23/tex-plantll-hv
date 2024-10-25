@@ -90,6 +90,16 @@
 \definecolor{default-citecolor}{HTML}{4077C0}
 \definecolor{default-urlcolor}{HTML}{4077C0}
 \usepackage[margin=2.5cm,includehead=true,includefoot=true,centering,]{geometry}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
 % add backlinks to footnote references, cf. https://tex.stackexchange.com/questions/302266/make-footnote-clickable-both-ways
 \usepackage{footnotebackref}
 \usepackage{graphicx}
@@ -123,6 +133,40 @@
 % get rid of language-specific shorthands (see #6817):
 \let\LanguageShortHands\languageshorthands
 \def\languageshorthands#1{}
+\makeatletter
+\@ifpackageloaded{subfig}{}{\usepackage{subfig}}
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\captionsetup[subfloat]{margin=0.5em}
+\AtBeginDocument{%
+\renewcommand*\figurename{Figura}
+\renewcommand*\tablename{Tabla}
+}
+\AtBeginDocument{%
+\renewcommand*\listfigurename{Lista de Figuras}
+\renewcommand*\listtablename{Lista de Tablas}
+}
+\newcounter{pandoccrossref@subfigures@footnote@counter}
+\newenvironment{pandoccrossrefsubfigures}{%
+\setcounter{pandoccrossref@subfigures@footnote@counter}{0}
+\begin{figure}\centering%
+\gdef\global@pandoccrossref@subfigures@footnotes{}%
+\DeclareRobustCommand{\footnote}[1]{\footnotemark%
+\stepcounter{pandoccrossref@subfigures@footnote@counter}%
+\ifx\global@pandoccrossref@subfigures@footnotes\empty%
+\gdef\global@pandoccrossref@subfigures@footnotes{{##1}}%
+\else%
+\g@addto@macro\global@pandoccrossref@subfigures@footnotes{, {##1}}%
+\fi}}%
+{\end{figure}%
+\addtocounter{footnote}{-\value{pandoccrossref@subfigures@footnote@counter}}
+\@for\f:=\global@pandoccrossref@subfigures@footnotes\do{\stepcounter{footnote}\footnotetext{\f}}%
+\gdef\global@pandoccrossref@subfigures@footnotes{}}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{Listas del Documento}}
+\makeatother
 \usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
@@ -244,6 +288,15 @@
 % tables
 %
 
+\definecolor{table-row-color}{HTML}{F5F5F5}
+\definecolor{table-rule-color}{HTML}{999999}
+
+%\arrayrulecolor{black!40}
+\arrayrulecolor{table-rule-color}     % color of \toprule, \midrule, \bottomrule
+\setlength\heavyrulewidth{0.3ex}      % thickness of \toprule, \bottomrule
+\renewcommand{\arraystretch}{1.3}     % spacing (padding)
+
+
 %
 % remove paragraph indentation
 %
@@ -326,124 +379,393 @@ Name} \vskip 0.6em \textsf{2017-02-20}}
 % \maketitle
 
 
-Integraciones JEP, 2024
+Modelo de Integración. Proyecto JEP, 2024. Softgic.
 
-Organización de referencia. Integración JEP. Softgic. Servivcios,
-Componentes, Roles de servicios.
+Capacidades del modelo de integración para la impleentación de
+requerimientos de interoperabilidad del proyecto Integración JEP, 2024.
 
-versión 0.1.2
+04.ing.3n.Ver 0.2.33
 
-\hypertarget{contexto}{%
-\section{1.contexto}\label{contexto}}
+\section{04.ING.3n.1. Modelo de Interoperabilidad JEP,
+2024}\label{sec:ing.3n.1.-modelo-de-interoperabilidad-jep-2024}
 
 \begin{itemize}
 \tightlist
 \item
-  \protect\hyperlink{Introducciuxf3n}{Introducción}
+  \hyperref[Introducciuxf3n]{Introducción}
 \item
-  \protect\hyperlink{app:-mi-mutual-central-application-component}{app:
-  Mi Mutual Central (Application Component)}
+  \hyperref[entregables-grouping]{Entregables (Grouping)}
 
   \begin{itemize}
   \tightlist
   \item
-    \protect\hyperlink{gestiuxf3n-usuarios-application-function}{Gestión
-    Usuarios (Application Function)}
+    \hyperref[entg01.-soluciuxf3n-de-integraciuxf3n-jep-application-component]{ENTG01.
+    Solución de Integración JEP (Application Component)}
   \item
-    \protect\hyperlink{gestiuxf3n-fondo-mutual-y-auxilio-funerario-application-function}{Gestión
-    fondo mutual y auxilio funerario (Application Function)}
+    \hyperref[entg02.-servicios-de-integraciuxf3n-jep-application-service]{ENTG02.
+    Servicios de Integración JEP (Application Service)}
   \item
-    \protect\hyperlink{configuraciuxf3n-factores-cuxe1lculos--contribuciones-application-function}{Configuración
-    factores cálculos- contribuciones (Application Function)}
+    \hyperref[entg04.-nodo-integraciuxf3n-jep-node]{ENTG04. Nodo
+    Integración JEP (Node)}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \hyperref[entg06.-contenedor-application-component]{ENTG06.
+      Contenedor (Application Component)}
+
+      \begin{itemize}
+      \tightlist
+      \item
+        \hyperref[entg07-ltlttaskgtgt-application-service]{ENTG07
+        \&lt;\&lt;task\&gt;\&gt; (Application Service)}
+      \end{itemize}
+    \item
+      \hyperref[entg05.-proceso-ltltworkergtgt-application-process]{ENTG05.
+      Proceso \&lt;\&lt;worker\&gt;\&gt; (Application Process)}
+    \end{itemize}
   \item
-    \protect\hyperlink{interoperabilidad-entre-sistemas-coomeva-application-function}{Interoperabilidad
-    entre sistemas Coomeva (Application Function)}
+    \hyperref[entg03.-cicd-integraciuxf3n-jep-technology-service]{ENTG03.
+    CI/CD Integración JEP (Technology Service)}
   \item
-    \protect\hyperlink{gestiuxf3n-reclamaciones-application-function}{Gestión
-    Reclamaciones (Application Function)}
-  \item
-    \protect\hyperlink{gestiuxf3n-beneficiarios-application-function}{Gestión
-    Beneficiarios (Application Function)}
-  \item
-    \protect\hyperlink{administraciuxf3n-facturaciuxf3n-y-recaudo-application-function}{Administración
-    facturación y recaudo (Application Function)}
-  \item
-    \protect\hyperlink{certificados-application-function}{Certificados
-    (Application Function)}
-  \item
-    \protect\hyperlink{autorizaciones-application-function}{Autorizaciones
-    (Application Function)}
-  \item
-    \protect\hyperlink{simuladores-application-function}{Simuladores
-    (Application Function)}
-  \item
-    \protect\hyperlink{seguridad-application-function}{Seguridad
-    (Application Function)}
+    \hyperref[entg04.-nodo-integraciuxf3n-jep-node-2]{ENTG04. Nodo
+    Integración JEP (Node) 2}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \hyperref[entg06.-contenedor-application-component-2]{ENTG06.
+      Contenedor (Application Component) 2}
+
+      \begin{itemize}
+      \tightlist
+      \item
+        \hyperref[entg07-ltlttaskgtgt-application-service-2]{ENTG07
+        \&lt;\&lt;task\&gt;\&gt; (Application Service) 2}
+      \end{itemize}
+    \item
+      \hyperref[entg05.-proceso-ltltworkergtgt-application-process-2]{ENTG05.
+      Proceso \&lt;\&lt;worker\&gt;\&gt; (Application Process) 2}
+    \end{itemize}
   \end{itemize}
 \item
-  \protect\hyperlink{caracteruxedsticas-funcionales-requirement}{Características
-  Funcionales (Requirement)}
+  \hyperref[gestiuxf3n-integraciuxf3n-grouping]{Gestión Integración
+  (Grouping)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \hyperref[monitoreo-de-ssrvc-integraciuxf3n-constraint]{Monitoreo de
+    (ssrvc) integración (Constraint)}
+  \item
+    \hyperref[requerimientos-integraciuxf3n-jep-requirement]{Requerimientos
+    integración JEP (Requirement)}
+  \item
+    \hyperref[alcance-proyecto-integraciuxf3n-goal]{Alcance Proyecto
+    Integración (Goal)}
+  \item
+    \hyperref[justificaciuxf3n-proyecto-integraciuxf3n-jep-driver]{Justificación
+    Proyecto Integración JEP (Driver)}
+  \item
+    \hyperref[objeto-contractual-proyecto-jep-principle]{Objeto
+    Contractual Proyecto JEP (Principle)}
+  \item
+    \hyperref[uso-de-infraestrucutra-tecnoluxf3gica-jep-constraint]{Uso
+    de Infraestrucutra Tecnológica JEP (Constraint)}
+  \end{itemize}
 \item
-  \protect\hyperlink{restricciones-de-arquitectura-constraint}{Restricciones
-  de Arquitectura (Constraint)}
-\item
-  \protect\hyperlink{autorizaciones-application-service}{Autorizaciones
-  (Application Service)}
-\item
-  \protect\hyperlink{certificados-application-service}{Certificados
-  (Application Service)}
-\item
-  \protect\hyperlink{configuraciuxf3n-application-service}{Configuración
-  (Application Service)}
-\item
-  \protect\hyperlink{facturaciuxf3n-y-recaudo-application-service}{Facturación
-  y Recaudo (Application Service)}
-\item
-  \protect\hyperlink{gestiuxf3n-de-beneficiarios-application-service}{Gestión
-  de Beneficiarios (Application Service)}
-\item
-  \protect\hyperlink{gestiuxf3n-de-productos-application-service}{Gestión
-  de Productos (Application Service)}
-\item
-  \protect\hyperlink{gestiuxf3n-de-reclamos-application-service}{Gestión
-  de Reclamos (Application Service)}
-\item
-  \protect\hyperlink{gestiuxf3n-de-usuarios-application-service}{Gestión
-  de Usuarios (Application Service)}
-\item
-  \protect\hyperlink{simuladores-application-service}{Simuladores
-  (Application Service)}
-\item
-  \protect\hyperlink{unidad-de-solidaridad-y-seguros-business-function}{Unidad
-  de Solidaridad y Seguros (Business Function)}
+  \hyperref[modelo-de-integraciuxf3n-jepux2c-2024.-softgic-grouping]{Modelo
+  de Integración JEP, 2024. Softgic (Grouping)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \hyperref[transporte-capability]{Transporte (Capability)}
+  \item
+    \hyperref[plano-de-administraciuxf3n-capability]{Plano de
+    Administración (Capability)}
+  \item
+    \hyperref[esquema-de-datos-capability]{Esquema de Datos
+    (Capability)}
+  \item
+    \hyperref[transformaciuxf3n-de-mensajes-capability]{Transformación
+    de Mensajes (Capability)}
+  \item
+    \hyperref[modelo-de-seguridad-capability]{Modelo de Seguridad
+    (Capability)}
+  \item
+    \hyperref[condiciones-de-despliegue-capability]{Condiciones de
+    Despliegue (Capability)}
+  \item
+    \hyperref[composiciuxf3n-de-servicios-capability]{Composición de
+    Servicios (Capability)}
+  \item
+    \hyperref[proveedores-y-consumidores-capability]{Proveedores y
+    Consumidores (Capability)}
+  \item
+    \hyperref[alcance-de-la-integraciuxf3n-capability]{Alcance de la
+    Integración (Capability)}
+  \item
+    \hyperref[tecnologuxedas-capability]{Tecnologías (Capability)}
+  \item
+    \hyperref[conectividad-api-capability]{Conectividad API
+    (Capability)}
+  \item
+    \hyperref[contratos-de-interoperabilidad-capability]{Contratos de
+    Interoperabilidad (Capability)}
+  \item
+    \hyperref[tipo-de-comunicaciuxf3n-capability]{Tipo de Comunicación
+    (Capability)}
+  \item
+    \hyperref[sistema-de-mensajes-capability]{Sistema de Mensajes
+    (Capability)}
+  \item
+    \hyperref[patruxf3n-de-integraciuxf3n-eip-capability]{Patrón de
+    Integración (EIP) (Capability)}
+  \item
+    \hyperref[integraciuxf3n-de-procesos-capability]{Integración de
+    Procesos (Capability)}
+  \item
+    \hyperref[flujo-de-datos-capability]{Flujo de datos (Capability)}
+  \item
+    \hyperref[soluciuxf3n-de-integraciuxf3n-capability]{Solución de
+    Integración (Capability)}
+  \item
+    \hyperref[ambientes-y-herramientas-capability]{Ambientes y
+    Herramientas (Capability)}
+  \end{itemize}
 \end{itemize}
 
-\hypertarget{introducciuxf3n}{%
-\subsection{Introducción}\label{introducciuxf3n}}
+\subsection{Introducción}\label{sec:introducciuxf3n}
 
 \begin{figure}
 \centering
-\includegraphics{01.prop.contexto.png}
-\caption{1.contexto}
+\includegraphics{01.1n.modelointegrac.png}
+\caption{04.ING.3n.1. Modelo de Interoperabilidad JEP, 2024}
 \end{figure}
 
-El sistema principal de fondo Mi Mutual Central es la composición de las
-funciones de negocio de la Unidad de Solidaridad de Coomeva. Las
-funciones de negocio referidas, como Gestión Beneficiarios,
-Certificados, Gestión Beneficiarios, aparecen dentro del componente
-principal en la imagen.
+El presente modelo de solución de interoperabilidad JEP, 2024, en
+desarrollo por Softgic, expone para aprobación y referencia las
+decisiones de la solución de integración y las restricciones que la
+rigen. Una vez revisado y aprobado por parte de JEP el modelo de
+interoperabilidad será referencia para la gestión del proyecto y de los
+entregables de esta solución.
 
-Este entregable documenta los diferentes módulos y componentes que hacen
-parte de la estructura de una aplicación en Angular 12 y como es su
-interacción para conformar una arquitectura robusta y escalable para
-aplicaciones de gran tamaño.
+\subsection{Características Principales del Modelo de Integración
+JEP}\label{sec:caracteruxedsticas-principales-del-modelo-de-integraciuxf3n-jep}
 
-Las librerías Spring Boot Security y Spring Boot Oauth2 proveen
-características de seguridad entre Vista (Angular 2) y Controlador.
-Estas son responsables de que únicamente permita el acceso si se está
-autenticado. Además, para realizar el proceso de autenticación se delega
-a la aplicación SISPRO (Coomeva) que funciona como un servidor de
-autenticación.
+\begin{itemize}
+\tightlist
+\item
+  API de integración
+\item
+  Patrones de integración empresarial (EIP)
+\item
+  Sistema de Mensajería entre servicios de integración y aplicaciones
+  JEP
+\item
+  Flujos de datos para integración
+\item
+  Arquitectura de clusters y contenedores para integración
+\item
+  Uso de infraestructura tecnológica JEP
+\end{itemize}
+
+Versión fcb28c6 - cfg--restore - Fri, 25 Oct 2024 13:15:18 -0500
+
+Modelo de Integración. Proyecto JEP, 2024. Softgic.
+
+Capacidades del modelo de integración para la impleentación de
+requerimientos de interoperabilidad del proyecto Integración JEP, 2024.
+
+04.ing.3n.Ver 0.2.33
+
+\section{04.ING.3n.1. Modelo de Interoperabilidad JEP,
+2024}\label{sec:ing.3n.1.-modelo-de-interoperabilidad-jep-2024-1}
+
+\begin{itemize}
+\tightlist
+\item
+  \hyperref[Introducciuxf3n]{Introducción}
+\item
+  \hyperref[entregables-grouping]{Entregables (Grouping)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \hyperref[entg01.-soluciuxf3n-de-integraciuxf3n-jep-application-component]{ENTG01.
+    Solución de Integración JEP (Application Component)}
+  \item
+    \hyperref[entg02.-servicios-de-integraciuxf3n-jep-application-service]{ENTG02.
+    Servicios de Integración JEP (Application Service)}
+  \item
+    \hyperref[entg04.-nodo-integraciuxf3n-jep-node]{ENTG04. Nodo
+    Integración JEP (Node)}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \hyperref[entg06.-contenedor-application-component]{ENTG06.
+      Contenedor (Application Component)}
+
+      \begin{itemize}
+      \tightlist
+      \item
+        \hyperref[entg07-ltlttaskgtgt-application-service]{ENTG07
+        \&lt;\&lt;task\&gt;\&gt; (Application Service)}
+      \end{itemize}
+    \item
+      \hyperref[entg05.-proceso-ltltworkergtgt-application-process]{ENTG05.
+      Proceso \&lt;\&lt;worker\&gt;\&gt; (Application Process)}
+    \end{itemize}
+  \item
+    \hyperref[entg03.-cicd-integraciuxf3n-jep-technology-service]{ENTG03.
+    CI/CD Integración JEP (Technology Service)}
+  \item
+    \hyperref[entg04.-nodo-integraciuxf3n-jep-node-2]{ENTG04. Nodo
+    Integración JEP (Node) 2}
+
+    \begin{itemize}
+    \tightlist
+    \item
+      \hyperref[entg06.-contenedor-application-component-2]{ENTG06.
+      Contenedor (Application Component) 2}
+
+      \begin{itemize}
+      \tightlist
+      \item
+        \hyperref[entg07-ltlttaskgtgt-application-service-2]{ENTG07
+        \&lt;\&lt;task\&gt;\&gt; (Application Service) 2}
+      \end{itemize}
+    \item
+      \hyperref[entg05.-proceso-ltltworkergtgt-application-process-2]{ENTG05.
+      Proceso \&lt;\&lt;worker\&gt;\&gt; (Application Process) 2}
+    \end{itemize}
+  \end{itemize}
+\item
+  \hyperref[gestiuxf3n-integraciuxf3n-grouping]{Gestión Integración
+  (Grouping)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \hyperref[monitoreo-de-ssrvc-integraciuxf3n-constraint]{Monitoreo de
+    (ssrvc) integración (Constraint)}
+  \item
+    \hyperref[requerimientos-integraciuxf3n-jep-requirement]{Requerimientos
+    integración JEP (Requirement)}
+  \item
+    \hyperref[alcance-proyecto-integraciuxf3n-goal]{Alcance Proyecto
+    Integración (Goal)}
+  \item
+    \hyperref[justificaciuxf3n-proyecto-integraciuxf3n-jep-driver]{Justificación
+    Proyecto Integración JEP (Driver)}
+  \item
+    \hyperref[objeto-contractual-proyecto-jep-principle]{Objeto
+    Contractual Proyecto JEP (Principle)}
+  \item
+    \hyperref[uso-de-infraestrucutra-tecnoluxf3gica-jep-constraint]{Uso
+    de Infraestrucutra Tecnológica JEP (Constraint)}
+  \end{itemize}
+\item
+  \hyperref[modelo-de-integraciuxf3n-jepux2c-2024.-softgic-grouping]{Modelo
+  de Integración JEP, 2024. Softgic (Grouping)}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    \hyperref[transporte-capability]{Transporte (Capability)}
+  \item
+    \hyperref[plano-de-administraciuxf3n-capability]{Plano de
+    Administración (Capability)}
+  \item
+    \hyperref[esquema-de-datos-capability]{Esquema de Datos
+    (Capability)}
+  \item
+    \hyperref[transformaciuxf3n-de-mensajes-capability]{Transformación
+    de Mensajes (Capability)}
+  \item
+    \hyperref[modelo-de-seguridad-capability]{Modelo de Seguridad
+    (Capability)}
+  \item
+    \hyperref[condiciones-de-despliegue-capability]{Condiciones de
+    Despliegue (Capability)}
+  \item
+    \hyperref[composiciuxf3n-de-servicios-capability]{Composición de
+    Servicios (Capability)}
+  \item
+    \hyperref[proveedores-y-consumidores-capability]{Proveedores y
+    Consumidores (Capability)}
+  \item
+    \hyperref[alcance-de-la-integraciuxf3n-capability]{Alcance de la
+    Integración (Capability)}
+  \item
+    \hyperref[tecnologuxedas-capability]{Tecnologías (Capability)}
+  \item
+    \hyperref[conectividad-api-capability]{Conectividad API
+    (Capability)}
+  \item
+    \hyperref[contratos-de-interoperabilidad-capability]{Contratos de
+    Interoperabilidad (Capability)}
+  \item
+    \hyperref[tipo-de-comunicaciuxf3n-capability]{Tipo de Comunicación
+    (Capability)}
+  \item
+    \hyperref[sistema-de-mensajes-capability]{Sistema de Mensajes
+    (Capability)}
+  \item
+    \hyperref[patruxf3n-de-integraciuxf3n-eip-capability]{Patrón de
+    Integración (EIP) (Capability)}
+  \item
+    \hyperref[integraciuxf3n-de-procesos-capability]{Integración de
+    Procesos (Capability)}
+  \item
+    \hyperref[flujo-de-datos-capability]{Flujo de datos (Capability)}
+  \item
+    \hyperref[soluciuxf3n-de-integraciuxf3n-capability]{Solución de
+    Integración (Capability)}
+  \item
+    \hyperref[ambientes-y-herramientas-capability]{Ambientes y
+    Herramientas (Capability)}
+  \end{itemize}
+\end{itemize}
+
+\subsection{Introducción}\label{sec:introducciuxf3n-1}
+
+\begin{figure}
+\centering
+\includegraphics{01.1n.modelointegrac.png}
+\caption{04.ING.3n.1. Modelo de Interoperabilidad JEP, 2024}
+\end{figure}
+
+El presente modelo de solución de interoperabilidad JEP, 2024, en
+desarrollo por Softgic, expone para aprobación y referencia las
+decisiones de la solución de integración y las restricciones que la
+rigen. Una vez revisado y aprobado por parte de JEP el modelo de
+interoperabilidad será referencia para la gestión del proyecto y de los
+entregables de esta solución.
+
+\subsection{Características Principales del Modelo de Integración
+JEP}\label{sec:caracteruxedsticas-principales-del-modelo-de-integraciuxf3n-jep-1}
+
+\begin{itemize}
+\tightlist
+\item
+  API de integración
+\item
+  Patrones de integración empresarial (EIP)
+\item
+  Sistema de Mensajería entre servicios de integración y aplicaciones
+  JEP
+\item
+  Flujos de datos para integración
+\item
+  Arquitectura de clusters y contenedores para integración
+\item
+  Uso de infraestructura tecnológica JEP
+\end{itemize}
+
+Versión \$COMMIT
 
 Integraciones JEP, 2024
 
@@ -452,93 +774,91 @@ Componentes, Roles de servicios.
 
 versión 0.1.2
 
-\hypertarget{contexto-1}{%
-\section{1.contexto}\label{contexto-1}}
+\section{1.contexto}\label{sec:contexto}
 
 \begin{itemize}
 \tightlist
 \item
-  \protect\hyperlink{Introducciuxf3n}{Introducción}
+  \hyperref[Introducciuxf3n]{Introducción}
 \item
-  \protect\hyperlink{app:-mi-mutual-central-application-component}{app:
-  Mi Mutual Central (Application Component)}
+  \hyperref[app:-mi-mutual-central-application-component]{app: Mi Mutual
+  Central (Application Component)}
 
   \begin{itemize}
   \tightlist
   \item
-    \protect\hyperlink{gestiuxf3n-usuarios-application-function}{Gestión
-    Usuarios (Application Function)}
+    \hyperref[gestiuxf3n-usuarios-application-function]{Gestión Usuarios
+    (Application Function)}
   \item
-    \protect\hyperlink{gestiuxf3n-fondo-mutual-y-auxilio-funerario-application-function}{Gestión
+    \hyperref[gestiuxf3n-fondo-mutual-y-auxilio-funerario-application-function]{Gestión
     fondo mutual y auxilio funerario (Application Function)}
   \item
-    \protect\hyperlink{configuraciuxf3n-factores-cuxe1lculos--contribuciones-application-function}{Configuración
+    \hyperref[configuraciuxf3n-factores-cuxe1lculos--contribuciones-application-function]{Configuración
     factores cálculos- contribuciones (Application Function)}
   \item
-    \protect\hyperlink{interoperabilidad-entre-sistemas-coomeva-application-function}{Interoperabilidad
+    \hyperref[interoperabilidad-entre-sistemas-coomeva-application-function]{Interoperabilidad
     entre sistemas Coomeva (Application Function)}
   \item
-    \protect\hyperlink{gestiuxf3n-reclamaciones-application-function}{Gestión
+    \hyperref[gestiuxf3n-reclamaciones-application-function]{Gestión
     Reclamaciones (Application Function)}
   \item
-    \protect\hyperlink{gestiuxf3n-beneficiarios-application-function}{Gestión
+    \hyperref[gestiuxf3n-beneficiarios-application-function]{Gestión
     Beneficiarios (Application Function)}
   \item
-    \protect\hyperlink{administraciuxf3n-facturaciuxf3n-y-recaudo-application-function}{Administración
+    \hyperref[administraciuxf3n-facturaciuxf3n-y-recaudo-application-function]{Administración
     facturación y recaudo (Application Function)}
   \item
-    \protect\hyperlink{certificados-application-function}{Certificados
+    \hyperref[certificados-application-function]{Certificados
     (Application Function)}
   \item
-    \protect\hyperlink{autorizaciones-application-function}{Autorizaciones
+    \hyperref[autorizaciones-application-function]{Autorizaciones
     (Application Function)}
   \item
-    \protect\hyperlink{simuladores-application-function}{Simuladores
-    (Application Function)}
+    \hyperref[simuladores-application-function]{Simuladores (Application
+    Function)}
   \item
-    \protect\hyperlink{seguridad-application-function}{Seguridad
-    (Application Function)}
+    \hyperref[seguridad-application-function]{Seguridad (Application
+    Function)}
   \end{itemize}
 \item
-  \protect\hyperlink{caracteruxedsticas-funcionales-requirement}{Características
+  \hyperref[caracteruxedsticas-funcionales-requirement]{Características
   Funcionales (Requirement)}
 \item
-  \protect\hyperlink{restricciones-de-arquitectura-constraint}{Restricciones
-  de Arquitectura (Constraint)}
+  \hyperref[restricciones-de-arquitectura-constraint]{Restricciones de
+  Arquitectura (Constraint)}
 \item
-  \protect\hyperlink{autorizaciones-application-service}{Autorizaciones
+  \hyperref[autorizaciones-application-service]{Autorizaciones
   (Application Service)}
 \item
-  \protect\hyperlink{certificados-application-service}{Certificados
+  \hyperref[certificados-application-service]{Certificados (Application
+  Service)}
+\item
+  \hyperref[configuraciuxf3n-application-service]{Configuración
   (Application Service)}
 \item
-  \protect\hyperlink{configuraciuxf3n-application-service}{Configuración
-  (Application Service)}
+  \hyperref[facturaciuxf3n-y-recaudo-application-service]{Facturación y
+  Recaudo (Application Service)}
 \item
-  \protect\hyperlink{facturaciuxf3n-y-recaudo-application-service}{Facturación
-  y Recaudo (Application Service)}
+  \hyperref[gestiuxf3n-de-beneficiarios-application-service]{Gestión de
+  Beneficiarios (Application Service)}
 \item
-  \protect\hyperlink{gestiuxf3n-de-beneficiarios-application-service}{Gestión
-  de Beneficiarios (Application Service)}
+  \hyperref[gestiuxf3n-de-productos-application-service]{Gestión de
+  Productos (Application Service)}
 \item
-  \protect\hyperlink{gestiuxf3n-de-productos-application-service}{Gestión
-  de Productos (Application Service)}
+  \hyperref[gestiuxf3n-de-reclamos-application-service]{Gestión de
+  Reclamos (Application Service)}
 \item
-  \protect\hyperlink{gestiuxf3n-de-reclamos-application-service}{Gestión
-  de Reclamos (Application Service)}
+  \hyperref[gestiuxf3n-de-usuarios-application-service]{Gestión de
+  Usuarios (Application Service)}
 \item
-  \protect\hyperlink{gestiuxf3n-de-usuarios-application-service}{Gestión
-  de Usuarios (Application Service)}
+  \hyperref[simuladores-application-service]{Simuladores (Application
+  Service)}
 \item
-  \protect\hyperlink{simuladores-application-service}{Simuladores
-  (Application Service)}
-\item
-  \protect\hyperlink{unidad-de-solidaridad-y-seguros-business-function}{Unidad
-  de Solidaridad y Seguros (Business Function)}
+  \hyperref[unidad-de-solidaridad-y-seguros-business-function]{Unidad de
+  Solidaridad y Seguros (Business Function)}
 \end{itemize}
 
-\hypertarget{introducciuxf3n-1}{%
-\subsection{Introducción}\label{introducciuxf3n-1}}
+\subsection{Introducción}\label{sec:introducciuxf3n-2}
 
 \begin{figure}
 \centering

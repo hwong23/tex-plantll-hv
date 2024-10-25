@@ -1,6 +1,6 @@
 ---
 title: "Vinaque sanguine metuenti cuiquam Alcyone fixus"
-author: [Author Name]
+author: [Author Name HWO]
 date: "2017-02-20"
 subject: "Markdown"
 keywords: [Markdown, Example]
@@ -9,141 +9,216 @@ lang: "en"
 titlepage: true,
 titlepage-rule-color: "360049"
 titlepage-background: "background1.pdf"
-cuerpo: |
-   Antes SIPAS, Mi Mutual es una aplicación web compuesta por distintos módulos de software con arreglo a todas las actividades necesarias que soportan la operación de los productos y servicios que ofrece la Unidad de Solidaridad y Seguros de la Cooperativa.
+Entregables: |
    
-   El despliegue es el evento que permite el inicio de las QA funcionales.
+ENTG01.-Solución-de-Integración-JEP: |
+   Documentación técnica del diseño de solución de la integración JEP, 2024.
    
-Gestión-Usuarios: |
-   Gestión de Usuarios: Administración de la información relacionada con los usuarios del sistema. Este componente se comunica con el servicio unificado de autenticación y autorización que devuelve los permisos que un usuario posee sobre las opciones que proporciona el sistema.
+ENTG02.-Servicios-de-Integración-JEP: |
+   Servicios ejecutables desplegados en los entornos de software JEP.
    
-Gestión-fondo-mutual-y-auxilio-funerario: |
-   Gestión de productos del fondo mutual y auxilio funerario que involucran a sus coberturas
+ENTG04.-Nodo-Integración-JEP: |
+   Cluster de ejecución de los nodos y procesos de (servicios) de integración del proyecto.
+ENTG06.-Contenedor: |
+   Contenedores de los servicios de integración del proyecto desplegados en la infraestructura tecnológica JEP.
    
-Configuración-factores-cálculos--contribuciones: |
-   1. Configuración o parametrización de factores para realizar los cálculos de las contribuciones de los asociados a la Cooperativa para cada uno de los productos adquiridos.
+ENTG07-&lt;&lt;task&gt;&gt;: |
+   Servicios de integración del proyecto desplegados en la infraestructura tecnológica JEP.
    
-Interoperabilidad-entre-sistemas-Coomeva: |
-   Integración con otros sistemas para facilitar los procesos de vinculación, retiro, reactivación o fallecimiento de asociados.
+ENTG05.-Proceso-&lt;&lt;worker&gt;&gt;: |
+   Configuración de servicios de integración del proyecto dentro de la infraestructura tecnológica JEP.
+ENTG03.-CI/CD-Integración-JEP: |
+   Cadenas de integración y despliegue continuo de los servicios de integración del proyecto de integración JEP, 2024.
    
-Gestión-Reclamaciones: |
-   Gestión de Reclamaciones (Indemnización): Permite realizar la gestión, seguimiento y pago o negación de las diferentes reclamaciones de acuerdo a las coberturas y los productos que se encuentren dentro del portafolio del Asociado.
+ENTG04.-Nodo-Integración-JEP: |
+   Cluster de ejecución de los nodos y procesos de (servicios) de integración del proyecto.
+ENTG06.-Contenedor: |
+   Contenedores de los servicios de integración del proyecto desplegados en la infraestructura tecnológica JEP.
    
-Gestión-Beneficiarios: |
-   Gestión de Beneficiarios: Permite administrar la información relacionada con los beneficiarios del Asociado, permitiendo ejecutar operaciones de consulta, inserción y modificación.
+ENTG07-&lt;&lt;task&gt;&gt;: |
+   Servicios de integración del proyecto desplegados en la infraestructura tecnológica JEP.
    
-Administración-facturación-y-recaudo: |
-   Administración de la facturación y recaudo diario de los productos
+ENTG05.-Proceso-&lt;&lt;worker&gt;&gt;: |
+   Configuración de servicios de integración del proyecto dentro de la infraestructura tecnológica JEP.
+Gestión-Integración: |
    
-Certificados: |
-   Certificados: Permite la generación de los certificados de valores de protección y contribuciones pagadas, de retención en la fuente, de pagos de perseverancia y de cobertura de auxilio funerario.
+Monitoreo-de-(ssrvc)-integración: |
+   * Herramientas de monitoreo y logging con las que cuenta la solución actual de orquestación de contenedores de OpenShift.
+    
+    * Monitoreo de uso de los recursos de procesamiento, red y memoria de los componentes claves de la solución haciendo uso de ServiceMesh.
    
-Autorizaciones: |
-   Autorizaciones: Administración de peticiones de autorización y sus correspondientes aprobaciones mediante el servicio del flujo de procesos
-Simuladores: |
-   Simuladores: Funcionalidades que permiten generar las simulaciones de los diferentes planes o modificaciones (incrementos y disminuciones) a los productos del Asociado.
+   *  La solución soporta la habilitación de reglas de alertas sobre los registros de actividad y monitoreo.
    
-Seguridad: |
+   * Soluciones de EFK (Elasticsearch, FluentD, Kibana - ELKstack), a través de operadores para centralizar el proceso de logs que se generan en difrerentes espacios de trabajo.
    
-Características-Funcionales: |
-   1. Gestión de productos del fondo mutual y auxilio funerario que involucran a sus coberturas
-   1. Administración de la facturación y recaudo diario de los productos
-   1. Gestión de Reclamaciones (Indemnización): Permite realizar la gestión, seguimiento y pago o negación de las diferentes reclamaciones de acuerdo a las coberturas y los productos que se encuentren dentro del portafolio del Asociado.
-   1. Gestión de Beneficiarios: Permite administrar la información relacionada con los beneficiarios del Asociado, permitiendo ejecutar operaciones de consulta, inserción y modificación.
-   1. Gestión de Usuarios: Administración de la información relacionada con los usuarios del sistema. Este componente se comunica con el servicio unificado de autenticación y autorización que devuelve los permisos que un usuario posee sobre las opciones que proporciona el sistema.
-   1. Integración con otros sistemas para facilitar los procesos de vinculación, retiro, reactivación o fallecimiento de asociados.
-   1. Configuración o parametrización de factores para realizar los cálculos de las contribuciones de los asociados a la Cooperativa para cada uno de los productos adquiridos.
+Requerimientos-integración-JEP: |
+   Del alcance del proyecto
+   1. Implementación de 20 o más servicios de integración al 31 de diciembre del 2024.
+   1. Soporte solución de integración a julio 2025.
    
-Restricciones-de-Arquitectura: |
-   1. Disponibilidad. Se requiere que el sistema esté disponible 7 X 24, el servicio prestado al cliente no se limita a horarios de oficina pues las compras pueden darse en cualquier momento
-   1. Escalabilidad. Se requiere que el sistema pueda llegar a atender hasta 1.000 clientes, para esto se requiere que el sistema se pueda extender horizontalmente de tal manera que pueda tener instalado en varios servidores para atender esta cantidad de usuarios. Todas las aplicaciones desarrolladas podrán ser escaladas horizontalmente para atender la demanda relacionada con el crecimiento de la empresa.
-   1. Reutilización. Se requiere que el sistema permita reutilizar sus componentes para prestar el mismo servicio a otras aplicaciones de la compañía. Para esto se va a desarrollar la aplicación utilizando servicios, separados y con asignación de responsabilidades, propias, de tal manera de que, si se requiere exponer servicios web sobre estas funcionalidades, no requiere cambios en la aplicación.
-   1. Autenticación. Autenticación es el proceso para determinar que alguien o un sistema es quien dice ser. Uso de estándar Oauth2 y JSON Web Token – JWT, para gestión de autenticación de servicios de la aplicación.
-   1. Autorización. Autorización se refiere a la validación que realiza un sistema para determinar si un usuario puede usar cierta funcionalidad. Uso de API de seguridad de Spring (spring-security) + Oauth2
-   1. Interoperabilidad – Movilidad. Interoperabilidad se refiere a la habilidad de un sistema de interactuar y comunicarse con sistemas heterogéneos a través de interfaces completamente definidas. Uso de estándar de web services REST + JSON.
-   1. Facilidad de Uso. Se refiere a la facilidad con que las personas pueden utilizar el sistema porque facilitan la lectura de los textos, descargan rápidamente la información y presentan funciones y menús sencillos, por lo que el usuario encuentra satisfechas sus consultas y cómodo su uso.
-   1. Verificación (QA). Es la capacidad del producto software que hace posible que el software modificado sea probado.
+   En donde el componente no. 1 del alcance es
    
-Autorizaciones: |
-   Autorizaciones: Administración de peticiones de autorización y sus correspondientes aprobaciones usando el servicio del flujo de procesos.
+   * Desarrollar úncamente nuevos servicios de integración con el patrón de integración empresarial (ESB, Camel)
+   * Implementar las condiciones tecnológicas JEP, entendido como requerimientos no funcionales de arquitectura, a la solución de integración del Anexo Nro. 1.1 – Anexo técnico evolución plataforma de interoperabilidad – Ficha Técnica
    
-Certificados: |
-   Certificados: Permite la generación de los certificados de valores de protección y contribuciones pagadas, de retención en la fuente, de pagos de perseverancia y de cobertura de auxilio funerario.
    
-Configuración: |
-   Configuración o parametrización de factores para realizar los cálculos de las contribuciones de los asociados a la Cooperativa para cada uno de los productos adquiridos.
+   No es del alcance de este proyecto los requerimientos de migrar los servicios existentes de modelo integración directa (EIA) esta solución de integración empresarial.
    
-Facturación-y-Recaudo: |
-   Administración de la facturación y recaudo diario de los productos.
+Alcance-Proyecto-Integración: |
+   * Implementación de 20 o más servicios de integración al 31 de diciembre del 2024.
+   * Soporte solución de integración a julio 2025.
    
-Gestión-de-Beneficiarios: |
-   Gestión de Beneficiarios: Permite administrar la información relacionada con los beneficiarios del Asociado, permitiendo ejecutar operaciones de consulta, inserción y modificación.
+Justificación-Proyecto-Integración-JEP: |
+   Justificación Proyecto Integración JEP | Driver | Justification: Evolución de la Plataforma de Interoperabilidad para el ano 2024  
    
-Gestión-de-Productos: |
-   Gestión de productos del fondo mutual y auxilio funerario que involucran lo relacionado a las siguientes coberturas: * Fondo de Solidaridad: Incapacidades temporales, Incapacidades Permanentes (total, parcial), Perseverancia 60, 62, 65, 70 años, Perseverancias Anticipadas, Fallecimiento Asociado (Auxilio por muerte), Desempleo, Disminución de ingresos y enfermedades graves; Rentas por hospitalización, Enfermedades de Alto Costo, Pólizas de seguros personales y patrimoniales, Planes educativos, Segunda opinión médica, Asistencias. * Auxilio Funerario: Fallecimiento de familiares directos (inscritos) del Asociado.
+   1. Evolución de la plataforma tecnología de su interoperabilidad y el cumplimiento de los lineamientos del MinTIC, a traves del “Manual Interactivo de Gobierno Digital, herramienta dirigida a las entidades publicas nacionales y territoriales (...) Política de Gobierno Digital, Decreto 767 de 2022”
+   1. Interoperabilidad con las entidades externas que demandan información de la JEP
+   1. Evolución del modelo de interoperabilidad interna y gobierno de data maestra entre sistemas internos
    
-Gestión-de-Reclamos: |
-   Gestión de Reclamaciones (Indemnización): Permite realizar la gestión, seguimiento y pago o negación de las diferentes reclamaciones de acuerdo a las coberturas y los productos que se encuentren dentro del portafolio del Asociado
-Gestión-de-Usuarios: |
-   Gestión de Usuarios: Administración de la información relacionada con los usuarios del sistema. Este componente se comunica con el servicio unificado de autenticación y autorización que devuelve los permisos que un usuario posee sobre las opciones que proporciona el sistema.
+Objeto-Contractual-Proyecto-JEP: |
+   Prestar los servicios de administración y monitoreo de la solución de interoperabilidad de los sistemas de información de la JEP; así como la implementación de nuevos desarrollos o parametrizaciones que esta solución requiera.
+Uso-de-Infraestrucutra-Tecnológica-JEP: |
+   Servivios de infraestrucgtura, almacenamiento y ceomputo de la JEP:  Openshift Platform, bus empresarial, seguridad de la empresa, tecnoglogía de clusters y contenedores.
    
-Simuladores: |
-   Simuladores: Funcionalidades que permiten generar las simulaciones de los diferentes planes o modificaciones (incrementos y disminuciones) a los productos del Asociado.
+Modelo-de-Integración-JEP,-2024.-Softgic: |
    
-Unidad-de-Solidaridad-y-Seguros: |
-   Unidad de Solidaridad y Seguros de la Cooperativa
+Transporte: |
+   
+Plano-de-Administración: |
+   Monitoreo de rendimiento de ssvc de integración.
+   
+Esquema-de-Datos: |
+   
+Transformación-de-Mensajes: |
+   Mapeos, homologaciones y correspondencias.
+   
+Modelo-de-Seguridad: |
+   Autenticación mixta: JWS y tradicional (usuario, contraseña).
+   
+Condiciones-de-Despliegue: |
+   
+Composición-de-Servicios: |
+   Combina colección de servicios para formar un servicio completo. Mediante la integración basada en patrones de Camel, define funciones mediante la recopilación de datos de múltiples conexiones (endpoint). Las composiciones suelen resolver integraciones no triviales o complejas.
+   
+Proveedores-y-Consumidores: |
+   
+Alcance-de-la-Integración: |
+   Aplicaciones que tienen integraciones existentes: necesitamos listados de ssvc pasar al bus.
+   
+Tecnologías: |
+   * Red Hat Integration: suite de runtimes, frameworks, y servicios para aplicaciones nativas de Red Hat OpenShift.
+   * Camel Integration Tool
+   * Quarkus development framework
+   * Java OpenJDK 17
+   * EFK (Elasticsearch, FluentD, Kibana - ELKstack)
+   
+Conectividad-API: |
+   Esta solución de interoperabilidad usa conectividad API REST provista por la infraestructura de conectividad de la JEP (Apache Camel).
+   
+Contratos-de-Interoperabilidad: |
+   
+Tipo-de-Comunicación: |
+   Pasar llamadas síncronas a asincrónicas: analizar apps que deben cambiar comunicación
+Sistema-de-Mensajes: |
+   Esta solución de interoperabilidad usa un sistema de mensajes (comandos). Los mensajes son de tipo petición, respuesta o excepción.
+   
+   La mensajería puede ser asíncrona o síncrona entre aplicaciones o servicios desacoplados. La conexión y la sesión es manejada por un agente intermediario, que puede ser una cola o un bus empresarial (para este contexto, OpenShift, Cliente Red Had Interoperabity o Apache Camel). 
+   
+   La comunicación del sistema de mensajería ocurre cuando la aplicación o servicio productor emite un comando (mensaje ) de &#x27;envío&#x27;, en el cual transmite datos o peticiones de negocio en un formato predefinido, y lo envía a una cola de mensajes.
+   
+Patrón-de-Integración-(EIP): |
+   Pasar de modelo integración EIA (intgración directa ente consumidores y proveedores) a modelo de integración EIP (integración empresarial/bus) sobre Red Hat Integration Platform.
+   
+   
+Integración-de-Procesos: |
+   
+Flujo-de-datos: |
+   Esta solución de interoperabilidad usa esquemas de datos predefinidos entre las integraciones.
+   
+Solución-de-Integración: |
+   Estilos de Integración: Communications backbone [^*]. Patrón principal: Messaging — Cada aplicación (app) conectada a un mismo sistema de mensajería, intercambio de datos y operación entre aplicaciones mediante mensajes.
+   
+    [^*]: Red troncal de comunicaciones: a medida que más y más aplicaciones de una empresa se conectan al sistema de mensajería y hacen que su funcionalidad esté disponible a través de la mensajería, el sistema de mensajería se convierte en un punto centralizado de ventanilla única para la funcionalidad en la empresa. Una nueva aplicación simplemente necesita saber qué canales usar para solicitar funcionalidad y cuáles otros escuchar para obtener los resultados. El propio sistema de mensajería se convierte esencialmente en un bus de mensajes, una columna vertebral que proporciona acceso a todas las diversas y cambiantes aplicaciones y funcionalidades de la empresa. Puedes lograr este nirvana de integración más rápida y fácilmente si diseñas específicamente para ello desde el principio.
+   
+Ambientes-y-Herramientas: |
+   Esta solución de interoperabilidad usa las herramientas, librerías, ambientes, infraestructura productivo y no productivos (nodos, redes, almacenamientos, y otros) indicados por la JEP.
+   
 
 ...
 
-Integraciones JEP, 2024
+Modelo de Integración. 
+Proyecto JEP, 2024. Softgic.
 
-Organización de referencia. Integración JEP. Softgic. Servivcios, Componentes, Roles de servicios.
+Capacidades del modelo de integración para la impleentación de requerimientos de interoperabilidad del proyecto Integración JEP, 2024.
 
-versión 0.1.2
+04.ing.3n.Ver 0.2.33
 
 
-# 1.contexto
+# 04.ING.3n.1. Modelo de Interoperabilidad JEP, 2024
 
 * [Introducción](#Introducción)
-* [app: Mi Mutual Central (Application Component)](#app:-mi-mutual-central-application-component)
-  * [Gestión Usuarios (Application Function)](#gestión-usuarios-application-function)
-  * [Gestión fondo mutual y auxilio funerario (Application Function)](#gestión-fondo-mutual-y-auxilio-funerario-application-function)
-  * [Configuración factores cálculos- contribuciones (Application Function)](#configuración-factores-cálculos--contribuciones-application-function)
-  * [Interoperabilidad entre sistemas Coomeva (Application Function)](#interoperabilidad-entre-sistemas-coomeva-application-function)
-  * [Gestión Reclamaciones (Application Function)](#gestión-reclamaciones-application-function)
-  * [Gestión Beneficiarios (Application Function)](#gestión-beneficiarios-application-function)
-  * [Administración facturación y recaudo (Application Function)](#administración-facturación-y-recaudo-application-function)
-  * [Certificados (Application Function)](#certificados-application-function)
-  * [Autorizaciones (Application Function)](#autorizaciones-application-function)
-  * [Simuladores (Application Function)](#simuladores-application-function)
-  * [Seguridad (Application Function)](#seguridad-application-function)
-* [Características Funcionales (Requirement)](#características-funcionales-requirement)
-* [Restricciones de Arquitectura (Constraint)](#restricciones-de-arquitectura-constraint)
-* [Autorizaciones (Application Service)](#autorizaciones-application-service)
-* [Certificados (Application Service)](#certificados-application-service)
-* [Configuración (Application Service)](#configuración-application-service)
-* [Facturación y Recaudo (Application Service)](#facturación-y-recaudo-application-service)
-* [Gestión de Beneficiarios (Application Service)](#gestión-de-beneficiarios-application-service)
-* [Gestión de Productos (Application Service)](#gestión-de-productos-application-service)
-* [Gestión de Reclamos (Application Service)](#gestión-de-reclamos-application-service)
-* [Gestión de Usuarios (Application Service)](#gestión-de-usuarios-application-service)
-* [Simuladores (Application Service)](#simuladores-application-service)
-* [Unidad de Solidaridad y Seguros (Business Function)](#unidad-de-solidaridad-y-seguros-business-function)
+* [Entregables (Grouping)](#entregables-grouping)
+  * [ENTG01. Solución de Integración JEP (Application Component)](#entg01.-solución-de-integración-jep-application-component)
+  * [ENTG02. Servicios de Integración JEP (Application Service)](#entg02.-servicios-de-integración-jep-application-service)
+  * [ENTG04. Nodo Integración JEP (Node)](#entg04.-nodo-integración-jep-node)
+    * [ENTG06. Contenedor (Application Component)](#entg06.-contenedor-application-component)
+      * [ENTG07 &amp;lt;&amp;lt;task&amp;gt;&amp;gt; (Application Service)](#entg07-ltlttaskgtgt-application-service)
+    * [ENTG05. Proceso &amp;lt;&amp;lt;worker&amp;gt;&amp;gt; (Application Process)](#entg05.-proceso-ltltworkergtgt-application-process)
+  * [ENTG03. CI/CD Integración JEP (Technology Service)](#entg03.-cicd-integración-jep-technology-service)
+  * [ENTG04. Nodo Integración JEP (Node) 2](#entg04.-nodo-integración-jep-node-2)
+    * [ENTG06. Contenedor (Application Component) 2](#entg06.-contenedor-application-component-2)
+      * [ENTG07 &amp;lt;&amp;lt;task&amp;gt;&amp;gt; (Application Service) 2](#entg07-ltlttaskgtgt-application-service-2)
+    * [ENTG05. Proceso &amp;lt;&amp;lt;worker&amp;gt;&amp;gt; (Application Process) 2](#entg05.-proceso-ltltworkergtgt-application-process-2)
+* [Gestión Integración (Grouping)](#gestión-integración-grouping)
+  * [Monitoreo de (ssrvc) integración (Constraint)](#monitoreo-de-ssrvc-integración-constraint)
+  * [Requerimientos integración JEP (Requirement)](#requerimientos-integración-jep-requirement)
+  * [Alcance Proyecto Integración (Goal)](#alcance-proyecto-integración-goal)
+  * [Justificación Proyecto Integración JEP (Driver)](#justificación-proyecto-integración-jep-driver)
+  * [Objeto Contractual Proyecto JEP (Principle)](#objeto-contractual-proyecto-jep-principle)
+  * [Uso de Infraestrucutra Tecnológica JEP (Constraint)](#uso-de-infraestrucutra-tecnológica-jep-constraint)
+* [Modelo de Integración JEP, 2024. Softgic (Grouping)](#modelo-de-integración-jep,-2024.-softgic-grouping)
+  * [Transporte (Capability)](#transporte-capability)
+  * [Plano de Administración (Capability)](#plano-de-administración-capability)
+  * [Esquema de Datos (Capability)](#esquema-de-datos-capability)
+  * [Transformación de Mensajes (Capability)](#transformación-de-mensajes-capability)
+  * [Modelo de Seguridad (Capability)](#modelo-de-seguridad-capability)
+  * [Condiciones de Despliegue (Capability)](#condiciones-de-despliegue-capability)
+  * [Composición de Servicios (Capability)](#composición-de-servicios-capability)
+  * [Proveedores y Consumidores (Capability)](#proveedores-y-consumidores-capability)
+  * [Alcance de la Integración (Capability)](#alcance-de-la-integración-capability)
+  * [Tecnologías (Capability)](#tecnologías-capability)
+  * [Conectividad API (Capability)](#conectividad-api-capability)
+  * [Contratos de Interoperabilidad (Capability)](#contratos-de-interoperabilidad-capability)
+  * [Tipo de Comunicación (Capability)](#tipo-de-comunicación-capability)
+  * [Sistema de Mensajes (Capability)](#sistema-de-mensajes-capability)
+  * [Patrón de Integración (EIP) (Capability)](#patrón-de-integración-eip-capability)
+  * [Integración de Procesos (Capability)](#integración-de-procesos-capability)
+  * [Flujo de datos (Capability)](#flujo-de-datos-capability)
+  * [Solución de Integración (Capability)](#solución-de-integración-capability)
+  * [Ambientes y Herramientas (Capability)](#ambientes-y-herramientas-capability)
 
 ## Introducción
 
-![1.contexto][01.prop.contexto]
+![04.ING.3n.1. Modelo de Interoperabilidad JEP, 2024][01.1n.modelointegrac]
 
-El sistema principal de fondo Mi Mutual Central es la composición de las funciones de negocio de la Unidad de Solidaridad de Coomeva. Las funciones de negocio referidas, como Gestión Beneficiarios, Certificados, Gestión Beneficiarios, aparecen dentro del componente principal en la imagen.
-
-Este entregable documenta los diferentes módulos y componentes que hacen parte de la estructura de una aplicación en Angular 12 y como es su interacción para conformar una arquitectura robusta y escalable para aplicaciones de gran tamaño.
-
-Las librerías Spring Boot Security y Spring Boot Oauth2 proveen características de seguridad entre Vista (Angular 2) y Controlador. Estas son responsables de que únicamente permita el acceso si se está autenticado. Además, para realizar el proceso de autenticación se delega a la aplicación SISPRO (Coomeva) que funciona como un servidor de autenticación.
+El presente modelo de solución de interoperabilidad JEP, 2024, en desarrollo por Softgic, expone para aprobación y referencia las decisiones de la solución de integración y las restricciones que la rigen. Una vez revisado y aprobado por parte de JEP el modelo de interoperabilidad será referencia para la gestión del proyecto y de los entregables de esta solución.
 
 
+## Características Principales del Modelo de Integración JEP
+* API de integración
+* Patrones de integración empresarial (EIP)
+* Sistema de Mensajería entre servicios de integración y aplicaciones JEP
+* Flujos de datos para integración 
+* Arquitectura de clusters y contenedores para integración
+* Uso de infraestructura tecnológica JEP
 
 
 
 
-[01.prop.contexto]: 01.prop.contexto.png
-[^1]: Generated: Thu Oct 24 2024 08:30:51 GMT-0500 (COT)
+
+
+
+Versión fcb28c6 - cfg--restore - Fri, 25 Oct 2024 13:15:18 -0500
+
+[01.1n.modelointegrac]: 01.1n.modelointegrac.png
+[^1]: Generated: Fri Oct 25 2024 12:40:18 GMT-0500 (COT)
