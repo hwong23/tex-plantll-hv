@@ -218,7 +218,7 @@ El presente modelo de solución de interoperabilidad JEP, 2024, en desarrollo po
 
 
 
-Versión fcb28c6 - cfg--restore - Fri, 25 Oct 2024 13:15:18 -0500
+Versión 3dc0558 - make--pdf - Fri, 25 Oct 2024 13:38:52 -0500
 
 [01.1n.modelointegrac]: 01.1n.modelointegrac.png
 [^1]: Generated: Fri Oct 25 2024 12:40:18 GMT-0500 (COT)
