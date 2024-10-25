@@ -232,4 +232,3 @@ $RECYCLE.BIN/
 
 # End of https://www.toptal.com/developers/gitignore/api/git,linux,macos,dotenv,windows,visualstudiocode,node
 *.BACKUP
-output/
