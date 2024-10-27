@@ -45,7 +45,6 @@ doctec-tex:
 	--defaults=./$(CONFIG)/tex.yaml \
 	./$(CONFIG)/metadata.yaml)
 
-
 doctec-html:
 	(pandoc -r $(OPTIONS) $(CONTD)/html/*.md \
 	--resource-path=$(CONTD)/tex \
