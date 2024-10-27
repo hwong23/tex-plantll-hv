@@ -82,9 +82,10 @@ clean: cleanout
 	rm -f *.aux *.log *.gz *.out
 
 cleanout: 
-	rm -f output/*.docx output/tex*.pdf output/*.tex \
-	output/*.pptx output/*.html
-
+	rm -f output/*.docx output/tex*.pdf output/*.tex output/*.pptx output/*.html
+	rm -f output/*.png output/output/*.jpg output/output/images/*.*
+	rm -f output/*.log 
+	
 cleancontd: 
 	rm -f $(CONTD)/docx/*.md $(CONTD)/docx/*.png
 	rm -f $(CONTD)/html/*.md $(CONTD)/html/*.png
