@@ -37,6 +37,7 @@ doctec-pdf:
 
 doctec-tex:
 	(cp $(CONTD)/tex/*.png output/)
+	(cp -R $(CONTD)/tex/images output/)
 	(sh build/build.sh $(CONTD)/tex/*.md)
 	(pandoc -r $(OPTIONS) \
 	--resource-path=$(CONTD)/tex \
