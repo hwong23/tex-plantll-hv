@@ -10,10 +10,13 @@ VERSIONES=$(git log --max-count=5 --format='1.%h - %s - %cD%n' | tail -4)
 # located in the $PANDOC_DATA_DIR/defaults directory.
 export FECHA_COMPILACION COMMIT VERSIONES
 
+
 # sustituye las variables SHELL en los archivos MD
 rm -f output/manuscript.md
 for f in $1/*.md; do 
-    envsubst < $f >> output/manuscript.md; done
+    envsubst < $f >> output/manuscript.md
+    echo \\n >> output/manuscript.md; 
+done
 
 
 echo >&2 "Build complete"
