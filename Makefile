@@ -36,7 +36,7 @@ doctec-pdf:
 	./$(CONFIG)/metadata.yaml)
 
 doctec-tex:
-	(cp $(CONTD)/tex/*.png output/)
+	(cp $(CONTD)/tex/*.png output/ 2>/dev/null || :)
 	(cp -R $(CONTD)/tex/images output/)
 	(sh build/build.sh $(CONTD)/tex/*.md)
 	(pandoc -r $(OPTIONS) \
