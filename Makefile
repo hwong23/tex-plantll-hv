@@ -20,7 +20,9 @@ presentacion:
 	make ppt-html ppt-pdf ppt-pptx ppt-tex
 
 doctec-docx:
-	(sh build/build.sh $(CONTD)/docx/*.md)
+	(cp $(CONTD)/docx/*.png output/ 2>/dev/null || :)
+	(cp -R $(CONTD)/docx/images output/ 2>/dev/null || :)
+	(sh build/build.sh $(CONTD)/docx)
 	(pandoc -r $(OPTIONS) \
 	--resource-path=$(CONTD)/docx \
 	--defaults=./$(CONFIG)/defaults.yaml \
@@ -28,7 +30,9 @@ doctec-docx:
 	./$(CONFIG)/metadata.yaml)
 
 doctec-pdf:
-	(sh build/build.sh $(CONTD)/pdf/*.md)
+	(cp $(CONTD)/pdf/*.png output/ 2>/dev/null || :)
+	(cp -R $(CONTD)/pdf/images output/ 2>/dev/null || :)
+	(sh build/build.sh $(CONTD)/pdf)
 	(pandoc -r $(OPTIONS) \
 	--resource-path=$(CONTD)/pdf \
 	--defaults=./$(CONFIG)/defaults.yaml \
@@ -38,7 +42,7 @@ doctec-pdf:
 doctec-tex:
 	(cp $(CONTD)/tex/*.png output/ 2>/dev/null || :)
 	(cp -R $(CONTD)/tex/images output/ 2>/dev/null || :)
-	(sh build/build.sh $(CONTD)/tex/*.md)
+	(sh build/build.sh $(CONTD)/tex)
 	(pandoc -r $(OPTIONS) \
 	--resource-path=$(CONTD)/tex \
 	--defaults=./$(CONFIG)/defaults.yaml \
