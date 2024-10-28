@@ -87,7 +87,7 @@ cleanout:
 	rm -f output/*.log 
 	
 cleancontd: 
-	rm -f $(CONTD)/docx/*.md $(CONTD)/docx/*.png
+	rm -f $(CONTD)/docx/*.md $(CONTD)/docx/*.png $(CONTD)/docx/images/*.*
 	rm -f $(CONTD)/html/*.md $(CONTD)/html/*.png
 	rm -f $(CONTD)/pdf/*.md $(CONTD)/pdf/*.png
 	rm -f $(CONTD)/ppt/*.md $(CONTD)/ppt/*.png
