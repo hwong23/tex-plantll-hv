@@ -1,4 +1,4 @@
-# Propuesta (git:4-propuesta)
+# Propuesta (git:5-clusterswarm)
 (...)
 
 ## Plantillas
