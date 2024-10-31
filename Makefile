@@ -82,7 +82,7 @@ clean: cleanout cleancontd
 	rm -f *.aux *.log *.gz *.out
 
 cleanout: 
-	rm -f output/*.docx output/tex*.pdf output/*.tex output/*.pptx output/*.html
+	rm -f output/*.docx output/tex*.pdf output/pdf*.pdf output/*.tex output/*.pptx output/*.html
 	rm -f output/*.png output/*.jpg output/images/*.*
 	rm -f output/*.log 
 	
