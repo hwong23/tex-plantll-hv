@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-## build.sh: compile manuscript outputs from content
+# $1: ruta de contenidos
+
 
 # Set option defaults
 # COMMIT=${TRIGGERING_SHA_7}
