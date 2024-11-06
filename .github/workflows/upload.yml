@@ -1,4 +1,4 @@
-name: example-file-upload
+name: file-upload
 on: workflow_dispatch
 jobs:
   get_report:
