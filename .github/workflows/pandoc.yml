@@ -48,12 +48,14 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           biber-version: 2.17
-      # - name: Build Manuscript
+        # - name: Build Manuscript
         # run: bash build/build.sh
       - name: Make doctec #configurar-flujo
         run: |
           export APPIMAGE_EXTRACT_AND_RUN=1
           CONTD=~/devocs-contd/contd
+          git log --max-count=10 --format='%h - %s - %cD' > ~/reportlog.txt
+          more ~/reportlog.txt
           make doctec CONTD=$CONTD  #configurar-flujo
       - name: Run Tectonic
         run: tectonic output/*.tex
