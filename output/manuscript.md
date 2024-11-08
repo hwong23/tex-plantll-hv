@@ -37,12 +37,12 @@ tablenos-caption-name: Tabla
 ...
 
 Versión actual: 
-1.fb50ddd - gitlog.1 - Fri, 8 Nov 2024 10:16:38 -0500
+1.447f591 - gitlog.HEAD - Fri, 8 Nov 2024 10:24:49 -0500
 
 
 Versiones Anteriores
 
-1.fb50ddd - gitlog.1 - Fri, 8 Nov 2024 10:16:38 -0500
+1.447f591 - gitlog.HEAD - Fri, 8 Nov 2024 10:24:49 -0500
 
 
 ### Realizado Por
