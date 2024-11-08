@@ -34,17 +34,17 @@ tablenos-caption-name: Tabla
 
 Versión Actual
 
-1.5490400 - Compilación para entrega - Fri, 8 Nov 2024 21:57:48 +0000
+1.6a9b356 - Compilación para entrega - Fri, 8 Nov 2024 22:48:03 +0000
 
 Versiones Anteriores
+
+1.12af1e5 - Compilación para entrega - Fri, 8 Nov 2024 16:06:05 +0000
 
 1.8eb7837 - Compilación para entrega - Fri, 8 Nov 2024 15:39:21 +0000
 
 1.318d6ef - gitlog.ref.ok - Fri, 8 Nov 2024 10:33:23 -0500
 
 1.7c4940f - Compilación para entrega - Fri, 8 Nov 2024 15:30:58 +0000
-
-1.7467481 - gitlog.ref - Fri, 8 Nov 2024 10:30:06 -0500
 
 
 ## Realizado Por
@@ -79,7 +79,7 @@ titlepage-rule-color: 360049
 title: Especificación de Integraciones (caso de uso)
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.5490400 - Compilación para entrega - Fri, 8 Nov 2024 21:57:48 +0000"
+author: "Versión actual: 1.6a9b356 - Compilación para entrega - Fri, 8 Nov 2024 22:48:03 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-left: include/jeplogo.jpg
@@ -102,7 +102,7 @@ Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4.pd
 ![05.REQR.1n.4n. Casos de Uso . _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/05.REQR.1n.4n.CasosdeUso.png){#fig:id-eb0cac3ffa954ca0aa6a48e757b4d309 width= height=500px}
 
 ### Catálogo de Elementos
-### Especificación de integración
+#### Especificación de integración
 Solicitar autenticación a la aplicación Conti y devolver resultado de la solicitud de ingreso a la aplicación Plani.
 
 #### Elementos
@@ -160,7 +160,7 @@ Por cada caso de prueba de integración describir el resultado del intercambio e
 * PRUB1. Consumo: la aplicación consumidora Plani no recibe una respuesta a tiempo.
 * PRUB2. Ingreso: la aplicación proveedora Conti no provee un ingreso autorizado.
 
-### Especificación de integración
+#### Especificación de integración
 Solicitar consulta de ítem a la aplicación Plani y obtener resultado de la consulta. La solicitud de consulta podrá realizarla con mínimo un parámetro, o la combinación de todos. Los parámetros son los siguientes:
 
 1. Número de ítem
@@ -252,7 +252,7 @@ Por cada caso de prueba de integración describir el resultado del intercambio e
 * PRUB11. Consulta sin resultado: la aplicación proveedora Plani  entrega una respuesta vacía.
 * PRUB12. Consulta incorrecta: la aplicación proveedora Plani no provee el  formato de respuesta esperado.
 
-### Especificación de integración
+#### Especificación de integración
 Esta integracieon inicia en Conti el proceso de gestión dentro de la ruta precontractual (Revisar documento “1. Acta de requerimientos Proceso Precontractual_V2”), y pedirá un radicado asociado al ítem seleccionado.
 
 Una vez generado el número del radicado, Conti envía a Plani la llamada posterior (callback) con esta información para que pueda ser almacenada y relacionada al ítem en el sistema Plani. A su vez, Plani envía un mensaje de confirmación a Conti.
@@ -314,7 +314,7 @@ Por cada caso de prueba de integración describir el resultado del intercambio e
 * PRUB21. Radicado: la aplicación proveedora del radicado falla en proveer el radicado
 * PRUB22. Consulta incorrecta: la aplicación proveedora Plani no provee el  formato de respuesta esperado.
 
-### Especificación de integración
+#### Especificación de integración
 Una vez se tenga seleccionado el ítem a gestionar el usuario debe identificar el tipo de documento que esté relacionado al mismo, sea documento justificativo, Reglas de invitación y/o anexos.
 
 Esta integración debe enviar el documento a... 
@@ -362,15 +362,15 @@ Por cada caso de prueba de integración describir el resultado del intercambio e
 * PRUB1. 
 * PRUB2.
 
-### HU.SINT1. Integración. Ingreso a Conti
+#### HU.SINT1. Integración. Ingreso a Conti
 
-### HU.SINT2. Integración. Consulta ítem de Conti
+#### HU.SINT2. Integración. Consulta ítem de Conti
 
-### HU.SINT3. Integración. Radicar ítem
+#### HU.SINT3. Integración. Radicar ítem
 
-### HU.SINT4. Integración. Generación de documentos
+#### HU.SINT4. Integración. Generación de documentos
 
-### REQR3. Integración con Sistema Conti x Plani
+#### REQR3. Integración con Sistema Conti x Plani
 Atendiendo la necesidad de la Subdirección de Contratación de implementar el flujo de gestión precontractual en el sistema de Gestión Documental - Conti se requiere contar con la información de los ítems del Plan Anual de Adquisiciones – PAA para iniciar el proceso, la cual se encuentra gestionada en el Sistema de Gestión y Planeación Institucional PLANi.
 
 ### Índice de la documentación (casos de uso)
@@ -412,7 +412,7 @@ titlepage-rule-color: 360049
 title: Plantilla de Especificación de Integración (caso de uso)
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto
-author: "Versión actual: 1.5490400 - Compilación para entrega - Fri, 8 Nov 2024 21:57:48 +0000"
+author: "Versión actual: 1.6a9b356 - Compilación para entrega - Fri, 8 Nov 2024 22:48:03 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic]
 header-left: include/jeplogo.jpg
