@@ -24,7 +24,7 @@
 title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.cc57a63 - Compilación para entrega - Fri, 8 Nov 2024 16:13:58 +0000"
+author: "Versión actual: 1.7234525 - Compilación para entrega - Fri, 8 Nov 2024 17:36:22 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-left: include/jeplogo.jpg
@@ -72,14 +72,17 @@ Objetivo: el requerimiento tiene carácter contractual.
 
 ### REQR3. Integración con Sistema Conti x Plani
 
-Atendiendo la necesidad de la Subdirección de Contratación de implementar el flujo de gestión precontractual en el sistema de Gestión Documental - Conti se requiere contar con la información de los ítems del Plan Anual de Adquisiciones – PAA para iniciar el proceso, la cual se encuentra gestionada en el Sistema de Gestión y Planeación Institucional PLANi.
+Atendiendo la necesidad de la Subdirección de Contratación de implementar el flujo de gestión precontractual en el sistema de Gestión Documental - Conti se requiere integrar con la información de los ítems del Plan Anual de Adquisiciones – PAA para iniciar el proceso, la cual se encuentra gestionada en el Sistema de Gestión y Planeación Institucional PLANi.
+
+Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4 (pdf). 
+ 
 
 ### Índice de la documentación (casos de uso)
 
 1. Integración. Ingreso a Conti
 1. Integración. Consulta ítem de Conti
 1. Integración. Radicar ítem
-1.Integración. Generación de documentos
+1. Integración. Generación de documentos
 
 
 
@@ -153,7 +156,7 @@ Tareas de desarrollo
 
 Valor: el requerimientos genera entregables de valor para la integración de aplicaciones de JEP.
 
-[^1]: Generated: Fri Nov 08 2024 12:16:03 GMT-0500 (COT)
+[^1]: Generated: Fri Nov 08 2024 12:42:43 GMT-0500 (COT)
 
 
 # Requerimientos de Integración JEP
@@ -176,7 +179,7 @@ Valor: el requerimientos genera entregables de valor para la integración de apl
 title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.cc57a63 - Compilación para entrega - Fri, 8 Nov 2024 16:13:58 +0000"
+author: "Versión actual: 1.7234525 - Compilación para entrega - Fri, 8 Nov 2024 17:36:22 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-left: include/jeplogo.jpg
@@ -229,7 +232,7 @@ Restricción: el requerimiento está condicionado por la completitud del levanta
 
 ###  REQR11. Integración gestión médica
 
-Documentación del requerimiento de integración de la gestión médica JEP. Exposición de las capacidades Radicar MP y Indexar Imagen.
+Atendiendo la necesidad de (...) se requiere integrar la gestión médica JEP, como exposición de las capacidades Radicar MP y Indexar Imagen, las cuales se encuentran en (...).
 
 Fuente: gestionMedidaProteccion (pdf). 
 
@@ -275,6 +278,6 @@ Tareas de desarrollo
 * Registro y envío de actividad
 
 
-[^1]: Generated: Fri Nov 08 2024 12:17:09 GMT-0500 (COT)
+[^1]: Generated: Fri Nov 08 2024 12:43:08 GMT-0500 (COT)
 
 
