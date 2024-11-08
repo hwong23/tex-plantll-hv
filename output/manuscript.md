@@ -37,12 +37,12 @@ tablenos-caption-name: Tabla
 ...
 
 Versión actual: 
-1.a5c3a7f - action - Fri, 8 Nov 2024 14:58:47 +0000
+1.9ed08bd - action - Fri, 8 Nov 2024 15:07:58 +0000
 
 
 Versiones Anteriores
 
-1.a5c3a7f - action - Fri, 8 Nov 2024 14:58:47 +0000
+1.9ed08bd - action - Fri, 8 Nov 2024 15:07:58 +0000
 
 
 ### Realizado Por
