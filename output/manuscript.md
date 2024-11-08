@@ -20,6 +20,26 @@
 
 ![05.REQR.1n.1a. Requerimiento](03.1a.contd.vista.png){height=500px}
 
+---
+title: Especificación de Integraciones (caso de uso)
+subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
+subject: Implementación Proyecto JEP
+author: 
+date: 2024-09-16
+keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
+header-left: include/jeplogo.jpg
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+geometry:
+  - top=1in
+  - bottom=1in
+fignos-cleveref: True
+fignos-plus-name: Fig.
+fignos-caption-name: Imagen
+tablenos-caption-name: Tabla
+...
+
 Del alcance del proyecto, 
 
 1. Implementación de 20 o más servicios de integración al 31 de diciembre del 2024.
@@ -54,7 +74,13 @@ Objetivo: el requerimiento tiene carácter contractual.
 
 Atendiendo la necesidad de la Subdirección de Contratación de implementar el flujo de gestión precontractual en el sistema de Gestión Documental - Conti se requiere contar con la información de los ítems del Plan Anual de Adquisiciones – PAA para iniciar el proceso, la cual se encuentra gestionada en el Sistema de Gestión y Planeación Institucional PLANi.
 
-Los casos de uso asociados al requerimiento se listan más adelante.
+### Índice de la documentación (casos de uso)
+
+1. Integración. Ingreso a Conti
+1. Integración. Consulta ítem de Conti
+1. Integración. Radicar ítem
+1.Integración. Generación de documentos
+
 
 
 ### Solución 1
@@ -127,7 +153,7 @@ Tareas de desarrollo
 
 Valor: el requerimientos genera entregables de valor para la integración de aplicaciones de JEP.
 
-[^1]: Generated: Thu Nov 07 2024 23:52:38 GMT-0500 (COT)
+[^1]: Generated: Fri Nov 08 2024 00:13:40 GMT-0500 (COT)
 
 
 # Requerimientos de Integración JEP
@@ -145,6 +171,26 @@ Valor: el requerimientos genera entregables de valor para la integración de apl
 ## Introducción
 
 ![05.REQR.1n.1b. Requerimiento](03.1b.contd.vista.png){height=500px}
+
+---
+title: Especificación de Integraciones (caso de uso)
+subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
+subject: Implementación Proyecto JEP
+author: 
+date: 2024-09-16
+keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
+header-left: include/jeplogo.jpg
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+geometry:
+  - top=1in
+  - bottom=1in
+fignos-cleveref: True
+fignos-plus-name: Fig.
+fignos-caption-name: Imagen
+tablenos-caption-name: Tabla
+...
 
 Del alcance del proyecto, 
 
@@ -229,6 +275,6 @@ Tareas de desarrollo
 * Registro y envío de actividad
 
 
-[^1]: Generated: Thu Nov 07 2024 23:52:44 GMT-0500 (COT)
+[^1]: Generated: Fri Nov 08 2024 00:14:06 GMT-0500 (COT)
 
 

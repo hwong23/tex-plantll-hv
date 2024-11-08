@@ -89,7 +89,7 @@
 \definecolor{default-filecolor}{HTML}{A50000}
 \definecolor{default-citecolor}{HTML}{4077C0}
 \definecolor{default-urlcolor}{HTML}{4077C0}
-\usepackage[margin=2.5cm,includehead=true,includefoot=true,centering,]{geometry}
+\usepackage[top=1in,bottom=1in]{geometry}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -124,6 +124,15 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{english}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
 \makeatletter
 \@ifpackageloaded{subfig}{}{\usepackage{subfig}}
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
@@ -162,11 +171,25 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
+  pdftitle={Especificación de Integraciones (caso de uso)},
+  pdflang={en},
+  pdfsubject={Implementación Proyecto JEP},
+  pdfkeywords={Integración, Interoperabilidad, JEP, Softgic, Caso de
+uso},
   hidelinks,
   breaklinks=true,
   pdfcreator={LaTeX via pandoc with the Eisvogel template}}
+\title{Especificación de Integraciones (caso de uso)}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Implementación Proyecto Evolución de Interoperabilidad JEP,
+Softgic}
 \author{}
-\date{}
+\date{2024-09-16}
 
 
 
@@ -178,6 +201,8 @@
 %
 % for the background color of the title page
 %
+\usepackage{pagecolor}
+\usepackage{afterpage}
 
 %
 % break urls
@@ -254,9 +279,9 @@
 % variables for title, author and date
 %
 \usepackage{titling}
-\title{}
+\title{Especificación de Integraciones (caso de uso)}
 \author{}
-\date{}
+\date{2024-09-16}
 
 %
 % tables
@@ -292,9 +317,9 @@
 
 \newpairofpagestyles{eisvogel-header-footer}{
   \clearpairofpagestyles
-  \ihead*{}
+  \ihead*{\includegraphics{include/jeplogo.jpg}}
   \chead*{}
-  \ohead*{}
+  \ohead*{2024-09-16}
   \ifoot*{}
   \cfoot*{}
   \ofoot*{\thepage}
@@ -313,11 +338,42 @@
 %%
 %% begin titlepage
 %%
+\begin{titlepage}
+\newgeometry{left=6cm}
+\newcommand{\colorRule}[3][black]{\textcolor[HTML]{#1}{\rule{#2}{#3}}}
+\begin{flushleft}
+\noindent
+\\[-1em]
+\color[HTML]{5F5F5F}
+\makebox[0pt][l]{\colorRule[360049]{1.3\textwidth}{4pt}}
+\par
+\noindent
+
+{
+  \setstretch{1.4}
+  \vfill
+  \noindent {\huge \textbf{\textsf{Especificación de Integraciones (caso
+de uso)}}}
+    \vskip 1em
+  {\Large \textsf{Implementación Proyecto Evolución de Interoperabilidad
+JEP, Softgic}}
+    \vskip 2em
+  \noindent {\Large \textsf{}}
+  \vfill
+}
+
+
+\textsf{2024-09-16}
+\end{flushleft}
+\end{titlepage}
+\restoregeometry
+\pagenumbering{arabic}
 
 %%
 %% end titlepage
 %%
 
+% \maketitle
 
 
 \section{Requerimientos de Integración
@@ -457,7 +513,19 @@ del Plan Anual de Adquisiciones -- PAA para iniciar el proceso, la cual
 se encuentra gestionada en el Sistema de Gestión y Planeación
 Institucional PLANi.
 
-Los casos de uso asociados al requerimiento se listan más adelante.
+\subsubsection{Índice de la documentación (casos de
+uso)}\label{sec:uxedndice-de-la-documentaciuxf3n-casos-de-uso}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Integración. Ingreso a Conti
+\item
+  Integración. Consulta ítem de Conti
+\item
+  Integración. Radicar ítem 1.Integración. Generación de documentos
+\end{enumerate}
 
 \subsubsection{Solución 1}\label{sec:soluciuxf3n-1}
 
@@ -707,7 +775,7 @@ Exposición de las capacidades Radicar MP y Indexar Imagen.
 Fuente: gestionMedidaProteccion (pdf).
 
 \subsubsection{Índice de la documentación (casos de
-uso)}\label{sec:uxedndice-de-la-documentaciuxf3n-casos-de-uso}
+uso)}\label{sec:uxedndice-de-la-documentaciuxf3n-casos-de-uso-1}
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
