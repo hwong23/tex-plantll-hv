@@ -21,7 +21,7 @@
 ![05.REQR.1n.1a. Requerimiento](03.1a.contd.vista.png){height=500px}
 
 ---
-title: Especificación de Integraciones (caso de uso)
+title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
 author: 
@@ -153,7 +153,7 @@ Tareas de desarrollo
 
 Valor: el requerimientos genera entregables de valor para la integración de aplicaciones de JEP.
 
-[^1]: Generated: Fri Nov 08 2024 00:13:40 GMT-0500 (COT)
+[^1]: Generated: Fri Nov 08 2024 08:13:36 GMT-0500 (COT)
 
 
 # Requerimientos de Integración JEP
@@ -173,7 +173,7 @@ Valor: el requerimientos genera entregables de valor para la integración de apl
 ![05.REQR.1n.1b. Requerimiento](03.1b.contd.vista.png){height=500px}
 
 ---
-title: Especificación de Integraciones (caso de uso)
+title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
 author: 
@@ -275,6 +275,6 @@ Tareas de desarrollo
 * Registro y envío de actividad
 
 
-[^1]: Generated: Fri Nov 08 2024 00:14:06 GMT-0500 (COT)
+[^1]: Generated: Fri Nov 08 2024 08:13:50 GMT-0500 (COT)
 
 
