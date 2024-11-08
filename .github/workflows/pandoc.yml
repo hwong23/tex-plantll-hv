@@ -54,7 +54,7 @@ jobs:
         run: |
           export APPIMAGE_EXTRACT_AND_RUN=1
           CONTD=~/devocs-contd/contd
-          git log --max-count=10 | tail -8
+          git log --max-count=10 --format='1.%h - %s - %cD%n'
           VERSIONES=$(git log --max-count=10 --format='1.%h - %s - %cD%n' | tail -8)
           echo VERSIONES $VERSIONES
           make doctec CONTD=$CONTD  #configurar-flujo
