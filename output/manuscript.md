@@ -24,7 +24,7 @@
 title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: DEVDOCS_AUTOR
+author: "Versión actual: 1.12af1e5 - Compilación para entrega - Fri, 8 Nov 2024 16:06:05 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-left: include/jeplogo.jpg
@@ -153,6 +153,6 @@ Tareas de desarrollo
 
 Valor: el requerimientos genera entregables de valor para la integración de aplicaciones de JEP.
 
-[^1]: Generated: Fri Nov 08 2024 10:38:19 GMT-0500 (COT)
+[^1]: Generated: Fri Nov 08 2024 10:55:36 GMT-0500 (COT)
 
 
