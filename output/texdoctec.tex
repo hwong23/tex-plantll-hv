@@ -89,7 +89,7 @@
 \definecolor{default-filecolor}{HTML}{A50000}
 \definecolor{default-citecolor}{HTML}{4077C0}
 \definecolor{default-urlcolor}{HTML}{4077C0}
-\usepackage[margin=2.5cm,includehead=true,includefoot=true,centering,]{geometry}
+\usepackage[top=1in,bottom=1in]{geometry}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -124,6 +124,15 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{english}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
 \makeatletter
 \@ifpackageloaded{subfig}{}{\usepackage{subfig}}
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
@@ -162,11 +171,27 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
+  pdftitle={Gestión de Requerimientos JEP},
+  pdfauthor={Versión actual: 1.d811f41 - action - Tue, 19 Nov 2024 14:49:11 -0500},
+  pdflang={en},
+  pdfsubject={Implementación Proyecto JEP},
+  pdfkeywords={Integración, Interoperabilidad, JEP, Softgic, Caso de
+uso},
   hidelinks,
   breaklinks=true,
   pdfcreator={LaTeX via pandoc with the Eisvogel template}}
-\author{}
-\date{}
+\title{Gestión de Requerimientos JEP}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Implementación Proyecto Evolución de Interoperabilidad JEP,
+Softgic}
+\author{Versión actual: 1.d811f41 - action - Tue, 19 Nov 2024 14:49:11
+-0500}
+\date{2024-11-8}
 
 
 
@@ -178,6 +203,8 @@
 %
 % for the background color of the title page
 %
+\usepackage{pagecolor}
+\usepackage{afterpage}
 
 %
 % break urls
@@ -254,9 +281,10 @@
 % variables for title, author and date
 %
 \usepackage{titling}
-\title{}
-\author{}
-\date{}
+\title{Gestión de Requerimientos JEP}
+\author{Versión actual: 1.d811f41 - action - Tue, 19 Nov 2024 14:49:11
+-0500}
+\date{2024-11-8}
 
 %
 % tables
@@ -292,10 +320,11 @@
 
 \newpairofpagestyles{eisvogel-header-footer}{
   \clearpairofpagestyles
-  \ihead*{}
+  \ihead*{\includegraphics{include/jeplogo.jpg}}
   \chead*{}
-  \ohead*{}
-  \ifoot*{}
+  \ohead*{2024-11-8}
+  \ifoot*{Versión actual: 1.d811f41 - action - Tue, 19 Nov 2024 14:49:11
+-0500}
   \cfoot*{}
   \ofoot*{\thepage}
   \addtokomafont{pageheadfoot}{\upshape}
@@ -313,27 +342,2343 @@
 %%
 %% begin titlepage
 %%
+\begin{titlepage}
+\newgeometry{left=6cm}
+\newcommand{\colorRule}[3][black]{\textcolor[HTML]{#1}{\rule{#2}{#3}}}
+\begin{flushleft}
+\noindent
+\\[-1em]
+\color[HTML]{5F5F5F}
+\makebox[0pt][l]{\colorRule[360049]{1.3\textwidth}{4pt}}
+\par
+\noindent
+
+{
+  \setstretch{1.4}
+  \vfill
+  \noindent {\huge \textbf{\textsf{Gestión de Requerimientos JEP}}}
+    \vskip 1em
+  {\Large \textsf{Implementación Proyecto Evolución de Interoperabilidad
+JEP, Softgic}}
+    \vskip 2em
+  \noindent {\Large \textsf{Versión actual: 1.d811f41 - action - Tue, 19
+Nov 2024 14:49:11 -0500}}
+  \vfill
+}
+
+
+\textsf{2024-11-8}
+\end{flushleft}
+\end{titlepage}
+\restoregeometry
+\pagenumbering{arabic}
 
 %%
 %% end titlepage
 %%
 
+% \maketitle
 
 
-\section{Contenido}\label{sec:contenido}
+\section{Documentación Técnica del Proyecto Integración
+JEP}\label{sec:documentaciuxf3n-tuxe9cnica-del-proyecto-integraciuxf3n-jep}
 
 \begin{itemize}
 \tightlist
 \item
-  \hyperref[Introducciuxf3n]{Introducción}
+  \hyperref[informaciuxf3n-del-documento]{Información del Documento}
+\item
+  \hyperref[roles-y-equipo-de-trabajo]{Roles y Equipo de Trabajo}
+\item
+  \hyperref[gestiuxf3n-de-trabajo-del-proyecto]{Gestión de Trabajo del
+  Proyecto}
+\item
+  \hyperref[modelo-de-producciuxf3n-e-implementaciuxf3n]{Modelo de
+  Producción e Implementación}
+\item
+  \hyperref[modelo-de-soluciuxf3n-de-interoperabilidad]{Modelo de
+  Solución de Interoperabilidad}
+\item
+  \hyperref[modelo-de-requerimientos-de-interoperabilidad-proyecto-jep]{Modelo
+  de Requerimientos de Interoperabilidad Proyecto JEP}
+\item
+  \hyperref[modelo-de-entrega-y-despliegue-de-requerimientos]{Modelo de
+  Entrega y Despliegue de Requerimientos}
 \end{itemize}
 
-\subsection{Introducción}\label{sec:introducciuxf3n}
+\newpage
+
+\section{Información del
+Documento}\label{sec:informaciuxf3n-del-documento}
+
+\subsection{Versión del Documento}\label{sec:versiuxf3n-del-documento}
+
+\begin{quote}
+\end{quote}
+
+Versión actual: 1.d811f41 - action - Tue, 19 Nov 2024 14:49:11 -0500
+
+Versiones Anteriores
+
+1.544d74d - Compilación para entrega - Fri, 8 Nov 2024 17:44:18 +0000
+
+1.7234525 - Compilación para entrega - Fri, 8 Nov 2024 17:36:22 +0000
+
+1.cc57a63 - Compilación para entrega - Fri, 8 Nov 2024 16:13:58 +0000
+
+1.12af1e5 - Compilación para entrega - Fri, 8 Nov 2024 16:06:05 +0000
+
+\subsubsection{Realizado Por}\label{sec:realizado-por}
+
+Sofgic.co
+
+\subsubsection{Revisado Por}\label{sec:revisado-por}
+
+Sofgic.co
+
+\newpage
+
+\section{Roles y Equipo de Trabajo}\label{sec:roles-y-equipo-de-trabajo}
+
+\subsection{Roles y Division de Trabajo del
+Proyecto}\label{sec:roles-y-division-de-trabajo-del-proyecto}
+
+\begin{quote}
+Modelo de Implementación Proyecto JEP, 2024. Softgic. Propuesta roles de
+trabajo del proyecto de servicios de integración JEP. Ver 0.1.3
+\end{quote}
+
+Las división de trabajo conveniente según las condiciones contractuales
+y del proyecto de integración JEP es la siguiente
+
+\subsubsection{Consultor de Integración
+(responsabilidades)}\label{sec:consultor-de-integraciuxf3n-responsabilidades}
+
+\begin{itemize}
+\tightlist
+\item
+  Arquitectura de contenedores
+\item
+  Definir y documentar soluciones
+\item
+  Especificar interfaces
+\item
+  Soporte paso producción
+\end{itemize}
+
+\subsubsection{Arquitecto de
+Integración}\label{sec:arquitecto-de-integraciuxf3n}
+
+\begin{itemize}
+\tightlist
+\item
+  arquitectura bus servicios
+\item
+  soporte desarrollo
+\item
+  soporte cliente
+\item
+  mitigar riesgos arquitectura
+\end{itemize}
+
+\subsubsection{Consultor de
+Infraestructura}\label{sec:consultor-de-infraestructura}
+
+\begin{itemize}
+\tightlist
+\item
+  definir y documentar soluciones (de infr.)
+\item
+  documentar componentes e interfaces (de infr.)
+\item
+  soporte post producción
+\end{itemize}
 
 \begin{figure}
 \centering
-\includegraphics[width=\textwidth,height=5.20833in]{10.JEPcuproyecto.png}
-\caption{Doc.4n. Casos de Uso}
+\includegraphics[width=\textwidth,height=5.20833in]{images/04.ING.1n.Rolesydivisióndetrabajo.png}
+\caption{04.ING.1n. Roles y división de trabajo. \emph{Fuente:
+Repositorio arquitectura Integración JEP
+(2024)}}\label{fig:id-3bef3ca04f6d4d1ba6b837b822a51801}
 \end{figure}
+
+\subsubsection{Catálogo de
+Elementos}\label{sec:catuxe1logo-de-elementos}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5000}}@{}}
+\caption{\label{tbl:tblelement-04.ING.1n.Rolesydivisiuxf3ndetrabajo-id}Elementos
+de la vista.}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Nombre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Documentación
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Nombre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Documentación
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Soporte & Driver & Obligación TDR, contrato, proyecto JEP. \\
+Documentación & Driver & Problemática objeto de la propuesta de refuerzo
+de arquitectura. \\
+Entregas & Driver & Problemática objeto de la propuesta de refuerzo de
+arquitectura. \\
+Infraestructura operacional & Driver & Obligación TDR, contrato,
+proyecto JEP. \\
+Implementación & Driver & Problemática objeto de la propuesta de
+refuerzo de arquitectura. \\
+Definiciones & Driver & Problemática objeto de la propuesta de refuerzo
+de arquitectura. \\
+Contenedores (orquestación) & Outcome & Responsabilidades objeto del
+contrato del rol, proyecto JEP. \\
+Bus empresarial & Outcome & Responsabilidades objeto del contrato del
+rol, proyecto JEP. \\
+Malla de servicios & Goal & Enlace de los servicios de integración
+implementados por el proyecto con las herramientas de monitoreo y salud
+de los sistemas JEP. \\
+& & \\
+Cluster, nodos, redes, etc. & Outcome & Responsabilidades objeto del
+contrato del rol, proyecto JEP. \\
+CI/CD & Outcome & Responsabilidades objeto del contrato del rol,
+proyecto JEP. \\
+Post producción & Goal & Evidencia representativa de problemática objeto
+de la propuesta de refuerzo de arquitectura. \\
+Transición (producción) & Outcome & Responsabilidades objeto del
+contrato del rol, proyecto JEP. \\
+Riesgos técnicos & Outcome & Responsabilidades objeto del contrato del
+rol, proyecto JEP. \\
+Desarrollo y control versión & Goal & Evidencia representativa de
+problemática objeto de la propuesta de refuerzo de arquitectura. \\
+Arquitecto & Capability & Capacidad del proyecto involucrada en el
+objeto del contrato, proyecto JEP. \\
+Integración & Capability & Capacidad del proyecto involucrada en el
+objeto del contrato, proyecto JEP. \\
+Infraestructura & Capability & Capacidad del proyecto involucrada en el
+objeto del contrato, proyecto JEP. \\
+\end{longtable}
+
+\newpage
+
+\section{Gestión de Trabajo del
+Proyecto}\label{sec:gestiuxf3n-de-trabajo-del-proyecto}
+
+\subsection{Modelo de Gestión de Requerimientos de
+Integración}\label{sec:modelo-de-gestiuxf3n-de-requerimientos-de-integraciuxf3n}
+
+\begin{quote}
+Modelo de Implementación Proyecto JEP, 2024. Softgic. Propuesta modelo
+de gestión y atención requerimientos de integración del proyecto de
+servicios de integración JEP. Ver 0.1.37
+\end{quote}
+
+El ciclo de entrega de requerimientos inicia con la planeación macro de
+los objetivos entregables del proyecto de integración organizados en el
+tiempo (de septiembre a diciembre del 2024).
+
+Los roles técnicos convierten estos objetivos macro en requerimientos
+comprendidos por épicas, características e historias (o casos de uso) de
+integración.
+
+Los ingenieros convierten a su vez las historias en tareas entregables,
+individuales y autónomas, de tipo tarea (UT), diseño (DIS), pruebas de
+calidad (QA), análisis (AN), entrega continua (CI/CD), etc. Una vez los
+ingenieros tengan esta división de trabajo en tareas pueden pasar a la
+implementación mediante iteraciones (ver Modelo de Implementación del
+Proyecto JEP).
+
+Los requerimientos del proyecto JEP son procesados mediante el modelo de
+producción descrito más adelante.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=5.20833in]{images/04.ING.2n.1a.Modelorequerimientos.png}
+\caption{04.ING.2n.1a. Modelo requerimientos. \emph{Fuente: Repositorio
+arquitectura Integración JEP
+(2024)}}\label{fig:id-7c3abdaa8d9b46eebfd8f8e3e8d912ce}
+\end{figure}
+
+\subsubsection{Catálogo de
+Elementos}\label{sec:catuxe1logo-de-elementos-1}
+
+\begin{itemize}
+\item
+  \textbf{ACC01. Planeación de Producción, Oct-Dic 2024}. Objetivos y
+  entregas en el tiempo, versiones de entrega del proyecto de
+  integración.
+\item
+  \textbf{Procesos de Ingeniería Software}.
+\item
+  \textbf{ANLS.Analisis integración}. \#\#\# 2. ANSS (análisis).
+\item
+  Scrum, Funcional, Dueño producto cliente (requiere conocimiento del
+  negocio).
+\item
+  Resultado: Refinamiento HU, modelo de negocio, es decir, diagrama de
+  HU relacionadas unas con otras y con los conceptos de negocio en el
+  repositorio de ARQ. Actualmente: no hay resultados de este proceso.
+  Ejemplo del modelo de negocio
+\end{itemize}
+
+\subsubsection{Salidas}\label{sec:salidas}
+
+\begin{itemize}
+\tightlist
+\item
+  Modelo de negocio en el repo
+\item
+  Estimación --puede en devops
+\item
+  Análisis de dependencia en el repo
+\end{itemize}
+
+\subsubsection{KPI}\label{sec:kpi}
+
+\begin{itemize}
+\item
+  Tasa de aprobación de HU por cliente Fuente: (Cantidad de HU refinadas
+  y aprobadas por cliente {[}Repo Sharepoint{]} / Total de cantidad de
+  HU {[}Azure DevOps{]}) Dato 26/10/2023: (30/44) = 0,68
+\item
+  Tasa de error en Bug por PR entregados Fuente: (Cantidad de solicitude
+  de cambio en rama (Pull Reqst) de Correcciones (fix) o Regresión
+  (reverts) {[}Bitbucket{]} / Cantidad total de PR desplegados
+  {[}Bitbucket{]}) Dato 26/10/2023: (8/111)*100 = 7,2\%
+\item
+  \textbf{MET.APRB}. Cod. APRB Nombre indicador Tasa de aprobación de HU
+  por cliente Uso Estabildad de requerimientos. Contensión del flujo de
+  trabajo inicio de desarrolo Proceso ANLS Calculo de medición Cantidad
+  de HU refinadas y aprobadas por cliente / Total de cantidad de HU
+  Fuente {[}Repo Sharepoint{]}, {[}Azure DevOps{]})
+\item
+  \textbf{DIS.Arquitectura / diseño}. \#\#\# KPI
+\item
+  Nivel de HU sin detalle técnico Fuente: (Cantidad de HU refinadas y
+  aprobadas sin diseño de implementacion {[}Repo Sharepoint{]} / Total
+  de cantidad de HU {[}Azure DevOps{]}) Dato 26/10/2023: 0/44=0
+\item
+  \textbf{MET.DEC}. Cod.: DEC Nombre indicador: Decisiones de diseño,
+  justificaciones, validaciones Uso: Estabildad de requerimientos.
+  Control de alineación desarrollo-demanda Proceso: DIS Calculo de
+  medición: Cantidad de HU refinadas y aprobadas por cliente / Total de
+  cantidad de HU Fuente: {[}Repo Sharepoint{]}, {[}Azure DevOps{]})
+\item
+  \textbf{DEV.Implementación}. \#\#\# KPI
+\item
+  Velocidad de construcción Fuente: (Cantidad de puntos de HU ejecutadas
+  {[}Azure DevOps{]} / Horas habiles del mes de trabajo {[}Calculo
+  manual{]}) Dato 26/10/2023: 83 / 153 = 0,54 HU/horas
+\item
+  Tasa de cierre de defectos Fuente: (Cantidad de Bug solucionados
+  {[}Azure DevOps{]} / Total de Bugs a corte sin nuevos {[}Azure
+  DevOps{]}) Dato 26/10/2023: 81 / 920 = 0,088
+\item
+  Indice de dependecia de Lider Técnico Fuente: (Cantidad de actividades
+  retrazadas semanales segun las HU planeadas / Total de HU planeadas
+  para ejecución) Dato 26/10/2023: Pendiente proxima semana
+\item
+  \textbf{MET.VEL}. Cod. VEL Nombre indicador Velocidad de construcción
+  Uso Capacidad interna de desarrollo Proceso DEV Calculo de medición
+  Cantidad de puntos de HU ejecutadas / Horas habiles del mes de trabajo
+  Fuente {[}Azure DevOps{]}, {[}Calculo manual{]}
+\item
+  \textbf{Plan Producción: Scrum y Gerencia}.
+\item
+  \textbf{Plan Producción: Ingeniería (Red Hat DevOps)}.
+\item
+  \textbf{UT (tarea)}. Unidad mínima de trabajo (tarea por
+  desarrollador).
+\item
+  \textbf{UT (tarea)}. Unidad mínima de trabajo (tarea por
+  desarrollador).
+\item
+  \textbf{UT (tarea)}. Unidad mínima de trabajo (tarea por
+  desarrollador).
+\item
+  \textbf{DEV}. Alcance de QA unitaria
+\item
+  \textbf{CI/CD}. Actividades DevOps del ciclo o iteración de
+  implementación.
+\end{itemize}
+
+\newpage
+
+\section{Modelo de Producción e
+Implementación}\label{sec:modelo-de-producciuxf3n-e-implementaciuxf3n}
+
+\subsection{Modelo de Producción e Implementación de Integración
+JEP}\label{sec:modelo-de-producciuxf3n-e-implementaciuxf3n-de-integraciuxf3n-jep}
+
+\begin{quote}
+Modelo de Producción e Implementación Proyecto JEP, 2024. Softgic.
+Modelo de gestión y atención requerimientos de integración del proyecto
+de integración JEP, 2024. Softgic. Relación con herramienta de gestión
+Az DevOps. Ver 0.1.12
+\end{quote}
+
+El modelo de producción que procesa los requerimientos del proyecto JEP
+inicia con la creación de un tramo de la planeación de la solución de
+integración, esto es un ciclo de implementación o iteración del proyecto
+de integración JEP.
+
+(ING) Procesos de ingeniería. Arrancan los procesos mínimos de
+ingeniería previos a la construcción de la integración.
+
+(PRY) Planificación de historias de usuario. La porción de la planeación
+de producción aprobada para la construcción se planifica en historias o
+casos de uso, u cualquier otra forma de medición de avance.
+
+(ING) Creación e inicio de iteraciones de implementación incremental. La
+planificación de HU (CU, u otra) es tareificada y asignada a
+desarrolladores disponibles. Además, las tareas asignadas son
+organizadas en ciclos de trabajo fijo (iteraciones). Esta ejecución es
+la línea de trabajo principal del proyecto JEP.
+
+(PRY, ING) Coordinación de líneas de trabajo. Las entregas de la línea
+de trabajo del proyecto JEP debe ser compasada con otras líneas de
+trabajo de la JEP, con las que puede haber una relación de secuencia o
+dependencia externa.
+
+Durante la ejecución de la iteraciones determinadas, inicia nuevamente
+el ciclo del proyecto desde la creación de un nuevo tramo de la
+planeación de producción.
+
+\subsubsection{Mapeo del Modelo con Herramienta de Registro del Trabajo
+(az
+devops)}\label{sec:mapeo-del-modelo-con-herramienta-de-registro-del-trabajo-az-devops}
+
+\begin{itemize}
+\tightlist
+\item
+  Épica = Versión de entrega de la solución como un todo
+\item
+  Característica = Requerimiento de integración, del cual pueden
+  desprenderse varias integraciones puntuales.
+\item
+  HU = Una integración puntual proveniente de un requerimiento, ej.:
+  ingreso Conti, Consulta campos, Radicar ítem, Generación
+  documentos\ldots{}
+\item
+  UT = Tarea de desarrollo.
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=5.20833in]{images/04.ING.2n.1b.Modeloproducción.png}
+\caption{04.ING.2n.1b. Modelo producción. \emph{Fuente: Repositorio
+arquitectura Integración JEP
+(2024)}}\label{fig:id-9938d5859d53450fa5c5c953d9ce33cb}
+\end{figure}
+
+\subsubsection{Catálogo de
+Elementos}\label{sec:catuxe1logo-de-elementos-2}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Nombre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Documentación
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+ACC01. Planeación de Producción, Oct-Dic 2024 & Course Of-Action &
+Objetivos y entregas en el tiempo, versiones de entrega del proyecto de
+integración. \\
+& & \\
+DEV.Implementación & Business Process & \#\#\# KPI \\
+\end{longtable}
+
+\begin{itemize}
+\item
+  Velocidad de construcción Fuente: (Cantidad de puntos de HU ejecutadas
+  {[}Azure DevOps{]} / Horas habiles del mes de trabajo {[}Calculo
+  manual{]}) Dato 26/10/2023: 83 / 153 = 0,54 HU/horas
+\item
+  Tasa de cierre de defectos Fuente: (Cantidad de Bug solucionados
+  {[}Azure DevOps{]} / Total de Bugs a corte sin nuevos {[}Azure
+  DevOps{]}) Dato 26/10/2023: 81 / 920 = 0,088
+\item
+  Indice de dependecia de Lider Técnico Fuente: (Cantidad de actividades
+  retrazadas semanales segun las HU planeadas / Total de HU planeadas
+  para ejecución) Dato 26/10/2023: Pendiente proxima semana \textbar{}
+  \textbar{} MET.VEL \textbar{} Business Object \textbar{} Cod. VEL
+  Nombre indicador Velocidad de construcción Uso Capacidad interna de
+  desarrollo Proceso DEV Calculo de medición Cantidad de puntos de HU
+  ejecutadas / Horas habiles del mes de trabajo Fuente {[}Azure
+  DevOps{]}, {[}Calculo manual{]} \textbar{} \textbar{} ANLS.Analisis
+  integración \textbar{} Business Process \textbar{} \#\#\# 2. ANSS
+  (análisis).
+\item
+  Scrum, Funcional, Dueño producto cliente (requiere conocimiento del
+  negocio).
+\item
+  Resultado: Refinamiento HU, modelo de negocio, es decir, diagrama de
+  HU relacionadas unas con otras y con los conceptos de negocio en el
+  repositorio de ARQ. Actualmente: no hay resultados de este proceso.
+  Ejemplo del modelo de negocio
+\end{itemize}
+
+\subsubsection{Salidas}\label{sec:salidas-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Modelo de negocio en el repo
+\item
+  Estimación --puede en devops
+\item
+  Análisis de dependencia en el repo
+\end{itemize}
+
+\subsubsection{KPI}\label{sec:kpi-1}
+
+\begin{itemize}
+\item
+  Tasa de aprobación de HU por cliente Fuente: (Cantidad de HU refinadas
+  y aprobadas por cliente {[}Repo Sharepoint{]} / Total de cantidad de
+  HU {[}Azure DevOps{]}) Dato 26/10/2023: (30/44) = 0,68
+\item
+  Tasa de error en Bug por PR entregados Fuente: (Cantidad de solicitude
+  de cambio en rama (Pull Reqst) de Correcciones (fix) o Regresión
+  (reverts) {[}Bitbucket{]} / Cantidad total de PR desplegados
+  {[}Bitbucket{]}) Dato 26/10/2023: (8/111)*100 = 7,2\% \textbar{}
+  \textbar{} MET.APRB \textbar{} Business Object \textbar{} Cod. APRB
+  Nombre indicador Tasa de aprobación de HU por cliente Uso Estabildad
+  de requerimientos. Contensión del flujo de trabajo inicio de desarrolo
+  Proceso ANLS Calculo de medición Cantidad de HU refinadas y aprobadas
+  por cliente / Total de cantidad de HU Fuente {[}Repo Sharepoint{]},
+  {[}Azure DevOps{]}) \textbar{} \textbar{} DIS.Arquitectura / diseño
+  \textbar{} Business Process \textbar{} \#\#\# KPI
+\item
+  Nivel de HU sin detalle técnico Fuente: (Cantidad de HU refinadas y
+  aprobadas sin diseño de implementacion {[}Repo Sharepoint{]} / Total
+  de cantidad de HU {[}Azure DevOps{]}) Dato 26/10/2023: 0/44=0
+  \textbar{} \textbar{} MET.DEC \textbar{} Business Object \textbar{}
+  Cod.: DEC Nombre indicador: Decisiones de diseño, justificaciones,
+  validaciones Uso: Estabildad de requerimientos. Control de alineación
+  desarrollo-demanda Proceso: DIS Calculo de medición: Cantidad de HU
+  refinadas y aprobadas por cliente / Total de cantidad de HU Fuente:
+  {[}Repo Sharepoint{]}, {[}Azure DevOps{]})
+\end{itemize}
+
+\textbar{} \textbar{} Plan Producción: Scrum y Gerencia \textbar{}
+Grouping \textbar{} \textbar{} \textbar{} Plan Producción: Ingeniería
+(Red Hat DevOps) \textbar{} Grouping \textbar{} \textbar{} \textbar{} UT
+(tarea) \textbar{} Work Package \textbar{} Unidad mínima de trabajo
+(tarea por desarrollador). \textbar{} \textbar{} DEV \textbar{} Work
+Package \textbar{} Alcance de QA unitaria \textbar{} \textbar{} CI/CD
+\textbar{} Work Package \textbar{} Actividades DevOps del ciclo o
+iteración de implementación. \textbar{} \textbar{} Plan Producción:
+Ingeniería (Red Hat DevOps) (copy) \textbar{} Grouping \textbar{}
+\textbar{} \textbar{} UT (tarea) \textbar{} Work Package \textbar{}
+Unidad mínima de trabajo (tarea por desarrollador). \textbar{}
+\textbar{} DEV \textbar{} Work Package \textbar{} Alcance de QA unitaria
+\textbar{} \textbar{} CI/CD \textbar{} Work Package \textbar{}
+Actividades DevOps del ciclo o iteración de implementación. \textbar{}
+
+Table: Elementos de la vista.
+\{\#tbl:tblelement-04.ING.2n.1b.Modeloproducción-id\}
+
+\newpage
+
+\section{Modelo de Solución de
+Interoperabilidad}\label{sec:modelo-de-soluciuxf3n-de-interoperabilidad}
+
+\subsection{Modelo de Interoperabilidad
+JEP}\label{sec:modelo-de-interoperabilidad-jep}
+
+\begin{quote}
+Modelo de Integración. Proyecto JEP, 2024. Softgic. Capacidades del
+modelo de integración para la implementación de requerimientos de
+interoperabilidad del proyecto Integración JEP, 2024. Ver 0.2.44
+\end{quote}
+
+El presente modelo de solución de interoperabilidad JEP, 2024, en
+desarrollo por Softgic, expone para aprobación y referencia las
+decisiones de la solución de integración y las restricciones que la
+rigen. Una vez revisado y aprobado por parte de JEP el modelo de
+interoperabilidad será referencia para la gestión del proyecto y de los
+entregables de esta solución.
+
+\subsection{Características Principales del Modelo de Integración
+JEP}\label{sec:caracteruxedsticas-principales-del-modelo-de-integraciuxf3n-jep}
+
+\begin{itemize}
+\tightlist
+\item
+  API de integración
+\item
+  Patrones de integración empresarial (EIP)
+\item
+  Sistema de Mensajería entre servicios de integración y aplicaciones
+  JEP
+\item
+  Flujos de datos para integración
+\item
+  Arquitectura de clusters y contenedores para integración
+\item
+  Uso de infraestructura tecnológica JEP
+\item
+  Articulación con el Service Mesh de JEP
+\end{itemize}
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=5.20833in]{images/04.ING.3n.1.ModelodeInteroperabilidadJEP.png}
+\caption{04.ING.3n.1. Modelo de Interoperabilidad JEP. \emph{Fuente:
+Repositorio arquitectura Integración JEP
+(2024)}}\label{fig:id-f863abde3ea94046a77bf84d5cb0a3a8}
+\end{figure}
+
+\subsubsection{Catálogo de
+Elementos}\label{sec:catuxe1logo-de-elementos-3}
+
+\textbf{Gestión Integración}
+
+\textbf{Objeto Contractual Proyecto JEP} Prestar los servicios de
+administración y monitoreo de la solución de interoperabilidad de los
+sistemas de información de la JEP; así como la implementación de nuevos
+desarrollos o parametrizaciones que esta solución requiera.
+\textbf{Justificación Proyecto Integración JEP} Justificación Proyecto
+Integración JEP \textbar{} Driver \textbar{} Justification: Evolución de
+la Plataforma de Interoperabilidad para el ano 2024
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Evolución de la plataforma tecnología de su interoperabilidad y el
+  cumplimiento de los lineamientos del MinTIC, a traves del ``Manual
+  Interactivo de Gobierno Digital, herramienta dirigida a las entidades
+  publicas nacionales y territoriales (\ldots) Política de Gobierno
+  Digital, Decreto 767 de 2022''
+\item
+  Interoperabilidad con las entidades externas que demandan información
+  de la JEP
+\item
+  Evolución del modelo de interoperabilidad interna y gobierno de data
+  maestra entre sistemas internos
+\end{enumerate}
+
+\textbf{Alcance Proyecto Integración} Es del alcance del proyecto
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Implementación de 20 o más servicios de integración al 31 de diciembre
+  del 2024.
+\item
+  Soporte solución de integración a julio 2025.
+\end{enumerate}
+
+No es del alcance del proyecto el desarrollo a la medida de soluciones
+de las aplicaciones y sistemas de software de la JEP.
+
+No es del alcance de este proyecto los requerimientos de migración de
+los servicios de integración existentes de la JEP (hayan sido o no
+implementados bajo el modelo integración directa --EIA).
+
+\textbf{Requerimientos integración JEP} Del alcance del proyecto,
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Implementación de 20 o más servicios de integración al 31 de diciembre
+  del 2024.
+\item
+  Soporte solución de integración a julio 2025.
+\end{enumerate}
+
+Establecemos las bases para el modelo de requerimientos de esta
+solución, el cual limita la demanda a:
+
+\begin{itemize}
+\tightlist
+\item
+  Desarrollar únicamente nuevos servicios de integración con el patrón
+  de integración empresarial (ESB, Camel K de Apache) propuesto en el
+  modelo de interoperabilidad de esta solución.
+\item
+  Implementar en esta solución de integración las condiciones
+  tecnológicas JEP, entendidas como requerimientos no funcionales de
+  arquitectura, presentes en el Anexo Nro. 1.1 -- Anexo técnico
+  evolución plataforma de interoperabilidad -- Ficha Técnica.
+\item
+  No son requerimientos de este proyecto el implementar otro tipos de
+  requerimientos no expresados aquí, como por ejemplo, migrar los
+  servicios existentes de modelo integración directa (EIA) esta solución
+  de integración empresarial, o implementar soluciones en las
+  aplicaciones de software de la JEP.
+\end{itemize}
+
+\textbf{Condiciones generales del proyecto} Son condiciones generales de
+la solución aquellas que inciden en la gestión del proyecto, entrega de
+productos contractuales y el desarrollo del software de integración, las
+siguientes:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Las integraciones provistas por esta solución son unidades ejecutables
+  desplegables entendidas como servicios de integración directamente
+  relacionados con las historias de usuario, y éstas se corresponden con
+  los servicios indicados en el alcance contractual del proyecto:
+  ``Implementación de 20 o más servicios de integración al 31 de
+  diciembre del 2024''. Dicho de otra manera, los servicios de
+  integración de esta solución son a la vez historias de usuario, y
+  servicios de alcance del proyecto.
+\item
+  Un servicio de integración de esta solución es un entregable de
+  software que involucra a aplicaciones consumidoras y proveedoras, y
+  contiene mensaje de interacción, un intermediador de mensajes, ej. un
+  bus de integración, y una o más operaciones de integración
+  empresarial.
+\item
+  Los servicios de integración de esta solución (servicios del alcance
+  según el numeral anterior) no se extiende al cambio de las reglas de
+  negocio de la JEP, ni a sus aplicaciones que las ejecuten. Únicamente
+  se limita a realizar operaciones de integración sobre las capacidades
+  existentes de las aplicaciones.
+\item
+  Para efectos de mantener la continuidad de las entregas, sin
+  perjudicar ni a la calidad, ni a la aceptación de esta solución de
+  integración, aquellas capacidades de las aplicaciones de software de
+  la JEP que generen dependencias o que no estén disponibles al momento
+  del desarrollo de los servicios de integración de esta solución serán
+  provistas por Softgic y funcionarán como sustitutas equivalentes.
+\end{enumerate}
+
+Estas condiciones generales deben ser observadas e informadas a todas
+las partes.
+
+\textbf{Modelo de Integración JEP, 2024. Softgic}
+
+\textbf{Sistema de Mensajes} Esta solución de interoperabilidad usa un
+sistema de mensajes (comandos). Los mensajes son de tipo petición,
+respuesta o excepción.
+
+La mensajería puede ser asíncrona o síncrona entre aplicaciones o
+servicios desacoplados. La conexión y la sesión es manejada por un
+agente intermediario, que puede ser una cola o un bus empresarial (para
+este contexto, OpenShift, Cliente Red Had Interoperabity o Apache
+Camel).
+
+La comunicación del sistema de mensajería ocurre cuando la aplicación o
+servicio productor emite un comando (mensaje ) de `envío', en el cual
+transmite datos o peticiones de negocio en un formato predefinido, y lo
+envía a una cola de mensajes.
+
+\textbf{04.ING.3n.3. Sistema de Mensajería Integración JEP} Comunicación
+entre aplicaciones o servicios desacolplados mediante mensajes de tipo
+solicitud, respuesta o excepción (request, response, exception).
+
+El patrón principal de integración es el de Red Troncal de
+Comunicaciones (Nodo Intermediador en el diagrama): a medida que más y
+más aplicaciones de la empresa se conectan al sistema de mensajería y
+hacen que su funcionalidad esté disponible a través de la mensajería, el
+sistema de mensajería se convierte en un punto centralizado, ventanilla
+única, para la funcionalidad en la empresa. Una nueva aplicación
+simplemente necesita saber qué canales usar para solicitar funcionalidad
+y cuáles otros escuchar para obtener los resultados. El propio sistema
+de mensajería se convierte esencialmente en un bus de mensajes, una
+columna vertebral que proporciona acceso a todas las diversas y
+cambiantes aplicaciones y funcionalidades de la empresa. Puedes lograr
+este nirvana de integración más rápida y fácilmente si diseñas
+específicamente para ello desde el principio.
+
+\textbf{Tipo de Comunicación} Pasar llamadas síncronas a asincrónicas:
+analizar apps que deben cambiar comunicación \textbf{Condiciones
+técnicas de la Integración}
+
+\begin{itemize}
+\item
+  Uso de infraestructura, almacenamiento y cómputo de la JEP: Openshift
+  Platform, bus empresarial, seguridad de la empresa, tecnología de
+  clusters y contenedores, y Prometheus como la herramienta de monitoreo
+  de servicios.
+\item
+  Monitoreo de uso de los recursos de procesamiento, red y memoria de
+  los componentes claves de la solución haciendo uso de ServiceMesh.
+\item
+  La solución soporta la habilitación de reglas de alertas sobre los
+  registros de actividad y monitoreo.
+\item
+  Soluciones de EFK (Elasticsearch, FluentD, Kibana - ELKstack), a
+  través de operadores para centralizar el proceso de logs que se
+  generan en diferentes espacios de trabajo.
+\end{itemize}
+
+Estas condiciones técnicas y tecnológicas deben ser observadas e
+informadas a todas las partes.
+
+\textbf{Solución de Integración} Estilos de Integración: Communications
+backbone \footnote{Red troncal de comunicaciones: a medida que más y más
+  aplicaciones de una empresa se conectan al sistema de mensajería y
+  hacen que su funcionalidad esté disponible a través de la mensajería,
+  el sistema de mensajería se convierte en un punto centralizado de
+  ventanilla única para la funcionalidad en la empresa. Una nueva
+  aplicación simplemente necesita saber qué canales usar para solicitar
+  funcionalidad y cuáles otros escuchar para obtener los resultados. El
+  propio sistema de mensajería se convierte esencialmente en un bus de
+  mensajes, una columna vertebral que proporciona acceso a todas las
+  diversas y cambiantes aplicaciones y funcionalidades de la empresa.
+  Puedes lograr este nirvana de integración más rápida y fácilmente si
+  diseñas específicamente para ello desde el principio.}. Patrón
+principal: Messaging --- Cada aplicación (app) conectada a un mismo
+sistema de mensajería, intercambio de datos y operación entre
+aplicaciones mediante mensajes.
+
+\textbf{04.ING.3n.3. Sistema de Mensajería Integración JEP} Comunicación
+entre aplicaciones o servicios desacolplados mediante mensajes de tipo
+solicitud, respuesta o excepción (request, response, exception).
+
+El patrón principal de integración es el de Red Troncal de
+Comunicaciones (Nodo Intermediador en el diagrama): a medida que más y
+más aplicaciones de la empresa se conectan al sistema de mensajería y
+hacen que su funcionalidad esté disponible a través de la mensajería, el
+sistema de mensajería se convierte en un punto centralizado, ventanilla
+única, para la funcionalidad en la empresa. Una nueva aplicación
+simplemente necesita saber qué canales usar para solicitar funcionalidad
+y cuáles otros escuchar para obtener los resultados. El propio sistema
+de mensajería se convierte esencialmente en un bus de mensajes, una
+columna vertebral que proporciona acceso a todas las diversas y
+cambiantes aplicaciones y funcionalidades de la empresa. Puedes lograr
+este nirvana de integración más rápida y fácilmente si diseñas
+específicamente para ello desde el principio.
+
+\textbf{Transformación de Mensajes} Mapeos, homologaciones y
+correspondencias.
+
+\textbf{Composición de Servicios} Combina colección de servicios para
+formar un servicio completo. Mediante la integración basada en patrones
+de Camel, define funciones mediante la recopilación de datos de
+múltiples conexiones (endpoint). Las composiciones suelen resolver
+integraciones no triviales o complejas.
+
+\textbf{Ambientes y Herramientas} Esta solución de interoperabilidad usa
+las herramientas, librerías, ambientes, infraestructura productivo y no
+productivos (nodos, redes, almacenamientos, y otros) indicados por la
+JEP.
+
+\textbf{Patrón de Integración (EIP)} Pasar de modelo integración EIA
+(intgración directa ente consumidores y proveedores) a modelo de
+integración EIP (integración empresarial/bus) sobre Red Hat Integration
+Platform.
+
+\textbf{Tecnologías}
+
+\begin{itemize}
+\tightlist
+\item
+  Red Hat Integration: suite de runtimes, frameworks, y servicios para
+  aplicaciones nativas de Red Hat OpenShift.
+\item
+  Camel Integration Tool
+\item
+  Quarkus development framework
+\item
+  Java OpenJDK 17
+\item
+  EFK (Elasticsearch, FluentD, Kibana - ELKstack)
+\end{itemize}
+
+\textbf{Modelo de Seguridad} Autenticación mixta: JWS y tradicional
+(usuario, contraseña).
+
+\textbf{Flujo de datos} Esta solución de interoperabilidad usa esquemas
+de datos predefinidos entre las integraciones.
+
+\textbf{Conectividad API} Esta solución de interoperabilidad usa
+conectividad API REST provista por la infraestructura de conectividad de
+la JEP (Apache Camel).
+
+\textbf{Plano de Administración} Monitoreo de rendimiento de ssvc de
+integración.
+
+\textbf{04.ING.2n.1b. Modelo producción} El modelo de producción que
+procesa los requerimientos del proyecto JEP inicia con la creación de un
+tramo de la planeación de la solución de integración, esto es un ciclo
+de implementación o iteración del proyecto de integración JEP.
+
+(ING) Procesos de ingeniería. Arrancan los procesos mínimos de
+ingeniería previos a la construcción de la integración.
+
+(PRY) Planificación de historias de usuario. La porción de la planeación
+de producción aprobada para la construcción se planifica en historias o
+casos de uso, u cualquier otra forma de medición de avance.
+
+(ING) Creación e inicio de iteraciones de implementación incremental. La
+planificación de HU (CU, u otra) es tareificada y asignada a
+desarrolladores disponibles. Además, las tareas asignadas son
+organizadas en ciclos de trabajo fijo (iteraciones). Esta ejecución es
+la línea de trabajo principal del proyecto JEP.
+
+(PRY, ING) Coordinación de líneas de trabajo. Las entregas de la línea
+de trabajo del proyecto JEP debe ser compasada con otras líneas de
+trabajo de la JEP, con las que puede haber una relación de secuencia o
+dependencia externa.
+
+Durante la ejecución de la iteraciones determinadas, inicia nuevamente
+el ciclo del proyecto desde la creación de un nuevo tramo de la
+planeación de producción.
+
+\subsubsection{Mapeo del Modelo con Herramienta de Registro del Trabajo
+(az
+devops)}\label{sec:mapeo-del-modelo-con-herramienta-de-registro-del-trabajo-az-devops-1}
+
+\begin{itemize}
+\tightlist
+\item
+  Épica = Versión de entrega de la solución como un todo
+\item
+  Característica = Requerimiento de integración, del cual pueden
+  desprenderse varias integraciones puntuales.
+\item
+  HU = Una integración puntual proveniente de un requerimiento, ej.:
+  ingreso Conti, Consulta campos, Radicar ítem, Generación
+  documentos\ldots{}
+\item
+  UT = Tarea de desarrollo.
+\end{itemize}
+
+\textbf{05.REQR.1n. Requerimientos Servicios de Integración}
+Documentación de requerimientos del proyecto de integración JEP, 2024.
+Implementados mediante el modelo de producción del proyecto.
+
+Para la implementación de los ítems relacionados en el Anexo Nro. 1.1 --
+Anexo técnico evolución plataforma de interoperabilidad -- Ficha Técnica
+la hoja ``Categorías de Cotización'' contiene las necesidades a
+contratar en el ámbito de la evolución tecnológica del modelo de
+interoperabilidad y los desarrollos de interoperabilidad tanto con
+sistemas internos, como con entidades externas. En la hoja ``Estándares
+Desarrollo y Producto'' del archivo mencionado se indican los estándares
+recomendados por el fabricante, para tener en cuenta en la entrega de
+los servicios que se cotizan.
+
+El Anexo Nro. 1.2 -- Acuerdos de Niveles de Servicio, explica el
+procedimiento con el que se dará atención a consultas o solución de
+incidencias, tanto en los sistemas operativos, como en los servicios de
+interoperabilidad existentes en la actualidad y aquellos que se
+contratarán en este proceso, en el sistema Bus de Interoperabilidad
+implementado en la Jurisdicción Especial para la Paz.
+
+Fuente: Justificativo de la Contratación Invitación Pública (pdf).
+
+\textbf{Entregables}
+
+\textbf{ENTG01. Solución de Integración JEP} Documentación técnica del
+diseño de solución de la integración JEP, 2024.
+
+\textbf{ENTG02. Servicios de Integración JEP} Servicios ejecutables
+desplegados en los entornos de software JEP.
+
+\textbf{ENTG03. CI/CD Integración JEP} Cadenas de integración y
+despliegue continuo de los servicios de integración del proyecto de
+integración JEP, 2024.
+
+\textbf{ENTG04. Nodo Integración JEP} Cluster de ejecución de los nodos
+y procesos de (servicios) de integración del proyecto. \textbf{ENTG05.
+Proceso (worker)} Configuración de servicios de integración del proyecto
+dentro de la infraestructura tecnológica JEP. \textbf{ENTG06.
+Contenedor} Contenedores de los servicios de integración del proyecto
+desplegados en la infraestructura tecnológica JEP.
+
+\textbf{ENTG07 (task)} Servicios de integración del proyecto desplegados
+en la infraestructura tecnológica JEP.
+
+\textbf{ENTG04. Nodo Integración JEP} Cluster de ejecución de los nodos
+y procesos de (servicios) de integración del proyecto. \textbf{ENTG05.
+Proceso (worker)} Configuración de servicios de integración del proyecto
+dentro de la infraestructura tecnológica JEP. \textbf{ENTG06.
+Contenedor} Contenedores de los servicios de integración del proyecto
+desplegados en la infraestructura tecnológica JEP.
+
+\textbf{ENTG07 (task)} Servicios de integración del proyecto desplegados
+en la infraestructura tecnológica JEP.
+
+\subsection{Ambientes y Herramientas. Organización de Referencia
+JEP}\label{sec:ambientes-y-herramientas.-organizaciuxf3n-de-referencia-jep}
+
+Ambientes y Herramientas de Referencia JEP
+
+\begin{quote}
+Integraciones JEP, 2024 Integración JEP. Softgic. Ambientes y
+Herramientas. Organización de referencia. versión 0.1.44
+\end{quote}
+
+Organización de referencia de los ambientes de trabajo JEP.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=5.20833in]{images/04.ING.3n.2.AmbientesyHerramientasJEP.png}
+\caption{04.ING.3n.2. Ambientes y Herramientas JEP. \emph{Fuente:
+Repositorio arquitectura Integración JEP
+(2024)}}\label{fig:id-53af0cb1d4e145a6b82764f7ce8f9237}
+\end{figure}
+
+\subsubsection{Catálogo de
+Elementos}\label{sec:catuxe1logo-de-elementos-4}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5000}}@{}}
+\caption{\label{tbl:tblelement-04.ING.3n.2.AmbientesyHerramientasJEP-id}Elementos
+de la vista.}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Nombre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Documentación
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Nombre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Documentación
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Cluster & Application Collaboration & Orquestador de nodos y servicios
+(contendores) de la JEP. \\
+Nodo Integración JEP (worker) & Application Collaboration & Nodo lógico
+en donde corren los contenedores. \\
+VM Node & Node & Nodo físico donde corren los procesos del sistema
+operativo. \\
+Proceso de integración (kb service) & Application Interface & Definición
+de un proceso de trabajo de integración desplegable. \\
+Proceso de integración (kb service) & Application Interface & Definición
+de un proceso de trabajo de integración desplegable. \\
+ENTG06. Contenedor & Application Component & Contenedores de los
+servicios de integración del proyecto desplegados en la infraestructura
+tecnológica JEP. \\
+ENTG07 (task) & Application Service & Servicios de integración del
+proyecto desplegados en la infraestructura tecnológica JEP. \\
+ENTG06. Contenedor & Application Component & Contenedores de los
+servicios de integración del proyecto desplegados en la infraestructura
+tecnológica JEP. \\
+ENTG07 (task) & Application Service & Servicios de integración del
+proyecto desplegados en la infraestructura tecnológica JEP. \\
+Cluster & Application Collaboration & Orquestador de nodos y servicios
+(contendores) de la JEP. \\
+Nodo Integración JEP (worker) & Application Collaboration & Nodo lógico
+en donde corren los contenedores. \\
+VM Node & Node & Nodo físico donde corren los procesos del sistema
+operativo. \\
+Nodo Integración JEP (worker) & Application Collaboration & Nodo lógico
+en donde corren los contenedores. \\
+VM Node & Node & Nodo físico donde corren los procesos del sistema
+operativo. \\
+Proceso de integración (kb service) & Application Interface & Definición
+de un proceso de trabajo de integración desplegable. \\
+Proceso de integración (kb service) & Application Interface & Definición
+de un proceso de trabajo de integración desplegable. \\
+ENTG06. Contenedor & Application Component & Contenedores de los
+servicios de integración del proyecto desplegados en la infraestructura
+tecnológica JEP. \\
+ENTG07 (task) & Application Service & Servicios de integración del
+proyecto desplegados en la infraestructura tecnológica JEP. \\
+ENTG06. Contenedor & Application Component & Contenedores de los
+servicios de integración del proyecto desplegados en la infraestructura
+tecnológica JEP. \\
+ENTG06. Contenedor & Application Component & Contenedores de los
+servicios de integración del proyecto desplegados en la infraestructura
+tecnológica JEP. \\
+ENTG07 (task) & Application Service & Servicios de integración del
+proyecto desplegados en la infraestructura tecnológica JEP. \\
+ENTG06. Contenedor & Application Component & Contenedores de los
+servicios de integración del proyecto desplegados en la infraestructura
+tecnológica JEP. \\
+ENTG06. Contenedor & Application Component & Contenedores de los
+servicios de integración del proyecto desplegados en la infraestructura
+tecnológica JEP. \\
+ENTG07 (task) & Application Service & Servicios de integración del
+proyecto desplegados en la infraestructura tecnológica JEP. \\
+\end{longtable}
+
+\subsection{Sistema de Mensajes Integración
+JEP}\label{sec:sistema-de-mensajes-integraciuxf3n-jep}
+
+\begin{quote}
+Integraciones JEP, 2024 Integración JEP. Softgic. Sistema de Mensajería
+Integración JEP. Elementos del sistema de mensajería. versión 0.1.27
+\end{quote}
+
+Comunicación entre aplicaciones o servicios desacolplados mediante
+mensajes de tipo solicitud, respuesta o excepción (request, response,
+exception).
+
+El patrón principal de integración es el de Red Troncal de
+Comunicaciones (Nodo Intermediador en el diagrama): a medida que más y
+más aplicaciones de la empresa se conectan al sistema de mensajería y
+hacen que su funcionalidad esté disponible a través de la mensajería, el
+sistema de mensajería se convierte en un punto centralizado, ventanilla
+única, para la funcionalidad en la empresa. Una nueva aplicación
+simplemente necesita saber qué canales usar para solicitar funcionalidad
+y cuáles otros escuchar para obtener los resultados. El propio sistema
+de mensajería se convierte esencialmente en un bus de mensajes, una
+columna vertebral que proporciona acceso a todas las diversas y
+cambiantes aplicaciones y funcionalidades de la empresa. Puedes lograr
+este nirvana de integración más rápida y fácilmente si diseñas
+específicamente para ello desde el principio.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=5.20833in]{images/04.ING.3n.3.SistemadeMensajeríaIntegraciónJEP.png}
+\caption{04.ING.3n.3. Sistema de Mensajería Integración JEP.
+\emph{Fuente: Repositorio arquitectura Integración JEP
+(2024)}}\label{fig:id-402ea0d886a14c76a3459332f1f2953c}
+\end{figure}
+
+\subsubsection{Catálogo de
+Elementos}\label{sec:catuxe1logo-de-elementos-5}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5000}}@{}}
+\caption{\label{tbl:tblelement-04.ING.3n.3.SistemadeMensajeruxedaIntegraciuxf3nJEP-id}Elementos
+de la vista.}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Nombre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Documentación
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Nombre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Documentación
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Cluster & Application Collaboration & Orquestador de nodos y servicios
+(contendores) de la JEP. \\
+Nodo Intermediador & Application Interface & Nodo lógico en donde corren
+los contenedores. \\
+Nodo Integración JEP (worker) & Application Collaboration & Nodo lógico
+en donde corren los contenedores. \\
+VM Node & Node & Nodo físico donde corren los procesos del sistema
+operativo. \\
+Consumidor & Application Component & Aplicación o servicio consumidor.
+Emite mensajes de petición al proveedor de datos o comandos. \\
+Intermediador (cola o bus) & Application Component & Bus de Red Hat,
+aplicación cliente Quarkus, o intermediador de integración Apache
+Camel. \\
+Mensaje solicitud & Data Object & Formato predefinido de intercambio de
+datos. \\
+Mensaje respuesta o excepción & Data Object & Formato predefinido de
+intercambio de datos. \\
+Proceso de integración (kb service) & Application Interface & Definición
+de un proceso de trabajo de integración desplegable. \\
+Interfaz intermediación & Application Interface & API de transporte de
+mensajjes. Protocolo JMS, XMQ, MSMQ, etc. \\
+ENTG06. Contenedor & Application Component & Contenedores de los
+servicios de integración del proyecto desplegados en la infraestructura
+tecnológica JEP. \\
+ENTG07 (task) & Application Service & Servicios de integración del
+proyecto desplegados en la infraestructura tecnológica JEP. \\
+ENTG06. Contenedor & Application Component & Contenedores de los
+servicios de integración del proyecto desplegados en la infraestructura
+tecnológica JEP. \\
+Interfaz intermediación & Application Interface & API de transporte de
+mensajjes. Protocolo JMS, XMQ, MSMQ, etc. \\
+Proveedor & Application Component & Aplicación o servicio proveedor.
+Emite mensajes de respuesta al consumidor de datos o comandos. \\
+\end{longtable}
+
+\newpage
+
+\section{Modelo de Requerimientos de Interoperabilidad Proyecto
+JEP}\label{sec:modelo-de-requerimientos-de-interoperabilidad-proyecto-jep}
+
+\subsection{Requerimientos de Integración
+JEP}\label{sec:requerimientos-de-integraciuxf3n-jep}
+
+\begin{quote}
+Modelo de Requerimientos Proyecto Integración JEP, 2024. Softgic.
+Requerimientos, condiciones técnicas, solución del proyecto Integración
+JEP, 2024. Versión 0.1.41
+\end{quote}
+
+Del alcance del proyecto,
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Implementación de 20 o más servicios de integración al 31 de diciembre
+  del 2024.
+\item
+  Soporte solución de integración a julio 2025.
+\end{enumerate}
+
+Establecemos las bases para el modelo de requerimientos de esta
+solución, el cual limita la demanda a:
+
+\begin{itemize}
+\tightlist
+\item
+  Desarrollar únicamente nuevos servicios de integración con el patrón
+  de integración empresarial (ESB, Camel K de Apache) propuesto en el
+  modelo de interoperabilidad de esta solución.
+\item
+  Implementar en esta solución de integración las condiciones
+  tecnológicas JEP, entendidas como requerimientos no funcionales de
+  arquitectura, presentes en el Anexo Nro. 1.1 -- Anexo técnico
+  evolución plataforma de interoperabilidad -- Ficha Técnica.
+\item
+  No son requerimientos de este proyecto el implementar otro tipos de
+  requerimientos no expresados aquí, como por ejemplo, migrar los
+  servicios existentes de modelo integración directa (EIA) esta solución
+  de integración empresarial, o implementar soluciones en las
+  aplicaciones de software de la JEP.
+\end{itemize}
+
+Para la implementación de los ítems relacionados en el Anexo Nro. 1.1 --
+Anexo técnico evolución plataforma de interoperabilidad -- Ficha Técnica
+la hoja ``Categorías de Cotización'' contiene las necesidades a
+contratar en el ámbito de la evolución tecnológica del modelo de
+interoperabilidad y los desarrollos de interoperabilidad tanto con
+sistemas internos, como con entidades externas. En la hoja ``Estándares
+Desarrollo y Producto'' del archivo mencionado se indican los estándares
+recomendados por el fabricante, para tener en cuenta en la entrega de
+los servicios que se cotizan.
+
+El Anexo Nro. 1.2 -- Acuerdos de Niveles de Servicio, explica el
+procedimiento con el que se dará atención a consultas o solución de
+incidencias, tanto en los sistemas operativos, como en los servicios de
+interoperabilidad existentes en la actualidad y aquellos que se
+contratarán en este proceso, en el sistema Bus de Interoperabilidad
+implementado en la Jurisdicción Especial para la Paz.
+
+Fuente: Justificativo de la Contratación Invitación Pública.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=5.20833in]{images/05.REQR.1n.1a.Requerimiento.png}
+\caption{05.REQR.1n.1a. Requerimiento. \emph{Fuente: Repositorio
+arquitectura Integración JEP
+(2024)}}\label{fig:id-01ff385d2e284d618086769dfc871d38}
+\end{figure}
+
+\subsubsection{Problema 1}\label{sec:problema-1}
+
+\subsubsection{Objetivo: Contractual}\label{sec:objetivo-contractual}
+
+El requerimiento tiene carácter contractual.
+
+\subsubsection{Comunicación Conti x
+Plani}\label{sec:comunicaciuxf3n-conti-x-plani}
+
+Valor: el requerimientos genera entregables de valor para la integración
+de aplicaciones de JEP.
+
+\subsubsection{Restricción:
+Levantamiento}\label{sec:restricciuxf3n-levantamiento}
+
+El requerimiento está condicionado por la completitud del levantamiento.
+
+\subsubsection{REQR3. Integración con Sistema Conti x
+Plani}\label{sec:reqr3.-integraciuxf3n-con-sistema-conti-x-plani}
+
+Atendiendo la necesidad de la Subdirección de Contratación de
+implementar el flujo de gestión precontractual en el sistema de Gestión
+Documental - Conti se requiere integrar con la información de los ítems
+del Plan Anual de Adquisiciones -- PAA para iniciar el proceso, la cual
+se encuentra gestionada en el Sistema de Gestión y Planeación
+Institucional PLANi.
+
+Fuente: Acta de requerimientos Integración Plani - Proceso
+Precontractual\_V4 (pdf).
+
+\paragraph{Índice de la documentación (casos de
+uso)}\label{sec:uxedndice-de-la-documentaciuxf3n-casos-de-uso}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Integración. Ingreso a Conti
+\item
+  Integración. Consulta ítem de Conti
+\item
+  Integración. Radicar ítem
+\item
+  Integración. Generación de documentos
+\end{enumerate}
+
+\subsubsection{Solución 1}\label{sec:soluciuxf3n-1}
+
+\subsubsection{SINT1. Integración. Ingreso a
+Conti}\label{sec:sint1.-integraciuxf3n.-ingreso-a-conti}
+
+Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\subsubsection{SINT2. Integración. Consulta ítem de
+Conti}\label{sec:sint2.-integraciuxf3n.-consulta-uxedtem-de-conti}
+
+Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\subsubsection{SINT3. Integración. Radicar
+ítem}\label{sec:sint3.-integraciuxf3n.-radicar-uxedtem}
+
+Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\subsubsection{SINT4. Integración. Generación de
+documentos}\label{sec:sint4.-integraciuxf3n.-generaciuxf3n-de-documentos}
+
+Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\subsubsection{Plan Producción: Scrum y
+Gerencia}\label{sec:plan-producciuxf3n-scrum-y-gerencia}
+
+\subsection{Requerimientos de Integración
+JEP}\label{sec:requerimientos-de-integraciuxf3n-jep-1}
+
+\begin{quote}
+Modelo de Requerimientos Proyecto Integración JEP, 2024. Softgic.
+Requerimientos, condiciones técnicas, solución del proyecto Integración
+JEP, 2024. Versión 0.1.44
+\end{quote}
+
+Del alcance del proyecto,
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Implementación de 20 o más servicios de integración al 31 de diciembre
+  del 2024.
+\item
+  Soporte solución de integración a julio 2025.
+\end{enumerate}
+
+Establecemos las bases para el modelo de requerimientos de esta
+solución, el cual limita la demanda a:
+
+\begin{itemize}
+\tightlist
+\item
+  Desarrollar únicamente nuevos servicios de integración con el patrón
+  de integración empresarial (ESB, Camel K de Apache) propuesto en el
+  modelo de interoperabilidad de esta solución.
+\item
+  Implementar en esta solución de integración las condiciones
+  tecnológicas JEP, entendidas como requerimientos no funcionales de
+  arquitectura, presentes en el Anexo Nro. 1.1 -- Anexo técnico
+  evolución plataforma de interoperabilidad -- Ficha Técnica.
+\item
+  No son requerimientos de este proyecto el implementar otro tipos de
+  requerimientos no expresados aquí, como por ejemplo, migrar los
+  servicios existentes de modelo integración directa (EIA) esta solución
+  de integración empresarial, o implementar soluciones en las
+  aplicaciones de software de la JEP.
+\end{itemize}
+
+Para la implementación de los ítems relacionados en el Anexo Nro. 1.1 --
+Anexo técnico evolución plataforma de interoperabilidad -- Ficha Técnica
+la hoja ``Categorías de Cotización'' contiene las necesidades a
+contratar en el ámbito de la evolución tecnológica del modelo de
+interoperabilidad y los desarrollos de interoperabilidad tanto con
+sistemas internos, como con entidades externas. En la hoja ``Estándares
+Desarrollo y Producto'' del archivo mencionado se indican los estándares
+recomendados por el fabricante, para tener en cuenta en la entrega de
+los servicios que se cotizan.
+
+El Anexo Nro. 1.2 -- Acuerdos de Niveles de Servicio, explica el
+procedimiento con el que se dará atención a consultas o solución de
+incidencias, tanto en los sistemas operativos, como en los servicios de
+interoperabilidad existentes en la actualidad y aquellos que se
+contratarán en este proceso, en el sistema Bus de Interoperabilidad
+implementado en la Jurisdicción Especial para la Paz.
+
+Fuente: Justificativo de la Contratación Invitación Pública.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=5.20833in]{images/05.REQR.1n.1b.Requerimiento.png}
+\caption{05.REQR.1n.1b. Requerimiento. \emph{Fuente: Repositorio
+arquitectura Integración JEP
+(2024)}}\label{fig:id-8b4c8be23da34d399e8127a08a5204b8}
+\end{figure}
+
+\subsubsection{Catálogo de
+Elementos}\label{sec:catuxe1logo-de-elementos-6}
+
+\textbf{Plan Producción: Scrum y Gerencia}
+
+\textbf{Problema 3}
+
+\textbf{Objetivo: Contractual} El requerimiento tiene carácter
+contractual.
+
+\textbf{Solución 3}
+
+\textbf{SINT10. Integrar Radicar MP} Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\textbf{SINT11. Integrar Indexar Imagen} Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+** REQR11. Integración Gestión Medida Protección** Atendiendo la
+necesidad de (\ldots) se requiere integrar la gestión médica JEP, como
+exposición de las capacidades Radicar MP y Indexar Imagen, las cuales se
+encuentran en (\ldots).
+
+Fuente: gestionMedidaProteccion (pdf).
+
+\subsubsection{Índice de la documentación (casos de
+uso)}\label{sec:uxedndice-de-la-documentaciuxf3n-casos-de-uso-1}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Caso de Uso 1. Integrar Radicar MP
+\item
+  Caso de Uso 2. Integrar Indexar Imagen
+\end{enumerate}
+
+\textbf{Valor: Apoyar la gestión médica} Valor: el requerimientos genera
+entregables de valor para la gestión médica de JEP.
+
+\textbf{Restricción: Levantamiento} El requerimiento está condicionado
+por la completitud del levantamiento.
+
+\subsection{Requerimientos de Integración
+JEP}\label{sec:requerimientos-de-integraciuxf3n-jep-2}
+
+\begin{quote}
+Modelo de Requerimientos Proyecto Integración JEP, 2024. Softgic.
+Requerimientos, condiciones técnicas, solución del proyecto Integración
+JEP, 2024. Versión 0.1.39
+\end{quote}
+
+Del alcance del proyecto,
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Implementación de 20 o más servicios de integración al 31 de diciembre
+  del 2024.
+\item
+  Soporte solución de integración a julio 2025.
+\end{enumerate}
+
+Establecemos las bases para el modelo de requerimientos de esta
+solución, el cual limita la demanda a:
+
+\begin{itemize}
+\tightlist
+\item
+  Desarrollar únicamente nuevos servicios de integración con el patrón
+  de integración empresarial (ESB, Camel K de Apache) propuesto en el
+  modelo de interoperabilidad de esta solución.
+\item
+  Implementar en esta solución de integración las condiciones
+  tecnológicas JEP, entendidas como requerimientos no funcionales de
+  arquitectura, presentes en el Anexo Nro. 1.1 -- Anexo técnico
+  evolución plataforma de interoperabilidad -- Ficha Técnica.
+\item
+  No son requerimientos de este proyecto el implementar otro tipos de
+  requerimientos no expresados aquí, como por ejemplo, migrar los
+  servicios existentes de modelo integración directa (EIA) esta solución
+  de integración empresarial, o implementar soluciones en las
+  aplicaciones de software de la JEP.
+\end{itemize}
+
+Para la implementación de los ítems relacionados en el Anexo Nro. 1.1 --
+Anexo técnico evolución plataforma de interoperabilidad -- Ficha Técnica
+la hoja ``Categorías de Cotización'' contiene las necesidades a
+contratar en el ámbito de la evolución tecnológica del modelo de
+interoperabilidad y los desarrollos de interoperabilidad tanto con
+sistemas internos, como con entidades externas. En la hoja ``Estándares
+Desarrollo y Producto'' del archivo mencionado se indican los estándares
+recomendados por el fabricante, para tener en cuenta en la entrega de
+los servicios que se cotizan.
+
+El Anexo Nro. 1.2 -- Acuerdos de Niveles de Servicio, explica el
+procedimiento con el que se dará atención a consultas o solución de
+incidencias, tanto en los sistemas operativos, como en los servicios de
+interoperabilidad existentes en la actualidad y aquellos que se
+contratarán en este proceso, en el sistema Bus de Interoperabilidad
+implementado en la Jurisdicción Especial para la Paz.
+
+Fuente: Justificativo de la Contratación Invitación Pública.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=5.20833in]{images/05.REQR.1n.1c.Requerimiento.png}
+\caption{05.REQR.1n.1c. Requerimiento. \emph{Fuente: Repositorio
+arquitectura Integración JEP
+(2024)}}\label{fig:id-66863a85ffda49fea776ab5314fffd5e}
+\end{figure}
+
+\subsubsection{Catálogo de
+Elementos}\label{sec:catuxe1logo-de-elementos-7}
+
+\textbf{Plan Producción: Scrum y Gerencia}
+
+\textbf{Problema 4}
+
+\textbf{Solución 4}
+
+\textbf{SINT20. Personas} Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\textbf{SINT25. Procesos de la persona} Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\textbf{SINT21. Persona} Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\textbf{SINT26. Detalles del proceso} Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\textbf{SINT22. Dirección de la persona} Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\textbf{SINT23. Partes del proceso} Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\textbf{SINT23. Teléfono de la persona}
+
+Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\textbf{SINT26. Asociación de parte del proceso} Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\textbf{SINT27. Paginación} Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\textbf{Objetivo: Contractual} El requerimiento tiene carácter
+contractual.
+
+\textbf{REQR12. Integración Legali x Protecti} Documentación API de
+integración. Creación de documento técnico para el consumo de servicios
+web.
+
+Fuente: Documentación técnica - API Integración - Consulta de personas
+(pdf). Pedro Escobar, ing.
+
+\subsubsection{Índice de la documentación (casos de
+uso)}\label{sec:uxedndice-de-la-documentaciuxf3n-casos-de-uso-2}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Personas
+\item
+  Persona
+\item
+  Dirección de la persona
+\item
+  Teléfono de la persona
+\item
+  Procesos de la persona
+\item
+  Detalles del proceso
+\item
+  Partes del proceso
+\item
+  Asociación de parte del proceso
+\item
+  Paginación
+\end{enumerate}
+
+\textbf{Valor: Apoyar la gestión médica} Valor: el requerimientos genera
+entregables de valor para la gestión médica de JEP.
+
+\textbf{Restricción: Levantamiento} El requerimiento está condicionado
+por la completitud del levantamiento.
+
+\newpage
+
+\section{Modelo de Entrega y Despliegue de
+Requerimientos}\label{sec:modelo-de-entrega-y-despliegue-de-requerimientos}
+
+\subsection{Gestión de Entregas del
+Requerimiento}\label{sec:gestiuxf3n-de-entregas-del-requerimiento}
+
+\begin{quote}
+Integraciones JEP, 2024 Integración JEP. Softgic. Plan de Entregas del
+proyecto de integración JEP, iteraciones y Entregables por versión.
+versión 0.1.4
+\end{quote}
+
+Documento de requerimientos, primera versión de entregas del proyecto
+Integraciones JEP, 2024.
+
+El requerimiento Integración con Sistema Conti x Plani (REQR3, en la
+imagen) será entregado con la primera versión que se libere de la
+solución de integración, actualmente en desarrollo por Softgic.
+
+Este requerimiento REQR3 consta de dos iteraciones (Iteración 1 y 2, en
+la imagen), las cuales a su vez, realizarán dos historias de integración
+cada una (HU01, HU02, HU03, HU04, respectivamente).
+
+Una vez concluidas la ejecución de las dos iteraciones, y sus historias
+de integración contenidas, realizaremos la entrega de los 4 primeros
+servicios de integración desplegables en el namespace de Openshift de
+desarrollo de la JEP.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=5.20833in]{images/06.ENTRG.1n.1a.GestiónEntregasdeRequerimientos.png}
+\caption{06.ENTRG.1n.1a. Gestión Entregas de Requerimientos.
+\emph{Fuente: Repositorio arquitectura Integración JEP
+(2024)}}\label{fig:id-c31668d4d5dd44309f42fdd5fb2a7a53}
+\end{figure}
+
+\subsubsection{Catálogo de
+Elementos}\label{sec:catuxe1logo-de-elementos-8}
+
+\subsubsection{Integrar operaciones
+Conti}\label{sec:integrar-operaciones-conti}
+
+Característica de integración de Conti contenido en la solución de
+integración JEP, 2024.
+
+\subsubsection{Integración Conti}\label{sec:integraciuxf3n-conti}
+
+Épica de entrega de la solución de integración JEP, 2024, que contiene
+las iteraciones que realizarán la característica `Integrar operaciones
+Conti'.
+
+\subsubsection{REQR3. Integración con Sistema Conti x
+Plani}\label{sec:reqr3.-integraciuxf3n-con-sistema-conti-x-plani-1}
+
+Atendiendo la necesidad de la Subdirección de Contratación de
+implementar el flujo de gestión precontractual en el sistema de Gestión
+Documental - Conti se requiere integrar con la información de los ítems
+del Plan Anual de Adquisiciones -- PAA para iniciar el proceso, la cual
+se encuentra gestionada en el Sistema de Gestión y Planeación
+Institucional PLANi.
+
+Fuente: Acta de requerimientos Integración Plani - Proceso
+Precontractual\_V4 (pdf).
+
+\paragraph{Índice de la documentación (casos de
+uso)}\label{sec:uxedndice-de-la-documentaciuxf3n-casos-de-uso-3}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Integración. Ingreso a Conti
+\item
+  Integración. Consulta ítem de Conti
+\item
+  Integración. Radicar ítem
+\item
+  Integración. Generación de documentos
+\end{enumerate}
+
+\subsubsection{SINT1. Integración. Ingreso a
+Conti}\label{sec:sint1.-integraciuxf3n.-ingreso-a-conti-1}
+
+Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\subsubsection{SINT2. Integración. Consulta ítem de
+Conti}\label{sec:sint2.-integraciuxf3n.-consulta-uxedtem-de-conti-1}
+
+Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\subsubsection{SINT3. Integración. Radicar
+ítem}\label{sec:sint3.-integraciuxf3n.-radicar-uxedtem-1}
+
+Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\subsubsection{SINT4. Integración. Generación de
+documentos}\label{sec:sint4.-integraciuxf3n.-generaciuxf3n-de-documentos-1}
+
+Tareas de desarrollo
+
+\begin{itemize}
+\tightlist
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad
+\end{itemize}
+
+\subsubsection{Plan Producción: Scrum y
+Gerencia}\label{sec:plan-producciuxf3n-scrum-y-gerencia-1}
+
+\subsection{Despliegue de Entregas de
+Requerimientos}\label{sec:despliegue-de-entregas-de-requerimientos}
+
+\begin{quote}
+Integraciones JEP, 2024 Integración JEP. Softgic. Plan de Entregas del
+proyecto de integración y despliegue JEP, iteraciones y Entregables por
+versión. versión 0.1.14
+\end{quote}
+
+Los servicios implementados contenidos en los requerimientos se pueden
+desplegar sobre la red de unidades de despliegue (pods) dispuesta por la
+JEP y acordada con el contratista.
+
+En esta organización propuesta, los servicios de integración
+implementados pueden ser desplegados en uno, o varios contenedores, y en
+unidades de despliegue (pods) distintas.
+
+\begin{figure}
+\centering
+\includegraphics[width=\textwidth,height=5.20833in]{images/06.ENTRG.1n.1a.1.DespliegueEntregasdeRequerimiento.png}
+\caption{06.ENTRG.1n.1a.1. Despliegue Entregas de Requerimiento.
+\emph{Fuente: Repositorio arquitectura Integración JEP
+(2024)}}\label{fig:id-203e737545e449e59334b47d3034d956}
+\end{figure}
+
+\subsubsection{Catálogo de
+Elementos}\label{sec:catuxe1logo-de-elementos-9}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2000}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5000}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Nombre
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Tipo
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Documentación
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Integrar operaciones Conti & Driver & Característica de integración de
+Conti contenido en la solución de integración JEP, 2024. \\
+& & \\
+Integración Conti & Deliverable & Épica de entrega de la solución de
+integración JEP, 2024, que contiene las iteraciones que realizarán la
+característica `Integrar operaciones Conti'. \\
+\end{longtable}
+
+\textbar{} \textbar{} REQR3. Integración con Sistema Conti x Plani
+\textbar{} Requirement \textbar{} Atendiendo la necesidad de la
+Subdirección de Contratación de implementar el flujo de gestión
+precontractual en el sistema de Gestión Documental - Conti se requiere
+integrar con la información de los ítems del Plan Anual de Adquisiciones
+-- PAA para iniciar el proceso, la cual se encuentra gestionada en el
+Sistema de Gestión y Planeación Institucional PLANi.
+
+Fuente: Acta de requerimientos Integración Plani - Proceso
+Precontractual\_V4 (pdf).
+
+\paragraph{Índice de la documentación (casos de
+uso)}\label{sec:uxedndice-de-la-documentaciuxf3n-casos-de-uso-4}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Integración. Ingreso a Conti
+\item
+  Integración. Consulta ítem de Conti
+\item
+  Integración. Radicar ítem
+\item
+  Integración. Generación de documentos
+\end{enumerate}
+
+\textbar{} \textbar{} SINT1. Integración. Ingreso a Conti \textbar{}
+Application Service \textbar{} Tareas de desarrollo
+
+\begin{itemize}
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad \textbar{} \textbar{} SINT2.
+  Integración. Consulta ítem de Conti \textbar{} Application Service
+  \textbar{} Tareas de desarrollo
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad \textbar{} \textbar{} SINT3.
+  Integración. Radicar ítem \textbar{} Application Service \textbar{}
+  Tareas de desarrollo
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad \textbar{} \textbar{} SINT4.
+  Integración. Generación de documentos \textbar{} Application Service
+  \textbar{} Tareas de desarrollo
+\item
+  Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
+\item
+  Modelo de datos (XML, RBDMS, \ldots)
+\item
+  Esquema de datos (XSD, DTD, JSON-E\ldots)
+\item
+  Contratos de interoperabilidad (WSDL, API\ldots)
+\item
+  Mensajes petición IN (API, XML\ldots)
+\item
+  Mensajes respuesta OUT (API, XML\ldots)
+\item
+  Mensajes excepción (API, XML\ldots)
+\item
+  Transporte (REST, SOAP)
+\item
+  Función lógica (JEE, \ldots)
+\item
+  Registro y envío de actividad \textbar{} \textbar{} ENTG06. Contenedor
+  \textbar{} Application Component \textbar{} Contenedores de los
+  servicios de integración del proyecto desplegados en la
+  infraestructura tecnológica JEP. \textbar{} \textbar{} ENTG06.
+  Contenedor \textbar{} Application Component \textbar{} Contenedores de
+  los servicios de integración del proyecto desplegados en la
+  infraestructura tecnológica JEP. \textbar{} \textbar{} Intermediador
+  (cola o bus) \textbar{} Application Component \textbar{} Bus de Red
+  Hat, aplicación cliente Quarkus, o intermediador de integración Apache
+  Camel. \textbar{} \textbar{} Mensaje solicitud \textbar{} Data Object
+  \textbar{} Formato predefinido de intercambio de datos. \textbar{}
+  \textbar{} Mensaje respuesta o excepción \textbar{} Data Object
+  \textbar{} Formato predefinido de intercambio de datos. \textbar{}
+  \textbar{} Nodo Intermediador \textbar{} Application Interface
+  \textbar{} Nodo lógico en donde corren los contenedores. \textbar{}
+  \textbar{} Nodo Integración JEP (worker) \textbar{} Application
+  Collaboration \textbar{} Nodo lógico en donde corren los contenedores.
+  \textbar{} \textbar{} Cluster \textbar{} Application Collaboration
+  \textbar{} Orquestador de nodos y servicios (contendores) de la JEP.
+  \textbar{}
+\end{itemize}
+
+Table: Elementos de la vista.
+\{\#tbl:tblelement-06.ENTRG.1n.1a.1.DespliegueEntregasdeRequerimiento-id\}
 
 \end{document}
