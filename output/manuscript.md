@@ -35,17 +35,17 @@ tablenos-caption-name: Tabla
 
 Versión Actual
 
-1.7092a66 - clean - Mon, 25 Nov 2024 16:21:58 -0500
+1.0f89661 - jpelogo - Mon, 25 Nov 2024 16:36:28 -0500
 
 Versiones Anteriores
+
+1.3201f2d - Compilación para entrega - Mon, 25 Nov 2024 20:37:10 +0000
+
+1.0ffd864 - Compilación para entrega - Mon, 25 Nov 2024 20:03:17 +0000
 
 1.5fc7144 - Compilación para entrega - Mon, 25 Nov 2024 19:50:29 +0000
 
 1.c17d6d1 - Compilación para entrega - Mon, 25 Nov 2024 19:41:40 +0000
-
-1.32d8d21 - Compilación para entrega - Tue, 19 Nov 2024 22:04:18 +0000
-
-1.4fdd500 - Compilación para entrega - Tue, 19 Nov 2024 21:58:36 +0000
 
 
 ## Realizado Por
@@ -309,7 +309,7 @@ titlepage-rule-color: 360049
 title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.7092a66 - clean - Mon, 25 Nov 2024 16:21:58 -0500"
+author: "Versión actual: 1.0f89661 - jpelogo - Mon, 25 Nov 2024 16:36:28 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-left: include/jeplogo.jpg
@@ -423,7 +423,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.7092a66 - clean - Mon, 25 Nov 2024 16:21:58 -0500"
+author: "Versión actual: 1.0f89661 - jpelogo - Mon, 25 Nov 2024 16:36:28 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-left: include/jeplogo.jpg
@@ -617,7 +617,7 @@ titlepage-rule-color: 360049
 title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.7092a66 - clean - Mon, 25 Nov 2024 16:21:58 -0500"
+author: "Versión actual: 1.0f89661 - jpelogo - Mon, 25 Nov 2024 16:36:28 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-left: include/jeplogo.jpg
@@ -730,7 +730,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.7092a66 - clean - Mon, 25 Nov 2024 16:21:58 -0500"
+author: "Versión actual: 1.0f89661 - jpelogo - Mon, 25 Nov 2024 16:36:28 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-left: include/jeplogo.jpg
@@ -1180,7 +1180,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto
-author: "Versión actual: 1.7092a66 - clean - Mon, 25 Nov 2024 16:21:58 -0500"
+author: "Versión actual: 1.0f89661 - jpelogo - Mon, 25 Nov 2024 16:36:28 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic]
 header-left: include/jeplogo.jpg
