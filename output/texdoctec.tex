@@ -172,7 +172,7 @@
 \urlstyle{same}
 \hypersetup{
   pdftitle={Gestión de Requerimientos JEP},
-  pdfauthor={Versión actual: 1.5fc7144 - Compilación para entrega - Mon, 25 Nov 2024 19:50:29 +0000},
+  pdfauthor={Versión actual: 1.0ffd864 - Compilación para entrega - Mon, 25 Nov 2024 20:03:17 +0000},
   pdflang={en},
   pdfsubject={Implementación Proyecto},
   pdfkeywords={Integración, Interoperabilidad, JEP, Softgic},
@@ -188,8 +188,8 @@
 \makeatother
 \subtitle{Implementación Proyecto Evolución de Interoperabilidad JEP,
 Softgic}
-\author{Versión actual: 1.5fc7144 - Compilación para entrega - Mon, 25
-Nov 2024 19:50:29 +0000}
+\author{Versión actual: 1.0ffd864 - Compilación para entrega - Mon, 25
+Nov 2024 20:03:17 +0000}
 \date{2024-11-8}
 
 
@@ -281,8 +281,8 @@ Nov 2024 19:50:29 +0000}
 %
 \usepackage{titling}
 \title{Gestión de Requerimientos JEP}
-\author{Versión actual: 1.5fc7144 - Compilación para entrega - Mon, 25
-Nov 2024 19:50:29 +0000}
+\author{Versión actual: 1.0ffd864 - Compilación para entrega - Mon, 25
+Nov 2024 20:03:17 +0000}
 \date{2024-11-8}
 
 %
@@ -322,8 +322,8 @@ Nov 2024 19:50:29 +0000}
   \ihead*{\includegraphics{include/jeplogo.jpg}}
   \chead*{}
   \ohead*{2024-11-8}
-  \ifoot*{Versión actual: 1.5fc7144 - Compilación para entrega - Mon, 25
-Nov 2024 19:50:29 +0000}
+  \ifoot*{Versión actual: 1.0ffd864 - Compilación para entrega - Mon, 25
+Nov 2024 20:03:17 +0000}
   \cfoot*{}
   \ofoot*{\thepage}
   \addtokomafont{pageheadfoot}{\upshape}
@@ -360,8 +360,8 @@ Nov 2024 19:50:29 +0000}
   {\Large \textsf{Implementación Proyecto Evolución de Interoperabilidad
 JEP, Softgic}}
     \vskip 2em
-  \noindent {\Large \textsf{Versión actual: 1.5fc7144 - Compilación para
-entrega - Mon, 25 Nov 2024 19:50:29 +0000}}
+  \noindent {\Large \textsf{Versión actual: 1.0ffd864 - Compilación para
+entrega - Mon, 25 Nov 2024 20:03:17 +0000}}
   \vfill
 }
 
@@ -408,17 +408,17 @@ Documento}\label{sec:informaciuxf3n-del-documento}
 
 Versión Actual
 
-1.5fc7144 - Compilación para entrega - Mon, 25 Nov 2024 19:50:29 +0000
+1.0ffd864 - Compilación para entrega - Mon, 25 Nov 2024 20:03:17 +0000
 
 Versiones Anteriores
+
+1.c004c1c - Compilación para entrega - Sun, 10 Nov 2024 22:20:42 +0000
 
 1.079de0e - Compilación para entrega - Fri, 8 Nov 2024 22:55:22 +0000
 
 1.6a9b356 - Compilación para entrega - Fri, 8 Nov 2024 22:48:03 +0000
 
 1.5490400 - Compilación para entrega - Fri, 8 Nov 2024 21:57:48 +0000
-
-1.a541bff - Compilación para entrega - Fri, 8 Nov 2024 20:43:59 +0000
 
 \subsection{Realizado Por}\label{sec:realizado-por}
 
@@ -1859,11 +1859,11 @@ Gerencia}\label{sec:plan-producciuxf3n-scrum-y-gerencia-2}
 
 El requerimiento tiene carácter contractual.
 
-\subsubsection{Valor: Apoyar la gestión
-médica}\label{sec:valor-apoyar-la-gestiuxf3n-muxe9dica}
+\subsubsection{Valor: Apoyar la gestión medida
+protección}\label{sec:valor-apoyar-la-gestiuxf3n-medida-protecciuxf3n}
 
-Valor: el requerimientos genera entregables de valor para la gestión
-médica de JEP.
+El requerimientos genera entregables de valor para la gestión de medida
+de protección JEP.
 
 \subsubsection{Restricción:
 Levantamiento}\label{sec:restricciuxf3n-levantamiento-1}
@@ -1890,6 +1890,8 @@ uso)}\label{sec:uxedndice-de-la-documentaciuxf3n-casos-de-uso-3}
 \item
   Caso de Uso 2. Integrar Indexar Imagen
 \end{enumerate}
+
+Los casos de uso se detallan en anexo más adelante.
 
 \subsubsection{Solución 3}\label{sec:soluciuxf3n-3}
 
@@ -1996,14 +1998,28 @@ uso)}\label{sec:uxedndice-de-la-documentaciuxf3n-casos-de-uso-4}
   Caso de Uso 2. Integrar Indexar Imagen
 \end{enumerate}
 
+Los casos de uso se detallan en anexo más adelante.
+
 \subsubsection{HU.SINT10. Integración. Radicar
 MP}\label{sec:hu.sint10.-integraciuxf3n.-radicar-mp}
 
 \subsubsection{Especificación de
 integración}\label{sec:especificaciuxf3n-de-integraciuxf3n-4}
 
-Solicitar autenticación a la aplicación Conti y devolver resultado de la
-solicitud de ingreso a la aplicación Plani.
+Radicar MP. Esta integración permite radicar una solicitud de medida de
+protección.
+
+Detalles:
+
+\begin{itemize}
+\tightlist
+\item
+  Dominio/mercurio/gestionMedidaProteccion/radicarMP Method: POST
+\item
+  Content-Type: application/json.
+\end{itemize}
+
+Ver fuente anexo técnico: gestionMedidaProteccion (pdf).
 
 \paragraph{Elementos}\label{sec:elementos-4}
 
@@ -2027,9 +2043,9 @@ Elegir y describir los elementos de la actual integración.
   Monitoreo
 \end{itemize}
 
-Aplicación consumidora A: Plani. Aplicación proveedora B: Conti
+Aplicación consumidora A: Aplicación JEP. Aplicación proveedora B: MP
 
-Mensaje solicitud: (ver estándar de nombramiento) Ingreso a Conti
+Mensaje solicitud: (ver estándar de nombramiento) Radicar MP.
 
 \begin{itemize}
 \tightlist
@@ -2080,23 +2096,22 @@ Detalle del intercambio entre sistemas de información o aplicaciones.
 App Plani requiere compartir Información {[}I{]}, Funcionalidad {[}F{]},
 Seguridad o Servicios {[}S{]} con la App Plani.
 
-\begin{longtable}[]{@{}lllll@{}}
-\caption{Matriz de interoperabilidad del CU Ingreso a
-Conti.}\tabularnewline
+\begin{longtable}[]{@{}llllll@{}}
+\caption{Matriz de interoperabilidad del CU Radicar MP.}\tabularnewline
 \toprule\noalign{}
-& Conti & Plani & Legali & Otros \\
+& MP & App & Legali & Plani & Otros \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-& Conti & Plani & Legali & Otros \\
+& MP & App & Legali & Plani & Otros \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Conti (B) & X & Seguridad & & \\
-Plani (A) & & X & & \\
-Legali & & & X & \\
-Otros Sistemas & & & & X \\
+App (A) & F & & & & \\
+MP (B) & & F & & & \\
+Legali & & & & & \\
+Otros Sistemas & & & & & \\
 \end{longtable}
 
 \paragraph{Pruebas Realizables}\label{sec:pruebas-realizables-4}
@@ -2108,21 +2123,31 @@ de interoperabilidad.
 \begin{itemize}
 \tightlist
 \item
-  PRUB1. Consumo: la aplicación consumidora Plani no recibe una
-  respuesta a tiempo.
+  PRUB1. Consumo radicar.
 \item
-  PRUB2. Ingreso: la aplicación proveedora Conti no provee un ingreso
-  autorizado.
+  PRUB2. Falla consumo radicar.
 \end{itemize}
 
 \subsubsection{HU.SINT11. Integración. Indexar
 Imagen}\label{sec:hu.sint11.-integraciuxf3n.-indexar-imagen}
 
-\subsubsection{Especificación de integración (copy)
-(copy)}\label{sec:especificaciuxf3n-de-integraciuxf3n-copy-copy}
+\subsubsection{Especificación de
+integración}\label{sec:especificaciuxf3n-de-integraciuxf3n-5}
 
-Solicitar autenticación a la aplicación Conti y devolver resultado de la
-solicitud de ingreso a la aplicación Plani.
+Indexar Imagen. Esta integración permite agregar nuevos archivos a la
+medida de Protección.
+
+Detalles:
+
+\begin{itemize}
+\tightlist
+\item
+  Dominio/mercurio/gestionMedidaProteccion/IndexarImagen Method: POST
+\item
+  Content-Type: application/json
+\end{itemize}
+
+Ver fuente anexo técnico: gestionMedidaProteccion (pdf).
 
 \paragraph{Elementos}\label{sec:elementos-5}
 
@@ -2146,9 +2171,9 @@ Elegir y describir los elementos de la actual integración.
   Monitoreo
 \end{itemize}
 
-Aplicación consumidora A: Plani. Aplicación proveedora B: Conti
+Aplicación consumidora A: Aplicación JEP. Aplicación proveedora B: MP
 
-Mensaje solicitud: (ver estándar de nombramiento) Ingreso a Conti
+Mensaje solicitud: (ver estándar de nombramiento) Radicar MP.
 
 \begin{itemize}
 \tightlist
@@ -2199,23 +2224,23 @@ Detalle del intercambio entre sistemas de información o aplicaciones.
 App Plani requiere compartir Información {[}I{]}, Funcionalidad {[}F{]},
 Seguridad o Servicios {[}S{]} con la App Plani.
 
-\begin{longtable}[]{@{}lllll@{}}
-\caption{Matriz de interoperabilidad del CU Ingreso a
-Conti.}\tabularnewline
+\begin{longtable}[]{@{}llllll@{}}
+\caption{Matriz de interoperabilidad del CU Indexar
+Imagen.}\tabularnewline
 \toprule\noalign{}
-& Conti & Plani & Legali & Otros \\
+& MP & App & Legali & Plani & Otros \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-& Conti & Plani & Legali & Otros \\
+& MP & App & Legali & Plani & Otros \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Conti (B) & X & Seguridad & & \\
-Plani (A) & & X & & \\
-Legali & & & X & \\
-Otros Sistemas & & & & X \\
+App (A) & F & & & & \\
+MP (B) & & F & & & \\
+Legali & & & & & \\
+Otros Sistemas & & & & & \\
 \end{longtable}
 
 \paragraph{Pruebas Realizables}\label{sec:pruebas-realizables-5}
@@ -2227,11 +2252,9 @@ de interoperabilidad.
 \begin{itemize}
 \tightlist
 \item
-  PRUB1. Consumo: la aplicación consumidora Plani no recibe una
-  respuesta a tiempo.
+  PRUB1. Consumo indexar.
 \item
-  PRUB2. Ingreso: la aplicación proveedora Conti no provee un ingreso
-  autorizado.
+  PRUB2. Falla consumo indexar.
 \end{itemize}
 
 \subsection{Requerimiento Integración envío de peticiones LEGALi x CONTi
@@ -2313,7 +2336,7 @@ El requerimiento tiene carácter contractual.
 \subsubsection{Valor: Integración Legali x
 Conti}\label{sec:valor-integraciuxf3n-legali-x-conti}
 
-Valor: Integración del gestor documental con el gestor de casos Legali.
+Integración del gestor documental con el gestor de casos Legali.
 
 \subsubsection{Restricción:
 Levantamiento}\label{sec:restricciuxf3n-levantamiento-2}
@@ -2325,7 +2348,7 @@ CONTi}\label{sec:reqr13.-integraciuxf3n-envuxedo-de-peticiones-legali-x-conti}
 
 Atendiendo la necesidad de Justicia Digital, se requiere implementar la
 integración de Legali como la exposición de las capacidades
-\textbf{Autenticación y Procesos de integración}.
+\emph{Autenticación y Procesos de integración}.
 
 Fuente: Servicio de integración LEGALi - Envío de peticiones - v5 (pdf).
 José Carlos Schröder Júnior.
@@ -2436,7 +2459,7 @@ CONTi}\label{sec:reqr13.-integraciuxf3n-envuxedo-de-peticiones-legali-x-conti-1}
 
 Atendiendo la necesidad de Justicia Digital, se requiere implementar la
 integración de Legali como la exposición de las capacidades
-\textbf{Autenticación y Procesos de integración}.
+\emph{Autenticación y Procesos de integración}.
 
 Fuente: Servicio de integración LEGALi - Envío de peticiones - v5 (pdf).
 José Carlos Schröder Júnior.
@@ -2459,7 +2482,7 @@ Los casos de uso se detallan en anexo más adelante.
 Integración.}\label{sec:hu.sint30.-integraciuxf3n.}
 
 \subsubsection{Especificación de
-integración}\label{sec:especificaciuxf3n-de-integraciuxf3n-5}
+integración}\label{sec:especificaciuxf3n-de-integraciuxf3n-6}
 
 Solicitar autenticación a la aplicación Conti y devolver resultado de la
 solicitud de ingreso a la aplicación Plani.
@@ -2578,10 +2601,22 @@ de interoperabilidad.
 Integración.}\label{sec:hu.sint31.-integraciuxf3n.}
 
 \subsubsection{Especificación de
-integración}\label{sec:especificaciuxf3n-de-integraciuxf3n-6}
+integración}\label{sec:especificaciuxf3n-de-integraciuxf3n-7}
 
-Solicitar autenticación a la aplicación Conti y devolver resultado de la
-solicitud de ingreso a la aplicación Plani.
+Radicar MP. Esta integración permite radicar una solicitud de medida de
+protección.
+
+Detalles:
+
+\begin{itemize}
+\tightlist
+\item
+  Dominio/mercurio/gestionMedidaProteccion/radicarMP Method: POST
+\item
+  Content-Type: application/json.
+\end{itemize}
+
+Ver fuente anexo técnico: gestionMedidaProteccion (pdf).
 
 \paragraph{Elementos}\label{sec:elementos-7}
 
@@ -2605,9 +2640,9 @@ Elegir y describir los elementos de la actual integración.
   Monitoreo
 \end{itemize}
 
-Aplicación consumidora A: Plani. Aplicación proveedora B: Conti
+Aplicación consumidora A: Aplicación JEP. Aplicación proveedora B: MP
 
-Mensaje solicitud: (ver estándar de nombramiento) Ingreso a Conti
+Mensaje solicitud: (ver estándar de nombramiento) Radicar MP.
 
 \begin{itemize}
 \tightlist
@@ -2658,23 +2693,22 @@ Detalle del intercambio entre sistemas de información o aplicaciones.
 App Plani requiere compartir Información {[}I{]}, Funcionalidad {[}F{]},
 Seguridad o Servicios {[}S{]} con la App Plani.
 
-\begin{longtable}[]{@{}lllll@{}}
-\caption{Matriz de interoperabilidad del CU Ingreso a
-Conti.}\tabularnewline
+\begin{longtable}[]{@{}llllll@{}}
+\caption{Matriz de interoperabilidad del CU Radicar MP.}\tabularnewline
 \toprule\noalign{}
-& Conti & Plani & Legali & Otros \\
+& MP & App & Legali & Plani & Otros \\
 \midrule\noalign{}
 \endfirsthead
 \toprule\noalign{}
-& Conti & Plani & Legali & Otros \\
+& MP & App & Legali & Plani & Otros \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Conti (B) & X & Seguridad & & \\
-Plani (A) & & X & & \\
-Legali & & & X & \\
-Otros Sistemas & & & & X \\
+App (A) & F & & & & \\
+MP (B) & & F & & & \\
+Legali & & & & & \\
+Otros Sistemas & & & & & \\
 \end{longtable}
 
 \paragraph{Pruebas Realizables}\label{sec:pruebas-realizables-7}
@@ -2686,11 +2720,9 @@ de interoperabilidad.
 \begin{itemize}
 \tightlist
 \item
-  PRUB1. Consumo: la aplicación consumidora Plani no recibe una
-  respuesta a tiempo.
+  PRUB1. Consumo radicar.
 \item
-  PRUB2. Ingreso: la aplicación proveedora Conti no provee un ingreso
-  autorizado.
+  PRUB2. Falla consumo radicar.
 \end{itemize}
 
 \newpage
