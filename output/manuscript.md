@@ -1,7 +1,7 @@
 # Contenido
 * [Información del Documento](#información-del-documento)
 * [Gestión de Trabajo del Proyecto](#gestión-de-trabajo-del-proyecto)
-* [Modelo de Requerimientos de Interoperabilidad Proyecto JEP](#modelo-de-requerimientos-de-interoperabilidad-proyecto-jep)
+* [Modelo de Requerimientos de Interoperabilidad Proyecto JEP Ciclo 3](#modelo-de-requerimientos-de-interoperabilidad-proyecto-jep-ciclo-3)
 * [Modelo de Despliegue de Requerimientos de Interoperabilidad Proyecto JEP](#modelo-de-despliegue-de-requerimientos-de-interoperabilidad-proyecto-jep)
 
 
@@ -35,17 +35,17 @@ tablenos-caption-name: Tabla
 
 Versión Actual
 
-1.cb7a119 - Compilación para entrega - Mon, 25 Nov 2024 21:46:01 +0000
+1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000
 
 Versiones Anteriores
+
+1.4bce427 - Compilación para entrega - Mon, 25 Nov 2024 21:12:02 +0000
 
 1.93fc057 - Compilación para entrega - Mon, 25 Nov 2024 20:54:47 +0000
 
 1.80fb87f - Compilación para entrega - Mon, 25 Nov 2024 20:51:13 +0000
 
 1.3201f2d - Compilación para entrega - Mon, 25 Nov 2024 20:37:10 +0000
-
-1.0ffd864 - Compilación para entrega - Mon, 25 Nov 2024 20:03:17 +0000
 
 
 ## Realizado Por
@@ -297,315 +297,7 @@ titlepage-rule-color: 360049
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Modelo de Requerimientos de Interoperabilidad Proyecto JEP
-
-## Requerimiento Integración Gestión Medida Protección (REQR11)
-
-> Modelo de Requerimientos Proyecto Integración JEP, 2024. Softgic.  Requerimientos, condiciones técnicas, solución del proyecto Integración JEP, 2024.  Versión 0.1.44  
-
-<br>
-
----
-title: Gestión de Requerimientos JEP
-subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
-subject: Implementación Proyecto JEP
-author: "Versión actual: 1.cb7a119 - Compilación para entrega - Mon, 25 Nov 2024 21:46:01 +0000"
-date: 2024-11-8
-keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
-header-right: include/jeplogo.jpg
-lang: en
-titlepage: true
-titlepage-rule-color: 360049
-geometry:
-  - top=1.3in
-  - bottom=1in
-fignos-cleveref: True
-fignos-plus-name: Fig.
-fignos-caption-name: Imagen
-tablenos-caption-name: Tabla
-...
-
-Del alcance del proyecto, 
-
-1. Implementación de 20 o más servicios de integración al 31 de diciembre del 2024.
-1. Soporte solución de integración a julio 2025.
-
-Establecemos las bases para el modelo de requerimientos de esta solución, el cual limita la demanda a:
-
-* Desarrollar únicamente nuevos servicios de integración con el patrón de integración empresarial (ESB, Camel K de Apache) propuesto en el modelo de interoperabilidad de esta solución.
-* Implementar en esta solución de integración las condiciones tecnológicas JEP, entendidas como requerimientos no funcionales de arquitectura,  presentes en el Anexo Nro. 1.1 – Anexo técnico evolución plataforma de interoperabilidad – Ficha Técnica.
-* No son requerimientos de este proyecto el implementar otro tipos de requerimientos no expresados aquí, como por ejemplo, migrar los servicios existentes de modelo integración directa (EIA) esta solución de integración empresarial, o implementar soluciones en las aplicaciones de software de la JEP.
-
-Para la implementación de los ítems relacionados en el Anexo Nro. 1.1 – Anexo técnico evolución plataforma de interoperabilidad – Ficha Técnica la hoja “Categorías de Cotización” contiene las necesidades a contratar en el ámbito de la evolución tecnológica del modelo de interoperabilidad y los desarrollos de interoperabilidad tanto con sistemas internos, como con entidades externas. En la hoja “Estándares Desarrollo y Producto” del archivo mencionado se indican los estándares recomendados por el fabricante, para tener en cuenta en la entrega de los servicios que se cotizan.
-
-El Anexo Nro. 1.2 – Acuerdos de Niveles de Servicio, explica el procedimiento con el que se dará atención a consultas o solución de incidencias, tanto en los sistemas operativos, como en los servicios de interoperabilidad existentes en la actualidad y aquellos que se contratarán en este proceso, en el sistema Bus de Interoperabilidad implementado en la Jurisdicción Especial para la Paz.
-
-Fuente: Justificativo de la Contratación Invitación Pública.
-
-![05.REQR.1n.1b. Requerimiento REQR11. _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/05.REQR.1n.1b.RequerimientoREQR11.png){#fig:id-8b4c8be23da34d399e8127a08a5204b8 width= height=500px}
-
-### Plan Producción: Scrum y Gerencia
-
-### Problema 3
-
-### Objetivo: Contractual
-El requerimiento tiene carácter contractual.
-
-### Valor: Apoyar la gestión medida protección
-El requerimientos genera entregables de valor para la gestión de medida de protección JEP.
-
-
-### Restricción: Levantamiento
-El requerimiento está condicionado por la completitud del levantamiento.
-
-### REQR11. Integración Gestión Medida Protección
-Atendiendo la necesidad de (...) se requiere integrar la gestión médica JEP, como exposición de las capacidades Radicar MP y Indexar Imagen, las cuales se encuentran en (...).
-
-Fuente: gestionMedidaProteccion (pdf). 
-
-
-### Índice de la documentación (casos de uso)
-
-1. Caso de Uso 1. Integrar Radicar MP
-1. Caso de Uso 2. Integrar Indexar Imagen
-
-Los casos de uso se detallan en anexo más adelante.
-
-### Solución 3
-
-### SINT10. Integrar Radicar MP
-Tareas de desarrollo
-
-* Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
-* Modelo de datos (XML, RBDMS, …)
-* Esquema de datos (XSD, DTD, JSON-E…)
-* Contratos de interoperabilidad (WSDL, API…)
-* Mensajes petición IN (API, XML…)
-* Mensajes respuesta OUT (API, XML…)
-* Mensajes excepción (API, XML…)
-* Transporte (REST, SOAP)
-* Función lógica (JEE, …)
-* Registro y envío de actividad
-
-### SINT11. Integrar Indexar Imagen
-Tareas de desarrollo
-
-* Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
-* Modelo de datos (XML, RBDMS, …)
-* Esquema de datos (XSD, DTD, JSON-E…)
-* Contratos de interoperabilidad (WSDL, API…)
-* Mensajes petición IN (API, XML…)
-* Mensajes respuesta OUT (API, XML…)
-* Mensajes excepción (API, XML…)
-* Transporte (REST, SOAP)
-* Función lógica (JEE, …)
-* Registro y envío de actividad
-
-
-
-
-
-
----
-lang: en
-titlepage: true
-titlepage-rule-color: 360049
-...
-
-
-
-## Especificación CU Requerimiento REQR11
-
-> Casos de Uso Proyecto Integración JEP, 2024. Softgic.  Especificaciones de integraciones (CU), condiciones de interoperabilidad, pruebas técnicas, entregables.  Versión 0.1.97  
-
-<br>
-
----
-subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
-subject: Implementación Proyecto JEP
-author: "Versión actual: 1.cb7a119 - Compilación para entrega - Mon, 25 Nov 2024 21:46:01 +0000"
-date: 2024-11-8
-keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
-header-right: include/jeplogo.jpg
-lang: en
-titlepage: true
-titlepage-rule-color: 360049
-geometry:
-  - top=1.3in
-  - bottom=1in
-fignos-cleveref: True
-fignos-plus-name: Fig.
-fignos-caption-name: Imagen
-tablenos-caption-name: Tabla
-...
-
-Documentación de los casos de uso de integración del proyecto JEP relacionados con los requerimientos. COndiciones de interoperabilidad, pruebas técnicas y entregables.
-
-Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4.pdf
-
-![05.REQR.2n.4n. Casos de Uso REQR11. _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/05.REQR.2n.4n.CasosdeUsoREQR11.png){#fig:id-086d2945e90743568dc1ce48079c40bf width= height=500px}
-
-### REQR11. Integración Gestión Medida Protección
-Atendiendo la necesidad de (...) se requiere integrar la gestión médica JEP, como exposición de las capacidades Radicar MP y Indexar Imagen, las cuales se encuentran en (...).
-
-Fuente: gestionMedidaProteccion (pdf). 
-
-
-### Índice de la documentación (casos de uso)
-
-1. Caso de Uso 1. Integrar Radicar MP
-1. Caso de Uso 2. Integrar Indexar Imagen
-
-Los casos de uso se detallan en anexo más adelante.
-
-### HU.SINT10. Integración. Radicar MP
-
-### Especificación de integración
-Radicar MP. Esta integración permite radicar una solicitud de medida de protección.
-
-Detalles:
-
-* Dominio/mercurio/gestionMedidaProteccion/radicarMP Method: POST
-* Content-Type: application/json. 
-
-Ver fuente anexo técnico: gestionMedidaProteccion (pdf).
-
-
-#### Elementos
-Elegir y describir los elementos de la actual integración.
-
-* [x] App consumidora (A)
-* [x] Mensaje
-* [ ] Canal
-* [ ] Ruteo
-* [ ] Traducción
-* [x] App proveedora (B)
-* [ ] Monitoreo
-
-Aplicación consumidora A: Aplicación JEP. Aplicación proveedora B: MP
-
-Mensaje solicitud: (ver estándar de nombramiento) Radicar MP.
-
-* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
-* Contenido: Usuario o identidad Conti
-
-Mensaje respuesta: Rpta. Ingreso a Conti
-
-* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
-* Contenido: Estado de solicitud de ingreso a Conti
-
-Mensaje excepción: Rpta. Ingreso a Conti
-
-* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
-* Contenido: Código de respuesta: HTTP 500 | TXT | Numeración (entero)
-
-#### Diseño
-Message Construct | Message Routing | Message Transformation | Messaging Endpoints | Messaging Channels | …
-
-La aplicación consumidora y proveedora compartirán capacidades mediante un mensaje de autenticación (Message Construct).
-
-#### Matriz de interoperabilidad
-Detalle del intercambio entre sistemas de información o aplicaciones. 
-
-
-App Plani requiere compartir Información [I], Funcionalidad [F], Seguridad o Servicios [S] con la App Plani.
-
-|                | MP | App | Legali | Plani | Otros |
-|----------------|----|-----|--------|-------|-------|
-| App (A)        | F  |     |        |       |       |
-| MP  (B)        |    | F   |        |       |       |
-| Legali         |    |     |        |       |       |
-| Otros Sistemas |    |     |        |       |       |
-
-Table: Matriz de interoperabilidad del CU Radicar MP.
-
-
-#### Pruebas Realizables
-Por cada caso de prueba de integración describir el resultado del intercambio entre sistemas de información o aplicaciones según la Matriz de interoperabilidad.
-
-* PRUB1. Consumo radicar.
-* PRUB2. Falla consumo radicar.
-
-### HU.SINT11. Integración. Indexar Imagen
-
-### Especificación de integración
-Indexar Imagen. Esta integración permite agregar nuevos archivos a la medida de Protección.
-
-Detalles:
-
-* Dominio/mercurio/gestionMedidaProteccion/IndexarImagen Method: POST
-* Content-Type: application/json
-
-Ver fuente anexo técnico: gestionMedidaProteccion (pdf).
-
-
-#### Elementos
-Elegir y describir los elementos de la actual integración.
-
-* [x] App consumidora (A)
-* [x] Mensaje
-* [ ] Canal
-* [ ] Ruteo
-* [ ] Traducción
-* [x] App proveedora (B)
-* [ ] Monitoreo
-
-Aplicación consumidora A: Aplicación JEP. Aplicación proveedora B: MP
-
-Mensaje solicitud: (ver estándar de nombramiento) Radicar MP.
-
-* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
-* Contenido: Usuario o identidad Conti
-
-Mensaje respuesta: Rpta. Ingreso a Conti
-
-* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
-* Contenido: Estado de solicitud de ingreso a Conti
-
-Mensaje excepción: Rpta. Ingreso a Conti
-
-* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
-* Contenido: Código de respuesta: HTTP 500 | TXT | Numeración (entero)
-
-#### Diseño
-Message Construct | Message Routing | Message Transformation | Messaging Endpoints | Messaging Channels | …
-
-La aplicación consumidora y proveedora compartirán capacidades mediante un mensaje de autenticación (Message Construct).
-
-#### Matriz de interoperabilidad
-Detalle del intercambio entre sistemas de información o aplicaciones. 
-
-
-App Plani requiere compartir Información [I], Funcionalidad [F], Seguridad o Servicios [S] con la App Plani.
-
-|                | MP | App | Legali | Plani | Otros |
-|----------------|----|-----|--------|-------|-------|
-| App (A)        | F  |     |        |       |       |
-| MP  (B)        |    | F   |        |       |       |
-| Legali         |    |     |        |       |       |
-| Otros Sistemas |    |     |        |       |       |
-
-Table: Matriz de interoperabilidad del CU Indexar Imagen.
-
-
-#### Pruebas Realizables
-Por cada caso de prueba de integración describir el resultado del intercambio entre sistemas de información o aplicaciones según la Matriz de interoperabilidad.
-
-* PRUB1. Consumo indexar.
-* PRUB2. Falla consumo indexar. 
-
-
-
-
-
-
----
-lang: en
-titlepage: true
-titlepage-rule-color: 360049
-...
-
-
+# Modelo de Requerimientos de Interoperabilidad Proyecto JEP Ciclo 3
 
 ## Requerimiento Integración envío de peticiones LEGALi x CONTi (REQR13)
 
@@ -617,7 +309,7 @@ titlepage-rule-color: 360049
 title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.cb7a119 - Compilación para entrega - Mon, 25 Nov 2024 21:46:01 +0000"
+author: "Versión actual: 1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
@@ -730,7 +422,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.cb7a119 - Compilación para entrega - Mon, 25 Nov 2024 21:46:01 +0000"
+author: "Versión actual: 1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
@@ -905,6 +597,438 @@ titlepage-rule-color: 360049
 ...
 
 
+
+## Requerimiento Integración Unidad de Tierras (REQR14)
+
+> Modelo de Requerimientos Proyecto Integración JEP, 2024. Softgic.  Requerimientos, condiciones técnicas, solución del proyecto Integración JEP, 2024.  Versión 0.1.45  
+
+<br>
+
+---
+title: Gestión de Requerimientos JEP
+subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
+subject: Implementación Proyecto JEP
+author: "Versión actual: 1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000"
+date: 2024-11-8
+keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
+header-right: include/jeplogo.jpg
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+geometry:
+  - top=1.3in
+  - bottom=1in
+fignos-cleveref: True
+fignos-plus-name: Fig.
+fignos-caption-name: Imagen
+tablenos-caption-name: Tabla
+...
+
+Del alcance del proyecto, 
+
+1. Implementación de 20 o más servicios de integración al 31 de diciembre del 2024.
+1. Soporte solución de integración a julio 2025.
+
+Establecemos las bases para el modelo de requerimientos de esta solución, el cual limita la demanda a:
+
+* Desarrollar únicamente nuevos servicios de integración con el patrón de integración empresarial (ESB, Camel K de Apache) propuesto en el modelo de interoperabilidad de esta solución.
+* Implementar en esta solución de integración las condiciones tecnológicas JEP, entendidas como requerimientos no funcionales de arquitectura,  presentes en el Anexo Nro. 1.1 – Anexo técnico evolución plataforma de interoperabilidad – Ficha Técnica.
+* No son requerimientos de este proyecto el implementar otro tipos de requerimientos no expresados aquí, como por ejemplo, migrar los servicios existentes de modelo integración directa (EIA) esta solución de integración empresarial, o implementar soluciones en las aplicaciones de software de la JEP.
+
+Para la implementación de los ítems relacionados en el Anexo Nro. 1.1 – Anexo técnico evolución plataforma de interoperabilidad – Ficha Técnica la hoja “Categorías de Cotización” contiene las necesidades a contratar en el ámbito de la evolución tecnológica del modelo de interoperabilidad y los desarrollos de interoperabilidad tanto con sistemas internos, como con entidades externas. En la hoja “Estándares Desarrollo y Producto” del archivo mencionado se indican los estándares recomendados por el fabricante, para tener en cuenta en la entrega de los servicios que se cotizan.
+
+El Anexo Nro. 1.2 – Acuerdos de Niveles de Servicio, explica el procedimiento con el que se dará atención a consultas o solución de incidencias, tanto en los sistemas operativos, como en los servicios de interoperabilidad existentes en la actualidad y aquellos que se contratarán en este proceso, en el sistema Bus de Interoperabilidad implementado en la Jurisdicción Especial para la Paz.
+
+Fuente: Justificativo de la Contratación Invitación Pública.
+
+![05.REQR.1n.1e. Requerimiento REQR14. _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/05.REQR.1n.1e.RequerimientoREQR14.png){#fig:id-8773bfeac4cd41baabad95263807db04 width= height=500px}
+
+### REQR14. Integración Unidad de Tierras
+Atendiendo la necesidad de Justicia Digital, se requiere implementar la integración de (...) como la exposición de las capacidades de la Unidad de Tierras, JEP.
+
+Fuente: 
+- Guía de consumo de servicio URT_CONSULTA_DE_PERSONAS_INSCRITAS.pdf
+- Guía de consumo de servicio URT_CONSULTA_PERSONAS_SOLICITUD_INSCRIPCIÓN.pdf
+- Guía de consumo de servicio URT_CONSULTA_PREDIOS_INSCRITOS.pdf
+- Guía de consumo de servicio URT_CONSULTA_ZONAS_MICROFOCALIZADAS.pdf
+
+
+### Índice de la documentación (casos de uso)
+
+1. Caso de Uso 1. 
+
+Los casos de uso se detallan en anexo más adelante.
+
+### Solución 6
+
+### SINT60. Consulta personas solicitudiInscripción
+Tareas de desarrollo
+
+* Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio 	
+* Modelo de datos (XML, RBDMS, …)
+* Esquema de datos (XSD, DTD, JSON-E…)
+* Contratos de interoperabilidad (WSDL, API…)
+* Mensajes petición IN (API, XML…)
+* Mensajes respuesta OUT (API, XML…)
+* Mensajes excepción (API, XML…)
+* Transporte (REST, SOAP)
+* Función lógica (JEE, …)
+* Registro y envío de actividad
+
+### SINT61. Consulta predios inscritos
+Tareas de desarrollo
+
+* Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio 	
+* Modelo de datos (XML, RBDMS, …)
+* Esquema de datos (XSD, DTD, JSON-E…)
+* Contratos de interoperabilidad (WSDL, API…)
+* Mensajes petición IN (API, XML…)
+* Mensajes respuesta OUT (API, XML…)
+* Mensajes excepción (API, XML…)
+* Transporte (REST, SOAP)
+* Función lógica (JEE, …)
+* Registro y envío de actividad
+
+### SINT62. Consulta zonas microfocalizadas
+Tareas de desarrollo
+
+* Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio 	
+* Modelo de datos (XML, RBDMS, …)
+* Esquema de datos (XSD, DTD, JSON-E…)
+* Contratos de interoperabilidad (WSDL, API…)
+* Mensajes petición IN (API, XML…)
+* Mensajes respuesta OUT (API, XML…)
+* Mensajes excepción (API, XML…)
+* Transporte (REST, SOAP)
+* Función lógica (JEE, …)
+* Registro y envío de actividad
+
+### SINT63. Consulta Personas inscritas
+Tareas de desarrollo
+
+* Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio 	
+* Modelo de datos (XML, RBDMS, …)
+* Esquema de datos (XSD, DTD, JSON-E…)
+* Contratos de interoperabilidad (WSDL, API…)
+* Mensajes petición IN (API, XML…)
+* Mensajes respuesta OUT (API, XML…)
+* Mensajes excepción (API, XML…)
+* Transporte (REST, SOAP)
+* Función lógica (JEE, …)
+* Registro y envío de actividad
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+## Especificación CU Requerimiento REQR14
+
+> Casos de Uso Proyecto Integración JEP, 2024. Softgic.  Especificaciones de integraciones (CU), condiciones de interoperabilidad, pruebas técnicas, entregables.  Versión 0.2.1  
+
+<br>
+
+---
+subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
+subject: Implementación Proyecto JEP
+author: "Versión actual: 1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000"
+date: 2024-11-8
+keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
+header-right: include/jeplogo.jpg
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+geometry:
+  - top=1.3in
+  - bottom=1in
+fignos-cleveref: True
+fignos-plus-name: Fig.
+fignos-caption-name: Imagen
+tablenos-caption-name: Tabla
+...
+
+Documentación de los casos de uso de integración del proyecto JEP relacionados con los requerimientos. COndiciones de interoperabilidad, pruebas técnicas y entregables.
+
+Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4.pdf
+
+![05.REQR.2n.6n. Casos de Uso REQR14. _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/05.REQR.2n.6n.CasosdeUsoREQR14.png){#fig:id-2b355ee247f540a1abe285299d65fde2 width= height=500px}
+
+### REQR14. Integración Unidad de Tierras
+Atendiendo la necesidad de Justicia Digital, se requiere implementar la integración de (...) como la exposición de las capacidades de la Unidad de Tierras, JEP.
+
+Fuente: 
+- Guía de consumo de servicio URT_CONSULTA_DE_PERSONAS_INSCRITAS.pdf
+- Guía de consumo de servicio URT_CONSULTA_PERSONAS_SOLICITUD_INSCRIPCIÓN.pdf
+- Guía de consumo de servicio URT_CONSULTA_PREDIOS_INSCRITOS.pdf
+- Guía de consumo de servicio URT_CONSULTA_ZONAS_MICROFOCALIZADAS.pdf
+
+
+### Índice de la documentación (casos de uso)
+
+1. Caso de Uso 1. 
+
+Los casos de uso se detallan en anexo más adelante.
+
+### HU.SINT60. Integración Consulta Personas Solicitud Inscripción
+
+### Especificación de integración
+Solicitar autenticación a la aplicación Conti y devolver resultado de la solicitud de ingreso a la aplicación Plani.
+
+#### Elementos
+Elegir y describir los elementos de la actual integración.
+
+* [x] App consumidora (A)
+* [x] Mensaje
+* [ ] Canal
+* [ ] Ruteo
+* [ ] Traducción
+* [x] App proveedora (B)
+* [ ] Monitoreo
+
+Aplicación consumidora A: Plani. Aplicación proveedora B: Conti
+
+Mensaje solicitud: (ver estándar de nombramiento) Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Usuario o identidad Conti
+
+Mensaje respuesta: Rpta. Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Estado de solicitud de ingreso a Conti
+
+Mensaje excepción: Rpta. Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Código de respuesta: HTTP 500 | TXT | Numeración (entero)
+
+#### Diseño
+Message Construct | Message Routing | Message Transformation | Messaging Endpoints | Messaging Channels | …
+
+La aplicación consumidora y proveedora compartirán capacidades mediante un mensaje de autenticación (Message Construct).
+
+#### Matriz de interoperabilidad
+Detalle del intercambio entre sistemas de información o aplicaciones. 
+
+
+App Plani requiere compartir Información [I], Funcionalidad [F], Seguridad o Servicios [S] con la App Plani.
+
+|                | Conti | Plani          | Legali | Otros |
+|----------------|-------|----------------|--------|-------|
+| Conti  (B)      | X     | Seguridad |        |       |
+| Plani  (A)      |       | X              |        |       |
+| Legali         |       |                | X      |       |
+| Otros Sistemas |       |                |        | X     |
+
+Table: Matriz de interoperabilidad del CU Ingreso a Conti.
+
+
+#### Pruebas Realizables
+Por cada caso de prueba de integración describir el resultado del intercambio entre sistemas de información o aplicaciones según la Matriz de interoperabilidad.
+
+* PRUB1. Consumo: la aplicación consumidora Plani no recibe una respuesta a tiempo.
+* PRUB2. Ingreso: la aplicación proveedora Conti no provee un ingreso autorizado.
+
+### HU.SINT62. Integración Consulta zonas microfocalizadas
+
+### Especificación de integración
+Integrar el servicio de Consulta Persosnas Inscritas, de la Unida de Restitución de Tierras (URT) y devolver resultado al nodo Tierras.
+
+#### Elementos
+Elegir y describir los elementos de la actual integración.
+
+* [x] App consumidora (A)
+* [x] Mensaje
+* [ ] Canal
+* [ ] Ruteo
+* [ ] Traducción
+* [x] App proveedora (B)
+* [ ] Monitoreo
+
+Aplicación consumidora A: Plani. Aplicación proveedora B: Conti
+
+Mensaje solicitud: (ver estándar de nombramiento) Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Usuario o identidad Conti
+
+Mensaje respuesta: Rpta. Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Estado de solicitud de ingreso a Conti
+
+Mensaje excepción: Rpta. Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Código de respuesta: HTTP 500 | TXT | Numeración (entero)
+
+#### Diseño
+Message Construct | Message Routing | Message Transformation | Messaging Endpoints | Messaging Channels | …
+
+La aplicación consumidora y proveedora compartirán capacidades mediante un mensaje de autenticación (Message Construct).
+
+#### Matriz de interoperabilidad
+Detalle del intercambio entre sistemas de información o aplicaciones. 
+
+
+App Plani requiere compartir Información [I], Funcionalidad [F], Seguridad o Servicios [S] con la App Plani.
+
+|                | Conti | Plani          | Legali | Otros |
+|----------------|-------|----------------|--------|-------|
+| Conti  (B)      | X     | Seguridad |        |       |
+| Plani  (A)      |       | X              |        |       |
+| Legali         |       |                | X      |       |
+| Otros Sistemas |       |                |        | X     |
+
+Table: Matriz de interoperabilidad del CU Ingreso a Conti.
+
+
+#### Pruebas Realizables
+Por cada caso de prueba de integración describir el resultado del intercambio entre sistemas de información o aplicaciones según la Matriz de interoperabilidad.
+
+* PRUB1. Consumo: la aplicación consumidora Plani no recibe una respuesta a tiempo.
+* PRUB2. Ingreso: la aplicación proveedora Conti no provee un ingreso autorizado.
+
+### HU.SINT61. Integración Consulta predios inscritos
+
+### Especificación de integración
+Solicitar autenticación a la aplicación Conti y devolver resultado de la solicitud de ingreso a la aplicación Plani.
+
+#### Elementos
+Elegir y describir los elementos de la actual integración.
+
+* [x] App consumidora (A)
+* [x] Mensaje
+* [ ] Canal
+* [ ] Ruteo
+* [ ] Traducción
+* [x] App proveedora (B)
+* [ ] Monitoreo
+
+Aplicación consumidora A: Plani. Aplicación proveedora B: Conti
+
+Mensaje solicitud: (ver estándar de nombramiento) Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Usuario o identidad Conti
+
+Mensaje respuesta: Rpta. Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Estado de solicitud de ingreso a Conti
+
+Mensaje excepción: Rpta. Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Código de respuesta: HTTP 500 | TXT | Numeración (entero)
+
+#### Diseño
+Message Construct | Message Routing | Message Transformation | Messaging Endpoints | Messaging Channels | …
+
+La aplicación consumidora y proveedora compartirán capacidades mediante un mensaje de autenticación (Message Construct).
+
+#### Matriz de interoperabilidad
+Detalle del intercambio entre sistemas de información o aplicaciones. 
+
+
+App Plani requiere compartir Información [I], Funcionalidad [F], Seguridad o Servicios [S] con la App Plani.
+
+|                | Conti | Plani          | Legali | Otros |
+|----------------|-------|----------------|--------|-------|
+| Conti  (B)      | X     | Seguridad |        |       |
+| Plani  (A)      |       | X              |        |       |
+| Legali         |       |                | X      |       |
+| Otros Sistemas |       |                |        | X     |
+
+Table: Matriz de interoperabilidad del CU Ingreso a Conti.
+
+
+#### Pruebas Realizables
+Por cada caso de prueba de integración describir el resultado del intercambio entre sistemas de información o aplicaciones según la Matriz de interoperabilidad.
+
+* PRUB1. Consumo: la aplicación consumidora Plani no recibe una respuesta a tiempo.
+* PRUB2. Ingreso: la aplicación proveedora Conti no provee un ingreso autorizado.
+
+### HU.SINT63. Integración Consulta Personas inscritas
+
+### Especificación de integración
+Solicitar autenticación a la aplicación Conti y devolver resultado de la solicitud de ingreso a la aplicación Plani.
+
+#### Elementos
+Elegir y describir los elementos de la actual integración.
+
+* [x] App consumidora (A)
+* [x] Mensaje
+* [ ] Canal
+* [ ] Ruteo
+* [ ] Traducción
+* [x] App proveedora (B)
+* [ ] Monitoreo
+
+Aplicación consumidora A: Plani. Aplicación proveedora B: Conti
+
+Mensaje solicitud: (ver estándar de nombramiento) Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Usuario o identidad Conti
+
+Mensaje respuesta: Rpta. Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Estado de solicitud de ingreso a Conti
+
+Mensaje excepción: Rpta. Ingreso a Conti
+
+* Tipo: TXT | SOAP | XML | JSN | YML | BASE64
+* Contenido: Código de respuesta: HTTP 500 | TXT | Numeración (entero)
+
+#### Diseño
+Message Construct | Message Routing | Message Transformation | Messaging Endpoints | Messaging Channels | …
+
+La aplicación consumidora y proveedora compartirán capacidades mediante un mensaje de autenticación (Message Construct).
+
+#### Matriz de interoperabilidad
+Detalle del intercambio entre sistemas de información o aplicaciones. 
+
+
+App Plani requiere compartir Información [I], Funcionalidad [F], Seguridad o Servicios [S] con la App Plani.
+
+|                | Conti | Plani          | Legali | Otros |
+|----------------|-------|----------------|--------|-------|
+| Conti  (B)      | X     | Seguridad |        |       |
+| Plani  (A)      |       | X              |        |       |
+| Legali         |       |                | X      |       |
+| Otros Sistemas |       |                |        | X     |
+
+Table: Matriz de interoperabilidad del CU Ingreso a Conti.
+
+
+#### Pruebas Realizables
+Por cada caso de prueba de integración describir el resultado del intercambio entre sistemas de información o aplicaciones según la Matriz de interoperabilidad.
+
+* PRUB1. Consumo: la aplicación consumidora Plani no recibe una respuesta a tiempo.
+* PRUB2. Ingreso: la aplicación proveedora Conti no provee un ingreso autorizado.
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
 <div style="page-break-before: always;"></div>
 \newpage
 
@@ -926,9 +1050,11 @@ En esta organización propuesta, los servicios de integración implementados pue
 
 | Nombre  | Tipo | Documentación |
 |---------|------|---------------|
-| Capacidad: Integrar operaciones Conti | Driver | Característica de integración de Conti contenido en la solución de integración JEP, 2024.
+| Ciclo. Entrega versión 1 | Value | Versión 1. Solución integración JEP.
  |
-| Integración Conti | Deliverable | Épica de entrega de la solución de integración JEP, 2024, que contiene las iteraciones que realizarán la característica 'Integrar operaciones Conti'.
+| Capacidad: Integrar operaciones Conti x Plani | Driver | Característica de integración de Conti contenido en la solución de integración JEP, 2024.
+ |
+| EP01. Integración Conti | Deliverable | Épica de entrega de la solución de integración JEP, 2024, que contiene las iteraciones que realizarán la característica 'Integrar operaciones Conti'.
 
  |
 | REQR3. Integración con Sistema Conti x Plani | Requirement | Atendiendo la necesidad de la Subdirección de Contratación de implementar el flujo de gestión precontractual en el sistema de Gestión Documental - Conti se requiere integrar con la información de los ítems del Plan Anual de Adquisiciones – PAA para iniciar el proceso, la cual se encuentra gestionada en el Sistema de Gestión y Planeación Institucional PLANi.
@@ -1180,7 +1306,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto
-author: "Versión actual: 1.cb7a119 - Compilación para entrega - Mon, 25 Nov 2024 21:46:01 +0000"
+author: "Versión actual: 1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic]
 header-right: include/jeplogo.jpg
