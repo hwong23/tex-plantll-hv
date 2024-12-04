@@ -35,17 +35,17 @@ tablenos-caption-name: Tabla
 
 Versión Actual
 
-1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000
+1.c6875d9 - Compilación para entrega - Tue, 3 Dec 2024 22:00:01 +0000
 
 Versiones Anteriores
+
+1.7092a66 - clean - Mon, 25 Nov 2024 16:21:58 -0500
 
 1.4bce427 - Compilación para entrega - Mon, 25 Nov 2024 21:12:02 +0000
 
 1.93fc057 - Compilación para entrega - Mon, 25 Nov 2024 20:54:47 +0000
 
 1.80fb87f - Compilación para entrega - Mon, 25 Nov 2024 20:51:13 +0000
-
-1.3201f2d - Compilación para entrega - Mon, 25 Nov 2024 20:37:10 +0000
 
 
 ## Realizado Por
@@ -86,21 +86,24 @@ Los requerimientos del proyecto JEP son procesados mediante el modelo de producc
 
 ![04.ING.2n.1a. Modelo requerimientos. _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/04.ING.2n.1a.Modelorequerimientos.png){#fig:id-7c3abdaa8d9b46eebfd8f8e3e8d912ce width= height=500px}
 
-### Catálogo de Elementos
+### Elementos del Modelo
 - **ACC01. Planeación de Producción, Oct-Dic 2024**. Objetivos y entregas en el tiempo, versiones de entrega del proyecto de integración.
 
 - **Procesos de Ingeniería Software**. 
-- **ANLS.Analisis integración**. ### 2. ANSS (análisis).
+- **ANLS.Analisis integración**. *ANSS (análisis)*
+
 * Scrum, Funcional, Dueño producto cliente (requiere conocimiento del negocio).
 * Resultado: Refinamiento HU, modelo de negocio, es decir, diagrama de HU relacionadas unas con otras y con los conceptos de negocio en el repositorio de ARQ. Actualmente: no hay resultados de este proceso.
 Ejemplo del modelo de negocio
 
-### Salidas
+*Salidas*
+
 * Modelo de negocio en el repo
 * Estimación --puede en devops
 * Análisis de dependencia en el repo
 
-### KPI
+*KPI*
+
 - Tasa de aprobación de HU por cliente
 Fuente: (Cantidad de HU refinadas y aprobadas por cliente [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps])
 Dato 26/10/2023: (30/44) = 0,68
@@ -109,19 +112,22 @@ Dato 26/10/2023: (30/44) = 0,68
 Fuente: (Cantidad de solicitude de cambio en rama (Pull Reqst) de Correcciones (fix) o Regresión (reverts) [Bitbucket] / Cantidad total de PR desplegados [Bitbucket])
 Dato 26/10/2023: (8/111)*100 = 7,2%
 
-- **MET.APRB**. Cod.	APRB
+- **MET.APRB**. *Meta APRB*
+
 Nombre indicador	Tasa de aprobación de HU por cliente
 Uso	Estabildad de requerimientos. Contensión del flujo de trabajo inicio de desarrolo
 Proceso	ANLS
 Calculo de medición	Cantidad de HU refinadas y aprobadas por cliente / Total de cantidad de HU
 Fuente	[Repo Sharepoint], [Azure DevOps])
 
-- **DIS.Arquitectura / diseño**. ### KPI
+- **DIS.Arquitectura / diseño**. *KPI*
+
 - Nivel de HU sin detalle técnico
 Fuente: (Cantidad de HU refinadas y aprobadas sin diseño de implementacion [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps])
 Dato 26/10/2023: 0/44=0
 
-- **MET.DEC**. Cod.: DEC
+- **MET.DEC**. *Meta DEC*
+
 Nombre indicador: Decisiones de diseño, justificaciones, validaciones
 Uso: Estabildad de requerimientos. Control de alineación desarrollo-demanda
 Proceso:	DIS
@@ -129,7 +135,8 @@ Calculo de medición: Cantidad de HU refinadas y aprobadas por cliente / Total d
 Fuente: [Repo Sharepoint], [Azure DevOps])
 
 
-- **DEV.Implementación**. ### KPI
+- **DEV.Implementación**. *KPI*
+
 - Velocidad de construcción
 Fuente: (Cantidad de puntos de HU ejecutadas [Azure DevOps] / Horas habiles del mes de trabajo [Calculo manual])
 Dato 26/10/2023: 83 / 153 = 0,54 HU/horas 
@@ -142,7 +149,8 @@ Dato 26/10/2023: 81 / 920 = 0,088
 Fuente: (Cantidad de actividades retrazadas semanales segun las HU planeadas / Total de HU planeadas para ejecución)
 Dato 26/10/2023: Pendiente proxima semana
 
-- **MET.VEL**. Cod.	VEL
+- **MET.VEL**. *Meta VEL*
+
 Nombre indicador	Velocidad de construcción
 Uso	Capacidad interna de desarrollo
 Proceso	DEV
@@ -201,13 +209,11 @@ Durante la ejecución de la iteraciones determinadas, inicia nuevamente el ciclo
 
 ![04.ING.2n.1b. Modelo producción. _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/04.ING.2n.1b.Modeloproducción.png){#fig:id-9938d5859d53450fa5c5c953d9ce33cb width= height=500px}
 
-### Catálogo de Elementos
+### Elementos del Modelo
+- **ACC01. Planeación de Producción, Oct-Dic 2024**. Objetivos y entregas en el tiempo, versiones de entrega del proyecto de integración.
 
-| Nombre  | Tipo | Documentación |
-|---------|------|---------------|
-| ACC01. Planeación de Producción, Oct-Dic 2024 | Course Of-Action | Objetivos y entregas en el tiempo, versiones de entrega del proyecto de integración.
- |
-| DEV.Implementación | Business Process | ### KPI
+- **DEV.Implementación**. *KPI*
+
 - Velocidad de construcción
 Fuente: (Cantidad de puntos de HU ejecutadas [Azure DevOps] / Horas habiles del mes de trabajo [Calculo manual])
 Dato 26/10/2023: 83 / 153 = 0,54 HU/horas 
@@ -219,25 +225,29 @@ Dato 26/10/2023: 81 / 920 = 0,088
 - Indice de dependecia de Lider Técnico
 Fuente: (Cantidad de actividades retrazadas semanales segun las HU planeadas / Total de HU planeadas para ejecución)
 Dato 26/10/2023: Pendiente proxima semana
- |
-| MET.VEL | Business Object | Cod.	VEL
+
+- **MET.VEL**. *Meta VEL*
+
 Nombre indicador	Velocidad de construcción
 Uso	Capacidad interna de desarrollo
 Proceso	DEV
 Calculo de medición	Cantidad de puntos de HU ejecutadas / Horas habiles del mes de trabajo
 Fuente	[Azure DevOps], [Calculo manual]
- |
-| ANLS.Analisis integración | Business Process | ### 2. ANSS (análisis).
+
+- **ANLS.Analisis integración**. *ANSS (análisis)*
+
 * Scrum, Funcional, Dueño producto cliente (requiere conocimiento del negocio).
 * Resultado: Refinamiento HU, modelo de negocio, es decir, diagrama de HU relacionadas unas con otras y con los conceptos de negocio en el repositorio de ARQ. Actualmente: no hay resultados de este proceso.
 Ejemplo del modelo de negocio
 
-### Salidas
+*Salidas*
+
 * Modelo de negocio en el repo
 * Estimación --puede en devops
 * Análisis de dependencia en el repo
 
-### KPI
+*KPI*
+
 - Tasa de aprobación de HU por cliente
 Fuente: (Cantidad de HU refinadas y aprobadas por cliente [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps])
 Dato 26/10/2023: (30/44) = 0,68
@@ -245,44 +255,44 @@ Dato 26/10/2023: (30/44) = 0,68
 - Tasa de error en Bug por PR entregados
 Fuente: (Cantidad de solicitude de cambio en rama (Pull Reqst) de Correcciones (fix) o Regresión (reverts) [Bitbucket] / Cantidad total de PR desplegados [Bitbucket])
 Dato 26/10/2023: (8/111)*100 = 7,2%
- |
-| MET.APRB | Business Object | Cod.	APRB
+
+- **MET.APRB**. *Meta APRB*
+
 Nombre indicador	Tasa de aprobación de HU por cliente
 Uso	Estabildad de requerimientos. Contensión del flujo de trabajo inicio de desarrolo
 Proceso	ANLS
 Calculo de medición	Cantidad de HU refinadas y aprobadas por cliente / Total de cantidad de HU
 Fuente	[Repo Sharepoint], [Azure DevOps])
- |
-| DIS.Arquitectura / diseño | Business Process | ### KPI
+
+- **DIS.Arquitectura / diseño**. *KPI*
+
 - Nivel de HU sin detalle técnico
 Fuente: (Cantidad de HU refinadas y aprobadas sin diseño de implementacion [Repo Sharepoint] / Total de cantidad de HU [Azure DevOps])
 Dato 26/10/2023: 0/44=0
- |
-| MET.DEC | Business Object | Cod.: DEC
+
+- **MET.DEC**. *Meta DEC*
+
 Nombre indicador: Decisiones de diseño, justificaciones, validaciones
 Uso: Estabildad de requerimientos. Control de alineación desarrollo-demanda
 Proceso:	DIS
 Calculo de medición: Cantidad de HU refinadas y aprobadas por cliente / Total de cantidad de HU
 Fuente: [Repo Sharepoint], [Azure DevOps])
 
- |
-| Plan Producción: Scrum y Gerencia | Grouping |  |
-| Plan Producción: Ingeniería (Red Hat DevOps) | Grouping |  |
-| UT (tarea) | Work Package | Unidad mínima de trabajo (tarea por desarrollador).
- |
-| DEV | Work Package | Alcance de QA unitaria
- |
-| CI/CD | Work Package | Actividades DevOps del ciclo o iteración de implementación. |
-| Plan Producción: Ingeniería (Red Hat DevOps) (copy) | Grouping |  |
-| UT (tarea) | Work Package | Unidad mínima de trabajo (tarea por desarrollador).
- |
-| DEV | Work Package | Alcance de QA unitaria
- |
-| CI/CD | Work Package | Actividades DevOps del ciclo o iteración de implementación. |
 
-Table: Elementos de la vista. {#tbl:tblelement-04.ING.2n.1b.Modeloproducción-id}
+- **Plan Producción: Scrum y Gerencia**. 
+- **Plan Producción: Ingeniería (Red Hat DevOps)**. 
+- **UT (tarea)**. Unidad mínima de trabajo (tarea por desarrollador).
 
-<br>
+- **DEV**. Alcance de QA unitaria
+
+- **CI/CD**. Actividades DevOps del ciclo o iteración de implementación.
+- **Plan Producción: Ingeniería (Red Hat DevOps) (copy)**. 
+- **UT (tarea)**. Unidad mínima de trabajo (tarea por desarrollador).
+
+- **DEV**. Alcance de QA unitaria
+
+- **CI/CD**. Actividades DevOps del ciclo o iteración de implementación.
+
 
 
 
@@ -309,7 +319,7 @@ titlepage-rule-color: 360049
 title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000"
+author: "Versión actual: 1.c6875d9 - Compilación para entrega - Tue, 3 Dec 2024 22:00:01 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
@@ -422,7 +432,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000"
+author: "Versión actual: 1.c6875d9 - Compilación para entrega - Tue, 3 Dec 2024 22:00:01 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
@@ -457,12 +467,12 @@ Fuente: Servicio de integración LEGALi - Envío de peticiones - v5 (pdf). Jos
 
 Los casos de uso se detallan en anexo más adelante.
 
-### HU.SINT30. Integración. 
+### HU.SINT30. Integración Autenticación
 
 ### Especificación de integración
 Solicitar autenticación a la aplicación Conti y devolver resultado de la solicitud de ingreso a la aplicación Plani.
 
-#### Elementos
+#### Elementos 
 Elegir y describir los elementos de la actual integración.
 
 * [x] App consumidora (A)
@@ -517,7 +527,7 @@ Por cada caso de prueba de integración describir el resultado del intercambio e
 * PRUB1. Consumo: la aplicación consumidora Plani no recibe una respuesta a tiempo.
 * PRUB2. Ingreso: la aplicación proveedora Conti no provee un ingreso autorizado.
 
-### HU.SINT31. Integración. 
+### HU.SINT31. Integración Proceso de integración
 
 ### Especificación de integración
 Radicar MP. Esta integración permite radicar una solicitud de medida de protección.
@@ -608,7 +618,7 @@ titlepage-rule-color: 360049
 title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000"
+author: "Versión actual: 1.c6875d9 - Compilación para entrega - Tue, 3 Dec 2024 22:00:01 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
@@ -647,6 +657,7 @@ Fuente: Justificativo de la Contratación Invitación Pública.
 Atendiendo la necesidad de Justicia Digital, se requiere implementar la integración de (...) como la exposición de las capacidades de la Unidad de Tierras, JEP.
 
 Fuente: 
+
 - Guía de consumo de servicio URT_CONSULTA_DE_PERSONAS_INSCRITAS.pdf
 - Guía de consumo de servicio URT_CONSULTA_PERSONAS_SOLICITUD_INSCRIPCIÓN.pdf
 - Guía de consumo de servicio URT_CONSULTA_PREDIOS_INSCRITOS.pdf
@@ -655,7 +666,10 @@ Fuente:
 
 ### Índice de la documentación (casos de uso)
 
-1. Caso de Uso 1. 
+1. HU.SINT60. Integración Consulta Personas Solicitud Inscripción
+1. HU.SINT61. Integración Consulta predios inscritos
+1. HU.SINT62. Integración Consulta zonas microfocalizadas
+1. HU.SINT63. Integración Consulta Personas inscritas
 
 Los casos de uso se detallan en anexo más adelante.
 
@@ -739,7 +753,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000"
+author: "Versión actual: 1.c6875d9 - Compilación para entrega - Tue, 3 Dec 2024 22:00:01 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
@@ -765,6 +779,7 @@ Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4.pd
 Atendiendo la necesidad de Justicia Digital, se requiere implementar la integración de (...) como la exposición de las capacidades de la Unidad de Tierras, JEP.
 
 Fuente: 
+
 - Guía de consumo de servicio URT_CONSULTA_DE_PERSONAS_INSCRITAS.pdf
 - Guía de consumo de servicio URT_CONSULTA_PERSONAS_SOLICITUD_INSCRIPCIÓN.pdf
 - Guía de consumo de servicio URT_CONSULTA_PREDIOS_INSCRITOS.pdf
@@ -773,7 +788,10 @@ Fuente:
 
 ### Índice de la documentación (casos de uso)
 
-1. Caso de Uso 1. 
+1. HU.SINT60. Integración Consulta Personas Solicitud Inscripción
+1. HU.SINT61. Integración Consulta predios inscritos
+1. HU.SINT62. Integración Consulta zonas microfocalizadas
+1. HU.SINT63. Integración Consulta Personas inscritas
 
 Los casos de uso se detallan en anexo más adelante.
 
@@ -902,7 +920,7 @@ Por cada caso de prueba de integración describir el resultado del intercambio e
 ### Especificación de integración
 Solicitar autenticación a la aplicación Conti y devolver resultado de la solicitud de ingreso a la aplicación Plani.
 
-#### Elementos
+#### Elementos 
 Elegir y describir los elementos de la actual integración.
 
 * [x] App consumidora (A)
@@ -1046,18 +1064,15 @@ En esta organización propuesta, los servicios de integración implementados pue
 
 ![06.ENTRG.1n.1a.1. Despliegue Entregas de Requerimiento Version 0.1. _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/06.ENTRG.1n.1a.1.DespliegueEntregasdeRequerimientoVersion0.1.png){#fig:id-203e737545e449e59334b47d3034d956 width= height=500px}
 
-### Catálogo de Elementos
+### Elementos del Modelo
+- **Ciclo. Entrega versión 1**. Versión 1. Solución integración JEP.
 
-| Nombre  | Tipo | Documentación |
-|---------|------|---------------|
-| Ciclo. Entrega versión 1 | Value | Versión 1. Solución integración JEP.
- |
-| Capacidad: Integrar operaciones Conti x Plani | Driver | Característica de integración de Conti contenido en la solución de integración JEP, 2024.
- |
-| EP01. Integración Conti | Deliverable | Épica de entrega de la solución de integración JEP, 2024, que contiene las iteraciones que realizarán la característica 'Integrar operaciones Conti'.
+- **Capacidad: Integrar operaciones Conti x Plani**. Característica de integración de Conti contenido en la solución de integración JEP, 2024.
 
- |
-| REQR3. Integración con Sistema Conti x Plani | Requirement | Atendiendo la necesidad de la Subdirección de Contratación de implementar el flujo de gestión precontractual en el sistema de Gestión Documental - Conti se requiere integrar con la información de los ítems del Plan Anual de Adquisiciones – PAA para iniciar el proceso, la cual se encuentra gestionada en el Sistema de Gestión y Planeación Institucional PLANi.
+- **EP01. Integración Conti**. Épica de entrega de la solución de integración JEP, 2024, que contiene las iteraciones que realizarán la característica 'Integrar operaciones Conti'.
+
+
+- **REQR3. Integración con Sistema Conti x Plani**. Atendiendo la necesidad de la Subdirección de Contratación de implementar el flujo de gestión precontractual en el sistema de Gestión Documental - Conti se requiere integrar con la información de los ítems del Plan Anual de Adquisiciones – PAA para iniciar el proceso, la cual se encuentra gestionada en el Sistema de Gestión y Planeación Institucional PLANi.
 
 Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4 (pdf). 
  
@@ -1069,8 +1084,8 @@ Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4 (p
 1. Integración. Radicar ítem
 1. Integración. Generación de documentos
 
- |
-| SINT1. Integración. Ingreso a Conti | Application Service | Tareas de desarrollo
+
+- **SINT1. Integración. Ingreso a Conti**. Tareas de desarrollo
 
 * Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
 * Modelo de datos (XML, RBDMS, …)
@@ -1082,8 +1097,8 @@ Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4 (p
 * Transporte (REST, SOAP)
 * Función lógica (JEE, …)
 * Registro y envío de actividad
- |
-| SINT2. Integración. Consulta ítem de Conti | Application Service | Tareas de desarrollo
+
+- **SINT2. Integración. Consulta ítem de Conti**. Tareas de desarrollo
 
 * Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
 * Modelo de datos (XML, RBDMS, …)
@@ -1095,8 +1110,8 @@ Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4 (p
 * Transporte (REST, SOAP)
 * Función lógica (JEE, …)
 * Registro y envío de actividad
- |
-| SINT3. Integración. Radicar ítem | Application Service | Tareas de desarrollo
+
+- **SINT3. Integración. Radicar ítem**. Tareas de desarrollo
 
 * Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
 * Modelo de datos (XML, RBDMS, …)
@@ -1108,8 +1123,8 @@ Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4 (p
 * Transporte (REST, SOAP)
 * Función lógica (JEE, …)
 * Registro y envío de actividad
- |
-| SINT4. Integración. Generación de documentos | Application Service | Tareas de desarrollo
+
+- **SINT4. Integración. Generación de documentos**. Tareas de desarrollo
 
 * Interoperabilidad IOP1. Transporte / Entrega Consulta Negocio
 * Modelo de datos (XML, RBDMS, …)
@@ -1121,19 +1136,19 @@ Fuente: Acta de requerimientos Integración Plani - Proceso Precontractual_V4 (p
 * Transporte (REST, SOAP)
 * Función lógica (JEE, …)
 * Registro y envío de actividad
- |
-| ENTG06. Contenedor | Application Component | Contenedores de los servicios de integración del proyecto desplegados en la infraestructura tecnológica JEP.
- |
-| ENTG06. Contenedor | Application Component | Contenedores de los servicios de integración del proyecto desplegados en la infraestructura tecnológica JEP.
- |
-| Intermediador (cola o bus) | Application Component | Bus de Red Hat, aplicación cliente Quarkus, o intermediador de integración Apache Camel. |
-| Mensaje solicitud | Data Object | Formato predefinido de intercambio de datos. |
-| Mensaje respuesta o excepción | Data Object | Formato predefinido de intercambio de datos. |
-| Nodo Intermediador | Application Interface | Nodo lógico en donde corren los contenedores.
- |
-| Nodo Integración JEP (worker) | Application Collaboration | Nodo lógico en donde corren los contenedores.
- |
-| Especificaciones Despliegue Versión 0.1 | Artifact | **Documentación Técnica: Configuración y Despliegue en JEP sobre OpenShift**
+
+- **ENTG06. Contenedor**. Contenedores de los servicios de integración del proyecto desplegados en la infraestructura tecnológica JEP.
+
+- **ENTG06. Contenedor**. Contenedores de los servicios de integración del proyecto desplegados en la infraestructura tecnológica JEP.
+
+- **Intermediador (cola o bus)**. Bus de Red Hat, aplicación cliente Quarkus, o intermediador de integración Apache Camel.
+- **Mensaje solicitud**. Formato predefinido de intercambio de datos.
+- **Mensaje respuesta o excepción**. Formato predefinido de intercambio de datos.
+- **Nodo Intermediador**. Nodo lógico en donde corren los contenedores.
+
+- **Nodo Integración JEP (worker)**. Nodo lógico en donde corren los contenedores.
+
+- **Especificaciones Despliegue Versión 0.1**. **Documentación Técnica: Configuración y Despliegue en JEP sobre OpenShift**
 
 **1\. Introducción**
 
@@ -1274,13 +1289,10 @@ app: ejemplo-app
 
 **6\. Conclusión**
 
-El clúster de OpenShift descrito está configurado para gestionar aplicaciones bajo un marco controlado, con Service Mesh e Istio como componentes clave. Las configuraciones presentadas aseguran que los despliegues cumplan con los estándares definidos, aunque es fundamental monitorear y ajustar según las necesidades específicas para el proyecto. |
-| Cluster | Application Collaboration | Orquestador de nodos y servicios (contendores) de la JEP.
- |
+El clúster de OpenShift descrito está configurado para gestionar aplicaciones bajo un marco controlado, con Service Mesh e Istio como componentes clave. Las configuraciones presentadas aseguran que los despliegues cumplan con los estándares definidos, aunque es fundamental monitorear y ajustar según las necesidades específicas para el proyecto.
+- **Cluster**. Orquestador de nodos y servicios (contendores) de la JEP.
 
-Table: Elementos de la vista. {#tbl:tblelement-06.ENTRG.1n.1a.1.DespliegueEntregasdeRequerimientoVersion0.1-id}
 
-<br>
 
 
 
@@ -1306,7 +1318,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto
-author: "Versión actual: 1.eee1ef9 - Compilación para entrega - Mon, 25 Nov 2024 21:56:57 +0000"
+author: "Versión actual: 1.c6875d9 - Compilación para entrega - Tue, 3 Dec 2024 22:00:01 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic]
 header-right: include/jeplogo.jpg
