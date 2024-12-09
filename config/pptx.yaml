@@ -1,5 +1,5 @@
 # input-files: [presentation.md]
 log-file: output/pptxpresentation.log
-output-file: output/pptxpresentation.pptx
+output-file: output/pptxpresentation-${TRIGGERING_SHA_7}.pptx
 slide-level: 2
 to: pptx

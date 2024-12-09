@@ -1,6 +1,6 @@
 # input-files: [presentation.md]
 log-file: presentation.log
-output-file: output/presentation.pdf
+output-file: output/presentation-${TRIGGERING_SHA_7}.pdf
 slide-level: 2
 pdf-engine: xelatex # tectonic wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context
 to: beamer
