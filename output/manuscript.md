@@ -35,17 +35,17 @@ tablenos-caption-name: Tabla
 
 Versión Actual
 
-1.cbeb440 - crrcn.config - Mon, 9 Dec 2024 16:23:23 -0500
+1.915e39a - crrcn.config.4 - Mon, 9 Dec 2024 16:35:25 -0500
 
 Versiones Anteriores
 
+1.8fc6f24 - envvar - Mon, 9 Dec 2024 15:53:50 -0500
+
+1.b7514ba - Compilación para entrega - Mon, 9 Dec 2024 17:32:27 +0000
+
+1.f25d32d - Compilación para entrega - Mon, 9 Dec 2024 16:55:07 +0000
+
 1.aa3922c - Compilación para entrega - Mon, 9 Dec 2024 16:51:49 +0000
-
-1.4a9a183 - Compilación para entrega - Mon, 9 Dec 2024 16:00:54 +0000
-
-1.2eaf6df - Compilación para entrega - Sat, 7 Dec 2024 18:33:53 +0000
-
-1.c28a960 - Compilación para entrega - Sat, 7 Dec 2024 17:23:21 +0000
 
 
 ## Realizado Por
@@ -319,7 +319,7 @@ titlepage-rule-color: 360049
 title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.cbeb440 - crrcn.config - Mon, 9 Dec 2024 16:23:23 -0500"
+author: "Versión actual: 1.915e39a - crrcn.config.4 - Mon, 9 Dec 2024 16:35:25 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
@@ -461,7 +461,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.cbeb440 - crrcn.config - Mon, 9 Dec 2024 16:23:23 -0500"
+author: "Versión actual: 1.915e39a - crrcn.config.4 - Mon, 9 Dec 2024 16:35:25 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
@@ -1048,7 +1048,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto
-author: "Versión actual: 1.cbeb440 - crrcn.config - Mon, 9 Dec 2024 16:23:23 -0500"
+author: "Versión actual: 1.915e39a - crrcn.config.4 - Mon, 9 Dec 2024 16:35:25 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic]
 header-right: include/jeplogo.jpg
