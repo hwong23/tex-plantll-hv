@@ -16,7 +16,7 @@
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.2eaf6df - Compilación para entrega - Sat, 7 Dec 2024 18:33:53 +0000"
+author: "Versión actual: 1.4a9a183 - Compilación para entrega - Mon, 9 Dec 2024 16:00:54 +0000"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
