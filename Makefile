@@ -12,7 +12,7 @@ CONFIG := config
 OPTIONS = markdown+simple_tables+table_captions+yaml_metadata_block+smart
 
 
-doctec:
+doctec: cleanout
 	# doctec-docx doctec-tex doctec-pdf doctec-html
 	make doctec-docx doctec-pdf doctec-tex
 
@@ -70,7 +70,7 @@ ppt-pptx:
 	--defaults=./config-yaml/defaults.yaml \
 	--defaults=./config-yaml/pptx.yaml)
 
-ppt-tex:
+ppt-tex: cleanout
 	(cd presentation && \
 	pandoc --defaults=./../defaults.yaml --defaults=tex.yaml)
 
