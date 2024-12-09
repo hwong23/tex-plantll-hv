@@ -35,17 +35,17 @@ tablenos-caption-name: Tabla
 
 Versión Actual
 
-1.f25d32d - Compilación para entrega - Mon, 9 Dec 2024 16:55:07 +0000
+1.8fc6f24 - envvar - Mon, 9 Dec 2024 15:53:50 -0500
 
 Versiones Anteriores
+
+1.c28a960 - Compilación para entrega - Sat, 7 Dec 2024 17:23:21 +0000
+
+1.8a564bb - Compilación para entrega - Sat, 7 Dec 2024 17:07:34 +0000
 
 1.f719a6c - Compilación para entrega - Thu, 5 Dec 2024 21:21:37 +0000
 
 1.aa178a0 - Compilación para entrega - Thu, 5 Dec 2024 21:16:38 +0000
-
-1.13b483d - Compilación para entrega - Thu, 5 Dec 2024 20:43:51 +0000
-
-1.8f5706f - Compilación para entrega - Wed, 4 Dec 2024 05:09:31 +0000
 
 
 ## Realizado Por
@@ -319,7 +319,7 @@ titlepage-rule-color: 360049
 title: Gestión de Requerimientos JEP
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.f25d32d - Compilación para entrega - Mon, 9 Dec 2024 16:55:07 +0000"
+author: "Versión actual: 1.8fc6f24 - envvar - Mon, 9 Dec 2024 15:53:50 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
@@ -461,7 +461,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto JEP
-author: "Versión actual: 1.f25d32d - Compilación para entrega - Mon, 9 Dec 2024 16:55:07 +0000"
+author: "Versión actual: 1.8fc6f24 - envvar - Mon, 9 Dec 2024 15:53:50 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic, Caso de uso]
 header-right: include/jeplogo.jpg
@@ -1048,7 +1048,7 @@ titlepage-rule-color: 360049
 ---
 subtitle: Implementación Proyecto Evolución de Interoperabilidad JEP, Softgic
 subject: Implementación Proyecto
-author: "Versión actual: 1.f25d32d - Compilación para entrega - Mon, 9 Dec 2024 16:55:07 +0000"
+author: "Versión actual: 1.8fc6f24 - envvar - Mon, 9 Dec 2024 15:53:50 -0500"
 date: 2024-11-8
 keywords: [Integración, Interoperabilidad, JEP, Softgic]
 header-right: include/jeplogo.jpg
