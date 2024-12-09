@@ -2,5 +2,5 @@
 input-file: output/manuscript.md
 reference-doc: /home/runner/hwo-academicTempl/templates/rmd-myriad-minion-reference.docx
 log-file: output/docdoctec.log
-output-file: output/docdoctec.docx
+output-file: output/docdoctec-${TRIGGERING_SHA_7}.docx
 to: docx

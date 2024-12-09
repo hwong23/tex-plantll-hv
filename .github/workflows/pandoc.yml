@@ -10,8 +10,8 @@ jobs:
         run: |
           TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
           echo "TRIGGERING_SHA_7=${TRIGGERING_SHA::7}" >> $GITHUB_ENV
-          echo "TRIGGERING_SHA: $TRIGGERING_SHA"
           echo "COMPILATION_DATE=$(date +'%d %b %Y')" >> $GITHUB_ENV
+          echo "TRIGGERING_SHA: $TRIGGERING_SHA"
       - uses: actions/checkout@v4
         name: checkout devocscontd
         with:
