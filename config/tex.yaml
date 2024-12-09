@@ -1,7 +1,7 @@
 input-file: output/manuscript.md
 template: /home/runner/hwo-academicTempl/templates/eisvogel.tex
 log-file: output/texdoctec.log
-output-file: output/texdoctec-${TRIGGERING_SHA_7}.tex
+output-file: output/texdoctec.${TRIGGERING_SHA_7}.tex
 pdf-engine: tectonic # wkhtmltopdf, weasyprint, prince, pdflatex, lualatex, xelatex, latexmk, pdfroff, context, tectonic
 to: latex
 toc-depth: 2
