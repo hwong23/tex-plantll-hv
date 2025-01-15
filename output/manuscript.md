@@ -37,18 +37,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.d7303f4 - propuesta - Wed, 15 Jan 2025 15:07:31 -0500
+1.6e97dfc - propuesta - Wed, 15 Jan 2025 15:19:42 -0500
 
 
 Versiones Anteriores
 
+1.8704343 - propuesta - Wed, 15 Jan 2025 14:44:15 -0500
+
+1.6daca1c - Compilación para entrega - Wed, 15 Jan 2025 19:32:45 +0000
+
 1.441364e - propuesta - Wed, 15 Jan 2025 14:29:13 -0500
 
 1.1ccf6f4 - output - Wed, 15 Jan 2025 12:35:55 -0500
-
-1.4e65936 - Compilación para entrega - Wed, 15 Jan 2025 16:55:23 +0000
-
-1.1e93a16 - trii - Wed, 15 Jan 2025 11:52:42 -0500
 
 
 ### Realizado Por
@@ -57,16 +57,6 @@ H. Wong, ing.
 ### Revisado Por
 (revisor), Trii.co
 
-![01.Trii.co. _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/01.Trii.co.png){#fig:id-1827a4b5e59448428adfb93b3ee5f4b4 width= height=500px}
-
-### Elementos del Modelo
-
-| Nombre  | Tipo | Documentación |
-|---------|------|---------------|
-
-Table: Elementos de la vista. {#tbl:tblelement-01.Trii.co-id}
-
-<br>
 
 
 
