@@ -37,18 +37,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.ce6519f - tex - Wed, 15 Jan 2025 14:51:28 -0500
+1.80a3504 - Compilación para entrega - Wed, 15 Jan 2025 19:52:33 +0000
 
 
 Versiones Anteriores
+
+1.1ccf6f4 - output - Wed, 15 Jan 2025 12:35:55 -0500
 
 1.4e65936 - Compilación para entrega - Wed, 15 Jan 2025 16:55:23 +0000
 
 1.1e93a16 - trii - Wed, 15 Jan 2025 11:52:42 -0500
 
 1.8797340 - Compilación para entrega - Wed, 15 Jan 2025 16:35:20 +0000
-
-1.f31a573 - Compilación para entrega - Wed, 15 Jan 2025 16:27:57 +0000
 
 
 ### Realizado Por
@@ -108,41 +108,40 @@ tablenos-caption-name: Tabla
 
 ![02.propuesta. _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/02.propuesta.png){#fig:id-dd2f1c1c1816447380fe900b66faa8bc width= height=500px}
 
-### Elementos del Modelo
-
-| Nombre  | Tipo | Documentación |
-|---------|------|---------------|
-| Business Object (copy) | Business Object | ## Control de Cambios
+### Business Object (copy)
+## Control de Cambios
 Historia de cambios de la propuesta.
 
- |
-| Business Object (copy) | Business Object | ## Control de Cambios
+
+### Business Object (copy)
+## Control de Cambios
 Historia de cambios de la propuesta.
 
 ## Control de Cambios
 Historia de cambios de la propuesta.
 
- |
-| Business Object (copy) | Business Object | ## Control de Cambios
+
+### Business Object (copy)
+## Control de Cambios
 Historia de cambios de la propuesta.
 
- |
-| Business Object (copy) | Business Object | ## Control de Cambios
+
+### Business Object (copy)
+## Control de Cambios
 Historia de cambios de la propuesta.
 
- |
-| Business Object (copy) | Business Object | ## Control de Cambios
+
+### Business Object (copy)
+## Control de Cambios
 Historia de cambios de la propuesta.
 
- |
-| Business Object | Business Object | ## Control de Cambios
+
+### Business Object
+## Control de Cambios
 Historia de cambios de la propuesta.
 
- |
 
-Table: Elementos de la vista. {#tbl:tblelement-02.propuesta-id}
 
-<br>
 
 
 
