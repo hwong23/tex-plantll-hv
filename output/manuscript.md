@@ -37,18 +37,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.d1f2942 - propuesta - Wed, 15 Jan 2025 15:29:45 -0500
+1.896e923 - Compilación para entrega - Wed, 15 Jan 2025 20:34:51 +0000
 
 
 Versiones Anteriores
+
+1.8196676 - Compilación para entrega - Wed, 15 Jan 2025 20:08:19 +0000
 
 1.d7303f4 - propuesta - Wed, 15 Jan 2025 15:07:31 -0500
 
 1.80a3504 - Compilación para entrega - Wed, 15 Jan 2025 19:52:33 +0000
 
 1.ce6519f - tex - Wed, 15 Jan 2025 14:51:28 -0500
-
-1.b1dd844 - make - Wed, 15 Jan 2025 14:49:16 -0500
 
 
 ### Realizado Por
@@ -98,18 +98,19 @@ tablenos-caption-name: Tabla
 
 ![02.propuesta. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/02.propuesta.png){#fig:id-dd2f1c1c1816447380fe900b66faa8bc width= height=500px}
 
-### Propuesta
-# Descripción de la Propuesta
+### Descripción de la Propuesta
 Informe de refrendo operativo de la plataforma Trii.co mediante plan de pruebas de rendimiento de software consignados en la actual propuesta.
 
 
-### Business Object (copy)
-## Control de Cambios
-Historia de cambios de la propuesta.
+### Detalles Técnicos de la Propuesta
+Esta propuesta contienen los siguientes componentes técnicos.
 
-## Control de Cambios
-Historia de cambios de la propuesta.
-
+- Metas del proyecto e interesados
+- Alcance
+- Métodos
+- Entregables
+- Plan de Trabajo y cronograma propuesto
+- Consideraciones, costos y restricciones
 
 ### Business Object (copy)
 ## Control de Cambios
