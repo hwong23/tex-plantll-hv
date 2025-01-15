@@ -1,6 +1,6 @@
 # Contenido
 * [Información del Documento](#información-del-documento)
-* [Componentes de la Propuesta](#componentes-de-la-propuesta)
+* [(borrador) Propuesta de Certificación Operativa Plataforma de Software Trii.co (borrador)](#borrador-propuesta-de-certificación-operativa-plataforma-de-software-trii.co-borrador)
 * [Anexos](#anexos)
 
 
@@ -37,18 +37,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.ca54041 - Compilación para entrega - Wed, 15 Jan 2025 20:45:10 +0000
+1.522b9ad - Compilación para entrega - Wed, 15 Jan 2025 20:50:37 +0000
 
 
 Versiones Anteriores
+
+1.a897ec6 - propuesta - Wed, 15 Jan 2025 15:25:41 -0500
 
 1.21bb6a0 - Compilación para entrega - Wed, 15 Jan 2025 20:21:26 +0000
 
 1.6e97dfc - propuesta - Wed, 15 Jan 2025 15:19:42 -0500
 
 1.8196676 - Compilación para entrega - Wed, 15 Jan 2025 20:08:19 +0000
-
-1.d7303f4 - propuesta - Wed, 15 Jan 2025 15:07:31 -0500
 
 
 ### Realizado Por
@@ -71,9 +71,9 @@ titlepage-rule-color: 360049
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Componentes de la Propuesta
+# (borrador) Propuesta de Certificación Operativa Plataforma de Software Trii.co (borrador)
 
-## (borrador) Propuesta de Certificación Operativa Plataforma de Software Trii.co (borrador)
+## Componentes de la Propuesta
 
 > 
 
@@ -233,6 +233,35 @@ Nota: por las restricciones de ejecución conocidas al momento de la realizació
 
 
 
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+## cronograma
+
+> undefined  
+
+<br>
+
+
+![cronograma. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/cronograma.png){#fig:id-c25995aaf9a249059f91f586acdbec41 width= height=500px}
+
+### Elementos del Modelo
+
+| Nombre  | Tipo | Documentación |
+|---------|------|---------------|
+
+Table: Elementos de la vista. {#tbl:tblelement-cronograma-id}
+
+<br>
 
 
 
