@@ -17,7 +17,7 @@ tablenos-caption-name: Tabla
 
 
 ## Control de Cambios
-Historia de cambiod de la propuesta.
+Historia de cambios de la propuesta.
 
 
 
