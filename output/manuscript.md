@@ -37,18 +37,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.6e97dfc - propuesta - Wed, 15 Jan 2025 15:19:42 -0500
+1.a897ec6 - propuesta - Wed, 15 Jan 2025 15:25:41 -0500
 
 
 Versiones Anteriores
 
+1.ce6519f - tex - Wed, 15 Jan 2025 14:51:28 -0500
+
+1.b1dd844 - make - Wed, 15 Jan 2025 14:49:16 -0500
+
 1.8704343 - propuesta - Wed, 15 Jan 2025 14:44:15 -0500
 
 1.6daca1c - Compilación para entrega - Wed, 15 Jan 2025 19:32:45 +0000
-
-1.441364e - propuesta - Wed, 15 Jan 2025 14:29:13 -0500
-
-1.1ccf6f4 - output - Wed, 15 Jan 2025 12:35:55 -0500
 
 
 ### Realizado Por
@@ -96,7 +96,7 @@ fignos-caption-name: Imagen
 tablenos-caption-name: Tabla
 ...
 
-![02.propuesta. _Fuente: Repositorio arquitectura Integración JEP (2024)_](images/02.propuesta.png){#fig:id-dd2f1c1c1816447380fe900b66faa8bc width= height=500px}
+![02.propuesta. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/02.propuesta.png){#fig:id-dd2f1c1c1816447380fe900b66faa8bc width= height=500px}
 
 ### Business Object (copy)
 ## Control de Cambios
