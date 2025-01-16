@@ -38,18 +38,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.870795f - act - Thu, 16 Jan 2025 09:37:23 -0500
+1.eb94550 - ls - Thu, 16 Jan 2025 09:52:49 -0500
 
 
 Versiones Anteriores
 
+1.522b9ad - Compilación para entrega - Wed, 15 Jan 2025 20:50:37 +0000
+
+1.ca54041 - Compilación para entrega - Wed, 15 Jan 2025 20:45:10 +0000
+
 1.82e3bb3 - Compilación para entrega - Wed, 15 Jan 2025 20:38:05 +0000
 
 1.896e923 - Compilación para entrega - Wed, 15 Jan 2025 20:34:51 +0000
-
-1.d1f2942 - propuesta - Wed, 15 Jan 2025 15:29:45 -0500
-
-1.280c831 - Compilación para entrega - Wed, 15 Jan 2025 20:26:23 +0000
 
 
 ### Realizado Por
