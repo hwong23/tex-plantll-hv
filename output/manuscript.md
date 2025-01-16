@@ -38,18 +38,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.eb94550 - ls - Thu, 16 Jan 2025 09:52:49 -0500
+1.45e8c80 - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Thu, 16 Jan 2025 09:56:10 -0500
 
 
 Versiones Anteriores
 
+1.eea592e - propuesta2 - Thu, 16 Jan 2025 09:31:17 -0500
+
+1.a3065e0 - action - Thu, 16 Jan 2025 09:25:47 -0500
+
+1.48fa7db - Compilación para entrega - Wed, 15 Jan 2025 21:03:11 +0000
+
 1.522b9ad - Compilación para entrega - Wed, 15 Jan 2025 20:50:37 +0000
-
-1.ca54041 - Compilación para entrega - Wed, 15 Jan 2025 20:45:10 +0000
-
-1.82e3bb3 - Compilación para entrega - Wed, 15 Jan 2025 20:38:05 +0000
-
-1.896e923 - Compilación para entrega - Wed, 15 Jan 2025 20:34:51 +0000
 
 
 ### Realizado Por
