@@ -2,6 +2,7 @@
 * [Información del Documento](#información-del-documento)
 * [(borrador) Propuesta de Certificación Operativa Plataforma de Software Trii.co (borrador)](#borrador-propuesta-de-certificación-operativa-plataforma-de-software-trii.co-borrador)
 * [Anexos](#anexos)
+* [Lista de Imágenes](#lista-de-imágenes)
 
 
 <div style="page-break-before: always;"></div>
@@ -37,18 +38,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.522b9ad - Compilación para entrega - Wed, 15 Jan 2025 20:50:37 +0000
+1.870795f - act - Thu, 16 Jan 2025 09:37:23 -0500
 
 
 Versiones Anteriores
 
-1.a897ec6 - propuesta - Wed, 15 Jan 2025 15:25:41 -0500
+1.82e3bb3 - Compilación para entrega - Wed, 15 Jan 2025 20:38:05 +0000
 
-1.21bb6a0 - Compilación para entrega - Wed, 15 Jan 2025 20:21:26 +0000
+1.896e923 - Compilación para entrega - Wed, 15 Jan 2025 20:34:51 +0000
 
-1.6e97dfc - propuesta - Wed, 15 Jan 2025 15:19:42 -0500
+1.d1f2942 - propuesta - Wed, 15 Jan 2025 15:29:45 -0500
 
-1.8196676 - Compilación para entrega - Wed, 15 Jan 2025 20:08:19 +0000
+1.280c831 - Compilación para entrega - Wed, 15 Jan 2025 20:26:23 +0000
 
 
 ### Realizado Por
@@ -79,22 +80,6 @@ titlepage-rule-color: 360049
 
 <br>
 
----
-title: Propuesta de Certificación Operativa Plataforma de Software Trii.co (borrador)
-subtitle: Borrador
-subject: Implementación Proyecto
-author: 
-date: 2025-01-15
-keywords: [Rendimiento, Métodos pruebas, Pruebas software, QA]
-header-right: 
-geometry:
-  - top=1.3in
-  - bottom=1in
-fignos-cleveref: True
-fignos-plus-name: Fig.
-fignos-caption-name: Imagen
-tablenos-caption-name: Tabla
-...
 
 ![02.Propuesta. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/02.Propuesta.png){#fig:id-dd2f1c1c1816447380fe900b66faa8bc width= height=500px}
 
@@ -128,7 +113,7 @@ Esta propuesta contienen los siguientes componentes técnicos.
 1. Alineación. Contrastar el resultado de las pruebas consignadas en esta propuesta con las metas también aquí definidas.
 
 
-## Exclusiones del Alcance
+### Exclusiones del Alcance
 La presenta propuesta no incluye: 
 
 1. Por restricciones de tiempo, la actual propuesta no incluye análisis ni recomendaciones de diseño/arquitectura
@@ -197,13 +182,13 @@ La presente propuesta, en los términos consignados aquí, presenta el costo de
 
 | Ítem                                                | Costo      | Impuestos |
 |:----------------------------------------------------|:-----------|:----------|
-| Definición, ejecución y entregables plan de pruebas | $1.150 USD | Sí        |
+| Definición, ejecución y entregables plan de pruebas | $/.4'945.000,oo COP | Sí        |
 
 
 Nota: los valores del costo de la propuesta se mantienen durante los siguientes 3 días laborales luego de su presentación a los interesados.
 
 
-## Forma de Pago de la Propuesta
+### Forma de Pago de la Propuesta
 
 | Pagos        | Fracción | Hito del Plan              |
 |:-------------|:---------|:---------------------------|
@@ -244,8 +229,16 @@ titlepage-rule-color: 360049
 ...
 
 
+<div style="page-break-before: always;"></div>
+\newpage
 
-## cronograma
+# Anexos
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Lista de Imágenes
+
+## Cronograma de Trabajo
 
 > undefined  
 
@@ -253,15 +246,6 @@ titlepage-rule-color: 360049
 
 
 ![cronograma. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/cronograma.png){#fig:id-c25995aaf9a249059f91f586acdbec41 width= height=500px}
-
-### Elementos del Modelo
-
-| Nombre  | Tipo | Documentación |
-|---------|------|---------------|
-
-Table: Elementos de la vista. {#tbl:tblelement-cronograma-id}
-
-<br>
 
 
 
@@ -273,8 +257,24 @@ titlepage-rule-color: 360049
 ...
 
 
-<div style="page-break-before: always;"></div>
-\newpage
 
-# Anexos
+## Plan de Trabajo
+
+> undefined  
+
+<br>
+
+
+![plan. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/plan.png){#fig:id-49930878d254405eba38b006b1b9f180 width= height=500px}
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
 
