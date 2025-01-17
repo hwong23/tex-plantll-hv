@@ -38,18 +38,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.44f5d95 - Compilación para entrega - Fri, 17 Jan 2025 18:30:44 +0000
+1.156cafc - Compilación para entrega - Fri, 17 Jan 2025 20:42:54 +0000
 
 
 Versiones Anteriores
+
+1.ed59687 - Compilación para entrega - Fri, 17 Jan 2025 17:38:06 +0000
 
 1.f41b7a9 - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Fri, 17 Jan 2025 12:35:25 -0500
 
 1.a6aa09b - action - Fri, 17 Jan 2025 12:35:23 -0500
 
 1.c1007c9 - Compilación para entrega - Fri, 17 Jan 2025 17:30:09 +0000
-
-1.dbdb1a3 - carpeta - Fri, 17 Jan 2025 17:28:39 +0000
 
 
 ### Realizado Por
@@ -150,7 +150,7 @@ Lista de métodos aplicables a la propuesta seleccionados en función de los obj
 1. Alineación, 8 hrs
 
 
-![Plan de Trabajo Propuesta Pruebas Plataforma Trii.co](images/plan.png){#fig:plan width=500}
+![Plan de Trabajo Propuesta Pruebas Plataforma Trii.co](images/plan.png){#fig:plan width=}
 
 
 ### Cronograma de Ejecución del Plan
@@ -172,7 +172,7 @@ Lista de métodos aplicables a la propuesta seleccionados en función de los obj
 - Ejecución. 8 hrs
 - Alineación. 4 hrs
 
-![Cronograma Propuesta Pruebas Plataforma Trii.co](images/cronograma.png){#fig:cronograma width=300}
+![Cronograma Propuesta Pruebas Plataforma Trii.co](images/cronograma.png){#fig:cronograma width=}
 
 
 ### Propuesta Económica
