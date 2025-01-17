@@ -17,3 +17,13 @@ CTAN, https://ctan.org/pkg/tufte-latex
 ## Comandos
 grep -o '\$.*\$' ./archivo \
 | grep -v '\$endif\$\|\$else\$\|\$endfor\$'
+
+
+## Dependencias
+* https://github.com/hwong23/modelocontenidos.git
+* https://github.com/hwong23/tex-plantll-hv.git
+* https://github.com/hwong23/propuesta-trii.git
+* https://github.com/hwong23/jarchi-hwo.git
+* https://github.com/hwong23/devocs-contd.git
+* https://github.com/hwong23/hwo-academicTempl.git
+* 
