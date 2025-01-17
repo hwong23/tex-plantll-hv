@@ -38,18 +38,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.198992c - Compilación para entrega - Fri, 17 Jan 2025 18:27:42 +0000
+1.44f5d95 - Compilación para entrega - Fri, 17 Jan 2025 18:30:44 +0000
 
 
 Versiones Anteriores
+
+1.f41b7a9 - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Fri, 17 Jan 2025 12:35:25 -0500
 
 1.a6aa09b - action - Fri, 17 Jan 2025 12:35:23 -0500
 
 1.c1007c9 - Compilación para entrega - Fri, 17 Jan 2025 17:30:09 +0000
 
 1.dbdb1a3 - carpeta - Fri, 17 Jan 2025 17:28:39 +0000
-
-1.96dde2a - carpeta - Fri, 17 Jan 2025 17:23:51 +0000
 
 
 ### Realizado Por
@@ -81,7 +81,7 @@ titlepage-rule-color: 360049
 <br>
 
 
-![02.Propuesta. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/02.Propuesta.png){#fig:id-dd2f1c1c1816447380fe900b66faa8bc width= height=500px}
+![02.Propuesta. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/02.Propuesta.png){#fig:id-dd2f1c1c1816447380fe900b66faa8bc width= height=}
 
 ### Descripción de la Propuesta
 Informe de refrendo operativo de la plataforma Trii.co mediante plan de pruebas de rendimiento de software consignados en la actual propuesta.
@@ -245,7 +245,7 @@ titlepage-rule-color: 360049
 <br>
 
 
-![cronograma. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/cronograma.png){#fig:id-c25995aaf9a249059f91f586acdbec41 width= height=500px}
+![cronograma. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/cronograma.png){#fig:id-c25995aaf9a249059f91f586acdbec41 width= height=}
 
 
 
@@ -265,7 +265,7 @@ titlepage-rule-color: 360049
 <br>
 
 
-![plan. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/plan.png){#fig:id-49930878d254405eba38b006b1b9f180 width= height=500px}
+![plan. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/plan.png){#fig:id-49930878d254405eba38b006b1b9f180 width= height=}
 
 
 
