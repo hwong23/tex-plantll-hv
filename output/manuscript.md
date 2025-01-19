@@ -20,10 +20,9 @@
 title: Propuesta de Certificación Operativa Plataforma de Software Trii.co (borrador)
 subtitle: Borrador
 subject: Implementación Proyecto
-author: 
-date: 2025-01-15
+author: SoftwareProductiva.com
+date: 2025-01-20
 keywords: [Rendimiento, Métodos pruebas, Pruebas software, QA]
-header-right: 
 geometry:
   - top=1.3in
   - bottom=1in
@@ -31,6 +30,9 @@ fignos-cleveref: True
 fignos-plus-name: Fig.
 fignos-caption-name: Imagen
 tablenos-caption-name: Tabla
+titlepage-background: "include/background.pdf"
+titlepage-logo: include/logo.jpg
+logo-width: 30mm
 ...
 
 ## Control de Cambios
@@ -38,18 +40,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.249af92 - Compilación para entrega - Fri, 17 Jan 2025 22:06:33 +0000
+1.9762e03 - logo - Sat, 18 Jan 2025 23:26:33 -0500
 
 
 Versiones Anteriores
 
+1.156cafc - Compilación para entrega - Fri, 17 Jan 2025 20:42:54 +0000
+
+1.44f5d95 - Compilación para entrega - Fri, 17 Jan 2025 18:30:44 +0000
+
+1.198992c - Compilación para entrega - Fri, 17 Jan 2025 18:27:42 +0000
+
 1.563f6ee - Compilación para entrega - Fri, 17 Jan 2025 18:14:37 +0000
-
-1.2cc9a89 - Compilación para entrega - Fri, 17 Jan 2025 17:52:31 +0000
-
-1.5c1d154 - Compilación para entrega - Fri, 17 Jan 2025 17:43:38 +0000
-
-1.ed59687 - Compilación para entrega - Fri, 17 Jan 2025 17:38:06 +0000
 
 
 ### Realizado Por

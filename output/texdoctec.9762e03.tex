@@ -90,6 +90,8 @@
 \definecolor{default-citecolor}{HTML}{4077C0}
 \definecolor{default-urlcolor}{HTML}{4077C0}
 \usepackage[top=1.3in,bottom=1in]{geometry}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -172,6 +174,7 @@
 \urlstyle{same}
 \hypersetup{
   pdftitle={Propuesta de Certificación Operativa Plataforma de Software Trii.co (borrador)},
+  pdfauthor={SoftwareProductiva.com},
   pdflang={en},
   pdfsubject={Implementación Proyecto},
   pdfkeywords={Rendimiento, Métodos pruebas, Pruebas software, QA},
@@ -187,8 +190,8 @@ Trii.co (borrador)}
 }
 \makeatother
 \subtitle{Borrador}
-\author{}
-\date{2025-01-15}
+\author{SoftwareProductiva.com}
+\date{2025-01-20}
 
 
 
@@ -202,6 +205,7 @@ Trii.co (borrador)}
 %
 \usepackage{pagecolor}
 \usepackage{afterpage}
+\usepackage{tikz}
 
 %
 % break urls
@@ -280,8 +284,8 @@ Trii.co (borrador)}
 \usepackage{titling}
 \title{Propuesta de Certificación Operativa Plataforma de Software
 Trii.co (borrador)}
-\author{}
-\date{2025-01-15}
+\author{SoftwareProductiva.com}
+\date{2025-01-20}
 
 %
 % tables
@@ -317,11 +321,11 @@ Trii.co (borrador)}
 
 \newpairofpagestyles{eisvogel-header-footer}{
   \clearpairofpagestyles
-  \ihead*{2025-01-15}
+  \ihead*{2025-01-20}
   \chead*{}
   \ohead*{Propuesta de Certificación Operativa Plataforma de Software
 Trii.co (borrador)}
-  \ifoot*{}
+  \ifoot*{SoftwareProductiva.com}
   \cfoot*{}
   \ofoot*{\thepage}
   \addtokomafont{pageheadfoot}{\upshape}
@@ -343,7 +347,8 @@ Trii.co (borrador)}
 %% begin titlepage
 %%
 \begin{titlepage}
-\newgeometry{left=6cm}
+\newgeometry{top=2cm, right=4cm, bottom=3cm, left=4cm}
+\tikz[remember picture,overlay] \node[inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{include/background.pdf}};
 \newcommand{\colorRule}[3][black]{\textcolor[HTML]{#1}{\rule{#2}{#3}}}
 \begin{flushleft}
 \noindent
@@ -353,20 +358,23 @@ Trii.co (borrador)}
 \par
 \noindent
 
+% The titlepage with a background image has other text spacing and text size
 {
-  \setstretch{1.4}
+  \setstretch{2}
   \vfill
+  \vskip -8em
   \noindent {\huge \textbf{\textsf{Propuesta de Certificación Operativa
 Plataforma de Software Trii.co (borrador)}}}
     \vskip 1em
   {\Large \textsf{Borrador}}
     \vskip 2em
-  \noindent {\Large \textsf{}}
+  \noindent {\Large \textsf{SoftwareProductiva.com} \vskip 0.6em \textsf{2025-01-20}}
   \vfill
 }
 
+\noindent
+\includegraphics[width=30mm, left]{include/logo.jpg}
 
-\textsf{2025-01-15}
 \end{flushleft}
 \end{titlepage}
 \restoregeometry
@@ -409,18 +417,17 @@ Documento}\label{sec:informaciuxf3n-del-documento}
 
 Historia de cambios de la propuesta.
 
-Versión actual: 1.249af92 - Compilación para entrega - Fri, 17 Jan 2025
-22:06:33 +0000
+Versión actual: 1.9762e03 - logo - Sat, 18 Jan 2025 23:26:33 -0500
 
 Versiones Anteriores
 
+1.156cafc - Compilación para entrega - Fri, 17 Jan 2025 20:42:54 +0000
+
+1.44f5d95 - Compilación para entrega - Fri, 17 Jan 2025 18:30:44 +0000
+
+1.198992c - Compilación para entrega - Fri, 17 Jan 2025 18:27:42 +0000
+
 1.563f6ee - Compilación para entrega - Fri, 17 Jan 2025 18:14:37 +0000
-
-1.2cc9a89 - Compilación para entrega - Fri, 17 Jan 2025 17:52:31 +0000
-
-1.5c1d154 - Compilación para entrega - Fri, 17 Jan 2025 17:43:38 +0000
-
-1.ed59687 - Compilación para entrega - Fri, 17 Jan 2025 17:38:06 +0000
 
 \subsubsection{Realizado Por}\label{sec:realizado-por}
 
