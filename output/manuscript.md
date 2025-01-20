@@ -43,18 +43,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.acb8096 - Compilación para entrega - Mon, 20 Jan 2025 21:26:18 +0000
+1.7978588 - Compilación para entrega - Mon, 20 Jan 2025 21:35:44 +0000
 
 
 Versiones Anteriores
+
+1.9762e03 - logo - Sat, 18 Jan 2025 23:26:33 -0500
 
 1.1f31c0f - metadatos - Sat, 18 Jan 2025 11:20:05 -0500
 
 1.bb10432 - Compilación para entrega - Fri, 17 Jan 2025 22:11:18 +0000
 
 1.249af92 - Compilación para entrega - Fri, 17 Jan 2025 22:06:33 +0000
-
-1.bf348e8 - Compilación para entrega - Fri, 17 Jan 2025 21:20:54 +0000
 
 
 ### Realizado Por
@@ -478,6 +478,13 @@ titlepage-rule-color: 360049
 <br>
 
 
+
+### Resumen y Puntos Sobresalientes de los Resultados
+
+1. Todos los servicios probados (auth, user_info, fee y  ordenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14
+1. El análisis de latencia del servicio de Ordenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: 0 fallas en registro de actividad del sistema; razón por la cual
+1. El servicio de órdenes requirió del ajuste en el  criterio de aceptación __tiempo de respuesta__: quedó en 4.5s. Pág. 10
+1. La conclusión general del rendimiento de Trii.co actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad Trii puede crecer un 400% del rendimiento actual. Pág. 15
 
 ### Compilación de Resultado de las Pruebas de Rendimiento
 | Prueba             | Criterio de Aceptación                                                       | Resultado                                                                                  |
