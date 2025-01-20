@@ -4,6 +4,7 @@
 * [Evaluación del Rendimiento](#evaluación-del-rendimiento)
 * [Resultados y Conclusiones del Informe de Rendimiento](#resultados-y-conclusiones-del-informe-de-rendimiento)
 * [Anexos Técnicos](#anexos-técnicos)
+* [Glosario de Términos](#glosario-de-términos)
 
 
 <div style="page-break-before: always;"></div>
@@ -21,7 +22,7 @@
 title: Informe de Certificación Operativa Plataforma de Software Trii.co
 subtitle: Borrador
 subject: Implementación Proyecto
-author: SoftwareProductiva.com
+author: SoftProductiva.com
 date: 2025-01-20
 keywords: [Rendimiento, Métodos pruebas, Pruebas software, QA]
 geometry:
@@ -43,18 +44,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.7978588 - Compilación para entrega - Mon, 20 Jan 2025 21:35:44 +0000
+1.d3a0900 - Compilación para entrega - Mon, 20 Jan 2025 22:07:25 +0000
 
 
 Versiones Anteriores
+
+1.ce69f7a - Compilación para entrega - Sun, 19 Jan 2025 04:28:26 +0000
 
 1.9762e03 - logo - Sat, 18 Jan 2025 23:26:33 -0500
 
 1.1f31c0f - metadatos - Sat, 18 Jan 2025 11:20:05 -0500
 
 1.bb10432 - Compilación para entrega - Fri, 17 Jan 2025 22:11:18 +0000
-
-1.249af92 - Compilación para entrega - Fri, 17 Jan 2025 22:06:33 +0000
 
 
 ### Realizado Por
@@ -409,10 +410,10 @@ El estado 200 (petición HTML exitosa) en las transacciones del servicio Ordenes
 
 
 ### Referencias
-1. https://cloud.google.com/compute/docs/machine-resource
-1. https://grafana.com/docs/k6/latest/
-1. https://www.techtarget.com/searchsoftwarequality/tip/Acceptable-application-response-times-vs-industry-standard
-1. https://www.nngroup.com/articles/response-times-3-important-limits/
+1. Google (2025). Machine families resource and comparison guide. (Web) https://cloud.google.com/compute/docs/machine-resource
+1. Grafana Labs (2025). Technical documentation. Grafana Cloud. (Web) https://grafana.com/docs/k6/latest/
+1. Heusser M. (Sep 2019). How to achieve speedy application response times. (Web) https://www.techtarget.com/searchsoftwarequality/tip/Acceptable-application-response-times-vs-industry-standard
+1. Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits. (Web) https://www.nngroup.com/articles/response-times-3-important-limits/
 
 
 
@@ -483,13 +484,13 @@ titlepage-rule-color: 360049
 
 1. Todos los servicios probados (auth, user_info, fee y  ordenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14
 1. El análisis de latencia del servicio de Ordenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: 0 fallas en registro de actividad del sistema; razón por la cual
-1. El servicio de órdenes requirió del ajuste en el  criterio de aceptación __tiempo de respuesta__: quedó en 4.5s. Pág. 10
+1. El servicio de órdenes requirió del ajuste en el  criterio de aceptación _tiempo de respuesta_: quedó en 4.5s. Pág. 10
 1. La conclusión general del rendimiento de Trii.co actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad Trii puede crecer un 400% del rendimiento actual. Pág. 15
 
 ### Compilación de Resultado de las Pruebas de Rendimiento
 | Prueba             | Criterio de Aceptación                                                       | Resultado                                                                                  |
 |--------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Login              | Percentil de peticiones exitosas 99.9                                        | Estabilidad o Tasa de éxito de transacción: 100.00%; 113677 de 113677 procesados           |
+| Login              | Percentil de peticiones exitosas 99.9                                        | Estabilidad  o Tasa de éxito de transacción: 100.00%; 113677 de 113677 procesados           |
 | Login              | Tiempo de respuesta max 4 seg.                                               | Tiempo máximo de la transacción (iteración): max=3.67s                                     |
 | Login              | Tasa procesamiento (throughput), 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 113677 total; 189.19272/s      |
 | Get user info      | Percentil de peticiones exitosas 99.9                                        | Estabilidad o Tasa de éxito de transacción: 100.00%; 28816 de 28816 procesados             |
@@ -531,5 +532,30 @@ titlepage-rule-color: 360049
 1. Archivos de registro de actividad
 1. Evidencia de la ocupación de recursos
 1. Referencias
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Glosario de Términos
+
+## Análisis de Resultados del Rendimiento y Capacidad
+
+> 
+
+<br>
+
+
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
 
 
