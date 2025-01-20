@@ -39,22 +39,22 @@ logo-width: 60mm
 ...
 
 ## Control de Cambios
-Historia de cambios de la propuesta.
+Historia de cambios del informe.
 
 
 Versión actual: 
-1.f76d6ed - logo - Mon, 20 Jan 2025 16:15:07 -0500
+1.acb8096 - Compilación para entrega - Mon, 20 Jan 2025 21:26:18 +0000
 
 
 Versiones Anteriores
+
+1.1f31c0f - metadatos - Sat, 18 Jan 2025 11:20:05 -0500
 
 1.bb10432 - Compilación para entrega - Fri, 17 Jan 2025 22:11:18 +0000
 
 1.249af92 - Compilación para entrega - Fri, 17 Jan 2025 22:06:33 +0000
 
 1.bf348e8 - Compilación para entrega - Fri, 17 Jan 2025 21:20:54 +0000
-
-1.94ce655 - Compilación para entrega - Fri, 17 Jan 2025 20:52:52 +0000
 
 
 ### Realizado Por
@@ -89,21 +89,23 @@ titlepage-rule-color: 360049
 ![05.a.Informe. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/05.a.Informe.png){#fig:id-04abc8f16f354757a52791da825e4049 width= height=}
 
 ### Información General del Reporte de Rendimiento de Aplicación Trii.co
-Nombre de la Aplicación/Sistema Probado: Servicios de Ordenes, Auth, y User Info de la Aplicación Trii.co
-Versión de la Aplicación/Sistema: Versión 2025
-Entorno de Pruebas: infraestructura en la nube, Google Cloud, 2nd generation machine series, General-purpose workloads E2 serie, CPU Intel. Tipo de equipo: highmem, 7-14 GB.
-Fecha/Periodo de Pruebas: 15 de enero del 2025.
-Objetivos de las Pruebas: 
-* Encontrar la capacidad de los servicios Servicios Ordenes, Auth, y User Info de la Aplicación por separado en número máximo de operaciones o transacciones de los servicios por unidad de tiempo.
-* Encontrar el estrés o tensión de los servicios Servicios Ordenes, Auth, y User Info de la Aplicación por separado para determinar la holgura respecto a la demanda esperada.
-* Encontrar el nivel de estabilidad de los servicios Servicios Ordenes, Auth, y User Info (tensión) de la Aplicación.
-Métricas Clave: 
-* Capacidad (throughput) de los servicios Servicios Ordenes, Auth, y User Info 
-* Estrés (tensión) de los servicios Servicios Ordenes, Auth, y User Info
-* Estabilidad (Uso de CPU) de los servicios Servicios Ordenes, Auth, y User Info
+* Nombre de la Aplicación/Sistema Probado: Servicios de Ordenes, Auth, y User Info de la Aplicación Trii.co
+* Versión de la Aplicación/Sistema: Versión 2025
+* Entorno de Pruebas: infraestructura en la nube, Google Cloud, 2nd generation machine series, General-purpose workloads E2 serie, CPU Intel. Tipo de equipo: highmem, 7-14 GB.
+* Fecha/Periodo de Pruebas: 15 de enero del 2025.
+* Objetivos de las Pruebas: 
+    * Encontrar la capacidad de los servicios Servicios Ordenes, Auth, y User Info de la Aplicación por separado en número máximo de operaciones o transacciones de los servicios por unidad de tiempo.
+    * Encontrar el nivel de estabilidad de los servicios Servicios Ordenes, Auth, y User Info (tensión) de la Aplicación.
+    * Dar pautas alrededor del estrés o tensión de los servicios Servicios Ordenes, Auth, y User Info de la Aplicación por separado para determinar la holgura respecto a la demanda esperada.
+* Métricas Clave: 
+    * Capacidad (throughput) de los servicios Servicios Ordenes, Auth, y User Info 
+    * Estrés (tensión) de los servicios Servicios Ordenes, Auth, y User Info
+    * Estabilidad (Uso de CPU) de los servicios Servicios Ordenes, Auth, y User Info
 Herramienta de Pruebas: K6, de Grafana Labs.
 
-### Datos Específicos del ReporteDescripción detallada de los casos de uso o flujos de usuario simulados
+### Datos Específicos del Informe
+Descripción detallada de los casos de uso o flujos de usuario simulados.
+
 ### Pruebas de Rendimiento Servicio Get User Info de Trii.co
 El servicio Get User Info (user info) <descripción>. Realiza como mínimo actividades 1, 2 y 3 <descripción>.
 
