@@ -27,6 +27,8 @@ keywords: [Rendimiento, Métodos pruebas, Pruebas software, QA]
 geometry:
   - top=1.3in
   - bottom=1in
+  - left=0.7in
+  - right=0.7in
 fignos-cleveref: True
 fignos-plus-name: Fig.
 fignos-caption-name: Imagen
@@ -41,18 +43,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.ce69f7a - Compilación para entrega - Sun, 19 Jan 2025 04:28:26 +0000
+1.25bdc33 - Compilación para entrega - Mon, 20 Jan 2025 19:58:03 +0000
 
 
 Versiones Anteriores
+
+1.bf348e8 - Compilación para entrega - Fri, 17 Jan 2025 21:20:54 +0000
 
 1.94ce655 - Compilación para entrega - Fri, 17 Jan 2025 20:52:52 +0000
 
 1.156cafc - Compilación para entrega - Fri, 17 Jan 2025 20:42:54 +0000
 
 1.44f5d95 - Compilación para entrega - Fri, 17 Jan 2025 18:30:44 +0000
-
-1.198992c - Compilación para entrega - Fri, 17 Jan 2025 18:27:42 +0000
 
 
 ### Realizado Por
@@ -110,77 +112,76 @@ Duración de las Pruebas: Tiempo durante el cual se ejecutaron las pruebas, mín
 
 Resultados Medidos:
 
-    Escenarios: (100.00%) 1 scenario, 60 max VUs, 10m30s max duration (incl. graceful stop):
-    *default: Up to 60 looping VUs for 10m0s over 5 stages (gracefulRampDown: 30s, gracefulStop 30s)
+> Escenarios: (100.00%) 1 scenario, 60 max VUs, 10m30s max duration (incl. graceful stop):
+> *default: Up to 60 looping VUs for 10m0s over 5 stages (gracefulRampDown: 30s, gracefulStop 30s)
+> logged_in_successfully
+> is_status_200
 
-    logged_in_successfully
-    is_status_200
+|                          |                |                    |                |                |              |
+|------------------------- |----------------|--------------------|----------------|----------------|--------------|
+| checks                   | 100.00%        | 57632 out of 57632 |                |                |              |
+| data_received            | 93 MB          | 155 kB/s           |                |                |              |
+| data_sent                | 14 MB          | 23 kB/s            |                |                |              |
+| http_req_blocked         | avg=146.22µs   | min=0s             | p(95)=0s       | p(90)=0s       | max=138.39ms |
+| http_req_connecting      | avg=51.45µs    | min=0s             | p(95)=0s       | p(90)=0s       | max=2.39s    |
+| http_req_duration        | avg=349.97ms   | min=184.86ms       | p(95)=849.58ms | p(90)=786.74ms | max=2.39s    |
+| { expected_response:true | avg=349.97ms   | min=184.86ms       | p(95)=849.58ms | p(90)=786.74ms | max=2.39s    |
+| http_req_failed          | 0.00%          | 0/57632            |                |                |              |
+| http_req_receiving       | avg=164.45µs   | min=0s             | p(95)=1.53ms   | p(90)=546.29µs | max=359.57ms |
+| http_req_sending         | avg=66.37µs    | min=0s             | p(95)=513.59µs | p(90)=0s       | max=2.41ms   |
+| http_req_tls_handshaking | avg=138.25µs   | min=0s             | p(95)=0s       | p(90)=0s       | max=2.39s    |
+| http_req_waiting         | avg=349.74ms   | min=184.86ms       | p(95)=849.2ms  | p(90)=786.62ms | max=2.39s    |
+| http_reqs                | 57632          | 960.294772/s       |                |                |              |
+| iteration_duration       | avg=708.46ms   | min=293.83ms       | p(95)=1.15s    | p(90)=987.68ms | max=2.52s    |
+| iterations               | 28816          | 479.944772/s       |                |                |              |
+| login_response_times     | avg=136.021551 | min=104            | p(95)=177      | p(90)=163      | max=296      |
+| login_success_rate       | 100.00%        | 28816 out of 28816 |                |                |              |
+| requests_sent            | 57632          | 95.929047/s        |                |                |              |
+| user_info_response_times | avg=564.321835 | min=178            | p(95)=1027     | p(90)=849      | max=2399     |
+| user_info_success_rate   | 100.00%        | 28816 out of 28816 |                |                |              |
+| vus                      | 59             | min=1              |                |                |              |
+| vus_max                  | 60             | min=60             |                |                |              |
 
-|  |  |  |  |  |  |  |
-| --- | --- | --- | --- | --- | --- | --- |
-| checks | 100.00% | 57632 out of 57632 |  |  |  |  |
-| data_received | 93 MB | 155 kB/s |  |  |  |  |
-| data_sent | 14 MB | 23 kB/s |  |  |  |  |
-| http_req_blocked | avg=146.22µs | min=0s | p(95)=0s | p(90)=0s | max=138.39ms | med=0s |
-| http_req_connecting | avg=51.45µs | min=0s | p(95)=0s | p(90)=0s | max=2.39s | med=0s |
-| http_req_duration | avg=349.97ms | min=184.86ms | p(95)=849.58ms | p(90)=786.74ms | max=2.39s | med=198.9ms |
-| { expected_response:true } | avg=349.97ms | min=184.86ms | p(95)=849.58ms | p(90)=786.74ms | max=2.39s | med=198.9ms |
-| http_req_failed | 0.00% | 0/57632 |  |  |  |  |
-| http_req_receiving | avg=164.45µs | min=0s | p(95)=1.53ms | p(90)=546.29µs | max=359.57ms | med=0s |
-| http_req_sending | avg=66.37µs | min=0s | p(95)=513.59µs | p(90)=0s | max=2.41ms | med=0s |
-| http_req_tls_handshaking | avg=138.25µs | min=0s | p(95)=0s | p(90)=0s | max=2.39s | med=0s |
-| http_req_waiting | avg=349.74ms | min=184.86ms | p(95)=849.2ms | p(90)=786.62ms | max=2.39s | med=198.58ms |
-| http_reqs | 57632 | 960.294772/s |  |  |  |  |
-| iteration_duration | avg=708.46ms | min=293.83ms | p(95)=1.15s | p(90)=987.68ms | max=2.52s | med=657.69ms |
-| iterations | 28816 | 479.944772/s |  |  |  |  |
-| login_response_times | avg=136.021551 | min=104 | p(95)=177 | p(90)=163 | max=296 | med=131 |
-| login_success_rate | 100.00% | 28816 out of 28816 |  |  |  |  |
-| requests_sent | 57632 | 95.929047/s |  |  |  |  |
-| user_info_response_times | avg=564.321835 | min=178 | p(95)=1027 | p(90)=849 | max=2399 | med=519 |
-| user_info_success_rate | 100.00% | 28816 out of 28816 |  |  |  |  |
-| vus | 59 | min=1 |  |  |  | max=59 |
-| vus_max | 60 | min=60 |  |  |  | max=60 |
-
-    Running (10m00.8s), 00/60 VUs, 28816 completed and 0 interrupted iterations
-    default OK: 00/60 VUs 10m0s
+> Running (10m00.8s), 00/60 VUs, 28816 completed and 0 interrupted iterations
+> default OK: 00/60 VUs 10m0s
 
 Valores Numéricos: 
 
-    Promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
-
-    Tiempo máximo de la transacción (iteración): max=2.52s
-    Tiempo promedio: avg=708.46ms
-    Tiempo mínimo: min=293.83ms 
-    Percentiles 90 y 95 duración iteración: p(90)=987.68ms; p(95)=1.15s
-    Cantidad de transacciones/segundo (capacidad o throughput): 57632 total; 95.929047/s
-    Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%; 28816 de 28816 procesados
+> Promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
+> 
+> Tiempo máximo de la transacción (iteración): max=2.52s
+> Tiempo promedio: avg=708.46ms
+> Tiempo mínimo: min=293.83ms 
+> Percentiles 90 y 95 duración iteración: p(90)=987.68ms; p(95)=1.15s
+> Cantidad de transacciones/segundo (capacidad o throughput): 57632 total; 95.929047/s
+> Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%; 28816 de 28816 procesados
 
 Desviaciones: 
 
-    Comportamiento inesperado o desviaciones significativas de los valores esperados.
-
-    Con base en los tiempos de latencia cercanos al tiempo de transacción y la alta la tasa de éxito de transacción, no hay evidencia de desviaciones.
-
-    Latencia promedio: avg=349.74ms 
-    Latencia máxima: max=2.39s
-    Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%; 28816 de 28816 procesados
+> Comportamiento inesperado o desviaciones significativas de los valores esperados.
+>
+> Con base en los tiempos de latencia cercanos al tiempo de transacción y la alta la tasa de éxito de transacción, no hay > evidencia de desviaciones.
+>
+> Latencia promedio: avg=349.74ms 
+> Latencia máxima: max=2.39s
+> Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%; 28816 de 28816 procesados
 
 
 Análisis de Cuellos de Botella: 
 
-    Identificación de componentes o procesos que limitaron el rendimiento.
-
-    Con base en los tiempos de rendimiento (capacidad o throughput) y la alta la tasa de éxito de la transacción, no es posible señalar un cuello de botella.
-
-    Cantidad de transacciones/segundo (capacidad o throughput iteración): 57632 total; 95.929047/s
-    Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%; 28816 de 28816 procesados
+> Identificación de componentes o procesos que limitaron el rendimiento.
+> 
+> Con base en los tiempos de rendimiento (capacidad o throughput) y la alta la tasa de éxito de la transacción, no es posible señalar un cuello de botella.
+> 
+> Cantidad de transacciones/segundo (capacidad o throughput iteración): 57632 total; 95.929047/s
+> Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%; 28816 de 28816 procesados
 
 
 Limitaciones: 
 
-    Con base en las 28816 iteraciones completadas y 0 interrumpidas, no hubo limitaciones o condiciones conocidas durante las pruebas que podrían afectar los resultados.
-
-    Calidad de la prueba: 28816 iteraciones completadas; 0 interrumpidas
+> Con base en las 28816 iteraciones completadas y 0 interrumpidas, no hubo limitaciones o condiciones conocidas durante las pruebas que podrían afectar los resultados.
+> 
+> Calidad de la prueba: 28816 iteraciones completadas; 0 interrumpidas
 
 ### Pruebas de Rendimiento Servicio Auth de Trii.co
 El servicio Login (auth) es responsable de dar inicio a una sesión de trabajo de un cliente Trii. Realiza como mínimo actividades 1, 2 y 3 <descripción>.
