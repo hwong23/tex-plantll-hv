@@ -41,18 +41,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.8087c3f - Compilación para entrega - Tue, 21 Jan 2025 19:54:22 +0000
+1.e7686a1 - Compilación para entrega - Tue, 21 Jan 2025 20:03:55 +0000
 
 
 Versiones Anteriores
+
+1.acb8096 - Compilación para entrega - Mon, 20 Jan 2025 21:26:18 +0000
 
 1.f76d6ed - logo - Mon, 20 Jan 2025 16:15:07 -0500
 
 1.c4983db - Compilación para entrega - Mon, 20 Jan 2025 20:40:20 +0000
 
 1.25bdc33 - Compilación para entrega - Mon, 20 Jan 2025 19:58:03 +0000
-
-1.ce69f7a - Compilación para entrega - Sun, 19 Jan 2025 04:28:26 +0000
 
 
 ### Realizado Por
@@ -127,10 +127,10 @@ titlepage-rule-color: 360049
 
 ### Resumen y Puntos Sobresalientes de los Resultados
 
-1. Todos los servicios probados (auth, user_info, fee y  ordenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14
-1. El análisis de latencia del servicio de Ordenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: 0 fallas en registro de actividad del sistema; razón por la cual
-1. El servicio de órdenes requirió del ajuste en el  criterio de aceptación _tiempo de respuesta_: quedó en 4.5s. Pág. 10
-1. La conclusión general del rendimiento de Trii.co actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad Trii puede crecer un 400% del rendimiento actual. Pág. 15
+1. Todos los servicios probados (auth, user_info, fee y  ordenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14, Informe Técnico
+1. El análisis de latencia del servicio de Ordenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: 0 fallas en registro de actividad del sistema. Pág. 11, Informe Técnico; razón por la cual
+1. El servicio de órdenes requirió del ajuste en el  criterio de aceptación _tiempo de respuesta_: quedó en 4.5s. Pág. 10, Informe Técnico
+1. La conclusión general del rendimiento de Trii.co actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad Trii puede crecer un 400% del rendimiento actual. Pág. 15, Informe Técnico
 
 ### Compilación de Resultado de las Pruebas de Rendimiento
 | Prueba             | Criterio de Aceptación                                                       | Resultado                                                                                  |
