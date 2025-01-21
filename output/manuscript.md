@@ -44,18 +44,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.4e33cfa - Compilación para entrega - Tue, 21 Jan 2025 20:10:00 +0000
+1.3df3dcc - Compilación para entrega - Tue, 21 Jan 2025 20:12:52 +0000
 
 
 Versiones Anteriores
+
+1.d3a0900 - Compilación para entrega - Mon, 20 Jan 2025 22:07:25 +0000
 
 1.7978588 - Compilación para entrega - Mon, 20 Jan 2025 21:35:44 +0000
 
 1.acb8096 - Compilación para entrega - Mon, 20 Jan 2025 21:26:18 +0000
 
 1.f76d6ed - logo - Mon, 20 Jan 2025 16:15:07 -0500
-
-1.c4983db - Compilación para entrega - Mon, 20 Jan 2025 20:40:20 +0000
 
 
 ### Realizado Por
