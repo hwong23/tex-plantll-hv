@@ -44,18 +44,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.70c7b82 - Compilación para entrega - Tue, 21 Jan 2025 23:19:17 +0000
+1.c672547 - Compilación para entrega - Tue, 21 Jan 2025 23:32:27 +0000
 
 
 Versiones Anteriores
+
+1.7eb3460 - Compilación para entrega - Tue, 21 Jan 2025 22:59:05 +0000
 
 1.6e3cb59 - Compilación para entrega - Tue, 21 Jan 2025 20:16:32 +0000
 
 1.3df3dcc - Compilación para entrega - Tue, 21 Jan 2025 20:12:52 +0000
 
 1.4e33cfa - Compilación para entrega - Tue, 21 Jan 2025 20:10:00 +0000
-
-1.e7686a1 - Compilación para entrega - Tue, 21 Jan 2025 20:03:55 +0000
 
 
 ### Realizado Por
@@ -456,19 +456,19 @@ titlepage-rule-color: 360049
 
 
 ### Criterios de Evaluación del Rendimiento Actual
-| Prueba             | Servicio | Modalidad             | Criterio de Aceptación                                                                                                                               | Ambiente   |
-|--------------------|----------|-----------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| Login              | Auth     | Concurrente, Unitaria | Percentil de peticiones exitosas 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput): Transacciones por hora 2500 y 40 por minuto   | Dev        |
-| Get user info      | Auth     | Concurrente, Integral | Percentil de peticiones exitosas 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput): Transacciones por hora 2500 y 40 por minuto   | Dev        |
-| Fee                | Auth     | Concurrente, Integral | Percentil de peticiones exitosas 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento:(throughput): Transacciones por hora 2500 y 40 por minuto   | Dev        |
-| Ingreso de órdenes | Órdenes  | Concurrente, Integral | Percentil de peticiones exitosas 99.9. Tiempo de respuesta max 4.5 seg. Tasa procesamiento:(throughput): Transacciones por hora 2500 y 40 por minuto | Dev / Prod |
+| Prueba             | Svc     | Modalidad             | Criterio de Aceptación                                                                                                                     | Ambiente   |
+|--------------------|---------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| Login              | Auth    | Concurrente, Unitaria | Percentil petición exitosa 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
+| Get user info      | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
+| Fee                | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
+| Ingreso de órdenes | Órdenes | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo de respuesta max 4.5 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto | Dev / Prod |
 
 En donde:
 
 * Transacciones diarias: 10000/d
-* Transacciones por hora (10000 / 4): 2500/h
-* Transacciones por minuto: 40/m
-* Transacciones por segundo: 4/s
+* Transacciones / (10000 / 42500 / hora/h
+* Transacciones / minuto: 40/m
+* Transacciones / segundo: 4/s
 
 
 

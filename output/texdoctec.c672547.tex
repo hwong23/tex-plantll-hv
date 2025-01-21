@@ -418,18 +418,18 @@ Documento}\label{sec:informaciuxf3n-del-documento}
 
 Historia de cambios del informe.
 
-Versión actual: 1.70c7b82 - Compilación para entrega - Tue, 21 Jan 2025
-23:19:17 +0000
+Versión actual: 1.c672547 - Compilación para entrega - Tue, 21 Jan 2025
+23:32:27 +0000
 
 Versiones Anteriores
+
+1.7eb3460 - Compilación para entrega - Tue, 21 Jan 2025 22:59:05 +0000
 
 1.6e3cb59 - Compilación para entrega - Tue, 21 Jan 2025 20:16:32 +0000
 
 1.3df3dcc - Compilación para entrega - Tue, 21 Jan 2025 20:12:52 +0000
 
 1.4e33cfa - Compilación para entrega - Tue, 21 Jan 2025 20:10:00 +0000
-
-1.e7686a1 - Compilación para entrega - Tue, 21 Jan 2025 20:03:55 +0000
 
 \subsubsection{Realizado Por}\label{sec:realizado-por}
 
@@ -1088,16 +1088,16 @@ Trii.co}\label{sec:muxe9todo-de-evaluaciuxf3n-del-rendimiento-actual-de-trii.co}
 Actual}\label{sec:criterios-de-evaluaciuxf3n-del-rendimiento-actual}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0930}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0465}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1070}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.6977}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0558}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0980}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0441}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1127}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.6863}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0588}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Prueba
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Servicio
+Svc
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Modalidad
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -1109,19 +1109,19 @@ Ambiente
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-Login & Auth & Concurrente, Unitaria & Percentil de peticiones exitosas
-99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput):
-Transacciones por hora 2500 y 40 por minuto & Dev \\
-Get user info & Auth & Concurrente, Integral & Percentil de peticiones
-exitosas 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento
-(throughput): Transacciones por hora 2500 y 40 por minuto & Dev \\
-Fee & Auth & Concurrente, Integral & Percentil de peticiones exitosas
-99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento:(throughput):
-Transacciones por hora 2500 y 40 por minuto & Dev \\
-Ingreso de órdenes & Órdenes & Concurrente, Integral & Percentil de
-peticiones exitosas 99.9. Tiempo de respuesta max 4.5 seg. Tasa
-procesamiento:(throughput): Transacciones por hora 2500 y 40 por minuto
-& Dev / Prod \\
+Login & Auth & Concurrente, Unitaria & Percentil petición exitosa 99.9.
+Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput):
+Transacciones 2500 / hora y 40 / minuto & Dev \\
+Get user info & Auth & Concurrente, Integral & Percentil petición
+exitosa 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento
+(throughput): Transacciones 2500 / hora y 40 / minuto & Dev \\
+Fee & Auth & Concurrente, Integral & Percentil petición exitosa 99.9.
+Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput):
+Transacciones 2500 / hora y 40 / minuto & Dev \\
+Ingreso de órdenes & Órdenes & Concurrente, Integral & Percentil
+petición exitosa 99.9. Tiempo de respuesta max 4.5 seg. Tasa
+procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto &
+Dev / Prod \\
 \end{longtable}
 
 En donde:
@@ -1131,11 +1131,11 @@ En donde:
 \item
   Transacciones diarias: 10000/d
 \item
-  Transacciones por hora (10000 / 4): 2500/h
+  Transacciones / (10000 / 42500 / hora/h
 \item
-  Transacciones por minuto: 40/m
+  Transacciones / minuto: 40/m
 \item
-  Transacciones por segundo: 4/s
+  Transacciones / segundo: 4/s
 \end{itemize}
 
 \newpage
