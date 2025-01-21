@@ -44,18 +44,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.3df3dcc - Compilación para entrega - Tue, 21 Jan 2025 20:12:52 +0000
+1.6e3cb59 - Compilación para entrega - Tue, 21 Jan 2025 20:16:32 +0000
 
 
 Versiones Anteriores
+
+1.8a9bfb2 - Compilación para entrega - Mon, 20 Jan 2025 22:26:14 +0000
 
 1.d3a0900 - Compilación para entrega - Mon, 20 Jan 2025 22:07:25 +0000
 
 1.7978588 - Compilación para entrega - Mon, 20 Jan 2025 21:35:44 +0000
 
 1.acb8096 - Compilación para entrega - Mon, 20 Jan 2025 21:26:18 +0000
-
-1.f76d6ed - logo - Mon, 20 Jan 2025 16:15:07 -0500
 
 
 ### Realizado Por
@@ -106,6 +106,13 @@ Herramienta de Pruebas: K6, de Grafana Labs.
 
 ### Datos Específicos del Informe
 Descripción detallada de los casos de uso o flujos de usuario simulados.
+
+### Referencias
+
+1. Google (2025). Machine families resource and comparison guide. (Web) https://cloud.google.com/compute/docs/machine-resource
+1. Grafana Labs (2025). Technical documentation. Grafana Cloud. (Web) https://grafana.com/docs/k6/latest/
+1. Heusser M. (Sep 2019). How to achieve speedy application response times. (Web) https://www.techtarget.com/searchsoftwarequality/tip/Acceptable-application-response-times-vs-industry-standard
+1. Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits. (Web) https://www.nngroup.com/articles/response-times-3-important-limits/
 
 ### Pruebas de Rendimiento Servicio Get User Info de Trii.co
 El servicio Get User Info (user info) obtiene datos de trabajo del cliente previo a la orden. Requiere como mínimo actividades de autenticación, y es responsable de alimentar al servicio Ordenes.
@@ -418,13 +425,6 @@ El estado 200 (petición HTML exitosa) en las transacciones del servicio Ordenes
 1. Heusser M. (Sep 2019). How to achieve speedy application response times. (Web) https://www.techtarget.com/searchsoftwarequality/tip/Acceptable-application-response-times-vs-industry-standard
 1. Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits. (Web) https://www.nngroup.com/articles/response-times-3-important-limits/
 
-### Referencias
-
-1. Google (2025). Machine families resource and comparison guide. (Web) https://cloud.google.com/compute/docs/machine-resource
-1. Grafana Labs (2025). Technical documentation. Grafana Cloud. (Web) https://grafana.com/docs/k6/latest/
-1. Heusser M. (Sep 2019). How to achieve speedy application response times. (Web) https://www.techtarget.com/searchsoftwarequality/tip/Acceptable-application-response-times-vs-industry-standard
-1. Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits. (Web) https://www.nngroup.com/articles/response-times-3-important-limits/
-
 
 
 
@@ -493,7 +493,7 @@ titlepage-rule-color: 360049
 ### Resumen y Puntos Sobresalientes de los Resultados
 
 1. Todos los servicios probados (auth, user_info, fee y  ordenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14, Informe Técnico
-1. El análisis de latencia del servicio de Ordenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: 0 fallas en registro de actividad del sistema. Pág. 11, Informe Técnico; razón por la cual
+1. El análisis de latencia del servicio de Ordenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: cero (0) fallas en registro de actividad del sistema. Pág. 11, Informe Técnico; razón por la cual
 1. El servicio de órdenes requirió del ajuste en el  criterio de aceptación _tiempo de respuesta_: quedó en 4.5s. Pág. 10, Informe Técnico
 1. La conclusión general del rendimiento de Trii.co actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad Trii puede crecer un 400% del rendimiento actual. Pág. 15, Informe Técnico
 
@@ -513,13 +513,13 @@ titlepage-rule-color: 360049
 | Ingreso de órdenes | Tiempo de respuesta max 4.5 seg.                                             | Tiempo máximo de la transacción (iteración): max=16.74s; avg p(95/90)=4.49s                |
 | Ingreso de órdenes | Tasa procesamiento (throughput): 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 22774 total; 16.36504/s        |
 
-El resultado de las pruebas de rendimiento ejecutadas para los servicios de la Aplicación Trii.co, Login, Get User Info, Fee, Ordenes, comprueba que la capacidad operativa, en términos de rendimientos, estabilidad y respuesta, está por encima de lo generalmente aceptados por los estándares de tiempo de respuesta de aplicaciones de software empresariales, en este caso particular, de tipo web para la industria fintech.
+El resultado de las pruebas de rendimiento ejecutadas para los servicios de la Aplicación Trii.co, Login, Get User Info, Fee, Ordenes, comprueba que la capacidad operativa, en términos de rendimientos, estabilidad y respuesta, está por encima de lo generalmente aceptado por los estándares en tiempo de respuesta de aplicaciones de software empresarial, en este caso particular, de tipo web para la industria de tecnología en inversión financiera, fintech.
 
 > 10 seconds is about the limit for keeping the user's attention focused on the dialogue. For longer delays, users will want to perform other tasks while waiting for the computer to finish, so they should be given feedback indicating when the computer expects to be done. Feedback during the delay is especially important if the response time is likely to be highly variable, since users will then not know what to expect. -- Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits (web).
 
 ### Conclusión General
-Teniendo de base los resultados de la actual prueba de rendimiento consignados en este informe, es factible indicar que el umbral de crecimiento de Trii, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, podría llegar a ser de entre el 4x y 5x de la carga de procesamiento real actual. Es decir, con la capacidad operativa actual, sin requerir inversión en su plan de capacidad, podría aumentar sus niveles de procesamiento en un 400% (esto es, de ~5000 transacciones diarias a 22774), como mínimo, sin comprometer la estabilidad del sistema completo.
-
+### Conclusión General
+Teniendo de base los resultados de la actual prueba de rendimiento consignados en el Informe Técnico de Certificación Operativa Plataforma de Software Trii.co, es factible indicar que el umbral de crecimiento de la Plataforma Trii, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, podría llegar a ser de entre 4x y 5x de la carga de procesamiento real actual. Es decir, con la capacidad operativa actual, sin requerir inversión en su plan de capacidad, podría aumentar sus niveles de procesamiento en un 400% (esto es, de ~5000 transacciones diarias a 22774), como mínimo, sin comprometer la estabilidad del sistema completo.
 
 
 
