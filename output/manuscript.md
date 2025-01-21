@@ -44,18 +44,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.c1206fd - Compilación para entrega - Tue, 21 Jan 2025 23:06:28 +0000
+1.79808c9 - Compilación para entrega - Tue, 21 Jan 2025 23:07:32 +0000
 
 
 Versiones Anteriores
+
+1.4e33cfa - Compilación para entrega - Tue, 21 Jan 2025 20:10:00 +0000
 
 1.e7686a1 - Compilación para entrega - Tue, 21 Jan 2025 20:03:55 +0000
 
 1.8087c3f - Compilación para entrega - Tue, 21 Jan 2025 19:54:22 +0000
 
 1.938399b - Compilación para entrega - Tue, 21 Jan 2025 18:24:45 +0000
-
-1.8a9bfb2 - Compilación para entrega - Mon, 20 Jan 2025 22:26:14 +0000
 
 
 ### Realizado Por
@@ -106,13 +106,6 @@ Herramienta de Pruebas: K6, de Grafana Labs.
 
 ### Datos Específicos del Informe
 Descripción detallada de los casos de uso o flujos de usuario simulados.
-
-### Referencias
-
-1. Google (2025). Machine families resource and comparison guide. (Web) https://cloud.google.com/compute/docs/machine-resource
-1. Grafana Labs (2025). Technical documentation. Grafana Cloud. (Web) https://grafana.com/docs/k6/latest/
-1. Heusser M. (Sep 2019). How to achieve speedy application response times. (Web) https://www.techtarget.com/searchsoftwarequality/tip/Acceptable-application-response-times-vs-industry-standard
-1. Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits. (Web) https://www.nngroup.com/articles/response-times-3-important-limits/
 
 ### Pruebas de Rendimiento Servicio Get User Info de Trii.co
 El servicio Get User Info (user info) obtiene datos de trabajo del cliente previo a la orden. Requiere como mínimo actividades de autenticación, y es responsable de alimentar al servicio Ordenes.
@@ -418,12 +411,16 @@ En este escenario existieron limitaciones o condiciones conocidas del balance de
 
 El estado 200 (petición HTML exitosa) en las transacciones del servicio Ordenes representa además el estado de negocio; es decir, una transacción correctamente procesada por el sistema, y aceptada por las reglas de negocio, retorna el estado HTTP 200 en caso que no haya ocurrido una excepción de negocio. Esto es lo mismo decir que las transacciones con estado HTML distintas del 200 resultantes en este escenario de prueba, fueron procesadas exitosamente por el sistema (procesadas sin fallos de sistema evidenciado en logs) aún cuando hubiesen caído en una regla o excepción de negocio.
 
-
 ### Referencias
-1. Google (2025). Machine families resource and comparison guide. (Web) https://cloud.google.com/compute/docs/machine-resource
-1. Grafana Labs (2025). Technical documentation. Grafana Cloud. (Web) https://grafana.com/docs/k6/latest/
-1. Heusser M. (Sep 2019). How to achieve speedy application response times. (Web) https://www.techtarget.com/searchsoftwarequality/tip/Acceptable-application-response-times-vs-industry-standard
-1. Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits. (Web) https://www.nngroup.com/articles/response-times-3-important-limits/
+
+1. Google (2025). Machine families resource and comparison guide.
+   (Web) https://cloud.google.com/compute/docs/machine-resource
+1. Grafana Labs (2025). Technical documentation. Grafana Cloud.
+   (Web) https://grafana.com/docs/k6/latest/
+1. Heusser M. (Sep 2019). How to achieve speedy application response times.
+   (Web) https://www.techtarget.com/searchsoftwarequality/tip/Acceptable-application-response-times-vs-industry-standard
+1. Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits.
+   (Web) https://www.nngroup.com/articles/response-times-3-important-limits/
 
 
 
