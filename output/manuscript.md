@@ -4,7 +4,7 @@
 * [Evaluación del Rendimiento](#evaluación-del-rendimiento)
 * [Resultados y Conclusiones del Informe de Rendimiento](#resultados-y-conclusiones-del-informe-de-rendimiento)
 * [Anexos Técnicos](#anexos-técnicos)
-* [Glosario de Términos](#glosario-de-términos)
+* [Glosario](#glosario)
 
 
 <div style="page-break-before: always;"></div>
@@ -44,18 +44,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.d3a0900 - Compilación para entrega - Mon, 20 Jan 2025 22:07:25 +0000
+1.8a9bfb2 - Compilación para entrega - Mon, 20 Jan 2025 22:26:14 +0000
 
 
 Versiones Anteriores
+
+1.25bdc33 - Compilación para entrega - Mon, 20 Jan 2025 19:58:03 +0000
 
 1.ce69f7a - Compilación para entrega - Sun, 19 Jan 2025 04:28:26 +0000
 
 1.9762e03 - logo - Sat, 18 Jan 2025 23:26:33 -0500
 
 1.1f31c0f - metadatos - Sat, 18 Jan 2025 11:20:05 -0500
-
-1.bb10432 - Compilación para entrega - Fri, 17 Jan 2025 22:11:18 +0000
 
 
 ### Realizado Por
@@ -108,12 +108,13 @@ Herramienta de Pruebas: K6, de Grafana Labs.
 Descripción detallada de los casos de uso o flujos de usuario simulados.
 
 ### Pruebas de Rendimiento Servicio Get User Info de Trii.co
-El servicio Get User Info (user info) <descripción>. Realiza como mínimo actividades 1, 2 y 3 <descripción>.
+El servicio Get User Info (user info) obtiene datos de trabajo del cliente previo a la orden. Requiere como mínimo actividades de autenticación, y es responsable de alimentar al servicio Ordenes.
 
-Carga de Usuarios: Cantidad de usuarios virtuales concurrentes simulados, máximo 60.
+Carga de Usuarios: Cantidad de usuarios virtuales concurrentes simulados, máximo 60. 
 Duración de las Pruebas: Tiempo durante el cual se ejecutaron las pruebas, mínimo 10 minutos.
 
-Resultados Medidos:
+#### Resultados Medidos
+Ejecución del escenario de pruebas de rendimiento.
 
 > Escenarios: (100.00%) 1 scenario, 60 max VUs, 10m30s max duration (incl. graceful stop):
 > 
@@ -152,7 +153,7 @@ Resultados Medidos:
 > 
 > default OK: 00/60 VUs 10m0s
 
-Valores Numéricos: 
+#### Valores Numéricos
 
 Promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
  
@@ -168,7 +169,7 @@ Promedio por transacción, tiempo máximo, mínimo, y percentiles de las métric
 > 
 > Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%; 28816 de 28816 procesados
 
-Desviaciones: 
+#### Desviaciones
 
 Comportamiento inesperado o desviaciones significativas de los valores esperados.
 
@@ -181,7 +182,7 @@ Con base en los tiempos de latencia cercanos al tiempo de transacción y la alta
 > Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%; 28816 de 28816 procesados
 
 
-Análisis de Cuellos de Botella: 
+#### Análisis de Cuellos de Botella
 
 Identificación de componentes o procesos que limitaron el rendimiento.
  
@@ -192,7 +193,7 @@ Con base en los tiempos de rendimiento (capacidad o throughput) y la alta la tas
 > Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%; 28816 de 28816 procesados
 
 
-Limitaciones: 
+#### Limitaciones
 
 Con base en las 28816 iteraciones completadas y 0 interrumpidas, no hubo limitaciones o condiciones conocidas durante las pruebas que podrían afectar los resultados.
  
@@ -204,7 +205,8 @@ El servicio Login (auth) es responsable de dar inicio a una sesión de trabajo d
 Carga de Usuarios: Cantidad de usuarios virtuales concurrentes simulados, máximo 60.
 Duración de las Pruebas: Tiempo durante el cual se ejecutaron las pruebas, mínimo 10 minutos.
 
-Resultados Medidos:
+#### Resultados Medidos
+Ejecución del escenario de pruebas de rendimiento.
 
 > Escenarios: (100.00%) 1 scenario, 60 max VUs, 10m30s max duration (incl. graceful stop):
 >
@@ -240,7 +242,7 @@ Resultados Medidos:
 > default OK: 00/60 VUs 10m0s
 
 
-Valores Numéricos: 
+#### Valores Numéricos
 
 Promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
  
@@ -258,7 +260,7 @@ Promedio por transacción, tiempo máximo, mínimo, y percentiles de las métric
 
 Nota: el tiempo máximo de transacción, si bien es mayor a 3s, es aún eficiente debido al tipo de transacción, en este caso de autenticación, que no compromete al valor del negocio de Trii. Más aún, que el promedio en este caso no es representativo de la muestra, como sí lo es el valor del percentil 95: p(95)=315.52ms por transacción.
 
-Desviaciones: 
+#### Desviaciones
 
 Comportamiento inesperado o desviaciones significativas de los valores esperados.
  
@@ -272,7 +274,7 @@ Con base en los tiempos de latencia cercanos al tiempo de transacción y la alta
 
 Nota: el tiempo máximo de latencia, si bien es mayor a 3s, es aún eficiente debido al tipo de transacción, en este caso de autenticación, que no compromete al negocio de Trii. Más aún, que el promedio en este caso no es representativo de la muestra, como sí lo es el valor del percentil 95: p(95)=315.52ms por transacción.
 
-Análisis de Cuellos de Botella: 
+#### Análisis de Cuellos de Botella
 
 Identificación de componentes o procesos que limitaron el rendimiento.
  
@@ -288,7 +290,7 @@ Aún así, por los tiempos de rendimiento (capacidad o throughput) y la alta la 
  >
  > Estabilidad o Tasa de éxito de transacción: 100.00%; 113677 de 113677 procesados
 
-Limitaciones: 
+#### Limitaciones
 
 > No hubo limitaciones o condiciones conocidas durante las pruebas que podrían afectar los resultados.
 
@@ -298,7 +300,8 @@ El servicio Ordenes <descripción> es el más relevante para el negocio de Trii.
 Carga de Usuarios: Cantidad de usuarios virtuales concurrentes simulados, máximo 60.
 Duración de las Pruebas: Tiempo durante el cual se ejecutaron las pruebas, mínimo 10 minutos.
 
-Resultados Medidos:
+### Resultados Medidos
+Ejecución del escenario de pruebas de rendimiento.
 
 > Escenarios: (100.00%) 1 scenario, 60 max VUs, 10m30s max duration (incl. graceful stop):
 >
@@ -342,7 +345,7 @@ Resultados Medidos:
 
 Nota: el estado 200 (petición HTML exitosa) en las transacciones del servicio Ordenes representa además el estado de negocio; es decir, una transacción correctamente procesada por el sistema, y aceptada por las reglas de negocio, retorna el estado HTTP 200 en caso que no haya ocurrido una excepción de negocio. Esto es lo mismo decir que las transacciones con estado HTML distintas del 200 resultantes en este escenario de prueba, más precisamente fueron procesadas exitosamente por el sistema (procesadas sin fallos de sistema evidenciado en logs) aún cuando hubiesen caído en una regla o excepción de negocio.
 
-Valores Numéricos: 
+#### Valores Numéricos
 
 Promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
  
@@ -364,7 +367,7 @@ Nota: debido a la diferencia entre el tiempo promedio de la transacción y el pe
 
 Nota: el tiempo máximo de transacción (iteración) de Ordenes, si bien es mayor a 3s, es aún eficiente debido a la complejidad de la transacción y que no está comprometiendo al negocio de Trii evidenciado en la estabilidad del 100% de este servicio y en el percentil 95 de duración, que sí es representativo, y es de p(95)=3.31s por transacción.
 
-Desviaciones: 
+#### Desviaciones
 
 Comportamiento inesperado o desviaciones significativas de los valores esperados.
 
@@ -380,7 +383,7 @@ Nota: Debido a la diferencia entre la latencia promedio y su percentil 95, el ti
 
 Nota: el tiempo máximo de latencia, si bien es mayor a 3s, es aún eficiente debido a la complejidad de la transacción Ordenes y no está comprometiendo al negocio de Trii evidenciado en la estabilidad del 100% de este servicio y en el percentil 95 de latencia, que sí es representativo, y es de p(95)=2.7s por transacción.
 
-Análisis de Cuellos de Botella: 
+#### Análisis de Cuellos de Botella
 
 Identificación de componentes o procesos que limitaron el rendimiento.
 
@@ -396,7 +399,7 @@ Aún así, los tiempos de rendimiento (capacidad o throughput), 16.36504/s, y la
 > 
 > Estabilidad o Tasa de éxito de transacción (iteración): 100.00%; 11387 de 11387. De las cuales 86.00% Ordenes de Negocio (9881 de 11387) exitosas
 
-Limitaciones: 
+#### Limitaciones
 
 En este escenario existieron limitaciones o condiciones conocidas del balance de Ordenes durante las pruebas que afectaron los resultados de las métricas de transacción exitosa.
  
@@ -410,6 +413,13 @@ El estado 200 (petición HTML exitosa) en las transacciones del servicio Ordenes
 
 
 ### Referencias
+1. Google (2025). Machine families resource and comparison guide. (Web) https://cloud.google.com/compute/docs/machine-resource
+1. Grafana Labs (2025). Technical documentation. Grafana Cloud. (Web) https://grafana.com/docs/k6/latest/
+1. Heusser M. (Sep 2019). How to achieve speedy application response times. (Web) https://www.techtarget.com/searchsoftwarequality/tip/Acceptable-application-response-times-vs-industry-standard
+1. Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits. (Web) https://www.nngroup.com/articles/response-times-3-important-limits/
+
+### Referencias
+
 1. Google (2025). Machine families resource and comparison guide. (Web) https://cloud.google.com/compute/docs/machine-resource
 1. Grafana Labs (2025). Technical documentation. Grafana Cloud. (Web) https://grafana.com/docs/k6/latest/
 1. Heusser M. (Sep 2019). How to achieve speedy application response times. (Web) https://www.techtarget.com/searchsoftwarequality/tip/Acceptable-application-response-times-vs-industry-standard
@@ -536,15 +546,48 @@ titlepage-rule-color: 360049
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Glosario de Términos
+# Glosario
 
-## Análisis de Resultados del Rendimiento y Capacidad
+##  
 
 > 
 
 <br>
 
 
+
+### Términos y Conceptos Clave de Capacidad y Rendimiento de Sistemas/Aplicaciones
+Cuellos de botella
+:   Un cuello de botella es una parte del proceso de planificación de la capacidad que no avanza sin problemas. Esto podría deberse a la falta de recursos, ya sea en cantidad o en calidad. La planificación de la capacidad ayuda a identificar y resolver estas situaciones antes de que afecten a las operaciones empresariales.
+
+Utilización de recursos
+:   Una de las principales métricas para el éxito de la planificación de la capacidad. Una alta utilización indica una alta eficiencia: para las máquinas, indica una producción maximizada, y para los empleados, horas facturables trabajadas (ver más: horas contratadas frente a horas reales).
+
+Horas facturables
+:   El número de horas trabajadas que se pueden cobrar a los clientes. El equilibrio entre las horas facturables y no facturables es clave para las agencias de cara al cliente.
+Previsión de la demanda
+:   Anticipar la demanda futura de los servicios de la organización. La previsión de la demanda respalda la capacidad de planificación y garantiza que haya suficientes recursos para satisfacer las necesidades del cliente y resolver conflictos de recursos.
+
+Previsión de la carga de trabajo
+:   De forma similar a la previsión de la demanda, la previsión de la carga de trabajo es otra forma de anticipar y resolver la demanda futura. Predice las cargas de trabajo de los empleados para garantizar que la organización tenga suficiente personal con las habilidades adecuadas para satisfacer las necesidades de los clientes.
+
+Planificación de Recursos Humanos
+:   Asegurar que la organización tenga suficiente personal y que éste se asigne de manera efectiva. Las estrategias de planificación de recursos humanos incluyen la gestión del talento, la retención y la adquisición, la gestión de la carga de trabajo y la programación.
+
+Gestión de gastos generales
+:   Incluye la gestión de varios gastos no facturables necesarios para el funcionamiento de sus negocios. La gestión de las horas no facturables y los gastos generales es esencial para mantener la rentabilidad, y requiere una planificación cuidadosa de la capacidad.
+
+Continuidad del negocio
+:   Garantizar que su organización pueda seguir operando y prestando servicios a los clientes incluso frente a interrupciones. 
+
+Gestión de proyectos
+:   Incluye la gestión de tareas e iniciativas generales del proyecto. La planificación de la capacidad es vital para asignar los recursos adecuados en el momento adecuado para garantizar el éxito de la planificación y la gestión de proyectos.
+
+Ruta crítica
+:   La ruta crítica es un término de gestión de proyectos que se refiere a la secuencia de tareas necesarias para completar un proyecto. La administración de la ruta crítica de una tarea puede garantizar que se puedan tener en cuenta los conflictos inesperados de recursos sin afectar a los plazos y la calidad generales.
+
+Informe de capacidad
+:   Un informe de capacidad es una herramienta estratégica que proporciona una imagen clara del ancho de banda y los recursos disponibles del equipo en un momento dado. Al detallar las asignaciones actuales de proyectos, los próximos compromisos y las disponibilidades individuales, permite la toma de decisiones informadas, plazos realistas de los proyectos y la gestión de las expectativas del cliente.
 
 
 
