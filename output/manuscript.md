@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.bb25e23 - Compilación para entrega - Wed, 22 Jan 2025 21:54:26 +0000
+1.383ab1e - Compilación para entrega - Wed, 22 Jan 2025 22:02:31 +0000
 
 
 Versiones Anteriores
+
+1.d8b1b11 - docx - Wed, 22 Jan 2025 14:48:05 -0500
 
 1.67b54b6 - Compilación para entrega - Tue, 21 Jan 2025 23:42:45 +0000
 
 1.c672547 - Compilación para entrega - Tue, 21 Jan 2025 23:32:27 +0000
 
 1.70c7b82 - Compilación para entrega - Tue, 21 Jan 2025 23:19:17 +0000
-
-1.c1d5fa2 - Compilación para entrega - Tue, 21 Jan 2025 23:17:11 +0000
 
 
 ### Realizado Por
@@ -106,7 +106,7 @@ titlepage-rule-color: 360049
 Herramienta de Pruebas: K6, de Grafana Labs.
 
 ### Datos Específicos del Informe
-Descripción detallada de los casos de uso o flujos de usuario simulados.
+Descripción detallada de los casos de uso o flujos de usuario simulados de los servicios de Trii probados.
 
 ### Pruebas de Rendimiento Servicio Get User Info de Trii.co
 El servicio Get User Info (user info) obtiene datos de trabajo del cliente previo a la orden. Requiere como mínimo actividades de autenticación, y es responsable de alimentar al servicio Ordenes.
@@ -200,8 +200,8 @@ Con base en las 28816 iteraciones completadas y 0 interrumpidas, no hubo limitac
  
 > Calidad de la prueba: 28816 iteraciones completadas; 0 interrumpidas
 
-### Pruebas de Rendimiento Servicio Ejecución del escenario de pruebas de rendimiento descrito a continuación del servicio Get User Info (user info) de la plataforma Trii.co. de Trii.co
-El servicio Login (auth) es responsable de dar inicio a una sesión de trabajo de un cliente Trii. Realiza como mínimo la provisión de datos necesarios a otros servicios respectyo de la verificación y creación de una sesión de trabajo válida.
+### Pruebas de Rendimiento Servicio Login Auth de Trii.co
+El servicio Login (auth) es responsable de dar inicio a una sesión de trabajo de un cliente Trii. Realiza como mínimo la provisión de datos necesarios a otros servicios respecto de la verificación y creación de una sesión de trabajo válida.
 
 Carga de Usuarios: Cantidad de usuarios virtuales concurrentes simulados, máximo 60.
 Duración de las Pruebas: Tiempo durante el cual se ejecutaron las pruebas, mínimo 10 minutos.
