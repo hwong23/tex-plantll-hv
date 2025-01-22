@@ -44,18 +44,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.c672547 - Compilación para entrega - Tue, 21 Jan 2025 23:32:27 +0000
+1.454b72e - propuesta-reference.docx - Wed, 22 Jan 2025 15:30:41 -0500
 
 
 Versiones Anteriores
 
-1.7eb3460 - Compilación para entrega - Tue, 21 Jan 2025 22:59:05 +0000
+1.c1d5fa2 - Compilación para entrega - Tue, 21 Jan 2025 23:17:11 +0000
 
-1.6e3cb59 - Compilación para entrega - Tue, 21 Jan 2025 20:16:32 +0000
+1.79808c9 - Compilación para entrega - Tue, 21 Jan 2025 23:07:32 +0000
 
-1.3df3dcc - Compilación para entrega - Tue, 21 Jan 2025 20:12:52 +0000
+1.c1206fd - Compilación para entrega - Tue, 21 Jan 2025 23:06:28 +0000
 
-1.4e33cfa - Compilación para entrega - Tue, 21 Jan 2025 20:10:00 +0000
+1.42a666d - Compilación para entrega - Tue, 21 Jan 2025 23:00:48 +0000
 
 
 ### Realizado Por
@@ -523,7 +523,10 @@ El resultado de las pruebas de rendimiento ejecutadas para los servicios de la A
 > 10 seconds is about the limit for keeping the user's attention focused on the dialogue. For longer delays, users will want to perform other tasks while waiting for the computer to finish, so they should be given feedback indicating when the computer expects to be done. Feedback during the delay is especially important if the response time is likely to be highly variable, since users will then not know what to expect. -- Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits (web).
 
 ### Conclusión General
-Teniendo de base los resultados de la actual prueba de rendimiento consignados en el Informe Técnico de Certificación Operativa Plataforma de Software Trii.co, es factible indicar que el umbral de crecimiento de la Plataforma Trii, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, podría llegar a ser de entre 4x y 5x de la carga de procesamiento real actual. Es decir, con la capacidad operativa actual, sin requerir inversión en su plan de capacidad, podría aumentar sus niveles de procesamiento en un 400% (esto es, de ~5000 transacciones diarias a 22774), como mínimo, sin comprometer la estabilidad del sistema completo.
+Teniendo de base los resultados de la actual prueba de rendimiento consignados en el Informe Técnico de Certificación Operativa Plataforma de Software Trii.co, es factible indicar que el umbral de crecimiento de la Plataforma Trii, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, podría llegar a ser de entre 4x y 5x de la carga de procesamiento real actual. Es decir, con la capacidad operativa actual, sin requerir inversión en su plan de capacidad, podría aumentar sus niveles de procesamiento en un 400% (esto es, de ~5000[^1] transacciones diarias a 22774), como mínimo, sin comprometer la estabilidad del sistema completo.
+
+
+[^1]: Cantidad de trasacciones registro de órdenes (servicio Ordenes en este informe). Fuente: personal TI de Trii.co, enero del 2025.
 
 
 
