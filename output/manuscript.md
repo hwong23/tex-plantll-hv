@@ -44,18 +44,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.454b72e - propuesta-reference.docx - Wed, 22 Jan 2025 15:30:41 -0500
+1.bdbccbe - Compilación para entrega - Wed, 22 Jan 2025 20:32:00 +0000
 
 
 Versiones Anteriores
+
+1.70c7b82 - Compilación para entrega - Tue, 21 Jan 2025 23:19:17 +0000
 
 1.c1d5fa2 - Compilación para entrega - Tue, 21 Jan 2025 23:17:11 +0000
 
 1.79808c9 - Compilación para entrega - Tue, 21 Jan 2025 23:07:32 +0000
 
 1.c1206fd - Compilación para entrega - Tue, 21 Jan 2025 23:06:28 +0000
-
-1.42a666d - Compilación para entrega - Tue, 21 Jan 2025 23:00:48 +0000
 
 
 ### Realizado Por
