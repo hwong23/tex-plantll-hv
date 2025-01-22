@@ -1,0 +1,583 @@
+%%
+% Copyright (c) 2017 - 2024, Pascal Wagler;
+% Copyright (c) 2014 - 2024, John MacFarlane
+%
+% All rights reserved.
+%
+% Redistribution and use in source and binary forms, with or without
+% modification, are permitted provided that the following conditions
+% are met:
+%
+% - Redistributions of source code must retain the above copyright
+% notice, this list of conditions and the following disclaimer.
+%
+% - Redistributions in binary form must reproduce the above copyright
+% notice, this list of conditions and the following disclaimer in the
+% documentation and/or other materials provided with the distribution.
+%
+% - Neither the name of John MacFarlane nor the names of other
+% contributors may be used to endorse or promote products derived
+% from this software without specific prior written permission.
+%
+% THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+% "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+% LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+% FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+% COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+% INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING,
+% BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+% LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+% CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+% LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN
+% ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+% POSSIBILITY OF SUCH DAMAGE.
+%%
+
+%%
+% This is the Eisvogel pandoc LaTeX template.
+%
+% For usage information and examples visit the official GitHub page:
+% https://github.com/Wandmalfarbe/pandoc-latex-template
+%%
+
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names,table}{xcolor}
+%
+\documentclass[
+  paper=a4,
+  ,captions=tableheading
+]{scrartcl}
+\usepackage{amsmath,amssymb}
+% Use setspace anyway because we change the default line spacing.
+% The spacing is changed early to affect the titlepage and the TOC.
+\usepackage{setspace}
+\setstretch{1.2}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\definecolor{default-linkcolor}{HTML}{A50000}
+\definecolor{default-filecolor}{HTML}{A50000}
+\definecolor{default-citecolor}{HTML}{4077C0}
+\definecolor{default-urlcolor}{HTML}{4077C0}
+\usepackage[top=1.3in,bottom=1in,left=0.7in,right=0.7in]{geometry}
+\usepackage[export]{adjustbox}
+\usepackage{graphicx}
+\usepackage{etoolbox}
+\BeforeBeginEnvironment{lstlisting}{\par\noindent\begin{minipage}{\linewidth}}
+\AfterEndEnvironment{lstlisting}{\end{minipage}\par\addvspace{\topskip}}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+% add backlinks to footnote references, cf. https://tex.stackexchange.com/questions/302266/make-footnote-clickable-both-ways
+\usepackage{footnotebackref}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+\usepackage[bidi=basic]{babel}
+\else
+\usepackage[bidi=default]{babel}
+\fi
+\babelprovide[main,import]{english}
+% get rid of language-specific shorthands (see #6817):
+\let\LanguageShortHands\languageshorthands
+\def\languageshorthands#1{}
+\makeatletter
+\@ifpackageloaded{subfig}{}{\usepackage{subfig}}
+\@ifpackageloaded{caption}{}{\usepackage{caption}}
+\captionsetup[subfloat]{margin=0.5em}
+\AtBeginDocument{%
+\renewcommand*\figurename{Figura}
+\renewcommand*\tablename{Tabla}
+}
+\AtBeginDocument{%
+\renewcommand*\listfigurename{Lista de Figuras}
+\renewcommand*\listtablename{Lista de Tablas}
+}
+\newcounter{pandoccrossref@subfigures@footnote@counter}
+\newenvironment{pandoccrossrefsubfigures}{%
+\setcounter{pandoccrossref@subfigures@footnote@counter}{0}
+\begin{figure}\centering%
+\gdef\global@pandoccrossref@subfigures@footnotes{}%
+\DeclareRobustCommand{\footnote}[1]{\footnotemark%
+\stepcounter{pandoccrossref@subfigures@footnote@counter}%
+\ifx\global@pandoccrossref@subfigures@footnotes\empty%
+\gdef\global@pandoccrossref@subfigures@footnotes{{##1}}%
+\else%
+\g@addto@macro\global@pandoccrossref@subfigures@footnotes{, {##1}}%
+\fi}}%
+{\end{figure}%
+\addtocounter{footnote}{-\value{pandoccrossref@subfigures@footnote@counter}}
+\@for\f:=\global@pandoccrossref@subfigures@footnotes\do{\stepcounter{footnote}\footnotetext{\f}}%
+\gdef\global@pandoccrossref@subfigures@footnotes{}}
+\@ifpackageloaded{float}{}{\usepackage{float}}
+\floatstyle{ruled}
+\@ifundefined{c@chapter}{\newfloat{codelisting}{h}{lop}}{\newfloat{codelisting}{h}{lop}[chapter]}
+\floatname{codelisting}{Listing}
+\newcommand*\listoflistings{\listof{codelisting}{Listas del Documento}}
+\makeatother
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Certificación Operativa Plataforma de Software Trii.co},
+  pdfauthor={SoftProductiva.com},
+  pdflang={en},
+  pdfsubject={Implementación Proyecto},
+  pdfkeywords={Rendimiento, Métodos pruebas, Pruebas software, QA},
+  hidelinks,
+  breaklinks=true,
+  pdfcreator={LaTeX via pandoc with the Eisvogel template}}
+\title{Certificación Operativa Plataforma de Software Trii.co}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Línea Base}
+\author{SoftProductiva.com}
+\date{2025-01-20}
+
+
+
+%%
+%% added
+%%
+
+
+%
+% for the background color of the title page
+%
+\usepackage{pagecolor}
+\usepackage{afterpage}
+\usepackage{tikz}
+
+%
+% break urls
+%
+\PassOptionsToPackage{hyphens}{url}
+
+%
+% When using babel or polyglossia with biblatex, loading csquotes is recommended
+% to ensure that quoted texts are typeset according to the rules of your main language.
+%
+\usepackage{csquotes}
+
+%
+% captions
+%
+\definecolor{caption-color}{HTML}{777777}
+\usepackage[font={stretch=1.2}, textfont={color=caption-color}, position=top, skip=4mm, labelfont=bf, singlelinecheck=false, justification=raggedright]{caption}
+\setcapindent{0em}
+
+%
+% blockquote
+%
+\definecolor{blockquote-border}{RGB}{221,221,221}
+\definecolor{blockquote-text}{RGB}{119,119,119}
+\usepackage{mdframed}
+\newmdenv[rightline=false,bottomline=false,topline=false,linewidth=3pt,linecolor=blockquote-border,skipabove=\parskip]{customblockquote}
+\renewenvironment{quote}{\begin{customblockquote}\list{}{\rightmargin=0em\leftmargin=0em}%
+\item\relax\color{blockquote-text}\ignorespaces}{\unskip\unskip\endlist\end{customblockquote}}
+
+%
+% Source Sans Pro as the default font family
+% Source Code Pro for monospace text
+%
+% 'default' option sets the default
+% font family to Source Sans Pro, not \sfdefault.
+%
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+    \usepackage[default]{sourcesanspro}
+  \usepackage{sourcecodepro}
+  \else % if not pdftex
+    \usepackage[default]{sourcesanspro}
+  \usepackage{sourcecodepro}
+
+  % XeLaTeX specific adjustments for straight quotes: https://tex.stackexchange.com/a/354887
+  % This issue is already fixed (see https://github.com/silkeh/latex-sourcecodepro/pull/5) but the
+  % fix is still unreleased.
+  % TODO: Remove this workaround when the new version of sourcecodepro is released on CTAN.
+  \ifxetex
+    \makeatletter
+    \defaultfontfeatures[\ttfamily]
+      { Numbers   = \sourcecodepro@figurestyle,
+        Scale     = \SourceCodePro@scale,
+        Extension = .otf }
+    \setmonofont
+      [ UprightFont    = *-\sourcecodepro@regstyle,
+        ItalicFont     = *-\sourcecodepro@regstyle It,
+        BoldFont       = *-\sourcecodepro@boldstyle,
+        BoldItalicFont = *-\sourcecodepro@boldstyle It ]
+      {SourceCodePro}
+    \makeatother
+  \fi
+  \fi
+
+%
+% heading color
+%
+\definecolor{heading-color}{RGB}{40,40,40}
+\addtokomafont{section}{\color{heading-color}}
+% When using the classes report, scrreprt, book,
+% scrbook or memoir, uncomment the following line.
+%\addtokomafont{chapter}{\color{heading-color}}
+
+%
+% variables for title, author and date
+%
+\usepackage{titling}
+\title{Certificación Operativa Plataforma de Software Trii.co}
+\author{SoftProductiva.com}
+\date{2025-01-20}
+
+%
+% tables
+%
+
+\definecolor{table-row-color}{HTML}{F5F5F5}
+\definecolor{table-rule-color}{HTML}{999999}
+
+%\arrayrulecolor{black!40}
+\arrayrulecolor{table-rule-color}     % color of \toprule, \midrule, \bottomrule
+\setlength\heavyrulewidth{0.3ex}      % thickness of \toprule, \bottomrule
+\renewcommand{\arraystretch}{0.8}     % spacing (padding)
+
+
+%
+% remove paragraph indentation
+%
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+
+%
+%
+% Listings
+%
+%
+
+
+%
+% header and footer
+%
+\usepackage[headsepline,footsepline]{scrlayer-scrpage}
+
+\newpairofpagestyles{eisvogel-header-footer}{
+  \clearpairofpagestyles
+  \ihead*{2025-01-20}
+  \chead*{}
+  \ohead*{Certificación Operativa Plataforma de Software Trii.co}
+  \ifoot*{SoftProductiva.com}
+  \cfoot*{}
+  \ofoot*{\thepage}
+  \addtokomafont{pageheadfoot}{\upshape}
+}
+\pagestyle{eisvogel-header-footer}
+
+
+
+%%
+%% end added
+%%
+
+%% change the default with of the images using \setkeys{Gin}{width=.8\linewidth}
+\setkeys{Gin}{width=1\linewidth}
+
+\begin{document}
+
+%%
+%% begin titlepage
+%%
+\begin{titlepage}
+\newgeometry{top=2cm, right=4cm, bottom=3cm, left=4cm}
+\tikz[remember picture,overlay] \node[inner sep=0pt] at (current page.center){\includegraphics[width=\paperwidth,height=\paperheight]{include/background.pdf}};
+\newcommand{\colorRule}[3][black]{\textcolor[HTML]{#1}{\rule{#2}{#3}}}
+\begin{flushleft}
+\noindent
+\\[-1em]
+\color[HTML]{5F5F5F}
+\makebox[0pt][l]{\colorRule[360049]{1.3\textwidth}{4pt}}
+\par
+\noindent
+
+% The titlepage with a background image has other text spacing and text size
+{
+  \setstretch{2}
+  \vfill
+  \vskip -8em
+  \noindent {\huge \textbf{\textsf{Certificación Operativa Plataforma de
+Software Trii.co}}}
+    \vskip 1em
+  {\Large \textsf{Línea Base}}
+    \vskip 2em
+  \noindent {\Large \textsf{SoftProductiva.com} \vskip 0.6em \textsf{2025-01-20}}
+  \vfill
+}
+
+\noindent
+\includegraphics[width=60mm, right]{include/logo.png}
+
+
+\end{flushleft}
+\end{titlepage}
+\restoregeometry
+\pagenumbering{arabic}
+
+%%
+%% end titlepage
+%%
+
+% \maketitle
+
+
+\section{Contenido}\label{sec:contenido}
+
+\begin{itemize}
+\tightlist
+\item
+  \hyperref[informaciuxf3n-del-documento]{Información del Documento}
+\item
+  \hyperref[luxednea-base-del-sistemaaplicaciuxf3n]{Línea Base del
+  Sistema/Aplicación}
+\end{itemize}
+
+\newpage
+
+\section{Información del
+Documento}\label{sec:informaciuxf3n-del-documento}
+
+\subsection{Versión del Documento}\label{sec:versiuxf3n-del-documento}
+
+\begin{quote}
+\end{quote}
+
+\subsection{Control de Cambios}\label{sec:control-de-cambios}
+
+Historia de cambios del informe.
+
+Versión actual: 1.6c117db - Compilación para entrega - Wed, 22 Jan 2025
+22:35:15 +0000
+
+Versiones Anteriores
+
+1.0e5b81c - docx - Wed, 22 Jan 2025 15:26:38 -0500
+
+1.d8b1b11 - docx - Wed, 22 Jan 2025 14:48:05 -0500
+
+1.67b54b6 - Compilación para entrega - Tue, 21 Jan 2025 23:42:45 +0000
+
+1.c672547 - Compilación para entrega - Tue, 21 Jan 2025 23:32:27 +0000
+
+\subsubsection{Realizado Por}\label{sec:realizado-por}
+
+H. Wong, ing.
+
+\subsubsection{Revisado Por}\label{sec:revisado-por}
+
+(revisor), Trii.co
+
+\newpage
+
+\section{Línea Base del
+Sistema/Aplicación}\label{sec:luxednea-base-del-sistemaaplicaciuxf3n}
+
+\subsection{Componentes del Informe de Rendimiento y Capacidad de la
+Plataforma
+Trii.co}\label{sec:componentes-del-informe-de-rendimiento-y-capacidad-de-la-plataforma-trii.co}
+
+\begin{quote}
+\end{quote}
+
+\subsubsection{Información General de la Línea
+Base}\label{sec:informaciuxf3n-general-de-la-luxednea-base}
+
+\begin{itemize}
+\tightlist
+\item
+  Nombre de la Aplicación/Sistema Probado: Servicios de Ordenes, Auth, y
+  User Info de la Aplicación Trii.co
+\item
+  Versión de la Aplicación/Sistema: Versión 2025
+\item
+  Entorno de Pruebas: infraestructura en la nube, Google Cloud, 2nd
+  generation machine series, General-purpose workloads E2 serie, CPU
+  Intel. Tipo de equipo: highmem, 7-14 GB.
+\item
+  Fecha/Periodo de Pruebas: 15 de enero del 2025.
+\item
+  Objetivos de las Pruebas:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Encontrar la capacidad de los servicios Servicios Ordenes, Auth, y
+    User Info de la Aplicación por separado en número máximo de
+    operaciones o transacciones de los servicios por unidad de tiempo.
+  \item
+    Encontrar el nivel de estabilidad de los servicios Servicios
+    Ordenes, Auth, y User Info (tensión) de la Aplicación.
+  \item
+    Dar pautas alrededor del estrés o tensión de los servicios Servicios
+    Ordenes, Auth, y User Info de la Aplicación por separado para
+    determinar la holgura respecto a la demanda esperada.
+  \end{itemize}
+\item
+  Métricas Clave:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Capacidad (throughput) de los servicios Servicios Ordenes, Auth, y
+    User Info
+  \item
+    Estrés (tensión) de los servicios Servicios Ordenes, Auth, y User
+    Info
+  \item
+    Estabilidad (Uso de CPU) de los servicios Servicios Ordenes, Auth, y
+    User Info Herramienta de Pruebas: K6, de Grafana Labs.
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{Línea Base Servicio Get User Info de
+Trii.co}\label{sec:luxednea-base-servicio-get-user-info-de-trii.co}
+
+El servicio Get User Info (user info) obtiene datos de trabajo del
+cliente previo a la orden. Requiere como mínimo actividades de
+autenticación, y es responsable de alimentar al servicio Ordenes.
+
+\paragraph{Valores Numéricos}\label{sec:valores-numuxe9ricos}
+
+Promedio por transacción, tiempo máximo, mínimo, y percentiles de las
+métricas. Tomado del mayor entre http\_req\_duration e
+iteration\_duration.
+
+\begin{quote}
+Tiempo máximo de la transacción (iteración): max=2.52s
+
+Tiempo promedio: avg=708.46ms
+
+Tiempo mínimo: min=293.83ms
+
+Percentiles 90 y 95 duración iteración: p(90)=987.68ms; p(95)=1.15s
+
+Cantidad de transacciones/segundo (capacidad o throughput): 57632 total;
+95.929047/s
+
+Estabilidad o Tasa de éxito de transacción (promedio entre dos
+servicios, login y user\_info): 100.00\%; 28816 de 28816 procesados
+
+Latencia promedio: avg=349.74ms
+
+Latencia máxima: max=2.39s
+\end{quote}
+
+\subsubsection{Línea Base Servicio Servicio Login Auth de
+Trii.co}\label{sec:luxednea-base-servicio-servicio-login-auth-de-trii.co}
+
+El servicio Login (auth) es responsable de dar inicio a una sesión de
+trabajo de un cliente Trii. Realiza como mínimo la provisión de datos
+necesarios a otros servicios respecto de la verificación y creación de
+una sesión de trabajo válida.
+
+\paragraph{Valores Numéricos}\label{sec:valores-numuxe9ricos-1}
+
+Promedio por transacción, tiempo máximo, mínimo, y percentiles de las
+métricas. Tomado del mayor entre http\_req\_duration e
+iteration\_duration.
+
+\begin{quote}
+Tiempo máximo de la transacción (iteración): max=3.67s
+
+Tiempo promedio: avg=177.38ms
+
+Tiempo mínimo: min=105.71ms
+
+Percentiles 90 y 95 duración iteración: p(90)=261.84ms; p(95)=315.52ms
+
+Cantidad de transacciones/segundo (capacidad o throughput): 113677
+total; 189.19272/s
+
+Estabilidad o Tasa de éxito de transacción: 100.00\%; 113677 de 113677
+procesados
+
+Latencia promedio: avg=176.98ms
+
+Latencia máxima: max=3.67s; p(95)=315.52ms
+\end{quote}
+
+\subsubsection{Línea Base Servicio Ordenes de
+Trii.co}\label{sec:luxednea-base-servicio-ordenes-de-trii.co}
+
+El servicio Ordenes es el más relevante para el negocio de Trii. Realiza
+como mínimo actividades de creación de una orden de negocio, que es la
+entidad de información superlativa de la plataforma.
+
+\paragraph{Valores Numéricos}\label{sec:valores-numuxe9ricos-2}
+
+Promedio por transacción, tiempo máximo, mínimo, y percentiles de las
+métricas. Tomado del mayor entre http\_req\_duration e
+iteration\_duration.
+
+\begin{quote}
+Tiempo máximo de la transacción (iteración): max=16.74s; avg
+p(95/90)=4.49s
+
+Tiempo promedio: avg=1.77s; p(95)=3.31s
+
+Tiempo mínimo: min=419.76ms
+
+Percentiles 90 y 95 duración iteración: p(90)=2.83s; p(95)=3.31s
+
+Cantidad de transacciones/segundo (capacidad o throughput): 22774 total;
+16.36504/s
+
+Estabilidad o Tasa de éxito de transacción (iteración): 100.00\%; 11387
+de 11387. De las cuales 86.00\% Ordenes de Negocio (9881 de 11387)
+exitosas
+
+Latencia promedio: avg=888.32ms; p(95)=2.7s
+
+Latencia máxima: max=16.6s; avg p(95/90)=3.8s
+\end{quote}
+
+\end{document}
