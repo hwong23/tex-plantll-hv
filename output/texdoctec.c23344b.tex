@@ -395,18 +395,18 @@ Documento}\label{sec:informaciuxf3n-del-documento}
 
 Historia de cambios del informe.
 
-Versión actual: 1.6c117db - Compilación para entrega - Wed, 22 Jan 2025
-22:35:15 +0000
+Versión actual: 1.c23344b - Compilación para entrega - Wed, 22 Jan 2025
+22:50:18 +0000
 
 Versiones Anteriores
+
+1.454b72e - propuesta-reference.docx - Wed, 22 Jan 2025 15:30:41 -0500
 
 1.0e5b81c - docx - Wed, 22 Jan 2025 15:26:38 -0500
 
 1.d8b1b11 - docx - Wed, 22 Jan 2025 14:48:05 -0500
 
 1.67b54b6 - Compilación para entrega - Tue, 21 Jan 2025 23:42:45 +0000
-
-1.c672547 - Compilación para entrega - Tue, 21 Jan 2025 23:32:27 +0000
 
 \subsubsection{Realizado Por}\label{sec:realizado-por}
 
@@ -487,28 +487,27 @@ autenticación, y es responsable de alimentar al servicio Ordenes.
 
 \paragraph{Valores Numéricos}\label{sec:valores-numuxe9ricos}
 
-Promedio por transacción, tiempo máximo, mínimo, y percentiles de las
-métricas. Tomado del mayor entre http\_req\_duration e
-iteration\_duration.
+En condiciones operativas usuales, promedio por transacción, tiempo
+máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre
+http\_req\_duration e iteration\_duration.
 
 \begin{quote}
-Tiempo máximo de la transacción (iteración): max=2.52s
+Tiempo máximo de la transacción (iteración): max=1.638s
 
-Tiempo promedio: avg=708.46ms
+Tiempo promedio: avg=460.499ms
 
-Tiempo mínimo: min=293.83ms
+Tiempo mínimo: min=190.9895ms
 
-Percentiles 90 y 95 duración iteración: p(90)=987.68ms; p(95)=1.15s
+Percentil 90 duración iteración: p(90)=641.992ms
 
-Cantidad de transacciones/segundo (capacidad o throughput): 57632 total;
-95.929047/s
+Cantidad de transacciones/segundo (capacidad o throughput): 641.992/s
 
 Estabilidad o Tasa de éxito de transacción (promedio entre dos
-servicios, login y user\_info): 100.00\%; 28816 de 28816 procesados
+servicios, login y user\_info): 100.00\%
 
-Latencia promedio: avg=349.74ms
+Latencia promedio: avg=227.331ms
 
-Latencia máxima: max=2.39s
+Latencia máxima: max=1.5535s
 \end{quote}
 
 \subsubsection{Línea Base Servicio Servicio Login Auth de
@@ -521,28 +520,26 @@ una sesión de trabajo válida.
 
 \paragraph{Valores Numéricos}\label{sec:valores-numuxe9ricos-1}
 
-Promedio por transacción, tiempo máximo, mínimo, y percentiles de las
-métricas. Tomado del mayor entre http\_req\_duration e
-iteration\_duration.
+En condiciones operativas usuales, promedio por transacción, tiempo
+máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre
+http\_req\_duration e iteration\_duration.
 
 \begin{quote}
-Tiempo máximo de la transacción (iteración): max=3.67s
+Tiempo máximo de la transacción (iteración): max=2.3855s
 
-Tiempo promedio: avg=177.38ms
+Tiempo promedio: avg=115.297ms
 
-Tiempo mínimo: min=105.71ms
+Tiempo mínimo: min=68.7115ms
 
-Percentiles 90 y 95 duración iteración: p(90)=261.84ms; p(95)=315.52ms
+Percentil 90 duración iteración: p(90)=170.196ms
 
-Cantidad de transacciones/segundo (capacidad o throughput): 113677
-total; 189.19272/s
+Cantidad de transacciones/segundo (capacidad o throughput): 122.975268/s
 
-Estabilidad o Tasa de éxito de transacción: 100.00\%; 113677 de 113677
-procesados
+Estabilidad o Tasa de éxito de transacción: 100.00\%
 
-Latencia promedio: avg=176.98ms
+Latencia promedio: avg=115.037ms
 
-Latencia máxima: max=3.67s; p(95)=315.52ms
+Latencia máxima: max=205.088ms
 \end{quote}
 
 \subsubsection{Línea Base Servicio Ordenes de
@@ -554,30 +551,26 @@ entidad de información superlativa de la plataforma.
 
 \paragraph{Valores Numéricos}\label{sec:valores-numuxe9ricos-2}
 
-Promedio por transacción, tiempo máximo, mínimo, y percentiles de las
-métricas. Tomado del mayor entre http\_req\_duration e
-iteration\_duration.
+En condiciones operativas usuales, promedio por transacción, tiempo
+máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre
+http\_req\_duration e iteration\_duration.
 
 \begin{quote}
-Tiempo máximo de la transacción (iteración): max=16.74s; avg
-p(95/90)=4.49s
+Tiempo máximo de la transacción (iteración): max=2.9185s
 
-Tiempo promedio: avg=1.77s; p(95)=3.31s
+Tiempo promedio: avg=2.1515s
 
-Tiempo mínimo: min=419.76ms
+Tiempo mínimo: min=272.844ms
 
-Percentiles 90 y 95 duración iteración: p(90)=2.83s; p(95)=3.31s
+Percentil 90 duración iteración: p(90)=1.8395s
 
-Cantidad de transacciones/segundo (capacidad o throughput): 22774 total;
-16.36504/s
+Cantidad de transacciones/segundo (capacidad o throughput): 10.637276/s
 
-Estabilidad o Tasa de éxito de transacción (iteración): 100.00\%; 11387
-de 11387. De las cuales 86.00\% Ordenes de Negocio (9881 de 11387)
-exitosas
+Estabilidad o Tasa de éxito de transacción (iteración): 100.00\%
 
-Latencia promedio: avg=888.32ms; p(95)=2.7s
+Latencia promedio: avg=577.408ms
 
-Latencia máxima: max=16.6s; avg p(95/90)=3.8s
+Latencia máxima: max=2.47s
 \end{quote}
 
 \end{document}
