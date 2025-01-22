@@ -1,6 +1,7 @@
 # input-files: [*.md]
 input-file: output/manuscript.md
-reference-doc: /Users/hwo/gh/devdocs/hwo-academicTempl/templates/rmd-myriad-minion-reference.docx
+reference-doc: reference-doc: /Users/hwo/gh/devdocs/hwo-academicTempl/templates/doctemplatepropuesta.docx
 log-file: output/docdoctec.log
 output-file: output/docdoctec-${TRIGGERING_SHA_7}.docx
 to: docx
+
