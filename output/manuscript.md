@@ -30,7 +30,7 @@ fignos-cleveref: True
 fignos-plus-name: Fig.
 fignos-caption-name: Imagen
 tablenos-caption-name: Tabla
-titlepage-background: include/background.pdf
+titlepage-background: include/background2.pdf
 titlepage-logo: include/logo.png
 logo-width: 60mm
 listings-no-page-break: true
@@ -41,18 +41,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.fa8bcac - Compilación para entrega - Thu, 23 Jan 2025 05:46:53 +0000
+1.62d6ae1 - fondos - Thu, 23 Jan 2025 00:55:14 -0500
 
 
 Versiones Anteriores
 
+1.383ab1e - Compilación para entrega - Wed, 22 Jan 2025 22:02:31 +0000
+
+1.bb25e23 - Compilación para entrega - Wed, 22 Jan 2025 21:54:26 +0000
+
 1.0c01043 - Compilación para entrega - Wed, 22 Jan 2025 21:53:22 +0000
 
 1.bdbccbe - Compilación para entrega - Wed, 22 Jan 2025 20:32:00 +0000
-
-1.454b72e - propuesta-reference.docx - Wed, 22 Jan 2025 15:30:41 -0500
-
-1.0e5b81c - docx - Wed, 22 Jan 2025 15:26:38 -0500
 
 
 ### Realizado Por
