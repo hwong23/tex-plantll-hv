@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.076bd1a - Compilación para entrega: observaciones-formato - ba13435 - Thu, 23 Jan 2025 20:25:08 +0000
+1.05c5be7 - Compilación para entrega: observaciones-formato - f0afa38 - Thu, 23 Jan 2025 20:28:43 +0000
 
 
 Versiones Anteriores
+
+1.37c623f - readm - Thu, 23 Jan 2025 15:07:46 -0500
 
 1.4013e7a - trii - Thu, 23 Jan 2025 15:07:22 -0500
 
 1.f3df0cc - Revert "$APP" - Thu, 23 Jan 2025 15:06:28 -0500
 
 1.eb6a0e9 - Revert "Compilación para entrega: observaciones-todo - 27d6a0e" - Thu, 23 Jan 2025 15:05:35 -0500
-
-1.c82303c - todo - Thu, 23 Jan 2025 15:04:38 -0500
 
 
 ### Realizado Por
@@ -459,10 +459,10 @@ titlepage-rule-color: 360049
 ### Criterios de Evaluación del Rendimiento Actual
 | Prueba          | Svc     |             Modalidad | Criterio de Aceptación                                                                                                           | Ambiente  |
 |-----------------|---------|----------------------:|----------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Login           | Auth    | Concurrente, Unitaria | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min   | Dev       |
-| Get user info   | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min   | Dev       |
-| Fee             | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min   | Dev       |
-| Ingreso órdenes | Órdenes | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rpta. máx 4.5 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min | Dev, Prod |
+| Login           | Auth    | Unitaria, Concurrente | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min   | Dev       |
+| Get user info   | Auth    | Integral, Concurrente | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min   | Dev       |
+| Fee             | Auth    | Integral, Concurrente | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min   | Dev       |
+| Ingreso órdenes | Órdenes | Integral, Concurrente | Percentil petición exitosa 99.9. Tiempo rpta. máx 4.5 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min | Dev, Prod |
 
 En donde:
 
