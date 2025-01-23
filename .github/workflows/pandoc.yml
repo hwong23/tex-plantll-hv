@@ -18,7 +18,9 @@ jobs:
             repository: hwong23/devocs-contd
             ref: ${{github.ref}}
             path: devocs-contd
-      - run: |
+      - name: mensaje commit devocscontd
+        run: |
+          cd ${{github.WORKSPACE}}/devocs-contd
           echo $(git log --max-count=1 --format='%h - %s - %cD')
       - uses: actions/checkout@v4
         name: checkout hwo-academicTempl
