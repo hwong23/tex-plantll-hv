@@ -34,3 +34,4 @@ TODO órdenes - órdenes va con tilde, por favor hacer este ajuste para todo el 
 TODO mínimo - Esta mal separada la palabra míni-mo
 TODO redacción - No entendemos cuál es el mensaje que se quiere transmitir ya que según me comenta Felipe, los resultados de las pruebas fueron satisfactorios pero la forma en que esto está redactado parece indicar que existen limitaciones en el servicio de órdenes.
 TODO 4s - es necesario decir que se ajustó o podemos dejar el criterio inicial como 4.5 segundos?
+TODO formato - Error en el formato
