@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.31a91c9 - Compilación para entrega: observaciones-formato - 59144f2 - Thu, 23 Jan 2025 20:20:40 +0000
+1.076bd1a - Compilación para entrega: observaciones-formato - ba13435 - Thu, 23 Jan 2025 20:25:08 +0000
 
 
 Versiones Anteriores
+
+1.4013e7a - trii - Thu, 23 Jan 2025 15:07:22 -0500
 
 1.f3df0cc - Revert "$APP" - Thu, 23 Jan 2025 15:06:28 -0500
 
 1.eb6a0e9 - Revert "Compilación para entrega: observaciones-todo - 27d6a0e" - Thu, 23 Jan 2025 15:05:35 -0500
 
 1.c82303c - todo - Thu, 23 Jan 2025 15:04:38 -0500
-
-1.e815062 - Compilación para entrega: observaciones-todo - 27d6a0e - Thu, 23 Jan 2025 20:00:12 +0000
 
 
 ### Realizado Por
@@ -457,12 +457,12 @@ titlepage-rule-color: 360049
 
 
 ### Criterios de Evaluación del Rendimiento Actual
-| Prueba          | Svc     | Modalidad             | Criterio de Aceptación                                                                                                               | Ambiente   |
-|-----------------|---------|----------------------:|--------------------------------------------------------------------------------------------------------------------------------------|------------|
-| Login           | Auth    | Concurrente, Unitaria | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
-| Get user info   | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
-| Fee             | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
-| Ingreso órdenes | Órdenes | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rpta. máx 4.5 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto | Dev / Prod |
+| Prueba          | Svc     |             Modalidad | Criterio de Aceptación                                                                                                           | Ambiente  |
+|-----------------|---------|----------------------:|----------------------------------------------------------------------------------------------------------------------------------|-----------|
+| Login           | Auth    | Concurrente, Unitaria | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min   | Dev       |
+| Get user info   | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min   | Dev       |
+| Fee             | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rpta. máx 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min   | Dev       |
+| Ingreso órdenes | Órdenes | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rpta. máx 4.5 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / min | Dev, Prod |
 
 En donde:
 
