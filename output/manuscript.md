@@ -1,6 +1,6 @@
 # Contenido
 * [Información del Documento](#información-del-documento)
-* [Informe Operativo Plataforma de Software Trii.co](#informe-operativo-plataforma-de-software-trii.co)
+* [Informe Operativo Plataforma de Software Trii](#informe-operativo-plataforma-de-software-)
 * [Evaluación del Rendimiento](#evaluación-del-rendimiento)
 * [Resultados y Conclusiones del Informe de Rendimiento](#resultados-y-conclusiones-del-informe-de-rendimiento)
 * [Anexos Técnicos](#anexos-técnicos)
@@ -19,7 +19,7 @@
 <br>
 
 ---
-title: Certificación Operativa Plataforma de Software Trii.co
+title: Certificación Operativa Plataforma de Software Trii
 subtitle: Informe Técnico
 subject: Implementación Proyecto
 author: SoftProductiva.com
@@ -45,25 +45,25 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.9519df8 - Compilación para entrega: propuestaresumen - fd84da8 - Thu, 23 Jan 2025 07:45:12 +0000
+1.a06eebd - $APP - Thu, 23 Jan 2025 14:20:30 -0500
 
 
 Versiones Anteriores
 
+1.cf371f8 - Compilación para entrega: 7eae9ad - Thu, 23 Jan 2025 07:38:01 +0000
+
+1.7eae9ad - action - Thu, 23 Jan 2025 02:36:08 -0500
+
 1.5dd277c - Compilación para entrega - Thu, 23 Jan 2025 07:31:05 +0000
 
 1.b2e183d - action - Thu, 23 Jan 2025 02:28:41 -0500
-
-1.269612b - Compilación para entrega - Thu, 23 Jan 2025 07:24:27 +0000
-
-1.c7633fd - action - Thu, 23 Jan 2025 02:23:13 -0500
 
 
 ### Realizado Por
 H. Wong, ing.
 
 ### Revisado Por
-(revisor), Trii.co
+(revisor), Trii
 
 
 
@@ -79,19 +79,19 @@ titlepage-rule-color: 360049
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Informe Operativo Plataforma de Software Trii.co
+# Informe Operativo Plataforma de Software Trii
 
-## Componentes del Informe de Rendimiento y Capacidad de la Plataforma Trii.co
+## Componentes del Informe de Rendimiento y Capacidad de la Plataforma Trii
 
 > 
 
 <br>
 
 
-![05.b.Informe. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/05.b.Informe.png){#fig:id-04abc8f16f354757a52791da825e4049 width= height=}
+![05.b.Informe. _Fuente: Propuesta de certificación operativa plataforma Trii (2025)_](images/05.b.Informe.png){#fig:id-04abc8f16f354757a52791da825e4049 width= height=}
 
-### Información General del Reporte de Rendimiento de Aplicación Trii.co
-* Nombre de la Aplicación/Sistema Probado: Servicios de Ordenes, Auth, y User Info de la Aplicación Trii.co
+### Información General del Reporte de Rendimiento de Aplicación Trii
+* Nombre de la Aplicación/Sistema Probado: Servicios de Ordenes, Auth, y User Info de la Aplicación Trii
 * Versión de la Aplicación/Sistema: Versión 2025
 * Entorno de Pruebas: infraestructura en la nube, Google Cloud, 2nd generation machine series, General-purpose workloads E2 serie, CPU Intel. Tipo de equipo: highmem, 7-14 GB.
 * Fecha/Periodo de Pruebas: 15 de enero del 2025.
@@ -108,14 +108,14 @@ Herramienta de Pruebas: K6, de Grafana Labs.
 ### Datos Específicos del Informe
 Descripción detallada de los casos de uso o flujos de usuario simulados de los servicios de Trii probados.
 
-### Pruebas de Rendimiento Servicio Get User Info de Trii.co
+### Pruebas de Rendimiento Servicio Get User Info de Trii
 El servicio Get User Info (user info) obtiene datos de trabajo del cliente previo a la orden. Requiere como mínimo actividades de autenticación, y es responsable de alimentar al servicio Ordenes.
 
 Carga de Usuarios: Cantidad de usuarios virtuales concurrentes simulados, máximo 60. 
 Duración de las Pruebas: Tiempo durante el cual se ejecutaron las pruebas, mínimo 10 minutos.
 
 #### Resultados Medidos
-Ejecución del escenario de pruebas de rendimiento descrito a continuación del servicio Get User Info (user info) de la plataforma Trii.co.
+Ejecución del escenario de pruebas de rendimiento descrito a continuación del servicio Get User Info (user info) de la plataforma Trii.
 
 > Escenarios: (100.00%) 1 scenario, 60 max VUs, 10m30s max duration (incl. graceful stop):
 > 
@@ -200,14 +200,14 @@ Con base en las 28816 iteraciones completadas y 0 interrumpidas, no hubo limitac
  
 > Calidad de la prueba: 28816 iteraciones completadas; 0 interrumpidas
 
-### Pruebas de Rendimiento Servicio Login Auth de Trii.co
+### Pruebas de Rendimiento Servicio Login Auth de Trii
 El servicio Login (auth) es responsable de dar inicio a una sesión de trabajo de un cliente Trii. Realiza como mínimo la provisión de datos necesarios a otros servicios respecto de la verificación y creación de una sesión de trabajo válida.
 
 Carga de Usuarios: Cantidad de usuarios virtuales concurrentes simulados, máximo 60.
 Duración de las Pruebas: Tiempo durante el cual se ejecutaron las pruebas, mínimo 10 minutos.
 
 #### Resultados Medidos
-Ejecución del escenario de pruebas de rendimiento descrito a continuación del servicio Login (auth) de la plataforma Trii.co.
+Ejecución del escenario de pruebas de rendimiento descrito a continuación del servicio Login (auth) de la plataforma Trii.
 
 > Escenarios: (100.00%) 1 scenario, 60 max VUs, 10m30s max duration (incl. graceful stop):
 >
@@ -295,14 +295,14 @@ Aún así, por los tiempos de rendimiento (capacidad o throughput) y la alta la 
 
 > No hubo limitaciones o condiciones conocidas durante las pruebas que podrían afectar los resultados.
 
-### Pruebas de Rendimiento Servicio Ordenes de Trii.co
+### Pruebas de Rendimiento Servicio Ordenes de Trii
 El servicio Ordenes es el más relevante para el negocio de Trii. Realiza como mínimo actividades de creación de una orden de negocio, que es la entidad de información superlativa de la plataforma.
 
 Carga de Usuarios: Cantidad de usuarios virtuales concurrentes simulados, máximo 60.
 Duración de las Pruebas: Tiempo durante el cual se ejecutaron las pruebas, mínimo 10 minutos.
 
 #### Resultados Medidos
-Ejecución del escenario de pruebas de rendimiento descrito a continuación del servicio Ordenes de la plataforma Trii.co.
+Ejecución del escenario de pruebas de rendimiento descrito a continuación del servicio Ordenes de la plataforma Trii.
 
 > Escenarios: (100.00%) 1 scenario, 60 max VUs, 10m30s max duration (incl. graceful stop):
 >
@@ -448,7 +448,7 @@ titlepage-rule-color: 360049
 
 # Evaluación del Rendimiento
 
-## Método de Evaluación del Rendimiento Actual de Trii.co
+## Método de Evaluación del Rendimiento Actual de Trii
 
 > 
 
@@ -501,7 +501,7 @@ titlepage-rule-color: 360049
 1. Todos los servicios probados (auth, user_info, fee y  ordenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14, Informe Técnico
 1. El análisis de latencia del servicio de Ordenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: cero (0) fallas en registro de actividad del sistema. Pág. 11, Informe Técnico; razón por la cual
 1. El servicio de órdenes requirió del ajuste en el  criterio de aceptación _tiempo de respuesta_: quedó en 4.5s. Pág. 10, Informe Técnico
-1. La conclusión general del rendimiento de Trii.co actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad Trii puede crecer un 400% del rendimiento actual. Pág. 15, Informe Técnico
+1. La conclusión general del rendimiento de Trii actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad Trii puede crecer un 400% del rendimiento actual. Pág. 15, Informe Técnico
 
 ### Compilación de Resultado de las Pruebas de Rendimiento
 | Prueba             | Criterio de Aceptación                                                       | Resultado                                                                                  |
@@ -519,15 +519,15 @@ titlepage-rule-color: 360049
 | Ingreso de órdenes | Tiempo de respuesta max 4.5 seg.                                             | Tiempo máximo de la transacción (iteración): max=16.74s; avg p(95/90)=4.49s                |
 | Ingreso de órdenes | Tasa procesamiento (throughput): 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 22774 total; 16.36504/s        |
 
-El resultado de las pruebas de rendimiento ejecutadas para los servicios de la Aplicación Trii.co, Login, Get User Info, Fee, Ordenes, comprueba que la capacidad operativa, en términos de rendimientos, estabilidad y respuesta, está por encima de lo generalmente aceptado por los estándares en tiempo de respuesta de aplicaciones de software empresarial, en este caso particular, de tipo web para la industria de tecnología en inversión financiera, fintech.
+El resultado de las pruebas de rendimiento ejecutadas para los servicios de la Aplicación Trii, Login, Get User Info, Fee, Ordenes, comprueba que la capacidad operativa, en términos de rendimientos, estabilidad y respuesta, está por encima de lo generalmente aceptado por los estándares en tiempo de respuesta de aplicaciones de software empresarial, en este caso particular, de tipo web para la industria de tecnología en inversión financiera, fintech.
 
 > 10 seconds is about the limit for keeping the user's attention focused on the dialogue. For longer delays, users will want to perform other tasks while waiting for the computer to finish, so they should be given feedback indicating when the computer expects to be done. Feedback during the delay is especially important if the response time is likely to be highly variable, since users will then not know what to expect. -- Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits (web).
 
 ### Conclusión General
-Teniendo de base los resultados de la actual prueba de rendimiento consignados en el Informe Técnico de Certificación Operativa Plataforma de Software Trii.co, es factible indicar que el umbral de crecimiento de la Plataforma Trii, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, podría llegar a ser de entre 4x y 5x de la carga de procesamiento real actual. Es decir, con la capacidad operativa actual, sin requerir inversión en su plan de capacidad, podría aumentar sus niveles de procesamiento en un 400% (esto es, de ~5000[^1] transacciones diarias a 22774), como mínimo, sin comprometer la estabilidad del sistema completo.
+Teniendo de base los resultados de la actual prueba de rendimiento consignados en el Informe Técnico de Certificación Operativa Plataforma de Software Trii, es factible indicar que el umbral de crecimiento de la Plataforma Trii, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, podría llegar a ser de entre 4x y 5x de la carga de procesamiento real actual. Es decir, con la capacidad operativa actual, sin requerir inversión en su plan de capacidad, podría aumentar sus niveles de procesamiento en un 400% (esto es, de ~5000[^1] transacciones diarias a 22774), como mínimo, sin comprometer la estabilidad del sistema completo.
 
 
-[^1]: Cantidad de transacciones de registro de órdenes (servicio Ordenes en este informe) tope una jornada de trabajo usual, aproximadamente 4 horas. Fuente: personal TI de Trii.co, enero del 2025.
+[^1]: Cantidad de transacciones de registro de órdenes (servicio Ordenes en este informe) tope una jornada de trabajo usual, aproximadamente 4 horas. Fuente: personal TI de Trii, enero del 2025.
 
 
 
