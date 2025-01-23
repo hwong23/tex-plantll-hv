@@ -1,8 +1,8 @@
 # Contenido
 * [Información del Documento](#información-del-documento)
 * [Informe Operativo Plataforma de Software Trii.co](#informe-operativo-plataforma-de-software-trii.co)
-* [Resultados y Conclusiones del Informe de Rendimiento](#resultados-y-conclusiones-del-informe-de-rendimiento)
-* [Anexos Técnicos](#anexos-técnicos)
+* [Anexos de la Propuesta](#anexos-de-la-propuesta)
+* [Lista de Imágenes](#lista-de-imágenes)
 
 
 <div style="page-break-before: always;"></div>
@@ -41,18 +41,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.62d6ae1 - fondos - Thu, 23 Jan 2025 00:55:14 -0500
+1.671e171 - Compilación para entrega - Thu, 23 Jan 2025 05:58:57 +0000
 
 
 Versiones Anteriores
+
+1.6c117db - Compilación para entrega - Wed, 22 Jan 2025 22:35:15 +0000
 
 1.383ab1e - Compilación para entrega - Wed, 22 Jan 2025 22:02:31 +0000
 
 1.bb25e23 - Compilación para entrega - Wed, 22 Jan 2025 21:54:26 +0000
 
 1.0c01043 - Compilación para entrega - Wed, 22 Jan 2025 21:53:22 +0000
-
-1.bdbccbe - Compilación para entrega - Wed, 22 Jan 2025 20:32:00 +0000
 
 
 ### Realizado Por
@@ -220,6 +220,14 @@ Nota: por las restricciones de ejecución conocidas al momento de la realizació
 1. La tarifa de los controles de cambio de la propuesta es de $/. 120.000 COP la hora. Incluye impuestos.
 
 
+### Resumen de Propuesta de Certificación Operativa Plataforma de Software Trii.co
+
+• 4 días trabajo
+• Requiere apoyo de un ingeniero interno de la empresa, dedicado dos días
+• El resultado son 3 informes: línea base, ejecutivo, y técnico.
+• Costo es de $1150 USD, con impuestos.
+• No incluye: por restricciones de tiempo no incluye recomendaciones de diseño/arquitectura,
+ni plan de capacidad proyección de uso infraestructura
 
 
 
@@ -235,11 +243,11 @@ titlepage-rule-color: 360049
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Resultados y Conclusiones del Informe de Rendimiento
+# Anexos de la Propuesta
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Anexos Técnicos
+# Lista de Imágenes
 
 
 1. Archivos de registro de actividad
