@@ -1,6 +1,8 @@
 # Contenido
 * [Información del Documento](#información-del-documento)
-* [Línea Base del Sistema/Aplicación](#línea-base-del-sistemaaplicación)
+* [Informe Operativo Plataforma de Software Trii.co](#informe-operativo-plataforma-de-software-trii.co)
+* [Resultados y Conclusiones del Informe de Rendimiento](#resultados-y-conclusiones-del-informe-de-rendimiento)
+* [Anexos Técnicos](#anexos-técnicos)
 
 
 <div style="page-break-before: always;"></div>
@@ -16,7 +18,7 @@
 
 ---
 title: Certificación Operativa Plataforma de Software Trii.co
-subtitle: Línea Base
+subtitle: Propuesta de Servicio
 subject: Implementación Proyecto
 author: SoftProductiva.com
 date: 2025-01-20
@@ -24,8 +26,6 @@ keywords: [Rendimiento, Métodos pruebas, Pruebas software, QA]
 geometry:
   - top=1.3in
   - bottom=1in
-  - left=0.7in
-  - right=0.7in
 fignos-cleveref: True
 fignos-plus-name: Fig.
 fignos-caption-name: Imagen
@@ -37,22 +37,22 @@ listings-no-page-break: true
 ...
 
 ## Control de Cambios
-Historia de cambios del informe.
+Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.c23344b - Compilación para entrega - Wed, 22 Jan 2025 22:50:18 +0000
+1.5608b55 - Compilación para entrega - Wed, 22 Jan 2025 23:32:26 +0000
 
 
 Versiones Anteriores
+
+1.bdbccbe - Compilación para entrega - Wed, 22 Jan 2025 20:32:00 +0000
 
 1.454b72e - propuesta-reference.docx - Wed, 22 Jan 2025 15:30:41 -0500
 
 1.0e5b81c - docx - Wed, 22 Jan 2025 15:26:38 -0500
 
 1.d8b1b11 - docx - Wed, 22 Jan 2025 14:48:05 -0500
-
-1.67b54b6 - Compilación para entrega - Tue, 21 Jan 2025 23:42:45 +0000
 
 
 ### Realizado Por
@@ -75,104 +75,206 @@ titlepage-rule-color: 360049
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Línea Base del Sistema/Aplicación
+# Informe Operativo Plataforma de Software Trii.co
 
-## Componentes del Informe de Rendimiento y Capacidad de la Plataforma Trii.co
+## Componentes de la Propuesta
 
 > 
 
 <br>
 
 
+![02.Propuesta. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/02.Propuesta.png){#fig:id-dd2f1c1c1816447380fe900b66faa8bc width= height=}
 
-### Información General de la Línea Base
-* Nombre de la Aplicación/Sistema Probado: Servicios de Ordenes, Auth, y User Info de la Aplicación Trii.co
-* Versión de la Aplicación/Sistema: Versión 2025
-* Entorno de Pruebas: infraestructura en la nube, Google Cloud, 2nd generation machine series, General-purpose workloads E2 serie, CPU Intel. Tipo de equipo: highmem, 7-14 GB.
-* Fecha/Periodo de Pruebas: 15 de enero del 2025.
-* Objetivos de las Pruebas: 
-    * Encontrar la capacidad de los servicios Servicios Ordenes, Auth, y User Info de la Aplicación por separado en número máximo de operaciones o transacciones de los servicios por unidad de tiempo.
-    * Encontrar el nivel de estabilidad de los servicios Servicios Ordenes, Auth, y User Info (tensión) de la Aplicación.
-    * Dar pautas alrededor del estrés o tensión de los servicios Servicios Ordenes, Auth, y User Info de la Aplicación por separado para determinar la holgura respecto a la demanda esperada.
-* Métricas Clave: 
-    * Capacidad (throughput) de los servicios Servicios Ordenes, Auth, y User Info 
-    * Estrés (tensión) de los servicios Servicios Ordenes, Auth, y User Info
-    * Estabilidad (Uso de CPU) de los servicios Servicios Ordenes, Auth, y User Info
-Herramienta de Pruebas: K6, de Grafana Labs.
-
-### Línea Base Servicio Get User Info de Trii.co
-El servicio Get User Info (user info) obtiene datos de trabajo del cliente previo a la orden. Requiere como mínimo actividades de autenticación, y es responsable de alimentar al servicio Ordenes.
-
-#### Valores Numéricos
-
-En condiciones operativas usuales, promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
- 
-> Tiempo máximo de la transacción (iteración): max=1.638s
-> 
-> Tiempo promedio: avg=460.499ms
-> 
-> Tiempo mínimo: min=190.9895ms 
-> 
-> Percentil 90 duración iteración: p(90)=641.992ms
-> 
-> Cantidad de transacciones/segundo (capacidad o throughput): 641.992/s
-> 
-> Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%
-> 
-> Latencia promedio: avg=227.331ms 
-> 
-> Latencia máxima: max=1.5535s
-> 
-
-### Línea Base Servicio Servicio Login Auth de Trii.co
-El servicio Login (auth) es responsable de dar inicio a una sesión de trabajo de un cliente Trii. Realiza como mínimo la provisión de datos necesarios a otros servicios respecto de la verificación y creación de una sesión de trabajo válida.
-
-#### Valores Numéricos
-
-En condiciones operativas usuales, promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
- 
-> Tiempo máximo de la transacción (iteración): max=2.3855s
->
-> Tiempo promedio: avg=115.297ms
->
-> Tiempo mínimo: min=68.7115ms
->
-> Percentil 90 duración iteración: p(90)=170.196ms
->
-> Cantidad de transacciones/segundo (capacidad o throughput): 122.975268/s
->
-> Estabilidad o Tasa de éxito de transacción: 100.00%
->
-> Latencia promedio: avg=115.037ms
->
-> Latencia máxima: max=205.088ms
->
-
-### Línea Base Servicio Ordenes de Trii.co
-El servicio Ordenes es el más relevante para el negocio de Trii. Realiza como mínimo actividades de creación de una orden de negocio, que es la entidad de información superlativa de la plataforma.
-
-#### Valores Numéricos
-
-En condiciones operativas usuales, promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
- 
-> Tiempo máximo de la transacción (iteración): max=2.9185s
->
-> Tiempo promedio: avg=2.1515s
->
-> Tiempo mínimo: min=272.844ms
->
-> Percentil 90 duración iteración: p(90)=1.8395s
->
-> Cantidad de transacciones/segundo (capacidad o throughput): 10.637276/s
->
-> Estabilidad o Tasa de éxito de transacción (iteración): 100.00%
-> 
-> Latencia promedio: avg=577.408ms
->
-> Latencia máxima: max=2.47s
->
+### Descripción de la Propuesta
+Informe de refrendo operativo de la plataforma Trii.co mediante plan de pruebas de rendimiento de software consignados en la actual propuesta.
 
 
+### Detalles Técnicos de la Propuesta
+Esta propuesta contienen los siguientes componentes técnicos.
+
+- Metas del proyecto e interesados
+- Alcance
+- Métodos
+- Entregables
+- Plan de Trabajo y cronograma propuesto
+- Consideraciones, costos y restricciones
+
+### Metas de la Propuesta
+
+1. En cuanto al método de la propuesta: presentar un plan de pruebas de rendimiento suficiente y acotado a la corroboración operativa en términos de rendimiento exigida a la plataforma Trii.co
+1. En cuanto a la necesidad: alinear el plan de pruebas de rendimiento con los condiciones requeridas de tiempo y entregables resultantes con las exigencias de los interesados de la propuesta
+
+### Alcance
+
+1. Planificación. Período inicial de definición y acuerdos de los objetivos puntuales de las pruebas de rendimiento de la plataforma Trii.co.
+1. Preparación. Lista de chequeo de estado de los entornos de trabajo disponibles de la plataforma Trii.co: hardware, software, redes, accesos, y permisos/equipo de trabajo.
+1. Alistamiento. Chequeo del estado y disponibilidad del plano de datos de entrada y de los recursos disponibles de las pruebas.
+1. Definición. Confirmación del diseño de los escenarios del tipo de pruebas consignadas en la propuesta. Identificación de otras dependencias.
+1. Verificación. Establecer los criterios y umbrales de aceptación del tipo de pruebas consignadas en la propuesta.
+1. Ejecución. Aseguramiento y ejecución del plan de pruebas consignado en esta propuesta.
+1. Alineación. Contrastar el resultado de las pruebas consignadas en esta propuesta con las metas también aquí definidas.
+
+
+### Exclusiones del Alcance
+La presenta propuesta no incluye: 
+
+1. Por restricciones de tiempo, la actual propuesta no incluye análisis ni recomendaciones de diseño/arquitectura
+1. No incluye plan de capacidad / proyección de uso infraestructura futura
+
+
+### Métodos Propuestos
+
+Lista de métodos aplicables a la propuesta seleccionados en función de los objetivos trazados.
+
+1. Marco de Trabajo Proceso de Pruebas Ágiles Testfully
+1. Método de Pruebas en V (v-model): Verificación y Validación
+1. Técnicas de Pruebas Dinámicas
+1. Tipo de Pruebas: no funcionales
+1. Alineación Comprobable de Criterios de Interesados
+1. Aplicación del Principio de Observabilidad
+1. Resultados de Prueba de Una-Página
+
+
+### Entregables de la Propuesta
+
+1. Informe de línea base del rendimiento de la plataforma Trii.co/
+1. Informe ejecutivo de refrendo de la plataforma Trii.co.
+1. Informe técnico de las pruebas de rendimiento de la plataforma Trii.co.
+
+### Plan de Trabajo
+
+1. Planificación, 4 hrs
+1. Preparación, 4 hrs
+1. Alistamiento, 8 hrs o menos (*)
+1. Definición, 8 hrs (*)
+1. Verificación, 4 hrs 
+1. Ejecución, 16 hrs
+1. Alineación, 8 hrs
+
+
+![Plan de Trabajo Propuesta Pruebas Plataforma Trii.co](images/plan.png){#fig:plan width=}
+
+
+### Cronograma de Ejecución del Plan
+
+1er día, actividades en paralelo
+- Planificación, 4 hrs
+- Preparación. 4 hrs
+- Alistamiento. 8 hrs o menos (*)
+
+2do día, actividades en paralelo
+- Definición. 8 hrs (*)
+- Verificación. 4 hrs 
+
+3er día, actividades en paralelo
+- Ejecución. 8 hrs
+- Alineación. 4 hrs
+
+4to día, actividades en paralelo
+- Ejecución. 8 hrs
+- Alineación. 4 hrs
+
+![Cronograma Propuesta Pruebas Plataforma Trii.co](images/cronograma.png){#fig:cronograma width=}
+
+
+### Propuesta Económica
+
+La presente propuesta, en los términos consignados aquí, presenta el costo de
+
+
+| Ítem                                                | Costo      | Impuestos |
+|:----------------------------------------------------|:-----------|:----------|
+| Definición, ejecución y entregables plan de pruebas | $/.4'945.000,oo COP | Sí        |
+
+
+Nota: los valores del costo de la propuesta se mantienen durante los siguientes 3 días laborales luego de su presentación a los interesados.
+
+
+### Forma de Pago de la Propuesta
+
+| Pagos        | Fracción | Hito del Plan              |
+|:-------------|:---------|:---------------------------|
+| Primer pago  | 50%      | Planificación, Preparación |
+| Segundo pago | 50%      | Ejecución                  |
+
+
+### Equipo de Trabajo
+
+| Recurso                                | Cant. | Participación | Observaciones   |
+|:---------------------------------------|:------|:--------------|:----------------|
+| Especialista encargado plan de pruebas | 1     | 100%          |                 |
+| Ingeniero apoyo a las pruebas          | 1     | 2 días        | Interno cliente |
+
+
+Nota: por las restricciones de ejecución conocidas al momento de la realización de esta propuesta es requerido un apoyo interno de la empresa cliente Trii.co con la participación indicada en la tabla.
+
+
+
+### Consideraciones Generales de la Propuesta
+
+1. Forma de pago de la propuesta: 50% al inicio, 50% al final, contraentrega.
+1. Por las restricciones propias de proyecto, requiere apoyo de un ingeniero interno de la empresa, dedicado el 50% de la duración del plan.
+1. Las estimaciones de costo, esfuerzo, tiempo, y planeación son aproximadas, y representan la intención de la propuesta con la información conocida por las partes al momento de su realización.
+1. Las extensiones en los entregables, o cambios a la propuesta se acordarán en definición y extensión por separado.
+1. La tarifa de los controles de cambio de la propuesta es de $/. 120.000 COP la hora. Incluye impuestos.
+
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Resultados y Conclusiones del Informe de Rendimiento
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Anexos Técnicos
+
+
+1. Archivos de registro de actividad
+1. Evidencia de la ocupación de recursos
+1. Referencias
+
+
+## Cronograma de Trabajo
+
+> undefined  
+
+<br>
+
+
+![cronograma. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/cronograma.png){#fig:id-c25995aaf9a249059f91f586acdbec41 width= height=}
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+## Plan de Trabajo
+
+> undefined  
+
+<br>
+
+
+![plan. _Fuente: Propuesta de certificación operativa plataforma Trii.co (2025)_](images/plan.png){#fig:id-49930878d254405eba38b006b1b9f180 width= height=}
 
 
 
