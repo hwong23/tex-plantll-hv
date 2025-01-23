@@ -422,19 +422,19 @@ Documento}\label{sec:informaciuxf3n-del-documento}
 
 Historia de cambios del informe.
 
-Versión actual: 1.5b40f7c - cfg - Thu, 23 Jan 2025 15:09:30 -0500
+Versión actual: 1.a31c2e7 - todo - Thu, 23 Jan 2025 15:19:01 -0500
 
 Versiones Anteriores
+
+1.eb6a0e9 - Revert ``Compilación para entrega: observaciones-todo -
+27d6a0e'' - Thu, 23 Jan 2025 15:05:35 -0500
+
+1.c82303c - todo - Thu, 23 Jan 2025 15:04:38 -0500
 
 1.e815062 - Compilación para entrega: observaciones-todo - 27d6a0e -
 Thu, 23 Jan 2025 20:00:12 +0000
 
 1.295f9af - \$APP - Thu, 23 Jan 2025 14:46:49 -0500
-
-1.ab0b2e7 - Compilación para entrega: observaciones-trii.co - e040c67 -
-Thu, 23 Jan 2025 19:44:26 +0000
-
-1.a06eebd - \$APP - Thu, 23 Jan 2025 14:20:30 -0500
 
 \subsubsection{Realizado Por}\label{sec:realizado-por}
 
@@ -1101,11 +1101,11 @@ trii}\label{sec:muxe9todo-de-evaluaciuxf3n-del-rendimiento-actual-de-trii}
 Actual}\label{sec:criterios-de-evaluaciuxf3n-del-rendimiento-actual}
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0980}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0441}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1127}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.6863}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0588}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0872}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0462}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1179}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.6872}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0615}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
 Prueba
@@ -1123,18 +1123,17 @@ Ambiente
 \bottomrule\noalign{}
 \endlastfoot
 Login & Auth & Concurrente, Unitaria & Percentil petición exitosa 99.9.
-Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput):
-Transacciones 2500 / hora y 40 / minuto & Dev \\
+Tiempo rspta. max 4 seg. Tasa procesamiento (throughput): Transacciones
+2500 / hora y 40 / minuto & Dev \\
 Get user info & Auth & Concurrente, Integral & Percentil petición
-exitosa 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento
-(throughput): Transacciones 2500 / hora y 40 / minuto & Dev \\
-Fee & Auth & Concurrente, Integral & Percentil petición exitosa 99.9.
-Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput):
+exitosa 99.9. Tiempo rspta. max 4 seg. Tasa procesamiento (throughput):
 Transacciones 2500 / hora y 40 / minuto & Dev \\
-Ingreso de órdenes & Órdenes & Concurrente, Integral & Percentil
-petición exitosa 99.9. Tiempo de respuesta max 4.5 seg. Tasa
-procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto &
-Dev / Prod \\
+Fee & Auth & Concurrente, Integral & Percentil petición exitosa 99.9.
+Tiempo rspta. max 4 seg. Tasa procesamiento (throughput): Transacciones
+2500 / hora y 40 / minuto & Dev \\
+Ingreso órdenes & Órdenes & Concurrente, Integral & Percentil petición
+exitosa 99.9. Tiempo rspta. max 4.5 seg. Tasa procesamiento
+(throughput): Transacciones 2500 / hora y 40 / minuto & Dev / Prod \\
 \end{longtable}
 
 En donde:

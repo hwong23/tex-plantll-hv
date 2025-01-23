@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.5b40f7c - cfg - Thu, 23 Jan 2025 15:09:30 -0500
+1.a31c2e7 - todo - Thu, 23 Jan 2025 15:19:01 -0500
 
 
 Versiones Anteriores
 
+1.eb6a0e9 - Revert "Compilación para entrega: observaciones-todo - 27d6a0e" - Thu, 23 Jan 2025 15:05:35 -0500
+
+1.c82303c - todo - Thu, 23 Jan 2025 15:04:38 -0500
+
 1.e815062 - Compilación para entrega: observaciones-todo - 27d6a0e - Thu, 23 Jan 2025 20:00:12 +0000
 
 1.295f9af - $APP - Thu, 23 Jan 2025 14:46:49 -0500
-
-1.ab0b2e7 - Compilación para entrega: observaciones-trii.co - e040c67 - Thu, 23 Jan 2025 19:44:26 +0000
-
-1.a06eebd - $APP - Thu, 23 Jan 2025 14:20:30 -0500
 
 
 ### Realizado Por
@@ -457,12 +457,12 @@ titlepage-rule-color: 360049
 
 
 ### Criterios de Evaluación del Rendimiento Actual
-| Prueba             | Svc     | Modalidad             | Criterio de Aceptación                                                                                                                     | Ambiente   |
-|--------------------|---------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------|------------|
-| Login              | Auth    | Concurrente, Unitaria | Percentil petición exitosa 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
-| Get user info      | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
-| Fee                | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo de respuesta max 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
-| Ingreso de órdenes | Órdenes | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo de respuesta max 4.5 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto | Dev / Prod |
+| Prueba          | Svc     | Modalidad             | Criterio de Aceptación                                                                                                               | Ambiente   |
+|-----------------|---------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------|------------|
+| Login           | Auth    | Concurrente, Unitaria | Percentil petición exitosa 99.9. Tiempo rspta. max 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
+| Get user info   | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rspta. max 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
+| Fee             | Auth    | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rspta. max 4 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto   | Dev        |
+| Ingreso órdenes | Órdenes | Concurrente, Integral | Percentil petición exitosa 99.9. Tiempo rspta. max 4.5 seg. Tasa procesamiento (throughput): Transacciones 2500 / hora y 40 / minuto | Dev / Prod |
 
 En donde:
 
