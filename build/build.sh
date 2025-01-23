@@ -6,7 +6,7 @@
 FECHA_COMPILACION=COMPILATION_DATE
 COMMIT=$(git log --max-count=1 --format='%h - %s - %cD')
 VERSIONES=$(git log --max-count=10 --format='1.%h - %s - %cD%n' | tail -8)
-APP=trii
+APP=Trii
 # Pandoc's configuration is specified via files of option defaults
 # located in the $PANDOC_DATA_DIR/defaults directory.
 export FECHA_COMPILACION COMMIT VERSIONES APP
