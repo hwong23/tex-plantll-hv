@@ -41,18 +41,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.671e171 - Compilación para entrega - Thu, 23 Jan 2025 05:58:57 +0000
+1.0919478 - Compilación para entrega - Thu, 23 Jan 2025 06:21:57 +0000
 
 
 Versiones Anteriores
+
+1.c23344b - Compilación para entrega - Wed, 22 Jan 2025 22:50:18 +0000
 
 1.6c117db - Compilación para entrega - Wed, 22 Jan 2025 22:35:15 +0000
 
 1.383ab1e - Compilación para entrega - Wed, 22 Jan 2025 22:02:31 +0000
 
 1.bb25e23 - Compilación para entrega - Wed, 22 Jan 2025 21:54:26 +0000
-
-1.0c01043 - Compilación para entrega - Wed, 22 Jan 2025 21:53:22 +0000
 
 
 ### Realizado Por
@@ -222,12 +222,12 @@ Nota: por las restricciones de ejecución conocidas al momento de la realizació
 
 ### Resumen de Propuesta de Certificación Operativa Plataforma de Software Trii.co
 
-• 4 días trabajo
-• Requiere apoyo de un ingeniero interno de la empresa, dedicado dos días
-• El resultado son 3 informes: línea base, ejecutivo, y técnico.
-• Costo es de $1150 USD, con impuestos.
-• No incluye: por restricciones de tiempo no incluye recomendaciones de diseño/arquitectura,
-ni plan de capacidad proyección de uso infraestructura
+* Cuatro (4) días de trabajo.
+* Requiere apoyo de un ingeniero interno de la empresa, dedicado 2 (dos) días.
+* El resultado son tres (3) informes: línea base, ejecutivo, y técnico.
+* No incluye: por restricciones de tiempo no incluye recomendaciones de diseño/arquitectura, ni plan de capacidad proyección de uso infraestructura.
+* Costo es de $/.4'945.000,oo COP, incluye impuestos.
+
 
 
 
