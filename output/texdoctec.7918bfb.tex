@@ -422,10 +422,13 @@ Documento}\label{sec:informaciuxf3n-del-documento}
 
 Historia de cambios del informe.
 
-Versión actual: 1.f16bfa7 - Compilación para entrega:
-observaciones-formato - c68b692 - Fri, 24 Jan 2025 19:51:47 +0000
+Versión actual: 1.7918bfb - Compilación para entrega:
+observaciones-formato-ml - d56d437 - Fri, 24 Jan 2025 20:00:20 +0000
 
 Versiones Anteriores
+
+1.31a91c9 - Compilación para entrega: observaciones-formato - 59144f2 -
+Thu, 23 Jan 2025 20:20:40 +0000
 
 1.a31c2e7 - todo - Thu, 23 Jan 2025 15:19:01 -0500
 
@@ -433,8 +436,6 @@ Versiones Anteriores
 Thu, 23 Jan 2025 20:10:27 +0000
 
 1.5b40f7c - cfg - Thu, 23 Jan 2025 15:09:30 -0500
-
-1.37c623f - readm - Thu, 23 Jan 2025 15:07:46 -0500
 
 \subsubsection{Realizado Por}\label{sec:realizado-por}
 
@@ -1100,31 +1101,57 @@ trii}\label{sec:muxe9todo-de-evaluaciuxf3n-del-rendimiento-actual-de-trii}
 \subsubsection{Criterios de Evaluación del Rendimiento
 Actual}\label{sec:criterios-de-evaluaciuxf3n-del-rendimiento-actual}
 
-\section{Multiline Text Table}\label{sec:multiline-text-table}
-
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3267}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2673}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4059}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0904}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0479}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1170}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.6862}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.0585}}@{}}
 \toprule\noalign{}
 \begin{minipage}[b]{\linewidth}\raggedright
-Column 1
+Prueba
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Column 2
+Svc
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
-Column 3
+Modalidad
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Criterio de Aceptación
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Ambiente
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-First line of text & This is a single line of text & Line 1 of textLine
-2 of textLine 3 of textLine 4 of text \\
-Text in the first columnMore text in the first column & First line of
-textSecond line of text & Just a single line \\
-MultilineTextHere & Another line of text & Line 1 of textLine 2 of
-textLine 3 of text \\
+Login & Auth & Unitaria Concurrente & * Percentil petición exitosa 99.9.
+& Dev \\
+& & & * Tiempo rpta máx 4 seg. & \\
+& & & * Tasa procesamiento (throughput): 2500 transacciones / hora y 40
+/ min & \\
+Get user info & Auth & Integral Concurrente & Percentil petición exitosa
+99.9. Tiempo rpta máx 4 seg. Tasa procesamiento (throughput): 2500
+transacciones / hora y 40 / min & Dev \\
+Fee & Auth & Integral Concurrente & Percentil petición exitosa 99.9.
+Tiempo rpta máx 4 seg. Tasa procesamiento (throughput): 2500
+transacciones / hora y 40 / min & Dev \\
+Ingreso órdenes & Órdenes & Integral Concurrente & Percentil petición
+exitosa 99.9. Tiempo rpta máx 4.5 seg. Tasa procesamiento (throughput):
+2500 transacciones / hora y 40 / min & Dev, Prod \\
 \end{longtable}
+
+En donde:
+
+\begin{itemize}
+\tightlist
+\item
+  Transacciones diarias: 10000/d
+\item
+  Transacciones / (10000 / 42500 / hora/h
+\item
+  Transacciones / minuto: 40/m
+\item
+  Transacciones / segundo: 4/s
+\end{itemize}
 
 \newpage
 
