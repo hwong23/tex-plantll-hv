@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.207050f - 1. Compilación para entrega: 1..1f55209 - Compilación para entrega: formato - Fri, 24 Jan 2025 20:27:11 +0000
+1.c5101dd - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Fri, 24 Jan 2025 15:31:18 -0500
 
 
 Versiones Anteriores
 
+1.759bba8 - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Fri, 24 Jan 2025 15:11:58 -0500
+
+1.441cbc6 - action - Fri, 24 Jan 2025 15:11:56 -0500
+
+1.163aba7 - Compilación para entrega: formato_ml - 3804aa1 - Fri, 24 Jan 2025 20:07:44 +0000
+
 1.7918bfb - Compilación para entrega: observaciones-formato-ml - d56d437 - Fri, 24 Jan 2025 20:00:20 +0000
-
-1.f16bfa7 - Compilación para entrega: observaciones-formato - c68b692 - Fri, 24 Jan 2025 19:51:47 +0000
-
-1.52f1f7f - Compilación para entrega: observaciones-formato - dc3b171 - Thu, 23 Jan 2025 20:35:11 +0000
-
-1.6e2dbf7 - Compilación para entrega: observaciones-formato - d5fab64 - Thu, 23 Jan 2025 20:31:39 +0000
 
 
 ### Realizado Por
@@ -462,7 +462,7 @@ titlepage-rule-color: 360049
 | Login           | Auth     | Concurrente Unitaria | Percentil petición exitosa 99.9. Tiempo rpta máx 4 seg. Tasa procesamiento (throughput): 2500 transacciones / hora y 40 / min   | Dev       |
 | Get user info   | Auth     | Concurrente Integral | Percentil petición exitosa 99.9. Tiempo rpta máx 4 seg. Tasa procesamiento (throughput): 2500 transacciones / hora y 40 / min   | Dev       |
 | Fee             | Auth     | Concurrente Integral | Percentil petición exitosa 99.9. Tiempo rpta máx 4 seg. Tasa procesamiento (throughput): 2500 transacciones / hora y 40 / min   | Dev       |
-| Ingreso órdenes | Ór-denes | Concurrente Integral | Percentil petición exitosa 99.9. Tiempo rpta máx 4.5 seg. Tasa procesamiento (throughput): 2500 transacciones / hora y 40 / min | Dev, Prod |
+| Ingreso órdenes | Órde-nes | Concurrente Integral | Percentil petición exitosa 99.9. Tiempo rpta máx 4.5 seg. Tasa procesamiento (throughput): 2500 transacciones / hora y 40 / min | Dev, Prod |
 
 En donde:
 
