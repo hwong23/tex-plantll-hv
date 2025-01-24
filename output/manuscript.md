@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.82bec0d - Compilación para entrega: 1.ad907d5.f6a8199: formato - Fri, 24 Jan 2025 22:51:50 +0000
+1.6b2bb58 - build - Fri, 24 Jan 2025 18:01:03 -0500
 
 
 Versiones Anteriores
 
-1.5467461 - Compilación para entrega: 1.74bdca0.1106881: formato - Fri, 24 Jan 2025 22:34:25 +0000
+1.6b2bb58 - build - Fri, 24 Jan 2025 18:01:03 -0500
 
-1.74bdca0 - Compilación para entrega: 1.b465aba.f48fc3e: conclusion - Fri, 24 Jan 2025 22:17:42 +0000
+1.6fcfdb7 - Compilación para entrega: 1.82bec0d.f6a8199: formato - Fri, 24 Jan 2025 22:54:51 +0000
 
-1.b465aba - action - Fri, 24 Jan 2025 15:35:42 -0500
+1.82bec0d - Compilación para entrega: 1.ad907d5.f6a8199: formato - Fri, 24 Jan 2025 22:51:50 +0000
 
-1.c276a6c - Compilación para entrega: 1.c5101dd..6e63010: formato(-) - Fri, 24 Jan 2025 20:34:00 +0000
+1.ad907d5 - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Fri, 24 Jan 2025 17:49:54 -0500
 
 
 ### Realizado Por
