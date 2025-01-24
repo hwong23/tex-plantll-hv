@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.c5101dd - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Fri, 24 Jan 2025 15:31:18 -0500
+1.b465aba - action - Fri, 24 Jan 2025 15:35:42 -0500
 
 
 Versiones Anteriores
 
+1.f472e2c - 1. Compilación para entrega: 1..1f55209 - Compilación para entrega: formato - Fri, 24 Jan 2025 20:22:40 +0000
+
+1.407a8fc - action - Fri, 24 Jan 2025 15:21:44 -0500
+
 1.759bba8 - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Fri, 24 Jan 2025 15:11:58 -0500
 
 1.441cbc6 - action - Fri, 24 Jan 2025 15:11:56 -0500
-
-1.163aba7 - Compilación para entrega: formato_ml - 3804aa1 - Fri, 24 Jan 2025 20:07:44 +0000
-
-1.7918bfb - Compilación para entrega: observaciones-formato-ml - d56d437 - Fri, 24 Jan 2025 20:00:20 +0000
 
 
 ### Realizado Por
@@ -402,8 +402,9 @@ Aún así, los tiempos de rendimiento (capacidad o throughput), 16.36504/s, y la
 
 #### Limitaciones
 
-En este escenario existieron limitaciones o condiciones conocidas del balance de Órdenes durante las pruebas que afectaron los resultados de las métricas de transacción exitosa.
- 
+En este escenario existieron limitaciones o condiciones de negocio conocidas durante las pruebas que no afectaron a la métrica de transacción exitosa: el control del balance de una orden puede arrojar un estado distinto del exitoso, estado HTTP 200. Siendo que esta condición no es un fallo sistémico, y por tanto, no afecta a la transacción, damos por exitosa las transacciones de esta prueba en términos de su procesamiento y uso de infraestructura.
+
+
 > is_status_200
 >
 > 86%: OK 9881 / ERR 1506
@@ -467,7 +468,7 @@ titlepage-rule-color: 360049
 En donde:
 
 * Transacciones diarias: 10000/d
-* Transacciones / (10000 / 42500 / hora/h
+* Transacciones por hora (10000 / 4): 2500/h
 * Transacciones / minuto: 40/m
 * Transacciones / segundo: 4/s
 
@@ -498,9 +499,9 @@ titlepage-rule-color: 360049
 
 ### Resumen y Puntos Sobresalientes de los Resultados
 
-1. Todos los servicios probados (auth, user_info, fee y órdenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14, Informe Técnico
-1. El análisis de latencia del servicio de Órdenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: cero (0) fallas en registro de actividad del sistema. Pág. 11, Informe Técnico; razón por la cual
-1. El servicio de órdenes requirió del ajuste en el  criterio de aceptación _tiempo de respuesta_: quedó en 4.5s. Pág. 10, Informe Técnico
+1. Todos los servicios probados (auth, user_info, fee y órdenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14, _Informe Técnico_
+1. El análisis de latencia del servicio de Órdenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: cero (0) fallas en registro de actividad del sistema. Pág. 11, _Informe Técnico_
+1. Los tiempos de respuesta máximo obtenidos durante las pruebas de rendimiento se enmarcan dentro generalemente aceptado para aplicaciones empresariales y del sector de la insustria fintech (no superan los 5 segundos en máxima carga). Esto incluye a transacciones complejas de trii como las del servicio de Órdenes. Pag. 14, _Informe Técnico_
 1. La conclusión general del rendimiento de trii actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad trii puede crecer un 400% del rendimiento actual. Pág. 15, Informe Técnico
 
 ### Compilación de Resultado de las Pruebas de Rendimiento
@@ -524,10 +525,15 @@ El resultado de las pruebas de rendimiento ejecutadas para los servicios de la A
 > 10 seconds is about the limit for keeping the user's attention focused on the dialogue. For longer delays, users will want to perform other tasks while waiting for the computer to finish, so they should be given feedback indicating when the computer expects to be done. Feedback during the delay is especially important if the response time is likely to be highly variable, since users will then not know what to expect. -- Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits (web).
 
 ### Conclusión General
-Teniendo de base los resultados de la actual prueba de rendimiento consignados en el Informe Técnico de Certificación Operativa Plataforma de Software trii, es factible indicar que el umbral de crecimiento de la Plataforma trii, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, podría llegar a ser de entre 4x y 5x de la carga de procesamiento real actual. Es decir, con la capacidad operativa actual, sin requerir inversión en su plan de capacidad, podría aumentar sus niveles de procesamiento en un 400% (esto es, de ~5000[^1] transacciones diarias a 22774), como mínimo, sin comprometer la estabilidad del sistema completo.
+Contexto: de acuerdo con la información proporcionada por el área de negocio, para el mes de diciembre de 2024, fueron enrutadas desde trii app a los sistemas de la comisionista aliada 7676 órdenes, lo que representa un promedio de 255.86 órdenes diarias. 
 
+Contexto: con base en el resultado de las pruebas aquí consignadas en este informe técnico es factible indicar que el umbral de crecimiento de trii app, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, puede ser de entre 4x y 5x de la carga de procesamiento real actual[^1]. Esto es correspondiente a un incremento de ~5000[^1] transacciones diarias a 22774[^2], como mínimo. Lo anterior resulta en que el crecimiento operativo de trii, en términos de los servicios probados, **es de entre el 400% y 500%**.
 
-[^1]: Cantidad de transacciones de registro de órdenes (servicio Órdenes en este informe) tope una jornada de trabajo usual, aproximadamente 4 horas. Fuente: personal TI de trii, enero del 2025.
+Por lo anterior, y teniendo en cuenta el contexto informado por trii (de 256 órdenes diarias), y que el crecimiento operativo esperado para Chile en los siguientes tres (3) años de operación es del 300%, concluimos en este informe técnico que con la capacidad operativa actual, y sin requerir aumentos de inversión de su plan de capacidad, la plataforma de la Aplicación trii cuenta con la suficiencia de soportar el cumplimiento de estas proyecciones, sin comprometer la estabilidad del sistema completo.
+
+[^1}: Al momento de la realización de este informe es de aproximadamente 5000 operaciones diarias Colombia y 256 órdenes diarias Chile.
+
+[^2}: Cantidad de transacciones/segundo (capacidad o throughput): 22774 total; 16.36504/s.
 
 
 
