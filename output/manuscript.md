@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.74bdca0 - Compilación para entrega: 1.b465aba.f48fc3e: conclusion - Fri, 24 Jan 2025 22:17:42 +0000
+1.5467461 - Compilación para entrega: 1.74bdca0.1106881: formato - Fri, 24 Jan 2025 22:34:25 +0000
 
 
 Versiones Anteriores
+
+1.96fe0af - 1. Compilación para entrega: 1..ff1de4e - Compilación para entrega: formato - Fri, 24 Jan 2025 20:29:46 +0000
 
 1.207050f - 1. Compilación para entrega: 1..1f55209 - Compilación para entrega: formato - Fri, 24 Jan 2025 20:27:11 +0000
 
 1.f472e2c - 1. Compilación para entrega: 1..1f55209 - Compilación para entrega: formato - Fri, 24 Jan 2025 20:22:40 +0000
 
 1.407a8fc - action - Fri, 24 Jan 2025 15:21:44 -0500
-
-1.759bba8 - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Fri, 24 Jan 2025 15:11:58 -0500
 
 
 ### Realizado Por
@@ -501,7 +501,7 @@ titlepage-rule-color: 360049
 
 1. Todos los servicios probados (auth, user_info, fee y órdenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14, _Informe Técnico_
 1. El análisis de latencia del servicio de Órdenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: cero (0) fallas en registro de actividad del sistema. Pág. 11, _Informe Técnico_
-1. Los tiempos de respuesta máximo obtenidos durante las pruebas de rendimiento se enmarcan dentro generalemente aceptado para aplicaciones empresariales y del sector de la insustria fintech (no superan los 5 segundos en máxima carga). Esto incluye a transacciones complejas de trii como las del servicio de Órdenes. Pag. 14, _Informe Técnico_
+1. Los tiempos de respuesta máximo obtenidos durante las pruebas de rendimiento se enmarcan dentro de lo generalmente aceptado para aplicaciones empresariales y del sector de la industria fintech (no superan los 5 segundos en máxima carga). Esto incluye a transacciones complejas de trii como las del servicio de Órdenes. Pag. 14, _Informe Técnico_
 1. La conclusión general del rendimiento de trii actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad trii puede crecer un 400% del rendimiento actual. Pág. 15, Informe Técnico
 
 ### Compilación de Resultado de las Pruebas de Rendimiento
@@ -531,9 +531,9 @@ Contexto: con base en el resultado de las pruebas aquí consignadas en este info
 
 Por lo anterior, y teniendo en cuenta el contexto informado por trii (de 256 órdenes diarias), y que el crecimiento operativo esperado para Chile en los siguientes tres (3) años de operación es del 300%, concluimos en este informe técnico que con la capacidad operativa actual, y sin requerir aumentos de inversión de su plan de capacidad, la plataforma de la Aplicación trii cuenta con la suficiencia de soportar el cumplimiento de estas proyecciones, sin comprometer la estabilidad del sistema completo.
 
-[^1}: Al momento de la realización de este informe es de aproximadamente 5000 operaciones diarias Colombia y 256 órdenes diarias Chile.
+[^1]: Al momento de la realización de este informe es de aproximadamente 5000 operaciones diarias Colombia y 256 órdenes diarias Chile.
 
-[^2}: Cantidad de transacciones/segundo (capacidad o throughput): 22774 total; 16.36504/s.
+[^2]: Cantidad de transacciones/segundo (capacidad o throughput): 22774 total; 16.36504/s.
 
 
 
