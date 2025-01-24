@@ -33,5 +33,6 @@ TODO trii.co - Por favor dejar referencia solo a trii, que por favor se debe esc
 TODO órdenes - órdenes va con tilde, por favor hacer este ajuste para todo el documento
 TODO mínimo - Esta mal separada la palabra míni-mo
 TODO redacción - No entendemos cuál es el mensaje que se quiere transmitir ya que según me comenta Felipe, los resultados de las pruebas fueron satisfactorios pero la forma en que esto está redactado parece indicar que existen limitaciones en el servicio de órdenes.
-TODO 4s - es necesario decir que se ajustó o podemos dejar el criterio inicial como 4.5 segundos?
 TODO formato - Error en el formato
+TODO 4s - es necesario decir que se ajustó o podemos dejar el criterio inicial como 4.5 segundos?
+TODO sugerencia - teniendo en cuenta que el requerimiento de la CMF pide que la certificación indique que la plataforma cuenta con la capacidad para operar durante los siguientes tres años, quiere proponerte esta redacción para la conclusión, porque tal y como está redactada, solo describe el incremento de capacidad pero no lo ata a las proyecciones de negocio, que claramente no te habíamos proporcionado hasta ahora. 
