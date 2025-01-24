@@ -21,7 +21,7 @@ jobs:
       - name: mensaje commit devocscontd
         run: |
           cd ${{github.WORKSPACE}}/devocs-contd
-          echo "COMPILATION_MENSJ=$(git log --max-count=1 --format='.%h: %s')" >> $GITHUB_ENV
+          echo "COMPILATION_MENSJ=$(git log --max-count=1 --format='%h: %s')" >> $GITHUB_ENV
           echo "COMPILATION_MENSJ: $COMPILATION_MENSJ"
       - uses: actions/checkout@v4
         name: checkout hwo-academicTempl
