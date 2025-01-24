@@ -21,7 +21,7 @@ jobs:
       - name: mensaje commit devocscontd
         run: |
           cd ${{github.WORKSPACE}}/devocs-contd
-          echo "COMPILATION_MENSJ=$(git log --max-count=1 --format='.%h - Compilación para entrega: %s')" >> $GITHUB_ENV
+          echo "COMPILATION_MENSJ=$(git log --max-count=1 --format='.%h: %s')" >> $GITHUB_ENV
           echo "COMPILATION_MENSJ: $COMPILATION_MENSJ"
       - uses: actions/checkout@v4
         name: checkout hwo-academicTempl
@@ -77,4 +77,4 @@ jobs:
             output/*.tex
       - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
-          message: '1. Compilación para entrega: 1.${{ env.COMPILATION_MENSJ }}'
+          message: 'Compilación para entrega: 1.${{env.TRIGGERING_SHA_7}}.${{ env.COMPILATION_MENSJ }}'
