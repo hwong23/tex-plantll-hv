@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.b465aba - action - Fri, 24 Jan 2025 15:35:42 -0500
+1.74bdca0 - Compilación para entrega: 1.b465aba.f48fc3e: conclusion - Fri, 24 Jan 2025 22:17:42 +0000
 
 
 Versiones Anteriores
+
+1.207050f - 1. Compilación para entrega: 1..1f55209 - Compilación para entrega: formato - Fri, 24 Jan 2025 20:27:11 +0000
 
 1.f472e2c - 1. Compilación para entrega: 1..1f55209 - Compilación para entrega: formato - Fri, 24 Jan 2025 20:22:40 +0000
 
 1.407a8fc - action - Fri, 24 Jan 2025 15:21:44 -0500
 
 1.759bba8 - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Fri, 24 Jan 2025 15:11:58 -0500
-
-1.441cbc6 - action - Fri, 24 Jan 2025 15:11:56 -0500
 
 
 ### Realizado Por
@@ -215,28 +215,28 @@ Ejecución del escenario de pruebas de rendimiento descrito a continuación del 
 >
 > logged_in_successfully
 
-|                         |                 |                      |                |                |             |
-|-------------------------|-----------------|----------------------|----------------|----------------|-------------|
-| checks                  | 100.00%         | 113667 out of 113667 |                |                |             |
-| data_received           | 57 MB           | 93 kB/s              |                |                |             |
-| data_sent               | 21 MB           | 35 kB/s              |                |                |             |
-| http_req_blocked        | avg=37.58µs     | min=9s               | p(95)=0s       | p(90)=0s       | max=92.67ms |
-| http_req_connecting     | avg=1.35µs      | min=0s               | p(95)=0s       | p(90)=0s       | max=3.66ms  |
-| http_req_duration       | avg=177.22ms    | min=105.54ms         | p(95)=315.41ms | p(90)=261.69ms | max=3.67s   |
-| { expected_response: tr | avg=177.22ms    | min=105.54ms         | p(95)=315.41ms | p(90)=261.69ms | max=3.67s   |
-| http_req_failed         | 0.00%           | 0 out of 113677      |                |                |             |
-| http_req_receiving      | avg=82.42µs     | min=9s               | p(95)=150.5µs  | p(90)=55.2µs   | max=71.71ms |
-| http_req_sending        | avg=82.9µs      | min=9s               | p(95)=569.37µs | p(90)=0s       | max=2.76ms  |
-| http_req_tls_handshakin | avg=36.3µs      | min=0s               | p(95)=0s       | p(90)=0s       | max=87.34ms |
-| http_req_waiting        | avg=176.98ms    | min=105.54ms         | p(95)=315.16ms | p(90)=261.41ms | max=3.67s   |
-| http_reqs               | 113677          | 189.19272/s          |                |                |             |
-| iteration_duration      | avg=177.38ms    | min=105.71ms         | p(95)=315.52ms | p(90)=261.84ms | max=3.67s   |
-| iterations              | 113677          | 189.19272/s          |                |                |             |
-| login_response_times    | avg=177.3086641 | min=105              | p(95)=316      | p(90)=262      | max=3675    |
-| login_success_rate      | 100.00%         | 113677 out of 113677 |                |                |             |
-| requests_sent           | 113677          | 189.19272/s          |                |                |             |
-| vus                     | 59              | min=1                |                |                |             |
-| vus_max                 | 60              | min=60               |                |                |             |
+|                       |                 |                      |                |                |             |
+|-----------------------|-----------------|----------------------|----------------|----------------|-------------|
+| checks                | 100.00%         | 113667 out of 113667 |                |                |             |
+| data_received         | 57 MB           | 93 kB/s              |                |                |             |
+| data_sent             | 21 MB           | 35 kB/s              |                |                |             |
+| http_req_blocked      | avg=37.58µs     | min=9s               | p(95)=0s       | p(90)=0s       | max=92.67ms |
+| http_req_connecting   | avg=1.35µs      | min=0s               | p(95)=0s       | p(90)=0s       | max=3.66ms  |
+| http_req_duration     | avg=177.22ms    | min=105.54ms         | p(95)=315.41ms | p(90)=261.69ms | max=3.67s   |
+| { expected_response:  | avg=177.22ms    | min=105.54ms         | p(95)=315.41ms | p(90)=261.69ms | max=3.67s   |
+| http_req_failed       | 0.00%           | 0 out of 113677      |                |                |             |
+| http_req_receiving    | avg=82.42µs     | min=9s               | p(95)=150.5µs  | p(90)=55.2µs   | max=71.71ms |
+| http_req_sending      | avg=82.9µs      | min=9s               | p(95)=569.37µs | p(90)=0s       | max=2.76ms  |
+| http_req_tls_handshak | avg=36.3µs      | min=0s               | p(95)=0s       | p(90)=0s       | max=87.34ms |
+| http_req_waiting      | avg=176.98ms    | min=105.54ms         | p(95)=315.16ms | p(90)=261.41ms | max=3.67s   |
+| http_reqs             | 113677          | 189.19272/s          |                |                |             |
+| iteration_duration    | avg=177.38ms    | min=105.71ms         | p(95)=315.52ms | p(90)=261.84ms | max=3.67s   |
+| iterations            | 113677          | 189.19272/s          |                |                |             |
+| login_response_times  | avg=177.3086641 | min=105              | p(95)=316      | p(90)=262      | max=3675    |
+| login_success_rate    | 100.00%         | 113677 out of 113677 |                |                |             |
+| requests_sent         | 113677          | 189.19272/s          |                |                |             |
+| vus                   | 59              | min=1                |                |                |             |
+| vus_max               | 60              | min=60               |                |                |             |
 
 > Running (10m00.2s), 00/60 VUs, 1136777 completed and 0 interrupted iterations
 >
