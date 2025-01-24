@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.5467461 - Compilación para entrega: 1.74bdca0.1106881: formato - Fri, 24 Jan 2025 22:34:25 +0000
+d7eba7d - Compilación para entrega: 1.5467461.17577ca: revision - Fri, 24 Jan 2025 22:39:48 +0000
 
 
 Versiones Anteriores
+
+1.8d38d55 - action 1.env.TRIGGERING_SHA_7 - Fri, 24 Jan 2025 15:31:15 -0500
 
 1.96fe0af - 1. Compilación para entrega: 1..ff1de4e - Compilación para entrega: formato - Fri, 24 Jan 2025 20:29:46 +0000
 
 1.207050f - 1. Compilación para entrega: 1..1f55209 - Compilación para entrega: formato - Fri, 24 Jan 2025 20:27:11 +0000
 
 1.f472e2c - 1. Compilación para entrega: 1..1f55209 - Compilación para entrega: formato - Fri, 24 Jan 2025 20:22:40 +0000
-
-1.407a8fc - action - Fri, 24 Jan 2025 15:21:44 -0500
 
 
 ### Realizado Por
