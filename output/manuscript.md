@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-d7eba7d - Compilación para entrega: 1.5467461.17577ca: revision - Fri, 24 Jan 2025 22:39:48 +0000
+b0f4199 - Compilación para entrega: 1.d7eba7d.3051098: metadatos - Fri, 24 Jan 2025 22:42:15 +0000
 
 
 Versiones Anteriores
+
+1.c5101dd - Merge branch '6-pruebastrii' of https://github.com/hwong23/tex-plantll-hv into 6-pruebastrii - Fri, 24 Jan 2025 15:31:18 -0500
 
 1.8d38d55 - action 1.env.TRIGGERING_SHA_7 - Fri, 24 Jan 2025 15:31:15 -0500
 
 1.96fe0af - 1. Compilación para entrega: 1..ff1de4e - Compilación para entrega: formato - Fri, 24 Jan 2025 20:29:46 +0000
 
 1.207050f - 1. Compilación para entrega: 1..1f55209 - Compilación para entrega: formato - Fri, 24 Jan 2025 20:27:11 +0000
-
-1.f472e2c - 1. Compilación para entrega: 1..1f55209 - Compilación para entrega: formato - Fri, 24 Jan 2025 20:22:40 +0000
 
 
 ### Realizado Por
@@ -502,7 +502,7 @@ titlepage-rule-color: 360049
 1. Todos los servicios probados (auth, user_info, fee y órdenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14, _Informe Técnico_
 1. El análisis de latencia del servicio de Órdenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: cero (0) fallas en registro de actividad del sistema. Pág. 11, _Informe Técnico_
 1. Los tiempos de respuesta máximo obtenidos durante las pruebas de rendimiento se enmarcan dentro de lo generalmente aceptado para aplicaciones empresariales y del sector de la industria fintech (no superan los 5 segundos en máxima carga). Esto incluye a transacciones complejas de trii como las del servicio de Órdenes. Pag. 14, _Informe Técnico_
-1. La conclusión general del rendimiento de trii actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad trii puede crecer un 400% del rendimiento actual. Pág. 15, Informe Técnico
+1. La conclusión general del rendimiento de trii actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad trii puede crecer un 400% del rendimiento actual. Pág. 15, _Informe Técnico_
 
 ### Compilación de Resultado de las Pruebas de Rendimiento
 | Prueba             | Criterio de Aceptación                                                       | Resultado                                                                                  |
