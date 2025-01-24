@@ -45,18 +45,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.52f1f7f - Compilación para entrega: observaciones-formato - dc3b171 - Thu, 23 Jan 2025 20:35:11 +0000
+1.f16bfa7 - Compilación para entrega: observaciones-formato - c68b692 - Fri, 24 Jan 2025 19:51:47 +0000
 
 
 Versiones Anteriores
+
+1.a31c2e7 - todo - Thu, 23 Jan 2025 15:19:01 -0500
 
 1.de1b246 - Compilación para entrega: observaciones-todo - 27d6a0e - Thu, 23 Jan 2025 20:10:27 +0000
 
 1.5b40f7c - cfg - Thu, 23 Jan 2025 15:09:30 -0500
 
 1.37c623f - readm - Thu, 23 Jan 2025 15:07:46 -0500
-
-1.4013e7a - trii - Thu, 23 Jan 2025 15:07:22 -0500
 
 
 ### Realizado Por
@@ -457,19 +457,15 @@ titlepage-rule-color: 360049
 
 
 ### Criterios de Evaluación del Rendimiento Actual
-| Prueba          | Svc     | Modalidad            | Criterio de Aceptación                                                                                                          | Ambiente  |
-|-----------------|---------|:---------------------|---------------------------------------------------------------------------------------------------------------------------------|-----------|
-| Login           | Auth    | Unitaria Concurrente | Percentil petición exitosa 99.9. Tiempo rpta máx 4 seg. Tasa procesamiento (throughput): 2500 transacciones / hora y 40 / min   | Dev       |
-| Get user info   | Auth    | Integral Concurrente | Percentil petición exitosa 99.9. Tiempo rpta máx 4 seg. Tasa procesamiento (throughput): 2500 transacciones / hora y 40 / min   | Dev       |
-| Fee             | Auth    | Integral Concurrente | Percentil petición exitosa 99.9. Tiempo rpta máx 4 seg. Tasa procesamiento (throughput): 2500 transacciones / hora y 40 / min   | Dev       |
-| Ingreso órdenes | Órdenes | Integral Concurrente | Percentil petición exitosa 99.9. Tiempo rpta máx 4.5 seg. Tasa procesamiento (throughput): 2500 transacciones / hora y 40 / min | Dev, Prod |
+Multiline Text Table
+===================
 
-En donde:
+| Column 1                          | Column 2                    | Column 3                                  |
+| --------------------------------- | --------------------------- | ----------------------------------------- |
+| First line of text                | This is a single line of text | Line 1 of text<br>Line 2 of text<br>Line 3 of text<br>Line 4 of text |
+| Text in the first column<br>More text in the first column | First line of text<br>Second line of text | Just a single line                        |
+| Multiline<br>Text<br>Here          | Another line of text        | Line 1 of text<br>Line 2 of text<br>Line 3 of text |
 
-* Transacciones diarias: 10000/d
-* Transacciones / (10000 / 42500 / hora/h
-* Transacciones / minuto: 40/m
-* Transacciones / segundo: 4/s
 
 
 
