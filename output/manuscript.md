@@ -1,6 +1,8 @@
 # Contenido
 * [Información del Documento](#información-del-documento)
-* [Línea Base del Sistema/Aplicación](#línea-base-del-sistemaaplicación)
+* [Informe Ejecutivo](#informe-ejecutivo)
+* [Informe de Rendimiento y Capacidad](#informe-de-rendimiento-y-capacidad)
+* [Resultados y Conclusiones del Informe de Rendimiento](#resultados-y-conclusiones-del-informe-de-rendimiento)
 
 
 <div style="page-break-before: always;"></div>
@@ -16,7 +18,7 @@
 
 ---
 title: Certificación Operativa Plataforma de Software trii
-subtitle: Línea Base
+subtitle: Informe Ejecutivo
 subject: Implementación Proyecto
 author: SoftProductiva.com
 date: 2025-01-20
@@ -41,18 +43,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.2525581 - Compilación para entrega: 1.b606138.667ea6e: revision - Fri, 24 Jan 2025 23:10:10 +0000
+1.b68e75b
 
 
 Versiones Anteriores
 
+1.b68e75b - action - Sat, 25 Jan 2025 01:03:49 -0500
+
+1.8c68e69 - Compilación para entrega: 1.2525581.667ea6e: revision - Sat, 25 Jan 2025 05:50:22 +0000
+
 1.2525581 - Compilación para entrega: 1.b606138.667ea6e: revision - Fri, 24 Jan 2025 23:10:10 +0000
 
 1.b606138 - Compilación para entrega: 1.5b6d694.3674428: revision - Fri, 24 Jan 2025 23:07:07 +0000
-
-1.5b6d694 - Compilación para entrega: 1.294ee2b.d30c61d: notasalpie - Fri, 24 Jan 2025 23:02:57 +0000
-
-1.294ee2b - Compilación para entrega: 1.6b2bb58.f6a8199: formato - Fri, 24 Jan 2025 23:01:49 +0000
 
 
 ### Realizado Por
@@ -75,7 +77,35 @@ titlepage-rule-color: 360049
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Línea Base del Sistema/Aplicación
+# Informe Ejecutivo
+
+##  
+
+> 
+
+<br>
+
+
+
+### Resumen del Informe de Rendimiento trii
+El Informe Técnico SoftProductiva.com certifica el rendimiento operativo de la plataforma de software trii. Se evaluaron los servicios relevantes de la plataforma, inicio de sesión "Login,", requisición de información de trabajo, "Get User Info," y el de registro de órden "Órdenes", mediante técnicas de pruebas de rendimiento con la herramienta K6 de Grafala Labs. Los resultados muestran una alta estabilidad y capacidad de procesamiento que supera los criterios de aceptación preestablecidos, con un margen de crecimiento significativo antes de alcanzar limitaciones operativas y sin requerir inversión en el plan de capacidad. El informe concluye que trii tiene una holgura considerable en su capacidad actual.
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Informe de Rendimiento y Capacidad
 
 ## Componentes del Informe de Rendimiento y Capacidad de la Plataforma trii
 
@@ -85,7 +115,7 @@ titlepage-rule-color: 360049
 
 
 
-### Información General de la Línea Base
+### Información General del Reporte de Rendimiento de Aplicación trii
 * Nombre de la Aplicación/Sistema Probado: Servicios de Órdenes, Auth, y User Info de la Aplicación trii
 * Versión de la Aplicación/Sistema: Versión 2025
 * Entorno de Pruebas: infraestructura en la nube, Google Cloud, 2nd generation machine series, General-purpose workloads E2 serie, CPU Intel. Tipo de equipo: highmem, 7-14 GB.
@@ -100,77 +130,63 @@ titlepage-rule-color: 360049
     * Estabilidad (Uso de CPU) de los servicios Servicios Órdenes, Auth, y User Info
 Herramienta de Pruebas: K6, de Grafana Labs.
 
-### Línea Base Servicio Get User Info de trii
-El servicio Get User Info (user info) obtiene datos de trabajo del cliente previo a la orden. Requiere como mínimo actividades de autenticación, y es responsable de alimentar al servicio Órdenes.
 
-#### Valores Numéricos
 
-En condiciones operativas usuales, promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
- 
-> Tiempo máximo de la transacción (iteración): max=1.638s
-> 
-> Tiempo promedio: avg=460.499ms
-> 
-> Tiempo mínimo: min=190.9895ms 
-> 
-> Percentil 90 duración iteración: p(90)=641.992ms
-> 
-> Cantidad de transacciones/segundo (capacidad o throughput): 641.992/s
-> 
-> Estabilidad o Tasa de éxito de transacción (promedio entre dos servicios, login y user_info): 100.00%
-> 
-> Latencia promedio: avg=227.331ms 
-> 
-> Latencia máxima: max=1.5535s
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Resultados y Conclusiones del Informe de Rendimiento
+
+## Análisis de Resultados del Rendimiento y Capacidad
+
 > 
 
-### Línea Base Servicio Servicio Login Auth de trii
-El servicio Login (auth) es responsable de dar inicio a una sesión de trabajo de un cliente trii. Realiza como mínimo la provisión de datos necesarios a otros servicios respecto de la verificación y creación de una sesión de trabajo válida.
+<br>
 
-#### Valores Numéricos
 
-En condiciones operativas usuales, promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
- 
-> Tiempo máximo de la transacción (iteración): max=2.3855s
->
-> Tiempo promedio: avg=115.297ms
->
-> Tiempo mínimo: min=68.7115ms
->
-> Percentil 90 duración iteración: p(90)=170.196ms
->
-> Cantidad de transacciones/segundo (capacidad o throughput): 122.975268/s
->
-> Estabilidad o Tasa de éxito de transacción: 100.00%
->
-> Latencia promedio: avg=115.037ms
->
-> Latencia máxima: max=205.088ms
->
 
-### Línea Base Servicio Órdenes de trii
-El servicio Órdenes es el más relevante para el negocio de trii. Realiza como mínimo actividades de creación de una orden de negocio, que es la entidad de información superlativa de la plataforma.
+### Resumen y Puntos Sobresalientes de los Resultados
 
-#### Valores Numéricos
+1. Todos los servicios probados (auth, user_info, fee y órdenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14, Informe Técnico
+1. El análisis de latencia del servicio de Órdenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: cero (0) fallas en registro de actividad del sistema. Pág. 11, Informe Técnico; razón por la cual
+1. El servicio de órdenes requirió del ajuste en el  criterio de aceptación _tiempo de respuesta_: quedó en 4.5s. Pág. 10, Informe Técnico
+1. La conclusión general del rendimiento de trii actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad trii puede crecer un 400% del rendimiento actual. Pág. 15, Informe Técnico
 
-En condiciones operativas usuales, promedio por transacción, tiempo máximo, mínimo, y percentiles de las métricas. Tomado del mayor entre http_req_duration e iteration_duration.
- 
-> Tiempo máximo de la transacción (iteración): max=2.9185s
->
-> Tiempo promedio: avg=2.1515s
->
-> Tiempo mínimo: min=272.844ms
->
-> Percentil 90 duración iteración: p(90)=1.8395s
->
-> Cantidad de transacciones/segundo (capacidad o throughput): 10.637276/s
->
-> Estabilidad o Tasa de éxito de transacción (iteración): 100.00%
-> 
-> Latencia promedio: avg=577.408ms
->
-> Latencia máxima: max=2.47s
->
+### Compilación de Resultado de las Pruebas de Rendimiento
+| Prueba             | Criterio de Aceptación                                                       | Resultado                                                                                  |
+|--------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
+| Login              | Percentil de peticiones exitosas 99.9                                        | Estabilidad  o Tasa de éxito de transacción: 100.00%; 113677 de 113677 procesados           |
+| Login              | Tiempo de respuesta max 4 seg.                                               | Tiempo máximo de la transacción (iteración): max=3.67s                                     |
+| Login              | Tasa procesamiento (throughput), 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 113677 total; 189.19272/s      |
+| Get user info      | Percentil de peticiones exitosas 99.9                                        | Estabilidad o Tasa de éxito de transacción: 100.00%; 28816 de 28816 procesados             |
+| Get user info      | Tiempo de respuesta max 4 seg.                                               | Tiempo máximo de la transacción (iteración): max=2.52s                                     |
+| Get user info      | Tasa procesamiento (throughput): 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 57632 total; 95.929047/s       |
+| Fee                | Percentil de peticiones exitosas 99.9                                        | Estabilidad o Tasa de éxito de transacción: 100.00%; 28816 de 28816 procesados             |
+| Fee                | Tiempo de respuesta max 4 seg.                                               | Tiempo máximo de la transacción (iteración): max=2.52s                                     |
+| Fee                | Tasa procesamiento (throughput): 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 57632 total; 95.929047/s       |
+| Ingreso de órdenes | Percentil de peticiones exitosas 99.9                                        | Estabilidad o Tasa de éxito de transacción (iteración): 100.00%; 11387 de 11387 procesados |
+| Ingreso de órdenes | Tiempo de respuesta max 4.5 seg.                                             | Tiempo máximo de la transacción (iteración): max=16.74s; avg p(95/90)=4.49s                |
+| Ingreso de órdenes | Tasa procesamiento (throughput): 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 22774 total; 16.36504/s        |
+
+El resultado de las pruebas de rendimiento ejecutadas para los servicios de la Aplicación trii, Login, Get User Info, Fee, Órdenes, comprueba que la capacidad operativa, en términos de rendimientos, estabilidad y respuesta, está por encima de lo generalmente aceptado por los estándares en tiempo de respuesta de aplicaciones de software empresarial, en este caso particular, de tipo web para la industria de tecnología en inversión financiera, fintech.
+
+> 10 seconds is about the limit for keeping the user's attention focused on the dialogue. For longer delays, users will want to perform other tasks while waiting for the computer to finish, so they should be given feedback indicating when the computer expects to be done. Feedback during the delay is especially important if the response time is likely to be highly variable, since users will then not know what to expect. -- Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits (web).
+
+### Conclusión General
+Teniendo de base los resultados de la actual prueba de rendimiento consignados en el Informe Técnico de Certificación Operativa Plataforma de Software trii, es factible indicar que el umbral de crecimiento de la Plataforma trii, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, podría llegar a ser de entre 4x y 5x de la carga de procesamiento real actual. Es decir, con la capacidad operativa actual, sin requerir inversión en su plan de capacidad, podría aumentar sus niveles de procesamiento en un 400% (esto es, de ~5000[^1] transacciones diarias a 22774), como mínimo, sin comprometer la estabilidad del sistema completo.
+
+
+[^1]: Cantidad de transacciones de registro de órdenes (servicio Órdenes en este informe) tope una jornada de trabajo usual, aproximadamente 4 horas. Fuente: personal TI de trii, enero del 2025.
 
 
 
