@@ -2,9 +2,9 @@
 
 
 # Set option defaults
-# COMMIT=${TRIGGERING_SHA_7}
+COMMIT=$TRIGGERING_SHA_7
 FECHA_COMPILACION=COMPILATION_DATE
-COMMIT=1.$(git log --max-count=1 --format='%h - %s - %cD')
+# COMMIT=1.$(git log --max-count=1 --format='%h - %s - %cD')
 VERSIONES=$(git log --max-count=4 --format='1.%h - %s - %cD%n')
 APP=trii
 # Pandoc's configuration is specified via files of option defaults

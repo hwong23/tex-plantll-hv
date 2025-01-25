@@ -75,6 +75,7 @@ jobs:
             output/*.pptx
             output/*.html
             output/*.tex
-      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+      - name: add-and-commit
+        uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
-          message: 'Compilación para entrega: 1.${{env.TRIGGERING_SHA_7}}.${{ env.COMPILATION_MENSJ }}'
+          message: 'Compilación para entrega: 1.${{ env.COMPILATION_MENSJ }}.${{env.TRIGGERING_SHA_7}}'
