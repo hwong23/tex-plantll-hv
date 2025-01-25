@@ -42,19 +42,18 @@ listings-no-page-break: true
 Historia de cambios del informe.
 
 
-Versión actual: 
+#### Versión actual: 
+1.df408af - Compilación para entrega: resumen (94b7a33) - Sat, 25 Jan 2025 07:15:35 +0000
+
+
+#### Versiones Anteriores
 1.2a2fcf5 - name - Sat, 25 Jan 2025 02:12:20 -0500
-
-
-Versiones Anteriores
 
 1.dd77956 - Compilación para entrega: resumen (94b7a33) - Sat, 25 Jan 2025 07:11:37 +0000
 
 1.9469721 - Compilación para entrega: resumen (94b7a33) - Sat, 25 Jan 2025 07:06:55 +0000
 
 1.d4612eb - count -5 - Sat, 25 Jan 2025 02:05:22 -0500
-
-1.b8edc09 - Compilación para entrega: resumen (94b7a33) - Sat, 25 Jan 2025 07:04:00 +0000
 
 
 ### Realizado Por
