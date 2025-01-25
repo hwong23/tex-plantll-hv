@@ -43,18 +43,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.4e6a395 - versionmsj - Sat, 25 Jan 2025 01:46:40 -0500
+1.e929055 - Compilación para entrega: version (5017140) - Sat, 25 Jan 2025 06:47:42 +0000
 
 
 Versiones Anteriores
+
+1.e929055 - Compilación para entrega: version (5017140) - Sat, 25 Jan 2025 06:47:42 +0000
 
 1.4e6a395 - versionmsj - Sat, 25 Jan 2025 01:46:40 -0500
 
 1.84ced00 - version - Sat, 25 Jan 2025 01:41:52 -0500
 
 1.6a52d9c - Compilación para entrega: version (5017140).c764ca0 - Sat, 25 Jan 2025 06:40:17 +0000
-
-1.c764ca0 - version - Sat, 25 Jan 2025 01:38:42 -0500
 
 
 ### Realizado Por
