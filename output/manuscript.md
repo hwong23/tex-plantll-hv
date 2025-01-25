@@ -43,18 +43,18 @@ Historia de cambios del informe.
 
 
 Versión actual: 
-1.e929055 - Compilación para entrega: version (5017140) - Sat, 25 Jan 2025 06:47:42 +0000
+1.7c68356 - Compilación para entrega: version (5017140) - Sat, 25 Jan 2025 06:51:41 +0000
 
 
 Versiones Anteriores
+
+1.7c68356 - Compilación para entrega: version (5017140) - Sat, 25 Jan 2025 06:51:41 +0000
 
 1.e929055 - Compilación para entrega: version (5017140) - Sat, 25 Jan 2025 06:47:42 +0000
 
 1.4e6a395 - versionmsj - Sat, 25 Jan 2025 01:46:40 -0500
 
 1.84ced00 - version - Sat, 25 Jan 2025 01:41:52 -0500
-
-1.6a52d9c - Compilación para entrega: version (5017140).c764ca0 - Sat, 25 Jan 2025 06:40:17 +0000
 
 
 ### Realizado Por
@@ -185,7 +185,7 @@ El resultado de las pruebas de rendimiento ejecutadas para los servicios de la A
 ### Conclusión General
 Contexto: de acuerdo con la información proporcionada por el área de negocio, para el mes de diciembre de 2024, fueron enrutadas desde trii app a los sistemas de la comisionista aliada 7676 órdenes, lo que representa un promedio de 255.86 órdenes diarias. 
 
-Contexto: con base en el resultado de las pruebas aquí consignadas en este informe técnico es factible indicar que el umbral de crecimiento de trii app, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, puede ser de entre 4x y 5x de la carga de procesamiento real actual[^1]. Esto es correspondiente a un incremento de ~5000 transacciones diarias a 22774[^2], como mínimo. Lo anterior resulta en que el crecimiento operativo de trii, en términos de los servicios probados, **es de entre el 400% y 500%**.
+Contexto: con base en el resultado de las pruebas aquí consignadas en este informe técnico es factible indicar que el umbral de crecimiento de trii app, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, puede ser de entre 4x y 5x de la carga de procesamiento real actual[^1]. Esto es correspondiente a un incremento de ~5000 transacciones diarias a 22774[^2], como mínimo. Lo anterior resulta en que el crecimiento operativo de trii, en términos de los servicios probados, _es de entre el 400% y 500%_.
 
 Por lo anterior, y teniendo en cuenta el contexto informado por trii (de 256 órdenes diarias), y que el crecimiento operativo esperado para Chile en los siguientes tres (3) años de operación es del 300%, concluimos en este informe técnico que con la capacidad operativa actual, y sin requerir aumentos de inversión de su plan de capacidad, la plataforma de la Aplicación trii cuenta con la suficiencia de soportar el cumplimiento de estas proyecciones, sin comprometer la estabilidad del sistema completo.
 
