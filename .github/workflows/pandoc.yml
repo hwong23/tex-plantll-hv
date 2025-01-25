@@ -47,7 +47,7 @@ jobs:
           tar -xvf pandoc-crossref-Linux.tar.xz
           sudo mv pandoc-crossref /usr/bin
       - uses: actions/cache@v3
-        name: Tectonic Cache
+        name: tectonic Cache
         with:
           path: ~/.cache/Tectonic
           key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
