@@ -12,6 +12,10 @@ jobs:
           echo "TRIGGERING_SHA_7=${TRIGGERING_SHA::7}" >> $GITHUB_ENV
           echo "COMPILATION_DATE=$(date +'%d %b %Y')" >> $GITHUB_ENV
           echo "TRIGGERING_SHA: $TRIGGERING_SHA"
+      - name: Set Environment
+        uses: actions/setup-python@v2
+        with:
+            python-version: 3.12
       - uses: actions/checkout@v4
         name: checkout devocscontd
         with:
