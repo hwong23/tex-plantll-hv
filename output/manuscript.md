@@ -43,19 +43,19 @@ Historia de cambios del informe.
 
 
 #### Versión actual
-1.aec6269 - pip3 - Thu, 30 Jan 2025 22:01:40 +0000
+1.36f9ce6 - pip3 - Thu, 30 Jan 2025 22:05:32 +0000
 
 
 #### Versiones Anteriores
 :
 
+1.d77d106 - Compilación para entrega: titulos_: (b254be9) - Thu, 30 Jan 2025 22:02:36 +0000
+
+1.aec6269 - pip3 - Thu, 30 Jan 2025 22:01:40 +0000
+
 1.4a75853 - devcntnr - Thu, 30 Jan 2025 21:31:56 +0000
 
 1.dc2e3d6 - name - Sat, 25 Jan 2025 02:23:20 -0500
-
-1.de13346 - Compilación para entrega: titulos_: (b254be9) - Sat, 25 Jan 2025 07:22:53 +0000
-
-1.3746eb6 - Compilación para entrega: titulos_vrs (034ae33) - Sat, 25 Jan 2025 07:17:20 +0000
 
 
 ### Realizado Por
