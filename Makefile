@@ -57,7 +57,8 @@ doctec-html:
 	--toc)
 	
 doctec-ppt:
-	(pandoc -r $(OPTIONS) $(CONTD)/ppt/*.md \
+	(sh build/build.sh $(CONTD)/ppt)
+	(pandoc -r $(OPTIONS) \
 	--resource-path=$(CONTD)/ppt \
 	--defaults=./$(CONFIG)/defaults.yaml \
 	--defaults=./$(CONFIG)/ppthtml.yaml \
