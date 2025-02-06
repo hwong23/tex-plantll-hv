@@ -59,7 +59,7 @@ doctec-html:
 
 ppt-html:
 	(cd presentation && \
-	pandoc --defaults=./../defaults.yaml --defaults=html.yaml)
+	pandoc --defaults=./../defaults.yaml --defaults=ppthtml.yaml)
 
 ppt-pdf:
 	(cd presentation && \

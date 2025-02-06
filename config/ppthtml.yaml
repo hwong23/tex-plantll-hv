@@ -1,5 +1,5 @@
-# input-files: [presentation.md]
-log-file: presentation.log
-output-file: presentation-${TRIGGERING_SHA_7}.html
+input-file: output/manuscript.md
+log-file: output/pptdoctec.log
+output-file: output/pptdoctec-${TRIGGERING_SHA_7}.html
 to: revealjs
 slide-level: 2
