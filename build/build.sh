@@ -6,6 +6,7 @@
 FECHA_COMPILACION=COMPILATION_DATE
 COMMIT=1.$(git log --max-count=1 --format='%h - %s - %cD')
 VERSIONES=$(git log --max-count=5 --format='1.%h - %s - %cD%n' | tail -8)
+CLIENTE="Banco Mundial de la Mujer"
 APP=BMM
 TITULO="Propuesta de Servicios Banco Mundo Mujer"
 SUBTITULO="Proyecto de Evaluación y Hoja de Ruta Arquitectura"
