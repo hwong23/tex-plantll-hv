@@ -9,7 +9,7 @@ VERSIONES=$(git log --max-count=5 --format='1.%h - %s - %cD%n' | tail -8)
 CLIENTE="Banco Mundial de la Mujer"
 APP="Canal Bancario Whatsapp"
 TITULO="Propuesta de Servicios Banco Mundo Mujer"
-SUBTITULO="Proyecto de Evaluación y Hoja de Ruta Arquitectura"
+SUBTITULO="Evaluación y Hoja de Ruta de la Arquitectura del Canal Bancario Whatsapp"
 # Pandoc's configuration is specified via files of option defaults
 # located in the $PANDOC_DATA_DIR/defaults directory.
 export FECHA_COMPILACION COMMIT VERSIONES CLIENTE APP TITULO SUBTITULO
