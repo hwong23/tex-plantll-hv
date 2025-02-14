@@ -43,19 +43,19 @@ Historia de cambios del informe.
 
 
 #### Versión actual
-1.df06659 - pandoc-docx-pagebreakpy - Thu, 30 Jan 2025 22:09:17 +0000
+1.73e93cd - Compilación para entrega: titulos_: (b254be9) - Thu, 30 Jan 2025 22:10:19 +0000
 
 
 #### Versiones Anteriores
 :
+
+1.df06659 - pandoc-docx-pagebreakpy - Thu, 30 Jan 2025 22:09:17 +0000
 
 1.fb6aad4 - Compilación para entrega: titulos_: (b254be9) - Thu, 30 Jan 2025 22:06:41 +0000
 
 1.36f9ce6 - pip3 - Thu, 30 Jan 2025 22:05:32 +0000
 
 1.d77d106 - Compilación para entrega: titulos_: (b254be9) - Thu, 30 Jan 2025 22:02:36 +0000
-
-1.aec6269 - pip3 - Thu, 30 Jan 2025 22:01:40 +0000
 
 
 ### Realizado Por
