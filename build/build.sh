@@ -12,7 +12,7 @@ TITULO="Propuesta de Servicios Banco Mundo Mujer"
 SUBTITULO="Proyecto de Evaluación y Hoja de Ruta Arquitectura"
 # Pandoc's configuration is specified via files of option defaults
 # located in the $PANDOC_DATA_DIR/defaults directory.
-export FECHA_COMPILACION COMMIT VERSIONES APP
+export FECHA_COMPILACION COMMIT VERSIONES CLIENTE APP TITULO SUBTITULO
 
 
 # sustituye las variables SHELL en los archivos MD
