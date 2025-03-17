@@ -6,8 +6,48 @@ jobs:
   tx_pandoc:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Install pandoc and pandoc-crossref
+      - name: Set Environment Variables
+        run: |
+          TRIGGERING_SHA=${GITHUB_PULL_REQUEST_SHA:-$GITHUB_SHA}
+          echo "TRIGGERING_SHA_7=${TRIGGERING_SHA::7}" >> $GITHUB_ENV
+          echo "COMPILATION_DATE=$(date +'%d %b %Y')" >> $GITHUB_ENV
+          echo "TRIGGERING_SHA: $TRIGGERING_SHA"
+      - name: Set Environment
+        uses: actions/setup-python@v2
+        with:
+            python-version: 3.12
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip3 install git+https://github.com/pandocker/pandoc-docx-pagebreak-py
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: checkout devocscontd
+        uses: actions/checkout@v4
+        with:
+            repository: hwong23/devocs-contd
+            ref: ${{github.ref}}
+            path: devocs-contd
+      - name: mensaje commit devocscontd
+        run: |
+          cd ${{github.WORKSPACE}}/devocs-contd
+          echo "COMPILATION_MENSJ=$(git log --max-count=1 --format='%s (%h)')" >> $GITHUB_ENV
+          echo "COMPILATION_MENSJ: $COMPILATION_MENSJ"
+      - name: checkout hwo-academicTempl
+        uses: actions/checkout@v4
+        with:
+            repository: hwong23/hwo-academicTempl
+            ref: ${{github.ref}}
+            path: hwo-academicTempl
+      - name: mv devocscontd hwo-academicTempl
+        run: |
+          mv ${{github.WORKSPACE}}/devocs-contd ~/devocs-contd
+          mv ${{github.WORKSPACE}}/hwo-academicTempl ~/hwo-academicTempl
+      - name: actions/checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - name: install pandoc and pandoc-crossref
         run: |
           wget https://github.com/jgm/pandoc/releases/download/3.1.8/pandoc-3.1.8-1-amd64.deb
           sudo dpkg -i pandoc-3.1.8-1-amd64.deb
@@ -15,24 +55,27 @@ jobs:
           wget https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.17.0/pandoc-crossref-Linux.tar.xz
           tar -xvf pandoc-crossref-Linux.tar.xz
           sudo mv pandoc-crossref /usr/bin
-      - uses: actions/cache@v3
-        name: Tectonic Cache
+      - name: tectonic Cache
+        uses: actions/cache@v3
         with:
           path: ~/.cache/Tectonic
           key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
           restore-keys: |
             ${{ runner.os }}-tectonic-
-      - uses: wtfjoke/setup-tectonic@v3
+      - name: wtfjoke/setup-tectonic
+        uses: wtfjoke/setup-tectonic@v3
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           biber-version: 2.17
-      - name: Make all
+      - name: make doctec
         run: |
           export APPIMAGE_EXTRACT_AND_RUN=1
-          make all
-      - name: Run Tectonic
-        run: tectonic output/*.tex
-      - name: Upload pdf/artifact
+          CONTD=~/devocs-contd/contd
+          make doctec CONTD=$CONTD  #configurar-flujo
+      - name: run Tectonic
+        run: | 
+          tectonic ./output/*.tex
+      - name: upload pdf/artifact
         uses: actions/upload-artifact@v4
         with:
           name: output artifacts
@@ -42,6 +85,7 @@ jobs:
             output/*.pptx
             output/*.html
             output/*.tex
-      - uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
+      - name: add-and-commit
+        uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
-          message: 'GitHub action artefacts added'
+          message: 'Compilación para entrega: ${{ env.COMPILATION_MENSJ }}'
