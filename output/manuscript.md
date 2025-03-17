@@ -1,14 +1,10 @@
-# Contenido
-* [Información del Documento](#información-del-documento)
-* [Informe Ejecutivo](#informe-ejecutivo)
-* [Informe de Rendimiento y Capacidad](#informe-de-rendimiento-y-capacidad)
-* [Resultados y Conclusiones del Informe de Rendimiento](#resultados-y-conclusiones-del-informe-de-rendimiento)
-
 
 <div style="page-break-before: always;"></div>
 \newpage
 
 # Información del Documento
+
+Esta es la doc del grupo.
 
 ## Versión del Documento
 
@@ -17,52 +13,55 @@
 <br>
 
 ---
-title: Certificación Operativa Plataforma de Software trii
-subtitle: Informe Ejecutivo
-subject: Implementación Proyecto
+title: Propuesta de Servicios Banco Mundo Mujer
+subtitle: Evaluación y Hoja de Ruta de la Arquitectura del Canal Bancario Whatsapp
+subject: Proyecto de Evaluación y Hoja de Ruta Arquitectura
 author: SoftProductiva.com
 date: 2025-01-20
-keywords: [Rendimiento, Métodos pruebas, Pruebas software, QA]
+keywords: [Arquitectura, Evaluación, Diseño, Hoja de ruta, Transición]
 geometry:
   - top=1.3in
   - bottom=1in
-  - left=0.7in
-  - right=0.7in
+  - left=1in
+  - right=1in
 fignos-cleveref: True
 fignos-plus-name: Fig.
 fignos-caption-name: Imagen
 tablenos-caption-name: Tabla
-titlepage-background: include/background.pdf
+titlepage-background: include/background2.pdf
 titlepage-logo: include/logo.png
 logo-width: 60mm
 listings-no-page-break: true
 ...
 
 ## Control de Cambios
-Historia de cambios del informe.
+Historia de cambios de la propuesta.
 
 
-#### Versión actual
-1.df06659 - pandoc-docx-pagebreakpy - Thu, 30 Jan 2025 22:09:17 +0000
+Versión actual: 
+1.1ee976b - pdfyml - Mon, 17 Mar 2025 06:03:02 -0500 
 
 
-#### Versiones Anteriores
-:
+Versiones Anteriores
 
-1.fb6aad4 - Compilación para entrega: titulos_: (b254be9) - Thu, 30 Jan 2025 22:06:41 +0000
+1.1b82157 - pdfyml - Mon, 17 Mar 2025 05:58:14 -0500
 
-1.36f9ce6 - pip3 - Thu, 30 Jan 2025 22:05:32 +0000
+1.54a0299 - accion - Mon, 17 Mar 2025 05:33:46 -0500
 
-1.d77d106 - Compilación para entrega: titulos_: (b254be9) - Thu, 30 Jan 2025 22:02:36 +0000
+1.025ce99 - contd/ruta - Sat, 8 Mar 2025 00:22:40 -0500
 
-1.aec6269 - pip3 - Thu, 30 Jan 2025 22:01:40 +0000
+1.3a8fbed - titulo - Fri, 14 Feb 2025 13:17:17 -0500
 
 
 ### Realizado Por
 H. Wong, ing.
 
 ### Revisado Por
-(revisor), trii
+(revisor), Canal Bancario Whatsapp
+
+
+El Miedo a la Política (Superar)
+	A. Laje (2024). Globalismo. (Extracto. Pág. 551)
 
 
 
@@ -75,10 +74,319 @@ titlepage-rule-color: 360049
 ...
 
 
+
+
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Informe Ejecutivo
+# Servicios de Ingeniería Canal Bancario Whatsapp Banco Mundial de la Mujer
+
+## Descripción de la Propuesta
+
+> 
+
+<br>
+
+Consultoría de ingeniería y mejoramiento del canal bancario textual Whatsapp del Banco Mundo Mujer (BMM), con extensión a sistemas externos, legados y proveedores tecnológicos relacionados con la arquitectura del canal.
+
+
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+
+## Detalles Técnicos de la Propuesta
+
+> 
+
+<br>
+
+Esta propuesta contienen los siguientes componentes técnicos.
+
+- Metas del proyecto
+- Alcance
+- Métodos
+- Entregables
+- Plan de trabajo
+- Propuesta económica
+- Consideraciones y restricciones
+
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+
+## Metas de la Propuesta
+
+> 
+
+<br>
+
+
+1. **Diagnóstico**. Hallazgos relevantes de la arquitectura del Canal Bancario Whatsapp. Presentar puntos de cambios relevantes resultado del análisis de la arquitectura de solución actual del canal de banca Whatsapp (chat) del Banco Mundial de la Mujer categorizados en varias perspectivas, como la funcional, técnica y operativa.
+1. **Hoja de Ruta**. Lista de cambios y gestión de cambios de la de la arquitectura del Canal Bancario Whatsapp**. Desarrollar la hoja de ruta de los cambios derivados del objetivo no. 1, Hallazgos relevantes de la arquitectura, con una priorización planteada mediante criterio críticos de factibilidad e impacto a Banco Mundial de la Mujer.
+
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+
+## Alcance
+
+> 
+
+<br>
+
+
+1. Diagnóstico. Evaluación de la arquitectura del Canal Bancario Whatsapp del Banco Mundial de la Mujer que resulta en puntos de cambios accionables de la arquitectura del Canal Bancario Whatsapp. 
+1. Diseño de hoja de ruta de transformación. Planteamiento de transición de la arquitectura del Canal Bancario Whatsapp mediante lista de cambios priorizados sobre la arquitectura del canal.
+
+### Exclusiones del Alcance
+La presenta propuesta no incluye: 
+
+1. Por restricciones de tiempo, la actual propuesta no incluye análisis ni recomendaciones de diseño a arquitectura distintas a las del Canal Bancario Whatsapp.
+1. No incluye plan de capacidad ni proyección de uso infraestructura futura de la arquitectura del Canal Bancario Whatsapp.
+1. No incluye la provisión de infraestructura para las soluciones derivadas de este proyecto.
+1. No incluye soporte ni mantenimiento posterior a la realización de este proyecto.
+
+
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+
+## Método Propuesto
+
+>   
+
+<br>
+
+
+1. Planificación. Período inicial de definición y acuerdos de los objetivos puntuales de las evaluación de la arquitectura del Canal Bancario Whatsapp.
+1. Preparación y Alistamiento. Lista de chequeo de recursos, personas y procesos relacionadas con las vistas de arquitectura del Canal Bancario Whatsapp, como las vistas funcional, técnica, despliegues, y otras.
+1. Definición. Confirmación del diseño de los escenarios de evaluación de la arquitectura del Canal Bancario Whatsapp. Identificación de otras dependencias entre escenarios.
+1. Diagnóstico. Profundización del detalle de la información, ejecución de los métodos seleccionados para la evaluación de la arquitectura, y documentación reproducible de los resultados.
+1. Verificación. Contrastar el resultado preliminar de los escenarios de evaluación de la arquitectura del Canal Bancario Whatsapp contra el método de evaluación.
+1. Divulgación de Resultados y Entregables. (luego de la verificación) Explicar el resultado general de la evaluación de los escenarios de la arquitectura del Canal Bancario Whatsapp y discrepancias con umbrales de aceptación.
+1. Diseño de Hoja de Ruta. Preparación, alistamiento y priorización de las transiciones de la arquitectura del Canal Bancario Whatsapp (hoja de ruta).
+1. Divulgación de Resultados y Entregables Finales. Compilación de artefactos, documentación técnica y divulgación de conocimiento del resultado de diagnóstico y de la hoja de ruta priorizada de la arquitectura del Canal Bancario Whatsapp.
+
+![02.1c.Metodo. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Canal Bancario Whatsapp Banco Mundial de la Mujer (2025)_](images/02.1c.Metodo.png){#fig:id-ecb3efe1a4e14dd389ece75370f1861c width= height=}
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+
+## Entregables de la Propuesta
+
+> 
+
+<br>
+
+
+1. Evaluación de la arquitectura del Canal Bancario Whatsapp del Banco Mundial de la Mujer. Listado de hallazgos relevantes y accionables de la arquitectura desde las perspectivas rendimiento, funcional-negocio, y operativa (esta perspectiva incluye a los métodos de construcción, pruebas y transición).
+1. Hoja de ruta de las cambios requeridos y transformaciones para el mejoramiento de la arquitectura de Canal Bancario Whatsapp. Instrumento para la gestieon de cambios priorizados y planeación de la entrega de las transición de la arquitectura de Canal Bancario Whatsapp del Banco Mundial de la Mujer.
+
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Aspectos Técnicos de la Propuesta
+
+## Plan de Trabajo
+
+>   
+
+<br>
+
+El plan de trabajo propuesto consta de dos fases consecutivas que inician a partir de la aceptación y formalización de la actual propuesta. La Fase I, llamada en esta propuesta el diagnóstico y evaluación de la arquitectura; y la Fase II, destinada al diseño de la hoja de ruta de transformación de la arquitectura del Canal Bancario Whatsapp. 
+
+En detalle cada fase del proyecto:
+
+1. Día 1 al 15. Diagnóstico y evaluación de la arquitectura del Canal Bancario Whatsapp, incluye planificación, preparación, diagnóstico, documentación técnica, y divulgación: estimada en 15 días de trabajo.
+
+1. Día 16 al 20. Diseño de hoja de ruta de transformación de la arquitectura del Canal Bancario Whatsapp, incluye diseño de hoja de ruta, ejecución transiciones, gestión de cambios, documentación técnica, divulgación: estimada en 5 días de trabajo.
+
+## Plazo de Ejecución
+Por lo anterior, el total de la duración del proyecto es de un (1) mes laboral.
+
+
+![02.1e1.Plan. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Canal Bancario Whatsapp Banco Mundial de la Mujer (2025)_](images/02.1e1.Plan.png){#fig:id-650dca2ba0114dca99ad6302b8ed6dc7 width= height=}
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+
+## Propuesta Económica
+
+> 
+
+<br>
+
+
+A la presente propuesta, en los términos consignados aquí, le corresponde la siguiente propuesta económica.
+
+
+| Ítem                                           | Valor (COP $/.) | IVA (19%)    | Total        |
+|------------------------------------------------|-----------------|--------------|--------------|
+| Evaluación y hoja de ruta de arquitectura Canal Bancario Whatsapp | $ 62'000,000    | $ 11'400.000 | $ 71'400.000 |
+| Descuento del 10% Cliente Primera Vez          | $ 6.000.000     | $ 1.140.000  | $ 7.140.000  |
+| TOTAL                                          | $ 54.000.000    | $ 10.260.000 | $ 64.260.000 |
+
+Nota: los valores del costo de la propuesta se mantienen durante los siguientes 10 días laborales luego de su presentación a los interesados.
+
+
+### Forma de Pago de la Propuesta
+
+| Pagos        | Fracción | Hito del Plan                 |
+|:-------------|:---------|:------------------------------|
+| Primer pago  | 50%      | Evaluación de la arquitectura |
+| Segundo pago | 50%      | Hoja de Ruta Priorizada       |
+
+
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+
+## Equipo de Trabajo
+
+> 
+
+<br>
+
+El equipo de trabajo requerido para el cumplimiento del alcance, metas y entregables de la actual propuesta será provisto por el proponente.
+
+Por las restricciones de ejecución usuales en este tipo de proyectos es requerido apoyo interno de la empresa cliente del Canal Bancario Whatsapp. 
+
+El nivel de participación en el proyecto y el rol del recurso interno se acuerdan a conveniencia de las partes, cliente y proponente.
+
+
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+
+## Consideraciones Importantes
+
+> 
+
+<br>
+
+
+1. Forma de pago de la propuesta: 50% al final del primer entregables, 50% al final del segundo entregable.
+1. Por las restricciones propias de proyecto la ejecución de este proyecto requiere apoyo de un ingeniero interno de la empresa, dedicado el tiempo convenido entre las partes.
+1. Las estimaciones de costo, esfuerzo, tiempo, y planeación son aproximadas, y representan la intención de la propuesta basada en la información conocida por las partes al momento de su realización.
+1. Las extensiones en los entregables, o cambios a la propuesta se acordarán en definiciones y extensiones por separado.
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+...
+
+
+
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Resumen de la Propuesta
 
 ##  
 
@@ -87,112 +395,13 @@ titlepage-rule-color: 360049
 <br>
 
 
-
-### Resumen del Informe de Rendimiento trii
-El Informe Técnico SoftProductiva.com certifica el rendimiento operativo de la plataforma de software trii. Se evaluaron los servicios relevantes de la plataforma, inicio de sesión "Login,", requisición de información de trabajo, "Get User Info," y el de registro de órden "Órdenes", mediante técnicas de pruebas de rendimiento con la herramienta K6 de Grafala Labs. Los resultados muestran una alta estabilidad y capacidad de procesamiento que supera los criterios de aceptación preestablecidos, con un margen de crecimiento significativo antes de alcanzar limitaciones operativas y sin requerir inversión en el plan de capacidad. El informe concluye que trii tiene una holgura considerable en su capacidad actual.
-
-
-
-
-
-
----
-lang: en
-titlepage: true
-titlepage-rule-color: 360049
-...
-
-
-<div style="page-break-before: always;"></div>
-\newpage
-
-# Informe de Rendimiento y Capacidad
-
-## Componentes del Informe de Rendimiento y Capacidad de la Plataforma trii
-
-> 
-
-<br>
-
-
-
-### Información General del Reporte de Rendimiento de Aplicación trii
-* Nombre de la Aplicación/Sistema Probado: Servicios de Órdenes, Auth, y User Info de la Aplicación trii
-* Versión de la Aplicación/Sistema: Versión 2025
-* Entorno de Pruebas: infraestructura en la nube, Google Cloud, 2nd generation machine series, General-purpose workloads E2 serie, CPU Intel. Tipo de equipo: highmem, 7-14 GB.
-* Fecha/Periodo de Pruebas: 15 de enero del 2025.
-* Objetivos de las Pruebas: 
-    * Encontrar la capacidad de los servicios Servicios Órdenes, Auth, y User Info de la Aplicación por separado en número máximo de operaciones o transacciones de los servicios por unidad de tiempo.
-    * Encontrar el nivel de estabilidad de los servicios Servicios Órdenes, Auth, y User Info (tensión) de la Aplicación.
-    * Dar pautas alrededor del estrés o tensión de los servicios Servicios Órdenes, Auth, y User Info de la Aplicación por separado para determinar la holgura respecto a la demanda esperada.
-* Métricas Clave: 
-    * Capacidad (throughput) de los servicios Servicios Órdenes, Auth, y User Info 
-    * Estrés (tensión) de los servicios Servicios Órdenes, Auth, y User Info
-    * Estabilidad (Uso de CPU) de los servicios Servicios Órdenes, Auth, y User Info
-Herramienta de Pruebas: K6, de Grafana Labs.
-
-
-
-
-
-
----
-lang: en
-titlepage: true
-titlepage-rule-color: 360049
-...
-
-
-<div style="page-break-before: always;"></div>
-\newpage
-
-# Resultados y Conclusiones del Informe de Rendimiento
-
-## Análisis de Resultados del Rendimiento y Capacidad
-
-> 
-
-<br>
-
-
-
-### Resumen y Puntos Sobresalientes de los Resultados
-
-1. Todos los servicios probados (auth, user_info, fee y órdenes) pasaron los criterios de aceptación de estabilidad, tiempo de respuesta, y capacidad de cómputo (throughput). Pag. 14, _Informe Técnico_
-1. El análisis de latencia del servicio de Órdenes indica una alta posibilidad de que exista un cuello botella, pero no afecta la estabilidad del servicio: cero (0) fallas en registro de actividad del sistema. Pág. 11, _Informe Técnico_
-1. Los tiempos de respuesta máximo obtenidos durante las pruebas de rendimiento se enmarcan dentro de lo generalmente aceptado para aplicaciones empresariales y del sector de la industria fintech (no superan los 5 segundos en máxima carga). Esto incluye a transacciones complejas de trii como las del servicio de Órdenes. Pag. 14, _Informe Técnico_
-1. La conclusión general del rendimiento de trii actual,  'como está’, sin inversión de capacidad, presenta holgura del 4x. Es decir, sin cambios en el plan de capacidad trii puede crecer un 400% del rendimiento actual. Pág. 15, _Informe Técnico_
-
-### Compilación de Resultado de las Pruebas de Rendimiento
-| Prueba             | Criterio de Aceptación                                                       | Resultado                                                                                  |
-|--------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|
-| Login              | Percentil de peticiones exitosas 99.9                                        | Estabilidad  o Tasa de éxito de transacción: 100.00%; 113677 de 113677 procesados           |
-| Login              | Tiempo de respuesta max 4 seg.                                               | Tiempo máximo de la transacción (iteración): max=3.67s                                     |
-| Login              | Tasa procesamiento (throughput), 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 113677 total; 189.19272/s      |
-| Get user info      | Percentil de peticiones exitosas 99.9                                        | Estabilidad o Tasa de éxito de transacción: 100.00%; 28816 de 28816 procesados             |
-| Get user info      | Tiempo de respuesta max 4 seg.                                               | Tiempo máximo de la transacción (iteración): max=2.52s                                     |
-| Get user info      | Tasa procesamiento (throughput): 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 57632 total; 95.929047/s       |
-| Fee                | Percentil de peticiones exitosas 99.9                                        | Estabilidad o Tasa de éxito de transacción: 100.00%; 28816 de 28816 procesados             |
-| Fee                | Tiempo de respuesta max 4 seg.                                               | Tiempo máximo de la transacción (iteración): max=2.52s                                     |
-| Fee                | Tasa procesamiento (throughput): 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 57632 total; 95.929047/s       |
-| Ingreso de órdenes | Percentil de peticiones exitosas 99.9                                        | Estabilidad o Tasa de éxito de transacción (iteración): 100.00%; 11387 de 11387 procesados |
-| Ingreso de órdenes | Tiempo de respuesta max 4.5 seg.                                             | Tiempo máximo de la transacción (iteración): max=16.74s; avg p(95/90)=4.49s                |
-| Ingreso de órdenes | Tasa procesamiento (throughput): 2500 transacciones por hora y 40 por minuto | Cantidad de transacciones/segundo (capacidad o throughput): 22774 total; 16.36504/s        |
-
-El resultado de las pruebas de rendimiento ejecutadas para los servicios de la Aplicación trii, Login, Get User Info, Fee, Órdenes, comprueba que la capacidad operativa, en términos de rendimientos, estabilidad y respuesta, está por encima de lo generalmente aceptado por los estándares en tiempo de respuesta de aplicaciones de software empresarial, en este caso particular, de tipo web para la industria de tecnología en inversión financiera, fintech.
-
-> 10 seconds is about the limit for keeping the user's attention focused on the dialogue. For longer delays, users will want to perform other tasks while waiting for the computer to finish, so they should be given feedback indicating when the computer expects to be done. Feedback during the delay is especially important if the response time is likely to be highly variable, since users will then not know what to expect. -- Nielsen, J. (1993). Usability Engineering. Response Times: The 3 Important Limits (web).
-
-### Conclusión General
-Contexto: de acuerdo con la información proporcionada por el área de negocio, para el mes de diciembre de 2024, fueron enrutadas desde trii app a los sistemas de la comisionista aliada 7676 órdenes, lo que representa un promedio de 255.86 órdenes diarias. 
-
-Contexto: con base en el resultado de las pruebas aquí consignadas en este informe técnico es factible indicar que el umbral de crecimiento de trii app, sin que alcance a comprometer la estabilidad de la Aplicación, en términos de nivel de ocupación de recursos y tasa de éxito, puede ser de entre 4x y 5x de la carga de procesamiento real actual[^1]. Esto es correspondiente a un incremento de ~5000 transacciones diarias a 22774[^2], como mínimo. Lo anterior resulta en que el crecimiento operativo de trii, en términos de los servicios probados, _es de entre el 400% y 500%_.
-
-Por lo anterior, y teniendo en cuenta el contexto informado por trii (de 256 órdenes diarias), y que el crecimiento operativo esperado para Chile en los siguientes tres (3) años de operación es del 300%, concluimos en este informe técnico que con la capacidad operativa actual, y sin requerir aumentos de inversión de su plan de capacidad, la plataforma de la Aplicación trii cuenta con la suficiencia de soportar el cumplimiento de estas proyecciones, sin comprometer la estabilidad del sistema completo.
-
-[^1]: Al momento de la realización de este informe es de aproximadamente 5000 operaciones diarias Colombia y 256 órdenes diarias Chile.
-
-[^2]: Cantidad de transacciones/segundo (capacidad o throughput): 22774 total; 16.36504/s.
+* El resultado del proyecto es el diagnóstico y la lista de cambios priorizados sobre la arquitectura del Canal Bancario Whatsapp, la divulgación de los cambios y la documentación técnica
+* La duración del proyecto es de un (1) mes de trabajo (días laborales).
+* El equipo de trabajo propuesto será provisto por el proponente.
+* El valor económico de la propuesta es $64.260.000 COP, IVA incluido.
+* Esta propuesta no incluye recomendaciones de diseño, intervenciones a  sistemas distintos de los consignados en el alcance, ni servicios de infraestructura, ni soporte posterior al presente proyecto.
+* Requiere apoyo de ingenieros y personal interno de la empresa, nivel de participación acordado entre las partes.
+* Una vez finalizada la ejecución de esta propuesta (no. 1), según acuerdo de continuidad, realizaremos una nueva para el desarrollo de la solución de los casos consignados en la hoja de ruta (propuesta no. 1).
 
 
 
