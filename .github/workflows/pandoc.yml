@@ -21,8 +21,8 @@ jobs:
           python -m pip install --upgrade pip
           pip3 install git+https://github.com/pandocker/pandoc-docx-pagebreak-py
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - uses: actions/checkout@v4
-        name: checkout devocscontd
+      - name: checkout devocscontd
+        uses: actions/checkout@v4
         with:
             repository: hwong23/devocs-contd
             ref: ${{github.ref}}
@@ -32,8 +32,8 @@ jobs:
           cd ${{github.WORKSPACE}}/devocs-contd
           echo "COMPILATION_MENSJ=$(git log --max-count=1 --format='%s (%h)')" >> $GITHUB_ENV
           echo "COMPILATION_MENSJ: $COMPILATION_MENSJ"
-      - uses: actions/checkout@v4
-        name: checkout hwo-academicTempl
+      - name: checkout hwo-academicTempl
+        uses: actions/checkout@v4
         with:
             repository: hwong23/hwo-academicTempl
             ref: ${{github.ref}}
@@ -55,8 +55,8 @@ jobs:
           wget https://github.com/lierdakil/pandoc-crossref/releases/download/v0.3.17.0/pandoc-crossref-Linux.tar.xz
           tar -xvf pandoc-crossref-Linux.tar.xz
           sudo mv pandoc-crossref /usr/bin
-      - uses: actions/cache@v3
-        name: tectonic Cache
+      - name: tectonic Cache
+        uses: actions/cache@v3
         with:
           path: ~/.cache/Tectonic
           key: ${{ runner.os }}-tectonic-${{ hashFiles('**/*.tex') }}
@@ -67,14 +67,13 @@ jobs:
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           biber-version: 2.17
-      - name: make doctec #configurar-flujo
+      - name: make doctec
         run: |
           export APPIMAGE_EXTRACT_AND_RUN=1
           CONTD=~/devocs-contd/contd
           make doctec CONTD=$CONTD  #configurar-flujo
       - name: run Tectonic
         run: | 
-          ls ./output/images
           tectonic ./output/*.tex
       - name: upload pdf/artifact
         uses: actions/upload-artifact@v4

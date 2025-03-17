@@ -1,10 +1,10 @@
-# Propuesta (git:6-pruebastrii)
+# Propuesta (git:7-propuestabmm))
 (...)
 
 ## Plantillas
-* plantilla docx: rmd-myriad-minion-reference.docx
+* plantilla docx: propuesta-reference.docx
 * plantilla html: html-github.template
-* plantilla tex: propuestatemplate.tex
+* plantilla tex: eisvogel.tex
 * plantilla ppt:
 
 
@@ -18,6 +18,116 @@ CTAN, https://ctan.org/pkg/tufte-latex
 grep -o '\$.*\$' ./archivo \
 | grep -v '\$endif\$\|\$else\$\|\$endfor\$'
 
+> git checkout -b arq
+> git push origin arq
+> git push --set-upstream origin arq
+
+
+> sh archicli.sh /Users/hwo/gh model/stef-arqcomv-arq exportSingle-md.ajs arqdoc
+
+
+### Pandoc desde contenedor
+> docker pull pandoc/crossref
+> docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex:2.6 README.md
+
+> docker run --rm \
+--volume "$(pwd):/data" \
+--user $(id -u):$(id -g) \
+pandoc/core README.md -o outfile.docx
+
+
+pandoc -r $(OPTIONS) -w html  --template=$(PREFIX)/templates/html.template --css=$(PREFIX)/marked/kultiad-serif.css --csl=$(PREFIX)/csl/$(CSL).csl --bibliography=$(BIB) -o $@ $<
+
+
+### Tectonic desde contenedor
+docker pull dxjoke/tectonic-docker --platform linux/x86_64
+
+### Tectonic dentro de contenedor (
+docker run --rm \
+-v $(pwd):/data \
+dxjoke/tectonic-docker tectonic texarticle.tex
+
+### Ejecutar tectonic en terminal dentro del contenedor
+> docker run -it -v $(pwd):/data dxjoke/tectonic-docker
+> cd /data 
+> tectonic --reruns 0 main.tex
+
+docker run -it -v $(pwd):/data dxjoke/tectonic-docker
+cd /data 
+tectonic --keep-intermediates --reruns 0 main.tex
+
+> abrir un terminal conectado al contenedor
+> opcional --rm
+docker run -it -v $(pwd):/data dxjoke/tectonic-docker
+
+
+### Tectonic en devcontainer / codespace (GitHub)
+https://github.com/openscript/vscode-dev-container-tectonic-template/blob/main/.devcontainer/devcontainer.json
+
+devcontainer.json
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.205.2/containers/debian
+{
+    "name": "Tectonic",
+    "build": {
+      "dockerfile": "Dockerfile",
+      // Update 'VARIANT' to pick an Debian version: bullseye, buster, stretch
+      // Use bullseye or stretch on local arm64/Apple Silicon.
+      "args": { "VARIANT": "latest" }
+    },
+  
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "James-Yu.latex-workshop",
+          "valentjn.vscode-ltex",
+          "be5invis.toml",
+          "yzhang.markdown-all-in-one"
+        ]
+      }
+    },
+    "features": {
+        "ghcr.io/rocker-org/devcontainer-features/pandoc:1": {}
+    }
+  }
+
+
+
+make mddoc devdoc=drivingview && \
+make --directory=~/gh/devdocs/tex-plantll-hv --makefile=~/gh/devdocs/tex-plantll-hv/Makefile doctec-docx CONTD=$CONTD && \
+open ~/gh/devdocs/tex-plantll-hv/output/docdoctec.docx
+
+
+
+### Devdocs
+> CONTD=~/gh/devdocs/devocs-contd/contd
+
+> docker run -it --rm --volume "$(pwd):/data" dxjoke/tectonic-docker 
+
+### Crear documento técnico (devdoc)
+> make clean --directory=~/gh/devdocs/tex-plantll-hv --makefile=~/gh/devdocs/tex-plantll-hv/Makefile CONTD=$CONTD
+>  make documento alias=triipropuesta
+> make doctec --directory=~/gh/devdocs/tex-plantll-hv --makefile=~/gh/devdocs/tex-plantll-hv/Makefile CONTD=$CONTD 
+> make doctec-tex --directory=~/gh/devdocs/tex-plantll-hv --makefile=~/gh/devdocs/tex-plantll-hv/Makefile CONTD=$CONTD 
+> gh workflow run -R github.com/hwong23/tex-plantll-hv pandoc.yml --ref 6-pruebastrii
+    > gh workflow run pandoc.yml --ref 6-pruebastrii
+> idworkflow=$(gh run -R github.com/hwong23/tex-plantll-hv list | awk '{print $6}' | head -1) && gh run -R github.com/hwong23/tex-plantll-hv watch $idworkflow
+    > idworkflow=$(gh run list | awk '{print $6}' | head -1) && gh run watch $idworkflow
+> mm=formato-ml \
+&& make documento alias=triiinforme \
+&& sh cpush.sh . $mm && gh workflow run -R github.com/hwong23/tex-plantll-hv pandoc.yml --ref 6-pruebastrii
+
+
+## Variables en plantilla
+grep -o '\$.*\$' ~/.local/share/pandoc/templates/sample.tex \
+| grep -v '\$endif\$\|\$else\$\|\$endfor\$'
+
+
+
+archi -application com.archimatetool.commandline.app -consoleLog -nosplash --modelrepository.loadModel /Users/hwo/gh/model/modelocontenidos --script.runScript /Users/hwo/gh/jarchi-hwo/scr/Tx-exportToMarkdown-CLI-md-drivingview.ajs -vistaDocumental bmmpropuesta -rutaMacMD /gh/devdocs/devocs-contd/contd/pdf -rutaCompleta no
+
+archi -m ./ --pluginDir ./plugins --script ./jarchi-hwo/scr/list_concepts.ajs --alias bmmpropuesta
+
 
 ## Dependencias
 * https://github.com/hwong23/modelocontenidos.git
@@ -28,11 +138,6 @@ grep -o '\$.*\$' ./archivo \
 * https://github.com/hwong23/hwo-academicTempl.git
 
 
+
 ## Observaciones
-TODO trii.co - Por favor dejar referencia solo a trii, que por favor se debe escribir en minúscula. Esto ya que la prueba de capacidad es solo para Chile  y el "co"puede generar confusión. Este ajuste debe hacerse en todos los informes
-TODO órdenes - órdenes va con tilde, por favor hacer este ajuste para todo el documento
-TODO mínimo - Esta mal separada la palabra míni-mo
-TODO redacción - No entendemos cuál es el mensaje que se quiere transmitir ya que según me comenta Felipe, los resultados de las pruebas fueron satisfactorios pero la forma en que esto está redactado parece indicar que existen limitaciones en el servicio de órdenes.
-TODO formato - Error en el formato
-TODO 4s - es necesario decir que se ajustó o podemos dejar el criterio inicial como 4.5 segundos?
-TODO sugerencia - teniendo en cuenta que el requerimiento de la CMF pide que la certificación indique que la plataforma cuenta con la capacidad para operar durante los siguientes tres años, quiere proponerte esta redacción para la conclusión, porque tal y como está redactada, solo describe el incremento de capacidad pero no lo ata a las proyecciones de negocio, que claramente no te habíamos proporcionado hasta ahora. 
+(...)
