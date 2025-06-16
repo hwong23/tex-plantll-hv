@@ -74,6 +74,7 @@ jobs:
           make doctec CONTD=$CONTD  #configurar-flujo
       - name: run Tectonic
         run: | 
+          ls -l ./output/*
           tectonic ./output/*.tex
       - name: upload pdf/artifact
         uses: actions/upload-artifact@v4
