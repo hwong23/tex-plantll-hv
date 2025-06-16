@@ -39,18 +39,18 @@ Historia de cambios de la propuesta.
 
 
 Versión actual: 
-1.1ee976b - pdfyml - Mon, 17 Mar 2025 06:03:02 -0500 
+1.78e2de9 - fix--sullivan - Sun, 15 Jun 2025 23:18:41 -0500 
 
 
 Versiones Anteriores
 
-1.1b82157 - pdfyml - Mon, 17 Mar 2025 05:58:14 -0500
+1.0575ef0 - fix--include - Sun, 15 Jun 2025 22:41:49 -0500
 
-1.54a0299 - accion - Mon, 17 Mar 2025 05:33:46 -0500
+1.5d6c060 - ls tectonic output - Sun, 15 Jun 2025 22:29:54 -0500
 
-1.025ce99 - contd/ruta - Sat, 8 Mar 2025 00:22:40 -0500
+1.248effd - readme - Sun, 15 Jun 2025 20:22:00 -0500
 
-1.3a8fbed - titulo - Fri, 14 Feb 2025 13:17:17 -0500
+1.85cce98 - filters: [pandoc-crossref] - Fri, 13 Jun 2025 21:42:58 -0500
 
 
 ### Realizado Por
@@ -71,6 +71,7 @@ El Miedo a la Política (Superar)
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
+
 ...
 
 
@@ -91,6 +92,9 @@ Consultoría de ingeniería y mejoramiento del canal bancario textual Whatsapp d
 
 
 
+### Nota lateral uno
+El equipo de trabajo requerido para el cumplimiento del alcance, metas y entregables de la actual propuesta será provisto por el proponente.
+
 
 
 
@@ -100,6 +104,7 @@ Consultoría de ingeniería y mejoramiento del canal bancario textual Whatsapp d
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
+todo: aun no está lista
 ...
 
 
@@ -131,6 +136,7 @@ Esta propuesta contienen los siguientes componentes técnicos.
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
+todo: aun no está lista
 ...
 
 
@@ -156,6 +162,7 @@ titlepage-rule-color: 360049
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
+todo: aun no está lista
 ...
 
 
@@ -190,6 +197,7 @@ La presenta propuesta no incluye:
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
+todo: aun no está lista
 ...
 
 
@@ -220,6 +228,7 @@ titlepage-rule-color: 360049
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
+
 ...
 
 
@@ -245,6 +254,7 @@ titlepage-rule-color: 360049
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
+todo: aun no está lista
 ...
 
 
@@ -282,6 +292,7 @@ Por lo anterior, el total de la duración del proyecto es de un (1) mes laboral.
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
+
 ...
 
 
@@ -324,34 +335,7 @@ Nota: los valores del costo de la propuesta se mantienen durante los siguientes 
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
-...
-
-
-
-
-## Equipo de Trabajo
-
-> 
-
-<br>
-
-El equipo de trabajo requerido para el cumplimiento del alcance, metas y entregables de la actual propuesta será provisto por el proponente.
-
-Por las restricciones de ejecución usuales en este tipo de proyectos es requerido apoyo interno de la empresa cliente del Canal Bancario Whatsapp. 
-
-El nivel de participación en el proyecto y el rol del recurso interno se acuerdan a conveniencia de las partes, cliente y proponente.
-
-
-
-
-
-
-
-
----
-lang: en
-titlepage: true
-titlepage-rule-color: 360049
+todo: aun no está lista
 ...
 
 
@@ -378,6 +362,7 @@ titlepage-rule-color: 360049
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
+todo: aun no está lista
 ...
 
 
@@ -413,6 +398,37 @@ titlepage-rule-color: 360049
 lang: en
 titlepage: true
 titlepage-rule-color: 360049
+todo: aun no está lista
+...
+
+
+
+
+## Equipo de Trabajo
+
+> 
+
+<br>
+
+El equipo de trabajo requerido para el cumplimiento del alcance, metas y entregables de la actual propuesta será provisto por el proponente.
+
+Nota Por las restricciones de ejecución usuales en este tipo de proyectos es requerido apoyo interno de la empresa cliente del Canal Bancario Whatsapp. El nivel de participación en el proyecto y el rol del recurso interno se acuerdan a conveniencia de las partes, cliente y proponente.
+
+
+
+### Equipo de Trabajo
+El equipo de trabajo requerido para el cumplimiento del alcance, metas y entregables de la actual propuesta será provisto por el proponente.
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+todo: aun no está lista
 ...
 
 
