@@ -1,5 +1,6 @@
-# Propuesta (git:7-propuestabmm))
-(...)
+# Documentación Técnica (git:8-doctecnico))
+Descripción del documento técnico.- Este documento técnico (...)
+
 
 ## Plantillas
 * plantilla docx: propuesta-reference.docx
@@ -8,38 +9,66 @@
 * plantilla ppt:
 
 
-## Referencias
-Github, https://github.com/maehr/academic-pandoc-template
-PDF, https://www.overleaf.com/latex/templates/example-of-the-tufte-handout-style/ysjghcrgdrnz.pdf
-CTAN, https://ctan.org/pkg/tufte-latex 
+## Variables Globales del Proyecto
+(...)
 
+
+## PlantUML integrado
+
+```
+@startuml
+class User {
+  -String id
+  -String name
+  +String name()
+}
+User <|-- SpecificUser
+@enduml
+```
+
+```plantuml
+@startuml
+class User {
+  -String id
+  -String name
+  +String name()
+}
+User <|-- SpecificUser
+@enduml
+```
 
 ## Comandos
+
+```
 grep -o '\$.*\$' ./archivo \
 | grep -v '\$endif\$\|\$else\$\|\$endfor\$'
-
+```
+```
 > git checkout -b arq
 > git push origin arq
 > git push --set-upstream origin arq
+```
 
-
+```
 > sh archicli.sh /Users/hwo/gh model/stef-arqcomv-arq exportSingle-md.ajs arqdoc
+```
 
-
-### Pandoc desde contenedor
+### Pandoc Desde Contenedor
+```
 > docker pull pandoc/crossref
 > docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex:2.6 README.md
-
+```
+```
 > docker run --rm \
 --volume "$(pwd):/data" \
 --user $(id -u):$(id -g) \
 pandoc/core README.md -o outfile.docx
-
-
+```
+```
 pandoc -r $(OPTIONS) -w html  --template=$(PREFIX)/templates/html.template --css=$(PREFIX)/marked/kultiad-serif.css --csl=$(PREFIX)/csl/$(CSL).csl --bibliography=$(BIB) -o $@ $<
+```
 
-
-### Tectonic desde contenedor
+### Tectonic Desde Contenedor
 docker pull dxjoke/tectonic-docker --platform linux/x86_64
 
 ### Tectonic dentro de contenedor (
@@ -118,7 +147,7 @@ open ~/gh/devdocs/tex-plantll-hv/output/docdoctec.docx
 && sh cpush.sh . $mm && gh workflow run -R github.com/hwong23/tex-plantll-hv pandoc.yml --ref 6-pruebastrii
 
 
-## Variables en plantilla
+## Variables En Plantilla TEX
 grep -o '\$.*\$' ~/.local/share/pandoc/templates/sample.tex \
 | grep -v '\$endif\$\|\$else\$\|\$endfor\$'
 
