@@ -34,26 +34,26 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.c9e6dd0 - Compilación para entrega: accion-contd (b39800f) - Tue, 17 Jun 2025 17:03:25 +0000 
+Versión actual 1.8f850e3 - variablesglobales - Tue, 17 Jun 2025 12:55:04 -0500 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
 
+1.257dfa0 - Compilación para entrega: accion-contd (5775b7b) - Tue, 17 Jun 2025 17:43:43 +0000
+
+1.c9e6dd0 - Compilación para entrega: accion-contd (b39800f) - Tue, 17 Jun 2025 17:03:25 +0000
+
 1.d92fcf2 - Compilación para entrega: accion-contd (b39800f) - Tue, 17 Jun 2025 16:49:32 +0000
 
 1.200ad6a - fix--defaults - Mon, 16 Jun 2025 15:40:20 -0500
-
-1.a10c251 - Compilación para entrega: accion-contd (fb7dbcf) - Mon, 16 Jun 2025 04:20:49 +0000
-
-1.78e2de9 - fix--sullivan - Sun, 15 Jun 2025 23:18:41 -0500
 
 
 ### Realizado Por
 (creador)
 
 ### Revisado Por
-(revisor), Canal Bancario Whatsapp
+(revisor), Arquitectura de Aplicaciones
 
 
 
@@ -73,7 +73,7 @@ titlepage-rule-color: 360049
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Servicios de Ingeniería Canal Bancario Whatsapp Banco Mundial de la Mujer
+# Servicios de Ingeniería Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá
 
 ## Descripción de la Propuesta
 
@@ -81,7 +81,7 @@ titlepage-rule-color: 360049
 
 <br>
 
-Consultoría de ingeniería y mejoramiento del canal bancario textual Whatsapp del Banco Mundo Mujer (BMM), con extensión a sistemas externos, legados y proveedores tecnológicos relacionados con la arquitectura del canal.
+Consultoría de ingeniería y mejoramiento del canal bancario textual Whatsapp del Secretaria de la Alcaldía de Bogotá, con extensión a sistemas externos, legados y proveedores tecnológicos relacionados con la arquitectura del canal.
 
 
 
@@ -142,8 +142,8 @@ todo: aun no está lista
 <br>
 
 
-1. **Diagnóstico**. Hallazgos relevantes de la arquitectura del Canal Bancario Whatsapp. Presentar puntos de cambios relevantes resultado del análisis de la arquitectura de solución actual del canal de banca Whatsapp (chat) del Banco Mundial de la Mujer categorizados en varias perspectivas, como la funcional, técnica y operativa.
-1. **Hoja de Ruta**. Lista de cambios y gestión de cambios de la de la arquitectura del Canal Bancario Whatsapp**. Desarrollar la hoja de ruta de los cambios derivados del objetivo no. 1, Hallazgos relevantes de la arquitectura, con una priorización planteada mediante criterio críticos de factibilidad e impacto a Banco Mundial de la Mujer.
+1. **Diagnóstico**. Hallazgos relevantes de la arquitectura del Arquitectura de Aplicaciones. Presentar puntos de cambios relevantes resultado del análisis de la arquitectura de solución actual del canal de banca Whatsapp (chat) del Secretaria de la Alcaldía de Bogotá categorizados en varias perspectivas, como la funcional, técnica y operativa.
+1. **Hoja de Ruta**. Lista de cambios y gestión de cambios de la de la arquitectura del Arquitectura de Aplicaciones**. Desarrollar la hoja de ruta de los cambios derivados del objetivo no. 1, Hallazgos relevantes de la arquitectura, con una priorización planteada mediante criterio críticos de factibilidad e impacto a Secretaria de la Alcaldía de Bogotá.
 
 
 
@@ -168,14 +168,14 @@ todo: aun no está lista
 <br>
 
 
-1. Diagnóstico. Evaluación de la arquitectura del Canal Bancario Whatsapp del Banco Mundial de la Mujer que resulta en puntos de cambios accionables de la arquitectura del Canal Bancario Whatsapp. 
-1. Diseño de hoja de ruta de transformación. Planteamiento de transición de la arquitectura del Canal Bancario Whatsapp mediante lista de cambios priorizados sobre la arquitectura del canal.
+1. Diagnóstico. Evaluación de la arquitectura del Arquitectura de Aplicaciones del Secretaria de la Alcaldía de Bogotá que resulta en puntos de cambios accionables de la arquitectura del Arquitectura de Aplicaciones. 
+1. Diseño de hoja de ruta de transformación. Planteamiento de transición de la arquitectura del Arquitectura de Aplicaciones mediante lista de cambios priorizados sobre la arquitectura del canal.
 
 ### Exclusiones del Alcance
 La presenta propuesta no incluye: 
 
-1. Por restricciones de tiempo, la actual propuesta no incluye análisis ni recomendaciones de diseño a arquitectura distintas a las del Canal Bancario Whatsapp.
-1. No incluye plan de capacidad ni proyección de uso infraestructura futura de la arquitectura del Canal Bancario Whatsapp.
+1. Por restricciones de tiempo, la actual propuesta no incluye análisis ni recomendaciones de diseño a arquitectura distintas a las del Arquitectura de Aplicaciones.
+1. No incluye plan de capacidad ni proyección de uso infraestructura futura de la arquitectura del Arquitectura de Aplicaciones.
 1. No incluye la provisión de infraestructura para las soluciones derivadas de este proyecto.
 1. No incluye soporte ni mantenimiento posterior a la realización de este proyecto.
 
@@ -203,16 +203,16 @@ todo: aun no está lista
 <br>
 
 
-1. Planificación. Período inicial de definición y acuerdos de los objetivos puntuales de las evaluación de la arquitectura del Canal Bancario Whatsapp.
-1. Preparación y Alistamiento. Lista de chequeo de recursos, personas y procesos relacionadas con las vistas de arquitectura del Canal Bancario Whatsapp, como las vistas funcional, técnica, despliegues, y otras.
-1. Definición. Confirmación del diseño de los escenarios de evaluación de la arquitectura del Canal Bancario Whatsapp. Identificación de otras dependencias entre escenarios.
+1. Planificación. Período inicial de definición y acuerdos de los objetivos puntuales de las evaluación de la arquitectura del Arquitectura de Aplicaciones.
+1. Preparación y Alistamiento. Lista de chequeo de recursos, personas y procesos relacionadas con las vistas de arquitectura del Arquitectura de Aplicaciones, como las vistas funcional, técnica, despliegues, y otras.
+1. Definición. Confirmación del diseño de los escenarios de evaluación de la arquitectura del Arquitectura de Aplicaciones. Identificación de otras dependencias entre escenarios.
 1. Diagnóstico. Profundización del detalle de la información, ejecución de los métodos seleccionados para la evaluación de la arquitectura, y documentación reproducible de los resultados.
-1. Verificación. Contrastar el resultado preliminar de los escenarios de evaluación de la arquitectura del Canal Bancario Whatsapp contra el método de evaluación.
-1. Divulgación de Resultados y Entregables. (luego de la verificación) Explicar el resultado general de la evaluación de los escenarios de la arquitectura del Canal Bancario Whatsapp y discrepancias con umbrales de aceptación.
-1. Diseño de Hoja de Ruta. Preparación, alistamiento y priorización de las transiciones de la arquitectura del Canal Bancario Whatsapp (hoja de ruta).
-1. Divulgación de Resultados y Entregables Finales. Compilación de artefactos, documentación técnica y divulgación de conocimiento del resultado de diagnóstico y de la hoja de ruta priorizada de la arquitectura del Canal Bancario Whatsapp.
+1. Verificación. Contrastar el resultado preliminar de los escenarios de evaluación de la arquitectura del Arquitectura de Aplicaciones contra el método de evaluación.
+1. Divulgación de Resultados y Entregables. (luego de la verificación) Explicar el resultado general de la evaluación de los escenarios de la arquitectura del Arquitectura de Aplicaciones y discrepancias con umbrales de aceptación.
+1. Diseño de Hoja de Ruta. Preparación, alistamiento y priorización de las transiciones de la arquitectura del Arquitectura de Aplicaciones (hoja de ruta).
+1. Divulgación de Resultados y Entregables Finales. Compilación de artefactos, documentación técnica y divulgación de conocimiento del resultado de diagnóstico y de la hoja de ruta priorizada de la arquitectura del Arquitectura de Aplicaciones.
 
-![02.1c.Metodo. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Canal Bancario Whatsapp Banco Mundial de la Mujer (2025)_](images/02.1c.Metodo.png){#fig:id-ecb3efe1a4e14dd389ece75370f1861c width= height=}
+![02.1c.Metodo. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/02.1c.Metodo.png){#fig:id-ecb3efe1a4e14dd389ece75370f1861c width= height=}
 
 
 
@@ -234,8 +234,8 @@ titlepage-rule-color: 360049
 <br>
 
 
-1. Evaluación de la arquitectura del Canal Bancario Whatsapp del Banco Mundial de la Mujer. Listado de hallazgos relevantes y accionables de la arquitectura desde las perspectivas rendimiento, funcional-negocio, y operativa (esta perspectiva incluye a los métodos de construcción, pruebas y transición).
-1. Hoja de ruta de las cambios requeridos y transformaciones para el mejoramiento de la arquitectura de Canal Bancario Whatsapp. Instrumento para la gestieon de cambios priorizados y planeación de la entrega de las transición de la arquitectura de Canal Bancario Whatsapp del Banco Mundial de la Mujer.
+1. Evaluación de la arquitectura del Arquitectura de Aplicaciones del Secretaria de la Alcaldía de Bogotá. Listado de hallazgos relevantes y accionables de la arquitectura desde las perspectivas rendimiento, funcional-negocio, y operativa (esta perspectiva incluye a los métodos de construcción, pruebas y transición).
+1. Hoja de ruta de las cambios requeridos y transformaciones para el mejoramiento de la arquitectura de Arquitectura de Aplicaciones. Instrumento para la gestieon de cambios priorizados y planeación de la entrega de las transición de la arquitectura de Arquitectura de Aplicaciones del Secretaria de la Alcaldía de Bogotá.
 
 
 
@@ -264,19 +264,19 @@ todo: aun no está lista
 
 <br>
 
-El plan de trabajo propuesto consta de dos fases consecutivas que inician a partir de la aceptación y formalización de la actual propuesta. La Fase I, llamada en esta propuesta el diagnóstico y evaluación de la arquitectura; y la Fase II, destinada al diseño de la hoja de ruta de transformación de la arquitectura del Canal Bancario Whatsapp. 
+El plan de trabajo propuesto consta de dos fases consecutivas que inician a partir de la aceptación y formalización de la actual propuesta. La Fase I, llamada en esta propuesta el diagnóstico y evaluación de la arquitectura; y la Fase II, destinada al diseño de la hoja de ruta de transformación de la arquitectura del Arquitectura de Aplicaciones. 
 
 En detalle cada fase del proyecto:
 
-1. Día 1 al 15. Diagnóstico y evaluación de la arquitectura del Canal Bancario Whatsapp, incluye planificación, preparación, diagnóstico, documentación técnica, y divulgación: estimada en 15 días de trabajo.
+1. Día 1 al 15. Diagnóstico y evaluación de la arquitectura del Arquitectura de Aplicaciones, incluye planificación, preparación, diagnóstico, documentación técnica, y divulgación: estimada en 15 días de trabajo.
 
-1. Día 16 al 20. Diseño de hoja de ruta de transformación de la arquitectura del Canal Bancario Whatsapp, incluye diseño de hoja de ruta, ejecución transiciones, gestión de cambios, documentación técnica, divulgación: estimada en 5 días de trabajo.
+1. Día 16 al 20. Diseño de hoja de ruta de transformación de la arquitectura del Arquitectura de Aplicaciones, incluye diseño de hoja de ruta, ejecución transiciones, gestión de cambios, documentación técnica, divulgación: estimada en 5 días de trabajo.
 
 ## Plazo de Ejecución
 Por lo anterior, el total de la duración del proyecto es de un (1) mes laboral.
 
 
-![02.1e1.Plan. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Canal Bancario Whatsapp Banco Mundial de la Mujer (2025)_](images/02.1e1.Plan.png){#fig:id-650dca2ba0114dca99ad6302b8ed6dc7 width= height=}
+![02.1e1.Plan. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/02.1e1.Plan.png){#fig:id-650dca2ba0114dca99ad6302b8ed6dc7 width= height=}
 
 
 
@@ -303,7 +303,7 @@ A la presente propuesta, en los términos consignados aquí, le corresponde la s
 
 | Ítem                                           | Valor (COP $/.) | IVA (19%)    | Total        |
 |------------------------------------------------|-----------------|--------------|--------------|
-| Evaluación y hoja de ruta de arquitectura Canal Bancario Whatsapp | $ 62'000,000    | $ 11'400.000 | $ 71'400.000 |
+| Evaluación y hoja de ruta de arquitectura Arquitectura de Aplicaciones | $ 62'000,000    | $ 11'400.000 | $ 71'400.000 |
 | Descuento del 10% Cliente Primera Vez          | $ 6.000.000     | $ 1.140.000  | $ 7.140.000  |
 | TOTAL                                          | $ 54.000.000    | $ 10.260.000 | $ 64.260.000 |
 
@@ -373,7 +373,7 @@ todo: aun no está lista
 <br>
 
 
-* El resultado del proyecto es el diagnóstico y la lista de cambios priorizados sobre la arquitectura del Canal Bancario Whatsapp, la divulgación de los cambios y la documentación técnica
+* El resultado del proyecto es el diagnóstico y la lista de cambios priorizados sobre la arquitectura del Arquitectura de Aplicaciones, la divulgación de los cambios y la documentación técnica
 * La duración del proyecto es de un (1) mes de trabajo (días laborales).
 * El equipo de trabajo propuesto será provisto por el proponente.
 * El valor económico de la propuesta es $64.260.000 COP, IVA incluido.
@@ -405,7 +405,7 @@ todo: aun no está lista
 
 El equipo de trabajo requerido para el cumplimiento del alcance, metas y entregables de la actual propuesta será provisto por el proponente.
 
-Nota Por las restricciones de ejecución usuales en este tipo de proyectos es requerido apoyo interno de la empresa cliente del Canal Bancario Whatsapp. El nivel de participación en el proyecto y el rol del recurso interno se acuerdan a conveniencia de las partes, cliente y proponente.
+Nota Por las restricciones de ejecución usuales en este tipo de proyectos es requerido apoyo interno de la empresa cliente del Arquitectura de Aplicaciones. El nivel de participación en el proyecto y el rol del recurso interno se acuerdan a conveniencia de las partes, cliente y proponente.
 
 
 
