@@ -8,7 +8,7 @@ COMMIT=1.$(git log --max-count=1 --format='%h - %s - %cD')
 VERSIONES=$(git log --max-count=5 --format='1.%h - %s - %cD%n' | tail -8)
 CLIENTE="Secretaria de la Alcaldía de Bogotá"
 APP="Arquitectura de Aplicaciones"
-TITULO="Propuesta de Servicios Banco Mundo Mujer"
+TITULO="Propuesta de Servicios Secretaria de la Alcaldía de Bogotá"
 SUBTITULO="Evaluación y Hoja de Ruta de la Arquitectura del Canal Bancario Whatsapp"
 # Pandoc's configuration is specified via files of option defaults
 # located in the $PANDOC_DATA_DIR/defaults directory.
