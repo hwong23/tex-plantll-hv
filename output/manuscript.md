@@ -1,4 +1,11 @@
 
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Información del Documento
+
+Esta es la doc del grupo.
+
 ## Versión del Documento
 
 > 
@@ -27,15 +34,13 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
+Versión actual 1.c9e6dd0 - Compilación para entrega: accion-contd (b39800f) - Tue, 17 Jun 2025 17:03:25 +0000 
+
+
 ## Control de Cambios
-Historia de cambios de la propuesta.
+Historia de cambios del documento.
 
-
-Versión actual: 
-1.d92fcf2 - Compilación para entrega: accion-contd (b39800f) - Tue, 17 Jun 2025 16:49:32 +0000 
-
-
-Versiones Anteriores
+1.d92fcf2 - Compilación para entrega: accion-contd (b39800f) - Tue, 17 Jun 2025 16:49:32 +0000
 
 1.200ad6a - fix--defaults - Mon, 16 Jun 2025 15:40:20 -0500
 
@@ -43,18 +48,13 @@ Versiones Anteriores
 
 1.78e2de9 - fix--sullivan - Sun, 15 Jun 2025 23:18:41 -0500
 
-1.0575ef0 - fix--include - Sun, 15 Jun 2025 22:41:49 -0500
-
 
 ### Realizado Por
-H. Wong, ing.
+(creador)
 
 ### Revisado Por
 (revisor), Canal Bancario Whatsapp
 
-
-El Miedo a la Política (Superar)
-	A. Laje (2024). Globalismo. (Extracto. Pág. 551)
 
 
 
