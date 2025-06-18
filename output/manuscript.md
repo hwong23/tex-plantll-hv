@@ -34,19 +34,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.97a313e - fix--variablesglobales - Tue, 17 Jun 2025 13:10:23 -0500 
+Versión actual 1.a73be24 - commitmsj--gh_action - Wed, 18 Jun 2025 16:07:12 -0500 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
 
+1.69610f3 - Compilación para entrega: accion-contd (4a47ca2) - Tue, 17 Jun 2025 18:11:29 +0000
+
+1.97a313e - fix--variablesglobales - Tue, 17 Jun 2025 13:10:23 -0500
+
 1.298b557 - Compilación para entrega: accion-contd (4a47ca2) - Tue, 17 Jun 2025 18:00:56 +0000
 
 1.8f850e3 - variablesglobales - Tue, 17 Jun 2025 12:55:04 -0500
-
-1.257dfa0 - Compilación para entrega: accion-contd (5775b7b) - Tue, 17 Jun 2025 17:43:43 +0000
-
-1.c9e6dd0 - Compilación para entrega: accion-contd (b39800f) - Tue, 17 Jun 2025 17:03:25 +0000
 
 
 ### Realizado Por
