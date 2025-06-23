@@ -34,19 +34,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.1434244 - repository_dispatch - Sun, 22 Jun 2025 21:38:39 -0500 
+Versión actual 1.d993611 - workflow_dispatch - Sun, 22 Jun 2025 23:24:44 -0500 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
 
-1.15600e5 - Compilación para entrega: accion-contd (4c3c821) - Wed, 18 Jun 2025 21:33:07 +0000
+1.e3f476b - workflow_dispatch - Sun, 22 Jun 2025 23:19:16 -0500
 
-1.4aeee1c - commitmsj--gh_action - Wed, 18 Jun 2025 16:10:36 -0500
+1.5676b23 - workflow_dispatch - Sun, 22 Jun 2025 22:35:48 -0500
 
-1.b377c5d - Compilación para entrega: accion-contd (4a47ca2) - Wed, 18 Jun 2025 21:08:29 +0000
+1.126143d - workflow_dispatch - Sun, 22 Jun 2025 22:31:21 -0500
 
-1.a73be24 - commitmsj--gh_action - Wed, 18 Jun 2025 16:07:12 -0500
+1.cf3025d - repository_dispatch - Sun, 22 Jun 2025 22:11:44 -0500
 
 
 ### Realizado Por
