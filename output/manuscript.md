@@ -34,19 +34,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.4aeee1c - commitmsj--gh_action - Wed, 18 Jun 2025 16:10:36 -0500 
+Versión actual 1.1434244 - repository_dispatch - Sun, 22 Jun 2025 21:38:39 -0500 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
 
+1.15600e5 - Compilación para entrega: accion-contd (4c3c821) - Wed, 18 Jun 2025 21:33:07 +0000
+
+1.4aeee1c - commitmsj--gh_action - Wed, 18 Jun 2025 16:10:36 -0500
+
 1.b377c5d - Compilación para entrega: accion-contd (4a47ca2) - Wed, 18 Jun 2025 21:08:29 +0000
 
 1.a73be24 - commitmsj--gh_action - Wed, 18 Jun 2025 16:07:12 -0500
-
-1.69610f3 - Compilación para entrega: accion-contd (4a47ca2) - Tue, 17 Jun 2025 18:11:29 +0000
-
-1.97a313e - fix--variablesglobales - Tue, 17 Jun 2025 13:10:23 -0500
 
 
 ### Realizado Por
@@ -84,9 +84,6 @@ titlepage-rule-color: 360049
 Consultoría de ingeniería y mejoramiento del canal bancario textual Whatsapp del Secretaria de la Alcaldía de Bogotá, con extensión a sistemas externos, legados y proveedores tecnológicos relacionados con la arquitectura del canal.
 
 
-
-### Nota lateral uno
-El equipo de trabajo requerido para el cumplimiento del alcance, metas y entregables de la actual propuesta será provisto por el proponente.
 
 
 
@@ -233,9 +230,11 @@ titlepage-rule-color: 360049
 
 <br>
 
-
-1. Evaluación de la arquitectura del Arquitectura de Aplicaciones del Secretaria de la Alcaldía de Bogotá. Listado de hallazgos relevantes y accionables de la arquitectura desde las perspectivas rendimiento, funcional-negocio, y operativa (esta perspectiva incluye a los métodos de construcción, pruebas y transición).
-1. Hoja de ruta de las cambios requeridos y transformaciones para el mejoramiento de la arquitectura de Arquitectura de Aplicaciones. Instrumento para la gestieon de cambios priorizados y planeación de la entrega de las transición de la arquitectura de Arquitectura de Aplicaciones del Secretaria de la Alcaldía de Bogotá.
+1. Visión. Definición trabajo arquitecrura 
+1. Arquitectura actual sistemas información
+1. Arquitectura solución
+1. Catálogo sistemas información
+1. Implementación y Migración
 
 
 
@@ -273,8 +272,7 @@ En detalle cada fase del proyecto:
 1. Día 16 al 20. Diseño de hoja de ruta de transformación de la arquitectura del Arquitectura de Aplicaciones, incluye diseño de hoja de ruta, ejecución transiciones, gestión de cambios, documentación técnica, divulgación: estimada en 5 días de trabajo.
 
 ## Plazo de Ejecución
-Por lo anterior, el total de la duración del proyecto es de un (1) mes laboral.
-
+Por todo lo anterior, el total de la duración del proyecto es de un (1) mes laboral.
 
 ![02.1e1.Plan. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/02.1e1.Plan.png){#fig:id-650dca2ba0114dca99ad6302b8ed6dc7 width= height=}
 
@@ -408,9 +406,6 @@ El equipo de trabajo requerido para el cumplimiento del alcance, metas y entrega
 Nota Por las restricciones de ejecución usuales en este tipo de proyectos es requerido apoyo interno de la empresa cliente del Arquitectura de Aplicaciones. El nivel de participación en el proyecto y el rol del recurso interno se acuerdan a conveniencia de las partes, cliente y proponente.
 
 
-
-### Equipo de Trabajo
-El equipo de trabajo requerido para el cumplimiento del alcance, metas y entregables de la actual propuesta será provisto por el proponente.
 
 
 
