@@ -2,7 +2,7 @@ name: MkPandoc
 
 on:
   repository_dispatch:
-    types: [dispatch-event]
+    
   workflow_dispatch:
 
 jobs:
