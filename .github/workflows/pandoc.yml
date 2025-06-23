@@ -28,7 +28,7 @@ jobs:
         uses: actions/checkout@v4
         with:
             repository: hwong23/devocs-contd
-            ref: ${{github.ref}}
+            ref: 8-doctecnico
             path: devocs-contd
       - name: mensaje commit devocscontd
         run: |
