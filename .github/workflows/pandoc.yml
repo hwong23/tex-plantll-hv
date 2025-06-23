@@ -1,6 +1,9 @@
 name: MkPandoc
 
-on: workflow_dispatch
+on:
+  repository_dispatch:
+    types: [dispatch-event]
+  workflow_dispatch:
 
 jobs:
   tx_pandoc:
@@ -74,6 +77,7 @@ jobs:
           make doctec CONTD=$CONTD  #configurar-flujo
       - name: run Tectonic
         run: | 
+          ls -l ./output/*
           tectonic ./output/*.tex
       - name: upload pdf/artifact
         uses: actions/upload-artifact@v4
@@ -89,3 +93,5 @@ jobs:
         uses: EndBug/add-and-commit@v9 # You can change this to use a specific version.
         with:
           message: 'Compilación para entrega: ${{ env.COMPILATION_MENSJ }}'
+          committer_name: gh_action_cmmt
+          author_name: gh_action_authr
