@@ -3,8 +3,6 @@ name: MkPandoc
 on:
   repository_dispatch:
     types: [dispatch-event]
-  workflow_dispatch:
-  workflow_call:
 
 jobs:
   tx_pandoc:
