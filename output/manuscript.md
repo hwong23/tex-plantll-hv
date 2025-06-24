@@ -34,19 +34,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.3a0050b - Compilación para entrega: accion-actualizacionContd (e960ee2) - Tue, 24 Jun 2025 20:45:06 +0000 
+Versión actual 1.6b73ff4 - Compilación para entrega: accion-actualizacionContd (e960ee2) - Tue, 24 Jun 2025 20:48:59 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.3a0050b - Compilación para entrega: accion-actualizacionContd (e960ee2) - Tue, 24 Jun 2025 20:45:06 +0000
 
 1.80f4487 - Compilación para entrega: accion-actualizacionContd (e960ee2) - Mon, 23 Jun 2025 04:48:18 +0000
 
 1.d993611 - workflow_dispatch - Sun, 22 Jun 2025 23:24:44 -0500
 
 1.e3f476b - workflow_dispatch - Sun, 22 Jun 2025 23:19:16 -0500
-
-1.5676b23 - workflow_dispatch - Sun, 22 Jun 2025 22:35:48 -0500
 
 
 ### Realizado Por
@@ -381,6 +381,51 @@ todo: aun no está lista
 
 
 
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+todo: aun no está lista
+...
+
+
+
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Servicios de Ingeniería Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá
+
+## 03.ENTRG.1n. Modelo de Entregas
+
+> Ingenium.  Modelo de Entregas. Dominio de Aplicación. AE. Secretaria Seneral Alcaldía Mayor de Bogotá.   
+
+<br>
+
+
+![03.ENTRG.1n. Modelo de Entregas. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/03.ENTRG.1n.ModelodeEntregas.png){#fig:id-b7aa07be1bf34794b7ab18f800fd4d63 width= height=}
+
+### Elementos del Modelo
+
+| Nombre  | Tipo | Documentación |
+|---------|------|---------------|
+| Hoja ruta del producto / Plan de producto | Grouping |  |
+| Ciclo. Entrega 3 (copy) | Value | Versión 2.1. Solución integración JEP.
+ |
+| Ciclo. Entrega 3 (copy) | Value | Versión 1.1. Solución integración JEP.
+ |
+| Plan de entregas / iteración | Grouping |  |
+| Deliverable 1 | Deliverable | Definición de la Arquitectura de Referencia de la Entidad (situación actual del dominio aplicaciones, referencia cero). |
+| Deliverable 2 [ver i+1] | Deliverable | (...) que contenga el modelo de alto nivel, en el cual se visualicen sistemas de información existentes y su interrelación. |
+| Hoja ruta aquitectura | Grouping |  |
+
+Table: Elementos de la vista. {#tbl:tblelement-03.ENTRG.1n.ModelodeEntregas-id}
+
+<br>
 
 
 
