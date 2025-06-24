@@ -34,19 +34,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.80f4487 - Compilación para entrega: accion-actualizacionContd (e960ee2) - Mon, 23 Jun 2025 04:48:18 +0000 
+Versión actual 1.3a0050b - Compilación para entrega: accion-actualizacionContd (e960ee2) - Tue, 24 Jun 2025 20:45:06 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.80f4487 - Compilación para entrega: accion-actualizacionContd (e960ee2) - Mon, 23 Jun 2025 04:48:18 +0000
 
 1.d993611 - workflow_dispatch - Sun, 22 Jun 2025 23:24:44 -0500
 
 1.e3f476b - workflow_dispatch - Sun, 22 Jun 2025 23:19:16 -0500
 
 1.5676b23 - workflow_dispatch - Sun, 22 Jun 2025 22:35:48 -0500
-
-1.126143d - workflow_dispatch - Sun, 22 Jun 2025 22:31:21 -0500
 
 
 ### Realizado Por
