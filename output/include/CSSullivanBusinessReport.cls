@@ -38,23 +38,15 @@
 
 \usepackage{graphicx} % Required for including images
 \graphicspath{{Images/}{./}} % Specifies where to look for included images (trailing slash required)
-
 \setlength{\parindent}{0pt} % Paragraph indentation
 \setlength{\parskip}{10pt} % Vertical space between paragraphs
-
 \usepackage[bottom, hang]{footmisc} % Force footnotes to the bottom of the page and to the left margin
 \setlength{\footnotemargin}{6pt} % Horizontal space between the footnote marker and text
-
 \usepackage[document]{ragged2e} % Left align all text in the document (i.e. have a ragged right margin)
-
 \usepackage{lastpage} % Required to determine the total number of pages
-
 \AtBeginEnvironment{quote}{\itshape\rmfamily} % Style quotations
-
 \usepackage{appendix} % Required for the appendices section
-
 \usepackage{float} % Allows more precisely positioning floats e.g. \begin{figure}[H]
-
 \usepackage{longtable}
 %----------------------------------------------------------------------------------------
 %	MARGINS
@@ -275,7 +267,6 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage{booktabs} % Required for better horizontal rules in tables
-
 \usepackage{array} % Required for manipulating table columns
 \renewcommand{\arraystretch}{1.25} % Increase the height of table rows
 
