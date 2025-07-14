@@ -49,6 +49,17 @@ doctec-tex:
 	--defaults=./$(CONFIG)/tex.yaml \
 	./$(CONFIG)/metadata.yaml)
 
+doctec-ppt:
+	(cp $(CONTD)/mdppt/*.png output/ 2>/dev/null || :)
+	(cp -R $(CONTD)/mdppt/images output/ 2>/dev/null || :)
+	(sh build/build.sh $(CONTD)/mdppt)
+	(pandoc -r $(OPTIONS) \
+	--resource-path=$(CONTD)/mdppt \
+	--defaults=./$(CONFIG)/defaults.yaml \
+	--defaults=./$(CONFIG)/ppthtml.yaml \
+	./$(CONFIG)/metadata.yaml \
+	--toc)
+
 doctec-html:
 	(pandoc -r $(OPTIONS) $(CONTD)/html/*.md \
 	--resource-path=$(CONTD)/html \
@@ -56,14 +67,6 @@ doctec-html:
 	--defaults=./$(CONFIG)/html.yaml \
 	--toc)
 	
-doctec-ppt:
-	(sh build/build.sh $(CONTD)/mdppt)
-	(pandoc -r $(OPTIONS) \
-	--resource-path=$(CONTD)/mdppt \
-	--defaults=./$(CONFIG)/defaults.yaml \
-	--defaults=./$(CONFIG)/ppthtml.yaml \
-	--toc)
-
 ppt-html:
 	(cd presentation && \
 	pandoc --defaults=./../defaults.yaml --defaults=ppthtml.yaml)
