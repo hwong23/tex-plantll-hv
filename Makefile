@@ -56,7 +56,7 @@ doctec-ppt:
 	(pandoc -r $(OPTIONS) \
 	--resource-path=$(CONTD)/mdppt \
 	--defaults=./$(CONFIG)/defaults.yaml \
-	--defaults=./$(CONFIG)/ppt.yaml \
+	--defaults=./$(CONFIG)/pptx.yaml \
 	./$(CONFIG)/metadata.yaml \
 	--toc)
 
