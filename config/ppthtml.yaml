@@ -1,5 +1,5 @@
 input-file: output/manuscript.md
-log-file: output/pptdoctec.log
-output-file: output/pptdoctec-${TRIGGERING_SHA_7}.html
-to: revealjs
+log-file: output/pptxdoctec.log
+output-file: output/pptxdoctec-${TRIGGERING_SHA_7}.html
 slide-level: 2
+to: revealjs
