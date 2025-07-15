@@ -34,19 +34,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.da4c7c9 - fix - Mon, 14 Jul 2025 22:24:21 -0500 
+Versión actual 1.84a7c90 - Compilación para entrega: accion-actualizacionContd (909ff9b) - Tue, 15 Jul 2025 04:45:24 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.da4c7c9 - fix - Mon, 14 Jul 2025 22:24:21 -0500
 
 1.0be303c - mk ppt - Mon, 14 Jul 2025 22:22:25 -0500
 
 1.7325213 - Compilación para entrega: accion-actualizacionContd (909ff9b) - Tue, 15 Jul 2025 00:07:56 +0000
 
 1.5d2fb74 - mk ppt - Mon, 14 Jul 2025 16:56:43 -0500
-
-1.eb66e30 - mk ppt - Mon, 14 Jul 2025 16:49:26 -0500
 
 
 ### Realizado Por
