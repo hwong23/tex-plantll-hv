@@ -5,7 +5,6 @@
 # Información del Documento
 
 Esta es la doc del grupo.
-
 ## Versión del Documento
 
 > 
@@ -34,11 +33,13 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.b4c38be - Compilación para entrega: accion-actualizacionContd (c6afcb0) - Sun, 20 Jul 2025 16:47:50 +0000 
+Versión actual 1.580027d - Compilación para entrega: accion-actualizacionContd (a355663) - Mon, 21 Jul 2025 02:32:26 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.b4c38be - Compilación para entrega: accion-actualizacionContd (c6afcb0) - Sun, 20 Jul 2025 16:47:50 +0000
 
 1.46e3c28 - Compilación para entrega: accion-actualizacionContd (4b9a95d) - Sun, 20 Jul 2025 16:40:32 +0000
 
@@ -46,16 +47,12 @@ Historia de cambios del documento.
 
 1.3299b8a - Compilación para entrega: accion-actualizacionContd (242a172) - Sat, 19 Jul 2025 14:36:02 +0000
 
-1.a7d6c8a - Compilación para entrega: accion-actualizacionContd (909ff9b) - Sat, 19 Jul 2025 13:18:30 +0000
-
 
 ### Realizado Por
 (creador)
 
 ### Revisado Por
 (revisor), Arquitectura de Aplicaciones
-
-
 
 
 
@@ -77,7 +74,7 @@ titlepage-rule-color: 360049
 
 ## 03.ENTRG.1n. Modelo de Entregas
 
-> Ingenium.  Modelo de Entregas. Dominio de Aplicación. AE. Secretaria Seneral Alcaldía Mayor de Bogotá.   
+> Ingenium.  Modelo de Entregas. Dominio de Aplicación. AE. Secretaria Seneral Alcaldía Mayor de Bogotá.  
 
 <br>
 
@@ -89,11 +86,7 @@ titlepage-rule-color: 360049
 | Nombre  | Tipo | Documentación |
 |---------|------|---------------|
 | Hoja ruta del producto / Plan de producto | Grouping |  |
-| Ciclo. Entrega 3 | Value | Versión 2.1. Solución integración JEP. |
-| Ciclo. Entrega 3 | Value | Versión 1.1. Solución integración JEP. |
 | Plan de entregas / iteración | Grouping |  |
-| Deliverable 1 | Deliverable | Definición de la Arquitectura de Referencia de la Entidad (situación actual del dominio aplicaciones, referencia cero). |
-| Deliverable 2 [ver i+1] | Deliverable | (...) que contenga el modelo de alto nivel, en el cual se visualicen sistemas de información existentes y su interrelación. |
 | Hoja ruta arquitectura | Grouping |  |
 
 Table: Elementos de la vista. {#tbl:tblelement-03.ENTRG.1n.ModelodeEntregas-id}
