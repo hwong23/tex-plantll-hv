@@ -33,19 +33,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.7a1a933 - Compilación para entrega: accion-actualizacionContd (3d7f7c0) - Thu, 24 Jul 2025 19:36:07 +0000 
+Versión actual 1.f8b6352 - Compilación para entrega: accion-actualizacionContd (a54591b) - Thu, 24 Jul 2025 19:54:10 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.7a1a933 - Compilación para entrega: accion-actualizacionContd (3d7f7c0) - Thu, 24 Jul 2025 19:36:07 +0000
 
 1.583a075 - Compilación para entrega: accion-actualizacionContd (6b4452f) - Thu, 24 Jul 2025 19:25:08 +0000
 
 1.9b623a7 - Compilación para entrega: accion-actualizacionContd (6b4452f) - Thu, 24 Jul 2025 14:24:55 +0000
 
 1.aed3ac4 - Compilación para entrega: accion-actualizacionContd (6b4452f) - Wed, 23 Jul 2025 21:50:46 +0000
-
-1.93d5526 - Compilación para entrega: accion-actualizacionContd (a42cb37) - Wed, 23 Jul 2025 20:27:32 +0000
 
 
 ### Realizado Por
@@ -115,7 +115,7 @@ todo: aun no está lista
 
 ![03. Entregables de la Vision. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/03.EntregablesdelaVision.png){#fig:id-0993b3b264144f84abe5c7031666fede width= height=}
 
-**Matriz de Sistemas de Información**
+### Matriz de Sistemas de Información
 Las matrices del dominio de aplicaciones de software y sistemas de información (SI) de SG son herramientas para el relacionamiento con otros dominios del ejercicio de arquitectura empresarial de SG. Con esto conseguimos soportar la toma decisiones de lo que debe ser compartido de los SI dentro de la Secretaría, y entre sus aplicaciones de software. Las matrices de este ejercicio sirven además para comunicar el grado de relacionamiento de los elementos.
 
 En resumen,
@@ -129,7 +129,7 @@ En resumen,
 
 Las matrices de este dominio (procesos e interoperabilidad) actúan como una hoja de ruta para la conectividad y el intercambio de información; inician desde una perspectiva de negocio de alto nivel y van hasta una especificación técnica detallada del la interacción con los sistemas. Sirven como herramienta de comunicación para los demás dominios de la arquitectura empresarial de SG, y contribuyen a que las interacciones relevantes entre servicios, canales, y procesos estén definidas y sean compatibles.
 
-**Matriz de Sistemas de Información vs Procesos de Negocio **
+### Matriz de Sistemas de Información vs Procesos de Negocio
 Las matrices del dominio de aplicaciones de software y sistemas de información (SI) de SG son herramientas para el relacionamiento con otros dominios del ejercicio de arquitectura empresarial de SG. Con esto conseguimos soportar la toma decisiones de lo que debe ser compartido de los SI dentro de la Secretaría, y entre sus aplicaciones de software. Las matrices de este ejercicio sirven además para comunicar el grado de relacionamiento de los elementos.
 
 En resumen,
@@ -143,7 +143,7 @@ En resumen,
 
 Las matrices de este dominio (procesos e interoperabilidad) actúan como una hoja de ruta para la conectividad y el intercambio de información; inician desde una perspectiva de negocio de alto nivel y van hasta una especificación técnica detallada del la interacción con los sistemas. Sirven como herramienta de comunicación para los demás dominios de la arquitectura empresarial de SG, y contribuyen a que las interacciones relevantes entre servicios, canales, y procesos estén definidas y sean compatibles.
 
-**Catálogo de Sistemas de Información**
+### Catálogo de Sistemas de Información
 En el contexto de TOGAF, El Catálogo de sistemas de información es un inventario detallado y documentado que actúa como ficha técnica de los sistemas de información o aplicaciones de software de SG. 
 
 Es un producto entregable clave de la fase de Arquitectura de Aplicaciones dentro de la Fase 3 de este ejercicio de arquitectura empresarial (AE). Forma parte del Marco de Referencia del Contenido Arquitectónico de TOGAF y del Marco de Arquitectura de Referencia del MinTIC (MAE 3.0, Colombia).
@@ -177,7 +177,7 @@ El Catálogo de aplicaciones de SG procura beneficios estratégicos y operativos
 * Base para la toma de decisiones: Sirve como base para la toma de decisiones en la gestión y gobierno de las capacidades de los sistemas de SG, y del portafolio y ciclo de vida de las aplicaciones.
 * Facilita la actualización continua: Permite la actualización continua de las características y atributos relevantes de los sistemas de información.
 
-**Identificar Necesidades TI en SG**
+### Identificar Necesidades TI en SG
 La construcción de lista de necesidades, preocupaciones y oportunidades implican a las sesiones de levantamiento, entrevistas, y cuestionarios compartidos en el mes de julio, junto con la recopilación estructurada de las fuentes de información sobre cada sistema.
 
 Necesidades de Transformación Digital y Tecnológica
@@ -206,7 +206,7 @@ Para los Componentes de Aplicación (Application Component) y Servicios de Aplic
 * Integrar plataformas y ecosistemas digitales :requiere reforzar la relación entre componentes de aplicación y la exposición de servicios de aplicación (Application Service), y clicar los lineamientos del Marco de Referencia de AE, versión 3.0 al momento, del MinTIC.
 * Mejorar la capacidad de las herramientas tecnológicas para el soporte a la toma de decisiones y la gestión: requiere la mejora de las Funcionalidad (Application Function) y Componentes de Aplicación actuales asociadas a esta capacidad.
 
-**Identificar Preocupaciones**
+### Identificar Preocupaciones
 Con base en el estudio de las sesiones de levantamiento, entrevistas, y cuestionarios compartidos en el mes de julio, junto con la recopilación estructurada de las fuentes de información sobre cada sistema, identificamos las siguientes preocupaciones (y debilidades) de SG relacionadas con el dominio de sistemas de información, dentro del alcance de este ejercicio.
 
 1. Deficiente apropiación del conocimiento en procesos de tecnologías de la información, lo que genera demora en la solución de los servicios de tecnologías de la información [2].
@@ -225,7 +225,7 @@ Con base en el estudio de las sesiones de levantamiento, entrevistas, y cuestion
 14. Materialización de riesgos asociados a ataques cibernéticos, e ingeniería social, suplantación de identidad, entre otros, que ponen en riesgo la seguridad de la información y los documentos (pérdida de la confidencialidad, integridad y disponibilidad de la información) y afectan la continuidad operativa [12].
 15. Estas debilidades resaltan la necesidad de modernizar la infraestructura y sistemas tecnológicos, mejorar la gestión de datos para análisis predictivos, fortalecer la ciberseguridad, y asegurar la capacitación y el personal adecuado para la gestión tecnológica [2-12].
 
-**Identificar Oportunidades**
+### Identificar Oportunidades
 La construcción de lista de oportunidades mencionadas implica el estudio de las sesiones de levantamiento, entrevistas, y cuestionarios compartidos en el mes de julio, junto con la recopilación estructurada de las fuentes de información al respecto de cada sistema de SG.
 
 Fuente: Sección "10.15.1 Resultado de la gestión de las oportunidades vigencia 2023" del documento "contexto_estrategico_-4202000-ot-066-_v05.pdf" [1-13], 
