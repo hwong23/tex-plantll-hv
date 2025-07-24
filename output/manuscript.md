@@ -33,19 +33,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.583a075 - Compilación para entrega: accion-actualizacionContd (6b4452f) - Thu, 24 Jul 2025 19:25:08 +0000 
+Versión actual 1.7a1a933 - Compilación para entrega: accion-actualizacionContd (3d7f7c0) - Thu, 24 Jul 2025 19:36:07 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.583a075 - Compilación para entrega: accion-actualizacionContd (6b4452f) - Thu, 24 Jul 2025 19:25:08 +0000
 
 1.9b623a7 - Compilación para entrega: accion-actualizacionContd (6b4452f) - Thu, 24 Jul 2025 14:24:55 +0000
 
 1.aed3ac4 - Compilación para entrega: accion-actualizacionContd (6b4452f) - Wed, 23 Jul 2025 21:50:46 +0000
 
 1.93d5526 - Compilación para entrega: accion-actualizacionContd (a42cb37) - Wed, 23 Jul 2025 20:27:32 +0000
-
-1.53054a2 - Compilación para entrega: accion-actualizacionContd (7c10fe8) - Wed, 23 Jul 2025 20:10:40 +0000
 
 
 ### Realizado Por
