@@ -142,12 +142,15 @@ Esta es la doc del grupo. \#\# Versión del Documento
 \begin{quote}
 \end{quote}
 
-Versión actual 1.5387c6c - Compilación para entrega:
-accion-actualizacionContd (83513bd) - Fri, 25 Jul 2025 00:54:39 +0000
+Versión actual 1.9e12a2c - Compilación para entrega:
+accion-actualizacionContd (d5a21f6) - Fri, 25 Jul 2025 01:02:09 +0000
 
 \subsection{Control de Cambios}\label{sec:control-de-cambios}
 
 Historia de cambios del documento.
+
+1.5387c6c - Compilación para entrega: accion-actualizacionContd
+(83513bd) - Fri, 25 Jul 2025 00:54:39 +0000
 
 1.0e5ecab - Compilación para entrega: accion-actualizacionContd
 (b6c7d24) - Thu, 24 Jul 2025 20:37:01 +0000
@@ -157,9 +160,6 @@ Historia de cambios del documento.
 
 1.d048824 - Compilación para entrega: accion-actualizacionContd
 (1ced18f) - Thu, 24 Jul 2025 20:09:14 +0000
-
-1.f8b6352 - Compilación para entrega: accion-actualizacionContd
-(a54591b) - Thu, 24 Jul 2025 19:54:10 +0000
 
 \subsubsection{Realizado Por}\label{sec:realizado-por}
 
@@ -266,6 +266,142 @@ SG (AESG); y en lo específico, contribuye a los fines de la arquitectura
 de negocio y tecnológica de SG, a delinear oportunidades y soluciones, y
 a soportar la planeación de la migración. Todo lo anterior dentro del
 alcance consignado en este ejercicio.
+
+\subsubsection{Alcance}\label{sec:alcance}
+
+El presente ejercicio de la arquitectura dominio de aplicaciones toma
+como alcance horizontal las áreas o unidades siguientes de la SG
+(\emph{fuente: sesiones de levantamiento, entrevistas, y cuestionarios
+compartidos en el mes de julio del 2025, junto con la recopilación
+estructurada de las fuentes de información y organigramas}):
+
+Unidades de negocio del alcance del dominio:
+
+\begin{itemize}
+\tightlist
+\item
+  Secretaría Privada
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Oficina Consejería Distrital de Comunicación. César Augusto Castro
+    Rodríguez
+  \item
+    Oficina Consejería Distrital de Tecnologías de la Información y las
+    Comunicaciones -TIC. Diana Celis Mora
+  \end{itemize}
+\item
+  Despacho del Secretario General. Miguel Andrés Silva Moyano
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Oficina de Tecnologías de la Información y las Comunicaciones.
+    Arleth Patricia Saurith Contreras
+  \item
+    Subsecretaría Distrital de Fortalecimiento Institucional. Alejandra
+    Rodas Gaiter
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Dirección Distrital de Desarrollo Institucional. Sebastian Estrada
+      Jaramillo
+
+      \begin{itemize}
+      \tightlist
+      \item
+        Subdirección Técnica de Desarrollo Institucional. Diego Canesco
+        Arenas
+      \end{itemize}
+    \end{itemize}
+  \item
+    Subsecretaría de Servicio a la Ciudadanía . Adriana Vargas Tamayo
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Dirección del Sistema Distrital de Servicio a la Ciudadanía.
+      Enrique Cusba García
+    \end{itemize}
+  \item
+    Subsecretaría Corporativa. Henry Villamarín Serrano
+  \end{itemize}
+\end{itemize}
+
+En cuanto al alcance vertical, las aplicaciones de software que están
+consignadas en este ejercicio son las siguientes (\emph{fuente: sesiones
+de levantamiento, entrevistas, y cuestionarios compartidos en el mes de
+julio del 2025, junto con la recopilación estructurada de las fuentes de
+información}):
+
+\begin{itemize}
+\tightlist
+\item
+  ADMON: Se relaciona con la gestión financiera, gestión de servicios
+  administrativos y tecnológicos, y gestión de recursos físicos45.
+\item
+  Administrativo y Financiero: Soporta la gestión financiera, gestión de
+  servicios administrativos y tecnológicos, y gestión de recursos
+  físicos
+\item
+  Bogotá Te Escucha: Es fundamental para el proceso de Gobierno abierto
+  y relacionamiento con la ciudadanía5. También se menciona como el
+  Sistema Distrital para la Gestión de Peticiones Ciudadanas, a través
+  del cual se evalúa la calidad de las respuestas emitidas a la
+  ciudadanía
+\item
+  Bogotá Aprende TIC: Apoya los procesos de Gobierno abierto y
+  relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión
+  Pública
+\item
+  DARUMA: Se utiliza en el proceso de Fortalecimiento de la Gestión
+  Pública5. También es el aplicativo donde se encuentran definidas las
+  fichas técnicas de productos y servicios de la Secretaría General8 y
+  se gestionan los riesgos estratégicos
+\item
+  SIGA: Interviene en la gestión de contratación, gestión financiera,
+  gestión de servicios administrativos y tecnológicos, y gestión de
+  recursos físicos
+\item
+  SAT Web: Relacionado con la gestión de servicios administrativos y
+  tecnológicos
+\item
+  GLOBO: Utilizado en el proceso de Fortalecimiento de la Gestión
+  Pública
+\item
+  Datos para la Transparencia (SATI): Soporta el proceso de Gobierno
+  abierto y relacionamiento con la ciudadanía
+\item
+  SUDIVC: Se aplica en los procesos de Gobierno abierto y
+  relacionamiento con la ciudadanía, Paz, víctimas y reconciliación, y
+  Fortalecimiento de la Gestión Pública
+\item
+  HUMANAPP: Apoya la gestión del talento humano
+\item
+  SIAB (El COFRE): Utilizado en los procesos de Gobierno abierto y
+  relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión
+  Pública
+\item
+  KOHA: Relacionado con la Gestión del conocimiento
+\item
+  SIVIC: Interviene en los procesos de Paz, víctimas y reconciliación, y
+  Fortalecimiento de la Gestión Pública
+\item
+  Data Warehouse AVANTI: Apoya la Gestión del conocimiento
+\item
+  Gestión Académica: Relacionado con la Gestión del conocimiento
+\item
+  EMLAZE: Utilizado en los procesos de Gobierno abierto y
+  relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión
+  Pública
+\item
+  GLPI: Soporta la gestión de servicios administrativos y tecnológicos
+\item
+  GitLab: Se relaciona con la Gestión de alianzas e internacionalización
+  de Bogotá
+\end{itemize}
 
 \subsubsection{Matriz de Sistemas de Información vs Procesos de
 Negocio}\label{sec:matriz-de-sistemas-de-informaciuxf3n-vs-procesos-de-negocio}
