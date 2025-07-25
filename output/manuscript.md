@@ -33,19 +33,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.dc29897 - Compilación para entrega: accion-actualizacionContd (b88b590) - Fri, 25 Jul 2025 01:53:00 +0000 
+Versión actual 1.1a78524 - Compilación para entrega: accion-actualizacionContd (ddee6ad) - Fri, 25 Jul 2025 02:24:03 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.dc29897 - Compilación para entrega: accion-actualizacionContd (b88b590) - Fri, 25 Jul 2025 01:53:00 +0000
 
 1.1a6d799 - Compilación para entrega: accion-actualizacionContd (343cf15) - Fri, 25 Jul 2025 01:41:31 +0000
 
 1.c595e1e - Compilación para entrega: accion-actualizacionContd (2ac3f3d) - Fri, 25 Jul 2025 01:35:46 +0000
 
 1.aeba23a - Compilación para entrega: accion-actualizacionContd (5ee16a5) - Fri, 25 Jul 2025 01:30:26 +0000
-
-1.475b4fa - Compilación para entrega: accion-actualizacionContd (505d6ad) - Fri, 25 Jul 2025 01:20:40 +0000
 
 
 ### Realizado Por
@@ -291,7 +291,7 @@ Las oportunidades tecnológicas y de mejora de sistemas de información menciona
 
 * capacitación en nuevas tecnologías y 
 
-* Implementación de la Arquitectura Empresarial como estrategia para impulsar la transformación digital y la eficiencia en la gestión pública de la SG.
+* Implementación de la Arquitectura Empresarial como estrategia para impulsar la transformación digital y la eficiencia en la gestión pública de la SG
     * Se espera que la Arquitectura Empresarial fortalezca la transparencia, y aumente la eficiencia de la gestión pública y la rendición de cuentas al estandarizar procesos y sistemas de información. La AE busca realmente impactar el objetivo de aumentar la confianza de la ciudadanía en la Gestión Pública.
     * Es requerido que este ejercicio beneficie a la SG con la entrega de activos como hojas de ruta, catálogos y caracterización de los sistemas de información, matrices de interacción, entre otros.
 
