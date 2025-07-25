@@ -33,19 +33,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.c595e1e - Compilación para entrega: accion-actualizacionContd (2ac3f3d) - Fri, 25 Jul 2025 01:35:46 +0000 
+Versión actual 1.1a6d799 - Compilación para entrega: accion-actualizacionContd (343cf15) - Fri, 25 Jul 2025 01:41:31 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.c595e1e - Compilación para entrega: accion-actualizacionContd (2ac3f3d) - Fri, 25 Jul 2025 01:35:46 +0000
 
 1.aeba23a - Compilación para entrega: accion-actualizacionContd (5ee16a5) - Fri, 25 Jul 2025 01:30:26 +0000
 
 1.475b4fa - Compilación para entrega: accion-actualizacionContd (505d6ad) - Fri, 25 Jul 2025 01:20:40 +0000
 
 1.5690118 - Compilación para entrega: accion-actualizacionContd (90c339b) - Fri, 25 Jul 2025 01:13:23 +0000
-
-1.9e12a2c - Compilación para entrega: accion-actualizacionContd (d5a21f6) - Fri, 25 Jul 2025 01:02:09 +0000
 
 
 ### Realizado Por
@@ -224,25 +224,25 @@ El Catálogo de aplicaciones de SG procura beneficios estratégicos y operativos
 ### Necesidades SI de SG
 La construcción de lista de necesidades, preocupaciones y oportunidades implican a las sesiones de levantamiento, entrevistas, y cuestionarios compartidos en el mes de julio, junto con la recopilación estructurada de las fuentes de información sobre cada sistema.
 
-Necesidades de Transformación Digital y Tecnológica
+#### Necesidades de Transformación Digital y Tecnológica
 La transformación digital (objetivo estratégico de SG)  es un motor fundamental para alinear las estrategias, procesos y tecnologías de la Secretaría General. Esta transformación busca:
 
-* Impulsar la transformación digital para alinear estrategias, procesos y tecnologías
-* (Necesidad) la Modernización y Eficiencia Pública (Driver)
+* Impulsar la transformación digital para alinear estrategias, procesos y tecnologías, que resulte en el aumento de eficiencia de la gestión pública.
 * Cerrar las brechas en la Política de Gobierno Digital, de la cual la Arquitectura Empresarial es un habilitador clave.
-* Modernizar la infraestructura tecnológica obsoleta para asegurar su continuidad y disponibilidad.
+* Modernizar la infraestructura tecnológica que resulte del análisis de obsolescencia para asegurar su continuidad y disponibilidad.
 * Integrar plataformas y ecosistemas digitales y superar la falta de interoperabilidad.
-* Automatizar trámites y estandarizar la gestión y gobernanza de datos públicos.
-* Adquirir software especializado en análisis de datos para mejorar la toma de decisiones basada en evidencia.
+* Aumentar la automatización de los trámites digitales.
+* Estandarizar la gestión y gobernanza de datos públicos.
+* Mejorar el soporte que los SI dan a la toma de decisiones basada en evidencia.
 * Generar análisis predictivos y prospectivos de resultados de gestión, que son insumos para la toma de decisiones.
-* Contar con disponibilidad de personal adecuado para actualizar plataformas tecnológicas y la gestión de las cargas de trabajo es una necesidad identificada para este eje.
+* Contar con disponibilidad de personal adecuado para actualizar plataformas tecnológicas y gestionar las cargas de trabajo.
 * Aprovechar nuevas tecnologías como la Inteligencia Artificial, la minería de datos, el procesamiento del lenguaje, para mejorar los procesos y la relación con la ciudadanía.
 
 * Abordar los altos costos de la tecnología que limitan la implementación de sistemas avanzados. (??)
 * Fortalecer la ciberseguridad y seguridad de la información para proteger la integridad, disponibilidad y confidencialidad de los datos y prevenir ataques.
 
-Necesidades Específicas del Dominio de Aplicaciones de software
-Esta capa se refiere al comportamiento de las aplicaciones que apoyan el negocio, la estructura de esas aplicaciones y su relación con los objetos de datos que utilizan.
+#### Necesidades Específicas del Dominio de Aplicaciones de software
+Esta tipo de necesidades refiere al comportamiento de las aplicaciones que apoyan la misionalidad, a su estructura, y su relación con los objetos de datos que utilizan.
 
 Para los Componentes de Aplicación (Application Component) y Servicios de Aplicación (Application Service) de SG:
 
