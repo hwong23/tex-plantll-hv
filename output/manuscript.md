@@ -33,19 +33,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.9e12a2c - Compilación para entrega: accion-actualizacionContd (d5a21f6) - Fri, 25 Jul 2025 01:02:09 +0000 
+Versión actual 1.5690118 - Compilación para entrega: accion-actualizacionContd (90c339b) - Fri, 25 Jul 2025 01:13:23 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.9e12a2c - Compilación para entrega: accion-actualizacionContd (d5a21f6) - Fri, 25 Jul 2025 01:02:09 +0000
 
 1.5387c6c - Compilación para entrega: accion-actualizacionContd (83513bd) - Fri, 25 Jul 2025 00:54:39 +0000
 
 1.0e5ecab - Compilación para entrega: accion-actualizacionContd (b6c7d24) - Thu, 24 Jul 2025 20:37:01 +0000
 
 1.72502f0 - Compilación para entrega: accion-actualizacionContd (67aebf0) - Thu, 24 Jul 2025 20:26:30 +0000
-
-1.d048824 - Compilación para entrega: accion-actualizacionContd (1ced18f) - Thu, 24 Jul 2025 20:09:14 +0000
 
 
 ### Realizado Por
@@ -115,6 +115,8 @@ todo: aun no está lista
 
 ![03. Entregables de la Vision. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/03.EntregablesdelaVision.png){#fig:id-0993b3b264144f84abe5c7031666fede width= height=}
 
+### Visión
+
 ### Contexto de Arquitectura de Sistemas de Información SG
 Desde el dominio de aplicaciones y sistemas de información de la Secretaría General, llamada en adelante “la arquitectura de sistemas de Información de SG”, buscamos adelantar las especificaciones de las arquitecturas objetivo de los sistemas de información de Secretaria de la Alcaldía de Bogotá que soporten la arquitectura de negocio y datos, en línea y dentro del alcance de la visión establecida en el primer entregable de este ejercicio de arquitectura empresarial de SG (AESG).
 
@@ -128,7 +130,7 @@ En particular, la arquitectura de sistemas de información de SG se plantea, den
 
 De esta manera, la arquitectura de sistemas de SG contribuye a la consecución de la visión de este ejercicio de arquitectura empresarial SG (AESG); y en lo específico, contribuye a los fines de la arquitectura de negocio y tecnológica de SG, a delinear oportunidades y soluciones, y a soportar la planeación de la migración. Todo lo anterior dentro del alcance consignado en este ejercicio.
 
-### Alcance
+#### Alcance
 El presente ejercicio de la arquitectura dominio de aplicaciones toma como alcance horizontal las áreas o unidades siguientes de la SG (_fuente: sesiones de levantamiento, entrevistas, y cuestionarios compartidos en el mes de julio del 2025, junto con la recopilación estructurada de las fuentes de información y organigramas_):
 
 Unidades de negocio del alcance del dominio:
@@ -215,7 +217,7 @@ El Catálogo de aplicaciones de SG procura beneficios estratégicos y operativos
 * Base para la toma de decisiones: Sirve como base para la toma de decisiones en la gestión y gobierno de las capacidades de los sistemas de SG, y del portafolio y ciclo de vida de las aplicaciones.
 * Facilita la actualización continua: Permite la actualización continua de las características y atributos relevantes de los sistemas de información.
 
-### Identificar Necesidades TI en SG
+### Necesidades SI de SG
 La construcción de lista de necesidades, preocupaciones y oportunidades implican a las sesiones de levantamiento, entrevistas, y cuestionarios compartidos en el mes de julio, junto con la recopilación estructurada de las fuentes de información sobre cada sistema.
 
 Necesidades de Transformación Digital y Tecnológica
@@ -244,7 +246,7 @@ Para los Componentes de Aplicación (Application Component) y Servicios de Aplic
 * Integrar plataformas y ecosistemas digitales :requiere reforzar la relación entre componentes de aplicación y la exposición de servicios de aplicación (Application Service), y clicar los lineamientos del Marco de Referencia de AE, versión 3.0 al momento, del MinTIC.
 * Mejorar la capacidad de las herramientas tecnológicas para el soporte a la toma de decisiones y la gestión: requiere la mejora de las Funcionalidad (Application Function) y Componentes de Aplicación actuales asociadas a esta capacidad.
 
-### Identificar Preocupaciones
+### Preocupaciones SI de SG
 Con base en el estudio de las sesiones de levantamiento, entrevistas, y cuestionarios compartidos en el mes de julio, junto con la recopilación estructurada de las fuentes de información sobre cada sistema, identificamos las siguientes preocupaciones (y debilidades) de SG relacionadas con el dominio de sistemas de información, dentro del alcance de este ejercicio.
 
 1. Deficiente apropiación del conocimiento en procesos de tecnologías de la información, lo que genera demora en la solución de los servicios de tecnologías de la información [2].
@@ -263,7 +265,7 @@ Con base en el estudio de las sesiones de levantamiento, entrevistas, y cuestion
 14. Materialización de riesgos asociados a ataques cibernéticos, e ingeniería social, suplantación de identidad, entre otros, que ponen en riesgo la seguridad de la información y los documentos (pérdida de la confidencialidad, integridad y disponibilidad de la información) y afectan la continuidad operativa [12].
 15. Estas debilidades resaltan la necesidad de modernizar la infraestructura y sistemas tecnológicos, mejorar la gestión de datos para análisis predictivos, fortalecer la ciberseguridad, y asegurar la capacitación y el personal adecuado para la gestión tecnológica [2-12].
 
-### Identificar Oportunidades
+### Oportunidades SI de SG
 La construcción de lista de oportunidades mencionadas implica el estudio de las sesiones de levantamiento, entrevistas, y cuestionarios compartidos en el mes de julio, junto con la recopilación estructurada de las fuentes de información al respecto de cada sistema de SG.
 
 Fuente: Sección "10.15.1 Resultado de la gestión de las oportunidades vigencia 2023" del documento "contexto_estrategico_-4202000-ot-066-_v05.pdf" [1-13], 
