@@ -33,19 +33,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.aeba23a - Compilación para entrega: accion-actualizacionContd (5ee16a5) - Fri, 25 Jul 2025 01:30:26 +0000 
+Versión actual 1.c595e1e - Compilación para entrega: accion-actualizacionContd (2ac3f3d) - Fri, 25 Jul 2025 01:35:46 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.aeba23a - Compilación para entrega: accion-actualizacionContd (5ee16a5) - Fri, 25 Jul 2025 01:30:26 +0000
 
 1.475b4fa - Compilación para entrega: accion-actualizacionContd (505d6ad) - Fri, 25 Jul 2025 01:20:40 +0000
 
 1.5690118 - Compilación para entrega: accion-actualizacionContd (90c339b) - Fri, 25 Jul 2025 01:13:23 +0000
 
 1.9e12a2c - Compilación para entrega: accion-actualizacionContd (d5a21f6) - Fri, 25 Jul 2025 01:02:09 +0000
-
-1.5387c6c - Compilación para entrega: accion-actualizacionContd (83513bd) - Fri, 25 Jul 2025 00:54:39 +0000
 
 
 ### Realizado Por
@@ -146,6 +146,10 @@ Unidades de negocio del alcance del dominio:
     * Subsecretaría de Servicio a la Ciudadanía . Adriana Vargas Tamayo
         * Dirección del Sistema Distrital de Servicio a la Ciudadanía. Enrique Cusba García
     * Subsecretaría Corporativa. Henry Villamarín Serrano
+    * Subsecreataría de Servicios Ciudadanos (…)
+    * Subsecreataría de Inversión y FF (…)
+    * Subsecreataría de Operaciones
+    * Subsecreataría de Relaciones Internacionales (…)
 
 En cuanto al alcance vertical, las aplicaciones de software que están consignadas en este ejercicio son las siguientes (_fuente: sesiones de levantamiento, entrevistas, y cuestionarios compartidos en el mes de julio del 2025, junto con la recopilación estructurada de las fuentes de información_):
 
