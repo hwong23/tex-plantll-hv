@@ -311,20 +311,20 @@ Objetivo de integrar nuevas tecnologías para mejorar funciones principales.
 Visión a largo plazo para la ciudad impulsada por la digitalización.
 ### OETI03: Gestionar la seguridad de la información y la seguridad digital
 Gestionar la seguridad de la información y la seguridad digital mediante la adopción de políticas, controles y campañas de concienciación que fomenten una cultura digital segura, así como la implementación de estrategias para asegurar la continuidad de los servicios de TIC.
-### Fortalecer la Gestión Pública
+### OACC2. Fortalecer la Gestión Pública
 Objetivo de TI de alto nivel optimizar (mejorar la eficiencia y eficacia) los procesos y servicios de la administración pública.
 
 ### Cultura digital enfocada en la transformación de la Entidad
 Meta de fomentar una mentalidad y habilidades digitales dentro de la organización.
 ### Gestión pública más eficiente, inclusiva, transparente y confiable
 Resultado deseado de una administración pública mejorada para los ciudadanos.
-### Impulsar la Transformación Digital
+### OACC1. Impulsar la Transformación Digital
 Meta principal del PETI, buscando modernizar la entidad a través de tecnologías digitales. Contiene a la Política de Gobierno Digital.
 ### Fortalecimiento de la gestión mediante el uso y mejora de las tecnologías
 Objetivo de mejorar la gestión pública mediante la aplicación de TI.
 ### Transformación digital de servicios y procesos administrativos
 Meta de digitalizar y optimizar los servicios y procesos internos y externos.
-### Mejorar las capacidades tecnológicas de la Entidad (objetivo estratégico de TI)
+### Mejorar las capacidades tecnológicas de la Entidad
 Meta de TI para modernizar y potenciar la infraestructura y habilidades tecnológicas.
 ### Gestionar la seguridad de la información y seguridad digital (objetivo estratégico de TI)
 Objetivo de TI para proteger los activos de información y garantizar la ciberseguridad.
@@ -431,7 +431,7 @@ Alineación entre los objetivos estratégicos de la Secretaría General de la Al
 El PETI de la OTIC busca que la tecnología sea un habilitador transversal para una gestión pública más eficiente, inclusiva, transparente y confiable, optimizando los trámites y servicios ofrecidos a la ciudadanía. Para ello, la integración de las tecnologías debe estar alineada con el direccionamiento estratégico y la planeación institucional de la Entidad.
 ### Alineación con Plan Distrital de Desarrollo
 El PETI está alineado con las políticas y lineamientos del Plan Distrital de Desarrollo “Bogotá camina segura 2024-2027”, especialmente con su Objetivo 5: "Bogotá confía en su gobierno", que busca promover la confianza en la administración distrital.
-### Objetivos SG
+### 2. Objetivos SG
 
 ### O1: Promover paz y reconciliación
 Promover la paz y la reconciliación en Bogotá a través de la integración local de las poblaciones afectadas por el conflicto armado, buscando la superación de sus condiciones de vulnerabilidad y la reconstrucción del tejido social en la ciudad.
@@ -461,12 +461,12 @@ Fomentar el uso y la apropiación de las tecnologías de la Cuarta Revolución I
 Fortalecer la implementación de la Política de Gobierno Digital para promover la transformación digital en la Secretaría General, y optimizar las capacidades tecnológicas, con el fin de garantizar una gestión pública eficiente, transparente y accesible para la ciudadanía.
 ### OETI03: Gestionar la seguridad de la información y la seguridad digital
 Gestionar la seguridad de la información y la seguridad digital mediante la adopción de políticas, controles y campañas de concienciación que fomenten una cultura digital segura, así como la implementación de estrategias para asegurar la continuidad de los servicios de TIC.
-### Acciones
+### 3. Acciones
 
-### Fortalecer la Gestión Pública
+### OACC2. Fortalecer la Gestión Pública
 Objetivo de TI de alto nivel optimizar (mejorar la eficiencia y eficacia) los procesos y servicios de la administración pública.
 
-### Impulsar la Transformación Digital
+### OACC1. Impulsar la Transformación Digital
 Meta principal del PETI, buscando modernizar la entidad a través de tecnologías digitales. Contiene a la Política de Gobierno Digital.
 ### Adopción de innovaciones tecnológicas para apoyar áreas misionales clave
 Objetivo de integrar nuevas tecnologías para mejorar funciones principales.
@@ -478,7 +478,7 @@ Resultado deseado de una administración pública mejorada para los ciudadanos.
 Objetivo de mejorar la gestión pública mediante la aplicación de TI.
 ### Transformación digital de servicios y procesos administrativos
 Meta de digitalizar y optimizar los servicios y procesos internos y externos.
-### Mejorar las capacidades tecnológicas de la Entidad (objetivo estratégico de TI)
+### Mejorar las capacidades tecnológicas de la Entidad
 Meta de TI para modernizar y potenciar la infraestructura y habilidades tecnológicas.
 ### Gestionar la seguridad de la información y seguridad digital (objetivo estratégico de TI)
 Objetivo de TI para proteger los activos de información y garantizar la ciberseguridad.
@@ -623,7 +623,7 @@ todo: aun no está lista
 
 ![06.Negocio.n1.a. Necesidades y Aplicaciones. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/06.Negocio.n1.a.NecesidadesyAplicaciones.png){#fig:id-73084877ba5b4f859a7aa197be93b750 width= height=}
 
-### Fortalecer la Gestión Pública
+### OACC2. Fortalecer la Gestión Pública
 Objetivo de TI de alto nivel optimizar (mejorar la eficiencia y eficacia) los procesos y servicios de la administración pública.
 
 ### Alcanzar Objetivos Estratégicos
@@ -678,7 +678,7 @@ Restricción derivada de la diversidad de sistemas y tecnologías ya implementad
 Restricción financiera para la ejecución de iniciativas y proyectos.
 ### Sistema de Gestión Documental
 Componente de aplicación para la gestión electrónica de documentos.
-### Mejorar las capacidades tecnológicas de la Entidad (objetivo estratégico de TI)
+### Mejorar las capacidades tecnológicas de la Entidad
 Meta de TI para modernizar y potenciar la infraestructura y habilidades tecnológicas.
 ### Política de Gobierno Digital
 Principios que guiarán el diseño y la evolución de la arquitectura de solución. Son declaraciones de intención de la SG que deben ser cumplidas.
