@@ -1,111 +1,4 @@
 
-<div style="page-break-before: always;"></div>
-\newpage
-
-# Información del Documento
-
-Esta es la doc del grupo.
-## Versión del Documento
-
-> 
-
-<br>
-
----
-title: Propuesta de Servicios Secretaria de la Alcaldía de Bogotá
-subtitle: Evaluación y Hoja de Ruta de la Arquitectura del Canal Bancario Whatsapp
-subject: Proyecto de Evaluación y Hoja de Ruta Arquitectura
-author: SoftProductiva.com
-date: 2025-01-20
-keywords: [Arquitectura, Evaluación, Diseño, Hoja de ruta, Transición]
-geometry:
-  - top=1.3in
-  - bottom=1in
-  - left=1in
-  - right=1in
-fignos-cleveref: True
-fignos-plus-name: Fig.
-fignos-caption-name: Imagen
-tablenos-caption-name: Tabla
-titlepage-background: include/background2.pdf
-titlepage-logo: include/logo.png
-logo-width: 60mm
-listings-no-page-break: true
-...
-
-Versión actual 1.c541c13 - Compilación para entrega: accion-actualizacionContd (a8776df) - Mon, 28 Jul 2025 02:51:17 +0000 
-
-
-## Control de Cambios
-Historia de cambios del documento.
-
-1.30dbe43 - Compilación para entrega: accion-actualizacionContd (35dd630) - Mon, 28 Jul 2025 02:22:49 +0000
-
-1.56eaee5 - Compilación para entrega: accion-actualizacionContd (072b92d) - Mon, 28 Jul 2025 02:20:13 +0000
-
-1.dc4b049 - Compilación para entrega: accion-actualizacionContd (e02fd0b) - Sun, 27 Jul 2025 22:47:55 +0000
-
-1.602c5b4 - Compilación para entrega: accion-actualizacionContd (57a21b5) - Sun, 27 Jul 2025 22:26:40 +0000
-
-
-### Realizado Por
-(creador)
-
-### Revisado Por
-(revisor), Arquitectura de Aplicaciones
-
-
-
-
----
-lang: en
-titlepage: true
-titlepage-rule-color: 360049
-
-...
-
-
-
-
-<div style="page-break-before: always;"></div>
-\newpage
-
-# Servicios de Ingeniería Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá
-
-## 03.ENTRG.1n. Modelo de Entregas
-
-> Ingenium.  Modelo de Entregas. Dominio de Aplicación. AE. Secretaria Seneral Alcaldía Mayor de Bogotá.  
-
-<br>
-
-
-![03.ENTRG.1n. Modelo de Entregas. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/03.ENTRG.1n.ModelodeEntregas.png){#fig:id-b7aa07be1bf34794b7ab18f800fd4d63 width=5in height=}
-
-### Elementos del Modelo
-
-| Nombre  | Tipo | Documentación |
-|---------|------|---------------|
-| Hoja ruta del producto / Plan de producto | Grouping |  |
-| Plan de entregas / iteración | Grouping |  |
-| Hoja ruta arquitectura | Grouping |  |
-
-Table: Elementos de la vista. {#tbl:tblelement-03.ENTRG.1n.ModelodeEntregas-id}
-
-<br>
-
-
-
-
----
-lang: en
-titlepage: true
-titlepage-rule-color: 360049
-todo: aun no está lista
-...
-
-
-
-
 ## Entregables Fase I de la Visión AE de SG
 
 > 
@@ -113,7 +6,7 @@ todo: aun no está lista
 <br>
 
 
-![03. Entregables de la Vision. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/03.EntregablesdelaVision.png){#fig:id-0993b3b264144f84abe5c7031666fede width= height=}
+![03. Entregables Vision. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/03.EntregablesVision.png){#fig:id-0993b3b264144f84abe5c7031666fede width= height=}
 
 ### Visión
 
@@ -313,7 +206,7 @@ todo: aun no está lista
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Documentación Dominio de Aplicaciones y SI
+# grp-dominio-aplicaciones
 
 ## SI del Análisis de Entorno
 
@@ -361,29 +254,594 @@ En síntesis, el "Resumen Ejecutivo FASE I.pdf" proporciona el marco estratégic
 
 ![06.2n2. SI del Analisis de Entorno. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/06.2n2.SIdelAnalisisdeEntorno.png){#fig:id-097745511d984e7eaf02b5ad5a93e7a8 width= height=}
 
-### Elementos del Modelo
+### Canales SG
 
-| Nombre  | Tipo | Documentación |
-|---------|------|---------------|
-| Canales SG | Grouping |  |
-| Portal Bogotá Capital Digital | Application Component | Portal Integrador de trámites y servicios ofrecidos a la ciudadanía. |
-| Sistemas de interacción ciudadana y transparencia | Grouping |  |
-| MoviApp | Application Component | Sesión levantamiento no. 2. |
-| Sistemas de gestión administrativa y financiera | Grouping |  |
-| Expediente Digital | Data Object | Objeto de datos en la capa de aplicación que representa un expediente electrónico. |
-| PANDORA | Application Component | Implementación de temas precontractual y planeación. |
-| Comisiones | Application Component | Sesión levantamiento no. 1.
- |
-| Sistemas de fortalecimiento de capacidades y conocimiento | Grouping |  |
-| SIAB (El COFRE) | Application Component | Sistema de Información del Archivo de Bogotá SIAB. Permite automatizar los procesos archivísticos y técnicos que realiza el Archivo, tales como llevar un registro de los Ingresos Documentales (antes área de acopio), para la descripción y catalogación de la documentación, propios del proceso de Gestión de la Función Archivística y del Patrimonio Documental, para su custodia y conservación permanente. |
-| AVANTI | Application Component | Apoya la Gestión del conocimiento.
- |
-| Sistemas de desarrollo | Grouping |  |
-| Ofimática y colaboración | Grouping |  |
+### Portal Bogotá Capital Digital
+Portal Integrador de trámites y servicios ofrecidos a la ciudadanía.
+### Sistemas de interacción ciudadana y transparencia
 
-Table: Elementos de la vista. {#tbl:tblelement-06.2n2.SIdelAnalisisdeEntorno-id}
+### MoviApp
+Sesión levantamiento no. 2.
+### Sistemas de gestión administrativa y financiera
+
+### Expediente Digital
+Objeto de datos en la capa de aplicación que representa un expediente electrónico.
+### PANDORA
+Implementación de temas precontractual y planeación.
+### Comisiones
+Sesión levantamiento no. 1.
+
+### Sistemas de fortalecimiento de capacidades y conocimiento
+
+### SIAB (El COFRE)
+Sistema de Información del Archivo de Bogotá SIAB. Permite automatizar los procesos archivísticos y técnicos que realiza el Archivo, tales como llevar un registro de los Ingresos Documentales (antes área de acopio), para la descripción y catalogación de la documentación, propios del proceso de Gestión de la Función Archivística y del Patrimonio Documental, para su custodia y conservación permanente.
+### AVANTI
+Apoya la Gestión del conocimiento.
+
+### Sistemas de desarrollo
+
+### Ofimática y colaboración
+
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+todo: aun no está lista
+...
+
+
+
+
+## Objetivos Estratégicos SG-OTIC
+
+> 
 
 <br>
+
+Este modelo representa la alineación entre los objetivos estratégicos de la Secretaría General de la Alcaldía Mayor de Bogotá D.C. y los objetivos de la Oficina de Tecnologías de la Información y las Comunicaciones (OTIC), mostrando cómo los esfuerzos de TI habilitan las metas institucionales de alto nivel.
+
+![06.BMM. Objetivos Estrategicos SG-OTIC. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/06.BMM.ObjetivosEstrategicosSG-OTIC.png){#fig:id-257a9a842fe0459c88cf09c4ebd37805 width= height=}
+
+### Objetivos SG
+
+### O1: Promover paz y reconciliación
+Promover la paz y la reconciliación en Bogotá a través de la integración local de las poblaciones afectadas por el conflicto armado, buscando la superación de sus condiciones de vulnerabilidad y la reconstrucción del tejido social en la ciudad.
+### O2: Fortalecer institucionalidad y gobernanza TIC
+Fortalecer la institucionalidad y gobernanza para impulsar y coordinar el uso de las Tecnologías de la Información y las Comunicaciones (TIC), con el fin de establecer un marco normativo, habilitar la infraestructura, promover el talento digital y crear procesos eficientes para la prestación de servicios ciudadanos y la transformación de la administración pública.
+### O3: Informar a la ciudadanía y fomentar participación
+Informar a la ciudadanía mediante campañas y estrategias de comunicación sobre temas de ciudad, para fomentar la participación ciudadana y la transparencia de la gestión pública.
+### O4: Consolidar arquitectura institucional y alianzas
+Desarrollar y consolidar la arquitectura institucional, los instrumentos de política pública y las alianzas estratégicas necesarias para posicionar a Bogotá como una ciudad globalmente accesible y abierta al mundo.
+### O5: Mejorar relacionamiento ciudadano
+Mejorar el relacionamiento de la ciudadanía con el gobierno distrital a través del fortalecimiento de la oferta institucional, la modernización de los canales de atención y la cualificación del talento humano, contribuyendo al aumento de la confianza y satisfacción ciudadana.
+### O6: Fortalecer innovación pública
+Fortalecer los procesos de innovación pública en las entidades distritales, facilitando habilitadores, desarrollando capacidades en intraemprendimiento, promoviendo el trabajo colaborativo y la articulación entre actores públicos y privados.
+### O7: Fortalecer capacidades institucionales gestión y desempeño
+Fortalecer las capacidades institucionales para la implementación de las políticas de gestión y desempeño, con el objetivo de generar valor público, contribuir a la solución de los retos de la ciudad y promover la participación ciudadana.
+### O8: Fomentar cultura de integridad y transparencia
+Fomentar una cultura de integridad, transparencia y ética pública en la Administración Distrital.
+### O9: Promover uso social patrimonio documental
+Promover la apropiación y uso social del patrimonio documental del Distrito Capital, mediante su protección, conservación, adecuada gestión y fácil acceso por parte de la ciudadanía.
+### O10: Mejorar oportunidad gestión administrativa
+Mejorar la oportunidad en la gestión administrativa, garantizando la adquisición de bienes y servicios que satisfagan las necesidades de la entidad y la ciudadanía, en el marco de la optimización de los recursos asignados.
+### Objetivos OTIC
+
+### OETI02: Fomentar el uso y la apropiación de las tecnologías de la Cuarta Revolución Industrial (4RI) 
+Fomentar el uso y la apropiación de las tecnologías de la Cuarta Revolución Industrial (4RI) para impulsar la transformación digital en la Secretaría General, integrando tecnologías emergentes que optimicen los procesos, promuevan la innovación y mejoren la eficiencia en la gestión pública.
+### OETI01: Fortalecer la implementación de la Política de Gobierno Digital
+Fortalecer la implementación de la Política de Gobierno Digital para promover la transformación digital en la Secretaría General, y optimizar las capacidades tecnológicas, con el fin de garantizar una gestión pública eficiente, transparente y accesible para la ciudadanía.
+### OETI03: Gestionar la seguridad de la información y la seguridad digital
+Gestionar la seguridad de la información y la seguridad digital mediante la adopción de políticas, controles y campañas de concienciación que fomenten una cultura digital segura, así como la implementación de estrategias para asegurar la continuidad de los servicios de TIC.
+### Tecnología como Habilitador Transversal (PETI OTIC)
+El PETI de la OTIC busca que la tecnología sea un habilitador transversal para una gestión pública más eficiente, inclusiva, transparente y confiable, optimizando los trámites y servicios ofrecidos a la ciudadanía. Para ello, la integración de las tecnologías debe estar alineada con el direccionamiento estratégico y la planeación institucional de la Entidad.
+### Alineación con Plan Distrital de Desarrollo
+El PETI está alineado con las políticas y lineamientos del Plan Distrital de Desarrollo “Bogotá camina segura 2024-2027”, especialmente con su Objetivo 5: "Bogotá confía en su gobierno", que busca promover la confianza en la administración distrital.
+### Procesos de apoyo a la gestión
+Procesos internos que facilitan la operación de la entidad.
+### Gestión de Trámites Ciudadanos
+Proceso de atención y resolución de solicitudes y gestiones de los ciudadanos.
+### Capacidad de Transformación Digital
+Habilidad de la entidad para adaptarse y evolucionar digitalmente.
+### Gestión de Información Interna
+Proceso de recolección, procesamiento y distribución de información dentro de la entidad.
+### Toma de decisiones
+Proceso fundamental para la dirección estratégica y operativa de la entidad.
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+todo: aun no está lista
+...
+
+
+
+
+## Objetivos e Iniciativas. PETI SG
+
+> 
+
+<br>
+
+Diagrama que muestra la alineación estratégica, los actores de negocio y los principales componentes de aplicación relacionados con la Transformación Digital de la Alcaldía Mayor de Bogotá D.C. Se enfoca en la trazabilidad desde las metas estratégicas hasta los proyectos y los sistemas de información.
+
+![06.BMM. Objetivos e Iniciativas. PETI SG. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/06.BMM.ObjetivoseIniciativas.PETISG.png){#fig:id-710b67ee56954bd891264181bf9a408f width= height=}
+
+### Adopción de innovaciones tecnológicas para apoyar áreas misionales clave
+Objetivo de integrar nuevas tecnologías para mejorar funciones principales.
+### Bogotá en una ciudad más conectada y orientada al bienestar de la ciudadanía
+Visión a largo plazo para la ciudad impulsada por la digitalización.
+### Fortalecer la Gestión Pública
+Objetivo de TI de alto nivel optimizar (mejorar la eficiencia y eficacia) los procesos y servicios de la administración pública.
+
+### Cultura digital enfocada en la transformación de la Entidad
+Meta de fomentar una mentalidad y habilidades digitales dentro de la organización.
+### Gestionar la seguridad de la información y seguridad digital (objetivo estratégico de TI)
+Objetivo de TI para proteger los activos de información y garantizar la ciberseguridad.
+### Gestión pública más eficiente, inclusiva, transparente y confiable
+Resultado deseado de una administración pública mejorada para los ciudadanos.
+### Impulsar la Transformación Digital
+Meta principal del PETI, buscando modernizar la entidad a través de tecnologías digitales. Contiene a la Política de Gobierno Digital.
+### Fortalecimiento de la gestión mediante el uso y mejora de las tecnologías
+Objetivo de mejorar la gestión pública mediante la aplicación de TI.
+### Transformación digital de servicios y procesos administrativos
+Meta de digitalizar y optimizar los servicios y procesos internos y externos.
+### Mejorar las capacidades tecnológicas de la Entidad (objetivo estratégico de TI)
+Meta de TI para modernizar y potenciar la infraestructura y habilidades tecnológicas.
+### Gestionar la seguridad de la información y seguridad digital (objetivo estratégico de TI)
+Objetivo de TI para proteger los activos de información y garantizar la ciberseguridad.
+### Capacidad de Transformación Digital
+Habilidad de la entidad para adaptarse y evolucionar digitalmente.
+### Mantener los Sistemas de Información y las aplicaciones que apalanquen los procesos misionales y de apoyo a la gestión
+Actividad continua para asegurar la operatividad y soporte de los sistemas de información clave.
+### Mantener actualizada la infraestructura tecnológica obsoleta
+Proyecto recurrente para asegurar la modernización y sostenibilidad de la infraestructura de TI.
+### Implementar proyectos de transformación digital a través del uso de Tecnologías de Cuarta Revolución Industrial (4RI)
+Ejecución de iniciativas que adoptan tecnologías avanzadas para la transformación digital.
+### Implementar el Modelo de Gobierno de Datos en el sector de la Gestión Pública
+Proyecto para poner en práctica el marco de gobernanza de datos en el ámbito público.
+### Fortalecimiento de los Canales Digitales
+Iniciativa para mejorar la calidad y alcance de los canales de atención digitales.
+### Desarrollar ejercicio de Arquitectura Empresarial Institucional
+Proyecto para establecer y madurar la práctica de Arquitectura Empresarial en la entidad.
+### Implementación de Capacidades Nuevas Tecnológicas (Big Data e IA)
+Iniciativa para incorporar tecnologías emergentes de la Cuarta Revolución Industrial para optimizar procesos, impulsar la innovación y garantizar la transformación digital.
+### Modelo Operativo del Gobierno de Datos
+Proyecto para definir e implementar un marco de gobernanza de datos.
+### Fortalecimiento de Seguridad Digital
+Iniciativa para proteger la infraestructura y los datos de amenazas digitales.
+### Fortalecimiento del Sistema de Gestión Documental
+Iniciativa para el desarrollo e implementación de herramientas y procesos avanzados para optimizar la clasificación, almacenamiento, acceso y control de la documentación institucional.
+### Modernización del Ecosistema de Soluciones TI
+Proyecto para actualizar y optimizar el conjunto de soluciones tecnológicas.
+### Mejoramiento y evolución de los servicios Tecnológicos en Nube
+Iniciativa para optimizar y expandir el uso de servicios cloud.
+### Uso de Inteligencia Artificial en el quehacer
+Proyecto para integrar la IA en las operaciones diarias de la entidad.
+### Optimización de procesos para la generación de valor público
+Proyecto para revisar y mejorar los procesos internos con foco en el valor para el ciudadano.
+### Preservación digital
+Proyecto para asegurar la conservación y accesibilidad a largo plazo de los activos digitales.
+### Fortalecimiento de la Arquitectura de Interoperabilidad
+Iniciativa para mejorar la comunicación e integración entre sistemas y entidades.
+### Secretaría General de la Alcaldía Mayor de Bogotá D.C.
+Entidad principal de la administración distrital.
+### Procesos misionales
+Procesos clave que definen la razón de ser de la entidad.
+### Servicios a la ciudadanía
+Conjunto de servicios ofrecidos a los ciudadanos.
+### OTIC (Oficina de Tecnologías de la Información y las Comunicaciones)
+Área encargada de la gestión de TI y comunicaciones en la Secretaría General.
+### Procesos de apoyo a la gestión
+Procesos internos que facilitan la operación de la entidad.
+### Servicios administrativos internos
+Servicios de apoyo para el funcionamiento interno de la entidad.
+### Servidores
+Personal de la entidad que participa en los procesos de negocio.
+### Prestación de trámites y servicios a la ciudadanía
+Proceso central para la interacción con los ciudadanos.
+### Trámites distritales
+Trámites específicos que los ciudadanos pueden realizar.
+### Ciudadanía
+Actores externos que consumen los servicios de la Alcaldía.
+### Sistemas de Información
+Conjunto genérico de sistemas que soportan las operaciones de la entidad.
+### Integrador de Servicios Ciudadanos
+Plataforma unificada para acceder a diversos servicios y trámites ciudadanos.
+### Servicio de Acceso a Trámites
+Servicio que permite a los ciudadanos iniciar y gestionar trámites en línea.
+### Aplicaciones
+Software específico utilizado para diversas funciones de negocio.
+### Sistema de Gestión Documental
+Sistema para la administración y control de documentos digitales.
+### Servicio de Gestión Documental
+Servicio para la creación, almacenamiento y recuperación de documentos.
+### Portal de datos para la transparencia
+Plataforma que facilita el acceso público a datos e información gubernamental.
+### Servicio de Consulta de Datos
+Servicio provisto por el portal de datos para acceder a información pública.
+### Datos de gestión pública
+Información general utilizada en los procesos de la administración pública.
+### Información de la gestión pública
+Conjunto de datos e información relevante para la transparencia y la toma de decisiones.
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+todo: aun no está lista
+...
+
+
+
+
+## Iniciativas
+
+> 
+
+<br>
+
+El modelo de diagrama ArchiMate denominado "06.Estrategia. Iniciativas" se posiciona como un componente clave para visualizar y comunicar la transformación estratégica de la organización. Su propósito central es ilustrar cómo los objetivos de alto nivel se desglosan en planes de acción concretos o "iniciativas", conectando así la visión estratégica con la ejecución. Este tipo de diagrama es fundamental para alinear los esfuerzos y las inversiones empresariales, asegurando que cada proyecto y programa contribuya directamente a la consecución de las metas corporativas.
+
+Un modelo de "Estrategia. Iniciativas" bien estructurado es un activo invaluable para la gestión del portafolio de proyectos, la toma de decisiones informadas sobre la asignación de recursos y la comunicación efectiva de la hoja de ruta estratégica a todos los niveles de la empresa, impulsando la coherencia y el éxito en la implementación.
+
+![06.Estrategia. Iniciativas. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/06.Estrategia.Iniciativas.png){#fig:id-cc506af7ae2e4eadbe0ef317bcdce54d width= height=}
+
+### Iniciativas Estratégicas
+
+### Impulsar la transformación digital
+Enfoque estratégico para la modernización de los procesos y servicios mediante tecnologías digitales.
+### Diseñar e implementar un esquema de gobernanza de territorio inteligente
+Define las directrices y estructuras para la gestión de un ecosistema urbano inteligente.
+### Aprovechar nuevas tecnologías como la Inteligencia Artificial
+Estrategia para integrar y explotar tecnologías emergentes en beneficio de la gestión pública.
+### Optimizar recursos y mejorar la operación
+Enfoque para maximizar la eficiencia en el uso de los recursos disponibles y mejorar el rendimiento operativo.
+### Diversificar las fuentes de ingreso del Distrito
+Estrategia para explorar y desarrollar nuevas vías de financiación para el Distrito.
+### Iniciativas Colaboración
+
+### Superar las rigideces organizacionales
+Colaboración orientada a eliminar barreras estructurales que impiden la agilidad y eficiencia de la entidad.
+### Mejorar la articulación en el modelo de gestión pública
+Colaboración para integrar y coordinar mejor las diferentes áreas y procesos de la gestión pública.
+### Mejorar la articulación entre niveles de gobierno
+Colaboración enfocada en una mayor coordinación y cooperación entre los distintos niveles de la administración pública.
+### Consolidar un enfoque colaborativo para la gobernanza metropolitana
+Colaboración para establecer una visión y gestión unificada de los asuntos metropolitanos.
+### Red CADE
+Red de colaboración entre entidades para la prestación de servicios de atención presencial a ciudadanos.
+### Iniciativas de Migración
+
+### Impulsar la transformación digital (Paquete de Trabajo)
+Conjunto de actividades para iniciar y desarrollar la transformación digital de la entidad.
+### Simplificar el marco regulatorio
+Paquete de trabajo enfocado en la revisión y simplificación de las normativas vigentes.
+### Racionalizar funciones y rediseñar la organización
+Paquete de trabajo para optimizar la estructura funcional y organizacional de la entidad.
+### Proyectos de inversión
+Paquete de trabajo general que engloba todas las iniciativas de inversión para mejoras.
+### Entidades Públicas
+Actores organizacionales que participan en las colaboraciones y ofrecen servicios.
+### Niveles de Gobierno
+Diferentes estamentos gubernamentales (nacional, distrital, local) que requieren articulación.
+### Dependencias Internas
+Unidades organizacionales internas de la Secretaría General o la Alcaldía Mayor.
+### Ciudadanos
+Beneficiarios finales de los servicios y actores involucrados en la interacción con la administración.
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+todo: aun no está lista
+...
+
+
+
+
+## Necesidades y Aplicaciones
+
+> 
+
+<br>
+
+
+![06.Negocio.n1.a. Necesidades y Aplicaciones. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/06.Negocio.n1.a.NecesidadesyAplicaciones.png){#fig:id-73084877ba5b4f859a7aa197be93b750 width= height=}
+
+### Fortalecer la Gestión Pública
+Objetivo de TI de alto nivel optimizar (mejorar la eficiencia y eficacia) los procesos y servicios de la administración pública.
+
+### Alcanzar Objetivos Estratégicos
+Meta general de la Secretaría General para cumplir con su misión y visión.
+### Plataforma de Trámites en Línea
+Componente de aplicación que permite la realización de trámites digitales.
+### Transformación Digital
+Objetivo clave relacionado con la modernización y digitalización de los servicios y operaciones.
+
+La transformación digital es un motor fundamental para alinear las estrategias, procesos y tecnologías de la Secretaría General. Esta transformación busca:
+
+* Cerrar las brechas en la Política de Gobierno Digital, de la cual la Arquitectura Empresarial es un habilitador clave.
+* Modernizar la infraestructura tecnológica obsoleta para asegurar su continuidad y disponibilidad.
+* Integrar plataformas y ecosistemas digitales y superar la falta de interoperabilidad.
+* Automatizar trámites y estandarizar la gestión y gobernanza de datos públicos.
+* Adquirir software especializado en análisis de datos para mejorar la toma de decisiones basada en evidencia.
+* Generar análisis predictivos y prospectivos de resultados de gestión, que son insumos para la toma de decisiones.
+* Aprovechar nuevas tecnologías como la Inteligencia Artificial para mejorar los procesos y la relación con la ciudadanía.
+* Fortalecer la ciberseguridad y seguridad de la información para proteger la integridad, disponibilidad y confidencialidad de los datos y prevenir ataques.
+* La disponibilidad de personal adecuado para actualizar plataformas tecnológicas es una necesidad identificada para este eje, y los altos costos de la tecnología representan una limitación.
+### Optimización de Recursos y Mejora de la Operación
+Objetivo de mejorar la eficiencia en el uso de los recursos y la calidad de las operaciones internas.
+### Mejora de la Gestión Pública
+Objetivo general de elevar la calidad y el impacto de la gestión gubernamental.
+### Sistema de Participación Ciudadana
+Componente de aplicación para facilitar la interacción y el feedback de los ciudadanos.
+### Continuidad de la Gestión Pública
+Objetivo de asegurar que los programas y proyectos perduren entre diferentes administraciones.
+### Servicio de Integración de Aplicaciones
+Servicio de aplicación para la unificación y el intercambio de funcionalidades.
+### Automatización de Trámites
+Necesidad de digitalizar y automatizar los procesos de interacción con los ciudadanos.
+### Implementación de Plataformas Digitales
+Requisito para desarrollar o adquirir sistemas para trámites y participación ciudadana.
+### Fortalecimiento de la Seguridad de la Información
+Necesidad de proteger los datos y sistemas contra amenazas y vulnerabilidades.
+### Optimización de Procesos de Información
+Requisito para mejorar la eficiencia y calidad en el manejo de la información.
+### Mejora de la Interoperabilidad
+Necesidad de asegurar la comunicación y el intercambio de datos entre diferentes sistemas.
+### Agilidad y Flexibilidad Tecnológica
+Requisito para que las soluciones tecnológicas puedan adaptarse rápidamente a nuevos cambios.
+### API de Intercambio de Datos
+Interfaz de aplicación para permitir la comunicación entre diferentes sistemas.
+### Servicio de Integración de Datos
+Servicio de aplicación para la unificación y el intercambio de información.
+### Expediente Digital
+Objeto de datos en la capa de aplicación que representa un expediente electrónico.
+### Infraestructura Heterogénea Existente
+Restricción derivada de la diversidad de sistemas y tecnologías ya implementadas.
+### Presupuesto Limitado
+Restricción financiera para la ejecución de iniciativas y proyectos.
+### Sistema de Gestión Documental
+Componente de aplicación para la gestión electrónica de documentos.
+### Mejorar las capacidades tecnológicas de la Entidad (objetivo estratégico de TI)
+Meta de TI para modernizar y potenciar la infraestructura y habilidades tecnológicas.
+### Política de Gobierno Digital
+Principios que guiarán el diseño y la evolución de la arquitectura de solución. Son declaraciones de intención de la SG que deben ser cumplidas.
+### Asegurar el conocimiento de lineamientos y directrices
+Principios de gobernanza interna.
+### Asegurar la adherencia a los procesos y procedimientos establecidos
+Principios de gobernanza interna.
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+todo: aun no está lista
+...
+
+
+
+
+## Preocupaciones (debilidades)
+
+> 
+
+<br>
+
+
+![06.Negocio.n3. Preocupaciones (debilidades). _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/06.Negocio.n3.Preocupaciones(debilidades).png){#fig:id-8c74f3e0c66d4a509f2af637eae4a268 width= height=}
+
+### Mejorar Eficiencia y Eficacia de la Gestión Pública
+Meta estratégica para optimizar la gestión de la entidad..
+### Demora en solución de servicios TI
+Impacto de la deficiente apropiación del conocimiento en TI.
+### Modernizar Infraestructura y Sistemas Tecnológicos
+Requisito para actualizar los componentes tecnológicos de la entidad.
+### Asegurar la Continuidad Operativa y la Seguridad de la Información
+Meta estratégica para garantizar la operación ininterrumpida y la protección de datos.
+### Dificultad en ejecución de actividades
+Impacto de los equipos tecnológicos obsoletos.
+### Mejorar Gestión de Datos para Análisis Predictivos
+Requisito para implementar capacidades de análisis de datos avanzados.
+### Facilitar la Toma de Decisiones Basada en Evidencia
+Meta estratégica para mejorar los procesos de decisión mediante el uso de datos y análisis.
+### Afecta continuidad del servicio
+Impacto de fallas recurrentes en SI y plataformas.
+### Fortalecer Ciberseguridad
+Requisito para implementar medidas de protección contra amenazas cibernéticas.
+### Deficiente Apropiación del Conocimiento en TI
+Debilidad interna relacionada con la gestión y el uso del conocimiento en tecnologías de la información.
+### Genera retrasos y reprocesos
+Impacto de fallas recurrentes en SI y plataformas.
+### Asegurar Capacitación y Personal Adecuado para Gestión Tecnológica
+Requisito para garantizar el talento humano necesario para la gestión de TI.
+### Equipos Tecnológicos Obsoletos
+Debilidad de infraestructura que afecta la ejecución de actividades.
+### Obstaculiza obtención y descarga de material probatorio
+Impacto de la insuficiencia de herramientas tecnológicas para material probatorio.
+### Lograr Integración de Sistemas y Datos
+Requisito para eliminar silos de información y permitir el flujo de datos entre sistemas.
+### Fallas Recurrentes en SI y Plataformas
+Debilidad en la estabilidad y confiabilidad de los sistemas de información.
+### Dificulta toma de decisiones
+Impacto de la falta de software para extracción de información dinámica.
+### Insuficiencia Herramientas Tecnológicas (material probatorio)
+Debilidad en la capacidad de las herramientas para soportar procesos críticos.
+### Dificulta toma de decisiones basada en evidencia
+Impacto de los análisis descriptivos, no predictivos/prospectivos.
+### Secretaría General Alcaldía Mayor de Bogotá D.C.
+La entidad principal interesada en la mejora de la arquitectura tecnológica.
+### Necesidad de Modernización y Eficiencia Pública
+Factor impulsor que motiva la transformación y mejora tecnológica.
+### Falta de Software para Extracción de Información Dinámica
+Debilidad en la capacidad de análisis y reporte de información para la toma de decisiones.
+### Riesgo de fuga de información
+Impacto del uso de Apps de terceros sin integración.
+### Funcionario Público
+El usuario final y actor de negocio afectado por las debilidades tecnológicas.
+### Regulaciones y Normativas
+Factores externos que impulsan el cumplimiento y la adaptación tecnológica.
+### Análisis Descriptivos (No Predictivos/Prospectivos)
+Debilidad en la capacidad de la entidad para realizar análisis avanzados que apoyen la toma de decisiones basada en evidencia.
+### Retrabajos en consolidación de información
+Impacto del uso de Apps de terceros sin integración.
+### Expectativas Ciudadanas de Servicios Eficientes
+Factor externo relacionado con la demanda de servicios públicos ágiles y efectivos.
+### Falta de Personal para Actualizar SI y Apps
+Debilidad en la disponibilidad de recursos humanos para el mantenimiento y evolución de sistemas.
+### Posibles pérdidas de información
+Impacto de cambios en plataformas tecnológicas sin interacción.
+### Uso de Apps de Terceros sin Integración
+Debilidad en la arquitectura de integración, generando riesgos y reprocesos.
+### Reprocesos
+Impacto de cambios en plataformas tecnológicas sin interacción.
+### Cambios en Plataformas Tecnológicas sin Interacción
+Debilidad en la gestión del cambio tecnológico y la interoperabilidad.
+### Compromete operatividad
+Impacto de inestabilidad de conectividad e indisponibilidad de servidores.
+### Inestabilidad Conectividad e Indisponibilidad Servidores
+Debilidad en la infraestructura de red y servidores, afectando la continuidad operativa.
+### Compromete integridad datos críticos
+Impacto de inestabilidad de conectividad e indisponibilidad de servidores.
+### Vulneración Acceso Cuentas Correo/Aplicativos
+Debilidad en la seguridad de acceso, comprometiendo la confidencialidad de la información.
+### Compromete cumplimiento de metas
+Impacto de inestabilidad de conectividad e indisponibilidad de servidores.
+### Obsolescencia Tecnológica (infraestructura)
+Debilidad general de la infraestructura tecnológica que requiere renovación.
+### Afecta reserva información procesos disciplinarios
+Impacto de la vulneración de acceso a cuentas correo/aplicativos.
+### Altos Costos de Tecnología
+Debilidad financiera que limita la inversión en tecnología avanzada.
+### Dificulta prestación de servicios
+Impacto de la obsolescencia tecnológica de la infraestructura.
+### Riesgos Asociados a Ciberataques e Ingeniería Social
+Debilidad en la postura de seguridad frente a amenazas externas.
+### Limita capacidad de implementar y mantener sistemas eficientes
+Impacto de los altos costos de la tecnología.
+### Pone en riesgo seguridad de la información
+Impacto de riesgos asociados a ciberataques e ingeniería social.
+### Afecta continuidad operativa
+Impacto de riesgos asociados a ciberataques e ingeniería social.
+
+
+
+
+
+---
+lang: en
+titlepage: true
+titlepage-rule-color: 360049
+todo: aun no está lista
+...
+
+
+
+
+## Oportunidades
+
+> 
+
+<br>
+
+Esta vista general presenta las relaciones clave entre las oportunidades (drivers), las metas, las capacidades estratégicas, los cursos de acción, los flujos de valor y los resultados, ofreciendo una perspectiva integral de la transformación propuesta.
+![06.Negocio.n4. Oportunidades. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/06.Negocio.n4.Oportunidades.png){#fig:id-e56009668c214a93bf68e32aa5f040ac width= height=}
+
+### O5: Mejorar relacionamiento ciudadano
+Mejorar el relacionamiento de la ciudadanía con el gobierno distrital a través del fortalecimiento de la oferta institucional, la modernización de los canales de atención y la cualificación del talento humano, contribuyendo al aumento de la confianza y satisfacción ciudadana.
+### Modernización Tecnológica
+Capacidad de incorporar nuevas tecnologías como IA, Big Data e IoT para mejorar procesos y herramientas.
+### Adquisición Software IA/Big Data/IoT
+Iniciativa para adquirir software especializado que soporte la modernización tecnológica.
+### Gestión de la Relación con la Ciudadanía
+Flujo de valor que abarca todas las interacciones y servicios ofrecidos a los ciudadanos.
+### Procesos y Herramientas Mejorados
+Resultado esperado de la modernización tecnológica y la implementación de IA.
+### Oportunidades Tecnológicas y de Mejora
+Impulsor principal derivado del análisis de las oportunidades para la transformación digital y la eficiencia en la gestión pública.
+### Optimizar Operaciones Jurídicas
+Meta de mejorar la eficiencia y el soporte tecnológico de los procesos jurídicos.
+### Adquisición Software Análisis Datos
+Iniciativa para adquirir software que permita el análisis de datos para la toma de decisiones.
+### Soporte Tecnológico Flexible Jurídico
+Resultado de contar con herramientas tecnológicas que se adapten a las operaciones jurídicas.
+### Integración y Automatización de Procesos
+Capacidad para unificar y optimizar flujos de trabajo mediante herramientas tecnológicas.
+### Gestión de Procesos Jurídicos
+Flujo de valor relacionado con la gestión y soporte de las operaciones jurídicas.
+### Asegurar Integridad Financiera
+Meta de fortalecer los controles y la integración con el sistema hacendario.
+### Herramientas Soporte Procesos Jurídicos
+Iniciativa para implementar herramientas tecnológicas para el soporte y evaluación de procesos jurídicos.
+### Mejores Controles e Integración SI
+Resultado de la integración de sistemas de información con el Sistema Hacendario.
+### Fortalecimiento de la Seguridad Digital
+Capacidad de proteger los activos digitales y la información sensible de la entidad.
+### Gestión Financiera Hacendaria
+Flujo de valor que involucra los sistemas y procesos financieros y hacendarios.
+### Fortalecer Confianza Ciudadana
+Meta de aumentar la confianza pública a través de la transparencia y seguridad digital.
+### Integración Sistema Hacendario
+Iniciativa para mejorar los controles e integración de los sistemas de información con el Sistema Hacendario.
+### Transparencia y Rendición de Cuentas Aumentada
+Resultado de la estandarización de procesos y sistemas de información gracias a la AE.
+### Mejora de la Comunicación Pública Digital
+Capacidad de interactuar y proveer información a los ciudadanos de forma efectiva a través de medios digitales.
+### Gobierno de Arquitectura Empresarial
+Flujo de valor que establece los lineamientos y procesos para la gobernanza de la arquitectura empresarial.
+### Incrementar Eficiencia Gestión Pública
+Meta de optimizar los procesos internos y la prestación de servicios gubernamentales.
+### Consolidación Canales Digitales
+Iniciativa para consolidar herramientas y canales digitales para fortalecer la oferta y celeridad de servicios.
+### Oferta de Servicios Fortalecida
+Resultado de la consolidación de canales e información para una mejor oferta de servicios.
+### Implementación de Arquitectura Empresarial
+Capacidad de establecer y gestionar la disciplina de arquitectura empresarial para guiar la transformación digital.
+### Simplificar Acceso a Servicios
+Meta de hacer más accesibles y eficientes los trámites y servicios digitales para la ciudadanía.
+### Desarrollo Portal Único de Trámites
+Iniciativa para unificar la oferta de trámites y servicios en un portal digital centralizado.
+### Acceso Centralizado a Trámites y Servicios
+Resultado de la unificación de trámites y servicios en un portal único.
+### Diseño Modelo Gobierno Repositorio AE
+Iniciativa para crear un modelo de gobernanza para el Repositorio de Arquitectura Empresarial.
+### Atención al Ciudadano (Virtual)
+Servicio de negocio para la atención a través de canales virtuales como SuperCADE Virtual, chat, chat-Bot y videollamadas.
+### Análisis de Datos para Toma de Decisiones
+Proceso de negocio que utiliza software especializado para el análisis de datos.
+### Gestión de Trámites y Servicios
+Servicio de negocio que permite el acceso y realización de trámites y servicios públicos.
+### Recolección y Análisis de Información
+Proceso de negocio enfocado en la automatización de la recolección y análisis de datos.
+### Pago de Servicios en Línea
+Sub-servicio de negocio que permite realizar pagos no tributarios en línea.
+### Divulgación de Información Pública
+Proceso de negocio para la difusión optimizada de información a través de sistemas digitales.
+### Agendamiento Citas RedCADE
+Sub-servicio de negocio que facilita la programación de citas en la RedCADE desde casa.
+
 
 
 
