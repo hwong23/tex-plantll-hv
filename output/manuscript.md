@@ -52,16 +52,20 @@ Las relaciones entre los sistemas de información mencionados en el Anexo Técni
 | Nombre  | Tipo | Documentación |
 |---------|------|---------------|
 | Canales SG | Grouping |  |
-| Portal Bogotá Capital Digital | Application Component | Portal Integrador de trámites y servicios ofrecidos a la ciudadanía. |
+| Portal Bogotá Capital Digital | Application Component | Portal Integrador de trámites y servicios ofrecidos a la ciudadanía.
+ |
 | Sistemas de interacción ciudadana y transparencia | Grouping |  |
-| MoviApp | Application Component | Sesión levantamiento no. 2. |
+| MoviApp | Application Component | Sesión levantamiento no. 2.
+ |
 | Sistemas de gestión administrativa y financiera | Grouping |  |
 | Expediente Digital | Data Object | Objeto de datos en la capa de aplicación que representa un expediente electrónico. |
-| PANDORA | Application Component | Implementación de temas precontractual y planeación. |
+| PANDORA | Application Component | Implementación de temas precontractual y planeación.
+ |
 | Comisiones | Application Component | Sesión levantamiento no. 1.
  |
 | Sistemas de fortalecimiento de capacidades y conocimiento | Grouping |  |
-| SIAB (El COFRE) | Application Component | Sistema de Información del Archivo de Bogotá SIAB. Permite automatizar los procesos archivísticos y técnicos que realiza el Archivo, tales como llevar un registro de los Ingresos Documentales (antes área de acopio), para la descripción y catalogación de la documentación, propios del proceso de Gestión de la Función Archivística y del Patrimonio Documental, para su custodia y conservación permanente. |
+| SIAB (El COFRE) | Application Component | Sistema de Información del Archivo de Bogotá SIAB. Permite automatizar los procesos archivísticos y técnicos que realiza el Archivo, tales como llevar un registro de los Ingresos Documentales (antes área de acopio), para la descripción y catalogación de la documentación, propios del proceso de Gestión de la Función Archivística y del Patrimonio Documental, para su custodia y conservación permanente.
+ |
 | AVANTI | Application Component | Apoya la Gestión del conocimiento.
  |
 | Sistemas de desarrollo | Grouping |  |
@@ -95,6 +99,7 @@ todo: aun no está lista
 
 ### SIAB (El COFRE)
 Sistema de Información del Archivo de Bogotá SIAB. Permite automatizar los procesos archivísticos y técnicos que realiza el Archivo, tales como llevar un registro de los Ingresos Documentales (antes área de acopio), para la descripción y catalogación de la documentación, propios del proceso de Gestión de la Función Archivística y del Patrimonio Documental, para su custodia y conservación permanente.
+
 ### AVANTI
 Apoya la Gestión del conocimiento.
 
@@ -103,20 +108,28 @@ Sesión levantamiento no. 1.
 
 ### Integrador de Servicios Ciudadanos
 Plataforma unificada para acceder a diversos servicios y trámites ciudadanos.
+
 ### MoviApp
 Sesión levantamiento no. 2.
+
 ### PANDORA
 Implementación de temas precontractual y planeación.
+
 ### Plataforma de Trámites en Línea
 Componente de aplicación que permite la realización de trámites digitales.
+
 ### Portal Bogotá Capital Digital
 Portal Integrador de trámites y servicios ofrecidos a la ciudadanía.
+
 ### Portal de datos para la transparencia
 Plataforma que facilita el acceso público a datos e información gubernamental.
+
 ### Sistema de Participación Ciudadana
 Componente de aplicación para facilitar la interacción y el feedback de los ciudadanos.
+
 ### Sistema de Gestión Documental
 Componente de aplicación para la gestión electrónica de documentos.
+
 
 
 
