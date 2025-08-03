@@ -4,7 +4,7 @@
 
 # Documentación de Aplicaciones Negocio
 
-## SI del Análisis de Entorno SG
+## Análisis de Entorno Sistemas de Información SG
 
 > Desafíos operativos y estratégicos que justifican la necesidad de optimización e integración de sistemas de información SG (Análisis de Entorno, PETI 25-27, Anexo Técnico SG).  
 
@@ -12,7 +12,7 @@
 
 La consultoría de Arquitectura Empresarial busca fortalecer la alineación de estrategias, procesos y tecnologías, así como impulsar la transformación digital y una gestión pública más eficiente. Esta iniciativa se enmarca en la necesidad de mejorar la satisfacción de los grupos de interés internos y externos.
 
-Las relaciones entre los sistemas de información mencionados en el Anexo Técnico y el contexto del Análisis de Entorno (Resumen Ejecutivo FASE I.pdf) son las siguientes:
+Las relaciones entre los sistemas de información (Anexo Técnico) y el contexto del Análisis de Entorno (Resumen Ejecutivo FASE I.pdf) son las siguientes:
 
 * Sistemas de gestión administrativa y financiera (ADMON, Administrativo y Financiero, SIGA, SAT Web, GLPI):
     - Estos sistemas son cruciales para la "Gestión financiera", "Gestión de servicios administrativos y tecnológicos" y "Gestión de recursos físicos".
@@ -36,14 +36,11 @@ Las relaciones entre los sistemas de información mencionados en el Anexo Técni
 - SIAB (El COFRE), KOHA, Data Warehouse AVANTI son cruciales para la "Gestión del conocimiento" y la "Gestión documental y soporte archivístico". El documento enfatiza el "fortalecimiento de las capacidades de generación, análisis y uso estratégico de información" y la necesidad de "sistemas integrados de datos" para la toma de decisiones basada en evidencia. Data Warehouse AVANTI, en particular, facilita el análisis descriptivo, predictivo y prospectivo de los resultados de la gestión.
 - SUDIVC y SIVIC apoyan los procesos de "Paz, víctimas y reconciliación" y "Fortalecimiento de la Gestión Pública", abordando las "profundas desigualdades que afectan de manera desproporcionada a poblaciones vulnerables" y contribuyendo a que Bogotá sea un "territorio de paz y reconciliación".
 
-* Sistemas de desarrollo y colaboración (GitLab):
-
 #### Relación con Oportunidades
 
 - GitLab, siendo una plataforma de desarrollo y colaboración, está vinculada con la "Gestión de alianzas e internacionalización de Bogotá".
 - El "Resumen Ejecutivo FASE I.pdf" menciona la consolidación de Bogotá como una ciudad con "vocación internacional, atrayendo a profesionales, diplomáticos, académicos y organizaciones" y la necesidad de "fortalecer la arquitectura Internacional del Distrito". GitLab puede ser una herramienta para facilitar la colaboración en proyectos y la gestión de información en el marco de estas alianzas.
 - También se alinea con la necesidad de "integración entre plataformas digitales institucionales" y la adopción de nuevas tecnologías para la "transformación digital".
-
 
 ![06.2n2. SI del Analisis de Entorno. _Fuente: Propuesta servicios de ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá (2025)_](images/06.2n2.SIdelAnalisisdeEntorno.png){#fig:id-097745511d984e7eaf02b5ad5a93e7a8 width= height=}
 
@@ -78,7 +75,7 @@ Las relaciones entre los sistemas de información mencionados en el Anexo Técni
  |
 | SIGA | Application Component | Interviene en la gestión de contratación, gestión financiera, gestión de servicios administrativos y tecnológicos, y gestión de recursos físicos.
  |
-| Sistema de Gestión Documental | Application Component | Componente de aplicación para la gestión electrónica de documentos.
+| Sistema Gestión Documental | Application Component | Componente de aplicación para la gestión electrónica de documentos.
  |
 | DARUMA | Application Component | Se utiliza en el proceso de Fortalecimiento de la Gestión Pública. También es el aplicativo donde se encuentran definidas las fichas técnicas de productos y servicios de la Secretaría General y se gestionan los riesgos estratégicos.
  |
@@ -100,9 +97,7 @@ Las relaciones entre los sistemas de información mencionados en el Anexo Técni
  |
 | HUMANAPP | Application Component | Apoya la gestión del talento humano.
  |
-| SIAB (El COFRE) | Application Component | Sistema de Información del Archivo de Bogotá SIAB. Permite automatizar los procesos archivísticos y técnicos que realiza el Archivo, tales como llevar un registro de los Ingresos Documentales (antes área de acopio), para la descripción y catalogación de la documentación, propios del proceso de Gestión de la Función Archivística y del Patrimonio Documental, para su custodia y conservación permanente. 
-
-Utilizado en los procesos de Gobierno abierto y relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión Pública.
+| SIAB (El COFRE) | Application Component | Sistema de Información del Archivo de Bogotá SIAB. Permite automatizar los procesos archivísticos y técnicos que realiza el Archivo, tales como llevar un registro de los Ingresos Documentales (antes área de acopio), para la descripción y catalogación de la documentación, propios del proceso de Gestión de la Función Archivística y del Patrimonio Documental, para su custodia y conservación permanente. Utilizado en los procesos de Gobierno abierto y relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión Pública.
  |
 | KOHA | Application Component | Relacionado con la Gestión del conocimiento.
  |
@@ -115,6 +110,8 @@ Utilizado en los procesos de Gobierno abierto y relacionamiento con la ciudadan�
 | AVANTI | Application Component | Apoya la Gestión del conocimiento.
  |
 | Sistemas de desarrollo | Grouping |  |
+| Gitlab | Application Component | Plataforma de desarrollo de software y colaboración.
+ |
 | Ofimática y colaboración | Grouping |  |
 | Office 365 | Application Component | Ofimática y colaboración SG.
  |
@@ -218,9 +215,7 @@ Se relaciona con la gestión financiera, gestión de servicios administrativos y
 Plataforma que facilita el acceso público a datos e información gubernamental. Soporta el proceso de Gobierno abierto y relacionamiento con la ciudadanía.
 
 ### SIAB (El COFRE)
-Sistema de Información del Archivo de Bogotá SIAB. Permite automatizar los procesos archivísticos y técnicos que realiza el Archivo, tales como llevar un registro de los Ingresos Documentales (antes área de acopio), para la descripción y catalogación de la documentación, propios del proceso de Gestión de la Función Archivística y del Patrimonio Documental, para su custodia y conservación permanente. 
-
-Utilizado en los procesos de Gobierno abierto y relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión Pública.
+Sistema de Información del Archivo de Bogotá SIAB. Permite automatizar los procesos archivísticos y técnicos que realiza el Archivo, tales como llevar un registro de los Ingresos Documentales (antes área de acopio), para la descripción y catalogación de la documentación, propios del proceso de Gestión de la Función Archivística y del Patrimonio Documental, para su custodia y conservación permanente. Utilizado en los procesos de Gobierno abierto y relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión Pública.
 
 ### EMLAZE
 Utilizado en los procesos de Gobierno abierto y relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión Pública.
@@ -300,7 +295,7 @@ Plataforma que facilita el acceso público a datos e información gubernamental.
 ### Sistema de Participación Ciudadana
 Componente de aplicación para facilitar la interacción y el acercamiento (realimentación) de los ciudadanos.
 
-### Sistema de Gestión Documental
+### Sistema Gestión Documental
 Componente de aplicación para la gestión electrónica de documentos.
 
 ### SuperCADE Virtual
