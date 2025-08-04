@@ -139,7 +139,7 @@ todo: aun no está lista
 
 <br>
 
-Del análisis de fuentes y levantamientos de información presentamos la alineación entre  aplicaciones de software de SG, procesos y estado actual.
+La Secretaría General cuenta con sistemas de información que soportan las actividades gestionadas por los procesos misionales, estratégicos, de apoyo y de evaluación y control. Del análisis de fuentes y levantamientos de información presentamos la alineación entre las aplicaciones de software de SG, los procesos de negocio y el estado actual.
 
 | Proceso                                              | Sistema de Información                                                        | Oportunidad de Mejora                                                                                                             |
 |------------------------------------------------------|-------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
