@@ -1,0 +1,1610 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sullivan Business Report
+% LaTeX Template
+% Version 1.0 (May 5, 2022)
+%
+% This template originates from:
+% https://www.LaTeXTemplates.com
+%
+% Author:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 4.0 (https://creativecommons.org/licenses/by-nc-sa/4.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	CLASS, PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[
+	a4paper, % Paper size, use either a4paper or letterpaper
+	12pt, % Default font size, the template is designed to look good at 12pt so it's best not to change this
+	%unnumberedsections, % Uncomment for no section numbering
+]{include/CSSullivanBusinessReport}
+
+\addbibresource{include/sample.bib} % BibLaTeX bibliography file
+
+%-----------------------------------------------------------------------
+%	REPORT INFORMATION
+%-----------------------------------------------------------------------
+\reporttitle{Propuesta de Servicios Secretaria de la Alcaldía de
+Bogotá} % The report title to appear on the title page and page headers, do not create manual new lines here as this will carry over to page headers
+
+\reportsubtitle{A professional layout featuring a large margin\\ and examples of typical business report content} % Report subtitle, include new lines if needed
+
+\reportauthors{Template created by:\\\smallskip Vel (vel@latextemplates.com)} % Report authors/group/department, include new lines if needed
+
+\reportdate{\today} % Report date, include new lines for additional information if needed
+
+\rightheadercontent{\includegraphics[width=3cm]{./include/creodocs_logo.pdf}} % The content in the right header, you may want to add your own company logo or use your company/department name or leave this command empty for no right header content
+
+\def\tightlist{}
+%------------------------------------------------------------------------
+
+\begin{document}
+
+%------------------------------------------------------------------------
+%	TITLE PAGE
+%------------------------------------------------------------------------
+\thispagestyle{empty} % Suppress headers and footers on this page
+
+\begin{fullwidth} % Use the whole page width
+	\vspace*{-0.075\textheight} % Pull logo into the top margin
+	
+	\hfill\includegraphics[width=5cm]{./include/creodocs_logo.pdf} % Company logo
+
+	\vspace{0.15\textheight} % Vertical whitespace
+
+	\parbox{0.9\fulltextwidth}{\fontsize{50pt}{52pt}\selectfont\raggedright\textbf{\reporttitle}\par} % Report title, intentionally at less than full width for nice wrapping. Adjust the width of the \parbox and the font size as needed for your title to look good.
+	
+	\vspace{0.03\textheight} % Vertical whitespace
+	
+	{\LARGE\textit{\textbf{\reportsubtitle}}\par} % Subtitle
+	
+	\vfill % Vertical whitespace
+	
+	{\Large\reportauthors\par} % Report authors, group or department
+	
+	\vfill\vfill\vfill % Vertical whitespace
+	
+	{\large\reportdate\par} % Report date
+\end{fullwidth}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	DISCLAIMER/COPYRIGHT PAGE
+%----------------------------------------------------------------------------------------
+\thispagestyle{empty} % Suppress headers and footers on this page
+
+\begin{twothirdswidth} % Content in this environment to be at two-thirds of the whole page width
+	\footnotesize % Reduce font size
+	
+	\subsection*{Disclaimer}
+
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros. Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie. Sed dictum nisl non aliquet porttitor. Etiam vulputate arcu dignissim, finibus sem et, viverra nisl. Aenean luctus congue massa, ut laoreet metus ornare in. Nunc fermentum nisi imperdiet lectus tincidunt vestibulum at ac elit.
+	
+	\subsection*{Copyright}
+	
+	\textcopyright~[Year] [Company] 
+	
+	Copyright notice text\ldots In hac habitasse platea dictumst. Curabitur mattis elit sit amet justo luctus vestibulum. In hac habitasse platea dictumst. Pellentesque lobortis justo enim, a condimentum massa tempor eu. Ut quis nulla a quam pretium eleifend nec eu nisl. Nam cursus porttitor eros, sed luctus ligula convallis quis.
+	
+	\subsection*{Contact}
+	
+	Address Line 1\\
+	Address Line 2\\
+	Address Line 3
+	
+	Business Number 123456
+	
+	Contact: name@company.com
+	
+	\vfill % Push the following down to the bottom of the page
+	
+	\subsubsection*{Changelog}
+	
+	\scriptsize % Reduce font size further
+	
+	\begin{tabular}{@{} L{0.05\linewidth} L{0.15\linewidth} L{0.6\linewidth} @{}} % Column widths specified here, change as needed for your content
+		\toprule
+		v1.0 & 20XX-02-05 & Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros.\\
+		v1.1 & 20XX-02-27 & Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie.\\
+		v1.2 & 20XX-03-15 & Sed dictum nisl non aliquet porttitor.\\
+		\bottomrule
+	\end{tabular}
+\end{twothirdswidth}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+\begin{twothirdswidth} % Content in this environment to be at two-thirds of the whole page width
+	\tableofcontents % Output the table of contents, automatically generated from the section commands used in the document
+\end{twothirdswidth}
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	SECTIONS
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\section{Información del
+Documento}\label{sec:informaciuxf3n-del-documento}
+
+Esta es la doc del grupo. \#\# Versión del Documento
+
+\begin{quote}
+\end{quote}
+
+Versión actual 1.bb976fb - Compilación para entrega:
+accion-actualizacionContd (bf7b785) - Tue, 5 Aug 2025 18:13:49 +0000
+
+\subsection{Control de Cambios}\label{sec:control-de-cambios}
+
+Historia de cambios del documento.
+
+1.707deb6 - Compilación para entrega: accion-actualizacionContd
+(cd44b22) - Mon, 4 Aug 2025 16:37:33 +0000
+
+1.135e1bb - Compilación para entrega: accion-actualizacionContd
+(b16f884) - Mon, 4 Aug 2025 04:16:43 +0000
+
+1.06d2b02 - Compilación para entrega: accion-actualizacionContd
+(3e0d4d4) - Mon, 4 Aug 2025 03:09:47 +0000
+
+1.eacbe5e - Compilación para entrega: accion-actualizacionContd
+(01fc146) - Mon, 4 Aug 2025 02:55:34 +0000
+
+\subsubsection{Realizado Por}\label{sec:realizado-por}
+
+(creador)
+
+\subsubsection{Revisado Por}\label{sec:revisado-por}
+
+(revisor), Arquitectura de Aplicaciones
+
+\newpage
+
+\section{Servicios de Ingeniería Arquitectura de Aplicaciones Secretaria
+de la Alcaldía de
+Bogotá}\label{sec:servicios-de-ingenieruxeda-arquitectura-de-aplicaciones-secretaria-de-la-alcalduxeda-de-bogotuxe1}
+
+\subsection{03.ENTRG.1n. Modelo de
+Entregas}\label{sec:entrg.1n.-modelo-de-entregas}
+
+\begin{quote}
+Ingenium. Modelo de Entregas. Dominio de Aplicación. AE. Secretaria
+Seneral Alcaldía Mayor de Bogotá.
+\end{quote}
+
+\begin{figure}
+\centering
+\includegraphics[width=5in,height=\textheight]{images/03.ENTRG.1n.ModelodeEntregas.png}
+\caption{03.ENTRG.1n. Modelo de Entregas. \emph{Fuente: Propuesta
+servicios de ingeniería y evaluación de arquitectura Arquitectura de
+Aplicaciones Secretaria de la Alcaldía de Bogotá
+(2025)}}\label{fig:id-b7aa07be1bf34794b7ab18f800fd4d63}
+\end{figure}
+
+\subsubsection{Elementos del Modelo}\label{sec:elementos-del-modelo}
+
+\begin{longtable}[]{@{}lll@{}}
+\caption{\label{tbl:tblelement-03.ENTRG.1n.ModelodeEntregas-id}Elementos
+de la vista.}\tabularnewline
+\toprule\noalign{}
+Nombre & Tipo & Documentación \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+Nombre & Tipo & Documentación \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+Hoja ruta del producto / Plan de producto & Grouping & \\
+Plan de entregas / iteración & Grouping & \\
+Hoja ruta arquitectura & Grouping & \\
+\end{longtable}
+
+\subsection{Entregables Fase I de la Visión AE de
+SG}\label{sec:entregables-fase-i-de-la-visiuxf3n-ae-de-sg}
+
+\begin{quote}
+\end{quote}
+
+\begin{figure}
+\centering
+\includegraphics{images/03.EntregablesVision.png}
+\caption{03. Entregables Vision. \emph{Fuente: Propuesta servicios de
+ingeniería y evaluación de arquitectura Arquitectura de Aplicaciones
+Secretaria de la Alcaldía de Bogotá
+(2025)}}\label{fig:id-0993b3b264144f84abe5c7031666fede}
+\end{figure}
+
+\subsubsection{Visión}\label{sec:visiuxf3n}
+
+\subsubsection{Contexto de Arquitectura de Sistemas de Información
+SG}\label{sec:contexto-de-arquitectura-de-sistemas-de-informaciuxf3n-sg}
+
+Desde el dominio de aplicaciones y sistemas de información de la
+Secretaría General, llamada en adelante ``la arquitectura de sistemas de
+Información de SG'', buscamos adelantar las especificaciones de las
+arquitecturas objetivo de los sistemas de información de Secretaria de
+la Alcaldía de Bogotá que soporten la arquitectura de negocio y datos,
+en línea y dentro del alcance de la visión establecida en el primer
+entregable de este ejercicio de arquitectura empresarial de SG (AESG).
+
+En particular, la arquitectura de sistemas de información de SG se
+plantea, dentro del alcance de la visión del ejercicio:
+
+\begin{itemize}
+\tightlist
+\item
+  Definir la arquitectura de las aplicaciones (SI) necesarias para
+  soportar los procesos de negocio de SG.
+\item
+  Identificar las funciones de negocio que deben ser soportadas por las
+  aplicaciones de SG.
+\item
+  Establecer la interacción y el flujo de información entre las
+  diferentes aplicaciones de SG.
+\item
+  Considerar aspectos sistémicos como la escalabilidad, el rendimiento,
+  la mantenibilidad y la seguridad de las aplicaciones de SG.
+\item
+  Listar los capacidades de negocio (servicios de aplicación)
+  relacionadas con las arquitecturas de aplicaciones de SG.
+\end{itemize}
+
+De esta manera, la arquitectura de sistemas de SG contribuye a la
+consecución de la visión de este ejercicio de arquitectura empresarial
+SG (AESG); y en lo específico, contribuye a los fines de la arquitectura
+de negocio y tecnológica de SG, a delinear oportunidades y soluciones, y
+a soportar la planeación de la migración. Todo lo anterior dentro del
+alcance consignado en este ejercicio.
+
+\paragraph{Alcance}\label{sec:alcance}
+
+El presente ejercicio de la arquitectura dominio de aplicaciones toma
+como alcance horizontal las áreas o unidades siguientes de la SG
+(\emph{fuente: sesiones de levantamiento, entrevistas, y cuestionarios
+compartidos en el mes de julio del 2025, junto con la recopilación
+estructurada de las fuentes de información y organigramas}):
+
+Unidades de negocio del alcance del dominio:
+
+\begin{itemize}
+\tightlist
+\item
+  Secretaría Privada
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Oficina Consejería Distrital de Comunicación. César Augusto Castro
+    Rodríguez
+  \item
+    Oficina Consejería Distrital de Tecnologías de la Información y las
+    Comunicaciones -TIC. Diana Celis Mora
+  \end{itemize}
+\item
+  Despacho del Secretario General. Miguel Andrés Silva Moyano
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Oficina de Tecnologías de la Información y las Comunicaciones.
+    Arleth Patricia Saurith Contreras
+  \item
+    Subsecretaría Distrital de Fortalecimiento Institucional. Alejandra
+    Rodas Gaiter
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Dirección Distrital de Desarrollo Institucional. Sebastian Estrada
+      Jaramillo
+
+      \begin{itemize}
+      \tightlist
+      \item
+        Subdirección Técnica de Desarrollo Institucional. Diego Canesco
+        Arenas
+      \end{itemize}
+    \end{itemize}
+  \item
+    Subsecretaría de Servicio a la Ciudadanía . Adriana Vargas Tamayo
+
+    \begin{itemize}
+    \tightlist
+    \item
+      Dirección del Sistema Distrital de Servicio a la Ciudadanía.
+      Enrique Cusba García
+    \end{itemize}
+  \item
+    Subsecretaría Corporativa. Henry Villamarín Serrano
+  \item
+    Subsecreataría de Servicios Ciudadanos (\ldots)
+  \item
+    Subsecreataría de Inversión y FF (\ldots)
+  \item
+    Subsecreataría de Operaciones
+  \item
+    Subsecreataría de Relaciones Internacionales (\ldots)
+  \end{itemize}
+\end{itemize}
+
+En cuanto al alcance vertical, las aplicaciones de software que están
+consignadas en este ejercicio son las siguientes (\emph{fuente: sesiones
+de levantamiento, entrevistas, y cuestionarios compartidos en el mes de
+julio del 2025, junto con la recopilación estructurada de las fuentes de
+información}):
+
+\begin{itemize}
+\tightlist
+\item
+  Administrativo y Financiero: Soporta la gestión financiera, gestión de
+  servicios administrativos y tecnológicos, y gestión de recursos
+  físicos
+\item
+  Bogotá Te Escucha: Es fundamental para el proceso de Gobierno abierto
+  y relacionamiento con la ciudadanía5. También se menciona como el
+  Sistema Distrital para la Gestión de Peticiones Ciudadanas, a través
+  del cual se evalúa la calidad de las respuestas emitidas a la
+  ciudadanía
+\item
+  Bogotá Aprende TIC: Apoya los procesos de Gobierno abierto y
+  relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión
+  Pública
+\item
+  DARUMA: Se utiliza en el proceso de Fortalecimiento de la Gestión
+  Pública5. También es el aplicativo donde se encuentran definidas las
+  fichas técnicas de productos y servicios de la Secretaría General8 y
+  se gestionan los riesgos estratégicos
+\item
+  SIGA: Interviene en la gestión de contratación, gestión financiera,
+  gestión de servicios administrativos y tecnológicos, y gestión de
+  recursos físicos
+\item
+  SAT Web: Relacionado con la gestión de servicios administrativos y
+  tecnológicos
+\item
+  GLOBO: Utilizado en el proceso de Fortalecimiento de la Gestión
+  Pública
+\item
+  Datos para la Transparencia (SATI): Soporta el proceso de Gobierno
+  abierto y relacionamiento con la ciudadanía
+\item
+  SUDIVC: Se aplica en los procesos de Gobierno abierto y
+  relacionamiento con la ciudadanía, Paz, víctimas y reconciliación, y
+  Fortalecimiento de la Gestión Pública
+\item
+  HUMANAPP: Apoya la gestión del talento humano
+\item
+  SIAB (El COFRE): Utilizado en los procesos de Gobierno abierto y
+  relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión
+  Pública
+\item
+  KOHA: Relacionado con la Gestión del conocimiento
+\item
+  SIVIC: Interviene en los procesos de Paz, víctimas y reconciliación, y
+  Fortalecimiento de la Gestión Pública
+\item
+  Data Warehouse AVANTI: Apoya la Gestión del conocimiento
+\item
+  Gestión Académica: Relacionado con la Gestión del conocimiento
+\item
+  EMLAZE: Utilizado en los procesos de Gobierno abierto y
+  relacionamiento con la ciudadanía, y Fortalecimiento de la Gestión
+  Pública
+\item
+  GLPI: Soporta la gestión de servicios administrativos y tecnológicos
+\item
+  GitLab: Se relaciona con la Gestión de alianzas e internacionalización
+  de Bogotá
+\end{itemize}
+
+\subsubsection{Matriz de Sistemas de Información vs Procesos de
+Negocio}\label{sec:matriz-de-sistemas-de-informaciuxf3n-vs-procesos-de-negocio}
+
+Las matrices del dominio de aplicaciones de software y sistemas de
+información (SI) de SG son herramientas para el relacionamiento con
+otros dominios del ejercicio de arquitectura empresarial de SG. Con esto
+conseguimos soportar la toma decisiones de lo que debe ser compartido de
+los SI dentro de la Secretaría, y entre sus aplicaciones de software.
+Las matrices de este ejercicio sirven además para comunicar el grado de
+relacionamiento de los elementos.
+
+En resumen,
+
+\begin{itemize}
+\tightlist
+\item
+  Las matrices son cruciales para especificar cómo debe relacionarse la
+  información entre los sistemas y otros dominios
+\item
+  proporcionan información crítica para los proyectos que involucren a
+  los sistemas de SG.
+\item
+  Contribuye a la determinación de brechas (gaps) en las necesidades de
+  compartir información (o funciones de los sistemas) ente los elementos
+  de la matriz.
+\item
+  La matriz ayuda a definir el nivel de detalle de lo que se comparte.
+\item
+  Se deben establecer medidas similares para la interoperabilidad de
+  servicios/negocios y la infraestructura (tecnología física).
+\item
+  Sintetizan la información de las arquitecturas, y son simples para
+  compartir documentos.
+\end{itemize}
+
+Las matrices de este dominio (procesos e interoperabilidad) actúan como
+una hoja de ruta para la conectividad y el intercambio de información;
+inician desde una perspectiva de negocio de alto nivel y van hasta una
+especificación técnica detallada del la interacción con los sistemas.
+Sirven como herramienta de comunicación para los demás dominios de la
+arquitectura empresarial de SG, y contribuyen a que las interacciones
+relevantes entre servicios, canales, y procesos estén definidas y sean
+compatibles.
+
+\subsubsection{Catálogo de Sistemas de
+Información}\label{sec:catuxe1logo-de-sistemas-de-informaciuxf3n}
+
+En el contexto de TOGAF, El Catálogo de sistemas de información es un
+inventario detallado y documentado que actúa como ficha técnica de los
+sistemas de información o aplicaciones de software de SG.
+
+Es un producto entregable clave de la fase de Arquitectura de
+Aplicaciones dentro de la Fase 3 de este ejercicio de arquitectura
+empresarial (AE). Forma parte del Marco de Referencia del Contenido
+Arquitectónico de TOGAF y del Marco de Arquitectura de Referencia del
+MinTIC (MAE 3.0, Colombia).
+
+La construcción del catálogo de aplicaciones implican a las sesiones de
+levantamiento, entrevistas, y cuestionarios compartidos en el mes de
+julio, junto con la recopilación estructurada de las fuentes de
+información sobre cada sistema.
+
+\paragraph{Contenido Mínimo del
+Catálogo}\label{sec:contenido-muxednimo-del-catuxe1logo}
+
+\begin{itemize}
+\tightlist
+\item
+  ID de Aplicación. Código de identificación de la aplicación de
+  software.
+\item
+  Nombre de la Aplicación. Nombre de identificación de la aplicación de
+  software.
+\item
+  Descripción. Funcionamiento básico de la aplicación de software.
+\item
+  Estado: {[}En producción, en desmantelamiento, en implementación,
+  Inactiva{]}
+\item
+  Categoría: {[}Sistema de apoyo al negocio (misional), herramienta de
+  gestión, Ofimática, Seguridad{]}
+\item
+  Proceso(s) de Negocio Clave(s)
+\item
+  Capacidad: Capacidades de nivel 2 relacionadas con la aplicación de
+  software.
+\item
+  Tipo de aplicación: Web, Móvil, Cliente Servidor
+\item
+  Método de despliegue: on-premises, cloud SAAS, cloud PAAS, cloud IAAS
+\item
+  Tecnología. Aspectos técnicos de la aplicación de software.
+\item
+  Versión actual de la tecnología
+\item
+  Responsable técnico en la entidad
+\item
+  Responsable funcional en la entidad
+\item
+  Fabricante
+\item
+  Proveedor de soporte externo
+\item
+  Fecha de vigencia de soporte externo
+\item
+  Nombre de servidor. Nombre de red del entorno o nodo contenedor de la
+  aplicación de software.
+\item
+  Criticidad de negocio
+\end{itemize}
+
+El Catálogo de aplicaciones de SG procura beneficios estratégicos y
+operativos:
+
+\begin{itemize}
+\tightlist
+\item
+  Unifica la documentación y la comunicación: Es un artefacto clave para
+  documentar, comprender y comunicar el panorama actual y futuro de las
+  aplicaciones.
+\item
+  Base para la toma de decisiones: Sirve como base para la toma de
+  decisiones en la gestión y gobierno de las capacidades de los sistemas
+  de SG, y del portafolio y ciclo de vida de las aplicaciones.
+\item
+  Facilita la actualización continua: Permite la actualización continua
+  de las características y atributos relevantes de los sistemas de
+  información.
+\end{itemize}
+
+\subsubsection{Necesidades SI de SG}\label{sec:necesidades-si-de-sg}
+
+La construcción de lista de necesidades, preocupaciones y oportunidades
+implican a las sesiones de levantamiento, entrevistas, y cuestionarios
+compartidos en el mes de julio, junto con la recopilación estructurada
+de las fuentes de información sobre cada sistema.
+
+\paragraph{Necesidades de Transformación Digital y
+Tecnológica}\label{sec:necesidades-de-transformaciuxf3n-digital-y-tecnoluxf3gica}
+
+La transformación digital (objetivo estratégico de SG) es un motor
+fundamental para alinear las estrategias, procesos y tecnologías de la
+Secretaría General. Esta transformación busca:
+
+\begin{itemize}
+\item
+  Impulsar la transformación digital para alinear estrategias, procesos
+  y tecnologías, que resulte en el aumento de eficiencia de la gestión
+  pública.
+\item
+  Cerrar las brechas en la Política de Gobierno Digital, de la cual la
+  Arquitectura Empresarial es un habilitador clave.
+\item
+  Modernizar la infraestructura tecnológica que resulte del análisis de
+  obsolescencia para asegurar su continuidad y disponibilidad.
+\item
+  Integrar plataformas y ecosistemas digitales y superar la falta de
+  interoperabilidad.
+\item
+  Aumentar la automatización de los trámites digitales.
+\item
+  Estandarizar la gestión y gobernanza de datos públicos.
+\item
+  Mejorar el soporte que los SI dan a la toma de decisiones basada en
+  evidencia.
+\item
+  Generar análisis predictivos y prospectivos de resultados de gestión,
+  que son insumos para la toma de decisiones.
+\item
+  Contar con disponibilidad de personal adecuado para actualizar
+  plataformas tecnológicas y gestionar las cargas de trabajo.
+\item
+  Aprovechar nuevas tecnologías como la Inteligencia Artificial, la
+  minería de datos, el procesamiento del lenguaje, para mejorar los
+  procesos y la relación con la ciudadanía.
+\item
+  Abordar los altos costos de la tecnología que limitan la
+  implementación de sistemas avanzados. (??)
+\item
+  Fortalecer la ciberseguridad y seguridad de la información para
+  proteger la integridad, disponibilidad y confidencialidad de los datos
+  y prevenir ataques.
+\end{itemize}
+
+\paragraph{Necesidades Específicas del Dominio de Aplicaciones de
+software}\label{sec:necesidades-especuxedficas-del-dominio-de-aplicaciones-de-software}
+
+Esta tipo de necesidades refiere al comportamiento de las aplicaciones
+que apoyan la misionalidad, a su estructura, y su relación con los
+objetos de datos que utilizan.
+
+Para los Componentes de Aplicación (Application Component) y Servicios
+de Aplicación (Application Service) de SG:
+
+\begin{itemize}
+\tightlist
+\item
+  Adquirir software especializado en análisis de datos: implica la
+  necesidad de incorporar de nuevos componentes de aplicación
+  (Application Component).
+\item
+  Integrar plataformas y ecosistemas digitales :requiere reforzar la
+  relación entre componentes de aplicación y la exposición de servicios
+  de aplicación (Application Service), y clicar los lineamientos del
+  Marco de Referencia de AE, versión 3.0 al momento, del MinTIC.
+\item
+  Mejorar la capacidad de las herramientas tecnológicas para el soporte
+  a la toma de decisiones y la gestión: requiere la mejora de las
+  Funcionalidad (Application Function) y Componentes de Aplicación
+  actuales asociadas a esta capacidad.
+\end{itemize}
+
+\subsubsection{Preocupaciones SI de
+SG}\label{sec:preocupaciones-si-de-sg}
+
+Con base en el estudio de las sesiones de levantamiento, entrevistas, y
+cuestionarios compartidos en el mes de julio, junto con la recopilación
+estructurada de las fuentes de información sobre cada sistema,
+identificamos las siguientes preocupaciones (y debilidades) de SG
+relacionadas con el dominio de sistemas de información, dentro del
+alcance de este ejercicio.
+
+Las preocupaciones tecnológicas respecto de los sistemas de información
+de SG mencionadas en estas fuentes señalan:
+
+\begin{itemize}
+\tightlist
+\item
+  Deficiente apropiación del conocimiento en procesos de tecnologías de
+  la información, lo que genera demora en la solución de los servicios
+  de tecnologías de la información.
+\item
+  Equipos tecnológicos en proceso de mitigar la obsolescencia, que
+  generan dificultad en la ejecución de las actividades que desarrolla
+  la entidad.
+\item
+  Fallas recurrentes en el funcionamiento de los sistemas de información
+  y plataformas tecnológicas de la entidad, que afectan la continuidad
+  del servicio y generan retrasos y reprocesos en la ejecución de las
+  actividades.
+\item
+  Insuficiencia en la capacidad de las herramientas tecnológicas de la
+  entidad que pueden obstaculizar el avance de los iniciativas en marcha
+  de la SG.
+\item
+  Debilidad en la capacidad de extraer información dinámica que sirva
+  como insumo para la toma de decisiones basado en evidencia.
+\item
+  Se realizan análisis de datos descriptivos aislados, pero no
+  predictivos y prospectivos de los resultados de la gestión de la
+  entidad, lo que dificulta la toma de decisiones basada en evidencia.
+\item
+  Falta de personal para actualizar las plataformas tecnológicas, lo que
+  genera retrasos en la operación de la entidad.
+\item
+  Deficiente conectividad y falta de interoperabilidad de las
+  plataformas tecnológicas.
+\item
+  Cambios en las plataformas tecnológicas que no interactúan con las
+  anteriores, lo cual expone a la SG a posibles pérdidas de información
+  y reprocesos.
+\item
+  Apostar más en la mejora continua de la inestabilidad de la
+  conectividad, indisponibilidad de servidores de información y
+  vulnerabilidad en la seguridad informática; lo contrario puede
+  comprometer la operatividad, la integridad de los datos críticos de la
+  entidad y el cumplimiento de las metas.
+\item
+  Potencial y rápida obsolescencia tecnológica que implica la necesidad
+  de renovación de los equipos y dificulta la prestación de los
+  servicios de la entidad.
+\item
+  Los altos costos de la tecnología pueden limitar la capacidad de la
+  entidad para implementar y mantener sistemas avanzados y eficientes.
+\end{itemize}
+
+\subsubsection{Oportunidades SI de SG}\label{sec:oportunidades-si-de-sg}
+
+La construcción de lista de oportunidades mencionadas implica el estudio
+de las sesiones de levantamiento, entrevistas, y cuestionarios
+compartidos en el mes de julio, junto con la recopilación estructurada
+de las fuentes de información al respecto de cada sistema de SG.
+
+Las oportunidades tecnológicas y de mejora de sistemas de información
+mencionadas indicadas en estas fuentes se centran en:
+
+\begin{itemize}
+\item
+  Modernización de la infraestructura y sistemas tecnológicos
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Las nuevas tecnologías, especialmente la Inteligencia Artificial
+    (IA), ofrecen la oportunidad de mejorar los procesos y herramientas
+    de relacionamiento con la ciudadanía. La Secretaría General ya ha
+    empezado a incorporar tecnologías como IA, Big Data, pero debe
+    seguir ampliando ese despliegue, así como incorporar otras, como el
+    Internet de las Cosas (IoT), o la minería de datos en la
+    planificación urbana y la prestación de servicios.
+  \item
+    Una oportunidad es la adquisición y puesta en producción de software
+    especializado en análisis de datos para la toma de decisiones que ya
+    poseen otras entidades.
+  \end{itemize}
+\item
+  Integración y automatización de procesos
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Se identifican oportunidades para contar con herramientas que
+    evalúen el soporte tecnológico personalizado, flexible y
+    configurable para las operaciones de los procesos jurídicos.
+  \item
+    Se buscan mejores controles e integración de sistemas distritales
+    con los canales de la Secretaría General.
+  \item
+    También se necesitan mejores controles e integración de los sistemas
+    de gestión como los sistemas GLOBO (de gestión internacional), el
+    sistema de proyectos GLPI.
+  \end{itemize}
+\item
+  Mejora de la comunicación pública a través de medios digitales
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Se busca la consolidación de herramientas, canales e información
+    para fortalecer la oferta y celeridad de servicios y la
+    participación ciudadana. Esto incluye el seguimiento a canales de
+    atención virtual como SuperCADE Virtual, chat, chat-Bot y (video)
+    llamadas de la línea 195.
+  \item
+    Se busca optimizar los procesos de recolección, análisis y
+    divulgación de la información mediante la implementación de sistemas
+    de información que incluyan la automatización de la recolección de
+    datos y el uso de herramientas analíticas.
+  \item
+    Es destacado que el Distrito unifica en el portal Bogotá su oferta
+    de trámites y servicios, como el realizar pagos en línea (no
+    tributarios) y agendamiento de citas en la RedCADE desde casa;
+    esfuerzo que debe continuar y extenderse a los más de 1.400 trámites
+    y servicios. Esto representa una mejora significativa en la
+    accesibilidad y eficiencia de los servicios digitales para la
+    ciudadanía.
+  \end{itemize}
+\item
+  capacitación en nuevas tecnologías y
+\item
+  Implementación de la Arquitectura Empresarial como estrategia para
+  impulsar la transformación digital y la eficiencia en la gestión
+  pública de la SG
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Se espera que la Arquitectura Empresarial fortalezca la
+    transparencia, y aumente la eficiencia de la gestión pública y la
+    rendición de cuentas al estandarizar procesos y sistemas de
+    información. La AE busca realmente impactar el objetivo de aumentar
+    la confianza de la ciudadanía en la Gestión Pública.
+  \item
+    Es requerido que este ejercicio beneficie a la SG con la entrega de
+    activos como hojas de ruta, catálogos y caracterización de los
+    sistemas de información, matrices de interacción, entre otros.
+  \end{itemize}
+\end{itemize}
+
+\subsubsection{06.2n4. Aplicaciones. Situación Actual
+SG}\label{sec:n4.-aplicaciones.-situaciuxf3n-actual-sg}
+
+La Fase Tres (3) de la arquitectura empresarial (AE) de SG se divide en
+dos partes principales: Arquitectura de Datos y Arquitectura de
+Aplicaciones.
+
+\subsubsection{Objetivo de la Arquitectura de
+Aplicaciones:}\label{sec:objetivo-de-la-arquitectura-de-aplicaciones}
+
+El objetivo principal de la Arquitectura de Aplicaciones es desarrollar
+las arquitecturas de sistemas de información objetivo (tanto de datos
+como de aplicaciones) que soporten la arquitectura de negocio
+(desarrollada en la Fase B) y que implementen la visión de arquitectura
+inicial (establecida en la Fase A).
+
+En términos más específicos, la arquitectura de aplicaciones busca:
+
+\begin{itemize}
+\tightlist
+\item
+  Definir la arquitectura de las aplicaciones (software) necesarias para
+  soportar los procesos de negocio.
+\item
+  Identificar las funciones de negocio que deben ser soportadas por las
+  aplicaciones.
+\item
+  Establecer la interacción y el flujo de información entre las
+  diferentes aplicaciones.
+\item
+  Considerar aspectos como la escalabilidad, el rendimiento, la
+  mantenibilidad y la seguridad de las aplicaciones.
+\item
+  Listar los capacidades de negocio (servicios de aplicación)
+  relacionadas con las arquitecturas de aplicaciones de SG.
+\end{itemize}
+
+\subsubsection{Relación con las demás fases del
+proyecto}\label{sec:relaciuxf3n-con-las-demuxe1s-fases-del-proyecto}
+
+La Arquitectura de Aplicaciones no opera de forma aislada; está
+intrínsecamente conectada con las fases anteriores y posteriores de la
+arquitectura empresarial de Secretaria de la Alcaldía de Bogotá:
+
+\begin{itemize}
+\tightlist
+\item
+  Relación con la Fase A (Visión de la Arquitectura): La Fase C toma
+  como entrada principal la Visión de la Arquitectura, que establece el
+  alcance, los objetivos de alto nivel, los principios de la
+  arquitectura y la visión del negocio. La Arquitectura de Sistemas de
+  Información debe alinearse y contribuir a la consecución de esta
+  visión.
+\item
+  Relación con la Fase B (Arquitectura de Negocio): La Arquitectura de
+  Negocio (procesos de negocio, funciones, organización, etc.) es el
+  motor principal para la Fase C. La Arquitectura de Sistemas de
+  Información se construye para soportar y habilitar los requisitos
+  definidos en la Arquitectura de Negocio. Por ejemplo, los procesos de
+  negocio definidos en la Fase B informarán las necesidades de datos y
+  las funcionalidades de las aplicaciones en la Fase C.
+\item
+  Relación con la Fase D (Arquitectura Tecnológica): La Fase C
+  proporciona los requisitos para la Fase D. La Arquitectura de Sistemas
+  de Información (datos y aplicaciones) determina la tecnología
+  subyacente (hardware, software de infraestructura, middleware, redes)
+  que se necesitará para soportar las aplicaciones y gestionar los
+  datos. La Fase D, por lo tanto, desarrollará la Arquitectura
+  Tecnológica basándose en las necesidades identificadas en la Fase C.
+\item
+  Relación con la Fase E (Oportunidades y Soluciones) y Fase F
+  (Planificación de la Migración): Las arquitecturas de datos y
+  aplicaciones desarrolladas en la Fase C son insumos críticos para
+  identificar oportunidades de implementación (Fase E) y para
+  desarrollar el plan de migración (Fase F) de las arquitecturas
+  actuales a las arquitecturas objetivo.
+\item
+  Relación con la Gestión de Requisitos (Requirements Management): La
+  Gestión de Requisitos es una capacidad continua que atraviesa todas
+  las fases del ADM. Los requisitos de los sistemas de información,
+  capturados y gestionados, son fundamentales para guiar el desarrollo
+  de las arquitecturas en la Fase C y para asegurar que la arquitectura
+  final cumpla con las necesidades del negocio.
+\end{itemize}
+
+\subsubsection{Requisitos Necesarios para su Realización (Entradas
+Clave):}\label{sec:requisitos-necesarios-para-su-realizaciuxf3n-entradas-clave}
+
+Para llevar a cabo la Fase C de manera efectiva, una empresa debe contar
+con ciertos requisitos y entradas esenciales, que provienen
+principalmente de las fases previas del proceso de AE:
+
+\begin{itemize}
+\tightlist
+\item
+  Requisitos de Negocio: Una comprensión clara y detallada de los
+  requisitos de negocio, procesos de negocio, funciones y estructuras
+  organizacionales definidos en la Fase B. Esto incluye, por ejemplo, el
+  Catálogo de Requisitos (como se menciona en el documento ``TOGAF
+  Catalogs Matrices and Diagrams.pdf'', página 60), que ``captura las
+  cosas que la empresa necesita hacer para cumplir sus objetivos''.
+\item
+  Visión de la Arquitectura: La ``Visión de la Arquitectura''
+  (Architectural Vision) y los ``Principios de la Arquitectura''
+  establecidos en la Fase A, que guiarán las decisiones de diseño en la
+  Fase C.
+\item
+  Arquitectura de Negocio de Línea Base y Objetivo: Los modelos de
+  Arquitectura de Negocio actual y deseada (definidos en la Fase B), que
+  servirán como punto de partida y destino para la Arquitectura de
+  Sistemas de Información.
+\item
+  Metamodelo de Contenidos de la Arquitectura: Una comprensión y
+  aplicación del metamodelo de contenidos de TOGAF (referenciado en
+  ``TOGAF 9.2 - Content Metamodel.pdf''), que proporciona un marco
+  estructurado para describir los artefactos de la arquitectura.
+\item
+  Principios de Arquitectura de Sistemas de Información: Principios
+  específicos que guiarán el diseño de los datos y las aplicaciones,
+  asegurando la coherencia y la alineación con los objetivos
+  empresariales.
+\item
+  Capacidad de Arquitectura Empresarial: La infraestructura y los
+  recursos necesarios para realizar actividades de arquitectura,
+  incluyendo herramientas de modelado (como ArchiMate, Draw.io,
+  compatible con TOGAF) y personal con las habilidades adecuadas.
+\item
+  Planes de Iteración y Nivel de Detalle: El alcance y el nivel de
+  detalle requerido para la arquitectura de sistemas de información, que
+  a menudo se define en la Fase de Visión y se refina a medida que
+  avanza el proceso de AE. Esto puede incluir un enfoque iterativo para
+  el desarrollo de la arquitectura, según lo discutido en ``ADM
+  Guidelines \& Techniques.pdf'' (Capítulo 19: Applying Iteration to the
+  ADM).
+\end{itemize}
+
+La arquitectura de aplicaciones es un pilar fundamental en la
+transformación empresarial, traduciendo las necesidades de negocio en
+soluciones tangibles de datos y aplicaciones, y preparando el terreno
+para la selección de la tecnología subyacente.
+
+\subsection{Caracterización de Sistemas Información
+SG}\label{sec:caracterizaciuxf3n-de-sistemas-informaciuxf3n-sg}
+
+\begin{quote}
+Arquitectura Empresarial SG. Ingenium. 2025 Dominio de Sistemas y
+Aplicaciones de Software. Sistemas de información del análisis de
+entorno.
+\end{quote}
+
+\subsection{Producto Entregable Caracterización de los sistemas de
+información}\label{sec:producto-entregable-caracterizaciuxf3n-de-los-sistemas-de-informaciuxf3n}
+
+Arquitectura de aplicaciones - MAE.LI.ASI.03 Caracterización de los
+sistemas de información SG.
+
+Inventario de las sistemas de información (o aplicaciones de software)
+de Secretaria de la Alcaldía de Bogotá y su ficha de características,
+pertenecientes al alcance del ejercicio actual de arquitectura
+empresarial objeto del contrato.
+
+Es un~inventario detallado y documentado~que contiene las fichas
+técnicas de los sistemas de información de una institución.
+
+\subsection{Justificación}\label{sec:justificaciuxf3n}
+
+El catálogo y caracterización de las aplicaciones de Secretaria de la
+Alcaldía de Bogotá es un artefacto clave para documentar, comprender, y
+comunicar el panorama actual y futuro de las aplicaciones de SG. el
+panorama actual y futuro de las aplicaciones de Secretaria de la
+Alcaldía de Bogotá. A la vez, es base para la toma de decisiones de la
+gestión y gobierno de las capacidades de TI, y del portafolio y ciclo de
+vida de las aplicaciones de Secretaria de la Alcaldía de Bogotá. Sirve
+además para la actualización continua de las características y atributos
+relevantes de los sistemas de información.
+
+\subsection{Objetivos}\label{sec:objetivos}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Documentar y comunicar el panorama actual y futuro de las aplicaciones
+  de SG.
+\item
+  Proveer base para la toma de decisiones de la gestión del portafolio y
+  del ciclo de vida de las aplicaciones de SG.
+\item
+  Facilitar la actualización de su información. Para el efecto, debe
+  usar medios y formatos accesibles y editables por SG.
+\end{enumerate}
+
+\subsection{Contenido}\label{sec:contenido}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Catálogo de sistemas de información seleccionadas. El catálogo
+  relaciona datos individuales e importantes de los sistemas. Incluye la
+  descripción, e identificación de cada aplicación, relación con dominio
+  de negocio, información para la gestión y mantenimiento del sistema.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ID de Aplicación
+  \item
+    Nombre de la Aplicación
+  \item
+    Descripción
+  \item
+    Tipo de Aplicación
+  \item
+    Dominio de Negocio
+  \item
+    Proceso(s) de Negocio Clave(s)
+  \item
+    Tecnología Clave
+  \item
+    Proveedor/Desarrollador
+  \item
+    Versión Actual
+  \item
+    Estado
+  \end{itemize}
+\item
+  Caracterización de los sistemas de información del catálogo es la
+  ficha técnica que complementa al catálogo. Incluye datos como actores,
+  subsistemas y componentes candidatos, relaciones base de primer grado,
+  atributos, integraciones candidatas y las acciones o intervenciones a
+  realizar.
+
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \tightlist
+  \item
+    Identificación y Descripción General
+  \item
+    Contexto de Negocio: propietario, capacidades o procesos, nivel de
+    criticidad para el negocio.
+  \item
+    Aspectos Técnicos y Arquitectónicos
+  \item
+    Gestión y Mantenimiento: costos recurrentes, como licencias, uso de
+    plataforma, soporte del proveedor; recursos de personal asignado;
+    percepción del valor de negocio aportado.
+  \item
+    Estrategia y Relaciones Clave: alineación con la visión de
+    Secretaria de la Alcaldía de Bogotá, proyectos planificados
+    participantes.
+  \end{enumerate}
+\end{enumerate}
+
+\begin{figure}
+\centering
+\includegraphics{images/03.1o.Organizacionsistemasinformacion.png}
+\caption{03.1o. Organizacion sistemas informacion. \emph{Fuente:
+Propuesta servicios de ingeniería y evaluación de arquitectura
+Arquitectura de Aplicaciones Secretaria de la Alcaldía de Bogotá
+(2025)}}\label{fig:id-adad9ef6534c4bf486404fd53431de2a}
+\end{figure}
+
+\subsubsection{Canales Alcaldía}\label{sec:canales-alcalduxeda}
+
+\subsubsection{SuperCADE Virtual}\label{sec:supercade-virtual}
+
+Red de canales presenciales de atención a ciudadanía.
+
+\subsubsection{Chat-Bot}\label{sec:chat-bot}
+
+Canal web de atención a ciudadanía.
+
+\subsubsection{Línea 195}\label{sec:luxednea-195}
+
+Canal telefónico de atención a ciudadanía.
+
+\subsubsection{Portal Bogotá Capital
+Digital}\label{sec:portal-bogotuxe1-capital-digital}
+
+Plataforma de Trámites en línea. Portal Integrador de trámites y
+servicios ofrecidos a la ciudadanía. Componente de aplicación que
+permite la realización de trámites digitales.
+
+\subsubsection{Sistemas de interacción ciudadana y
+transparencia}\label{sec:sistemas-de-interacciuxf3n-ciudadana-y-transparencia}
+
+\subsubsection{Bogotá Te Escucha}\label{sec:bogotuxe1-te-escucha}
+
+Sistema de información para la administración, registro, atención,
+seguimiento y control de las peticiones, quejas, reclamos, solicitudes
+de información, denuncias y sugerencias que reciban las entidades del
+distrito capital por los diferentes canales. Fundamental para el proceso
+de Gobierno abierto y relacionamiento con la ciudadanía. También se
+menciona como el Sistema Distrital para la Gestión de Peticiones
+Ciudadanas, a través del cual se evalúa la calidad de las respuestas
+emitidas a la ciudadanía.
+
+\subsubsection{Ficha}\label{sec:ficha}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.1399}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.8601}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Nombre aplicación}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Bogotá Te Escucha
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Descripción Funcional} & Sistema de información para la
+administración, registro, atención, seguimiento y control de las
+peticiones, quejas, reclamos, solicitudes de información, denuncias y
+sugerencias que reciban las entidades del distrito capital por los
+diferentes canales. \\
+\textbf{Tipo de software} & Desarrollo Interno \\
+\textbf{Estado} & Productivo \\
+\textbf{Esquema de licenciamiento} & A perpetuidad \\
+\textbf{Fabricante} & Secretaría General de la Alcaldía Mayor de Bogotá
+D.C. \\
+\textbf{Debilidades o hallazgos estructurales} & Ninguna \\
+\end{longtable}
+
+\subsubsection{Datos para Transparencia
+(SATI)}\label{sec:datos-para-transparencia-sati}
+
+Sistem de tableros de control con datos relevantes, actualizados y
+comprensibles, incluyendo alertas tempranas contra la corrupción.
+Plataforma que facilita el acceso a datos e información gubernamental.
+Soporta el proceso de Gobierno abierto y relacionamiento con la
+ciudadanía.
+
+\subsubsection{Ficha}\label{sec:ficha-1}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.2531}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.7469}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Nombre aplicación}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Datos para la Transparencia (SATI)
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Descripción Funcional} & Tableros de control con datos
+relevantes, actualizados y comprensibles, incluyendo alertas tempranas
+contra la corrupción \\
+\textbf{Tipo de software} & Desarrollo Interno \\
+\textbf{Estado} & Productivo \\
+\textbf{Esquema de licenciamiento} & A perpetuidad \\
+\textbf{Fabricante} & Secretaría General de la Alcaldía Mayor de Bogotá
+D.C. \\
+\textbf{Debilidades o hallazgos estructurales} & Lanzamiento del nuevo
+diseño de la plataforma de datos para la transparencia. \\
+\end{longtable}
+
+\subsubsection{EMLAZE}\label{sec:emlaze}
+
+Sistema para la planeación de recursos empresariales (ERP) de la
+Imprenta Distrital y control de ejecución y consumo de insumos en el
+ejercicio de imprenta.
+
+\subsubsection{MoviApp}\label{sec:moviapp}
+
+Canal móvil de atención a ciudadanía. Sesión levantamiento no. 2.
+
+\subsubsection{Sistemas de gestión administrativa y
+financiera}\label{sec:sistemas-de-gestiuxf3n-administrativa-y-financiera}
+
+\subsubsection{ADMON}\label{sec:admon}
+
+Se relaciona con la gestión financiera, gestión de servicios
+administrativos y tecnológicos, y gestión de recursos físicos.
+
+\subsubsection{Administrativo y
+Financiero}\label{sec:administrativo-y-financiero}
+
+Sistema de soporta la gestión financiera, gestión de servicios
+administrativos y tecnológicos, y gestión de recursos físicos. Incluye
+los siguientes módulos/sistemas: Módulo de Personal y Nómina (PERNO,
+heredado de SICAPITAL), Administración de costos y facturación de los
+Cades y Supercades (FACTURACIÓN), Libro Mayor (LIMAY, heredado de
+SICAPITAL), Sistema de control de gestión de elementos de consumo (SAE,
+heredado de SICAPITAL), Sistema control de gestión de elementos
+devolutivos (SAI, heredado de SICAPITAL), Registro y control de la
+información de presupuesto de la Secretaría General (SIPRES), Sistema
+para manejo y control del presupuesto de regalías (SIPRES REGALIAS),
+Registro y control de la información contractual de la Secretaría
+General (CONTRACTUAL), Sistema para manejo de contratos con presupuesto
+de regalías (CONTRACTUAL REGALIAS).
+
+\subsubsection{SIGA}\label{sec:siga}
+
+Sistema Integrado de Gestión Documental, Archivo y Correspondencia.
+
+\subsubsection{Ficha}\label{sec:ficha-2}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.3796}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.6204}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+\textbf{Nombre aplicación}
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+SIGA
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+\textbf{Descripción Funcional} & Sistema Integrado de Gestión
+Documental, Archivo y Correspondencia. \\
+\textbf{Tipo de software} & Desarrollo Interno \\
+\textbf{Estado} & Productivo \\
+\textbf{Esquema de licenciamiento} & A perpetuidad \\
+\textbf{Fabricante} & Secretaría General de la Alcaldía Mayor de Bogotá
+D.C. \\
+\textbf{Debilidades o hallazgos estructurales} & Ninguna \\
+\end{longtable}
+
+\subsubsection{Sistema Gestión
+Documental}\label{sec:sistema-gestiuxf3n-documental}
+
+Componente de aplicación para la gestión electrónica de documentos.
+
+\subsubsection{DARUMA}\label{sec:daruma}
+
+Sistema para el registro de documentos de procesos, procedimientos,
+formatos, entre otros, como insumos de la Gestión de Calidad.
+
+\subsubsection{SAT Web}\label{sec:sat-web}
+
+Sistema de Asignación de Turnos en los puntos de atención a la
+ciudadanía (Red Cade).
+
+\subsubsection{GLPI}\label{sec:glpi}
+
+Sistema de soporta a la gestión de servicios administrativos y
+tecnológicos, donde se registran y gestionan las solicitudes de
+servicios TIC.
+
+\subsubsection{PANDORA}\label{sec:pandora}
+
+Implementación de temas precontractual y planeación.
+
+\subsubsection{Comisiones}\label{sec:comisiones}
+
+Sesión levantamiento no. 1.
+
+\subsubsection{Sistemas de fortalecimiento de capacidades y
+conocimiento}\label{sec:sistemas-de-fortalecimiento-de-capacidades-y-conocimiento}
+
+\subsubsection{Bogotá Aprende TIC}\label{sec:bogotuxe1-aprende-tic}
+
+Portal de apoya los procesos de Gobierno abierto y relacionamiento con
+la ciudadanía, y Fortalecimiento de la Gestión Pública.
+
+\subsubsection{GLOBO}\label{sec:globo}
+
+Registro de acciones de cooperación internacional. Utilizado en el
+proceso de Fortalecimiento de la Gestión Pública.
+
+\subsubsection{SUDIVC}\label{sec:sudivc}
+
+Sistema Unificado Distrital de Inspección, Vigilancia y Control --
+SUDIVC.
+
+\subsubsection{HUMANAPP}\label{sec:humanapp}
+
+Apoya la gestión del talento humano. Aplicativo de generación de
+desprendibles de pago para funcionarios y certificaciones laborales, de
+seguridad social y de ingresos y retenciones.
+
+\subsubsection{SIAB (El COFRE)}\label{sec:siab-el-cofre}
+
+Sistema de Información del Archivo de Bogotá SIAB. Permite automatizar
+los procesos archivísticos y técnicos que realiza el Archivo, tales como
+llevar un registro de los Ingresos Documentales (antes área de acopio),
+para la descripción y catalogación de la documentación, propios del
+proceso de Gestión de la Función Archivística y del Patrimonio
+Documental, para su custodia y conservación permanente. Utilizado en los
+procesos de Gobierno abierto y relacionamiento con la ciudadanía, y
+Fortalecimiento de la Gestión Pública.
+
+\subsubsection{KOHA}\label{sec:koha}
+
+Sistema Integrado de Gestión de Bibliotecas. Relacionado con la Gestión
+del conocimiento.
+
+\subsubsection{Data Warehouse}\label{sec:data-warehouse}
+
+Almacenes de datos de trabajo de SG. Bodega de datos con diversas
+fuentes de información para el análisis y transformación de datos de
+interés.
+
+\subsubsection{Gestión Académica}\label{sec:gestiuxf3n-acaduxe9mica}
+
+Moodle para capacitación de servidores de la Entidad en diferentes
+temas. Relacionado con la Gestión del conocimiento.
+
+\subsubsection{SIVIC}\label{sec:sivic}
+
+Sistema de Información de Víctimas de Bogotá para registrar la gestión
+de atención integral a las víctimas. Interviene en los procesos de Paz,
+víctimas y reconciliación, y Fortalecimiento de la Gestión Pública.
+Interviene en los procesos de Paz, víctimas y reconciliación, y
+Fortalecimiento de la Gestión Pública.
+
+\subsubsection{AVANTI}\label{sec:avanti}
+
+Sistema de Información para registrar avance de programación y
+seguimiento de metas plan de desarrollo de las entidades distritales
+SDARIV relacionadas con atención integral a las víctimas.
+
+\subsubsection{Sistemas de desarrollo}\label{sec:sistemas-de-desarrollo}
+
+\subsubsection{Gitlab}\label{sec:gitlab}
+
+Plataforma de desarrollo de software y colaboración.
+
+\subsubsection{Ofimática y
+colaboración}\label{sec:ofimuxe1tica-y-colaboraciuxf3n}
+
+\subsubsection{Office 365}\label{sec:office-365}
+
+Herramientas de ofimática y colaboración
+SG.\sidenote{This is a sidenote. This template features a large margin specifically so you can put notes, figures, tables and other things into it as additional material to the main content in the text block.}
+
+Donec in elit ac ante vestibulum rhoncus. Pellentesque ligula tortor, aliquet malesuada nulla tristique vitae. Aliquam mi sem, varius eu pellentesque et, tristique nec quam. Vestibulum pellentesque in dui et venenatis. Sed malesuada elit pellentesque sapien aliquet porta. In at facilisis diam. Duis id ante tellus.\sidenote[][2cm]{This sidenote has been pushed down the page manually with an optional parameter, otherwise it would be right under the one above.} % This first optional argument to a sidenote is the symbol to use (leave this empty for automatic numbering) and the second is the vertical offset (positive is down, negative is up)
+
+In diam libero, vulputate quis accumsan non, auctor in ipsum. Praesent cursus velit eget lacus sodales porta. Proin quis risus ut velit euismod scelerisque ut sed neque. Cras sagittis, dolor ac ullamcorper auctor, tortor dui facilisis diam, at sagittis nisi ipsum a neque. Nullam vel mattis nisi. Ut interdum ut diam at ornare. Nulla ultrices elit justo, vitae tristique massa vulputate sit amet.
+
+\nonumsidenote{
+	}Vestibulum erat felis, cursus vitae convallis ac, commodo eu nisi. Nulla facilisi. Mauris dignissim nisi felis, a mollis ex accumsan vel. Suspendisse bibendum vitae nibh in suscipit. Vestibulum et finibus eros. Nulla facilisi. Cras luctus aliquam finibus. In nec justo nec orci malesuada faucibus.
+
+\subsubsection{Subsubsection Title} % Third level section
+
+\begin{fullwidth} % Use the whole page width
+	\textit{This is an example of a full width paragraph\ldots} Curabitur id placerat orci. Vivamus pulvinar augue ac feugiat blandit. Donec in ultricies mi. Nam eu lacus ac augue aliquet consectetur. Praesent dui risus, sollicitudin nec felis ut, posuere ultricies dolor. Sed massa nulla, dignissim eget sem sit amet, eleifend fermentum dui. Phasellus consequat sem vel turpis finibus, a aliquam risus malesuada.
+\end{fullwidth}
+
+Maecenas consectetur metus at tellus finibus condimentum. Proin arcu lectus, ultrices non tincidunt et, tincidunt ut quam. Integer luctus posuere est, non maximus ante dignissim quis. Nunc a cursus erat. Curabitur suscipit nibh in tincidunt sagittis. Nam malesuada vestibulum quam id gravida. Proin ut dapibus velit. Vestibulum eget quam quis ipsum semper convallis. Duis consectetur nibh ac diam dignissim, id condimentum enim dictum. Nam aliquet ligula eu magna pellentesque, nec sagittis leo lobortis. Aenean tincidunt dignissim egestas. Morbi efficitur risus ante, id tincidunt odio pulvinar vitae.
+
+\paragraph{Paragraph Title} % Fourth level section
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex.
+
+The section titles below show how multi-line section titles look at the 3 top levels.
+
+
+%----------------------------------------------------------------------------------------
+%	QUOTATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Quotations}
+
+Proin mollis urna posuere fringilla. Curabitur finibus, neque vitae vestibulum vestibulum, dolor sapien tincidunt augue, vel porta mauris metus nec mauris. Integer erat magna, porta id erat sed, lacinia volutpat erat. Nulla fermentum tellus arcu, eu iaculis ipsum malesuada aliquam. Duis et lacus maximus, consectetur metus et, eleifend arcu. Vestibulum condimentum diam vitae diam tincidunt viverra.\sidenotequote[-1cm]{\textbf{\LARGE ``}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros. Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie.\textbf{''}\\[4pt]\hfill--- John Smith, 1972} % Example margin quotation using the \sidenotequote custom command
+
+\begin{quote}
+	\textbf{\LARGE ``}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros. Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie. Sed dictum nisl non aliquet porttitor. Etiam vulputate arcu dignissim, finibus sem et, viverra nisl. Aenean luctus congue massa, ut laoreet metus ornare in.\textbf{''}
+	
+	\hfill--- John Smith, 1972
+\end{quote}
+
+Suspendisse tempus odio sit amet volutpat suscipit. Pellentesque ornare libero lacus, non fringilla dolor placerat in. Ut maximus ullamcorper lectus, a pharetra mi sagittis aliquet. Scelerisque augue sed mi fringilla, vel dapibus ligula finibus. Sed ornare velit sem, ac venenatis velit dignissim. Vestibulum ultrices mi at tincidunt condimentum.
+
+%----------------------------------------------------------------------------------------
+%	TABLES
+%----------------------------------------------------------------------------------------
+
+\section{Table Examples}
+
+This statement automatically references the table below using its label: Table \ref{tab:example}.
+
+%------------------------------------------------
+
+\begin{margintable} % Use the margintable environment for tables to be output to the margin
+	\footnotesize % Reduce the font size in the table as space is at a premium
+	\caption{Margin table caption.}
+	\begin{tabular}{L{0.22\linewidth} C{0.22\linewidth} R{0.25\linewidth}}
+		\toprule
+		\textbf{Year} & \textbf{Qtr.} & \textbf{Perf.}\\
+		\midrule
+		20XX & Q1 & 0.5\%\\
+		20XX & Q2 & 26.5\%\\
+		20XX & Q1 & 35.4\%\\
+		20XX & Q4 & 41.3\%\\
+		\bottomrule
+	\end{tabular}
+\end{margintable}
+
+%------------------------------------------------
+
+\begin{table}[H] % [H] forces the table to be output where it is defined in the code (it suppresses floating)
+	\caption{Text block table caption.}
+	\begin{tabular}{L{0.35\linewidth} L{0.38\linewidth} L{0.16\linewidth}}
+		\toprule
+		\textbf{Prospect} & \textbf{Industry} & \textbf{Revenue} \\
+		\midrule
+		Gerlach Inc & Business Development & 3M\\
+		Doyle and Sons & Law & 1M\\
+		Heathcote Group & Consulting & 12M\\
+		Goyette Inc & Advertising & 5M\\
+		Holzdeppe GmbH & Manufacturing & 23M\\
+		Bienias AG & Accounting & 2.5M\\
+		\bottomrule
+	\end{tabular}
+	\label{tab:example}
+\end{table}
+
+%------------------------------------------------
+
+\begin{table*} % Use the table* environment for full width tables
+	\caption{Full width table caption.}
+	\begin{tabular}{C{0.03\linewidth} L{0.25\linewidth} L{0.27\linewidth} L{0.16\linewidth} L{0.16\linewidth}}
+		\toprule
+		\textit{\#} & \textbf{Prospect} & \textbf{Industry} & \textbf{Revenue} & \textbf{Employees} \\
+		\midrule
+		\textit{1} & Gerlach Inc & Business Development & 3M & 65\\
+		\textit{2} & Doyle and Sons & Law & 1M & 15\\
+		\textit{3} & Heathcote Group & Consulting & 12M & 250\\
+		\textit{4} & Goyette Inc & Advertising & 5M & 100\\
+		\textit{5} & Holzdeppe GmbH & Manufacturing & 23M & 75\\
+		\textit{6} & Bienias AG & Accounting & 2.5M & 40\\
+		\bottomrule
+	\end{tabular}
+\end{table*}
+
+%----------------------------------------------------------------------
+%	FIGURES
+%----------------------------------------------------------------------
+
+\section{Figure Examples}
+
+This statement automatically references the figure below using its label: Figure \ref{fig:example}.
+
+%------------------------------------------------
+
+\begin{marginfigure} % Use the marginfigure environment for figures to be output to the margin
+	\includegraphics[width=\linewidth]{./include/placeholder.jpg}
+	\caption{Margin figure caption.}
+\end{marginfigure}
+
+%------------------------------------------------
+
+\begin{figure}[H] % [H] forces the figure to be output where it is defined in the code (it suppresses floating)
+	\includegraphics[width=\linewidth]{./include/ARR.pdf}
+	\caption{Text block figure caption.}
+	\label{fig:example} % Label for referencing this figure in the text automatically
+\end{figure}
+
+%------------------------------------------------
+
+\begin{figure*} % Use the figure* environment for full width figures
+	\includegraphics[width=\linewidth]{./include/ARR.pdf}
+	\caption{Full width figure caption.}
+\end{figure*}
+
+%----------------------------------------------------------------------------------------
+%	LISTS
+%----------------------------------------------------------------------------------------
+
+\section{List Examples}
+
+\subsection{Bullet Point List}
+
+\nonumsidenote{Bullet point lists can also be created in the margin. For these, we can remove the usual left margin to increase the available horizontal space:\\\medskip \begin{itemize}[leftmargin=*]\item Bullet item one. \item Bullet item two. \item Bullet item three.\end{itemize}}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros. Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie. Sed dictum nisl non aliquet porttitor.
+
+\begin{itemize}
+	\item First bullet point item
+	\begin{itemize}
+		\item First indented bullet point item
+		\item Second indented bullet point item
+		\begin{itemize}
+			\item First second-level indented bullet point item
+			\item Second second-level indented bullet point item
+		\end{itemize}
+		\item Third indented bullet point item
+	\end{itemize}
+	\item Second bullet point item
+	\item Third bullet point item
+\end{itemize}
+
+Etiam vulputate arcu dignissim, finibus sem et, viverra nisl. Aenean luctus congue massa, ut laoreet metus ornare in. Nunc fermentum nisi imperdiet lectus tincidunt vestibulum at ac elit. Nulla mattis nisl eu malesuada suscipit.
+
+%------------------------------------------------
+
+\subsection{Numbered List}
+
+\nonumsidenote[-2.5cm]{Numbered lists can also be created in the margin. For these, we can remove the usual left margin to increase the available horizontal space:\\\medskip \begin{enumerate}[leftmargin=*]\item Numbered item one. \item Numbered item two. \item Numbered item three.\end{enumerate}}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros. Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie. Sed dictum nisl non aliquet porttitor.
+
+\begin{enumerate}
+	\item First numbered item
+	\begin{enumerate}
+		\item First indented numbered item
+		\item Second indented numbered item
+		\begin{enumerate}
+			\item First second-level indented numbered item
+			\item Second second-level indented numbered item
+		\end{enumerate}
+		\item Third indented numbered item
+	\end{enumerate}
+	\item Second numbered item
+	\item Third numbered item
+\end{enumerate}
+
+Etiam vulputate arcu dignissim, finibus sem et, viverra nisl. Aenean luctus congue massa, ut laoreet metus ornare in. Nunc fermentum nisi imperdiet lectus tincidunt vestibulum at ac elit. Nulla mattis nisl eu malesuada suscipit.
+
+%------------------------------------------------
+
+\subsection{Description List}
+
+\nonumsidenote{Description lists can also be created in the margin:\\\medskip \begin{description}\item[A1] Description item one. \item[B1] Description item two. \item[C1] Description item three.\end{description}}Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros. Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie. Sed dictum nisl non aliquet porttitor.
+
+\begin{description}
+	\item[Item One] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent porttitor arcu luctus, imperdiet urna iaculis, mattis eros. Pellentesque iaculis odio vel nisl ullamcorper, nec faucibus ipsum molestie.
+	\item[Item Two] Sed dictum nisl non aliquet porttitor.
+	\begin{description}
+		\item[Subitem] Maecenas consectetur metus at tellus finibus condimentum. Proin arcu lectus, ultrices non tincidunt et, tincidunt ut quam. Integer luctus posuere est, non maximus ante dignissim quis.
+		\begin{description}
+			\item[Subsubitem] Maecenas consectetur metus at tellus finibus condimentum. Proin arcu lectus, ultrices non tincidunt et, tincidunt ut quam. Integer luctus posuere est, non maximus ante dignissim quis.
+	\end{description}
+	\end{description}
+	\item[Item Three] Etiam vulputate arcu dignissim, finibus sem et, viverra nisl. Aenean luctus congue massa, ut laoreet metus ornare in. Nunc fermentum nisi imperdiet lectus tincidunt vestibulum at ac elit. Nulla mattis nisl eu malesuada suscipit.
+\end{description}
+
+Etiam vulputate arcu dignissim, finibus sem et, viverra nisl. Aenean luctus congue massa, ut laoreet metus ornare in.
+
+%----------------------------------------------------------------------------------------
+%	REFERENCING CITATIONS
+%----------------------------------------------------------------------------------------
+
+\section{Referencing Citations}
+
+This statement requires citation \autocite{Smith:2024jd}.
+
+This statement requires multiple citations \autocite{Smith:2024jd, Smith:2023qr}.
+
+This short citation is in the margin\sidecite{Smith:2023qr}.
+
+This long citation is in the margin\fullsidecite{Smith:2024jd}.
+
+This statement has an in-text citation: \textcite{Smith:2024jd}.
+
+%----------------------------------------------------------------------------------------
+%	LINKS
+%----------------------------------------------------------------------------------------
+
+\section{Link Examples}
+
+This is a URL link: \href{https://www.duckduckgo.com}{DuckDuckGo}.\nonumsidenote{Links can be clicked in the PDF to navigate to the linked website or email address.}
+
+This is a email link: \href{mailto:example@example.com}{example@example.com}.
+
+This is a monospaced URL link: \url{https://duckduckgo.com}.
+
+
+%----------------------------------------------------------------------------------------
+%	CODE
+%----------------------------------------------------------------------------------------
+
+\section{Displaying Code}
+
+The block below is a code listing. It displays code in an easy to use way with line numbers for quick reference to specific parts of the code.
+
+\begin{lstlisting}
+{
+	"city": [
+		{
+			"id": 1,
+			"name": "Toronto",
+			"country": "Canada",
+			"population": 6200000
+		},
+		{
+			"id": 2,
+			"name": "New York",
+			"country": "United States of America",
+			"population": 8800000
+		}
+	]
+}
+\end{lstlisting}
+
+%----------------------------------------------------------------------------------------
+%	 REFERENCES/BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\addcontentsline{toc}{section}{Reference List} % Add the bibliography to the table of contents
+
+\begin{twothirdswidth} % Content in this environment to be at two-thirds of the whole page width
+	\printbibliography[title=Reference List] % Output the bibliography with a custom section title
+\end{twothirdswidth}
+
+%----------------------------------------------------------------------------------------
+%	APPENDICES
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\section*{Appendices}
+
+\begin{appendices}
+
+\section{Appendix Section}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget euismod pretium.
+
+\section{Appendix Section}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget euismod pretium.
+
+\section{Appendix Section}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam auctor mi risus, quis tempor libero hendrerit at. Duis hendrerit placerat quam et semper. Nam ultricies metus vehicula arcu viverra, vel ullamcorper justo elementum. Pellentesque vel mi ac lectus cursus posuere et nec ex. Fusce quis mauris egestas lacus commodo venenatis. Ut at arcu lectus. Donec et urna nunc. Morbi eu nisl cursus sapien eleifend tincidunt quis quis est. Donec ut orci ex. Praesent ligula enim, ullamcorper non lorem a, ultrices volutpat dolor. Nullam at imperdiet urna. Pellentesque nec velit eget euismod pretium.
+
+\end{appendices}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
