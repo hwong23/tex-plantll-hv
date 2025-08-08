@@ -33,19 +33,19 @@ logo-width: 60mm
 listings-no-page-break: true
 ...
 
-Versión actual 1.bb976fb - Compilación para entrega: accion-actualizacionContd (bf7b785) - Tue, 5 Aug 2025 18:13:49 +0000 
+Versión actual 1.a91bc7d - Compilación para entrega: accion-actualizacionContd (7dc33e8) - Fri, 8 Aug 2025 06:53:14 +0000 
 
 
 ## Control de Cambios
 Historia de cambios del documento.
+
+1.bb976fb - Compilación para entrega: accion-actualizacionContd (bf7b785) - Tue, 5 Aug 2025 18:13:49 +0000
 
 1.707deb6 - Compilación para entrega: accion-actualizacionContd (cd44b22) - Mon, 4 Aug 2025 16:37:33 +0000
 
 1.135e1bb - Compilación para entrega: accion-actualizacionContd (b16f884) - Mon, 4 Aug 2025 04:16:43 +0000
 
 1.06d2b02 - Compilación para entrega: accion-actualizacionContd (3e0d4d4) - Mon, 4 Aug 2025 03:09:47 +0000
-
-1.eacbe5e - Compilación para entrega: accion-actualizacionContd (01fc146) - Mon, 4 Aug 2025 02:55:34 +0000
 
 
 ### Realizado Por
@@ -295,7 +295,7 @@ Las oportunidades tecnológicas y de mejora de sistemas de información menciona
 ### 06.2n4. Aplicaciones. Situación Actual SG
 La Fase Tres (3) de la arquitectura empresarial (AE) de SG se divide en dos partes principales: Arquitectura de Datos y Arquitectura de Aplicaciones.
 
-### Objetivo de la Arquitectura de Aplicaciones:
+#### Objetivo de la Arquitectura de Aplicaciones:
 
 El objetivo principal de la Arquitectura de Aplicaciones es desarrollar las arquitecturas de sistemas de información objetivo (tanto de datos como de aplicaciones) que soporten la arquitectura de negocio (desarrollada en la Fase B) y que implementen la visión de arquitectura inicial (establecida en la Fase A).
 
@@ -308,7 +308,7 @@ En términos más específicos, la arquitectura de aplicaciones busca:
 * Listar los capacidades de negocio (servicios de aplicación) relacionadas con las arquitecturas de aplicaciones de SG.
 
 
-### Relación con las demás fases del proyecto
+#### Relación con las demás fases del proyecto
 La Arquitectura de Aplicaciones no opera de forma aislada; está intrínsecamente conectada con las fases anteriores y posteriores de la arquitectura empresarial de Secretaria de la Alcaldía de Bogotá:
 
 * Relación con la Fase A (Visión de la Arquitectura): La Fase C toma como entrada principal la Visión de la Arquitectura, que establece el alcance, los objetivos de alto nivel, los principios de la arquitectura y la visión del negocio. La Arquitectura de Sistemas de Información debe alinearse y contribuir a la consecución de esta visión.
@@ -317,7 +317,7 @@ La Arquitectura de Aplicaciones no opera de forma aislada; está intrínsecament
 * Relación con la Fase E (Oportunidades y Soluciones) y Fase F (Planificación de la Migración): Las arquitecturas de datos y aplicaciones desarrolladas en la Fase C son insumos críticos para identificar oportunidades de implementación (Fase E) y para desarrollar el plan de migración (Fase F) de las arquitecturas actuales a las arquitecturas objetivo.
 * Relación con la Gestión de Requisitos (Requirements Management): La Gestión de Requisitos es una capacidad continua que atraviesa todas las fases del ADM. Los requisitos de los sistemas de información, capturados y gestionados, son fundamentales para guiar el desarrollo de las arquitecturas en la Fase C y para asegurar que la arquitectura final cumpla con las necesidades del negocio.
 
-### Requisitos Necesarios para su Realización (Entradas Clave):
+#### Requisitos Necesarios para su Realización (Entradas Clave):
 Para llevar a cabo la Fase C de manera efectiva, una empresa debe contar con ciertos requisitos y entradas esenciales, que provienen principalmente de las fases previas del proceso de AE:
 
 * Requisitos de Negocio: Una comprensión clara y detallada de los requisitos de negocio, procesos de negocio, funciones y estructuras organizacionales definidos en la Fase B. Esto incluye, por ejemplo, el Catálogo de Requisitos (como se menciona en el documento "TOGAF Catalogs Matrices and Diagrams.pdf", página 60), que "captura las cosas que la empresa necesita hacer para cumplir sus objetivos".
@@ -351,7 +351,7 @@ todo: aun no está lista
 
 <br>
 
-## Producto Entregable Caracterización de los sistemas de información
+### Producto Entregable Caracterización de los sistemas de información
 Arquitectura de aplicaciones - MAE.LI.ASI.03 Caracterización de los sistemas de información SG.
 
 Inventario de las sistemas de información (o aplicaciones de software) de Secretaria de la Alcaldía de Bogotá y su ficha de características, pertenecientes al alcance del ejercicio actual de arquitectura empresarial objeto del contrato.
@@ -359,15 +359,15 @@ Inventario de las sistemas de información (o aplicaciones de software) de Secre
 Es un inventario detallado y documentado que contiene las fichas técnicas de los sistemas de información de una institución.
 
 
-## Justificación
+#### Justificación
 El catálogo y caracterización de las aplicaciones de Secretaria de la Alcaldía de Bogotá es un artefacto clave para documentar, comprender, y comunicar el panorama actual y futuro de las aplicaciones de SG. el panorama actual y futuro de las aplicaciones de Secretaria de la Alcaldía de Bogotá. A la vez, es base para la toma de decisiones de la gestión y gobierno de las capacidades de TI, y del portafolio y ciclo de vida de las aplicaciones de Secretaria de la Alcaldía de Bogotá. Sirve además para la actualización continua de las características y atributos relevantes de los sistemas de información.
 
-## Objetivos
+#### Objetivos
 1. Documentar y comunicar el panorama actual y futuro de las aplicaciones de SG.
 1. Proveer base para la toma de decisiones de la gestión del portafolio y del ciclo de vida de las aplicaciones de SG.
 1. Facilitar la actualización de su información. Para el efecto, debe usar medios y formatos accesibles y editables por SG.
 
-## Contenido
+#### Contenido
 1. Catálogo de sistemas de información seleccionadas. El catálogo relaciona datos individuales e importantes de los sistemas. Incluye la descripción, e identificación de cada aplicación, relación con dominio de negocio, información para la gestión y mantenimiento del sistema.
     * ID de Aplicación
     * Nombre de la Aplicación
