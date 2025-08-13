@@ -6,7 +6,7 @@
 FECHA_COMPILACION=COMPILATION_DATE
 COMMIT=1.$(git log --max-count=1 --format='%h - %s - %cD')
 VERSIONES=$(git log --max-count=5 --format='1.%h - %s - %cD%n' | tail -8)
-CLIENTE="Secretaria de la Alcaldía de Bogotá"
+CLIENTE="Secretaria General Alcaldía Mayor de Bogotá"
 APP="Arquitectura de Aplicaciones"
 TITULO="Propuesta de Servicios Secretaria de la Alcaldía de Bogotá"
 SUBTITULO="Evaluación y Hoja de Ruta de la Arquitectura del Canal Bancario Whatsapp"
