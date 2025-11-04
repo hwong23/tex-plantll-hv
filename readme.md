@@ -1,5 +1,5 @@
-# Documentación Técnica (git:8-doctecnico))
-Descripción del documento técnico.- Este documento técnico (...)
+# Documentación Técnica (git:fna2.1))
+FNA. Descripción del documento técnico.- Este documento técnico (...)
 
 
 ## Plantillas
