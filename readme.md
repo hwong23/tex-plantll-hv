@@ -1,16 +1,22 @@
-# Documentación Técnica (git:8-doctecnico))
-Descripción del documento técnico.- Este documento técnico (...)
+# Documentación Técnica (git:9-icetex))
+Descripción del documento arquitectura Icetex.
 
 
 ## Plantillas
-* plantilla docx: propuesta-reference.docx
+* plantilla docx: reference.docx
 * plantilla html: html-github.template
 * plantilla tex: eisvogel.tex
 * plantilla ppt:
 
 
 ## Variables Globales del Proyecto
-(...)
+FECHA_COMPILACION=COMPILATION_DATE
+COMMIT=1.$(git log --max-count=1 --format='%h - %s - %cD')
+VERSIONES=$(git log --max-count=5 --format='1.%h - %s - %cD%n' | tail -8)
+CLIENTE="Icetex"
+APP="Proyecto de Arquitectura Icetex"
+TITULO="Documentación y modelos de arquitectura Empresarial de Icetex"
+SUBTITULO="Repositorio de Arquitectura Icetex"
 
 
 ## PlantUML integrado

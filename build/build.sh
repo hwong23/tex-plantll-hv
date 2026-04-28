@@ -6,10 +6,10 @@
 FECHA_COMPILACION=COMPILATION_DATE
 COMMIT=1.$(git log --max-count=1 --format='%h - %s - %cD')
 VERSIONES=$(git log --max-count=5 --format='1.%h - %s - %cD%n' | tail -8)
-CLIENTE="Secretaria General Alcaldía Mayor de Bogotá"
-APP="Arquitectura de Aplicaciones"
-TITULO="Propuesta de Servicios Secretaria de la Alcaldía de Bogotá"
-SUBTITULO="Evaluación y Hoja de Ruta de la Arquitectura del Canal Bancario Whatsapp"
+CLIENTE="Icetex"
+APP="Proyecto de Arquitectura Icetex"
+TITULO="Documentación y modelos de arquitectura Empresarial de Icetex"
+SUBTITULO="Repositorio de Arquitectura Icetex"
 # Pandoc's configuration is specified via files of option defaults
 # located in the $PANDOC_DATA_DIR/defaults directory.
 export FECHA_COMPILACION COMMIT VERSIONES CLIENTE APP TITULO SUBTITULO
