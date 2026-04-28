@@ -1,4 +1,4 @@
-# Documentación Técnica (git:9-icetex))
+# Documentación Técnica (git:9-icetex)
 Descripción del documento arquitectura Icetex.
 
 
